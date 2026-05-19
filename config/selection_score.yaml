@@ -1,0 +1,70 @@
+# 選題排序與每日輸出設定
+# 對應規格 §8
+
+# ---------- 每日預設數量 ----------
+# 對應規格 §8.1
+daily_limits:
+  INTL:
+    min: 2
+    max: 5
+  ARTS:
+    min: 1
+    max: 4
+  AI:
+    min: 1
+    max: 4
+  ECON:
+    min: 1
+    max: 4
+  PTS_LOCAL:
+    min: 1
+    max: 2
+  TW_STORY:
+    min: 1
+    max: 1
+  total_events:
+    min: 8
+    max: 18
+
+# 若某 beat 當天不足，可空缺，但必須在 stats 記錄。
+
+# ---------- 選題評分 ----------
+# 對應規格 §8.2
+# 正分加總、負分扣除，最後排序選入
+selection_score:
+  # 正向加分
+  multi_source_confirmed: 30           # 多來源確認同一事件
+  taiwan_related_foreign_report: 30    # 外媒報導中與台灣相關
+  major_geopolitical_event: 25         # 重大地緣政治事件
+  direct_public_impact: 20             # 對一般大眾有直接影響
+  source_tier_1: 15                    # Tier 1 來源
+  source_tier_2: 8                     # Tier 2 來源
+  source_tier_3: 3                     # Tier 3 來源
+  arts_major_award_or_institution: 15  # 重大藝術獎項或機構
+  ai_major_model_or_policy: 20         # 重大 AI 模型發布或政策
+  economy_macro_policy: 20             # 重大總體經濟政策
+
+  # 負向扣分
+  same_topic_already_selected: -20     # 同主題已選入
+  celebrity_gossip: -50                # 八卦娛樂
+  crime_without_global_relevance: -30  # 無國際意義的刑案
+  press_release_only: -20              # 純廠商新聞稿
+  single_low_tier_source: -15          # 僅單一低品質來源
+
+# ---------- 事件聚合（MVP 版） ----------
+# 對應規格 §7.2
+# MVP 不用 embedding，採以下組合
+dedup_mvp:
+  exact_canonical_url: true
+  title_normalized_similarity: 0.88
+  shared_keywords_min: 3
+  same_named_entities_min: 2
+  time_window_hours: 24
+
+# ---------- 台灣故事庫設定 ----------
+# 對應規格 §19.2
+tw_story_policy:
+  selection: random_unseen_recently
+  cooldown_days: 60
+  require_source_url: true
+  allow_manual_pin: true

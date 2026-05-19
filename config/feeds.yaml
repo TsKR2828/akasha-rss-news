@@ -1,0 +1,394 @@
+# RSS 來源清單
+# 對應規格 §3.1
+# 每個來源必須有穩定的 source_id；程式碼以 source_id 為唯一識別，不以 name 判斷。
+#
+# 欄位說明：
+#   source_id : 穩定識別碼（snake_case）
+#   name      : 顯示名稱
+#   publisher : 出版者
+#   url       : RSS URL
+#   beats     : 預設 beat 候選（陣列）
+#   sub_beat  : ARTS 子分類（可選）
+#   lang      : en | zh-TW
+#   tier      : 1 (核心) | 2 (補充) | 3 (專題) | "TW" (台灣)
+#   transport : direct_rss | google_news_proxy | rsshub
+#   is_proxy  : true 時為 proxy 來源，非原媒體官方 RSS
+#   enabled   : 是否啟用
+#   note      : 備註（可選）
+
+sources:
+  # ---------- BBC ----------
+  - source_id: bbc_world
+    name: "BBC World"
+    publisher: "BBC"
+    url: "https://feeds.bbci.co.uk/news/world/rss.xml"
+    beats: [INTL]
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: bbc_business
+    name: "BBC Business"
+    publisher: "BBC"
+    url: "https://feeds.bbci.co.uk/news/business/rss.xml"
+    beats: [ECON]
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: bbc_technology
+    name: "BBC Technology"
+    publisher: "BBC"
+    url: "https://feeds.bbci.co.uk/news/technology/rss.xml"
+    beats: [AI]
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  # ---------- Reuters (via Google News proxy) ----------
+  - source_id: reuters_world_google_news
+    name: "Reuters World via Google News"
+    publisher: "Reuters"
+    url: "https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com&hl=en"
+    beats: [INTL, ECON]
+    lang: en
+    tier: 1
+    transport: google_news_proxy
+    is_proxy: true
+    enabled: true
+    note: "Reuters direct public RSS is not assumed. Google News proxy must be treated as unstable."
+
+  - source_id: reuters_business_google_news
+    name: "Reuters Business via Google News"
+    publisher: "Reuters"
+    url: "https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com/business&hl=en"
+    beats: [ECON]
+    lang: en
+    tier: 1
+    transport: google_news_proxy
+    is_proxy: true
+    enabled: true
+
+  # ---------- AP (via RSSHub) ----------
+  - source_id: ap_world_rsshub
+    name: "AP News World via RSSHub"
+    publisher: "AP"
+    url: "https://rsshub.app/apnews/topics/world-news"
+    beats: [INTL]
+    lang: en
+    tier: 1
+    transport: rsshub
+    is_proxy: true
+    enabled: true
+    note: "Requires self-hosted or stable RSSHub instance."
+
+  # ---------- Al Jazeera / NPR ----------
+  - source_id: aljazeera_all
+    name: "Al Jazeera"
+    publisher: "Al Jazeera"
+    url: "https://www.aljazeera.com/xml/rss/all.xml"
+    beats: [INTL]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: npr_world
+    name: "NPR World"
+    publisher: "NPR"
+    url: "https://feeds.npr.org/1004/rss.xml"
+    beats: [INTL]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  # ---------- Guardian（八大藝術主要來源） ----------
+  - source_id: guardian_art_design
+    name: "Guardian - Art & Design"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/artanddesign/rss"
+    beats: [ARTS]
+    sub_beat: "視覺藝術"
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: guardian_books
+    name: "Guardian - Books"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/books/rss"
+    beats: [ARTS]
+    sub_beat: "文學"
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: guardian_music
+    name: "Guardian - Music"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/music/rss"
+    beats: [ARTS]
+    sub_beat: "音樂"
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: guardian_stage
+    name: "Guardian - Stage"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/stage/rss"
+    beats: [ARTS]
+    sub_beat: "戲劇"
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: guardian_film
+    name: "Guardian - Film"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/uk/film/rss"
+    beats: [ARTS]
+    sub_beat: "電影"
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: guardian_fashion
+    name: "Guardian - Fashion"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/fashion/rss"
+    beats: [ARTS]
+    sub_beat: "時尚與美學"
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: guardian_culture
+    name: "Guardian - Culture"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/uk/culture/rss"
+    beats: [ARTS]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "綜合文化補充來源。"
+
+  # ---------- NYT ----------
+  - source_id: nyt_books
+    name: "NYT Books"
+    publisher: "The New York Times"
+    url: "https://rss.nytimes.com/services/xml/rss/nyt/Books.xml"
+    beats: [ARTS]
+    sub_beat: "文學"
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "RSS free; full article may require subscription."
+
+  - source_id: nyt_arts
+    name: "NYT Arts"
+    publisher: "The New York Times"
+    url: "https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml"
+    beats: [ARTS]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: nyt_business
+    name: "NYT Business"
+    publisher: "The New York Times"
+    url: "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+    beats: [ECON]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  # ---------- 建築 ----------
+  - source_id: archdaily
+    name: "ArchDaily"
+    publisher: "ArchDaily"
+    url: "https://www.archdaily.com/feed"
+    beats: [ARTS]
+    sub_beat: "建築"
+    lang: en
+    tier: 3
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: dezeen
+    name: "Dezeen"
+    publisher: "Dezeen"
+    url: "https://www.dezeen.com/feed/"
+    beats: [ARTS]
+    sub_beat: "建築"
+    lang: en
+    tier: 3
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  # ---------- AI / 科技 ----------
+  - source_id: ars_technica_ai
+    name: "Ars Technica - AI"
+    publisher: "Ars Technica"
+    url: "https://feeds.arstechnica.com/arstechnica/technology-lab"
+    beats: [AI]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: the_verge
+    name: "The Verge"
+    publisher: "The Verge"
+    url: "https://www.theverge.com/rss/index.xml"
+    beats: [AI]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "Requires secondary AI filtering."
+
+  - source_id: venturebeat_ai
+    name: "VentureBeat AI"
+    publisher: "VentureBeat"
+    url: "https://venturebeat.com/category/ai/feed/"
+    beats: [AI]
+    lang: en
+    tier: 3
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: mit_ai_news
+    name: "MIT AI News"
+    publisher: "MIT News"
+    url: "https://news.mit.edu/rss/topic/artificial-intelligence2"
+    beats: [AI]
+    lang: en
+    tier: 3
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: marktechpost
+    name: "MarkTechPost"
+    publisher: "MarkTechPost"
+    url: "https://www.marktechpost.com/feed/"
+    beats: [AI]
+    lang: en
+    tier: 3
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "Low trust; use as discovery source, not sole authority."
+
+  # ---------- 經濟 ----------
+  - source_id: guardian_business
+    name: "Guardian - Business"
+    publisher: "The Guardian"
+    url: "https://www.theguardian.com/uk/business/rss"
+    beats: [ECON]
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+
+  - source_id: bloomberg_tech_google_news
+    name: "Bloomberg Tech via Google News"
+    publisher: "Bloomberg"
+    url: "https://news.google.com/rss/search?q=when:24h+allinurl:bloomberg.com/technology&hl=en"
+    beats: [ECON, AI]
+    lang: en
+    tier: 2
+    transport: google_news_proxy
+    is_proxy: true
+    enabled: true
+
+  # ---------- 台灣（唯一繁中來源） ----------
+  - source_id: pts_news
+    name: "公視新聞網"
+    publisher: "公視"
+    url: "https://about.pts.org.tw/rss/XML/newsfeed.xml"
+    beats: [PTS_LOCAL]
+    lang: zh-TW
+    tier: "TW"
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "唯一繁中新聞來源。"
+
+  - source_id: pts_curations_rsshub
+    name: "公視專題策展 via RSSHub"
+    publisher: "公視"
+    url: "https://rsshub.app/pts/curations"
+    beats: [PTS_LOCAL]
+    lang: zh-TW
+    tier: "TW"
+    transport: rsshub
+    is_proxy: true
+    enabled: false
+    note: "MVP 可先關閉；需 RSSHub 實例。"
+
+# ---------- Feed health 設定 ----------
+# 對應規格 §4.1
+feed_health:
+  timeout_seconds: 10
+  retries: 2
+  backoff: exponential
+  required_fields:
+    - title
+    - link
+    - published_at
+  store_last_success: true
+  alert_when:
+    consecutive_failures: 3
+
+# ---------- 失敗模式 ----------
+# 對應規格 §4.2
+fail_mode:
+  single_source_failed: continue_with_warning
+  tier1_partial_failed: continue_with_warning
+  all_sources_in_beat_failed: section_empty_with_warning
+  all_sources_failed: abort_report
+
+# ---------- 抓取時間窗口 ----------
+# 對應規格 §5.2
+fetch_window:
+  timezone: Asia/Taipei
+  default_hours: 24
+  grace_hours: 3
+  rule: "published_at >= report_date 05:00 - 24h - grace_hours"

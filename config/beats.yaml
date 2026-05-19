@@ -1,0 +1,192 @@
+# Beat 分類設定
+# 對應規格 §2.1, §2.2, §6.1, §6.2, §6.3
+
+# ---------- 四大常駐區塊 ----------
+beats:
+  INTL:
+    name: 國際大事
+    emoji: "🌍"
+    scope: 地緣政治、戰爭衝突、選舉、外交峰會、重大政策、人權議題、國際組織動態
+    keywords_en:
+      - war
+      - conflict
+      - election
+      - summit
+      - sanctions
+      - diplomacy
+      - treaty
+      - UN
+      - NATO
+      - G7
+      - refugee
+      - humanitarian
+    keywords_zh:
+      - 戰爭
+      - 選舉
+      - 外交
+      - 制裁
+      - 峰會
+
+  ARTS:
+    name: 八大藝術
+    emoji: "🎭"
+    scope: 時尚與美學、文學、戲劇與音樂、電影、建築、舞蹈、雕塑/視覺藝術、攝影/新媒體
+    keywords_en:
+      - fashion
+      - haute couture
+      - runway
+      - literary
+      - novel
+      - Booker
+      - Pulitzer
+      - theatre
+      - Broadway
+      - West End
+      - opera
+      - symphony
+      - orchestra
+      - film
+      - festival
+      - Cannes
+      - Venice
+      - architecture
+      - Biennale
+      - dance
+      - ballet
+      - sculpture
+      - gallery
+      - exhibition
+      - museum
+      - photography
+    keywords_zh:
+      - 時尚
+      - 文學獎
+      - 劇場
+      - 音樂節
+      - 影展
+      - 建築
+      - 舞蹈
+      - 展覽
+    sub_beats:
+      時尚與美學: 服裝 / 設計
+      文學: 文學
+      戲劇與音樂: 戲劇＋音樂
+      電影: 電影
+      建築: 建築
+      舞蹈: 舞蹈
+      視覺藝術: 繪畫 / 雕塑 / 裝置
+      攝影/新媒體: 攝影
+
+  AI:
+    name: AI 新知
+    emoji: "🤖"
+    scope: 模型發布、研究突破、AI 監管政策、產業應用、開源動態
+    keywords_en:
+      - AI
+      - artificial intelligence
+      - LLM
+      - GPT
+      - Claude
+      - Gemini
+      - machine learning
+      - neural
+      - regulation
+      - open source
+      - foundation model
+      - AGI
+      - compute
+    keywords_zh:
+      - AI
+      - 大模型
+      - 開源
+      - 監管
+
+  ECON:
+    name: 全球經濟趨勢
+    emoji: "📊"
+    scope: 央行政策、利率、通膨、貿易戰、供應鏈、能源市場、科技股、加密貨幣重大事件
+    keywords_en:
+      - Fed
+      - ECB
+      - interest rate
+      - inflation
+      - GDP
+      - trade war
+      - tariff
+      - supply chain
+      - oil
+      - OPEC
+      - semiconductor
+      - crypto
+      - IPO
+      - recession
+      - bond
+      - yield
+    keywords_zh:
+      - 聯準會
+      - 通膨
+      - 貿易
+      - 半導體
+      - 能源
+
+# ---------- 特別標記 ----------
+special_marks:
+  TW_HIGHLIGHT:
+    name: 台灣相關 Highlight
+    trigger: 外媒報導中出現台灣相關主體，且新聞影響層級達到 Highlight 標準
+  PTS_LOCAL:
+    name: 公視在地新聞
+    emoji: "🇹🇼"
+    trigger: 來自公視 RSS 的在地報導，每日精選 1-2 則
+  TW_STORY:
+    name: 台灣故事
+    emoji: "📜"
+    trigger: 從台灣故事知識庫推送一則台灣歷史 / 文化故事
+
+# ---------- 分類權重 ----------
+# 對應規格 §6.1
+classification:
+  source_default_weight: 0.6
+  keyword_weight: 0.3
+  entity_weight: 0.1
+  min_score: 0.45
+
+# ---------- AI 分類例外 ----------
+# 對應規格 §6.2
+# 這些來源不是所有文章都是 AI，必須二次過濾
+ai_exception_sources:
+  - the_verge
+  - bbc_technology
+  - ars_technica_ai
+
+ai_match_rules:
+  - title / summary 命中 AI 關鍵字
+  - 出現模型、AI 公司、AI 法規、AI 研究主題
+  - Claude 判定與 AI 主題直接相關
+
+# ---------- Taiwan Highlight 判定 ----------
+# 對應規格 §6.3
+tw_highlight:
+  positive_keywords:
+    - Taiwan
+    - Taipei
+    - TSMC
+    - Taiwan Strait
+    - cross-strait
+    - Taiwanese
+  context_keywords:
+    - government
+    - election
+    - semiconductor
+    - defense
+    - China
+    - trade
+    - diplomacy
+    - supply chain
+    - chip
+    - security
+  false_positive_review:
+    - Taipei concert
+    - Taiwanese artist
+    - restaurant
+    - travel list

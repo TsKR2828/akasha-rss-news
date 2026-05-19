@@ -1,0 +1,43 @@
+{
+  "project_name": "akasha-rss-news",
+  "repo_name": "akasha-rss-news",
+  "project_type": "basic",
+  "description": "",
+  "status": "initialized",
+  "created_at": "2026-05-19T11:29:50+08:00",
+  "main_files": {
+    "readme": "README.md",
+    "roadmap": "ROADMAP.md",
+    "dev_log": "DEV_LOG.md",
+    "ai_context": "AI_CONTEXT.md",
+    "ai_instructions": "AI_INSTRUCTIONS.md",
+    "debate_log": "DEBATE_LOG.md",
+    "decisions": "DECISIONS.md"
+  },
+  "ai_entry_files": [
+    "README.md",
+    "ROADMAP.md",
+    "DEV_LOG.md",
+    "AI_CONTEXT.md",
+    "AI_INSTRUCTIONS.md",
+    "PROJECT_MANIFEST.json"
+  ],
+  "folders": [
+    "docs",
+    "prompts",
+    "input",
+    "output",
+    "reports",
+    "src",
+    "assets",
+    "tests",
+    "config"
+  ],
+  "rules": [
+    "Read AI_CONTEXT.md before editing.",
+    "Update DEV_LOG.md after editing.",
+    "Record major decisions in DECISIONS.md.",
+    "Record AI review discussions in DEBATE_LOG.md.",
+    "Do not delete existing files unless explicitly requested."
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://akasha.library/schemas/event.schema.json",
+  "title": "Clustered Event",
+  "description": "事件聚合後的單一事件，對應規格 §7.3。",
+  "type": "object",
+  "required": [
+    "event_id",
+    "beat",
+    "headline",
+    "context",
+    "article_ids",
+    "sources",
+    "source_count",
+    "source_tiers",
+    "tw_highlight",
+    "selection_score",
+    "confidence",
+    "claim_trace"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^daily_\\d{8}_evt_\\d{3}$",
+      "description": "格式：daily_YYYYMMDD_evt_NNN。"
+    },
+    "beat": {
+      "type": "string",
+      "enum": ["INTL", "ARTS", "AI", "ECON", "PTS_LOCAL", "TW_STORY"]
+    },
+    "sub_beat": {
+      "type": ["string", "null"]
+    },
+    "headline": {
+      "type": "string",
+      "minLength": 1
+    },
+    "context": {
+      "type": "string",
+      "description": "2-3 句脈絡說明。"
+    },
+    "article_ids": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+      "minItems": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/sourceRef" },
+      "minItems": 1,
+      "description": "規格 §20.1 P0：每個 selected item 至少 1 個 source。"
+    },
+    "source_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "source_tiers": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "type": "integer", "enum": [1, 2, 3] },
+          { "type": "string", "enum": ["TW"] }
+        ]
+      },
+      "minItems": 1
+    },
+    "tw_highlight": {
+      "type": "boolean"
+    },
+    "tw_highlight_reason": {
+      "type": ["string", "null"],
+      "description": "tw_highlight=true 時必須非 null（規格 §20.1 P0）。"
+    },
+    "tw_highlight_keywords": {
+      "type": ["array", "null"],
+      "items": { "type": "string" }
+    },
+    "selection_score": {
+      "type": "number",
+      "description": "selection_score.yaml 計算結果。"
+    },
+    "selection_reason": {
+      "type": ["string", "null"]
+    },
+    "drop_reason": {
+      "type": ["string", "null"],
+      "description": "未選入時記錄被丟的原因（規格 §8.3）。"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "single_source_warning": {
+      "type": "boolean",
+      "description": "source_count = 1 時必須為 true（規格 §20.1 P0）。"
+    },
+    "opinion_level": {
+      "type": "string",
+      "enum": ["none", "light_context", "explicit_commentary"]
+    },
+    "claim_trace": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/claim" },
+      "minItems": 1,
+      "description": "規格 §9.3 與 §20.1 P0：每個 selected item 至少 1 條 claim_trace。"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "tw_highlight": { "const": true } } },
+      "then": { "required": ["tw_highlight_reason"] }
+    },
+    {
+      "if": { "properties": { "source_count": { "const": 1 } } },
+      "then": { "required": ["single_source_warning"] }
+    }
+  ],
+  "definitions": {
+    "sourceRef": {
+      "type": "object",
+      "required": ["source_id", "publisher", "title", "url", "published_at"],
+      "additionalProperties": false,
+      "properties": {
+        "source_id": { "type": "string" },
+        "name": { "type": "string" },
+        "publisher": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "published_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["claim", "source_id", "source_url", "support_type"],
+      "additionalProperties": false,
+      "properties": {
+        "claim": { "type": "string", "minLength": 1 },
+        "source_id": { "type": "string" },
+        "source_title": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri" },
+        "support_type": {
+          "type": "string",
+          "enum": ["direct", "indirect", "background"]
+        }
+      }
+    }
+  }
+}

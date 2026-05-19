@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://akasha.library/schemas/article.schema.json",
+  "title": "Normalized Article",
+  "description": "RSS 抓取後正規化的單篇文章，對應規格 §5.3。",
+  "type": "object",
+  "required": [
+    "article_id",
+    "source_id",
+    "publisher",
+    "tier",
+    "beat_candidates",
+    "title",
+    "url",
+    "canonical_url",
+    "published_at",
+    "fetched_at",
+    "lang",
+    "raw_hash"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "article_id": {
+      "type": "string",
+      "description": "sha256(source_id + canonical_url)，重跑必須產出相同 ID。",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "source_id": {
+      "type": "string",
+      "description": "對應 feeds.yaml 中的 source_id。",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "出版者顯示名稱。"
+    },
+    "tier": {
+      "oneOf": [
+        { "type": "integer", "enum": [1, 2, 3] },
+        { "type": "string", "enum": ["TW"] }
+      ],
+      "description": "來源可靠度分級。"
+    },
+    "beat_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["INTL", "ARTS", "AI", "ECON", "PTS_LOCAL", "TW_STORY"]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "sub_beat": {
+      "type": ["string", "null"],
+      "description": "ARTS 子分類（時尚與美學、文學、戲劇與音樂、電影、建築、舞蹈、視覺藝術、攝影/新媒體）。"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": ["string", "null"]
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "清掉追蹤參數後的 URL，用於 dedup。"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "fetched_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lang": {
+      "type": "string",
+      "enum": ["en", "zh-TW"]
+    },
+    "raw_hash": {
+      "type": "string",
+      "description": "原始 RSS entry 的 sha256，用於偵測同 URL 內容是否變更。",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  }
+}

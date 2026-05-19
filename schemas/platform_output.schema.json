@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://akasha.library/schemas/platform_output.schema.json",
+  "title": "Daily Report Item with Platform Outputs",
+  "description": "館報中單一事件的最終輸出 item，包含 X / Threads / Voice 三種平台輸出。對應規格 §11.3。",
+  "type": "object",
+  "required": [
+    "event_id",
+    "headline",
+    "context",
+    "beat",
+    "thread_text",
+    "threads_text",
+    "voice_text",
+    "platform_outputs",
+    "sources",
+    "source_count",
+    "confidence",
+    "claim_trace",
+    "tw_highlight",
+    "selection_score"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "pattern": "^daily_\\d{8}_evt_\\d{3}$"
+    },
+    "headline": { "type": "string", "minLength": 1 },
+    "context": { "type": "string" },
+    "beat": {
+      "type": "string",
+      "enum": ["INTL", "ARTS", "AI", "ECON", "PTS_LOCAL", "TW_STORY"]
+    },
+    "sub_beat": { "type": ["string", "null"] },
+    "thread_text": {
+      "type": "string",
+      "description": "X 版完整 thread 文字（未切分）。"
+    },
+    "threads_text": {
+      "type": "string",
+      "description": "Threads 版完整文字（未切分）。"
+    },
+    "voice_text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "規格 §17.2：不得包含 URL、emoji 🧵 📌 📎、1/N、Markdown link。由 validators.py 強制 lint。",
+      "not": {
+        "anyOf": [
+          { "pattern": "https?://" },
+          { "pattern": "🧵" },
+          { "pattern": "📌" },
+          { "pattern": "📎" },
+          { "pattern": "\\d+/\\d+" },
+          { "pattern": "\\[[^\\]]+\\]\\([^)]+\\)" }
+        ]
+      }
+    },
+    "platform_outputs": {
+      "type": "object",
+      "required": ["x", "threads", "voice"],
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "type": "object",
+          "required": ["max_chars", "posts"],
+          "additionalProperties": false,
+          "properties": {
+            "max_chars": { "const": 280 },
+            "posts": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 280
+              }
+            }
+          }
+        },
+        "threads": {
+          "type": "object",
+          "required": ["max_chars", "posts"],
+          "additionalProperties": false,
+          "properties": {
+            "max_chars": { "const": 500 },
+            "posts": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "maxLength": 500
+              }
+            }
+          }
+        },
+        "voice": {
+          "type": "object",
+          "required": ["text"],
+          "additionalProperties": false,
+          "properties": {
+            "text": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "publisher", "title", "url", "published_at"],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": { "type": "string" },
+          "name": { "type": "string" },
+          "publisher": { "type": "string" },
+          "title": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "published_at": { "type": "string", "format": "date-time" }
+        }
+      }
+    },
+    "source_count": { "type": "integer", "minimum": 1 },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "single_source_warning": { "type": "boolean" },
+    "opinion_level": {
+      "type": "string",
+      "enum": ["none", "light_context", "explicit_commentary"]
+    },
+    "claim_trace": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["claim", "source_id", "source_url", "support_type"],
+        "additionalProperties": false,
+        "properties": {
+          "claim": { "type": "string", "minLength": 1 },
+          "source_id": { "type": "string" },
+          "source_title": { "type": "string" },
+          "source_url": { "type": "string", "format": "uri" },
+          "support_type": {
+            "type": "string",
+            "enum": ["direct", "indirect", "background"]
+          }
+        }
+      }
+    },
+    "tw_highlight": { "type": "boolean" },
+    "tw_highlight_reason": { "type": ["string", "null"] },
+    "selection_score": { "type": "number" },
+    "selection_reason": { "type": ["string", "null"] }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "tw_highlight": { "const": true } } },
+      "then": { "required": ["tw_highlight_reason"] }
+    },
+    {
+      "if": { "properties": { "source_count": { "const": 1 } } },
+      "then": {
+        "properties": { "single_source_warning": { "const": true } },
+        "required": ["single_source_warning"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build
+dist/
+build/
+*.spec
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.key
+*.pem
+
+# Logs
+*.log
+
+# Output
+output/*
+reports/*
+
+# Keep folder placeholders
+!output/.gitkeep
+!reports/.gitkeep

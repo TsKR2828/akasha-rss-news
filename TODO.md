@@ -38,7 +38,7 @@
 
 - [x] `requirements.txt` 加入：feedparser, requests, beautifulsoup4, python-dateutil, pydantic, jsonschema, PyYAML, rapidfuzz, anthropic, pytest
 - [x] 本機 `git init` + 首次 commit 完成
-- [ ] 建立 GitHub remote 並 push（需月月在 GitHub 建 repo，或執行 `gh repo create akasha-rss-news --private --source=. --push`）
+- [x] 建立 GitHub remote 並 push（origin: https://github.com/TsKR2828/akasha-rss-news, branch: main）
 
 ---
 

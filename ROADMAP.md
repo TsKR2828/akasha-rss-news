@@ -27,7 +27,7 @@ output/logs/run_YYYYMMDD.json
 
 - [x] 建立專案骨架
 - [x] 初始化 Git
-- [ ] 建立 GitHub repo
+- [x] 建立 GitHub repo（https://github.com/TsKR2828/akasha-rss-news）
 - [x] `config/feeds.yaml`（規格 §3.1 全部 29 個 source）
 - [x] `config/beats.yaml`（規格 §2.1、§6.1）
 - [x] `config/selection_score.yaml`（規格 §8.2）
@@ -42,7 +42,7 @@ output/logs/run_YYYYMMDD.json
 
 **驗收：** ✅ Schema 自我驗證通過、✅ 每個 source 有穩定 `source_id`、✅ prompt 明列 Claude 可做/不可做。
 
-**Phase 0 狀態：** 設定 / Schema / Prompt / 測試 / 本機 git 全數完成。剩下 GitHub remote 由月月手動建立。
+**Phase 0 狀態：** ✅ 全數完成（含 GitHub remote `TsKR2828/akasha-rss-news`、branch: main）。可進 Phase 1。
 
 ---
 

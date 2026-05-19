@@ -87,7 +87,7 @@ Phase 0 設定/Schema/Prompt 全數完成，剩下兩件：
 - ✅ requirements.txt
 - ✅ tests/test_schemas.py（37/37 PASSED）
 - ✅ 本機 git 初始化 + 首次 commit
-- ⏳ GitHub remote 建立與 push（需月月授權）
+- ✅ GitHub remote 建立與 push（origin: https://github.com/TsKR2828/akasha-rss-news, branch: main，commit 22233c4）
 
 ### Notes（Phase 0 收尾）
 

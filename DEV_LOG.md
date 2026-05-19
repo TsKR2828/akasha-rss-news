@@ -148,3 +148,68 @@ Phase 0 設定/Schema/Prompt 全數完成，剩下兩件：
 - ✅ 實機 BBC fetch + normalize end-to-end
 
 下一步：Phase 2 — classifier / tw_highlight / dedup / event_cluster / selector。
+
+### Added（同日續，Phase 2 — 分類、去重、事件聚合）
+
+新增程式碼：
+
+- `src/classifier.py`、`src/tw_highlight.py`、`src/dedup.py`、`src/event_cluster.py`、`src/selector.py`
+- `tests/test_classifier.py` (11)、`test_tw_highlight.py` (10)、`test_dedup.py` (9)、`test_event_cluster.py` (16)、`test_selector.py` (13)
+
+**classifier.py**：
+- 規格 §6.1 加權公式：`0.6 * source_default + 0.3 * keyword + 0.1 * entity`（MVP entity = 0）
+- 規格 §6.2 AI 例外：The Verge / BBC Tech / Ars Technica AI 沒命中 AI 關鍵字 → AI 候選降為 0
+- PTS_LOCAL 直接歸類，不與其他 beat 競爭
+
+**tw_highlight.py**：
+- positive_keyword 命中 → 第一道
+- false_positive_review 命中 + 無 context → 排除
+- 無 context_keyword → 排除（只是順帶提一句）
+- 同時有 positive 與 context → highlight=true，組合 reason
+
+**dedup.py**：
+- 規則 1：canonical_url 完全相同 → drop（rule="exact_canonical_url"）
+- 規則 2：同源 + 標題正規化相似度 ≥ 0.92 → drop（rule="same_source_similar_title"）
+- 跨源同題不在本層處理，留給 event_cluster
+
+**event_cluster.py**：
+- 規格 §7.2 MVP 策略：canonical URL / 標題 token_set_ratio ≥ 0.88 / 共同關鍵詞 ≥ 3 / 24h 窗口
+- PTS_LOCAL 與其他 beat 隔離
+- `derive_confidence`: ≥2 Tier 1/2 source → high；單 Tier 3 → low；其他 → medium
+- `merge_tw_highlight`: 任一篇 highlight 即傳遞到 event
+- `build_event`: 產出符合 `event.schema.json` 的結構，含 claim_trace 占位（Phase 3 Claude 會重寫）
+
+**selector.py**：
+- 規格 §8.2 selection_score 全部正/負分項；§8.3 drop_reason
+- Beat-specific bonus 用關鍵字啟發式（INTL: war/summit; ARTS: pulitzer/cannes; AI: gpt/foundation model; ECON: fed/inflation）
+- `same_topic_already_selected` 用「已選事件 keyword set 與當前事件交集 ≥ 3」判斷
+- `daily_limits` max 強制；輸出按 beat 順序 INTL → ARTS → AI → ECON → PTS_LOCAL → TW_STORY
+
+**測試**：128 條全綠（37 schemas + 32 Phase 1 + 59 Phase 2），0.54s。
+
+**實機驗證（2026-05-19 12:44）**：
+- classifier: 32 BBC articles → 32 INTL
+- tw_highlight: 1 highlight 命中（"Trump told Taiwan not to 'go independent'"）
+- dedup: 0 drops（BBC 本身無重複）
+- event_cluster: 32 articles → 29 events（3 篇被合進既有 cluster）
+- selector: 29 events → 5 selected
+  - 第一名 score=70：Taiwan-China 主題（30 taiwan_foreign + 15 tier_1 + 25 major_geopolitical）
+  - 第二到第五名 score=40：Ukraine kill-zone / 政治處決 / Everest / Iran-Trump
+  - 被丟事件記入 `_selection_manifest.json` 與 `drop_reason`
+
+### Notes（Phase 2）
+
+- entity weight (0.1) 在 MVP 是 0；未來接 spaCy NER 或外部服務後再上線。
+- selector 的 beat signal keywords 是寫死在 src/selector.py，不是 config——未來可移到 yaml。
+- `same_topic_already_selected` 判定用 keyword 交集 ≥ 3，可能太嚴或太鬆；待實機跑全部 28 個 sources 後再校準。
+- 因為今天只跑了 BBC World 一個 source，ARTS / AI / ECON / PTS_LOCAL 都是 0 件——驗證 pipeline 邏輯沒問題，但無法測 daily_limits min。
+
+### Phase 2 完成狀態
+
+- ✅ 5 個 src 模組
+- ✅ 59 條 Phase 2 測試
+- ✅ events JSON 通過 event.schema.json
+- ✅ 實機 BBC pipeline end-to-end 跑通
+- ✅ selection_manifest.json 含 drop_reason
+
+下一步：Phase 3 — `claude_rewrite.py` + `claim_trace.py` + `validators.py`。

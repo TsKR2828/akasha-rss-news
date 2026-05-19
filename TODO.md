@@ -51,17 +51,27 @@
 - [x] `tests/test_fetch_rss.py`（12 條）+ `tests/test_normalize.py`（20 條）
 - [x] 實機驗證：BBC World 抓 32/36 articles，schema 全過
 
-### Phase 2 起手清單
+### Phase 2 完成（2026-05-19）
 
-開始實作分類、去重、事件聚合（規格 §2、§6、§7、§8）。
+- [x] `src/classifier.py` — Beat 分類 + AI 例外二次過濾
+- [x] `src/tw_highlight.py` — positive + context + FP review
+- [x] `src/dedup.py` — canonical_url + 同源相似標題（rapidfuzz）
+- [x] `src/event_cluster.py` — 24h 窗口 + 標題 0.88 + 共同關鍵詞 ≥ 3
+- [x] `src/selector.py` — selection_score + daily_limits + drop_reason + same_topic 罰分
+- [x] `tests/test_classifier.py` (11) + `test_tw_highlight.py` (10) + `test_dedup.py` (9) + `test_event_cluster.py` (16) + `test_selector.py` (13) — 59 條全綠
+- [x] events JSON 通過 `schemas/event.schema.json`（test_event_cluster::TestEventSchemaConformance）
+- [x] 實機驗證：BBC 32 articles → 29 events → 5 selected（Trump-Taiwan 70 分排第一）
 
-- [ ] `src/classifier.py` — Beat 分類（source 0.6 + keyword 0.3 + entity 0.1，min 0.45）
-- [ ] `src/tw_highlight.py` — TW_HIGHLIGHT 偵測（positive + context + false_positive_review）
-- [ ] `src/dedup.py` — canonical_url + 標題正規化 + 共同關鍵詞
-- [ ] `src/event_cluster.py` — 事件聚合（24h 窗口、相似度 0.88、共同關鍵詞 ≥ 3、共同實體 ≥ 2）
-- [ ] `src/selector.py` — selection_score 計算 + daily_limits 篩選 + drop_reason
-- [ ] `tests/test_classifier.py` / `test_dedup.py` / `test_selector.py`
-- [ ] 驗收：events JSON 通過 `schemas/event.schema.json`
+### Next — Phase 3 起手
+
+Claude 改寫 + Claim trace + 文風 lint。
+
+- [ ] `src/claude_rewrite.py` — 呼叫 Anthropic SDK，套用 `prompts/rewrite_prompt.md`
+- [ ] `src/claim_trace.py` — 驗證每條 claim 對應某 source_id
+- [ ] `src/validators.py` — banned_phrases lint + voice_text URL/emoji lint + confidence 標記
+- [ ] HTML / script / 追蹤參數清理（送 Claude 之前）
+- [ ] `tests/test_claude_rewrite.py`（mocked SDK） + `test_validators.py`
+- [ ] 驗收：跑完一輪後，所有 selected event 的 `claim_trace` 都有 source 對應
 
 ---
 

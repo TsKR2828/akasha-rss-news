@@ -95,3 +95,56 @@ Phase 0 設定/Schema/Prompt 全數完成，剩下兩件：
 - 測試使用 `RefResolver` 是為了讓 report.schema.json 能解析其對 platform_output.schema.json 的 `$ref`。
 - 建立 GitHub repo 的建議指令：`gh repo create akasha-rss-news --private --source=. --push --description "阿卡夏圖書館・每日館報系統"`。
 - `docs/spec.md` 是 scaffold 留下的 stub，內容與專案無關；真正的規格是根目錄的 `akashic-daily-report-final-spec-v1.1.md`。可考慮刪除或改寫。
+
+### Added（同日續，Phase 1 — RSS 抓取與正規化）
+
+新增程式碼：
+
+- `src/__init__.py`、`src/fetch_rss.py`、`src/normalize.py`
+- `conftest.py`（project root）— 讓 pytest 找得到 `src` package
+- `tests/test_fetch_rss.py`（12 條）
+- `tests/test_normalize.py`（20 條）
+- `.gitignore`：新增 `data/`（pipeline 中繼資料不入 git）
+
+`src/fetch_rss.py`：
+- 從 `config/feeds.yaml` 讀來源、`ThreadPoolExecutor` 併發抓取
+- 每個 source: timeout 10s + 2 retries + exponential backoff
+- `data/feed_health_state.json` 跨次累計 `consecutive_failures`
+- `decide_overall_status` 實作規格 §4.2 三種 fail_mode：
+  - `single_source_failed` → `partial` + warning
+  - `all_sources_failed` → `failed` + abort（退出碼 2）
+  - `consecutive_failures >= 3` → 額外告警
+- CLI: `python -m src.fetch_rss [--only X] [--date YYYY-MM-DD]`
+
+`src/normalize.py`：
+- `canonicalize_url`: 去除 utm_*, fbclid, gclid 等 10 種追蹤參數 + lowercase scheme/host
+- `compute_article_id = sha256(source_id|canonical_url)` — 重跑必同 ID
+- `parse_published`: 多欄位 fallback（published / updated / created）+ 統一 +08:00 ISO
+- `fetch_window_start`: 規格 §5.2 公式（report 05:00 - 24h - 3h grace）
+- 輸出符合 `schemas/article.schema.json` 的 JSON 到 `data/articles/YYYY-MM-DD/`
+- CLI: `python -m src.normalize [--date YYYY-MM-DD]`
+
+測試：69 條全綠（37 schemas + 12 fetch_rss + 20 normalize），0.53s。
+
+實機驗證（2026-05-19 12:31）：
+- `python -m src.fetch_rss --only bbc_world` → 抓 27 KB BBC RSS，feed_health.json 寫入正確
+- `python -m src.normalize` → 36 entries 進 parser，32 個落在 24h+3h 窗口內，4 個太舊被濾掉
+- 抽樣檔案內容通過 schema：article_id 64 hex、source/publisher/tier 對齊 feeds.yaml
+
+### Notes（Phase 1）
+
+- BBC 在 URL 上加自家的 `at_medium=RSS&at_campaign=rss`，不在我的 TRACKING_PARAMS 預設清單；目前不影響 dedup（同源同 URL 都會帶這兩個），但 Phase 2 跨源比對 canonical_url 時若發現誤判，可擴充 TRACKING_PARAMS。
+- `RefResolver` deprecation warning 仍在；未來可遷移到 `referencing` library。
+- 還沒測過 Reuters / RSSHub proxy 來源的可用性；建議 Phase 2 開始前實機 sweep 一次全部 enabled sources，把實際掛掉的 mark `enabled: false`。
+- `data/` 已加入 .gitignore；歷史 raw XML 與 normalized JSON 不入 git，可靠 `fetch_rss` 重跑重建。
+
+### Phase 1 完成狀態
+
+- ✅ `src/fetch_rss.py` + `src/normalize.py`
+- ✅ feed health log + consecutive_failures state
+- ✅ timeout / retry / backoff
+- ✅ 時間窗口
+- ✅ 32 條 Phase 1 測試
+- ✅ 實機 BBC fetch + normalize end-to-end
+
+下一步：Phase 2 — classifier / tw_highlight / dedup / event_cluster / selector。

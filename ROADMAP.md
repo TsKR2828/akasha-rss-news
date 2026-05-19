@@ -50,14 +50,15 @@ output/logs/run_YYYYMMDD.json
 
 任何單一來源掛掉，不能讓今天的館報整個失敗。
 
-- [ ] `src/fetch_rss.py`（讀 feeds.yaml、併發抓取、記錄 feed health）
-- [ ] `src/normalize.py`（RSS → normalized article，規格 §5.3）
-- [ ] `data/raw/YYYY-MM-DD/` 保留原始 XML
-- [ ] `data/articles/` 輸出正規化 JSON
-- [ ] feed health log（規格 §4.3）
-- [ ] timeout 10s + 2 retries + exponential backoff
-- [ ] 時間窗口：`report_date 05:00 - 24h - 3h grace`
-- [ ] `tests/test_fetch_rss.py`
+- [x] `src/fetch_rss.py`（讀 feeds.yaml、併發抓取、記錄 feed health）
+- [x] `src/normalize.py`（RSS → normalized article，規格 §5.3）
+- [x] `data/raw/YYYY-MM-DD/` 保留原始 XML
+- [x] `data/articles/` 輸出正規化 JSON
+- [x] feed health log（規格 §4.3）
+- [x] timeout 10s + 2 retries + exponential backoff
+- [x] 時間窗口：`report_date 05:00 - 24h - 3h grace`
+- [x] `tests/test_fetch_rss.py` + `tests/test_normalize.py`（32 條，全綠）
+- [x] 實機 BBC World fetch + normalize 驗證 end-to-end（32/36 articles 入窗口）
 
 **驗收：**
 - 單一 source 失敗 → `continue_with_warning`，`warnings[]` 有條目

@@ -37,6 +37,9 @@ Thumbs.db
 output/*
 reports/*
 
+# Pipeline data (raw RSS, normalized articles, events) — regeneratable
+data/
+
 # Keep folder placeholders
 !output/.gitkeep
 !reports/.gitkeep

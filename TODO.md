@@ -42,14 +42,26 @@
 
 ---
 
-## Next — Phase 1 起手
+## Now — Phase 1 收尾 / Phase 2 起手
 
-當 Phase 0 全部 ✅ 後開始。
+### Phase 1 完成（2026-05-19）
 
-- [ ] `src/fetch_rss.py` 最小可跑版（先抓 BBC World 一個 source）
-- [ ] `src/normalize.py` 輸出規格 §5.3 的 article JSON
-- [ ] 確認 `article_id = sha256(source_id + canonical_url)` 重跑得到相同值
-- [ ] 故意關掉一個 source URL，確認 `continue_with_warning` 有觸發
+- [x] `src/fetch_rss.py` — concurrent fetch + timeout/retry/backoff + consecutive_failures state
+- [x] `src/normalize.py` — feedparser + canonicalize_url + sha256 article_id + fetch window
+- [x] `tests/test_fetch_rss.py`（12 條）+ `tests/test_normalize.py`（20 條）
+- [x] 實機驗證：BBC World 抓 32/36 articles，schema 全過
+
+### Phase 2 起手清單
+
+開始實作分類、去重、事件聚合（規格 §2、§6、§7、§8）。
+
+- [ ] `src/classifier.py` — Beat 分類（source 0.6 + keyword 0.3 + entity 0.1，min 0.45）
+- [ ] `src/tw_highlight.py` — TW_HIGHLIGHT 偵測（positive + context + false_positive_review）
+- [ ] `src/dedup.py` — canonical_url + 標題正規化 + 共同關鍵詞
+- [ ] `src/event_cluster.py` — 事件聚合（24h 窗口、相似度 0.88、共同關鍵詞 ≥ 3、共同實體 ≥ 2）
+- [ ] `src/selector.py` — selection_score 計算 + daily_limits 篩選 + drop_reason
+- [ ] `tests/test_classifier.py` / `test_dedup.py` / `test_selector.py`
+- [ ] 驗收：events JSON 通過 `schemas/event.schema.json`
 
 ---
 

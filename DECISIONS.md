@@ -50,3 +50,40 @@
 - 設計稿 §12 的 `akasha-voice-play-tasks` PostMessage type 不需實作
 - IndexedDB 不設 TTL，長期保留所有歷史館報
 - GitHub Pages 決策留到 Phase 4 後再談
+
+---
+
+## 2026-05-20 | Routine 架構 — 遠端 agent 自行改寫
+
+### Decision
+
+Claude Code Routine 使用遠端 Sonnet agent，Step 8（改寫）由 agent 自己完成，不透過 Anthropic Python SDK 呼叫 API。
+
+### Reason
+
+遠端 Routine agent 跑在 Anthropic 雲端，無法存取本機環境變數（ANTHROPIC_API_KEY）。但 agent 本身就是 Claude，可以直接讀取 `prompts/rewrite_prompt.md` 並依照規則改寫事件。
+
+### Impact
+
+- 不需要在遠端環境設定 ANTHROPIC_API_KEY
+- Step 8 的改寫品質取決於 Sonnet 模型能力（vs 本機 pipeline 用的是 SDK 呼叫，可指定任意模型）
+- `src/pipeline.py` 和 `src/claude_rewrite.py` 仍保留完整的本機 SDK 呼叫路徑，供本機手動執行使用
+- Routine 產出 push 到 `daily-reports` branch（不汙染 main）
+- 通知管道先不設定，之後再加
+
+---
+
+## 2026-05-20 | 通知管道延後
+
+### Decision
+
+Phase 5 先不設定通知管道，後續再加。
+
+### Reason
+
+月月 2026-05-20 決定。先確保 pipeline + routine 穩定運行，通知是錦上添花。
+
+### Impact
+
+- Routine 完成後不會主動推送通知，需要手動到 GitHub 或 claude.ai/code/routines 查看結果
+- 之後可選 Telegram / Discord / Email 任一管道

@@ -111,10 +111,11 @@ akashic-daily-report/
 │   ├── dedup.py                # ✅ Phase 2
 │   ├── event_cluster.py        # ✅ Phase 2
 │   ├── selector.py             # ✅ Phase 2
-│   ├── claude_rewrite.py       # ⏳ Phase 3
-│   ├── claim_trace.py          # ⏳ Phase 3
-│   ├── validators.py           # ⏳ Phase 3
-│   ├── formatter.py            # ⏳ Phase 4
+│   ├── claude_rewrite.py       # ✅ Phase 3
+│   ├── claim_trace.py          # ✅ Phase 3
+│   ├── validators.py           # ✅ Phase 3
+│   ├── formatter.py            # ✅ Phase 4
+│   ├── pipeline.py             # ✅ Phase 5 (全 pipeline 入口)
 │   └── tw_stories.json
 ├── tests/
 │   ├── test_*.py
@@ -218,28 +219,37 @@ daily_limits:
 
 ## 使用
 
-### 手動執行（開發測試）
+### 完整 Pipeline（一鍵執行）
 
 ```bash
-python src/fetch_rss.py            # 抓取 RSS
-python src/classifier.py           # 分類
-python src/event_cluster.py        # 事件聚合
-python src/selector.py             # 選題
-python src/claude_rewrite.py       # Claude 改寫
-python src/formatter.py            # 產出 Markdown / Voice / Platform 草稿
-python src/validators.py           # Schema 與 lint 驗證
+python -m src.pipeline                     # 今天（Asia/Taipei）
+python -m src.pipeline --date 2026-05-20   # 指定日期
+python -m src.pipeline --dry-run           # 跳過 Claude API + 不寫檔
+```
+
+Pipeline 依序執行 9 步：fetch → normalize → classify → tw_highlight → dedup → event_cluster → select → claude_rewrite → formatter。
+
+### 手動執行個別模組（開發測試）
+
+```bash
+python -m src.fetch_rss --date 2026-05-20
+python -m src.normalize --date 2026-05-20
+python -m src.classifier --date 2026-05-20
+python -m src.tw_highlight --date 2026-05-20
+python -m src.dedup --date 2026-05-20
+python -m src.event_cluster --date 2026-05-20
+python -m src.selector --date 2026-05-20
+python -m src.claude_rewrite --date 2026-05-20
+python -m src.formatter --date 2026-05-20
 ```
 
 ### 自動排程（Claude Code Routine）
 
-```yaml
-routine:
-  schedule: "Daily 05:00 Asia/Taipei"
-  repo: "akashic-daily-report"
-  prompt_file: "routine_prompt.md"
-```
+每日 05:00 Asia/Taipei 自動執行。Routine ID: `trig_01YZgdnxrvUsTLDh6YQKaDY4`
 
-同日重跑為 idempotent：相同 `report_id` 會覆寫輸出檔，通知只發一次。
+管理連結：https://claude.ai/code/routines/trig_01YZgdnxrvUsTLDh6YQKaDY4
+
+同日重跑為 idempotent：相同 `report_id` 會覆寫輸出檔。
 
 ---
 
@@ -420,9 +430,9 @@ MVP 不做自動化。
 | 0 | Spec freeze：feeds、beats、selection_score、schema、prompt | ✅ 完成 |
 | 1 | RSS 抓取與正規化、feed health、單元測試 | ✅ 完成 |
 | 2 | 分類（含 NER）、去重、事件聚合、選題、feed sweep | ✅ 完成 |
-| 3 | Claude 改寫、claim_trace、confidence、文風 lint | ⏳ 下一步 |
-| 4 | Markdown / Voice / X / Threads 輸出、schema validation、golden tests | ❌ |
-| 5 | Routine 設定、通知管道、同日重跑測試 | ❌ |
+| 3 | Claude 改寫、claim_trace、confidence、文風 lint | ✅ 完成 |
+| 4 | Markdown / Voice / X / Threads 輸出、schema validation | ✅ 完成 |
+| 5 | Pipeline 入口、Routine 設定、穩定性測試 | 🔧 進行中 |
 
 ### 實作優先順序
 

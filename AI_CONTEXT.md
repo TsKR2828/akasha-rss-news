@@ -34,7 +34,7 @@ output/logs/run_YYYYMMDD.json     # run log
 | 2 分類聚合 | ✅ 完成 | classifier + tw_highlight + dedup + event_cluster + selector |
 | 3 Claude 改寫 | ✅ 完成 | html_cleaner + claude_rewrite + claim_trace + validators |
 | 4 多格式輸出 | ✅ 完成 | formatter（JSON / MD / voice / X / Threads + run log + 驗證） |
-| **5 Routine** | 🔧 **進行中** | pipeline.py 完成，待設定 Claude Code Routine |
+| **5 Routine** | 🔧 **進行中** | pipeline.py + routine 已設定，待穩定性驗證 |
 
 **數據快照（2026-05-20）**：
 - 26 enabled sources / 0 failed / 461 articles
@@ -166,18 +166,24 @@ tests/test_pipeline.py          19 條
 
 ## Recent Commits
 
-- `ce185d5` feat(phase-3-4): Claude rewrite pipeline + multi-format output（Phase 2 尾巴～Phase 4 全部）
-- Phase 5 pipeline + routine prompt 修改尚未 commit
+- `7c28fb2` feat(phase-5): pipeline orchestrator + routine prompt
+- `ce185d5` feat(phase-3-4): Claude rewrite pipeline + multi-format output
 
 ---
 
 ## Next Step — Phase 5 剩餘
 
-已完成：`src/pipeline.py`（19 條測試）+ `prompts/routine_prompt.md` 正式版。
+已完成：`src/pipeline.py`（19 條測試）+ `prompts/routine_prompt.md` 正式版 + Routine 已設定。
+
+- Routine ID: `trig_01YZgdnxrvUsTLDh6YQKaDY4`
+- 排程: `0 21 * * *` UTC = 每日 05:00 Asia/Taipei
+- 模型: claude-sonnet-4-6
+- 管理: https://claude.ai/code/routines/trig_01YZgdnxrvUsTLDh6YQKaDY4
+- 遠端 agent 自己做 Step 8 改寫（不需要 ANTHROPIC_API_KEY）
+- 產出 push 到 `daily-reports` branch
 
 TODO 清單（`TODO.md`）：
 
-- [ ] Claude Code Routine 設定（每日 05:00 Asia/Taipei）
 - [ ] 通知管道（月月決定先不做，之後再加）
 - [ ] 同日重跑 idempotent 測試
 - [ ] 連跑 7 天穩定性測試
@@ -204,7 +210,7 @@ TODO 清單（`TODO.md`）：
 
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
 - **Branch**：main
-- **Latest commit**：`34782d0` feat(phase-2)（Phase 3–4 尚未 commit）
+- **Latest commit**：`7c28fb2` feat(phase-5): pipeline orchestrator + routine prompt
 - **User**：月月 / dr1090a@gmail.com
 
 ---

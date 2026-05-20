@@ -68,7 +68,7 @@ Routine 自動化 + 7 天穩定性。
 
 - [x] 寫 `src/pipeline.py`（串接 Phase 1–4 所有模組的 main 入口）+ 19 條測試
 - [x] 更新 `prompts/routine_prompt.md` 為正式版（指令：`python -m src.pipeline`）
-- [ ] Claude Code Routine 設定（每日 05:00 Asia/Taipei）
+- [x] Claude Code Routine 設定（每日 05:00 Asia/Taipei → `0 21 * * *` UTC，ID: trig_01YZgdnxrvUsTLDh6YQKaDY4）
 - [ ] 通知管道設定（月月決定先不做，之後再加）
 - [ ] 同日重跑 idempotent 測試（同一 reportId 覆寫）
 - [ ] 連跑 7 天穩定性測試

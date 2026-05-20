@@ -25,7 +25,7 @@ output/logs/run_YYYYMMDD.json     # run log
 
 ## Current Status
 
-**Phase 0–4 全部完成，Phase 5 尚未開始。**
+**Phase 0–4 完成，Phase 5 進行中（pipeline + routine prompt 完成）。**
 
 | Phase | 狀態 | 說明 |
 |---|---|---|
@@ -34,12 +34,12 @@ output/logs/run_YYYYMMDD.json     # run log
 | 2 分類聚合 | ✅ 完成 | classifier + tw_highlight + dedup + event_cluster + selector |
 | 3 Claude 改寫 | ✅ 完成 | html_cleaner + claude_rewrite + claim_trace + validators |
 | 4 多格式輸出 | ✅ 完成 | formatter（JSON / MD / voice / X / Threads + run log + 驗證） |
-| **5 Routine** | ⏳ **下一步** | Claude Code Routine 每日 05:00 自動執行 |
+| **5 Routine** | 🔧 **進行中** | pipeline.py 完成，待設定 Claude Code Routine |
 
 **數據快照（2026-05-20）**：
 - 26 enabled sources / 0 failed / 461 articles
-- 13 個 source modules，0 個 pending
-- 306 條測試全綠（~5.7 秒）
+- 14 個 source modules，0 個 pending
+- 325 條測試全綠（~3.7 秒）
 
 ---
 
@@ -68,7 +68,7 @@ output/logs/run_YYYYMMDD.json     # run log
 | 檔案 | 用途 |
 |---|---|
 | `prompts/rewrite_prompt.md` | Claude 改寫指令（含 injection 防護、可做/不可做、checklist） |
-| `prompts/routine_prompt.md` | 7-step pipeline 入口（Phase 5 需更新為正式版） |
+| `prompts/routine_prompt.md` | 正式版 — 呼叫 `python -m src.pipeline` 的 9-step 流程 |
 
 ### Source Code（Phase 1–4，全部完成）
 
@@ -87,6 +87,7 @@ output/logs/run_YYYYMMDD.json     # run log
 | `src/claim_trace.py` | verify + fix + fallback claim + single_source_warning | 19 條 |
 | `src/validators.py` | banned_phrases(8) + voice_text lint(6) + confidence/opinion/claim/platform | 27 條 |
 | `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI | 56 條 |
+| `src/pipeline.py` | 全 pipeline 入口（串接 9 步）+ stats 收集 + 摘要 | 19 條 |
 
 ### Docs
 
@@ -111,8 +112,9 @@ tests/test_claude_rewrite.py    16 條（mocked SDK）
 tests/test_claim_trace.py       19 條
 tests/test_validators.py        27 條
 tests/test_formatter.py         56 條
+tests/test_pipeline.py          19 條
 ───────────────────────────────────
-合計                            306 條，全綠，~5.7 秒
+合計                            325 條，全綠，~3.7 秒
 ```
 
 ---
@@ -162,43 +164,23 @@ tests/test_formatter.py         56 條
 
 ---
 
-## Uncommitted Changes
+## Recent Commits
 
-從 Phase 2 entity weight / feed sweep 到 Phase 4 formatter 的全部修改尚未 commit。主要新增/修改：
-
-```
-src/html_cleaner.py         NEW（Phase 3）
-src/claude_rewrite.py       NEW（Phase 3）
-src/claim_trace.py          NEW（Phase 3）
-src/validators.py           NEW（Phase 3）
-src/formatter.py            NEW（Phase 4）
-tests/test_html_cleaner.py  NEW（18 條）
-tests/test_claude_rewrite.py NEW（16 條）
-tests/test_claim_trace.py   NEW（19 條）
-tests/test_validators.py    NEW（27 條）
-tests/test_formatter.py     NEW（56 條）
-docs/INTEGRATION_DESIGN.md  NEW
-DEV_LOG.md                  已更新至 Phase 4
-ROADMAP.md                  Phase 3–4 已勾完
-TODO.md                     Phase 4 完成 → Phase 5 起手
-AI_CONTEXT.md               已更新至 Phase 4
-PROJECT_MANIFEST.json       status: phase-4-complete
-DECISIONS.md                新增 5 項整合設計決策
-```
+- `ce185d5` feat(phase-3-4): Claude rewrite pipeline + multi-format output（Phase 2 尾巴～Phase 4 全部）
+- Phase 5 pipeline + routine prompt 修改尚未 commit
 
 ---
 
-## Next Step — Phase 5
+## Next Step — Phase 5 剩餘
 
-TODO 清單（`TODO.md` → Now — Phase 5 起手）：
+已完成：`src/pipeline.py`（19 條測試）+ `prompts/routine_prompt.md` 正式版。
 
-- [ ] `prompts/routine_prompt.md` 正式版（目前是 Phase 0 的草稿，需更新為呼叫 src/*.py 的完整流程）
+TODO 清單（`TODO.md`）：
+
 - [ ] Claude Code Routine 設定（每日 05:00 Asia/Taipei）
-- [ ] 通知管道（Telegram / Discord / Email，待月月決定）
+- [ ] 通知管道（月月決定先不做，之後再加）
 - [ ] 同日重跑 idempotent 測試
 - [ ] 連跑 7 天穩定性測試
-
-**Phase 5 的核心目標**：把 Phase 1–4 的模組串成自動化 pipeline，每天 05:00 無人介入產出完整館報。
 
 ---
 

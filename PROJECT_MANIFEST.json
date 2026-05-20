@@ -3,7 +3,7 @@
   "repo_name": "akasha-rss-news",
   "project_type": "automated-pipeline",
   "description": "阿卡夏圖書館・每日館報系統 — 每天 05:00 自動抓取 RSS、分類、聚合、改寫、輸出六種格式",
-  "status": "phase-4-complete",
+  "status": "phase-5-in-progress",
   "created_at": "2026-05-19T11:29:50+08:00",
   "updated_at": "2026-05-20T00:00:00+08:00",
   "spec_file": "akashic-daily-report-final-spec-v1.1.md",
@@ -36,7 +36,8 @@
     "src/claude_rewrite.py",
     "src/claim_trace.py",
     "src/validators.py",
-    "src/formatter.py"
+    "src/formatter.py",
+    "src/pipeline.py"
   ],
   "pending_modules": [],
   "config_files": [
@@ -55,7 +56,7 @@
     "prompts/rewrite_prompt.md",
     "prompts/routine_prompt.md"
   ],
-  "test_count": 306,
+  "test_count": 325,
   "enabled_sources": 26,
   "git": {
     "remote": "https://github.com/TsKR2828/akasha-rss-news",

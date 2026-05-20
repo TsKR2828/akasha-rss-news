@@ -1,8 +1,40 @@
 # Dev Log
 
-目前階段：Phase 4 完成 → Phase 5 起手
-測試合計：306 條全綠（37 schema + 32 Phase 1 + 87 Phase 2 + 80 Phase 3 + 14 entity + 56 Phase 4）
+目前階段：Phase 5 進行中（pipeline + routine prompt 完成，待設定 Routine）
+測試合計：325 條全綠（306 原有 + 19 pipeline）
 Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+
+---
+
+## 2026-05-20 — Phase 5: Pipeline orchestrator + routine prompt
+
+### 新增檔案
+
+- `src/pipeline.py` — 全 pipeline 入口，串接 9 個步驟（fetch → normalize → classify → tw_highlight → dedup → event_cluster → select → claude_rewrite → formatter）
+- `tests/test_pipeline.py`（19 條）— 單步執行、stats 收集、事件讀取、全流程 mock 整合
+
+### 修改檔案
+
+- `prompts/routine_prompt.md` — 從 Phase 0 草稿改為正式版，指令改為 `python -m src.pipeline`
+
+### pipeline.py 設計
+
+- 呼叫各模組的 `main(argv=[...])` 依序執行，不修改現有模組
+- fetch_rss exit 2 → 立即 abort，不跑後續步驟
+- 其他步驟 exit non-0 → 記錄 warning，繼續執行
+- formatter 步驟直接呼叫 `generate_all_outputs()` 帶入從檔案系統收集的真實 stats
+- 支援 `--dry-run`（跳過 Claude API + 檔案寫入）
+- 支援 `--date YYYY-MM-DD` 指定日期
+- 捕獲 SystemExit 和 Exception，不會因單步崩潰整個中斷
+
+### 測試覆蓋
+
+| 區塊 | 測試數 |
+|------|-------|
+| _run_module_step | 6 條（正常、dry-run 傳遞、例外處理、SystemExit） |
+| _collect_stats | 4 條（空目錄、health log、article 計數、manifest） |
+| _read_selected_events | 3 條（無 manifest、正常讀取、missing event） |
+| run_pipeline 整合 | 6 條（全成功、fetch abort、部分失敗、beat 統計、formatter 例外、計時） |
 
 ---
 

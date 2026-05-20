@@ -5,7 +5,8 @@
 - §6.1 分類權重（source 0.6 + keyword 0.3 + entity 0.1，min_score 0.45）
 - §6.2 AI 分類例外（The Verge / BBC Tech / Ars Technica 需二次過濾）
 
-MVP 暫不做 entity recognition；entity_weight 留位但實際分數為 0。
+entity_weight 透過 spaCy NER 提取實體，與 beats.yaml 中各 beat 的
+entities.entity_names / entity_types 比對。若 spaCy 未安裝則回退為 0。
 
 CLI 用法：
     python -m src.classifier --date 2026-05-19
@@ -22,6 +23,8 @@ from pathlib import Path
 from typing import Optional
 
 import yaml
+
+from src import entity_recognizer
 
 LOG = logging.getLogger(__name__)
 
@@ -99,6 +102,10 @@ def classify(
     ai_exception_sources = set(beats_config.get("ai_exception_sources", []))
     beats = beats_config.get("beats", {})
 
+    # 提取一次實體，供所有 beat 共用
+    text = (article.get("title", "") + " " + (article.get("summary") or ""))
+    entities = entity_recognizer.extract_entities(text)
+
     scores: dict[str, float] = {}
     for beat_id, beat_def in beats.items():
         if beat_id in SKIP_BEATS:
@@ -106,7 +113,9 @@ def classify(
 
         source_score = 1.0 if beat_id in source_beats else 0.0
         kw_score = keyword_match_score(article, beat_def)
-        entity_score = 0.0  # MVP: 不計算 entity；保留欄位
+        entity_score = entity_recognizer.entity_match_score(
+            entities, beat_def.get("entities", {}),
+        )
 
         # 規格 §6.2: AI 例外 — 例外來源若 title/summary 沒命中 AI 關鍵字，AI 該篇降權
         if (

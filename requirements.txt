@@ -17,6 +17,11 @@ PyYAML>=6.0,<7.0
 # ---------- 字串相似度（dedup / event cluster MVP）----------
 rapidfuzz>=3.6,<4.0
 
+# ---------- Named Entity Recognition（§6.1 entity_weight 0.1）----------
+# 安裝後需另跑：python -m spacy download en_core_web_sm
+# 若未安裝，entity scoring 自動回退為 0（不影響其他功能）
+spacy>=3.7,<4.0
+
 # ---------- Claude API ----------
 anthropic>=0.40,<1.0
 

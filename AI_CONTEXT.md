@@ -2,53 +2,236 @@
 
 ## Project Name
 
-akasha-rss-news
-
-## Project Type
-
-basic
+akasha-rss-news — 阿卡夏圖書館・每日館報系統
 
 ## Goal
 
-每天清晨 05:00（Asia/Taipei）自動產出一份可閱讀、可朗讀、可轉貼的「阿卡夏圖書館・每日館報」。
+每天清晨 05:00（Asia/Taipei）自動產出一份可閱讀、可朗讀、可轉貼的每日館報。
 
-從國際英文 RSS 與公視新聞抓取新聞，經分類、事件聚合、事實安全檢查、口語化改寫後，輸出：
+從國際英文 RSS 與公視新聞抓取新聞，經分類、事件聚合、事實安全檢查、口語化改寫後，輸出六種檔案：
 
-- `output/daily_YYYYMMDD.json`（機器可讀）
-- `output/daily_YYYYMMDD.md`（人類可讀）
-- `output/voice_YYYYMMDD.txt`（朗讀稿）
-- `output/platforms/x_YYYYMMDD.json`（X 貼文草稿）
-- `output/platforms/threads_YYYYMMDD.json`（Threads 貼文草稿）
-- `output/logs/run_YYYYMMDD.json`（run log）
+```
+output/daily_YYYYMMDD.json        # 機器可讀主報告
+output/daily_YYYYMMDD.md          # 人類可讀 Markdown
+output/voice_YYYYMMDD.txt         # 朗讀稿（無 URL / emoji / Markdown）
+output/platforms/x_YYYYMMDD.json  # X 貼文草稿（≤280 字/則）
+output/platforms/threads_YYYYMMDD.json  # Threads 草稿（≤500 字/則）
+output/logs/run_YYYYMMDD.json     # run log
+```
 
-需求依據：[akashic-daily-report-final-spec-v1.1.md](akashic-daily-report-final-spec-v1.1.md)
+需求依據：`akashic-daily-report-final-spec-v1.1.md`（根目錄，1554 行）
+
+---
 
 ## Current Status
 
-Phase 0（Spec Freeze）進行中：
+**Phase 0–4 全部完成，Phase 5 尚未開始。**
 
-- ✅ 規格書 v1.1 完成
-- ✅ README / ROADMAP / TODO 依規格書改寫
-- ⏳ `config/feeds.yaml`、`config/beats.yaml`、`config/selection_score.yaml`、`config/style_guide.md` 建立中
-- ⏳ `schemas/*.json` 與 `prompts/rewrite_prompt.md` 尚未建立
+| Phase | 狀態 | 說明 |
+|---|---|---|
+| 0 Spec Freeze | ✅ 完成 | config / schema / prompt / requirements 全數到位 |
+| 1 RSS 抓取 | ✅ 完成 | fetch_rss + normalize，含 feed health / retry / time window |
+| 2 分類聚合 | ✅ 完成 | classifier + tw_highlight + dedup + event_cluster + selector |
+| 3 Claude 改寫 | ✅ 完成 | html_cleaner + claude_rewrite + claim_trace + validators |
+| 4 多格式輸出 | ✅ 完成 | formatter（JSON / MD / voice / X / Threads + run log + 驗證） |
+| **5 Routine** | ⏳ **下一步** | Claude Code Routine 每日 05:00 自動執行 |
 
-詳見 [ROADMAP.md](ROADMAP.md) 與 [TODO.md](TODO.md)。
+**數據快照（2026-05-20）**：
+- 26 enabled sources / 0 failed / 461 articles
+- 13 個 source modules，0 個 pending
+- 306 條測試全綠（~5.7 秒）
+
+---
+
+## File Inventory
+
+### Config（Phase 0）
+
+| 檔案 | 用途 | 對應規格 |
+|---|---|---|
+| `config/feeds.yaml` | 31 個 RSS 來源（26 enabled） | §3.1 |
+| `config/beats.yaml` | 4 大 beat 關鍵字 + entity 設定 + TW Highlight + AI 例外 | §2.1, §6 |
+| `config/selection_score.yaml` | 評分表 + daily_limits + dedup 閾值 | §8.2 |
+| `config/style_guide.md` | 文風、禁用詞、轉場語、事實紅線 | §13 |
+
+### Schema（Phase 0）
+
+| 檔案 | 用途 |
+|---|---|
+| `schemas/article.schema.json` | normalized article（§5.3） |
+| `schemas/event.schema.json` | clustered event（§7.3），含 conditional rules |
+| `schemas/platform_output.schema.json` | 平台輸出 item（voice_text lint / char limits） |
+| `schemas/report.schema.json` | 最終報告（$ref → platform_output） |
+
+### Prompt（Phase 0）
+
+| 檔案 | 用途 |
+|---|---|
+| `prompts/rewrite_prompt.md` | Claude 改寫指令（含 injection 防護、可做/不可做、checklist） |
+| `prompts/routine_prompt.md` | 7-step pipeline 入口（Phase 5 需更新為正式版） |
+
+### Source Code（Phase 1–4，全部完成）
+
+| 檔案 | 功能 | 測試 |
+|---|---|---|
+| `src/fetch_rss.py` | 併發抓取 + retry/backoff + consecutive_failures state | 12 條 |
+| `src/normalize.py` | feedparser 解析 + canonicalize URL + sha256 article_id + time window | 20 條 |
+| `src/classifier.py` | Beat 分類：source 0.6 + keyword 0.3 + entity 0.1（spaCy NER） | 20 條 |
+| `src/entity_recognizer.py` | spaCy NER 封裝：extract_entities + entity_match_score | 14 條 |
+| `src/tw_highlight.py` | Taiwan Highlight：positive + context + FP review | 10 條 |
+| `src/dedup.py` | 文章去重：canonical URL + 同源相似標題（rapidfuzz ≥0.92） | 9 條 |
+| `src/event_cluster.py` | 事件聚合：title sim 0.88 + 共同關鍵詞 ≥3 + 24h window | 16 條 |
+| `src/selector.py` | 選題：selection_score + daily_limits + drop_reason | 13 條 |
+| `src/html_cleaner.py` | strip HTML/script/style + 追蹤參數清理 + entity decode | 18 條 |
+| `src/claude_rewrite.py` | Anthropic SDK 呼叫 + retry + JSON parse + merge + lint | 16 條 |
+| `src/claim_trace.py` | verify + fix + fallback claim + single_source_warning | 19 條 |
+| `src/validators.py` | banned_phrases(8) + voice_text lint(6) + confidence/opinion/claim/platform | 27 條 |
+| `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI | 56 條 |
+
+### Docs
+
+| 檔案 | 用途 |
+|---|---|
+| `docs/INTEGRATION_DESIGN.md` | akasha-rss-news ↔ akasha-library PWA 整合設計稿 |
+
+### Tests
+
+```
+tests/test_schemas.py           37 條（schema meta-validation + samples + lint）
+tests/test_fetch_rss.py         12 條
+tests/test_normalize.py         20 條
+tests/test_classifier.py        20 條（含 9 條 entity integration）
+tests/test_entity_recognizer.py 14 條
+tests/test_tw_highlight.py      10 條
+tests/test_dedup.py              9 條
+tests/test_event_cluster.py     16 條
+tests/test_selector.py          13 條
+tests/test_html_cleaner.py      18 條
+tests/test_claude_rewrite.py    16 條（mocked SDK）
+tests/test_claim_trace.py       19 條
+tests/test_validators.py        27 條
+tests/test_formatter.py         56 條
+───────────────────────────────────
+合計                            306 條，全綠，~5.7 秒
+```
+
+---
+
+## Key Architecture Decisions
+
+1. **分類公式**：`score = 0.6 × source_default + 0.3 × keyword + 0.1 × entity`，min_score 0.45。source_default 單獨就能過閾（0.6 > 0.45），代表 feeds.yaml 裡的 beat 配置是主要分類依據。
+
+2. **Entity weight**：spaCy `en_core_web_sm` NER，各 beat 在 beats.yaml 定義 `entity_names`（具名組織/機構）和 `entity_types`（spaCy label 通配）。若 spaCy 未安裝自動回退為 0。
+
+3. **AI 例外**：`ai_exception_sources`（原 The Verge / BBC Tech / Ars Technica）的文章必須 title/summary 命中 AI 關鍵字才算 AI beat。TechCrunch AI / Wired AI 不在例外名單，因為它們的 feed 已是 AI category。
+
+4. **去重兩層**：dedup（文章層，同源）→ event_cluster（事件層，跨源）。跨源同題不在 dedup 處理。
+
+5. **article_id**：`sha256(source_id | canonical_url)`，重跑必得同 ID。
+
+6. **Fail mode**：單源失敗 → continue_with_warning；全源失敗 → abort（exit code 2）。連續 3 次失敗 → 額外告警。
+
+7. **Claude 改寫安全**：rewrite_prompt.md 含 injection 防護；claim_trace verify → fix → fallback 確保至少 1 條；banned_phrases 8 詞 + voice_text 6 patterns lint。
+
+8. **文字切分**：split_posts 三級退讓（句號 → 逗號 → 強制截斷），確保 X ≤280 / Threads ≤500。
+
+9. **朗讀稿獨立生成**：用 voice_text 欄位加上 §13.3 開場 + §13.4 轉場語 + §13.5 來源宣告，不是拿 thread_text 刪 emoji。
+
+10. **整合設計**：akasha-library PWA 用 bridge pattern（headline→title, context→summary），擴展欄位用 `_` prefix，IndexedDB 15 年保留。
+
+---
+
+## Feed Health Snapshot（2026-05-19）
+
+**26 enabled / 0 failed / 461 articles**
+
+| Beat | 活源數 | 今日文章 | 備註 |
+|---|---|---|---|
+| INTL | 4 | 165 | bbc_world / reuters×2 / aljazeera / npr |
+| ARTS | 11 | 128 | guardian×7 / nyt×2 / archdaily / dezeen |
+| ECON | 4 | 124 | bbc_biz / reuters_biz / guardian_biz / nyt_biz |
+| AI | 4+2 低頻 | 19 | bbc_tech / marktechpost / techcrunch / wired + ars/mit（低頻） |
+| PTS_LOCAL | 1 | 25 | pts_news |
+
+**Disabled sources**（5 個）：
+- `the_verge`：403 封鎖
+- `venturebeat_ai`：停更 4 個月
+- `ap_world_rsshub`：RSSHub 公共實例 403
+- `bloomberg_tech_google_news`：Google News proxy 空 feed
+- `pts_curations_rsshub`：MVP 先關
+
+---
+
+## Uncommitted Changes
+
+從 Phase 2 entity weight / feed sweep 到 Phase 4 formatter 的全部修改尚未 commit。主要新增/修改：
+
+```
+src/html_cleaner.py         NEW（Phase 3）
+src/claude_rewrite.py       NEW（Phase 3）
+src/claim_trace.py          NEW（Phase 3）
+src/validators.py           NEW（Phase 3）
+src/formatter.py            NEW（Phase 4）
+tests/test_html_cleaner.py  NEW（18 條）
+tests/test_claude_rewrite.py NEW（16 條）
+tests/test_claim_trace.py   NEW（19 條）
+tests/test_validators.py    NEW（27 條）
+tests/test_formatter.py     NEW（56 條）
+docs/INTEGRATION_DESIGN.md  NEW
+DEV_LOG.md                  已更新至 Phase 4
+ROADMAP.md                  Phase 3–4 已勾完
+TODO.md                     Phase 4 完成 → Phase 5 起手
+AI_CONTEXT.md               已更新至 Phase 4
+PROJECT_MANIFEST.json       status: phase-4-complete
+DECISIONS.md                新增 5 項整合設計決策
+```
+
+---
+
+## Next Step — Phase 5
+
+TODO 清單（`TODO.md` → Now — Phase 5 起手）：
+
+- [ ] `prompts/routine_prompt.md` 正式版（目前是 Phase 0 的草稿，需更新為呼叫 src/*.py 的完整流程）
+- [ ] Claude Code Routine 設定（每日 05:00 Asia/Taipei）
+- [ ] 通知管道（Telegram / Discord / Email，待月月決定）
+- [ ] 同日重跑 idempotent 測試
+- [ ] 連跑 7 天穩定性測試
+
+**Phase 5 的核心目標**：把 Phase 1–4 的模組串成自動化 pipeline，每天 05:00 無人介入產出完整館報。
+
+---
+
+## Pending Decisions
+
+下列項目規格沒寫死，需要月月決定後寫入 `DECISIONS.md`：
+
+- [ ] Routine 通知管道：Telegram、Discord、Email 三選一？
+- [x] RSSHub 用公共實例還是自架？→ **公共實例已確認 403，需自架**（2026-05-19 sweep）
+- [ ] Google News proxy 失效時的 fallback 策略（Reuters proxy 目前正常但規格警告 unstable）
+- [ ] `tw_stories.json` 初始故事數量（5? 30? 100?）
+- [x] GitHub Pages 部署？→ **等 Phase 4 做完再看**（2026-05-19）
+- [x] 自動載入頻率？→ **頁面開啟時**（2026-05-19）
+- [x] 手動模式？→ **保留作為 fallback**（2026-05-19）
+- [x] 歷史報告保留天數？→ **15 年（圖書館精神）**（2026-05-19）
+- [x] 朗讀/TTS？→ **另案處理，本專案只提供 voice_text 欄位**（2026-05-19）
+
+---
+
+## Git
+
+- **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
+- **Branch**：main
+- **Latest commit**：`34782d0` feat(phase-2)（Phase 3–4 尚未 commit）
+- **User**：月月 / dr1090a@gmail.com
+
+---
 
 ## User Background
 
 - 使用者沒有程式背景時，請用白話說明。
 - 使用者需要先看清楚檔案用途，再決定是否修改。
 - 修改後需更新 `DEV_LOG.md`。
-
-## AI Entry Files
-
-AI 開始工作前請先閱讀：
-
-1. `README.md`
-2. `ROADMAP.md`
-3. `DEV_LOG.md`
-4. `AI_CONTEXT.md`
-5. `PROJECT_MANIFEST.json`
 
 ## Working Rules
 
@@ -58,3 +241,16 @@ AI 開始工作前請先閱讀：
 - Review 紀錄寫入 `DEBATE_LOG.md`。
 - 保留使用者原本的工作流。
 - 優先完成可執行 MVP。
+- 每個 Phase 跑完測試全綠才算完成。
+- 不要刪除現有檔案除非使用者明確要求。
+- 每次修改後跑全部測試，全綠才算通過。
+
+## AI Entry Files
+
+AI 開始工作前請先閱讀：
+
+1. `AI_CONTEXT.md`（本檔案 — 全貌速覽）
+2. `ROADMAP.md`（Phase 0–5 + Post-MVP）
+3. `TODO.md`（現在做 / 下一個做）
+4. `DEV_LOG.md`（每次改了什麼、為什麼、踩了什麼坑）
+5. `akashic-daily-report-final-spec-v1.1.md`（需求規格書，1554 行）

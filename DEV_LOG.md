@@ -1,5 +1,63 @@
 # Dev Log
 
+目前階段：Phase 4 完成 → Phase 5 起手
+測試合計：306 條全綠（37 schema + 32 Phase 1 + 87 Phase 2 + 80 Phase 3 + 14 entity + 56 Phase 4）
+Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+
+---
+
+## 2026-05-20 — Phase 4: Multi-format output
+
+### Added
+
+- `src/formatter.py` — 多格式輸出模組（Phase 4 全部功能）
+  - `split_posts()`: 把長文切成 ≤ max_chars 的 posts（X 280 字 / Threads 500 字），依序嘗試句號→逗號→強制截斷
+  - `build_platform_output_item()`: event → platform_output.schema.json 格式，含 platform_outputs.x/threads/voice
+  - `build_report()`: 組裝完整 report.schema.json（sections by beat order, stats, warnings, dropped_events）
+  - `format_markdown()`: Markdown 可讀版（beat 標題 + emoji + 來源摺疊 + 統計表）
+  - `format_voice_script()`: 朗讀稿（§13.3 開場 + §13.4 轉場語 + §13.5 來源宣告 + 結語），獨立生成非刪 emoji
+  - `format_x_draft()` / `format_threads_draft()`: 平台貼文草稿 JSON
+  - `build_run_log()`: pipeline run log
+  - `validate_report_output()`: P0 驗收驗證（voice_text lint + X/Threads 字數 + 必填欄位 + single_source_warning）
+  - `generate_all_outputs()`: 一次產出六種輸出檔 + 驗證
+  - CLI: `python -m src.formatter --date YYYY-MM-DD [--dry-run]`
+
+- `tests/test_formatter.py` — 56 條測試
+  - TestSplitPosts (7): 短文 / 空文 / 精確上限 / 句號切 / 逗號切 / 強制截斷 / 中文
+  - TestForceSplit (3): 整除 / 餘數 / 限內
+  - TestSplitLongSentence (2): 逗號切 / 限內
+  - TestBuildPlatformOutputItem (6): 基本結構 / platform_outputs / sources / tw_highlight / single_source / X 切分
+  - TestBuildReport (8): 結構 / beat 排序 / title+emoji / partial / failed / dropped / stats / 空 beat
+  - TestFormatMarkdown (5): header / beat headings / headlines / stats / tw mark
+  - TestFormatVoiceScript (6): 開場 / 轉場語 / voice_text / 來源宣告 / 結語 / 非刪 emoji
+  - TestBuildSourceAttribution (3): 單源 / 多源 / 空
+  - TestFormatXDraft (2) / TestFormatThreadsDraft (1)
+  - TestBuildRunLog (2): 結構 / steps
+  - TestValidateReportOutput (4): 乾淨 / URL / X 超長 / claim_trace
+  - TestLoadBeatMeta (2): 正常 / fallback
+  - TestGenerateAllOutputs (5): dry-run / 六檔寫入 / JSON 驗證 / 多 beat / 警告
+
+### Verification
+
+- 306 條測試全綠（~5.7 秒）
+- 六種輸出檔格式：
+  - `output/daily_YYYYMMDD.json` — report.schema.json 格式
+  - `output/daily_YYYYMMDD.md` — Markdown 可讀版
+  - `output/voice_YYYYMMDD.txt` — 朗讀稿
+  - `output/platforms/x_YYYYMMDD.json` — X 草稿
+  - `output/platforms/threads_YYYYMMDD.json` — Threads 草稿
+  - `output/logs/run_YYYYMMDD.json` — run log
+
+### Notes
+
+- 朗讀稿遵守規格 §12.3：從 voice_text 獨立生成，不是拿 thread_text 刪 emoji
+- 區塊轉場語來自規格 §13.4，每個 beat 用第一句
+- 來源宣告格式來自規格 §13.5，單源/多源兩種模板
+- split_posts 三級退讓：句號→逗號→強制截斷，確保不超字數
+- validate_report_output 做 P0 驗收：voice lint + X/Threads 長度 + 必填欄位
+
+---
+
 ## 2026-05-19
 
 ### Changed
@@ -213,3 +271,184 @@ Phase 0 設定/Schema/Prompt 全數完成，剩下兩件：
 - ✅ selection_manifest.json 含 drop_reason
 
 下一步：Phase 3 — `claude_rewrite.py` + `claim_trace.py` + `validators.py`。
+
+### Added（同日續，Entity Weight — spaCy NER）
+
+補齊規格 §6.1 公式中 entity_weight 0.1，原本 MVP 為 0。
+
+新增程式碼：
+
+- `src/entity_recognizer.py`：spaCy NER 封裝
+  - `extract_entities(text)` → list of `{text, label}` dicts（lazy-load `en_core_web_sm`）
+  - `entity_match_score(entities, beat_entity_config)` → 0.0 / 0.5 / 1.0（同 keyword 量表）
+  - Graceful degradation：spaCy 或模型未安裝時自動回退為 0（行為等同 MVP）
+- `tests/test_entity_recognizer.py`（19 條）：
+  1. `TestEntityMatchScore`（13 條）— 純邏輯，合成 entity list，不需 spaCy
+  2. `TestExtractEntities`（5 條）— 需 spaCy + en_core_web_sm；模型不在則 skip
+  3. `TestFallback`（1 條）— mock spaCy unavailable
+
+修改程式碼：
+
+- `src/classifier.py`：
+  - import `entity_recognizer`
+  - `classify()` 內提取一次 entities，每個 beat 呼叫 `entity_match_score`
+  - 移除 `entity_score = 0.0` 占位
+- `config/beats.yaml`：四大 beat 各加 `entities:` 區段
+  - INTL：entity_names（UN / NATO / EU / G7 …）+ entity_types（GPE）
+  - ARTS：entity_names（MoMA / Grammy / Oscar …）+ entity_types（WORK_OF_ART）
+  - AI：entity_names（OpenAI / Anthropic / DeepMind …）+ entity_types 空（靠具名命中）
+  - ECON：entity_names（Fed / ECB / IMF …）+ entity_types（MONEY / PERCENT）
+- `tests/test_classifier.py`：
+  - 新增 autouse `_mock_ner` fixture 確保既有測試 entity=0 不變
+  - 新增 `TestEntityIntegration`（9 條）驗證 entity 分數正確疊加
+- `requirements.txt`：新增 `spacy>=3.7,<4.0`（需另跑 `python -m spacy download en_core_web_sm`）
+
+測試：156 條全綠（37 schemas + 32 Phase 1 + 59 Phase 2 + 28 entity），3.94s。
+
+### Notes（Entity Weight）
+
+- entity_match_score 只比對 spaCy 提取出的實體，不做原文搜尋——避免與 keyword 訊號重複。
+- 0.1 權重是 tiebreaker 性質：source(0.6) + keyword(0.3) 仍為主要分類依據。
+- INTL 使用 GPE（國家/城市）作為通配 entity type，因為國際新聞天然大量提及地名。
+- AI beat 不設通配 entity type（ORG 太廣），只靠具名公司（OpenAI / Anthropic / …）。
+- ECON 的 MONEY + PERCENT entity type 能捕捉「$2 trillion」「0.25%」等財經數據，是關鍵字難以覆蓋的訊號。
+- spaCy `en_core_web_sm`（~13 MB）首次載入 ~1-2 秒，後續每篇 article ~5-50 ms，29 sources 不構成瓶頸。
+- `reset()` 函式僅供測試用，正式 pipeline 中 NLP 模型只 load 一次。
+
+### Changed（同日續，Feed Sweep — 全 28 enabled sources 實機掃描）
+
+**掃描時間**：2026-05-19 15:26 Taipei
+
+**結果**：26 ok / 2 failed → 修正後 26 ok / 0 failed
+
+**關掉 4 個死源**（enabled: false）：
+
+| source_id | 原因 |
+|---|---|
+| `the_verge` | 403 X-Forbidden，The Verge 主動封鎖 RSS（RSSHub route 也 403） |
+| `venturebeat_ai` | 最後一篇 2026-01-22，停更 4 個月 |
+| `ap_world_rsshub` | 403 Forbidden，RSSHub 公共實例封鎖 |
+| `bloomberg_tech_google_news` | Google News proxy 回傳 0 entries |
+
+**新增 2 個 AI 來源**（補救 AI beat）：
+
+| source_id | publisher | Tier | 窗口內文章 |
+|---|---|---|---|
+| `techcrunch_ai` | TechCrunch | 2 | 7 |
+| `wired_ai` | Wired | 2 | 2 |
+
+**修正後 Beat 分佈**（461 篇）：
+
+| Beat | sources | 文章數 |
+|---|---|---|
+| INTL | bbc_world + reuters_world + aljazeera + npr | 165 |
+| ARTS | guardian×7 + nyt×2 + archdaily + dezeen | 128 |
+| ECON | bbc_biz + reuters_biz + guardian_biz + nyt_biz | 124 |
+| AI | bbc_tech + marktechpost + techcrunch_ai + wired_ai | 19 |
+| PTS_LOCAL | pts_news | 25 |
+
+**低頻但仍 enabled**（不關，部分日期會有料）：
+
+- `ars_technica_ai`：最新 5/14，Technology Lab feed 更新頻率低
+- `mit_ai_news`：最新 5/14，學術性質，一週數篇
+
+### Notes（Feed Sweep）
+
+- `config/feeds.yaml` sources 總數不變（29 + 2 新增 = 31），enabled 數 = 26。
+- AI beat 從 2 個活源（10 篇）→ 4 個活源（19 篇），daily_limits.AI.min=1 有餘裕。
+- TechCrunch 與 Wired 都是 AI exception 候選（同 The Verge 性質），如有需要可加入 `ai_exception_sources`。目前不加，因為它們的 feed 已篩到 AI category，比 The Verge 全站 feed 乾淨。
+- 被 disabled 的 4 個 source 若未來條件改變（自架 RSSHub、The Verge 開放、VB 恢復更新），把 enabled 改回 true 即可。
+- Google News proxy 路線（reuters_world/reuters_business）目前正常但規格 §3.1 已警告 unstable；長期建議找穩定替代。
+
+### Added（同日續，整合設計稿）
+
+- `docs/INTEGRATION_DESIGN.md`：akasha-rss-news ↔ akasha-library 整合設計稿 v1.0
+
+設計稿涵蓋：
+
+1. **資料格式 Bridge**：akasha-rss-news 的 report.schema.json → akasha-library daily-report 格式
+   - 核心四欄位（title / summary / source / url）直接映射
+   - 擴充欄位用 `_` 前綴保留（confidence / claim_trace / tw_highlight / platform_outputs 等）
+   - akasha-library 的 renderReport() 不需改動即可渲染
+2. **傳輸機制**：GitHub Pages fetch（主） + 本地匯入（備援）
+3. **語音整合**：優先使用 akasha-rss-news 的 voice_text（Claude 生成朗讀稿），fallback 到 reportToVoiceTasks()
+4. **平台草稿**：X / Threads 草稿面板（Post-MVP）
+5. **IndexedDB 同日覆寫**：用 reportId 去重，自動 vs 手動標記分離
+6. **PostMessage 擴充**：只新增一個 `akasha-voice-play-tasks` type
+7. **UI 三階段**：MVP 整合 → UI 增強 → 發文面板
+
+### Notes（整合設計稿）
+
+- akasha-library 端改動極小：新增 `rss-bridge.js`（~50 行）+ `index.html` 加 fetch/import UI
+- 不改 akasha-library 現有 renderReport() / 存檔 / 匯出 / 語音任何一行
+- Phase 4.5 預估工時 ~4h（rss-bridge.js 1h + index.html 修改 2h + 測試 1h）
+- 5 個開放問題已決定（記入 DECISIONS.md）：
+  1. GitHub Pages 公開性 → **延後**（等 Phase 4 做完再看）
+  2. 自動載入頻率 → **頁面開啟時**
+  3. 手動模式 → **保留**
+  4. 歷史保留天數 → **15 年**（比照圖書館典藏）
+  5. 朗讀機制 → **另案處理**（獨立專案負責，設計稿 §5 不實作 TTS 播放）
+
+## 2026-05-20
+
+### Added（Phase 3 — Claude 改寫與事實安全）
+
+新增程式碼：
+
+- `src/html_cleaner.py`：
+  - `clean_html()`: strip `<script>` / `<style>` 整塊 → 移除 HTML 標籤 → 解碼 entities（named + numeric） → 清理文中 URL 追蹤參數 → 壓縮空白
+  - `strip_tracking_params()`: 移除 URL 的 utm_*, fbclid, gclid 等 20+ 種追蹤參數 + fragment
+  - `clean_article_for_rewrite()`: 清理 article dict 的 title / summary / content / url
+
+- `src/claude_rewrite.py`：
+  - `prepare_event_payload()`: event → rewrite_prompt.md 定義的輸入 JSON（含 HTML 清理）
+  - `parse_claude_response()`: 支援純 JSON 和 ```json code block 兩種格式
+  - `call_claude()`: Anthropic SDK 呼叫，2 次重試 + exponential backoff
+  - `merge_rewrite_into_event()`: 改寫結果合併回 event（保留結構欄位，覆蓋內容欄位）
+  - `rewrite_event()`: 單一 event 改寫 pipeline（prepare → call → lint → merge）
+  - `rewrite_selected_events()`: 批次改寫所有 selected events
+  - CLI: `python -m src.claude_rewrite --date YYYY-MM-DD [--dry-run] [--model MODEL]`
+
+- `src/claim_trace.py`：
+  - `verify_claim_trace()`: 驗證每條 claim 的 source_id、claim 文字、support_type
+  - `fix_claim_trace()`: 自動修正 source_url / source_title，移除無效 claim，修正 support_type
+  - `verify_and_fix_claim_trace()`: 驗證 + 修正，若全部無效則建立 fallback claim
+  - `derive_single_source_warning()`: source_count=1 → True
+
+- `src/validators.py`：
+  - `validate_banned_phrases()`: 8 個禁用詞掃描
+  - `validate_voice_text()`: 6 patterns（URL / 🧵 / 📌 / 📎 / N/N / Markdown link）
+  - `validate_confidence()`: 三級 vs 來源推斷比對
+  - `validate_claim_trace()`: claim 合法性（空文字 / 無 source_id / 不存在 source / 無效 support_type）
+  - `validate_opinion_level()`: enum 驗證
+  - `validate_platform_lengths()`: X / Threads 長度 sanity check
+  - `lint_rewrite_output()`: 整合 lint（一次跑完所有檢查）
+
+新增測試：
+
+- `tests/test_html_cleaner.py`（18 條）：tracking params / HTML strip / entity decode / article cleaning
+- `tests/test_validators.py`（27 條）：banned phrases / voice lint / confidence / claim trace / opinion / platform / integration
+- `tests/test_claim_trace.py`（19 條）：verify / fix / verify_and_fix / single_source_warning
+- `tests/test_claude_rewrite.py`（16 條）：payload prep / response parse / call retry / merge / rewrite event / batch / lint
+
+測試：250 條全綠（37 schema + 32 Phase 1 + 87 Phase 2 + 14 entity + 80 Phase 3），7.66s。
+
+### Phase 3 完成狀態
+
+- ✅ 4 個 src 模組（html_cleaner / claude_rewrite / claim_trace / validators）
+- ✅ 80 條 Phase 3 測試（Claude SDK 全部 mocked，不需 API key）
+- ✅ banned_phrases 8 詞 + voice_text 6 patterns + confidence 3 級
+- ✅ claim_trace 自動修正 + fallback（保證至少 1 條 claim）
+- ✅ HTML 清理含 script/style 移除、entity decode、追蹤參數清除
+- ✅ dry-run 模式可跑完 pipeline 不呼叫 API
+
+### Notes（Phase 3）
+
+- Claude SDK 呼叫用 `claude-sonnet-4-20250514` 預設，可透過 `--model` CLI 參數覆蓋。
+- retry 策略：最多 2 次重試（共 3 次嘗試），每次 delay 3 秒 × attempt 數。
+- `parse_claude_response()` 同時支援純 JSON 和 markdown code block，因為 Claude 有時會加 ```json wrapper。
+- `lint_rewrite_output()` 不做硬性阻擋（不 raise），只回傳 warning list；pipeline 繼續跑。硬性阻擋留給 Phase 4 的 schema validation。
+- `claim_trace` 的 fallback 機制：若 Claude 回傳的所有 claim 都參照了不存在的 source_id，自動建立一條以第一個 source 為基礎的 fallback claim，確保 event.schema.json 的 minItems: 1 約束不會被違反。
+- `validate_confidence()` 比對 Claude 回傳的 confidence 與基於來源數量/tier 的推斷值，不一致時產出 warning 但不覆寫——Claude 可能基於內容判斷有更好的 confidence 評估。
+
+下一步：Phase 4 — `src/formatter.py`（多格式輸出 + schema validation）。

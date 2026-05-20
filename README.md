@@ -103,17 +103,18 @@ akashic-daily-report/
 │   ├── event.schema.json
 │   └── platform_output.schema.json
 ├── src/
-│   ├── fetch_rss.py
-│   ├── normalize.py
-│   ├── classifier.py
-│   ├── tw_highlight.py
-│   ├── dedup.py
-│   ├── event_cluster.py
-│   ├── selector.py
-│   ├── claude_rewrite.py
-│   ├── claim_trace.py
-│   ├── formatter.py
-│   ├── validators.py
+│   ├── fetch_rss.py            # ✅ Phase 1
+│   ├── normalize.py            # ✅ Phase 1
+│   ├── classifier.py           # ✅ Phase 2
+│   ├── entity_recognizer.py    # ✅ Phase 2 (spaCy NER)
+│   ├── tw_highlight.py         # ✅ Phase 2
+│   ├── dedup.py                # ✅ Phase 2
+│   ├── event_cluster.py        # ✅ Phase 2
+│   ├── selector.py             # ✅ Phase 2
+│   ├── claude_rewrite.py       # ⏳ Phase 3
+│   ├── claim_trace.py          # ⏳ Phase 3
+│   ├── validators.py           # ⏳ Phase 3
+│   ├── formatter.py            # ⏳ Phase 4
 │   └── tw_stories.json
 ├── tests/
 │   ├── test_*.py
@@ -133,10 +134,13 @@ akashic-daily-report/
 ### 套件
 
 ```bash
-pip install feedparser requests beautifulsoup4 python-dateutil pydantic jsonschema PyYAML rapidfuzz
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
 ```
 
-Embedding 套件晚點再加，不列入 MVP 必備。
+主要依賴：feedparser, requests, beautifulsoup4, python-dateutil, pydantic, jsonschema, PyYAML, rapidfuzz, spacy, anthropic
+
+> spaCy 用於 §6.1 entity_weight 0.1（NER）。若未安裝，entity scoring 自動回退為 0，不影響其他功能。
 
 ---
 
@@ -164,10 +168,13 @@ sources:
 
 | 分級 | 來源 | 用途 |
 |---|---|---|
-| Tier 1 核心 | BBC, Reuters via proxy, AP via RSSHub, Guardian | 每日必抓，權重最高 |
-| Tier 2 補充 | NYT, NPR, Al Jazeera, Ars Technica, The Verge | 補充深度與多元視角 |
-| Tier 3 專題 | ArchDaily, Dezeen, VentureBeat, MIT, MarkTechPost | 特定 beat 專用 |
+| Tier 1 核心 | BBC, Reuters via proxy, Guardian | 每日必抓，權重最高 |
+| Tier 2 補充 | NYT, NPR, Al Jazeera, Ars Technica, TechCrunch, Wired | 補充深度與多元視角 |
+| Tier 3 專題 | ArchDaily, Dezeen, MIT, MarkTechPost | 特定 beat 專用 |
 | Tier TW | 公視 | 台灣在地唯一繁中來源 |
+
+> **2026-05-19 Sweep 結果**：31 sources 中 26 enabled / 0 failed / 461 articles。
+> 已停用：The Verge (403)、VentureBeat (停更)、AP RSSHub (403)、Bloomberg proxy (空 feed)。
 
 #### 使用限制
 
@@ -408,14 +415,14 @@ MVP 不做自動化。
 
 ## 開發 Roadmap
 
-| Phase | 內容 |
-|---|---|
-| 0 | Spec freeze：feeds、beats、selection_score、schema、prompt 初版 |
-| 1 | RSS 抓取與正規化、feed health、單元測試 |
-| 2 | 分類、去重、事件聚合、選題 |
-| 3 | Claude 改寫、claim_trace、confidence、文風 lint |
-| 4 | Markdown / Voice / X / Threads 輸出、schema validation、golden tests |
-| 5 | Routine 設定、通知管道、同日重跑測試 |
+| Phase | 內容 | 狀態 |
+|---|---|---|
+| 0 | Spec freeze：feeds、beats、selection_score、schema、prompt | ✅ 完成 |
+| 1 | RSS 抓取與正規化、feed health、單元測試 | ✅ 完成 |
+| 2 | 分類（含 NER）、去重、事件聚合、選題、feed sweep | ✅ 完成 |
+| 3 | Claude 改寫、claim_trace、confidence、文風 lint | ⏳ 下一步 |
+| 4 | Markdown / Voice / X / Threads 輸出、schema validation、golden tests | ❌ |
+| 5 | Routine 設定、通知管道、同日重跑測試 | ❌ |
 
 ### 實作優先順序
 

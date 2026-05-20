@@ -26,6 +26,23 @@ beats:
       - 外交
       - 制裁
       - 峰會
+    entities:
+      entity_names:
+        - UN
+        - United Nations
+        - NATO
+        - EU
+        - European Union
+        - G7
+        - G20
+        - ASEAN
+        - African Union
+        - WHO
+        - ICC
+        - IAEA
+        - Security Council
+      entity_types:
+        - GPE          # countries, cities, states
 
   ARTS:
     name: 八大藝術
@@ -67,6 +84,25 @@ beats:
       - 建築
       - 舞蹈
       - 展覽
+    entities:
+      entity_names:
+        - MoMA
+        - Tate
+        - Louvre
+        - Guggenheim
+        - Metropolitan Museum
+        - Smithsonian
+        - Grammy
+        - Oscar
+        - Emmy
+        - Tony
+        - BAFTA
+        - Pulitzer
+        - Nobel
+        - Berlinale
+        - Sundance
+      entity_types:
+        - WORK_OF_ART   # books, songs, films, artworks
     sub_beats:
       時尚與美學: 服裝 / 設計
       文學: 文學
@@ -100,6 +136,19 @@ beats:
       - 大模型
       - 開源
       - 監管
+    entities:
+      entity_names:
+        - OpenAI
+        - Anthropic
+        - DeepMind
+        - Google DeepMind
+        - Meta AI
+        - Mistral
+        - xAI
+        - Stability AI
+        - Hugging Face
+        - NVIDIA
+      entity_types: []  # 不用 ORG 通配，靠具名公司精準命中
 
   ECON:
     name: 全球經濟趨勢
@@ -128,6 +177,24 @@ beats:
       - 貿易
       - 半導體
       - 能源
+    entities:
+      entity_names:
+        - Federal Reserve
+        - Fed
+        - ECB
+        - BOJ
+        - PBOC
+        - OPEC
+        - IMF
+        - World Bank
+        - SEC
+        - WTO
+        - NASDAQ
+        - NYSE
+        - Dow Jones
+      entity_types:
+        - MONEY        # $2 billion, €500 million, …
+        - PERCENT      # 0.25%, 3.5%, …
 
 # ---------- 特別標記 ----------
 special_marks:

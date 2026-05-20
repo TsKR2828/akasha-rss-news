@@ -62,7 +62,7 @@ sources:
     transport: google_news_proxy
     is_proxy: true
     enabled: true
-    note: "Reuters direct public RSS is not assumed. Google News proxy must be treated as unstable."
+    note: "Reuters direct public RSS is not assumed. Google News proxy must be treated as unstable. 2026-05-19 sweep OK (98 entries)."
 
   - source_id: reuters_business_google_news
     name: "Reuters Business via Google News"
@@ -85,8 +85,8 @@ sources:
     tier: 1
     transport: rsshub
     is_proxy: true
-    enabled: true
-    note: "Requires self-hosted or stable RSSHub instance."
+    enabled: false
+    note: "2026-05-19 sweep: 403 Forbidden。RSSHub 公共實例封鎖，需自架後再開。"
 
   # ---------- Al Jazeera / NPR ----------
   - source_id: aljazeera_all
@@ -278,8 +278,8 @@ sources:
     tier: 2
     transport: direct_rss
     is_proxy: false
-    enabled: true
-    note: "Requires secondary AI filtering."
+    enabled: false
+    note: "2026-05-19 sweep: 403 X-Forbidden。The Verge 主動封鎖 RSS 爬取，RSSHub route 也 403。"
 
   - source_id: venturebeat_ai
     name: "VentureBeat AI"
@@ -290,7 +290,8 @@ sources:
     tier: 3
     transport: direct_rss
     is_proxy: false
-    enabled: true
+    enabled: false
+    note: "2026-05-19 sweep: 最後一篇 2026-01-22，停更 4 個月。"
 
   - source_id: mit_ai_news
     name: "MIT AI News"
@@ -315,6 +316,30 @@ sources:
     enabled: true
     note: "Low trust; use as discovery source, not sole authority."
 
+  - source_id: techcrunch_ai
+    name: "TechCrunch AI"
+    publisher: "TechCrunch"
+    url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+    beats: [AI]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "2026-05-19 sweep 新增：日更 ~20 篇，替補 The Verge / VentureBeat。"
+
+  - source_id: wired_ai
+    name: "Wired AI"
+    publisher: "Wired"
+    url: "https://www.wired.com/feed/tag/ai/latest/rss"
+    beats: [AI]
+    lang: en
+    tier: 2
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "2026-05-19 sweep 新增：日更 ~10 篇。"
+
   # ---------- 經濟 ----------
   - source_id: guardian_business
     name: "Guardian - Business"
@@ -336,7 +361,8 @@ sources:
     tier: 2
     transport: google_news_proxy
     is_proxy: true
-    enabled: true
+    enabled: false
+    note: "2026-05-19 sweep: Google News proxy 回傳 0 entries，query 失效。"
 
   # ---------- 台灣（唯一繁中來源） ----------
   - source_id: pts_news

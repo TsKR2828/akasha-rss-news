@@ -473,6 +473,23 @@ def format_markdown(report: dict, beat_meta: dict[str, dict]) -> str:
             lines.append(f"- [{w.get('type', '')}] {w.get('message', '')}")
         lines.append("")
 
+    # 參考來源彙整（所有連結集中底部，方便轉貼留言區）
+    all_sources = _collect_all_sources(report)
+    if all_sources:
+        lines.append("---")
+        lines.append("")
+        lines.append("## 📎 參考來源")
+        lines.append("")
+        for s in all_sources:
+            pub = s.get("publisher", "")
+            title = s.get("title", "")
+            url = s.get("url", "")
+            if url:
+                lines.append(f"- [{pub}: {title}]({url})")
+            else:
+                lines.append(f"- {pub}: {title}")
+        lines.append("")
+
     return "\n".join(lines)
 
 
@@ -501,10 +518,10 @@ def format_voice_script(
 
     lines: list[str] = []
 
-    # 開場（規格 §13.3）
+    # 開場（規格 §13.3）——「讓圖書館員翻譯給你聽」只在此出現一次
     lines.append("早安，這裡是阿卡夏圖書館。")
     lines.append(f"今天是 {year} 年 {month} 月 {day} 日，{weekday}。")
-    lines.append("以下是今日的紀錄檔案。")
+    lines.append("以下是今日的紀錄檔案，讓圖書館員翻譯給你聽。")
     lines.append("")
 
     # 各 beat 區塊
@@ -525,19 +542,44 @@ def format_voice_script(
             if voice_text:
                 lines.append(voice_text)
                 lines.append("")
-
-                # 來源宣告（規格 §13.5）
-                sources = item.get("sources", [])
-                attribution = _build_source_attribution(sources, date_str)
-                if attribution:
-                    lines.append(attribution)
-                    lines.append("")
+                # 來源宣告已包含在 Claude 產出的 voice_text 中（規格 §13.5）。
+                # 不再由 formatter 額外追加，避免重複朗讀來源資訊。
 
     # 結語
     lines.append("以上是今天的館報。")
     lines.append("我們明天見。")
 
+    # 參考來源彙整（所有來源連結集中底部，方便貼社群留言）
+    all_sources = _collect_all_sources(report)
+    if all_sources:
+        lines.append("")
+        lines.append("---")
+        lines.append("參考來源：")
+        for s in all_sources:
+            pub = s.get("publisher", "")
+            title = s.get("title", "")
+            url = s.get("url", "")
+            if url:
+                lines.append(f"- {pub}: {title}")
+                lines.append(f"  {url}")
+            else:
+                lines.append(f"- {pub}: {title}")
+
     return "\n".join(lines)
+
+
+def _collect_all_sources(report: dict) -> list[dict]:
+    """收集 report 中所有不重複的 source（用 url 去重，保留順序）。"""
+    seen_urls: set[str] = set()
+    result: list[dict] = []
+    for section in report.get("sections", []):
+        for item in section.get("items", []):
+            for s in item.get("sources", []):
+                url = s.get("url", "")
+                if url and url not in seen_urls:
+                    seen_urls.add(url)
+                    result.append(s)
+    return result
 
 
 def _build_source_attribution(sources: list[dict], date_str: str) -> str:

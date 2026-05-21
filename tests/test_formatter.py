@@ -25,6 +25,7 @@ from src.formatter import (
     THREADS_MAX_CHARS,
     X_MAX_CHARS,
     _build_source_attribution,
+    _collect_all_sources,
     _force_split,
     _split_long_sentence,
     build_platform_output_item,
@@ -472,6 +473,14 @@ class TestFormatMarkdown:
         md = format_markdown(report, beat_meta)
         assert "🇹🇼" in md
 
+    def test_has_reference_links_section(self, sample_event, sample_stats, beat_meta):
+        """Markdown 底部有「📎 參考來源」區塊。"""
+        items = [build_platform_output_item(sample_event)]
+        report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
+        md = format_markdown(report, beat_meta)
+        assert "📎 參考來源" in md
+        assert "bbc.com" in md
+
 
 # ---------------------------------------------------------------------------
 # TestFormatVoiceScript
@@ -487,6 +496,9 @@ class TestFormatVoiceScript:
         assert "早安，這裡是阿卡夏圖書館。" in voice
         assert "2026 年 5 月 19 日" in voice
         assert "星期二" in voice  # 2026-05-19 is Tuesday
+        # 「讓圖書館員翻譯給你聽」只在開場出現一次
+        assert "讓圖書館員翻譯給你聽" in voice
+        assert voice.count("讓圖書館員翻譯給你聽") == 1
 
     def test_has_beat_transition(self, sample_event, sample_stats, beat_meta):
         items = [build_platform_output_item(sample_event)]
@@ -500,12 +512,16 @@ class TestFormatVoiceScript:
         voice = format_voice_script(report, "2026-05-19", beat_meta)
         assert sample_event["voice_text"] in voice
 
-    def test_has_source_attribution(self, sample_event, sample_stats, beat_meta):
+    def test_no_per_event_attribution(self, sample_event, sample_stats, beat_meta):
+        """Formatter 不在每則後面加來源宣告（開場白除外）。"""
         items = [build_platform_output_item(sample_event)]
         report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
         voice = format_voice_script(report, "2026-05-19", beat_meta)
-        assert "BBC" in voice
-        assert "Reuters" in voice
+        # 「讓圖書館員翻譯給你聽」只出現在開場白，不在每則後面重複
+        assert voice.count("讓圖書館員翻譯給你聽") == 1
+        # 不應有 formatter 生成的 per-event 來源行
+        assert "本則整理自" not in voice
+        assert "本館報來自" not in voice
 
     def test_has_closing(self, sample_event, sample_stats, beat_meta):
         items = [build_platform_output_item(sample_event)]
@@ -523,6 +539,15 @@ class TestFormatVoiceScript:
         assert sample_event["voice_text"] in voice
         # thread_text 有 emoji，voice script 不應該有
         assert "🌍" not in voice
+
+    def test_has_reference_links(self, sample_event, sample_stats, beat_meta):
+        """底部有參考來源連結（方便貼社群留言區）。"""
+        items = [build_platform_output_item(sample_event)]
+        report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
+        voice = format_voice_script(report, "2026-05-19", beat_meta)
+        assert "參考來源" in voice
+        assert "bbc.com" in voice
+        assert "reuters.com" in voice
 
 
 class TestBuildSourceAttribution:

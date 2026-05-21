@@ -1,8 +1,74 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine prompt 完成，待設定 Routine）
-測試合計：325 條全綠（306 原有 + 19 pipeline）
+目前階段：Phase 5 進行中（pipeline + routine prompt 完成，首日品質調整中）
+測試合計：330 條全綠（325 原有 + 5 新增品質修復）
 Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+
+---
+
+## 2026-05-21 — 首日館報品質修復（#1 事件聚合 + #2 朗讀稿重複）
+
+首日自動產出的 2026-05-21 館報品質檢討後，優先修復兩個嚴重問題。
+
+### 修了什麼
+
+**#1 event_cluster.py — 跨 beat 關鍵詞合併限制**
+
+- 問題：「中國確認購入200架波音客機」事件被標記有 7 個來源，混入完全無關的文章（Dezeen 建築設計、ArchDaily 車站、NPR 人道援助等）
+- 根因：`matches_cluster()` 的「共同關鍵詞 ≥ 3」太鬆散，不同 beat 的文章因通用英文詞（china, trade, summit 等）被 transitive chain 合併
+- 修法：共同關鍵詞匹配限制為**同 beat 才能觸發**；標題高相似度（≥ 88%）仍允許跨 beat 合併（真正相同事件）
+- 新增測試 3 條：`test_cross_beat_keyword_does_not_match`、`test_cross_beat_title_sim_still_matches`、`test_cross_beat_keyword_only_separate_clusters`
+
+**#2 formatter.py — 移除朗讀稿重複來源宣告**
+
+- 問題：每則新聞出現兩段來源宣告——Claude voice_text 自帶一句（「本則來自 BBC...」）+ formatter 再追加一句（「本館報來自 BBC 新聞...讓圖書館員翻譯給你聽」）
+- 根因：`format_voice_script()` 的 `_build_source_attribution()` 與 Claude 改寫的 voice_text 重複
+- 修法：移除 formatter 端的額外來源宣告，由 Claude voice_text 自帶的版本作為唯一來源
+- 更新測試 1 條：`test_has_source_attribution` → `test_no_duplicate_attribution`
+
+**第二輪（月月 review 後追加）**
+
+**A. 可信度分級修正 — 單一 Tier 3 不再自動標低**
+
+- 問題：ArchDaily 報建築（自身領域權威）卻被標 🔴 低可信度
+- 根因：`derive_confidence()` 把所有單一 Tier 3 一律標 low
+- 修法：移除 single-T3=low 規則，單一來源一律 medium；語氣保留由 `single_source_warning` 控制
+
+**B. ECON 同 beat 內三件不相關事件合併**
+
+- 問題：波音訂單 + 歐美貿易協議 + 三星罷工被合成一則
+- 根因：`shared_kw_min=3` 太低，新聞通用詞（trade, deal, summit）觸發 transitive chain
+- 修法：
+  - `SHARED_KEYWORDS_MIN` 3 → 5
+  - 新增 30 個新聞通用停用詞（government, president, global, billion 等）
+  - `selection_score.yaml` 同步更新
+
+**C. 朗讀稿「讓圖書館員翻譯給你聽」出現頻率過高**
+
+- 問題：每則新聞結尾都跟一句，朗讀起來很重複
+- 修法：
+  - 開場白加入「讓圖書館員翻譯給你聽」（只出現一次）
+  - `rewrite_prompt.md` 告知 Claude voice_text 不加尾部來源宣告
+  - 系統在報告結尾統一彙整來源
+
+**D. 參考連結集中底部**
+
+- 問題：想貼推特時沒有方便的連結區塊
+- 修法：
+  - voice.txt 底部加「參考來源」區塊（來源名 + URL）
+  - markdown 底部加「📎 參考來源」區塊（可點擊連結）
+  - 新增 `_collect_all_sources()` helper（URL 去重）
+
+### 動到的檔案
+
+| 檔案 | 變更 |
+|---|---|
+| `src/event_cluster.py` | beat 限制 + shared_kw 5 + 停用詞 + confidence 修正 |
+| `src/formatter.py` | 開場白 + 移除重複 attribution + 參考來源區塊 |
+| `prompts/rewrite_prompt.md` | voice_text 不加尾部來源宣告 |
+| `config/selection_score.yaml` | shared_keywords_min 3→5 |
+| `tests/test_event_cluster.py` | +3 條（跨 beat 隔離）+ 改 1 條（confidence）|
+| `tests/test_formatter.py` | +2 條（參考連結）+ 改 2 條（opening / attribution）|
 
 ---
 

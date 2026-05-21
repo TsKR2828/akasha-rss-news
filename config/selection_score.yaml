@@ -57,7 +57,7 @@ selection_score:
 dedup_mvp:
   exact_canonical_url: true
   title_normalized_similarity: 0.88
-  shared_keywords_min: 3
+  shared_keywords_min: 5
   same_named_entities_min: 2
   time_window_hours: 24
 

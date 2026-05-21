@@ -40,11 +40,11 @@ TAIPEI = timezone(timedelta(hours=8))
 
 # 規格 §7.2 預設值
 TITLE_SIMILARITY_THRESHOLD = 88
-SHARED_KEYWORDS_MIN = 3
+SHARED_KEYWORDS_MIN = 5   # 原 3，提高至 5 防止通用詞 transitive chain
 TIME_WINDOW_HOURS = 24
 
 # 極簡英文停用詞（MVP）
-STOPWORDS = {
+_BASE_STOPWORDS = {
     "the", "a", "an", "and", "or", "but", "if", "of", "in", "on", "at",
     "to", "for", "with", "from", "by", "as", "is", "are", "was", "were",
     "be", "been", "being", "have", "has", "had", "do", "does", "did",
@@ -57,6 +57,20 @@ STOPWORDS = {
     "all", "some", "such", "only", "own", "same", "too", "very", "just",
     "says", "said", "say", "new", "more", "most",
 }
+
+# 新聞通用詞：幾乎所有新聞文章都會出現，不具事件辨別力
+_NEWS_GENERIC_STOPWORDS = {
+    "report", "reports", "reported", "according", "officials",
+    "government", "country", "countries", "state", "states",
+    "year", "years", "week", "month", "today", "yesterday",
+    "first", "last", "also", "still", "now", "people",
+    "billion", "million", "percent", "number",
+    "world", "global", "international", "national",
+    "told", "asked", "added", "called", "made",
+    "president", "minister", "secretary",
+}
+
+STOPWORDS = _BASE_STOPWORDS | _NEWS_GENERIC_STOPWORDS
 
 
 def normalize_title(title: str) -> str:
@@ -97,6 +111,7 @@ def matches_cluster(
     a_canonical = article.get("canonical_url", "")
     a_norm_title = normalize_title(article.get("title", ""))
     a_keywords = article_keywords(article)
+    a_beat = article.get("beat", "")
 
     for existing in cluster_articles:
         # 規格 §7.1.5：canonical URL 完全相同 → 同篇（保險，dedup 通常已處理）
@@ -107,15 +122,18 @@ def matches_cluster(
         if not within_time_window(article, existing, time_window_hours):
             continue
 
-        # 規格 §7.2：標題正規化相似度 ≥ 0.88
+        # 規格 §7.2：標題正規化相似度 ≥ 0.88（強信號，允許跨 beat 合併）
         existing_norm = normalize_title(existing.get("title", ""))
         if fuzz.token_set_ratio(a_norm_title, existing_norm) >= title_threshold:
             return True
 
-        # 規格 §7.2：共同關鍵詞 ≥ 3
-        shared = a_keywords & article_keywords(existing)
-        if len(shared) >= shared_kw_min:
-            return True
+        # 規格 §7.2：共同關鍵詞 ≥ 3（弱信號，僅限同 beat 才能合併）
+        # 不同 beat 的文章容易因通用詞誤合（如 china, trade, summit），
+        # 限制同 beat 才走關鍵詞匹配，避免 transitive chain 造成事件爆炸。
+        if a_beat and a_beat == existing.get("beat", ""):
+            shared = a_keywords & article_keywords(existing)
+            if len(shared) >= shared_kw_min:
+                return True
 
     return False
 
@@ -156,19 +174,18 @@ def cluster_articles(
 # ---------------------------------------------------------------------------
 
 def derive_confidence(cluster: list[dict]) -> str:
-    """規格 §9.2：
+    """規格 §9.2（修訂版）：
     - high: ≥2 Tier 1/2 sources
-    - low: 單一 Tier 3 source
-    - medium: 其他
+    - medium: 其他（含單一來源）
+
+    原規格單一 Tier 3 = low，但領域權威報導自身專業時不該標低
+    （如 ArchDaily 報建築）。語氣保留由 single_source_warning 控制。
     """
-    tiers = [a.get("tier") for a in cluster]
     distinct_sources = {a.get("source_id") for a in cluster}
-    high_tier_count = sum(1 for t in tiers if t in (1, 2))
+    high_tier_count = sum(1 for a in cluster if a.get("tier") in (1, 2))
 
     if len(distinct_sources) >= 2 and high_tier_count >= 2:
         return "high"
-    if len(distinct_sources) == 1 and tiers[0] == 3:
-        return "low"
     return "medium"
 
 

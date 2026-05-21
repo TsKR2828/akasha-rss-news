@@ -62,12 +62,13 @@ class TestMatchesCluster:
         assert event_cluster.matches_cluster(b, [a])
 
     def test_shared_keywords_matches(self):
+        """同 beat + 5 個以上共同關鍵詞 → 合併。"""
         a = _article("a" * 64, source_id="bbc_world",
                      title="Brussels conference",
-                     summary="Ukraine ceasefire negotiation military aid")
+                     summary="Ukraine ceasefire negotiation military humanitarian aid package")
         b = _article("b" * 64, source_id="reuters_world",
                      title="Diplomatic effort",
-                     summary="Ukraine ceasefire negotiation military aid",
+                     summary="Ukraine ceasefire negotiation military humanitarian aid package",
                      canonical="https://reuters.com/2")
         assert event_cluster.matches_cluster(b, [a])
 
@@ -86,6 +87,27 @@ class TestMatchesCluster:
         b = _article("b" * 64, title="Brazil wins football match",
                      summary="Sports result")
         assert not event_cluster.matches_cluster(b, [a])
+
+    def test_cross_beat_keyword_does_not_match(self):
+        """不同 beat 的文章不能僅靠共同關鍵詞合併（防止 transitive chain 造成事件爆炸）。"""
+        a = _article("a" * 64, source_id="bbc_biz", beat="ECON",
+                     title="China trade analysis",
+                     summary="Global economy china trade summit agreement")
+        b = _article("b" * 64, source_id="reuters_world", beat="INTL",
+                     title="Political summit overview",
+                     summary="Global economy china trade summit agreement",
+                     canonical="https://reuters.com/2")
+        # 兩篇共享 >3 個關鍵詞但 beat 不同，不得合併
+        assert not event_cluster.matches_cluster(b, [a])
+
+    def test_cross_beat_title_sim_still_matches(self):
+        """不同 beat 仍可透過高標題相似度合併（同一事件跨 beat 報導的正常情況）。"""
+        a = _article("a" * 64, source_id="bbc_biz", beat="ECON",
+                     title="China buys 200 Boeing jets after summit")
+        b = _article("b" * 64, source_id="reuters_world", beat="INTL",
+                     title="China buys 200 Boeing jets after summit",
+                     canonical="https://reuters.com/2")
+        assert event_cluster.matches_cluster(b, [a])
 
 
 # ---------------------------------------------------------------------------
@@ -125,6 +147,20 @@ class TestClusterArticles:
                      title="Taiwan summit on Ukraine",
                      summary="Ceasefire negotiation",
                      canonical="https://bbc.com/b"),
+        ]
+        clusters = event_cluster.cluster_articles(articles)
+        assert len(clusters) == 2
+
+    def test_cross_beat_keyword_only_separate_clusters(self):
+        """不同 beat + 僅共同關鍵詞 → 分開成不同 cluster。"""
+        articles = [
+            _article("a" * 64, source_id="bbc_biz", beat="ECON",
+                     title="China trade policy update",
+                     summary="Beijing economy summit global trade"),
+            _article("b" * 64, source_id="dezeen", beat="ARTS",
+                     title="Architecture design review",
+                     summary="Beijing economy summit global trade",
+                     canonical="https://dezeen.com/b"),
         ]
         clusters = event_cluster.cluster_articles(articles)
         assert len(clusters) == 2
@@ -177,10 +213,11 @@ class TestConfidence:
         evt = event_cluster.build_event(cluster, "daily_20260518_evt_001")
         assert evt["confidence"] == "high"
 
-    def test_single_tier3_low(self):
+    def test_single_tier3_medium(self):
+        """單一 Tier 3 來源 → medium（領域權威不該標低）。"""
         cluster = [_article("a" * 64, source_id="marktechpost", tier=3)]
         evt = event_cluster.build_event(cluster, "daily_20260518_evt_001")
-        assert evt["confidence"] == "low"
+        assert evt["confidence"] == "medium"
 
     def test_single_tier1_medium(self):
         cluster = [_article("a" * 64, source_id="bbc_world", tier=1)]

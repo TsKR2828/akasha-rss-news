@@ -87,3 +87,58 @@ Phase 5 先不設定通知管道，後續再加。
 
 - Routine 完成後不會主動推送通知，需要手動到 GitHub 或 claude.ai/code/routines 查看結果
 - 之後可選 Telegram / Discord / Email 任一管道
+
+---
+
+## 2026-05-21 | 可信度分級修訂 — 取消單一 Tier 3 自動標低
+
+### Decision
+
+`derive_confidence()` 不再把單一 Tier 3 來源自動標為 "low"。所有單一來源事件一律 "medium"。
+
+### Reason
+
+月月 2026-05-21 review 首日館報時指出：ArchDaily 報建築是領域權威，不該標 🔴 低可信度。原規格 §9.2 的「單一 Tier 3 = low」對專業媒體報導自身領域過於嚴苛。語氣保留機制已有 `single_source_warning` 覆蓋。
+
+### Impact
+
+- 單一 Tier 3 來源事件的 confidence 從 "low" 改為 "medium"
+- Markdown 顯示從 🔴 低 改為 🟡 中
+- `single_source_warning` 仍維持，Claude 改寫時仍會用保留語氣
+
+---
+
+## 2026-05-21 | 事件聚合門檻提高 — shared_kw_min 3→5 + 停用詞
+
+### Decision
+
+共同關鍵詞門檻從 3 提高到 5，並新增 30 個新聞通用停用詞。
+
+### Reason
+
+首日館報的 ECON 區塊把三件不相關事件合併（波音訂單 + 歐美貿易 + 三星罷工），因為 trade, deal, summit 等通用詞觸發 transitive chain。
+
+### Impact
+
+- 同 beat 內的事件合併更嚴格，需要 5 個非通用共同詞才會合
+- 標題高相似度（≥ 88%）的跨源合併不受影響
+- `config/selection_score.yaml` 同步更新
+
+---
+
+## 2026-05-21 | 朗讀稿來源格式 — 開場一次 + 底部彙整
+
+### Decision
+
+「讓圖書館員翻譯給你聽」只在開場白出現一次。改寫 prompt 告知 Claude voice_text 不加尾部來源。所有參考連結集中在 voice / markdown 底部。
+
+### Reason
+
+月月 2026-05-21 review 指出每則重複唸來源太冗，且貼推特時沒有方便的連結區塊。
+
+### Impact
+
+- voice.txt 開場：「以下是今日的紀錄檔案，讓圖書館員翻譯給你聽。」
+- voice.txt / markdown 底部新增「參考來源」區塊，URL 集中一處
+- 貼推特時可在留言區一次貼連結
+- `rewrite_prompt.md` 更新，Claude 不再在 voice_text 結尾加來源行

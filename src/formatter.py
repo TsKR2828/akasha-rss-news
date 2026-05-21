@@ -283,7 +283,7 @@ def build_report(
     date_compact = date_str.replace("-", "")
     now = datetime.now(TAIPEI)
 
-    # Group items by beat
+    # Group items by beat, sort within each beat by selection_score desc
     sections = []
     items_by_beat: dict[str, list[dict]] = {}
     for item in items:
@@ -294,6 +294,8 @@ def build_report(
         beat_items = items_by_beat.get(beat, [])
         if not beat_items:
             continue
+        # 區塊內按 selection_score 降序排列，分數高的排前面
+        beat_items.sort(key=lambda x: x.get("selection_score", 0), reverse=True)
         meta = beat_meta.get(beat, BEAT_FALLBACK.get(beat, {"name": beat, "emoji": ""}))
         sections.append({
             "beat": beat,
@@ -305,6 +307,7 @@ def build_report(
     # Handle unknown beats
     for beat, beat_items in items_by_beat.items():
         if beat not in BEAT_ORDER:
+            beat_items.sort(key=lambda x: x.get("selection_score", 0), reverse=True)
             meta = beat_meta.get(beat, {"name": beat, "emoji": ""})
             sections.append({
                 "beat": beat,
@@ -545,25 +548,9 @@ def format_voice_script(
                 # 來源宣告已包含在 Claude 產出的 voice_text 中（規格 §13.5）。
                 # 不再由 formatter 額外追加，避免重複朗讀來源資訊。
 
-    # 結語
+    # 結語——voice 版到這裡結束，不放 URL（TTS 不該唸連結）
     lines.append("以上是今天的館報。")
     lines.append("我們明天見。")
-
-    # 參考來源彙整（所有來源連結集中底部，方便貼社群留言）
-    all_sources = _collect_all_sources(report)
-    if all_sources:
-        lines.append("")
-        lines.append("---")
-        lines.append("參考來源：")
-        for s in all_sources:
-            pub = s.get("publisher", "")
-            title = s.get("title", "")
-            url = s.get("url", "")
-            if url:
-                lines.append(f"- {pub}: {title}")
-                lines.append(f"  {url}")
-            else:
-                lines.append(f"- {pub}: {title}")
 
     return "\n".join(lines)
 

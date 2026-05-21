@@ -429,6 +429,18 @@ class TestBuildReport:
         assert "ARTS" not in beats
         assert "INTL" in beats
 
+    def test_items_sorted_by_selection_score(self, sample_event, sample_event_tw, sample_stats, beat_meta):
+        """同 beat 內的事件按 selection_score 降序排列。"""
+        # sample_event score=45, sample_event_tw score=60, both INTL beat
+        items = [
+            build_platform_output_item(sample_event),      # score 45
+            build_platform_output_item(sample_event_tw),    # score 60
+        ]
+        report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
+        intl_section = [s for s in report["sections"] if s["beat"] == "INTL"][0]
+        scores = [it.get("selection_score", 0) for it in intl_section["items"]]
+        assert scores == sorted(scores, reverse=True)  # 高分在前
+
 
 # ---------------------------------------------------------------------------
 # TestFormatMarkdown
@@ -540,14 +552,14 @@ class TestFormatVoiceScript:
         # thread_text 有 emoji，voice script 不應該有
         assert "🌍" not in voice
 
-    def test_has_reference_links(self, sample_event, sample_stats, beat_meta):
-        """底部有參考來源連結（方便貼社群留言區）。"""
+    def test_no_urls_in_voice(self, sample_event, sample_stats, beat_meta):
+        """Voice 版不含 URL（TTS 不該唸連結，連結只在 markdown 版）。"""
         items = [build_platform_output_item(sample_event)]
         report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
         voice = format_voice_script(report, "2026-05-19", beat_meta)
-        assert "參考來源" in voice
-        assert "bbc.com" in voice
-        assert "reuters.com" in voice
+        assert "https://" not in voice
+        assert "http://" not in voice
+        assert "參考來源" not in voice
 
 
 class TestBuildSourceAttribution:

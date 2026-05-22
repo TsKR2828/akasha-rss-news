@@ -142,3 +142,39 @@ Phase 5 先不設定通知管道，後續再加。
 - voice.txt / markdown 底部新增「參考來源」區塊，URL 集中一處
 - 貼推特時可在留言區一次貼連結
 - `rewrite_prompt.md` 更新，Claude 不再在 voice_text 結尾加來源行
+
+---
+
+## 2026-05-22 | 同 beat 關鍵詞匹配加標題相似度門檻
+
+### Decision
+
+關鍵詞匹配分支（弱信號）新增 `title_sim ≥ 50%` 門檻。同 beat 內的文章必須標題也有中度相似度，才能透過共同關鍵詞合併。
+
+### Reason
+
+月月 2026-05-22 review 指出 ARTS beat 內兩篇完全不同的建築文章（圍牆住宅 vs 木門文章）因共享領域關鍵詞（architecture, residential, courtyard, design）被合併。同領域不同報導共享領域詞彙是正常現象，不代表是同一事件。
+
+### Impact
+
+- 關鍵詞合併三重條件：同 beat + title_sim ≥ 50% + shared_kw ≥ 5
+- 標題高相似度（≥ 88%）的跨源合併不受影響
+- canonical URL 完全相同的合併不受影響
+- 同領域（ARTS 建築、ECON 金融）的不相關文章不再被黏在一起
+
+---
+
+## 2026-05-22 | 數字翻譯規則 — k/M/B → 萬/億
+
+### Decision
+
+rewrite_prompt.md 新增「⛔ 數字格式規則」，要求 Claude 將英文數字縮寫（k/M/B）轉換為中文萬/億單位。
+
+### Reason
+
+月月 2026-05-22 review 指出「26千磅」是 £26k 的直譯，中文應寫「2.6 萬英鎊」。
+
+### Impact
+
+- 新增換算表 + 規則 + checklist 項目
+- Sonnet 改寫時必須做數字單位轉換，不得直譯英文 k/M/B

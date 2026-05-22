@@ -1,8 +1,77 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine prompt 完成，首日品質調整中）
-測試合計：330 條全綠（325 原有 + 5 新增品質修復）
+目前階段：Phase 5 進行中（pipeline + routine prompt 完成，voice_style_guide 已整合）
+測試合計：341 條全綠（340 + 1 voice 7-event limit）
 Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+
+---
+
+## 2026-05-22 — voice_style_guide 整合進 rewrite_prompt
+
+月月提供 `docs/voice_style_guide.md`，把所有 voice 文風規則合併進 `prompts/rewrite_prompt.md`。
+
+### 合併進 rewrite_prompt.md 的規則
+
+- **句式節奏**：短句 60% / 中句 30% / 長句 10%（取代原本的「15–30 字」）
+- **每則結構**：第一句是 takeaway（≤30 字），不是背景
+- **數字人話翻譯**：大金額附新台幣換算（voice_text 限定）
+- **擴充禁用句型**：視角類（值得注意的是、後續仍需關注）+ 結構類（首先其次最後、排比收尾）
+- **來源禁止句型擴充**：「讓圖書館員翻譯給你聽」（開場已含）、「目前來源提供的細節有限」等
+- **資料邊界**：寧可留白不可捏造、原文語意模糊用「據報導」帶過
+- **checklist** 新增 2 項：takeaway 檢查 + 短句比例檢查
+
+### formatter.py 系統級變更
+
+- **過場句 pool**：每個 beat 3-4 句備選，同一期隨機選用不重複（取代固定一句）
+- **voice 7-event 限制**：最多展開 7 則完整 voice_text，其餘用 headline 一句帶過（「另外還有：XXX、YYY。」）
+- 新增 `BEAT_TRANSITION_POOL`、`VOICE_MAX_FULL_EVENTS` 常數
+
+### 動到的檔案
+
+| 檔案 | 變更 |
+|---|---|
+| `prompts/rewrite_prompt.md` | 全面合併 voice_style_guide 規則 |
+| `src/formatter.py` | 過場句 pool + 7-event voice limit + import random |
+| `tests/test_formatter.py` | 改 1 條（transition pool）+ 新增 1 條（7-event limit） |
+
+---
+
+## 2026-05-22 — 品質修復第三輪（聚合收緊 + 數字格式 + stats 修正）
+
+2026-05-22 館報 review 發現 4 個問題，全部修復。
+
+### 修了什麼
+
+**#1 event_cluster.py — 同 beat 關鍵詞匹配加標題相似度門檻**
+
+- 問題：ARTS beat 內兩篇完全不相關的建築文章（圍牆住宅 vs 木門）因共享領域關鍵詞（architecture, residential, courtyard, design）被合併
+- 根因：同 beat 內的關鍵詞匹配沒有標題相似度要求，只要 ≥5 個共同詞就合併
+- 修法：關鍵詞分支新增 `title_sim ≥ 50%` 門檻——同 beat 必須標題也有中度相似才走關鍵詞合併
+- 新增測試 3 條：`test_same_beat_low_title_sim_keywords_only_no_match`、`test_same_beat_moderate_title_sim_plus_keywords_matches`、`test_same_beat_unrelated_articles_separate_clusters`
+- 修改測試 1 條：`test_shared_keywords_matches` 標題改為有中度相似度的版本
+
+**#2 rewrite_prompt.md — 數字格式規則（中文萬/億）**
+
+- 問題：「一個人如何欠下26千磅債」——「26千磅」是 £26k 直譯，中文應寫「2.6 萬英鎊」
+- 修法：新增「⛔ 數字格式規則」段落，含 k/M/B → 萬/億 換算表 + 規則 + checklist 項目
+- 範例：£26k → 2.6 萬英鎊、$1.5M → 150 萬美元、$3.2B → 32 億美元
+
+**#3 formatter.py CLI — 統計數據從磁碟讀取**
+
+- 問題：統計區塊顯示「抓取文章: 0」「過濾後文章: 0」但選了 19 則事件
+- 根因：formatter CLI 的 `main()` 硬編碼 `total_articles_fetched: 0`，沒從 feed_health.json 讀
+- 修法：仿 `pipeline._collect_stats()` 邏輯，從 `data/raw/{date}/feed_health.json` 和 `data/articles/{date}/` 讀取實際計數
+- 新增測試 1 條：`TestCLIStatsReading::test_stats_from_feed_health`
+
+### 動到的檔案
+
+| 檔案 | 變更 |
+|---|---|
+| `src/event_cluster.py` | 關鍵詞分支加 title_sim ≥ 50% 門檻 |
+| `prompts/rewrite_prompt.md` | 新增數字格式規則（⛔ 段落 + 換算表 + checklist） |
+| `src/formatter.py` | CLI main() 從 feed_health.json + articles 目錄讀取實際統計 |
+| `tests/test_event_cluster.py` | +3 條（same-beat title-sim 隔離）+ 改 1 條 |
+| `tests/test_formatter.py` | +1 條（CLI stats 讀取） |
 
 ---
 

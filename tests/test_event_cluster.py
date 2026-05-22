@@ -62,12 +62,12 @@ class TestMatchesCluster:
         assert event_cluster.matches_cluster(b, [a])
 
     def test_shared_keywords_matches(self):
-        """同 beat + 5 個以上共同關鍵詞 → 合併。"""
+        """同 beat + 標題中度相似(≥50%) + 5 個以上共同關鍵詞 → 合併。"""
         a = _article("a" * 64, source_id="bbc_world",
-                     title="Brussels conference",
+                     title="Ukraine ceasefire talks in Brussels",
                      summary="Ukraine ceasefire negotiation military humanitarian aid package")
         b = _article("b" * 64, source_id="reuters_world",
-                     title="Diplomatic effort",
+                     title="Brussels ceasefire conference on Ukraine",
                      summary="Ukraine ceasefire negotiation military humanitarian aid package",
                      canonical="https://reuters.com/2")
         assert event_cluster.matches_cluster(b, [a])
@@ -107,6 +107,31 @@ class TestMatchesCluster:
         b = _article("b" * 64, source_id="reuters_world", beat="INTL",
                      title="China buys 200 Boeing jets after summit",
                      canonical="https://reuters.com/2")
+        assert event_cluster.matches_cluster(b, [a])
+
+    def test_same_beat_low_title_sim_keywords_only_no_match(self):
+        """同 beat + 共同關鍵詞夠多，但標題相似度 < 50% → 不合併。
+        防止同領域不相關文章黏在一起（如 ARTS 兩篇不同建築報導）。"""
+        a = _article("a" * 64, source_id="archdaily", beat="ARTS",
+                     title="Concrete walls frame inward-gazing residence in Brazil",
+                     summary="architecture residential concrete walls courtyard design")
+        b = _article("b" * 64, source_id="dezeen", beat="ARTS",
+                     title="Wooden doors and timber screens define Japanese tea house",
+                     summary="architecture residential wooden doors courtyard design",
+                     canonical="https://dezeen.com/2")
+        # 共享 architecture, residential, courtyard, design 等關鍵詞，
+        # 但標題完全不同 → 不該合併
+        assert not event_cluster.matches_cluster(b, [a])
+
+    def test_same_beat_moderate_title_sim_plus_keywords_matches(self):
+        """同 beat + 標題 ≥ 50% 相似 + 共同關鍵詞 ≥ 5 → 合併。"""
+        a = _article("a" * 64, source_id="archdaily", beat="ARTS",
+                     title="Concrete residence with courtyard in Sao Paulo Brazil",
+                     summary="architecture residential concrete walls courtyard inward design")
+        b = _article("b" * 64, source_id="dezeen", beat="ARTS",
+                     title="Courtyard residence of concrete in Sao Paulo",
+                     summary="architecture residential concrete walls courtyard inward design",
+                     canonical="https://dezeen.com/2")
         assert event_cluster.matches_cluster(b, [a])
 
 
@@ -160,6 +185,20 @@ class TestClusterArticles:
             _article("b" * 64, source_id="dezeen", beat="ARTS",
                      title="Architecture design review",
                      summary="Beijing economy summit global trade",
+                     canonical="https://dezeen.com/b"),
+        ]
+        clusters = event_cluster.cluster_articles(articles)
+        assert len(clusters) == 2
+
+    def test_same_beat_unrelated_articles_separate_clusters(self):
+        """同 beat 但標題不相似的文章，即使共享領域關鍵詞也不合併。"""
+        articles = [
+            _article("a" * 64, source_id="archdaily", beat="ARTS",
+                     title="Concrete walls frame inward-gazing residence in Brazil",
+                     summary="architecture residential concrete walls courtyard design"),
+            _article("b" * 64, source_id="dezeen", beat="ARTS",
+                     title="Wooden doors and timber screens define Japanese tea house",
+                     summary="architecture residential wooden doors courtyard design",
                      canonical="https://dezeen.com/b"),
         ]
         clusters = event_cluster.cluster_articles(articles)

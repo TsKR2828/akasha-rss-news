@@ -36,10 +36,10 @@ output/logs/run_YYYYMMDD.json     # run log
 | 4 多格式輸出 | ✅ 完成 | formatter（JSON / MD / voice / X / Threads + run log + 驗證） |
 | **5 Routine** | 🔧 **進行中** | pipeline.py + routine 已設定，待穩定性驗證 |
 
-**數據快照（2026-05-20）**：
+**數據快照（2026-05-22）**：
 - 26 enabled sources / 0 failed / 461 articles
 - 14 個 source modules，0 個 pending
-- 330 條測試全綠（~5.6 秒）
+- 341 條測試全綠（~4.0 秒）
 
 ---
 
@@ -67,7 +67,7 @@ output/logs/run_YYYYMMDD.json     # run log
 
 | 檔案 | 用途 |
 |---|---|
-| `prompts/rewrite_prompt.md` | Claude 改寫指令（含 injection 防護、可做/不可做、checklist） |
+| `prompts/rewrite_prompt.md` | Claude 改寫指令（含 injection 防護、可做/不可做、voice_style_guide、checklist） |
 | `prompts/routine_prompt.md` | 正式版 — 呼叫 `python -m src.pipeline` 的 9-step 流程 |
 
 ### Source Code（Phase 1–4，全部完成）
@@ -80,13 +80,13 @@ output/logs/run_YYYYMMDD.json     # run log
 | `src/entity_recognizer.py` | spaCy NER 封裝：extract_entities + entity_match_score | 14 條 |
 | `src/tw_highlight.py` | Taiwan Highlight：positive + context + FP review | 10 條 |
 | `src/dedup.py` | 文章去重：canonical URL + 同源相似標題（rapidfuzz ≥0.92） | 9 條 |
-| `src/event_cluster.py` | 事件聚合：title sim 0.88 + 共同關鍵詞 ≥5（同beat） + 24h window + 停用詞 | 19 條 |
+| `src/event_cluster.py` | 事件聚合：title sim 0.88 + 共同關鍵詞 ≥5（同beat+title≥50%） + 24h window + 停用詞 | 22 條 |
 | `src/selector.py` | 選題：selection_score + daily_limits + drop_reason | 13 條 |
 | `src/html_cleaner.py` | strip HTML/script/style + 追蹤參數清理 + entity decode | 18 條 |
 | `src/claude_rewrite.py` | Anthropic SDK 呼叫 + retry + JSON parse + merge + lint | 16 條 |
 | `src/claim_trace.py` | verify + fix + fallback claim + single_source_warning | 19 條 |
 | `src/validators.py` | banned_phrases(8) + voice_text lint(6) + confidence/opinion/claim/platform | 27 條 |
-| `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI | 56 條 |
+| `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI（stats 讀取 + transition pool + 7-event voice limit） | 58 條 |
 | `src/pipeline.py` | 全 pipeline 入口（串接 9 步）+ stats 收集 + 摘要 | 19 條 |
 
 ### Docs
@@ -105,16 +105,16 @@ tests/test_classifier.py        20 條（含 9 條 entity integration）
 tests/test_entity_recognizer.py 14 條
 tests/test_tw_highlight.py      10 條
 tests/test_dedup.py              9 條
-tests/test_event_cluster.py     19 條
+tests/test_event_cluster.py     22 條
 tests/test_selector.py          13 條
 tests/test_html_cleaner.py      18 條
 tests/test_claude_rewrite.py    16 條（mocked SDK）
 tests/test_claim_trace.py       19 條
 tests/test_validators.py        27 條
-tests/test_formatter.py         56 條
+tests/test_formatter.py         58 條
 tests/test_pipeline.py          19 條
 ───────────────────────────────────
-合計                            330 條，全綠，~5.6 秒
+合計                            341 條，全綠，~4.0 秒
 ```
 
 ---
@@ -166,7 +166,8 @@ tests/test_pipeline.py          19 條
 
 ## Recent Commits
 
-- `pending` fix: quality round 2 — confidence + kw threshold + voice format + ref links
+- `pending` feat: merge voice_style_guide into prompt + formatter
+- `8e04d37` fix: quality round 2 — voice zero-source + beat sort + prompt hardening
 - `7c28fb2` feat(phase-5): pipeline orchestrator + routine prompt
 - `ce185d5` feat(phase-3-4): Claude rewrite pipeline + multi-format output
 

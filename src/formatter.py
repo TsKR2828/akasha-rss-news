@@ -545,14 +545,40 @@ def format_voice_script(
             if voice_text:
                 lines.append(voice_text)
                 lines.append("")
-                # 來源宣告已包含在 Claude 產出的 voice_text 中（規格 §13.5）。
-                # 不再由 formatter 額外追加，避免重複朗讀來源資訊。
+                # voice_text 是零來源純內容，來源由結尾統一處理。
+
+    # 來源彙整（一句帶過所有來源名稱）
+    all_sources = _collect_all_sources(report)
+    if all_sources:
+        publishers = []
+        for s in all_sources:
+            pub = s.get("publisher", "")
+            if pub and pub not in publishers:
+                publishers.append(pub)
+        if publishers:
+            source_line = _format_publisher_list(publishers)
+            lines.append(source_line)
+            lines.append("")
 
     # 結語——voice 版到這裡結束，不放 URL（TTS 不該唸連結）
     lines.append("以上是今天的館報。")
     lines.append("我們明天見。")
 
     return "\n".join(lines)
+
+
+def _format_publisher_list(publishers: list[str]) -> str:
+    """把 publisher 名稱列表格式化成朗讀用的一句話。
+
+    例：['BBC', 'NPR', 'ArchDaily'] → '以上新聞來自 BBC、NPR 與 ArchDaily 的報導。'
+    """
+    if not publishers:
+        return ""
+    if len(publishers) == 1:
+        return f"以上新聞來自{publishers[0]}的報導。"
+    last = publishers[-1]
+    rest = "、".join(publishers[:-1])
+    return f"以上新聞來自{rest}與{last}的報導。"
 
 
 def _collect_all_sources(report: dict) -> list[dict]:

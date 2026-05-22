@@ -27,6 +27,7 @@ from src.formatter import (
     _build_source_attribution,
     _collect_all_sources,
     _force_split,
+    _format_publisher_list,
     _split_long_sentence,
     build_platform_output_item,
     build_report,
@@ -559,7 +560,37 @@ class TestFormatVoiceScript:
         voice = format_voice_script(report, "2026-05-19", beat_meta)
         assert "https://" not in voice
         assert "http://" not in voice
-        assert "參考來源" not in voice
+
+    def test_consolidated_source_line(self, sample_event, sample_stats, beat_meta):
+        """結尾有統一來源宣告：「以上新聞來自 BBC 與 Reuters 的報導。」"""
+        items = [build_platform_output_item(sample_event)]
+        report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
+        voice = format_voice_script(report, "2026-05-19", beat_meta)
+        assert "以上新聞來自" in voice
+        assert "BBC" in voice
+        assert "Reuters" in voice
+        # 確認在「我們明天見」之前
+        source_idx = voice.index("以上新聞來自")
+        closing_idx = voice.index("我們明天見")
+        assert source_idx < closing_idx
+
+
+class TestFormatPublisherList:
+    """_format_publisher_list：結尾統一來源宣告。"""
+
+    def test_single(self):
+        assert _format_publisher_list(["BBC"]) == "以上新聞來自BBC的報導。"
+
+    def test_two(self):
+        result = _format_publisher_list(["BBC", "Reuters"])
+        assert result == "以上新聞來自BBC與Reuters的報導。"
+
+    def test_three(self):
+        result = _format_publisher_list(["BBC", "NPR", "ArchDaily"])
+        assert result == "以上新聞來自BBC、NPR與ArchDaily的報導。"
+
+    def test_empty(self):
+        assert _format_publisher_list([]) == ""
 
 
 class TestBuildSourceAttribution:

@@ -21,8 +21,10 @@ import pytest
 
 from src.formatter import (
     BEAT_ORDER,
+    BEAT_TRANSITION_POOL,
     BEAT_TRANSITIONS,
     THREADS_MAX_CHARS,
+    VOICE_MAX_FULL_EVENTS,
     X_MAX_CHARS,
     _build_source_attribution,
     _collect_all_sources,
@@ -514,10 +516,12 @@ class TestFormatVoiceScript:
         assert voice.count("讓圖書館員翻譯給你聽") == 1
 
     def test_has_beat_transition(self, sample_event, sample_stats, beat_meta):
+        """voice 裡應包含 INTL beat 的某個過場句（從 pool 隨機選取）。"""
         items = [build_platform_output_item(sample_event)]
         report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
         voice = format_voice_script(report, "2026-05-19", beat_meta)
-        assert BEAT_TRANSITIONS["INTL"] in voice
+        # 隨機選取 pool 中的任一句，至少命中一句
+        assert any(t in voice for t in BEAT_TRANSITION_POOL["INTL"])
 
     def test_has_voice_text(self, sample_event, sample_stats, beat_meta):
         items = [build_platform_output_item(sample_event)]
@@ -573,6 +577,35 @@ class TestFormatVoiceScript:
         source_idx = voice.index("以上新聞來自")
         closing_idx = voice.index("我們明天見")
         assert source_idx < closing_idx
+
+    def test_voice_7_event_limit(self, sample_event, sample_stats, beat_meta):
+        """voice 版最多展開 7 則，其餘一句 headline 帶過。"""
+        # 建 10 個 INTL 事件，score 100~10
+        events = []
+        for i in range(10):
+            evt = {
+                **sample_event,
+                "event_id": f"daily_20260519_evt_{i+1:03d}",
+                "headline": f"測試標題{i+1}",
+                "voice_text": f"這是第 {i+1} 則完整語音內容。",
+                "selection_score": 100 - i * 10,
+            }
+            events.append(evt)
+
+        items = [build_platform_output_item(e) for e in events]
+        report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
+        voice = format_voice_script(report, "2026-05-19", beat_meta)
+
+        # 前 7 則完整展開
+        for i in range(1, 8):
+            assert f"這是第 {i} 則完整語音內容。" in voice
+        # 第 8-10 則只用 headline 帶過
+        assert "這是第 8 則完整語音內容。" not in voice
+        assert "這是第 9 則完整語音內容。" not in voice
+        assert "這是第 10 則完整語音內容。" not in voice
+        # 應該有「另外還有」帶過
+        assert "另外還有" in voice
+        assert "測試標題8" in voice
 
 
 class TestFormatPublisherList:
@@ -798,3 +831,76 @@ class TestGenerateAllOutputs:
         )
         assert len(issues) > 0
         assert report["status"] == "partial"
+
+
+# ---------------------------------------------------------------------------
+# CLI stats reading
+# ---------------------------------------------------------------------------
+
+class TestCLIStatsReading:
+    """formatter CLI 的 main() 應從 feed_health.json 和 articles 目錄讀取實際統計，
+    不再硬編碼為 0。"""
+
+    def test_stats_from_feed_health(self, sample_event, tmp_path):
+        """CLI 能從 feed_health.json 讀到實際 article 數量。"""
+        date = "2026-05-19"
+
+        # 建立 data/raw/date/feed_health.json
+        raw_dir = tmp_path / "data" / "raw" / date
+        raw_dir.mkdir(parents=True)
+        health = [
+            {"source_id": "bbc_world", "status": "ok", "items_valid": 30},
+            {"source_id": "reuters_world", "status": "ok", "items_valid": 25},
+            {"source_id": "bad_feed", "status": "error", "items_valid": 0},
+        ]
+        (raw_dir / "feed_health.json").write_text(
+            json.dumps(health), encoding="utf-8"
+        )
+
+        # 建立 data/articles/date/ 下的文章檔案
+        articles_dir = tmp_path / "data" / "articles" / date
+        articles_dir.mkdir(parents=True)
+        for i in range(40):
+            (articles_dir / f"art_{i:03d}.json").write_text("{}", encoding="utf-8")
+        # _metadata 檔不應計入
+        (articles_dir / "_metadata.json").write_text("{}", encoding="utf-8")
+
+        # 建立 events/date/ 目錄 + manifest + event 檔
+        events_dir = tmp_path / "data" / "events" / date
+        events_dir.mkdir(parents=True)
+        eid = sample_event["event_id"]
+        (events_dir / f"{eid}.json").write_text(
+            json.dumps(sample_event, ensure_ascii=False), encoding="utf-8"
+        )
+        manifest = {"selected_event_ids": [eid], "dropped": []}
+        (events_dir / "_selection_manifest.json").write_text(
+            json.dumps(manifest), encoding="utf-8"
+        )
+
+        # Patch PROJECT_ROOT so formatter CLI looks in tmp_path
+        from src import formatter
+        original_root = formatter.PROJECT_ROOT
+        formatter.PROJECT_ROOT = tmp_path
+
+        try:
+            output_dir = tmp_path / "output"
+            rc = formatter.main([
+                "--date", date,
+                "--events-base", str(events_dir.parent),
+                "--output-base", str(output_dir),
+            ])
+            assert rc == 0
+
+            # 從 run log 讀回 stats
+            dc = date.replace("-", "")
+            log_path = output_dir / "logs" / f"run_{dc}.json"
+            assert log_path.exists()
+            run_log = json.loads(log_path.read_text(encoding="utf-8"))
+            stats = run_log["stats"]
+
+            assert stats["total_feeds_checked"] == 3
+            assert stats["total_feeds_failed"] == 1
+            assert stats["total_articles_fetched"] == 55  # 30 + 25
+            assert stats["total_articles_after_filter"] == 40  # 不含 _metadata
+        finally:
+            formatter.PROJECT_ROOT = original_root

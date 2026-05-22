@@ -28,6 +28,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import random
 import re
 import sys
 import time
@@ -60,14 +61,44 @@ BEAT_FALLBACK = {
 }
 
 # 區塊轉場語（規格 §13.4，每個 beat 取第一句作為預設）
-BEAT_TRANSITIONS = {
-    "INTL":      "先從世界的那一邊說起。",
-    "ARTS":      "接下來，我們翻開藝術那一頁。",
-    "AI":        "然後是 AI 的部分，這個領域最近沒有一天是安靜的。",
-    "ECON":      "看看錢的世界發生了什麼。",
-    "PTS_LOCAL": "回到台灣這邊。",
-    "TW_STORY":  "最後，圖書館員想跟你分享一個台灣的故事。",
+# 過場句 pool（voice_style_guide）：每個 beat 多句備選，同一期隨機選用
+BEAT_TRANSITION_POOL = {
+    "INTL": [
+        "先從世界的那一邊說起。",
+        "今天國際線有幾件事。",
+        "世界那邊，先講最急的。",
+        "從遠的地方開始。",
+    ],
+    "ARTS": [
+        "接下來，翻開藝術那一頁。",
+        "換個節奏，看建築。",
+        "喘口氣，聊聊設計。",
+    ],
+    "AI": [
+        "然後是 AI 的部分。",
+        "AI 這邊照例沒在安靜。",
+        "科技那邊。",
+    ],
+    "ECON": [
+        "看看錢的世界。",
+        "財經面。",
+        "換到經濟。",
+    ],
+    "PTS_LOCAL": [
+        "回到台灣。",
+        "最後是台灣這邊。",
+        "離我們最近的。",
+    ],
+    "TW_STORY": [
+        "最後，圖書館員想跟你分享一個台灣的故事。",
+    ],
 }
+
+# 向下相容：舊測試 import BEAT_TRANSITIONS
+BEAT_TRANSITIONS = {k: v[0] for k, v in BEAT_TRANSITION_POOL.items()}
+
+# voice 版最多展開幾則（voice_style_guide：選 selection_score 最高的 7 則完整改寫，其餘一句帶過）
+VOICE_MAX_FULL_EVENTS = 7
 
 # 星期對照
 WEEKDAY_ZH = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
@@ -527,25 +558,55 @@ def format_voice_script(
     lines.append("以下是今日的紀錄檔案，讓圖書館員翻譯給你聽。")
     lines.append("")
 
+    # 收集所有 items 並依 selection_score 排名，用於 7-event 限制
+    all_items_scores = []
+    for section in report.get("sections", []):
+        for item in section.get("items", []):
+            all_items_scores.append(item.get("selection_score", 0))
+    all_items_scores.sort(reverse=True)
+    score_cutoff = all_items_scores[VOICE_MAX_FULL_EVENTS - 1] if len(all_items_scores) >= VOICE_MAX_FULL_EVENTS else -1
+
+    # 追蹤已完整展開數量（確保不超過 VOICE_MAX_FULL_EVENTS）
+    full_count = 0
+
     # 各 beat 區塊
+    used_transitions: set[str] = set()
     for section in report.get("sections", []):
         beat = section.get("beat", "")
         items = section.get("items", [])
         if not items:
             continue
 
-        # 區塊轉場語（規格 §13.4）
-        transition = BEAT_TRANSITIONS.get(beat, "")
-        if transition:
+        # 區塊轉場語（voice_style_guide pool，同一期不重複）
+        pool = BEAT_TRANSITION_POOL.get(beat, [])
+        available = [t for t in pool if t not in used_transitions]
+        if not available:
+            available = pool  # fallback: 全用完了就重頭來
+        if available:
+            transition = random.choice(available)
+            used_transitions.add(transition)
             lines.append(transition)
             lines.append("")
 
+        # voice_style_guide：最多展開 VOICE_MAX_FULL_EVENTS 則，其餘一句 headline 帶過
+        beat_headlines: list[str] = []
         for item in items:
+            score = item.get("selection_score", 0)
             voice_text = item.get("voice_text", "")
-            if voice_text:
+            headline = item.get("headline", "")
+
+            if full_count < VOICE_MAX_FULL_EVENTS and score >= score_cutoff and voice_text:
                 lines.append(voice_text)
                 lines.append("")
-                # voice_text 是零來源純內容，來源由結尾統一處理。
+                full_count += 1
+            elif headline:
+                beat_headlines.append(headline)
+
+        # 未展開的事件用一句帶過
+        if beat_headlines:
+            brief = "另外還有：" + "、".join(beat_headlines) + "。"
+            lines.append(brief)
+            lines.append("")
 
     # 來源彙整（一句帶過所有來源名稱）
     all_sources = _collect_all_sources(report)
@@ -948,12 +1009,33 @@ def main(argv: Optional[list[str]] = None) -> int:
         rlog = json.loads(rewrite_log_path.read_text(encoding="utf-8"))
         rewrite_warnings = rlog.get("lint_warnings", [])
 
-    # Pipeline stats（MVP: 從已有數據推算）
+    # Pipeline stats — 從磁碟讀取實際數據（與 pipeline._collect_stats 邏輯一致）
+    raw_dir = PROJECT_ROOT / "data" / "raw" / date
+    articles_dir = PROJECT_ROOT / "data" / "articles" / date
+
+    total_feeds_checked = 0
+    total_feeds_failed = 0
+    total_articles_fetched = 0
+    total_articles_after_filter = 0
+
+    health_path = raw_dir / "feed_health.json"
+    if health_path.exists():
+        health = json.loads(health_path.read_text(encoding="utf-8"))
+        total_feeds_checked = len(health)
+        total_feeds_failed = sum(1 for h in health if h.get("status") != "ok")
+        total_articles_fetched = sum(h.get("items_valid", 0) for h in health)
+
+    if articles_dir.exists():
+        article_files = [
+            f for f in articles_dir.glob("*.json") if not f.name.startswith("_")
+        ]
+        total_articles_after_filter = len(article_files)
+
     stats = {
-        "total_feeds_checked": 26,  # from feeds.yaml enabled count
-        "total_feeds_failed": 0,
-        "total_articles_fetched": 0,
-        "total_articles_after_filter": 0,
+        "total_feeds_checked": total_feeds_checked,
+        "total_feeds_failed": total_feeds_failed,
+        "total_articles_fetched": total_articles_fetched,
+        "total_articles_after_filter": total_articles_after_filter,
         "total_events_merged": len(selected_ids) + len(dropped),
         "total_events_selected": len(selected_ids),
         "tw_highlights_count": sum(1 for e in events if e.get("tw_highlight")),

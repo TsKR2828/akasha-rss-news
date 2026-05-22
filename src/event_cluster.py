@@ -127,13 +127,17 @@ def matches_cluster(
         if fuzz.token_set_ratio(a_norm_title, existing_norm) >= title_threshold:
             return True
 
-        # 規格 §7.2：共同關鍵詞 ≥ 3（弱信號，僅限同 beat 才能合併）
+        # 規格 §7.2：共同關鍵詞 ≥ 5（弱信號，僅限同 beat + 標題有中度相似才能合併）
         # 不同 beat 的文章容易因通用詞誤合（如 china, trade, summit），
         # 限制同 beat 才走關鍵詞匹配，避免 transitive chain 造成事件爆炸。
+        # 同 beat 內也要求標題至少 50% 相似，防止同領域不相關文章黏在一起
+        # （如 ARTS 內兩篇完全不同的建築報導）。
         if a_beat and a_beat == existing.get("beat", ""):
-            shared = a_keywords & article_keywords(existing)
-            if len(shared) >= shared_kw_min:
-                return True
+            title_sim = fuzz.token_set_ratio(a_norm_title, existing_norm)
+            if title_sim >= 50:
+                shared = a_keywords & article_keywords(existing)
+                if len(shared) >= shared_kw_min:
+                    return True
 
     return False
 

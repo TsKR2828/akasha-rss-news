@@ -1,0 +1,1432 @@
+{
+  "reportId": "daily_20260525",
+  "date": "2026-05-25",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-05-25T05:18:24.036163+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260525_evt_054",
+          "headline": "巴基斯坦火車爆炸至少24死",
+          "context": "巴基斯坦西南部俾路支省（Balochistan）一列火車遭自殺式汽車炸彈攻擊，至少 20 至 24 人死亡、逾 50 人受傷。事發地點在首府奎達（Quetta）附近。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n巴基斯坦火車爆炸，至少 24 人死亡\n\n俾路支省（Balochistan）的一列火車遭自殺式汽車炸彈攻擊。兩個來源確認至少 20 至 24 人死亡，另有逾 50 人受傷。事發地點在西南部首府奎達（Quetta）附近。\n\n—— 本則來自 Al Jazeera、BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "俾路支省（Balochistan）發生重大爆炸事件——一列行駛中的火車遭自殺式汽車炸彈攻擊。兩個來源確認至少 20 至 24 人死亡，另有 50 多人受傷。事發地點在巴基斯坦西南部首府奎達（Quetta）附近。\n\n本則整理自 Al Jazeera 與 BBC 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "巴基斯坦西南部的火車遭到炸彈攻擊，至少 20 至 24 人死亡。超過 50 人受傷。攻擊方式是自殺式汽車炸彈，事發在俾路支省首府附近。這是兩個來源都確認的消息。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n巴基斯坦火車爆炸，至少 24 人死亡\n\n俾路支省（Balochistan）的一列火車遭自殺式汽車炸彈攻擊。兩個來源確認至少 20 至 24 人死亡，另有逾 50 人受傷。事發地點在西南部首府奎達（Quetta）附近。\n\n—— 本則來自 Al Jazeera、BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "俾路支省（Balochistan）發生重大爆炸事件——一列行駛中的火車遭自殺式汽車炸彈攻擊。兩個來源確認至少 20 至 24 人死亡，另有 50 多人受傷。事發地點在巴基斯坦西南部首府奎達（Quetta）附近。\n\n本則整理自 Al Jazeera 與 BBC 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "巴基斯坦西南部的火車遭到炸彈攻擊，至少 20 至 24 人死亡。超過 50 人受傷。攻擊方式是自殺式汽車炸彈，事發在俾路支省首府附近。這是兩個來源都確認的消息。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Aljazeera All",
+              "publisher": "Al Jazeera",
+              "title": "Blast hits train in Pakistan's Balochistan, killing at least 24 people",
+              "url": "https://www.aljazeera.com/gallery/2026/5/24/blast-hits-train-in-pakistans-balochistan-killing-at-least-24-people?traffic_source=rss",
+              "published_at": "2026-05-24T20:19:02+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "Blast targeting train kills at least 20 in Pakistan",
+              "url": "https://www.bbc.com/news/articles/cm2pkd58xldo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-24T20:26:09+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "火車在俾路支省遭自殺式炸彈攻擊，至少 24 人死亡、50 人以上受傷",
+              "source_id": "aljazeera_all",
+              "source_title": "Blast hits train in Pakistan's Balochistan, killing at least 24 people",
+              "source_url": "https://www.aljazeera.com/gallery/2026/5/24/blast-hits-train-in-pakistans-balochistan-killing-at-least-24-people?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "爆炸攻擊造成至少 20 人死亡",
+              "source_id": "bbc_world",
+              "source_title": "Blast targeting train kills at least 20 in Pakistan",
+              "source_url": "https://www.bbc.com/news/articles/cm2pkd58xldo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260525_evt_071",
+          "headline": "土耳其警察突入最大反對黨總部",
+          "context": "土耳其鎮暴警察衝入安卡拉（Ankara）的共和人民黨（CHP）總部，事件發生在黨的領導階層遭到撤換之後。共和人民黨是土耳其最大反對黨，現場爆發衝突。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n土耳其鎮暴警察突入最大反對黨總部\n\n土耳其鎮暴警察衝入安卡拉（Ankara）的共和人民黨（CHP，Cumhuriyet Halk Partisi）黨部。CHP 是土耳其最大反對黨。此次行動在黨的領導人遭撤換後發生，黨部現場爆發衝突。\n\n—— 本則來自 Al Jazeera、BBC，2026 年 5 月 24 至 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "土耳其鎮暴警察衝入安卡拉（Ankara）的共和人民黨（CHP）黨部——這是土耳其最大的反對黨。事件發生在黨的領導階層遭到撤換之後，黨部現場爆發衝突。兩個來源均確認警察強行進入。\n\n本則整理自 Al Jazeera 與 BBC 於 2026 年 5 月 24 至 25 日發佈的報導。",
+          "voice_text": "土耳其最大反對黨共和人民黨的總部遭到鎮暴警察強行闖入。黨的領導人先被撤換，警察接著進場。現場爆發衝突。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n土耳其鎮暴警察突入最大反對黨總部\n\n土耳其鎮暴警察衝入安卡拉（Ankara）的共和人民黨（CHP，Cumhuriyet Halk Partisi）黨部。CHP 是土耳其最大反對黨。此次行動在黨的領導人遭撤換後發生，黨部現場爆發衝突。\n\n—— 本則來自 Al Jazeera、BBC，2026 年 5 月 24 至 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "土耳其鎮暴警察衝入安卡拉（Ankara）的共和人民黨（CHP）黨部——這是土耳其最大的反對黨。事件發生在黨的領導階層遭到撤換之後，黨部現場爆發衝突。兩個來源均確認警察強行進入。\n\n本則整理自 Al Jazeera 與 BBC 於 2026 年 5 月 24 至 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "土耳其最大反對黨共和人民黨的總部遭到鎮暴警察強行闖入。黨的領導人先被撤換，警察接著進場。現場爆發衝突。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Aljazeera All",
+              "publisher": "Al Jazeera",
+              "title": "Turkish police storm main opposition CHP's party headquarters",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/5/24/turkish-police-storm-main-opposition-chps-party-headquarters?traffic_source=rss",
+              "published_at": "2026-05-25T00:28:19+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "Turkish riot police storm opposition offices after leaders ousted",
+              "url": "https://www.bbc.com/news/articles/c87qwrqre83o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T03:49:39+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "土耳其警察衝入反對黨 CHP 安卡拉黨部",
+              "source_id": "aljazeera_all",
+              "source_title": "Turkish police storm main opposition CHP's party headquarters",
+              "source_url": "https://www.aljazeera.com/video/newsfeed/2026/5/24/turkish-police-storm-main-opposition-chps-party-headquarters?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "行動在 CHP 領導人遭撤換後發生",
+              "source_id": "bbc_world",
+              "source_title": "Turkish riot police storm opposition offices after leaders ousted",
+              "source_url": "https://www.bbc.com/news/articles/c87qwrqre83o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260525_evt_068",
+          "headline": "澳洲男子遭鯊魚攻擊身亡",
+          "context": "澳洲昆士蘭（Queensland）卡索瓦里海岸（Cassowary Coast）附近的淺灘，一名 39 歲男子疑似在進行水下捕魚時遭鯊魚致命攻擊，傷重不治。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n澳洲東北海岸男子遭鯊魚攻擊，不治身亡\n\n目前的消息指出，澳洲昆士蘭（Queensland）卡索瓦里海岸（Cassowary Coast）附近的一處淺灘，一名 39 歲男子疑似在從事水下捕魚時遭鯊魚攻擊，傷重不治。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源提到這則事故。澳洲昆士蘭（Queensland）卡索瓦里海岸（Cassowary Coast）附近的淺灘，一名 39 歲男子疑似在從事水下捕魚時遭鯊魚致命攻擊，傷重不治。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "澳洲東北部的昆士蘭海岸傳出鯊魚攻擊事故，一名 39 歲男子不治身亡。事發在卡索瓦里海岸附近的淺灘，他疑似當時在水下捕魚。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n澳洲東北海岸男子遭鯊魚攻擊，不治身亡\n\n目前的消息指出，澳洲昆士蘭（Queensland）卡索瓦里海岸（Cassowary Coast）附近的一處淺灘，一名 39 歲男子疑似在從事水下捕魚時遭鯊魚攻擊，傷重不治。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源提到這則事故。澳洲昆士蘭（Queensland）卡索瓦里海岸（Cassowary Coast）附近的淺灘，一名 39 歲男子疑似在從事水下捕魚時遭鯊魚致命攻擊，傷重不治。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "澳洲東北部的昆士蘭海岸傳出鯊魚攻擊事故，一名 39 歲男子不治身亡。事發在卡索瓦里海岸附近的淺灘，他疑似當時在水下捕魚。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "Man killed in shark attack off Australia's north-east coast",
+              "url": "https://www.bbc.com/news/articles/cn9pq5l2d14o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-24T23:29:08+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "澳洲昆士蘭卡索瓦里海岸附近一名 39 歲男子遭鯊魚攻擊身亡，疑似在進行水下捕魚",
+              "source_id": "bbc_world",
+              "source_title": "Man killed in shark attack off Australia's north-east coast",
+              "source_url": "https://www.bbc.com/news/articles/cn9pq5l2d14o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260525_evt_008",
+          "headline": "荷莫茲海峽飛彈擊油輪倖存者現身",
+          "context": "伊朗戰爭期間，一枚飛彈擊中了在荷莫茲海峽（Strait of Hormuz）航行的油輪「天光號」（Skylight）。一名在船上工作的水手 Sunil Puniya 描述了自己如何倖存，但他的朋友至今下落不明。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n荷莫茲海峽油輪遭飛彈擊中，一名水手描述倖存經歷\n\n目前的消息指出，伊朗戰爭期間，一枚飛彈擊中了荷莫茲海峽（Strait of Hormuz）的油輪天光號（Skylight）。那是水手 Sunil Puniya 第一份海上工作。他活下來了——但他的朋友，至今音訊全無。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源報導這則故事。在伊朗戰爭爆發後，荷莫茲海峽（Strait of Hormuz）的油輪天光號（Skylight）遭飛彈擊中。那是水手 Sunil Puniya 的第一份海上工作。他在爆炸中倖存，但他的朋友至今下落不明。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "荷莫茲海峽有一艘油輪被飛彈打中。一名水手說，那是他第一份海上的工作。爆炸之後，他活了下來。但他的朋友，至今找不到。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n荷莫茲海峽油輪遭飛彈擊中，一名水手描述倖存經歷\n\n目前的消息指出，伊朗戰爭期間，一枚飛彈擊中了荷莫茲海峽（Strait of Hormuz）的油輪天光號（Skylight）。那是水手 Sunil Puniya 第一份海上工作。他活下來了——但他的朋友，至今音訊全無。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源報導這則故事。在伊朗戰爭爆發後，荷莫茲海峽（Strait of Hormuz）的油輪天光號（Skylight）遭飛彈擊中。那是水手 Sunil Puniya 的第一份海上工作。他在爆炸中倖存，但他的朋友至今下落不明。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "荷莫茲海峽有一艘油輪被飛彈打中。一名水手說，那是他第一份海上的工作。爆炸之後，他活了下來。但他的朋友，至今找不到。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "I survived a missile strike in the Strait of Hormuz, but my friend has not been found",
+              "url": "https://www.bbc.com/news/articles/ce8pn63q771o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-24T07:24:03+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "荷莫茲海峽油輪天光號遭飛彈擊中，一名水手倖存但朋友失蹤",
+              "source_id": "bbc_world",
+              "source_title": "I survived a missile strike in the Strait of Hormuz, but my friend has not been found",
+              "source_url": "https://www.bbc.com/news/articles/ce8pn63q771o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260525_evt_073",
+          "headline": "俄羅斯大規模空襲烏克蘭4人死亡",
+          "context": "俄羅斯對烏克蘭發動大規模攻擊，造成至少 4 人死亡、數十人受傷。俄方確認使用了奧列什尼克（Oreshnik）飛彈——這種飛彈的飛行速度據報導超過音速 10 倍。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n俄羅斯大規模空襲烏克蘭，至少 4 人死亡\n\n目前的消息指出，俄羅斯對烏克蘭發動大規模攻擊，至少 4 人死亡、數十人受傷。俄方確認使用了奧列什尼克（Oreshnik）飛彈——飛行速度據報導超過音速 10 倍。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源報導這次攻擊。俄羅斯對烏克蘭發動大規模空襲，造成至少 4 人死亡、數十人受傷。俄方確認使用了奧列什尼克（Oreshnik）飛彈，這種飛彈的飛行速度據報導超過音速 10 倍。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "俄羅斯對烏克蘭發動大規模攻擊，至少 4 人死亡。數十人受傷。俄方說這次使用了奧列什尼克飛彈，速度據稱是音速的 10 倍以上。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n俄羅斯大規模空襲烏克蘭，至少 4 人死亡\n\n目前的消息指出，俄羅斯對烏克蘭發動大規模攻擊，至少 4 人死亡、數十人受傷。俄方確認使用了奧列什尼克（Oreshnik）飛彈——飛行速度據報導超過音速 10 倍。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源報導這次攻擊。俄羅斯對烏克蘭發動大規模空襲，造成至少 4 人死亡、數十人受傷。俄方確認使用了奧列什尼克（Oreshnik）飛彈，這種飛彈的飛行速度據報導超過音速 10 倍。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "俄羅斯對烏克蘭發動大規模攻擊，至少 4 人死亡。數十人受傷。俄方說這次使用了奧列什尼克飛彈，速度據稱是音速的 10 倍以上。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+              "url": "https://www.bbc.com/news/articles/clyp6831yp5o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T00:50:46+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "俄羅斯大規模攻擊造成烏克蘭至少 4 人死亡、數十人受傷",
+              "source_id": "bbc_world",
+              "source_title": "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+              "source_url": "https://www.bbc.com/news/articles/clyp6831yp5o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "俄方確認使用奧列什尼克飛彈，速度據報超過音速 10 倍",
+              "source_id": "bbc_world",
+              "source_title": "Large-scale Russian attack on Ukraine leaves four dead and dozens injured",
+              "source_url": "https://www.bbc.com/news/articles/clyp6831yp5o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260525_evt_015",
+          "headline": "北京清河國際人才社區建成",
+          "context": "位於北京清河的 INNNG 國際人才社區，由朱小地建築師事務所（Zhu Xiaodi Architects）與北京市建築設計研究院（BIAD）聯合設計，以建築空間作為城市對話的媒介，回應周邊場域與城市精神。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n北京清河 INNNG 國際人才社區\n\n目前只有一個消息來源提到這則報導。北京清河的 INNNG 國際人才社區，由朱小地建築師事務所（Zhu Xiaodi Architects）與北京市建築設計研究院（BIAD）共同設計，讓建築超越物質功能，成為城市記憶與場所精神的容器。\n\n—— 本則來自 ArchDaily，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。北京清河的 INNNG 國際人才社區，是朱小地建築師事務所（Zhu Xiaodi Architects）與北京市建築設計研究院（BIAD）的聯合作品。設計概念是讓建築不只是建築，而是與基地、使用者和城市精神進行深層對話的空間載體。\n\n本則來自 ArchDaily 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "北京清河有一個國際人才社區建成了。設計師的想法是：建築不只是一棟樓，它也是城市場所精神的容器，要跟基地和人對話。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n北京清河 INNNG 國際人才社區\n\n目前只有一個消息來源提到這則報導。北京清河的 INNNG 國際人才社區，由朱小地建築師事務所（Zhu Xiaodi Architects）與北京市建築設計研究院（BIAD）共同設計，讓建築超越物質功能，成為城市記憶與場所精神的容器。\n\n—— 本則來自 ArchDaily，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。北京清河的 INNNG 國際人才社區，是朱小地建築師事務所（Zhu Xiaodi Architects）與北京市建築設計研究院（BIAD）的聯合作品。設計概念是讓建築不只是建築，而是與基地、使用者和城市精神進行深層對話的空間載體。\n\n本則來自 ArchDaily 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "北京清河有一個國際人才社區建成了。設計師的想法是：建築不只是一棟樓，它也是城市場所精神的容器，要跟基地和人對話。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "Qinghe INNNG International Talent Community / Zhu Xiaodi Architects + BIAD",
+              "url": "https://www.archdaily.com/1036817/qinghe-innng-international-talent-community-zxd-architects-plus-biad",
+              "published_at": "2026-05-24T10:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "北京清河 INNNG 國際人才社區由朱小地建築師事務所與 BIAD 聯合設計",
+              "source_id": "archdaily",
+              "source_title": "Qinghe INNNG International Talent Community / Zhu Xiaodi Architects + BIAD",
+              "source_url": "https://www.archdaily.com/1036817/qinghe-innng-international-talent-community-zxd-architects-plus-biad",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260525_evt_019",
+          "headline": "西班牙建築師改造19世紀水手舊宅",
+          "context": "西班牙事務所 Raúl Sánchez Architects 翻新了位於馬塔羅（Mataro）的一棟 19 世紀老屋，原屬一名水手，現在由他的後裔居住。原本兩棟獨立的建築合而為一，加入現代設計細節。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n西班牙建築師翻新 19 世紀水手故居\n\n目前只有一個消息來源提到這則報導。Raúl Sánchez Architects 翻新了位於西班牙馬塔羅（Mataro）的老宅，原屬一名 19 世紀水手。現在的屋主是水手的後裔。原本兩棟分開的房子合而為一，融入現代設計細節。\n\n—— 本則來自 Dezeen，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。位於西班牙馬塔羅（Mataro）的這棟老房子，19 世紀屬於一名水手。Raúl Sánchez Architects 把原本兩棟獨立的建築合二為一，為現在居住的水手後裔翻新室內，保留歷史記憶的同時，融入當代生活所需的設計細節。\n\n本則來自 Dezeen 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "西班牙有一棟十九世紀的老房子，是水手住過的地方。他的後裔現在還住在那裡。建築師把原本兩棟分開的建築合在一起，翻新室內，讓老宅有了現代生活的感覺。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n西班牙建築師翻新 19 世紀水手故居\n\n目前只有一個消息來源提到這則報導。Raúl Sánchez Architects 翻新了位於西班牙馬塔羅（Mataro）的老宅，原屬一名 19 世紀水手。現在的屋主是水手的後裔。原本兩棟分開的房子合而為一，融入現代設計細節。\n\n—— 本則來自 Dezeen，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。位於西班牙馬塔羅（Mataro）的這棟老房子，19 世紀屬於一名水手。Raúl Sánchez Architects 把原本兩棟獨立的建築合二為一，為現在居住的水手後裔翻新室內，保留歷史記憶的同時，融入當代生活所需的設計細節。\n\n本則來自 Dezeen 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "西班牙有一棟十九世紀的老房子，是水手住過的地方。他的後裔現在還住在那裡。建築師把原本兩棟分開的建築合在一起，翻新室內，讓老宅有了現代生活的感覺。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "dezeen",
+              "name": "Dezeen",
+              "publisher": "Dezeen",
+              "title": "Raúl Sánchez Architects splashes old sailor's home in Spain with modern details",
+              "url": "https://www.dezeen.com/2026/05/24/raul-sanchez-architects-sailor-house-interiors-spain/",
+              "published_at": "2026-05-24T13:00:40+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "Raúl Sánchez Architects 翻新西班牙馬塔羅 19 世紀水手故居，原為兩棟獨立建築現合而為一",
+              "source_id": "dezeen",
+              "source_title": "Raúl Sánchez Architects splashes old sailor's home in Spain with modern details",
+              "source_url": "https://www.dezeen.com/2026/05/24/raul-sanchez-architects-sailor-house-interiors-spain/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260525_evt_027",
+          "headline": "尼科西亞實驗室塔見證市中心復甦",
+          "context": "塞浦路斯首都尼科西亞（Nicosia）市中心正在重建，街道重新規劃行人優先，建築環境也全面升級。Eraclis Papachristou Architects 設計的「實驗室塔」（The Labs Tower）是這波城市復甦的代表作之一。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n尼科西亞市中心復甦：「實驗室塔」\n\n目前只有一個消息來源提到這則報導。塞浦路斯首都尼科西亞（Nicosia）市中心正在全面更新：行人空間擴大，車輛受到限制，建築環境也在升級。Eraclis Papachristou Architects 設計的「實驗室塔」（The Labs Tower），是這波城市復甦的一部分。\n\n—— 本則來自 ArchDaily，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。塞浦路斯首都尼科西亞（Nicosia）市中心正在重建——街道重新規劃，行人空間擴大，車輛受到限制，建築環境也在升級。Eraclis Papachristou Architects 設計的「實驗室塔」（The Labs Tower）代表了這個城市重新站起來的樣子。\n\n本則來自 ArchDaily 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "塞浦路斯首都尼科西亞的市中心正在更新。街道重新規劃，行人優先，車輛受限，建築也在翻新。「實驗室塔」是其中一個新建案。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n尼科西亞市中心復甦：「實驗室塔」\n\n目前只有一個消息來源提到這則報導。塞浦路斯首都尼科西亞（Nicosia）市中心正在全面更新：行人空間擴大，車輛受到限制，建築環境也在升級。Eraclis Papachristou Architects 設計的「實驗室塔」（The Labs Tower），是這波城市復甦的一部分。\n\n—— 本則來自 ArchDaily，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。塞浦路斯首都尼科西亞（Nicosia）市中心正在重建——街道重新規劃，行人空間擴大，車輛受到限制，建築環境也在升級。Eraclis Papachristou Architects 設計的「實驗室塔」（The Labs Tower）代表了這個城市重新站起來的樣子。\n\n本則來自 ArchDaily 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "塞浦路斯首都尼科西亞的市中心正在更新。街道重新規劃，行人優先，車輛受限，建築也在翻新。「實驗室塔」是其中一個新建案。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "The Labs Tower / Eraclis Papachristou Architects",
+              "url": "https://www.archdaily.com/1041747/the-labs-tower-eraclis-papachristou-architects",
+              "published_at": "2026-05-24T14:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "尼科西亞市中心正在重建，街道重新規劃行人優先，建築環境升級",
+              "source_id": "archdaily",
+              "source_title": "The Labs Tower / Eraclis Papachristou Architects",
+              "source_url": "https://www.archdaily.com/1041747/the-labs-tower-eraclis-papachristou-architects",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Eraclis Papachristou Architects 設計「實驗室塔」作為城市復甦的一部分",
+              "source_id": "archdaily",
+              "source_title": "The Labs Tower / Eraclis Papachristou Architects",
+              "source_url": "https://www.archdaily.com/1041747/the-labs-tower-eraclis-papachristou-architects",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -32,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_3; single_low_tier_source; same_topic_already_selected"
+        },
+        {
+          "event_id": "daily_20260525_evt_003",
+          "headline": "印度泥土住宅：傳統工法的當代詮釋",
+          "context": "位於印度侯沙爾（Hosur）的蘇達加爾（Sudhagar）泥屋，由 Aagaram Architects 設計，以土地為主要建材，把傳統泥建工法帶進當代建築語境，讓氣候、材料與空間形成不可分割的整體。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n印度泥屋：用土地蓋出來的當代住宅\n\n目前只有一個消息來源提到這則報導。位於印度侯沙爾（Hosur）的蘇達加爾（Sudhagar）泥屋，由 Aagaram Architects 操刀，以土為材料打造，讓傳統工法遇見當代建築思維——氣候、材料、結構，在這裡合而為一。\n\n—— 本則來自 ArchDaily，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。位於印度侯沙爾（Hosur）的蘇達加爾（Sudhagar）泥屋，由 Aagaram Architects 設計。這棟住宅以土地為建材，用當代建築的視野重新詮釋傳統泥建工法，讓氣候、材料、結構與空間形成密不可分的整體。\n\n本則來自 ArchDaily 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "印度南部有一棟用土蓋的房子。設計師讓傳統的泥建工法遇見當代建築思維。氣候、材料、結構和空間在這裡不是各自分開的，而是一個整體。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n印度泥屋：用土地蓋出來的當代住宅\n\n目前只有一個消息來源提到這則報導。位於印度侯沙爾（Hosur）的蘇達加爾（Sudhagar）泥屋，由 Aagaram Architects 操刀，以土為材料打造，讓傳統工法遇見當代建築思維——氣候、材料、結構，在這裡合而為一。\n\n—— 本則來自 ArchDaily，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。位於印度侯沙爾（Hosur）的蘇達加爾（Sudhagar）泥屋，由 Aagaram Architects 設計。這棟住宅以土地為建材，用當代建築的視野重新詮釋傳統泥建工法，讓氣候、材料、結構與空間形成密不可分的整體。\n\n本則來自 ArchDaily 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "印度南部有一棟用土蓋的房子。設計師讓傳統的泥建工法遇見當代建築思維。氣候、材料、結構和空間在這裡不是各自分開的，而是一個整體。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "Sudhagar's Mud House / Aagaram Architects",
+              "url": "https://www.archdaily.com/1041777/sudhagars-mud-house-aagaram-architects",
+              "published_at": "2026-05-24T05:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "侯沙爾泥屋由 Aagaram Architects 設計，以土地為主要建材，重新詮釋傳統建造工法",
+              "source_id": "archdaily",
+              "source_title": "Sudhagar's Mud House / Aagaram Architects",
+              "source_url": "https://www.archdaily.com/1041777/sudhagars-mud-house-aagaram-architects",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -32,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260525_evt_001",
+          "headline": "SuperClaude框架：打造多模式AI工作流",
+          "context": "SuperClaude Framework 是一個架構在 Anthropic API 之上的結構化框架，整合指令、代理、模式和對話記憶等元件，讓開發者可以建立比原始 API 更複雜的 AI 工作流程。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 AI 科技\n\nSuperClaude Framework：在 Anthropic API 上打造多模式 AI 工作流\n\n目前只有一個消息來源提到這則報導。SuperClaude Framework 是一個運作在 Anthropic API 之上的框架，把指令（commands）、代理（agents）、模式（modes）和對話記憶（session memory）整合在一起，讓開發者可以組合出更結構化的 AI 工作流程。\n\n—— 本則來自 MarkTechPost，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。SuperClaude Framework 架構在 Anthropic API 之上，提供指令、代理、模式和對話記憶四種機制，讓開發者可以建立比原始 API 更結構化的 AI 工作流程。這是一篇教學文章，說明如何用它打造完整系統。\n\n本則來自 MarkTechPost 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "有人在 Anthropic API 上加了一層叫做 SuperClaude 的框架。它讓開發者可以用指令、代理、模式和記憶這四個元件，組合出更複雜的 AI 工作流程。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 AI 科技\n\nSuperClaude Framework：在 Anthropic API 上打造多模式 AI 工作流\n\n目前只有一個消息來源提到這則報導。SuperClaude Framework 是一個運作在 Anthropic API 之上的框架，把指令（commands）、代理（agents）、模式（modes）和對話記憶（session memory）整合在一起，讓開發者可以組合出更結構化的 AI 工作流程。\n\n—— 本則來自 MarkTechPost，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。SuperClaude Framework 架構在 Anthropic API 之上，提供指令、代理、模式和對話記憶四種機制，讓開發者可以建立比原始 API 更結構化的 AI 工作流程。這是一篇教學文章，說明如何用它打造完整系統。\n\n本則來自 MarkTechPost 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有人在 Anthropic API 上加了一層叫做 SuperClaude 的框架。它讓開發者可以用指令、代理、模式和記憶這四個元件，組合出更複雜的 AI 工作流程。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "marktechpost",
+              "name": "Marktechpost",
+              "publisher": "MarkTechPost",
+              "title": "Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory",
+              "url": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory/",
+              "published_at": "2026-05-24T03:05:33+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "SuperClaude Framework 架構在 Anthropic API 之上，整合指令、代理、模式和對話記憶",
+              "source_id": "marktechpost",
+              "source_title": "Build a SuperClaude Framework Workflow with Commands, Agents, Modes, and Session Memory",
+              "source_url": "https://www.marktechpost.com/2026/05/23/build-a-superclaude-framework-workflow-with-commands-agents-modes-and-session-memory/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260525_evt_030",
+          "headline": "微軟發布網頁代理框架Webwright",
+          "context": "微軟研究院（Microsoft Research）發布了 Webwright，一個以終端機為核心的瀏覽器代理框架，以可重複使用的 Playwright 腳本取代傳統點擊紀錄自動化。搭配 GPT-5.4，在 Odysseys 基準測試達到 60.1%，原始 GPT-5.4 只有 33.5%。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 AI 科技\n\n微軟 Webwright：終端機原生的瀏覽器代理框架\n\n目前只有一個消息來源提到這則報導。微軟研究院（Microsoft Research）發布了 Webwright——以可重複使用的 Playwright 腳本取代傳統點擊紀錄自動化。搭配 GPT-5.4，Odysseys 基準從原本的 33.5% 提升到 60.1%。整套程式碼約 1,000 行。\n\n—— 本則來自 MarkTechPost，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。微軟研究院（Microsoft Research）發布了 Webwright，這是一個以終端機為核心的瀏覽器代理框架，用可重複使用的 Playwright 腳本取代傳統的點擊紀錄自動化。整套系統約 1,000 行程式碼。搭配 GPT-5.4，在 Odysseys 基準測試達到 60.1%，相比原始 GPT-5.4 的 33.5% 提升不少。\n\n本則來自 MarkTechPost 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "微軟研究院推出了一個叫 Webwright 的框架，讓 AI 代理用腳本控制瀏覽器，而不是靠記錄滑鼠點擊來自動化。搭配 GPT-5.4，在 Odysseys 這個評測裡，成績從 33.5% 提升到 60.1%。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 AI 科技\n\n微軟 Webwright：終端機原生的瀏覽器代理框架\n\n目前只有一個消息來源提到這則報導。微軟研究院（Microsoft Research）發布了 Webwright——以可重複使用的 Playwright 腳本取代傳統點擊紀錄自動化。搭配 GPT-5.4，Odysseys 基準從原本的 33.5% 提升到 60.1%。整套程式碼約 1,000 行。\n\n—— 本則來自 MarkTechPost，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。微軟研究院（Microsoft Research）發布了 Webwright，這是一個以終端機為核心的瀏覽器代理框架，用可重複使用的 Playwright 腳本取代傳統的點擊紀錄自動化。整套系統約 1,000 行程式碼。搭配 GPT-5.4，在 Odysseys 基準測試達到 60.1%，相比原始 GPT-5.4 的 33.5% 提升不少。\n\n本則來自 MarkTechPost 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "微軟研究院推出了一個叫 Webwright 的框架，讓 AI 代理用腳本控制瀏覽器，而不是靠記錄滑鼠點擊來自動化。搭配 GPT-5.4，在 Odysseys 這個評測裡，成績從 33.5% 提升到 60.1%。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "marktechpost",
+              "name": "Marktechpost",
+              "publisher": "MarkTechPost",
+              "title": "Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base GPT-5.4's 33.5%",
+              "url": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5/",
+              "published_at": "2026-05-24T16:56:19+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "微軟研究院發布 Webwright，終端機原生瀏覽器代理框架，Odysseys 基準達 60.1%，原始 GPT-5.4 為 33.5%",
+              "source_id": "marktechpost",
+              "source_title": "Microsoft Research Releases Webwright: A Terminal-Native Web Agent Framework That Scores 60.1% on Odysseys, Up from Base GPT-5.4's 33.5%",
+              "source_url": "https://www.marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260525_evt_064",
+          "headline": "Amazon Bee AI穿戴裝置：好用又讓人不安",
+          "context": "Amazon 推出了名為「Bee」的 AI 穿戴裝置，融合便利功能與隱私焦慮。一名試用者說，這個東西讓他既感到好奇，又有種說不清的不安感——這好像也是目前所有 AI 穿戴產品的共同特色。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 AI 科技\n\nAmazon Bee AI 穿戴裝置：好用，但讓人有點不安\n\n目前只有一個消息來源提到這則評測。Amazon 推出 Bee，一款 AI 穿戴裝置。試用者的感受很矛盾：確實有趣、功能方便，但同時帶來一種說不出口的隱私不安感。這種矛盾，也是當前 AI 穿戴裝置的普遍處境。\n\n—— 本則來自 TechCrunch，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則評測。Amazon 新推出了 Bee，一款 AI 穿戴裝置。評測者試用後的感受很矛盾：它確實有趣、功能也方便，但戴著它的同時，會有種說不出口的隱私不安感。這種「好用但讓人不安」的矛盾，說起來也是當前 AI 穿戴裝置的共同處境。\n\n本則來自 TechCrunch 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "Amazon 推出了一款叫做 Bee 的 AI 穿戴裝置。試用的人說，它很好玩、也很方便，但戴著它會有種說不清的隱私不安感。這種又想用、又覺得怪的矛盾，好像是很多 AI 穿戴產品都有的問題。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 AI 科技\n\nAmazon Bee AI 穿戴裝置：好用，但讓人有點不安\n\n目前只有一個消息來源提到這則評測。Amazon 推出 Bee，一款 AI 穿戴裝置。試用者的感受很矛盾：確實有趣、功能方便，但同時帶來一種說不出口的隱私不安感。這種矛盾，也是當前 AI 穿戴裝置的普遍處境。\n\n—— 本則來自 TechCrunch，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則評測。Amazon 新推出了 Bee，一款 AI 穿戴裝置。評測者試用後的感受很矛盾：它確實有趣、功能也方便，但戴著它的同時，會有種說不出口的隱私不安感。這種「好用但讓人不安」的矛盾，說起來也是當前 AI 穿戴裝置的共同處境。\n\n本則來自 TechCrunch 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Amazon 推出了一款叫做 Bee 的 AI 穿戴裝置。試用的人說，它很好玩、也很方便，但戴著它會有種說不清的隱私不安感。這種又想用、又覺得怪的矛盾，好像是很多 AI 穿戴產品都有的問題。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "Techcrunch Ai",
+              "publisher": "TechCrunch",
+              "title": "I tried Amazon's Bee wearable and am both intrigued and slightly creeped out",
+              "url": "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/",
+              "published_at": "2026-05-24T23:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Amazon Bee 是一款 AI 穿戴裝置，評測者試用後感到好奇但也有隱私不安感",
+              "source_id": "techcrunch_ai",
+              "source_title": "I tried Amazon's Bee wearable and am both intrigued and slightly creeped out",
+              "source_url": "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260525_evt_002",
+          "headline": "騰訊開源AI代理本地記憶系統",
+          "context": "騰訊（Tencent）以 MIT 授權開源了 TencentDB Agent Memory，一個完全在本地端運行的 AI 代理記憶系統。它結合符號式短期記憶與四層長期記憶架構，把冗長的工具操作日誌壓縮成精簡的任務圖表。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 AI 科技\n\n騰訊開源 TencentDB Agent Memory：本地端 AI 代理記憶系統\n\n目前只有一個消息來源提到這則報導。騰訊（Tencent）以 MIT 授權開源了 TencentDB Agent Memory，一套完全跑在本地端的 AI 代理記憶系統。符號式短期記憶負責壓縮工具操作日誌，四層長期記憶架構負責管理更深層的資訊。\n\n—— 本則來自 MarkTechPost，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個來源提到這則報導。騰訊（Tencent）以 MIT 授權開源了 TencentDB Agent Memory，這是一套完全在本地端運行的 AI 代理記憶系統。它由兩部分組成：符號式短期記憶，把冗長的工具操作日誌壓縮成精簡的 Mermaid 任務圖表；以及四層長期記憶架構，讓代理的資訊管理更有條理。\n\n本則來自 MarkTechPost 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "騰訊把一套叫 TencentDB Agent Memory 的 AI 代理記憶系統開源了，用 MIT 授權。這個系統完全跑在本地端，不需要連外部服務。短期記憶負責整理工具操作的日誌，長期記憶分成四層。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 AI 科技\n\n騰訊開源 TencentDB Agent Memory：本地端 AI 代理記憶系統\n\n目前只有一個消息來源提到這則報導。騰訊（Tencent）以 MIT 授權開源了 TencentDB Agent Memory，一套完全跑在本地端的 AI 代理記憶系統。符號式短期記憶負責壓縮工具操作日誌，四層長期記憶架構負責管理更深層的資訊。\n\n—— 本則來自 MarkTechPost，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個來源提到這則報導。騰訊（Tencent）以 MIT 授權開源了 TencentDB Agent Memory，這是一套完全在本地端運行的 AI 代理記憶系統。它由兩部分組成：符號式短期記憶，把冗長的工具操作日誌壓縮成精簡的 Mermaid 任務圖表；以及四層長期記憶架構，讓代理的資訊管理更有條理。\n\n本則來自 MarkTechPost 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "騰訊把一套叫 TencentDB Agent Memory 的 AI 代理記憶系統開源了，用 MIT 授權。這個系統完全跑在本地端，不需要連外部服務。短期記憶負責整理工具操作的日誌，長期記憶分成四層。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "marktechpost",
+              "name": "Marktechpost",
+              "publisher": "MarkTechPost",
+              "title": "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents",
+              "url": "https://www.marktechpost.com/2026/05/23/tencent-open-sources-tencentdb-agent-memory-a-4-tier-local-memory-pipeline-for-ai-agents/",
+              "published_at": "2026-05-24T03:31:12+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "騰訊以 MIT 授權開源 TencentDB Agent Memory，結合符號式短期記憶與四層長期記憶架構",
+              "source_id": "marktechpost",
+              "source_title": "Tencent Open-Sources TencentDB Agent Memory: A 4-Tier Local Memory Pipeline for AI Agents",
+              "source_url": "https://www.marktechpost.com/2026/05/23/tencent-open-sources-tencentdb-agent-memory-a-4-tier-local-memory-pipeline-for-ai-agents/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260525_evt_013",
+          "headline": "英國日用品為何越來越貴？",
+          "context": "2022 年英國超市的 6 顆雞蛋售價為 1 英鎊，現在已漲了不少。這篇報導追問日用必需品通膨的成因，以及其中是否存在企業暴利的問題。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 經濟\n\n六顆蛋從 1 英鎊漲到多少？英國日用品通膨追問\n\n目前的消息指出，2022 年英國超市的 6 顆雞蛋只賣 1 英鎊。現在漲了不少。這篇報導追問：日用必需品為什麼越來越貴？有沒有人在從中暴利？\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源提到這則報導。2022 年，英國超市的 6 顆雞蛋售價是 1 英鎊。現在呢？這篇報導探討日用必需品為什麼越來越貴，同時追問：這其中究竟有沒有企業暴利的問題？\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "2022 年英國超市的 6 顆雞蛋只賣 1 英鎊。現在漲了。這篇報導在問：日用品為什麼越來越貴，有沒有人在從中暴利？目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 經濟\n\n六顆蛋從 1 英鎊漲到多少？英國日用品通膨追問\n\n目前的消息指出，2022 年英國超市的 6 顆雞蛋只賣 1 英鎊。現在漲了不少。這篇報導追問：日用必需品為什麼越來越貴？有沒有人在從中暴利？\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源提到這則報導。2022 年，英國超市的 6 顆雞蛋售價是 1 英鎊。現在呢？這篇報導探討日用必需品為什麼越來越貴，同時追問：這其中究竟有沒有企業暴利的問題？\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "2022 年英國超市的 6 顆雞蛋只賣 1 英鎊。現在漲了。這篇報導在問：日用品為什麼越來越貴，有沒有人在從中暴利？目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "Bbc Business",
+              "publisher": "BBC",
+              "title": "'Six eggs used to be £1' - why everyday essentials cost so much more now",
+              "url": "https://www.bbc.com/news/articles/cd6pw4zg5p9o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-24T09:02:55+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "2022 年英國超市 6 顆雞蛋售價為 1 英鎊，現在已大幅上漲",
+              "source_id": "bbc_business",
+              "source_title": "'Six eggs used to be £1' - why everyday essentials cost so much more now",
+              "source_url": "https://www.bbc.com/news/articles/cd6pw4zg5p9o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260525_evt_036",
+          "headline": "英國花在青年福利比就業訓練多",
+          "context": "英國前社會流動委員會主席 Alan Milburn 公開批評：政府給年輕人的福利支出，已超過投入幫助他們就業的資金。他稱之為「可恥」，呼籲改革福利制度以解決青年就業問題。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 經濟\n\nAlan Milburn 批評：英國花在青年福利的錢比就業訓練還多\n\n目前的消息指出，英國前社會流動委員會主席 Alan Milburn 批評：政府給年輕人的福利支出，超過了協助他們就業的支出。他用了「可恥」這個詞，呼籲改革福利制度。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源提到這則報導。英國前社會流動委員會（Social Mobility Commission）主席 Alan Milburn 表示，政府給青年的福利支出已超過協助他們就業的支出，稱之「可恥」，認為需要改革福利制度，才能讓更多沒有工作、也沒有在接受教育的年輕人回到職場或學校。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "英國有人批評：政府花在給年輕人福利的錢，比花在幫他們找工作的錢還多。說這話的是前社會流動委員會主席 Alan Milburn。他用了「可恥」這個詞。他認為福利制度需要改革，才能讓更多年輕人回到職場或學校。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 經濟\n\nAlan Milburn 批評：英國花在青年福利的錢比就業訓練還多\n\n目前的消息指出，英國前社會流動委員會主席 Alan Milburn 批評：政府給年輕人的福利支出，超過了協助他們就業的支出。他用了「可恥」這個詞，呼籲改革福利制度。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源提到這則報導。英國前社會流動委員會（Social Mobility Commission）主席 Alan Milburn 表示，政府給青年的福利支出已超過協助他們就業的支出，稱之「可恥」，認為需要改革福利制度，才能讓更多沒有工作、也沒有在接受教育的年輕人回到職場或學校。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國有人批評：政府花在給年輕人福利的錢，比花在幫他們找工作的錢還多。說這話的是前社會流動委員會主席 Alan Milburn。他用了「可恥」這個詞。他認為福利制度需要改革，才能讓更多年輕人回到職場或學校。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "Bbc Business",
+              "publisher": "BBC",
+              "title": "'Shameful' more spent on benefits than jobs for young people, says Milburn",
+              "url": "https://www.bbc.com/news/articles/crrpx4p1z71o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-24T18:21:58+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Alan Milburn 稱英國政府花在青年福利的支出超過就業支出，稱之「可恥」並呼籲改革",
+              "source_id": "bbc_business",
+              "source_title": "'Shameful' more spent on benefits than jobs for young people, says Milburn",
+              "source_url": "https://www.bbc.com/news/articles/crrpx4p1z71o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260525_evt_028",
+          "headline": "劍橋生活費高昂，上班族靠食物銀行",
+          "context": "英國劍橋（Cambridge）的生活費用昂貴到讓有工作的人也難以溫飽。一個慈善機構表示，當地已有上班族需要靠補貼食物才能度日。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 經濟\n\n英國劍橋：連有工作的人也要靠食物銀行\n\n目前的消息指出，英國劍橋（Cambridge）生活費用昂貴，當地已有有工作的居民需要靠慈善食物銀行補貼才能溫飽。一個慈善機構說，這是劍橋現在的現實。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源提到這則報導。英國劍橋（Cambridge）生活費用高昂，已到了連有工作的居民也需要靠慈善食物銀行補貼才能溫飽的程度。一個慈善機構說，補貼對象不只是失業者，也包括上班族。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "英國劍橋的生活費貴到什麼程度？連有工作的人都要靠食物銀行。一個慈善機構說，他們補貼的不只是失業者，還包括上班族。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 經濟\n\n英國劍橋：連有工作的人也要靠食物銀行\n\n目前的消息指出，英國劍橋（Cambridge）生活費用昂貴，當地已有有工作的居民需要靠慈善食物銀行補貼才能溫飽。一個慈善機構說，這是劍橋現在的現實。\n\n—— 本則來自 BBC，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源提到這則報導。英國劍橋（Cambridge）生活費用高昂，已到了連有工作的居民也需要靠慈善食物銀行補貼才能溫飽的程度。一個慈善機構說，補貼對象不只是失業者，也包括上班族。\n\n本則來自 BBC 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國劍橋的生活費貴到什麼程度？連有工作的人都要靠食物銀行。一個慈善機構說，他們補貼的不只是失業者，還包括上班族。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "Bbc Business",
+              "publisher": "BBC",
+              "title": "City's living costs drive workers to food banks",
+              "url": "https://www.bbc.com/news/articles/cj4pzwg2ddlo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-24T14:06:23+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "劍橋生活費高昂，慈善機構表示有工作的居民也需要靠補貼食物才能溫飽",
+              "source_id": "bbc_business",
+              "source_title": "City's living costs drive workers to food banks",
+              "source_url": "https://www.bbc.com/news/articles/cj4pzwg2ddlo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260525_evt_020",
+          "headline": "台東首屆帆船賽，百人參與",
+          "context": "台東今日在杉原海灣舉辦第一屆帆船比賽，吸引上百名選手參加。這場賽事由西班牙籍教練「小飛」推動，他 7 年前在台東成立帆船學校，打造成東部重要的帆船運動基地。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/1\n📌 台灣\n\n台東首屆帆船賽在杉原海灣登場，上百選手下水\n\n目前的消息指出，台東今日在杉原海灣舉辦第一屆帆船比賽，吸引上百名選手參加。這場賽事背後，是西班牙教練「小飛」7 年前在台東成立帆船學校的努力——如今這裡已成為東部帆船運動的重要基地。\n\n—— 本則來自 公視，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源提到這則報導。台東今日在杉原海灣舉辦第一屆帆船比賽，超過百名選手參加。這場賽事的背後，是一位西班牙籍教練「小飛」7 年來的努力——他在台東成立了帆船學校，慢慢把這裡培育成東部重要的帆船運動基地。\n\n本則來自 公視 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "台東今天辦了第一屆帆船比賽，在杉原海灣，上百人下水競賽。這場賽事的背後是一位西班牙教練「小飛」，他七年前在台東成立了帆船學校，把這裡變成東部帆船運動的基地。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 台灣\n\n台東首屆帆船賽在杉原海灣登場，上百選手下水\n\n目前的消息指出，台東今日在杉原海灣舉辦第一屆帆船比賽，吸引上百名選手參加。這場賽事背後，是西班牙教練「小飛」7 年前在台東成立帆船學校的努力——如今這裡已成為東部帆船運動的重要基地。\n\n—— 本則來自 公視，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源提到這則報導。台東今日在杉原海灣舉辦第一屆帆船比賽，超過百名選手參加。這場賽事的背後，是一位西班牙籍教練「小飛」7 年來的努力——他在台東成立了帆船學校，慢慢把這裡培育成東部重要的帆船運動基地。\n\n本則來自 公視 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "台東今天辦了第一屆帆船比賽，在杉原海灣，上百人下水競賽。這場賽事的背後是一位西班牙教練「小飛」，他七年前在台東成立了帆船學校，把這裡變成東部帆船運動的基地。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "Pts News",
+              "publisher": "公視",
+              "title": "西班牙教練創台東帆船學校 首屆帆船賽吸引上百人參加",
+              "url": "https://news.pts.org.tw/article/809752",
+              "published_at": "2026-05-24T13:28:39+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "台東杉原海灣首屆帆船賽吸引上百名選手，由西班牙教練「小飛」7 年前成立的帆船學校推動",
+              "source_id": "pts_news",
+              "source_title": "西班牙教練創台東帆船學校 首屆帆船賽吸引上百人參加",
+              "source_url": "https://news.pts.org.tw/article/809752",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 0,
+          "single_source_warning": true,
+          "opinion_level": "none"
+        },
+        {
+          "event_id": "daily_20260525_evt_017",
+          "headline": "高雄出現今年首例本土登革熱",
+          "context": "2026 年台灣首例本土登革熱病例出現在高雄前鎮，患者是一名 60 多歲男性。高雄市衛生局已將前鎮和苓雅兩區共 9 個里劃定為警戒範圍，展開清消作業，防止疫情在社區蔓延。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/1\n📌 台灣\n\n高雄確診今年首例本土登革熱，9 個里列警戒\n\n目前的消息指出，2026 年台灣首例本土登革熱病例現蹤高雄前鎮，是一名 60 多歲男性。市衛生局已將前鎮和苓雅兩區的 9 個里劃為警戒範圍，同步展開清消作業。\n\n—— 本則來自 公視，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "目前只有一個消息來源提到這則報導。2026 年台灣首例本土登革熱病例現蹤高雄前鎮，患者是一名 60 多歲男性。高雄市衛生局隨即展開防疫行動，將前鎮區和苓雅區共 9 個里劃為警戒範圍，同步清消，防止疫情在社區蔓延。\n\n本則來自 公視 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "今年台灣第一個本土登革熱病例出現了，在高雄前鎮。患者是六十多歲的男性。衛生局已把附近的前鎮和苓雅兩區共 9 個里列為警戒範圍，展開清消作業。目前這則消息只有一個來源。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 台灣\n\n高雄確診今年首例本土登革熱，9 個里列警戒\n\n目前的消息指出，2026 年台灣首例本土登革熱病例現蹤高雄前鎮，是一名 60 多歲男性。市衛生局已將前鎮和苓雅兩區的 9 個里劃為警戒範圍，同步展開清消作業。\n\n—— 本則來自 公視，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "目前只有一個消息來源提到這則報導。2026 年台灣首例本土登革熱病例現蹤高雄前鎮，患者是一名 60 多歲男性。高雄市衛生局隨即展開防疫行動，將前鎮區和苓雅區共 9 個里劃為警戒範圍，同步清消，防止疫情在社區蔓延。\n\n本則來自 公視 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "今年台灣第一個本土登革熱病例出現了，在高雄前鎮。患者是六十多歲的男性。衛生局已把附近的前鎮和苓雅兩區共 9 個里列為警戒範圍，展開清消作業。目前這則消息只有一個來源。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "Pts News",
+              "publisher": "公視",
+              "title": "今年首例本土登革熱高雄現蹤 市府展開清消、9里列警戒",
+              "url": "https://news.pts.org.tw/article/809746",
+              "published_at": "2026-05-24T12:06:50+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "今年台灣首例本土登革熱病例現蹤高雄前鎮，患者為 60 多歲男性，9 個里列警戒展開清消",
+              "source_id": "pts_news",
+              "source_title": "今年首例本土登革熱高雄現蹤 市府展開清消、9里列警戒",
+              "source_url": "https://news.pts.org.tw/article/809746",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 0,
+          "single_source_warning": true,
+          "opinion_level": "none"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 26,
+    "total_feeds_failed": 13,
+    "total_articles_fetched": 92,
+    "total_articles_after_filter": 91,
+    "total_events_merged": 84,
+    "total_events_selected": 18,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260525_evt_079",
+      "headline": "California declares emergency as fire crews race to contain toxic leak",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_005",
+      "headline": "Severe global food crisis could come within the year, says UN agency",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_006",
+      "headline": "The squeeze on Cuba now includes compensation lawsuits",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_012",
+      "headline": "Romanian director Cristian Mungiu's 'Fjord' wins top prize at Cannes",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_033",
+      "headline": "Russia pounds Kyiv in powerful drone and missile attack",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_040",
+      "headline": "Israeli attack on Gaza kills three family members, including infant",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_042",
+      "headline": "Clashes in Belgrade as student-led protests demand elections",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_053",
+      "headline": "What we know about the status of a U.S.-Iran deal",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_055",
+      "headline": "Iran hints US will end war in ‘Persian-style’ peace on Tehran’s terms",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_057",
+      "headline": "‘We won’t know who won until final outcome of US-Iran ceasefire’",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_075",
+      "headline": "DR Congo Ebola cases rise amid distrust, armed conflict zone",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_078",
+      "headline": "Zelenskyy speaks to Al Jazeera at site of major Russian attacks in Kyiv",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_080",
+      "headline": "Israeli strikes kill six in southern Lebanon amid fresh evacuation orders",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_081",
+      "headline": "How will Iran war fallout impact upcoming US elections?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_009",
+      "headline": "Rosenberg: Luhansk strike sparks Russian accusations and vow to retaliate",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_010",
+      "headline": "In Japan, divorce splits parents from children. Could a law change end sole custody?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_011",
+      "headline": "East Africa wants to curb imports of used clothes. But it's not easy",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_014",
+      "headline": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_016",
+      "headline": "At least 82 killed in Chinese coal mine explosion",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_018",
+      "headline": "It's like the Olympics - except steroids are allowed",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_037",
+      "headline": "BBC at the site of China's worst mining disaster in more than a decade",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_039",
+      "headline": "Red Cross volunteers die from suspected Ebola in DR Congo",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_041",
+      "headline": "Bolivian minister's convoy ambushed while overseeing roadblock clearance",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_061",
+      "headline": "Nascar champion Kyle Busch died of pneumonia and sepsis, family says",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_063",
+      "headline": "One killed and many feared trapped under collapsed building in Philippines",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_067",
+      "headline": "Suspect killed after opening fire on Secret Service near White House",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_004",
+      "headline": "Video shows Israeli 'double-tap strike' killed medics and a toddler in Lebanon",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_007",
+      "headline": "Trump touts Iran breakthrough but details remain unclear",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_056",
+      "headline": "Will the Texas primary run-off give Democrats a chance to flip the state?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_058",
+      "headline": "Syria cannot heal without a rebuilt health system",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_059",
+      "headline": "For third year in a row, Israel blocks Hajj pilgrimage for Gaza Muslims",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_060",
+      "headline": "France bans Ben-Gvir: Which other Israeli leaders have been penalised?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_062",
+      "headline": "Bahrain jails nine defendants for life for ‘cooperating’ with Iran’s IRGC",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_065",
+      "headline": "China sends aid to Cuba amid a harsh US blockade",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_066",
+      "headline": "‘A paper city’: New York ‘library’ hosts 3.5 million pages of Epstein files",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_069",
+      "headline": "Iran recounts historic battles in response to Trump’s talk of agreement",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_070",
+      "headline": "China’s Shenzhou-23 astronauts blast off on space station mission",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_072",
+      "headline": "Iran team trains through World Cup uncertainty",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_076",
+      "headline": "West Ham go down as Salah and Guardiola make emotional Premier League exits",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_077",
+      "headline": "Fatou Bensouda on Israeli threats against her and the ICC",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_082",
+      "headline": "Ebola spreads in the DRC as authorities struggle to contain outbreak",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_083",
+      "headline": "‘Trump needs a deal, no matter how bad it is’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_084",
+      "headline": "Senegal parliament speaker steps down as political crisis worsens",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_021",
+      "headline": "職棒賽事邀PSY獻唱 大巨蛋周遭住戶反映「又在搖」",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_022",
+      "headline": "高雄街友稱遭辱罵而掌摑3歲童 家長駁無交談將提告傷害",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_023",
+      "headline": "長者頭遭夾公車門外行駛30秒 台中客運：涉案司機記過處分",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_024",
+      "headline": "美國白宮外傳連環槍響 槍手朝檢查哨開槍遭擊斃",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_025",
+      "headline": "0到18歲擬月發5千元成長津貼 卓揆：若強制存一半將有保底",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_026",
+      "headline": "中國山西煤礦爆炸釀82死 賴清德、卓揆發文哀悼稱願協助",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_034",
+      "headline": "一週大事／0至18歲每月5千元成長津貼 《臺灣漫遊錄》奪國際布克獎 （2026.5.18-5.24）",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_043",
+      "headline": "高雄鳥松濕地公園水稻田遭破壞 觀光局擬與鳥會研議管理機制",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_044",
+      "headline": "坎城影展頒獎典禮登場 最佳導演、男女主角獎均雙得主",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_045",
+      "headline": "男子北捷古亭站偷拍裙底 警確認手機有相關影像依法究辦",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_046",
+      "headline": "機車待轉停斑馬線最高罰1千2 警方：會依據現場情況認定",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_047",
+      "headline": "清境旅宿檢查結果未公開 監院糾正南投縣府",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_048",
+      "headline": "馬英九基金會調查報告出爐 蕭旭岑、王光慈未違反財政紀律",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_049",
+      "headline": "賴清德再拋家庭主婦月領5千元 待立院通過國民年金修法即可領",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_050",
+      "headline": "川普、賴清德是否通話？ 路透：台美官員有接觸但未規劃",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_051",
+      "headline": "行政院擬修法提高毒駕刑責 最快6月底提出修正草案",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_052",
+      "headline": "黃仁勳談新產品Vera Rubin 稱「台灣接下來會非常忙碌」",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_029",
+      "headline": "NVIDIA AI Releases Gated DeltaNet-2: A Linear Attention Layer That Decouples Erase and Write in the Delta Rule",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_031",
+      "headline": "Haus W / Studio EH",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_032",
+      "headline": "Seven boat interiors that make life on the high seas a breeze",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_035",
+      "headline": "Foster + Partners lines Shanghai art gallery with tubular glass",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_038",
+      "headline": "Eleventhfloor Restaurant / Noue Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260525_evt_074",
+      "headline": "Weathering steel wraps Indigenous museum in Arizona by EYRC",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    }
+  ]
+}

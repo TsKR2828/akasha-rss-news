@@ -1,6 +1,8 @@
 """Phase 2 — dedup 單元測試。"""
 from __future__ import annotations
 
+import json
+
 import pytest
 
 from src import dedup
@@ -89,3 +91,45 @@ class TestEmpty:
         unique, dropped = dedup.dedup_articles([])
         assert unique == []
         assert dropped == []
+
+
+class TestMainSkipsInternalFiles:
+    """HIGH #1: dedup CLI must skip _ prefixed files to avoid crash on rerun."""
+
+    def test_ignores_dedup_log_on_rerun(self, tmp_path):
+        articles_dir = tmp_path / "articles" / "2026-05-19"
+        articles_dir.mkdir(parents=True)
+
+        art = _article("a" * 64, canonical="https://x.com/1", title="Test")
+        (articles_dir / f"{'a' * 64}.json").write_text(
+            json.dumps(art), encoding="utf-8",
+        )
+
+        # Simulate a previous run's dedup log
+        dedup_log = [{"article_id": "b" * 64, "duplicate_of": "a" * 64,
+                      "reason": "exact_canonical_url"}]
+        (articles_dir / "_dedup_log.json").write_text(
+            json.dumps(dedup_log), encoding="utf-8",
+        )
+
+        rc = dedup.main(["--articles-base", str(tmp_path / "articles"),
+                         "--date", "2026-05-19"])
+        assert rc == 0
+
+    def test_ignores_selection_manifest(self, tmp_path):
+        articles_dir = tmp_path / "articles" / "2026-05-19"
+        articles_dir.mkdir(parents=True)
+
+        art = _article("a" * 64, canonical="https://x.com/1", title="Test")
+        (articles_dir / f"{'a' * 64}.json").write_text(
+            json.dumps(art), encoding="utf-8",
+        )
+
+        # Any _ prefixed file should be skipped
+        (articles_dir / "_selection_manifest.json").write_text(
+            json.dumps({"selected_event_ids": []}), encoding="utf-8",
+        )
+
+        rc = dedup.main(["--articles-base", str(tmp_path / "articles"),
+                         "--date", "2026-05-19"])
+        assert rc == 0

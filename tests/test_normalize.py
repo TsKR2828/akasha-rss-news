@@ -92,6 +92,29 @@ class TestCanonicalizeUrl:
     def test_no_query_unchanged(self):
         assert normalize.canonicalize_url("https://x.com/a") == "https://x.com/a"
 
+    def test_strips_bbc_at_params(self):
+        url = "https://bbc.com/news/123?at_medium=RSS&at_campaign=rss"
+        result = normalize.canonicalize_url(url)
+        assert "at_medium" not in result
+        assert "at_campaign" not in result
+
+    def test_strips_traffic_source(self):
+        url = "https://www.aljazeera.com/economy/2026/article?traffic_source=rss"
+        result = normalize.canonicalize_url(url)
+        assert "traffic_source" not in result
+
+    def test_strips_bbc_ns_params(self):
+        url = "https://bbc.com/news/123?ns_mchannel=social&ns_source=twitter&ns_campaign=share"
+        result = normalize.canonicalize_url(url)
+        for param in ("ns_mchannel", "ns_source", "ns_campaign"):
+            assert param not in result
+
+    def test_strips_extended_click_ids(self):
+        url = "https://x.com/a?gclsrc=aw.ds&dclid=abc&gbraid=xx&wbraid=yy&msclkid=zz"
+        result = normalize.canonicalize_url(url)
+        for param in ("gclsrc", "dclid", "gbraid", "wbraid", "msclkid"):
+            assert param not in result
+
 
 # ---------------------------------------------------------------------------
 # article_id 必須穩定
@@ -216,6 +239,35 @@ class TestNormalizeEntry:
         feed = self._parse(xml)
         article = normalize.normalize_entry(feed.entries[0], SAMPLE_SOURCE, "")
         assert article is None
+
+    def test_summary_html_stripped(self):
+        """MEDIUM #4: summary 中的 HTML 標籤必須在 normalize 時清掉。"""
+        xml = b"""<?xml version="1.0"?><rss version="2.0"><channel>
+          <item>
+            <title>Test</title>
+            <link>https://x.com/a</link>
+            <description>&lt;p&gt;Hello &lt;b&gt;world&lt;/b&gt;&lt;/p&gt;</description>
+            <pubDate>Mon, 18 May 2026 01:20:00 +0000</pubDate>
+          </item>
+        </channel></rss>"""
+        feed = self._parse(xml)
+        article = normalize.normalize_entry(feed.entries[0], SAMPLE_SOURCE, "")
+        assert "<" not in article["summary"]
+        assert "Hello" in article["summary"]
+        assert "world" in article["summary"]
+
+    def test_summary_none_stays_none(self):
+        """summary 為 None 時不該 crash。"""
+        xml = b"""<?xml version="1.0"?><rss version="2.0"><channel>
+          <item>
+            <title>Test</title>
+            <link>https://x.com/a</link>
+            <pubDate>Mon, 18 May 2026 01:20:00 +0000</pubDate>
+          </item>
+        </channel></rss>"""
+        feed = self._parse(xml)
+        article = normalize.normalize_entry(feed.entries[0], SAMPLE_SOURCE, "")
+        assert article is not None
 
 
 # ---------------------------------------------------------------------------

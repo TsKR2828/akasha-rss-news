@@ -241,6 +241,21 @@ class TestBuildEvent:
         assert evt["source_count"] == 2
         assert evt["single_source_warning"] is False
 
+    def test_source_name_uses_publisher_not_synthetic(self):
+        """MEDIUM #5: name 必須用 publisher，不得用 sid.replace().title() 合成。"""
+        cluster = [_article("a" * 64, source_id="bbc_world")]
+        evt = event_cluster.build_event(cluster, "daily_20260518_evt_001")
+        src = evt["sources"][0]
+        assert src["name"] == "Pub"  # _article fixture publisher
+        assert src["name"] != "Bbc World"  # 不是合成值
+
+    def test_source_carries_article_summary(self):
+        """HIGH #3 support: source 必須攜帶文章 summary 以供 rewrite 使用。"""
+        cluster = [_article("a" * 64, summary="Ceasefire talks collapsed.")]
+        evt = event_cluster.build_event(cluster, "daily_20260518_evt_001")
+        src = evt["sources"][0]
+        assert src["summary"] == "Ceasefire talks collapsed."
+
 
 class TestConfidence:
     def test_two_tier1_sources_high(self):

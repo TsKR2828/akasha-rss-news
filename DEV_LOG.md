@@ -1,8 +1,85 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine prompt 完成，voice_style_guide 已整合）
-測試合計：341 條全綠（340 + 1 voice 7-event limit）
+目前階段：Phase 5 進行中（pipeline + routine 已設定，data layer audit 完成）
+測試合計：359 條全綠
 Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+
+---
+
+## 2026-05-25 — 資料層髒數據審查（Data Layer Audit）
+
+跨 Phase 1–4 系統性審查，修復 5 項髒數據問題 + 5 項規則一致性問題。測試 341 → 359 條。
+
+### 髒數據修復
+
+**HIGH #1 dedup.py — 過濾 `_` 前綴中繼檔**
+
+- 問題：`data/events/` 下的 `_selection_manifest.json`、`_selection_stats.json` 被 dedup `main()` 的 glob 撈入
+- 修法：`main()` glob 結果過濾掉 `_` 開頭的檔案
+
+**HIGH #2 normalize.py — TRACKING_PARAMS 擴充**
+
+- 問題：BBC `at_medium`/`at_campaign`、Reddit `ref`、Yahoo `soc_src` 等追蹤參數未被清除，影響 canonical URL 穩定性
+- 修法：TRACKING_PARAMS 從 10 項擴充至 27 項；`html_cleaner.py` 改為 `from src.normalize import TRACKING_PARAMS` 消除重複
+
+**HIGH #3 claude_rewrite.py — source summary 取值錯誤**
+
+- 問題：`prepare_event_payload()` 把 `source["name"]`（publisher 名稱）當成 summary 傳給 Claude
+- 修法：改為 `source["summary"]`；同步在 `event_cluster.py` 將 article summary 帶入 source dict
+
+**MEDIUM #4 normalize.py — summary HTML 清洗**
+
+- 問題：RSS feed summary 含原始 HTML（`<p>`、`<img>`、entity），流入 classifier/cluster 造成髒數據
+- 修法：在 normalize 階段加入 `_strip_html()` 清洗（獨立實作，避免與 html_cleaner.py 循環 import）
+
+**MEDIUM #5 event_cluster.py — source name 合成名問題**
+
+- 問題：`source["name"]` 用 `sid.replace("_", " ").title()` 產生，如 `bbc_world` → `Bbc World`
+- 修法：改用 `article["publisher"]`，保留 sid 作為 fallback
+
+### 規則一致性修復
+
+**#6 validators.py — confidence 驗證邏輯不一致**
+
+- 問題：`validate_confidence` 預期 single Tier 3 = "low"，但 `derive_confidence` 設計上不產生 "low"
+- 修法：移除 `validate_confidence` 的 low 分支；schema enum 保留 "low"（供 Claude/人工使用）
+
+**#7 selector.py — total_events.max 未實作**
+
+- 問題：`selection_score.yaml` 定義了 `total_events.max` 但 selector 未讀取
+- 修法：新增 total_events.max hard enforce（超出者 `drop_reason="total_limit_reached"`）+ beat min 不足 advisory warning
+
+**#8 event.schema.json — single_source_warning 約束不完整**
+
+- 問題：`platform_output.schema.json` 有 `source_count=1 → single_source_warning: true` 但 event.schema.json 缺少
+- 修法：event.schema.json allOf 補齊相同規則
+
+**#11 validators.py — N/N regex 過寬**
+
+- 問題：`\d+/\d+` 會誤殺日期（5/18）、比例（2/3）、法條（14/2）
+- 修法：收窄為 `(?:^|\s)\d{1,2}/\d{1,2}(?=\s|$)`；同步更新 platform_output.schema.json
+
+**#12 TW_STORY phantom dependency**
+
+- 問題：`selection_score.yaml` 設 `TW_STORY.min: 1` 但 `tw_stories.json` 從未建立
+- 修法：min 改 0 + README 標為 planned
+
+### 動到的檔案
+
+| 檔案 | 變更 |
+|---|---|
+| `src/normalize.py` | TRACKING_PARAMS 27 項 + `_strip_html()` |
+| `src/html_cleaner.py` | TRACKING_PARAMS 改為 import |
+| `src/dedup.py` | main() 過濾 `_` 前綴檔 |
+| `src/event_cluster.py` | source name 用 publisher + 帶入 summary |
+| `src/claude_rewrite.py` | summary 取值修正 |
+| `src/validators.py` | confidence 去 low 分支 + N/N regex 收窄 |
+| `src/selector.py` | total_events.max enforce + min advisory |
+| `schemas/event.schema.json` | sourceRef summary + single_source_warning const |
+| `schemas/platform_output.schema.json` | sourceRef summary + N/N regex 收窄 |
+| `config/selection_score.yaml` | TW_STORY min 0 |
+| `README.md` | tw_stories.json 標為 planned |
+| `tests/` | +18 條測試覆蓋本次修復 |
 
 ---
 

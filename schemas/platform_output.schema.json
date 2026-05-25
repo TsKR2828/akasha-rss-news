@@ -51,7 +51,7 @@
           { "pattern": "🧵" },
           { "pattern": "📌" },
           { "pattern": "📎" },
-          { "pattern": "\\d+/\\d+" },
+          { "pattern": "(^|\\s)\\d{1,2}/\\d{1,2}(\\s|$)" },
           { "pattern": "\\[[^\\]]+\\]\\([^)]+\\)" }
         ]
       }
@@ -112,6 +112,7 @@
           "source_id": { "type": "string" },
           "name": { "type": "string" },
           "publisher": { "type": "string" },
+          "summary": { "type": ["string", "null"] },
           "title": { "type": "string" },
           "url": { "type": "string", "format": "uri" },
           "published_at": { "type": "string", "format": "date-time" }

@@ -245,8 +245,9 @@ def build_event(
         if sid not in sources_by_id:
             sources_by_id[sid] = {
                 "source_id": sid,
-                "name": sid.replace("_", " ").title(),
+                "name": a.get("publisher", sid),
                 "publisher": a.get("publisher", ""),
+                "summary": a.get("summary") or "",
                 "title": a.get("title", ""),
                 "url": a.get("url", ""),
                 "published_at": a.get("published_at", ""),

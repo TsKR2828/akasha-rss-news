@@ -115,8 +115,8 @@ akashic-daily-report/
 │   ├── claim_trace.py          # ✅ Phase 3
 │   ├── validators.py           # ✅ Phase 3
 │   ├── formatter.py            # ✅ Phase 4
-│   ├── pipeline.py             # ✅ Phase 5 (全 pipeline 入口)
-│   └── tw_stories.json
+│   └── pipeline.py             # ✅ Phase 5 (全 pipeline 入口)
+│   # tw_stories.json          — planned, not yet implemented
 ├── tests/
 │   ├── test_*.py
 │   └── golden/                 # 樣本輸出

@@ -36,7 +36,7 @@ VOICE_FORBIDDEN_PATTERNS = [
     (re.compile(r"🧵"), "contains 🧵 emoji"),
     (re.compile(r"📌"), "contains 📌 emoji"),
     (re.compile(r"📎"), "contains 📎 emoji"),
-    (re.compile(r"\d+/\d+"), "contains N/N numbering"),
+    (re.compile(r"(?:^|\s)\d{1,2}/\d{1,2}(?=\s|$)"), "contains N/N numbering"),
     (re.compile(r"\[[^\]]+\]\([^)]+\)"), "contains Markdown link"),
 ]
 
@@ -108,8 +108,6 @@ def validate_confidence(
 
     if len(distinct_sources) >= 2 and high_tier_count >= 2:
         expected = "high"
-    elif source_count == 1 and tiers and tiers[0] == 3:
-        expected = "low"
     else:
         expected = "medium"
 

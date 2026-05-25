@@ -29,16 +29,18 @@ def sample_event():
         "sources": [
             {
                 "source_id": "bbc_world",
-                "name": "Bbc World",
+                "name": "BBC News",
                 "publisher": "BBC News",
+                "summary": "Third round of ceasefire negotiations broke down.",
                 "title": "Russia-Ukraine Geneva talks collapse",
                 "url": "https://bbc.com/news/123?utm_source=rss",
                 "published_at": "2026-05-18T22:30:00Z",
             },
             {
                 "source_id": "reuters_world",
-                "name": "Reuters World",
+                "name": "Reuters",
                 "publisher": "Reuters",
+                "summary": "Geneva peace talks break down amid territorial disputes.",
                 "title": "Geneva peace talks break down",
                 "url": "https://reuters.com/456",
                 "published_at": "2026-05-18T23:00:00Z",
@@ -122,6 +124,13 @@ class TestPrepareEventPayload:
         payload = prepare_event_payload(sample_event)
         assert "<b>" not in payload["sources"][0]["title"]
         assert "Bold Title" == payload["sources"][0]["title"]
+
+    def test_summary_uses_article_summary_not_name(self, sample_event):
+        """HIGH #3: summary 必須來自文章摘要，而非 source name。"""
+        payload = prepare_event_payload(sample_event)
+        bbc = payload["sources"][0]
+        assert bbc["summary"] == "Third round of ceasefire negotiations broke down."
+        assert bbc["summary"] != bbc.get("name", "")
 
 
 # ---------------------------------------------------------------------------

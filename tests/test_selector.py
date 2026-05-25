@@ -198,6 +198,47 @@ class TestOrdering:
         assert beats_in_order == ["INTL", "ARTS", "AI", "ECON"]
 
 
+class TestTotalEventsMax:
+    def test_total_max_enforced(self):
+        """#7: total_events.max 超出時，最低分者被 drop。"""
+        config = {
+            **SCORE_CONFIG,
+            "daily_limits": {
+                **SCORE_CONFIG["daily_limits"],
+                "total_events": {"min": 1, "max": 3},
+            },
+        }
+        events = [
+            _event(event_id=f"daily_20260518_evt_{i:03d}", beat=beat,
+                   source_count=1, source_tiers=[1])
+            for i, beat in enumerate(["INTL", "INTL", "ARTS", "AI", "ECON"], 1)
+        ]
+        selected, dropped = selector.select_events(events, config)
+        assert len(selected) == 3
+        total_dropped = [d for d in dropped if d.get("drop_reason") == "total_limit_reached"]
+        assert len(total_dropped) == 2
+
+    def test_no_total_limit_by_default(self):
+        """total_events 未設定時不限制。"""
+        no_total = {
+            **SCORE_CONFIG,
+            "daily_limits": {
+                "INTL": {"min": 0, "max": 99},
+                "ARTS": {"min": 0, "max": 99},
+                "AI": {"min": 0, "max": 99},
+                "ECON": {"min": 0, "max": 99},
+            },
+        }
+        events = [
+            _event(event_id=f"daily_20260518_evt_{i:03d}",
+                   beat=["INTL", "ARTS", "AI", "ECON"][i % 4],
+                   source_count=1, source_tiers=[1])
+            for i in range(10)
+        ]
+        selected, _ = selector.select_events(events, no_total)
+        assert len(selected) == 10
+
+
 class TestSameTopicPenalty:
     def test_same_topic_already_selected_penalty_applied(self):
         e1 = _event(event_id="daily_20260518_evt_001", beat="INTL",

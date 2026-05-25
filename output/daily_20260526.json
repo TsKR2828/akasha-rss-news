@@ -1,0 +1,1643 @@
+{
+  "reportId": "daily_20260526",
+  "date": "2026-05-26",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-05-26T05:17:23.957619+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260526_evt_082",
+          "headline": "俄羅斯警告外國人撤離基輔",
+          "context": "俄羅斯發出警告，要求在烏克蘭首都基輔（Kyiv）的外國公民盡快離開。莫斯科聲稱即將展開「系統性打擊」，並稱這是對基輔近期攻擊盧甘斯克的回應。基輔上週六剛遭受這場戰爭以來規模最大的空襲之一。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/2\n📌 國際\n\n俄羅斯警告外國人撤離基輔\n\n俄羅斯發出警告：在基輔（Kyiv）的外國公民應盡快離開。莫斯科聲稱即將對烏克蘭首都展開「系統性打擊」。\n\n🧵 2/2\n莫斯科說，這是回應基輔近期對盧甘斯克（Luhansk）的攻擊。就在幾天前，基輔才剛遭受這場戰爭以來規模最大的空襲之一。\n\n—— 本則整理自 Al Jazeera 與 BBC，讓圖書館員翻譯給你聽。",
+          "threads_text": "俄羅斯發出警告，要求在基輔（Kyiv）的外國公民盡快離開。莫斯科聲稱即將對烏克蘭首都展開「系統性打擊」，並說這是回應基輔近期對盧甘斯克（Luhansk）的攻擊。\n\n就在幾天前，基輔才剛遭受了這場戰爭以來規模最大的空襲之一。\n\n本則整理自 Al Jazeera 與 BBC 於 2026 年 5 月 25 日至 26 日發佈的報導。",
+          "voice_text": "俄羅斯要求在基輔的外國公民盡快撤離，並宣稱即將展開「系統性打擊」。\n\n莫斯科說，這是對烏克蘭最近攻擊盧甘斯克的回應。就在幾天前，基輔才剛遭受了這場戰爭以來最大規模的空襲之一。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/2\n📌 國際\n\n俄羅斯警告外國人撤離基輔\n\n俄羅斯發出警告：在基輔（Kyiv）的外國公民應盡快離開。莫斯科聲稱即將對烏克蘭首都展開「系統性打擊」。\n\n🧵 2/2\n莫斯科說，這是回應基輔近期對盧甘斯克（Luhansk）的攻擊。就在幾天前，基輔才剛遭受這場戰爭以來規模最大的空襲之一。\n\n—— 本則整理自 Al Jazeera 與 BBC，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "俄羅斯發出警告，要求在基輔（Kyiv）的外國公民盡快離開。莫斯科聲稱即將對烏克蘭首都展開「系統性打擊」，並說這是回應基輔近期對盧甘斯克（Luhansk）的攻擊。\n\n就在幾天前，基輔才剛遭受了這場戰爭以來規模最大的空襲之一。\n\n本則整理自 Al Jazeera 與 BBC 於 2026 年 5 月 25 日至 26 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "俄羅斯要求在基輔的外國公民盡快撤離，並宣稱即將展開「系統性打擊」。\n\n莫斯科說，這是對烏克蘭最近攻擊盧甘斯克的回應。就在幾天前，基輔才剛遭受了這場戰爭以來最大規模的空襲之一。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Moscow calls upcoming 'systematic strikes' on Ukrainian capital a response to Kyiv's recent attack in Luhansk.",
+              "title": "Russia warns foreigners to leave Kyiv as it prepares 'systematic strikes'",
+              "url": "https://www.aljazeera.com/news/2026/5/25/russia-warns-foreigners-to-leave-kyiv-as-it-prepares-systematic-strikes?traffic_source=rss",
+              "published_at": "2026-05-26T00:12:52+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "It comes after the Ukrainian capital suffered one of the biggest aerial assaults of the war overnight on Saturday.",
+              "title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+              "url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-26T01:42:26+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "俄羅斯警告外國人撤離基輔，準備展開「系統性打擊」",
+              "source_id": "aljazeera_all",
+              "source_title": "Russia warns foreigners to leave Kyiv as it prepares 'systematic strikes'",
+              "source_url": "https://www.aljazeera.com/news/2026/5/25/russia-warns-foreigners-to-leave-kyiv-as-it-prepares-systematic-strikes?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "莫斯科稱此舉是對基輔攻擊盧甘斯克的回應",
+              "source_id": "aljazeera_all",
+              "source_title": "Russia warns foreigners to leave Kyiv as it prepares 'systematic strikes'",
+              "source_url": "https://www.aljazeera.com/news/2026/5/25/russia-warns-foreigners-to-leave-kyiv-as-it-prepares-systematic-strikes?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "基輔剛遭受這場戰爭以來規模最大的空襲之一",
+              "source_id": "bbc_world",
+              "source_title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+              "source_url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260526_evt_027",
+          "headline": "逾百五十萬穆斯林赴麥加朝聖",
+          "context": "超過 150 萬名朝聖者已抵達沙烏地阿拉伯，展開朝覲（Hajj）——伊斯蘭五功之一。今年人數比去年多了 1.1 萬人。美伊戰爭停火後，中東局勢仍緊繃，但朝覲的腳步並未中斷。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/2\n📌 國際\n\n逾百五十萬穆斯林赴麥加朝聖\n\n超過 150 萬名朝聖者已抵達沙烏地阿拉伯，展開朝覲（Hajj）。這是伊斯蘭五功之一。今年的人數比去年多了 1.1 萬人。\n\n🧵 2/2\n儘管美伊戰爭剛達成停火、中東地區緊張局勢持續，朝覲並未因此中止。朝聖者們說，這趟旅程是靈性上的轉化，充滿深刻意義。\n\n—— 本則整理自 NPR、Al Jazeera 與 BBC，讓圖書館員翻譯給你聽。",
+          "threads_text": "超過 150 萬名朝聖者已抵達沙烏地阿拉伯，展開朝覲（Hajj）——伊斯蘭五功之一。今年的人數比去年多了 1.1 萬人。\n\n儘管美伊戰爭停火協議尚在拉鋸、中東地區緊張局勢持續，朝覲沒有因此停下腳步。朝聖者們說，這趟旅程是靈性上的轉化，充滿深刻意義。\n\n本則整理自 NPR、Al Jazeera 與 BBC 於 2026 年 5 月 25 日至 26 日發佈的報導。",
+          "voice_text": "今年超過 150 萬名穆斯林朝聖者抵達沙烏地阿拉伯，展開一年一度的朝覲。人數比去年多了 1.1 萬人。\n\n朝覲是伊斯蘭信仰的五功之一。今年背景格外複雜——美伊戰爭剛達成停火，中東局勢還在緊繃。不過朝聖者們說，這趟旅程對他們來說是靈性上的轉化，意義深遠。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/2\n📌 國際\n\n逾百五十萬穆斯林赴麥加朝聖\n\n超過 150 萬名朝聖者已抵達沙烏地阿拉伯，展開朝覲（Hajj）。這是伊斯蘭五功之一。今年的人數比去年多了 1.1 萬人。\n\n🧵 2/2\n儘管美伊戰爭剛達成停火、中東地區緊張局勢持續，朝覲並未因此中止。朝聖者們說，這趟旅程是靈性上的轉化，充滿深刻意義。\n\n—— 本則整理自 NPR、Al Jazeera 與 BBC，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "超過 150 萬名朝聖者已抵達沙烏地阿拉伯，展開朝覲（Hajj）——伊斯蘭五功之一。今年的人數比去年多了 1.1 萬人。\n\n儘管美伊戰爭停火協議尚在拉鋸、中東地區緊張局勢持續，朝覲沒有因此停下腳步。朝聖者們說，這趟旅程是靈性上的轉化，充滿深刻意義。\n\n本則整理自 NPR、Al Jazeera 與 BBC 於 2026 年 5 月 25 日至 26 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "今年超過 150 萬名穆斯林朝聖者抵達沙烏地阿拉伯，展開一年一度的朝覲。人數比去年多了 1.1 萬人。\n\n朝覲是伊斯蘭信仰的五功之一。今年背景格外複雜——美伊戰爭剛達成停火，中東局勢還在緊繃。不過朝聖者們說，這趟旅程對他們來說是靈性上的轉化，意義深遠。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "More than 1.5 million pilgrims have arrived in Saudi Arabia for the annual Hajj pilgrimage, one of the Five Pillars of Islam, against the backdrop of a tenuous ceasefire in the Iran war and related regional tensions.",
+              "title": "Muslims begin the annual Hajj against a backdrop of war concerns",
+              "url": "https://www.npr.org/2026/05/25/nx-s1-5833671/muslims-begin-annual-hajj",
+              "published_at": "2026-05-25T15:05:02+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "The spiritual and physical challenge is described by pilgrims as a transformative and deeply meaningful journey.",
+              "title": "Over 1.5 million pilgrims begin Hajj amid regional tensions",
+              "url": "https://www.aljazeera.com/gallery/2026/5/25/over-1-5-million-pilgrims-begin-hajj-amid-regional-tensions?traffic_source=rss",
+              "published_at": "2026-05-26T01:05:49+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Saudi Arabia says that is 11,000 more than the number of Muslims who travelled to the Gulf kingdom last year.",
+              "title": "More than 1.5m foreign pilgrims begin Hajj despite Iran war fears",
+              "url": "https://www.bbc.com/news/articles/cwy22jx03ryo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-26T04:11:59+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "超過 150 萬名朝聖者抵達沙烏地阿拉伯，展開朝覲",
+              "source_id": "npr_world",
+              "source_title": "Muslims begin the annual Hajj against a backdrop of war concerns",
+              "source_url": "https://www.npr.org/2026/05/25/nx-s1-5833671/muslims-begin-annual-hajj",
+              "support_type": "direct"
+            },
+            {
+              "claim": "朝聖者們描述這是靈性轉化的深刻旅程",
+              "source_id": "aljazeera_all",
+              "source_title": "Over 1.5 million pilgrims begin Hajj amid regional tensions",
+              "source_url": "https://www.aljazeera.com/gallery/2026/5/25/over-1-5-million-pilgrims-begin-hajj-amid-regional-tensions?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "今年朝聖人數比去年多了 1.1 萬人",
+              "source_id": "bbc_world",
+              "source_title": "More than 1.5m foreign pilgrims begin Hajj despite Iran war fears",
+              "source_url": "https://www.bbc.com/news/articles/cwy22jx03ryo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260526_evt_077",
+          "headline": "印度德里高溫達四十五度",
+          "context": "德里（Delhi）氣溫飆升至攝氏 45 度，印度當局呼籲民眾盡量留在室內、避免外出。目前僅有一個來源報導此消息。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n印度德里高溫達四十五度\n\n德里（Delhi）氣溫飆升至攝氏 45 度，印度當局呼籲民眾盡量留在室內、避免外出。目前的消息指出，街頭高溫情況相當嚴峻，幾乎難以在戶外站立。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "德里（Delhi）氣溫飆升至攝氏 45 度，印度當局呼籲民眾盡量留在室內、避免外出。目前的消息指出，街頭高溫情況相當嚴峻，幾乎難以在戶外站立。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "德里的氣溫，目前的消息指出已攀升到攝氏 45 度。印度當局呼籲民眾留在室內，避免外出。街頭高溫情況相當嚴峻，幾乎難以在戶外立足。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n印度德里高溫達四十五度\n\n德里（Delhi）氣溫飆升至攝氏 45 度，印度當局呼籲民眾盡量留在室內、避免外出。目前的消息指出，街頭高溫情況相當嚴峻，幾乎難以在戶外站立。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "德里（Delhi）氣溫飆升至攝氏 45 度，印度當局呼籲民眾盡量留在室內、避免外出。目前的消息指出，街頭高溫情況相當嚴峻，幾乎難以在戶外站立。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "德里的氣溫，目前的消息指出已攀升到攝氏 45 度。印度當局呼籲民眾留在室內，避免外出。街頭高溫情況相當嚴峻，幾乎難以在戶外立足。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The BBC's Sumedha Pal described how difficult it was to be standing in the streets of Delhi as temperatures rose to 45C .",
+              "title": "'Blistering heat': Indians warned to stay indoors as temperatures soar",
+              "url": "https://www.bbc.com/news/videos/ckgppxw9239o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T23:17:10+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "德里氣溫飆升至攝氏 45 度，印度當局呼籲民眾留在室內",
+              "source_id": "bbc_world",
+              "source_title": "'Blistering heat': Indians warned to stay indoors as temperatures soar",
+              "source_url": "https://www.bbc.com/news/videos/ckgppxw9239o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260526_evt_004",
+          "headline": "美伊近和談，學者憂美國輸了",
+          "context": "美伊雙方都傳出和平協議即將到來的信號。布魯金斯學會（Brookings Institution）資深研究員 Robert Kagan 提出更嚴峻的評估：美國在這場戰爭後，可能比開戰前更為衰弱。這是個人分析觀點，目前僅有一個來源。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n美伊近和談，學者憂美國輸了\n\n美伊雙方都傳出和平協議即將到來的信號。布魯金斯學會（Brookings Institution）資深研究員 Robert Kagan 則提出一個更嚴峻的觀察：美國在這場戰爭中，可能比開戰前更為衰弱。\n\n（這是個人分析觀點，不代表事實定論。）\n\n—— 本則來自 NPR，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美伊雙方都傳出信號，表示和平協議近在眼前。布魯金斯學會（Brookings Institution）資深研究員 Robert Kagan 則提出一個更嚴峻的分析：美國在這場戰爭之後，最終可能比開戰前更為衰弱。\n\n這是個人分析觀點，不代表事實定論。\n\n本則來自 NPR 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "美伊雙方都在傳出和平協議即將到來的信號。不過有學者提出一個不那麼樂觀的評估——在這場戰爭之後，美國可能比開戰前還要更為衰弱。\n\n這是一個分析評論，代表的是個人觀點，目前的消息指出僅有一個來源提及。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n美伊近和談，學者憂美國輸了\n\n美伊雙方都傳出和平協議即將到來的信號。布魯金斯學會（Brookings Institution）資深研究員 Robert Kagan 則提出一個更嚴峻的觀察：美國在這場戰爭中，可能比開戰前更為衰弱。\n\n（這是個人分析觀點，不代表事實定論。）\n\n—— 本則來自 NPR，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美伊雙方都傳出信號，表示和平協議近在眼前。布魯金斯學會（Brookings Institution）資深研究員 Robert Kagan 則提出一個更嚴峻的分析：美國在這場戰爭之後，最終可能比開戰前更為衰弱。\n\n這是個人分析觀點，不代表事實定論。\n\n本則來自 NPR 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美伊雙方都在傳出和平協議即將到來的信號。不過有學者提出一個不那麼樂觀的評估——在這場戰爭之後，美國可能比開戰前還要更為衰弱。\n\n這是一個分析評論，代表的是個人觀點，目前的消息指出僅有一個來源提及。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "As both the US and Iran signal a peace deal is near, Robert Kagan, a Senior Fellow at the Brookings Institution, says the U.S. will likely come out weaker than before the war.",
+              "title": "Has the U.S. lost the war in Iran?",
+              "url": "https://www.npr.org/2026/05/24/nx-s1-5830110/has-the-u-s-lost-the-war-in-iran",
+              "published_at": "2026-05-25T05:06:07+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "美伊雙方都傳出和平協議即將到來的信號",
+              "source_id": "npr_world",
+              "source_title": "Has the U.S. lost the war in Iran?",
+              "source_url": "https://www.npr.org/2026/05/24/nx-s1-5830110/has-the-u-s-lost-the-war-in-iran",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Robert Kagan 認為美國在這場戰後將比開戰前更為衰弱（個人觀點）",
+              "source_id": "npr_world",
+              "source_title": "Has the U.S. lost the war in Iran?",
+              "source_url": "https://www.npr.org/2026/05/24/nx-s1-5830110/has-the-u-s-lost-the-war-in-iran",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 33,
+          "single_source_warning": true,
+          "opinion_level": "explicit_commentary",
+          "selection_reason": "source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260526_evt_005",
+          "headline": "川普稱美伊和談即將達成協議",
+          "context": "川普（Trump）表示，美國和伊朗正接近一份結束戰爭的協議，方向包括重開荷姆茲海峽（Strait of Hormuz）、限制德黑蘭的鈾儲量。但許多關鍵細節仍懸而未決。目前僅有一個來源報導此消息。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n川普稱美伊和談即將達成協議\n\n川普（Trump）表示，美伊雙方正在接近一份結束戰爭的協議。目前的消息指出，協議方向包括重新開放荷姆茲海峽（Strait of Hormuz），以及限制伊朗的鈾儲量。\n\n但許多重要細節仍未定案。川普也說，他希望更多國家藉此機會與以色列實現邦交正常化。\n\n—— 本則來自 NPR，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "川普（Trump）表示，美伊雙方正在接近一份結束戰爭的協議。目前的消息指出，協議方向包括重新開放荷姆茲海峽（Strait of Hormuz），以及限制伊朗的鈾儲量。\n\n不過許多重要細節仍未定案。川普也說，他希望更多國家藉此機會與以色列實現邦交正常化。\n\n本則來自 NPR 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "川普表示，美伊雙方正在接近一份結束戰爭的協議。目前的消息指出，協議內容可能包括重新開放荷姆茲海峽，以及限制伊朗的鈾儲量。\n\n不過許多關鍵細節仍懸而未決。川普也提到，他希望更多國家藉此機會與以色列實現邦交正常化。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n川普稱美伊和談即將達成協議\n\n川普（Trump）表示，美伊雙方正在接近一份結束戰爭的協議。目前的消息指出，協議方向包括重新開放荷姆茲海峽（Strait of Hormuz），以及限制伊朗的鈾儲量。\n\n但許多重要細節仍未定案。川普也說，他希望更多國家藉此機會與以色列實現邦交正常化。\n\n—— 本則來自 NPR，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "川普（Trump）表示，美伊雙方正在接近一份結束戰爭的協議。目前的消息指出，協議方向包括重新開放荷姆茲海峽（Strait of Hormuz），以及限制伊朗的鈾儲量。\n\n不過許多重要細節仍未定案。川普也說，他希望更多國家藉此機會與以色列實現邦交正常化。\n\n本則來自 NPR 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普表示，美伊雙方正在接近一份結束戰爭的協議。目前的消息指出，協議內容可能包括重新開放荷姆茲海峽，以及限制伊朗的鈾儲量。\n\n不過許多關鍵細節仍懸而未決。川普也提到，他希望更多國家藉此機會與以色列實現邦交正常化。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "U.S. and Iran are nearing a tentative deal to end the conflict, reopen the Strait of Hormuz, and curb Tehran's uranium stockpile — though major details remain unresolved.",
+              "title": "Trump says a deal to end war with Iran is near, but many questions remain",
+              "url": "https://www.npr.org/2026/05/24/nx-s1-5833093/trump-says-a-deal-to-end-war-with-iran-is-near-but-many-questions-remain",
+              "published_at": "2026-05-25T05:06:11+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "美伊正接近一份結束戰爭的協議，內容可能包括重開荷姆茲海峽、限制鈾儲量",
+              "source_id": "npr_world",
+              "source_title": "Trump says a deal to end war with Iran is near, but many questions remain",
+              "source_url": "https://www.npr.org/2026/05/24/nx-s1-5833093/trump-says-a-deal-to-end-war-with-iran-is-near-but-many-questions-remain",
+              "support_type": "direct"
+            },
+            {
+              "claim": "川普希望更多國家藉此機會與以色列實現邦交正常化",
+              "source_id": "npr_world",
+              "source_title": "Trump says a deal to end war with Iran is near, but many questions remain",
+              "source_url": "https://www.npr.org/2026/05/24/nx-s1-5833093/trump-says-a-deal-to-end-war-with-iran-is-near-but-many-questions-remain",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 13,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; major_geopolitical_event; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260526_evt_014",
+          "headline": "對角線單牆貫穿的二十四米長宅",
+          "context": "dua studio 設計了一棟長 24 公尺、寬僅 3.6 公尺的細長型住宅。建築的核心是一道貫穿平面中央的斜置牆體——不只是隔間，同時也是結構核心，在支撐屋頂的同時，以一個動作完成了劃分、連結、框景三件事。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 文藝\n\n對角線單牆貫穿的二十四米長宅\n\ndua studio 設計了一棟長 24 公尺、寬 3.6 公尺的細長型住宅。空間的靈魂是一道對角線牆體，貫穿整個平面的中央。這道牆不只是隔間——它是結構核心，支撐屋頂，同時劃分、連結、為日常生活框景。一道牆，三個動詞。\n\n—— 本則來自 ArchDaily，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "dua studio 設計了一棟細長型住宅，長 24 公尺，寬僅 3.6 公尺。空間的核心是一道斜置於平面中央的牆體。\n\n這道牆不只是隔間——它同時支撐屋頂、劃分空間、連結動線，還為居家生活框景。一道對角線，撐起整棟建築的敘事。\n\n本則來自 ArchDaily 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "dua studio 設計了一棟細長型住宅，長 24 公尺，寬只有 3.6 公尺。整棟建築的關鍵是一道斜置在平面中央的牆體。\n\n這道牆不只是隔間。它同時支撐屋頂，劃分空間，連結動線，也為居家生活框出了視角。一道對角線牆，撐起了整個空間的邏輯。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 文藝\n\n對角線單牆貫穿的二十四米長宅\n\ndua studio 設計了一棟長 24 公尺、寬 3.6 公尺的細長型住宅。空間的靈魂是一道對角線牆體，貫穿整個平面的中央。這道牆不只是隔間——它是結構核心，支撐屋頂，同時劃分、連結、為日常生活框景。一道牆，三個動詞。\n\n—— 本則來自 ArchDaily，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "dua studio 設計了一棟細長型住宅，長 24 公尺，寬僅 3.6 公尺。空間的核心是一道斜置於平面中央的牆體。\n\n這道牆不只是隔間——它同時支撐屋頂、劃分空間、連結動線，還為居家生活框景。一道對角線，撐起整棟建築的敘事。\n\n本則來自 ArchDaily 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "dua studio 設計了一棟細長型住宅，長 24 公尺，寬只有 3.6 公尺。整棟建築的關鍵是一道斜置在平面中央的牆體。\n\n這道牆不只是隔間。它同時支撐屋頂，劃分空間，連結動線，也為居家生活框出了視角。一道對角線牆，撐起了整個空間的邏輯。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "A house stretched to 24 metres in length and compressed to 3.6 metres in width. The house is organised by a single diagonal wall positioned at the centre of the plan. More than a partition, the wall becomes the structural and spatial core of the house, supporting the roof while simultaneously dividing, connecting, and framing domestic life.",
+              "title": "24 m' House / dua studio",
+              "url": "https://www.archdaily.com/1041761/24-m-house-dua-studio",
+              "published_at": "2026-05-25T10:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "dua studio 設計了一棟長 24 公尺、寬 3.6 公尺的住宅，以斜置中央牆體組織空間",
+              "source_id": "archdaily",
+              "source_title": "24 m' House / dua studio",
+              "source_url": "https://www.archdaily.com/1041761/24-m-house-dua-studio",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260526_evt_015",
+          "headline": "波蘭帕布羅尼湖帆船碼頭完工",
+          "context": "位於波蘭蒂黑（Tychy）的帕布羅尼湖（Paprocany Lake）東岸，一座帆船碼頭在 RS + Robert Skitek 的設計下完工，也是整條步行散步道的最後一塊拼圖。稍早在 2020 年，同一岸線上的 MOSM 獨木舟碼頭已先行開放。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 文藝\n\n波蘭帕布羅尼湖帆船碼頭完工\n\n波蘭蒂黑（Tychy）的帕布羅尼湖（Paprocany Lake）東側岸線，終於迎來最後一塊拼圖——RS + Robert Skitek 完成了這座帆船碼頭的設計，也為整條步行散步道畫上句號。\n\n2020 年，同一岸線上的 MOSM 獨木舟碼頭已先行開放。這次帆船碼頭的完工，讓整段水岸連結成一條完整的動線。\n\n—— 本則來自 ArchDaily，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "波蘭蒂黑（Tychy）的帕布羅尼湖（Paprocany Lake）東側岸線，帆船碼頭終於完工。建築師是 RS + Robert Skitek，也是整條步行散步道的最後一段。\n\n2020 年，同一岸線上的 MOSM 獨木舟碼頭已先行開放。這次帆船碼頭落成，讓整段水岸連結成一條完整的動線。\n\n本則來自 ArchDaily 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "波蘭有一座帆船碼頭完工了，位在蒂黑市的帕布羅尼湖東側，同時也是整條步行散步道的最後一段。\n\n碼頭由 RS + Robert Skitek 設計。早在 2020 年，同一條岸線上已有一座獨木舟碼頭先行開放，這次帆船碼頭完工，讓整段水岸的動線終於串連起來。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 文藝\n\n波蘭帕布羅尼湖帆船碼頭完工\n\n波蘭蒂黑（Tychy）的帕布羅尼湖（Paprocany Lake）東側岸線，終於迎來最後一塊拼圖——RS + Robert Skitek 完成了這座帆船碼頭的設計，也為整條步行散步道畫上句號。\n\n2020 年，同一岸線上的 MOSM 獨木舟碼頭已先行開放。這次帆船碼頭的完工，讓整段水岸連結成一條完整的動線。\n\n—— 本則來自 ArchDaily，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "波蘭蒂黑（Tychy）的帕布羅尼湖（Paprocany Lake）東側岸線，帆船碼頭終於完工。建築師是 RS + Robert Skitek，也是整條步行散步道的最後一段。\n\n2020 年，同一岸線上的 MOSM 獨木舟碼頭已先行開放。這次帆船碼頭落成，讓整段水岸連結成一條完整的動線。\n\n本則來自 ArchDaily 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "波蘭有一座帆船碼頭完工了，位在蒂黑市的帕布羅尼湖東側，同時也是整條步行散步道的最後一段。\n\n碼頭由 RS + Robert Skitek 設計。早在 2020 年，同一條岸線上已有一座獨木舟碼頭先行開放，這次帆船碼頭完工，讓整段水岸的動線終於串連起來。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "The sailing marina is the final stage of the development of the eastern waterfront of Paprocany Lake and, at the same time, the completion of the pedestrian promenade. In 2020, the MOSM kayak marina was opened to the public a few hundred meters along the shore.",
+              "title": "Marina in Tychy / RS + Robert Skitek",
+              "url": "https://www.archdaily.com/1041740/marina-in-tychy",
+              "published_at": "2026-05-25T11:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "RS + Robert Skitek 完成帕布羅尼湖帆船碼頭設計，是整條步行散步道的最後一段",
+              "source_id": "archdaily",
+              "source_title": "Marina in Tychy / RS + Robert Skitek",
+              "source_url": "https://www.archdaily.com/1041740/marina-in-tychy",
+              "support_type": "direct"
+            },
+            {
+              "claim": "2020 年，MOSM 獨木舟碼頭已在同一岸線先行開放",
+              "source_id": "archdaily",
+              "source_title": "Marina in Tychy / RS + Robert Skitek",
+              "source_url": "https://www.archdaily.com/1041740/marina-in-tychy",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260526_evt_010",
+          "headline": "伊豆山中的潛水休養所設計",
+          "context": "NASCA 建築事務所在靜岡縣富士箱根伊豆（Fuji-Hakone-Izu）國家公園內，設計了一座名為「水之家」（MIZU NO IE）的潛水休養所。設計哲學是讓造訪者卸下城市的包裹，以水、空氣、樹綠和土地的氣候直接擁抱身心。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 文藝\n\n伊豆山中的潛水休養所設計\n\n日本 NASCA 建築事務所在富士箱根伊豆（Fuji-Hakone-Izu）國家公園內，完成了一座潛水休養所，名為「水之家」（MIZU NO IE）。\n\n基地位於伊豆高原，可遠眺大室山（Mount Omuro），自然環境保存完好。設計哲學是讓造訪者以水、空氣、周圍的樹綠、土地的氣候直接包裹身心——回到純粹。\n\n—— 本則來自 ArchDaily，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "日本 NASCA 建築事務所在富士箱根伊豆（Fuji-Hakone-Izu）國家公園內，完成了一座潛水休養所，名為「水之家」（MIZU NO IE）。基地位於伊豆高原，可遠眺大室山（Mount Omuro）。\n\n設計的核心哲學是讓造訪者卸下城市的包裹，以水、空氣、綠意與土地的氣候直接擁抱身心——感官的真正歸零。基地的自然環境至今保存完好。\n\n本則來自 ArchDaily 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "日本有一座名為「水之家」的潛水休養所剛完工，坐落在富士箱根伊豆國家公園內的伊豆高原，可以遠眺大室山。\n\n設計它的建築師說，他們想讓造訪者卸下城市的包裹——以水、空氣、周圍的樹綠和土地的氣候，直接包覆身心。基地的自然環境至今保存完好。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 文藝\n\n伊豆山中的潛水休養所設計\n\n日本 NASCA 建築事務所在富士箱根伊豆（Fuji-Hakone-Izu）國家公園內，完成了一座潛水休養所，名為「水之家」（MIZU NO IE）。\n\n基地位於伊豆高原，可遠眺大室山（Mount Omuro），自然環境保存完好。設計哲學是讓造訪者以水、空氣、周圍的樹綠、土地的氣候直接包裹身心——回到純粹。\n\n—— 本則來自 ArchDaily，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "日本 NASCA 建築事務所在富士箱根伊豆（Fuji-Hakone-Izu）國家公園內，完成了一座潛水休養所，名為「水之家」（MIZU NO IE）。基地位於伊豆高原，可遠眺大室山（Mount Omuro）。\n\n設計的核心哲學是讓造訪者卸下城市的包裹，以水、空氣、綠意與土地的氣候直接擁抱身心——感官的真正歸零。基地的自然環境至今保存完好。\n\n本則來自 ArchDaily 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "日本有一座名為「水之家」的潛水休養所剛完工，坐落在富士箱根伊豆國家公園內的伊豆高原，可以遠眺大室山。\n\n設計它的建築師說，他們想讓造訪者卸下城市的包裹——以水、空氣、周圍的樹綠和土地的氣候，直接包覆身心。基地的自然環境至今保存完好。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "People are born naked, and they are clad in garments, houses, cities, and nature. The site where untouched nature has been carefully preserved is located within Fuji-Hakone-Izu National Park, in a corner of the Izu Highlands overlooking Mount Omuro. We aim to create a place where visitors can release their five senses and are clad in water, in the air of the site, in the surrounding greenery, in the climate of the land, so that mind and body are directly embraced by the environment.",
+              "title": "MIZU NO IE - Izu Diving Retreat / NASCA",
+              "url": "https://www.archdaily.com/1041768/mizu-no-ie-izu-diving-retreat-nasca",
+              "published_at": "2026-05-25T08:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "NASCA 在富士箱根伊豆國家公園內完成「水之家」潛水休養所",
+              "source_id": "archdaily",
+              "source_title": "MIZU NO IE - Izu Diving Retreat / NASCA",
+              "source_url": "https://www.archdaily.com/1041768/mizu-no-ie-izu-diving-retreat-nasca",
+              "support_type": "direct"
+            },
+            {
+              "claim": "設計哲學是讓造訪者以水、空氣、樹綠和土地氣候直接包覆身心",
+              "source_id": "archdaily",
+              "source_title": "MIZU NO IE - Izu Diving Retreat / NASCA",
+              "source_url": "https://www.archdaily.com/1041768/mizu-no-ie-izu-diving-retreat-nasca",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260526_evt_006",
+          "headline": "所有人都在即時摸索 AI 安全",
+          "context": "AI 安全還沒有成熟的標準答案。目前的消息指出，就連 Google 這樣的科技巨頭也仍在即時摸索、學習如何應對。這是一個所有人都身處其中的過渡期。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n所有人都在即時摸索 AI 安全\n\n目前的消息指出，AI 安全還沒有公認的答案——就連 Google 也不例外。這是一個過渡期，所有人都在即時學習、即時應對。\n\n—— 本則來自 TechCrunch，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "AI 安全這件事，目前還沒有公認的標準答案。就連 Google 也仍在邊走邊學、即時應對。\n\n目前的消息指出，我們都身處一個過渡期——不只是新創公司，大公司也一樣在摸索中前進。\n\n本則來自 TechCrunch 於 2026 年 5 月 24 日發佈的報導。",
+          "voice_text": "AI 安全這件事，目前還沒有公認的標準答案——就連業界龍頭也不例外。大家都在即時摸索，即時應對。\n\n目前的消息指出，這是一個過渡期。從個人到企業，沒有人已經把 AI 安全這門課全部學完了。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n所有人都在即時摸索 AI 安全\n\n目前的消息指出，AI 安全還沒有公認的答案——就連 Google 也不例外。這是一個過渡期，所有人都在即時學習、即時應對。\n\n—— 本則來自 TechCrunch，2026 年 5 月 24 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "AI 安全這件事，目前還沒有公認的標準答案。就連 Google 也仍在邊走邊學、即時應對。\n\n目前的消息指出，我們都身處一個過渡期——不只是新創公司，大公司也一樣在摸索中前進。\n\n本則來自 TechCrunch 於 2026 年 5 月 24 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "AI 安全這件事，目前還沒有公認的標準答案——就連業界龍頭也不例外。大家都在即時摸索，即時應對。\n\n目前的消息指出，這是一個過渡期。從個人到企業，沒有人已經把 AI 安全這門課全部學完了。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "We're in the transition period -- all of us.",
+              "title": "Everyone is navigating AI security in real time — even Google",
+              "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+              "published_at": "2026-05-25T05:39:21+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "包含 Google 在內，業界各方都在即時摸索 AI 安全，尚無公認標準答案",
+              "source_id": "techcrunch_ai",
+              "source_title": "Everyone is navigating AI security in real time — even Google",
+              "source_url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260526_evt_071",
+          "headline": "新創競賽申請二十七日截止",
+          "context": "Startup Battlefield 200 是 TechCrunch 旗下的新創競賽，申請截止時間為 5 月 27 日。入選優勝者可獲得 10 萬美元獎金，以及風險投資接觸機會和全球媒體曝光。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n新創競賽申請二十七日截止\n\nStartup Battlefield 200 的申請截止時間為 5 月 27 日。目前的消息指出，優勝者可獲得 10 萬美元獎金，以及風險投資接觸機會與全球媒體曝光。這是 TechCrunch 旗下的新創競賽。\n\n—— 本則來自 TechCrunch，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "Startup Battlefield 200 的申請截止時間為 5 月 27 日。入選優勝者可獲得 10 萬美元獎金，以及風險投資接觸機會與全球媒體曝光。這是 TechCrunch 旗下的新創競賽。\n\n本則來自 TechCrunch 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "有一個新創競賽的申請截止日即將到來——5 月 27 日。這是 TechCrunch 旗下的 Startup Battlefield 200。入選優勝者可以拿到 10 萬美元獎金，加上風險投資接觸機會和國際曝光。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n新創競賽申請二十七日截止\n\nStartup Battlefield 200 的申請截止時間為 5 月 27 日。目前的消息指出，優勝者可獲得 10 萬美元獎金，以及風險投資接觸機會與全球媒體曝光。這是 TechCrunch 旗下的新創競賽。\n\n—— 本則來自 TechCrunch，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Startup Battlefield 200 的申請截止時間為 5 月 27 日。入選優勝者可獲得 10 萬美元獎金，以及風險投資接觸機會與全球媒體曝光。這是 TechCrunch 旗下的新創競賽。\n\n本則來自 TechCrunch 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有一個新創競賽的申請截止日即將到來——5 月 27 日。這是 TechCrunch 旗下的 Startup Battlefield 200。入選優勝者可以拿到 10 萬美元獎金，加上風險投資接觸機會和國際曝光。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "The deadline to apply or nominate for Startup Battlefield 200 is May 27. This is your shot at VC access, global visibility, TechCrunch coverage, and $100,000. Apply now.",
+              "title": "Startup Battlefield 200 applications close in days: Apply before May 27",
+              "url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+              "published_at": "2026-05-25T22:30:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Startup Battlefield 200 申請截止 5 月 27 日，優勝獎金 10 萬美元",
+              "source_id": "techcrunch_ai",
+              "source_title": "Startup Battlefield 200 applications close in days: Apply before May 27",
+              "source_url": "https://techcrunch.com/2026/05/25/startup-battlefield-200-applications-close-in-days-apply-before-may-27/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260526_evt_070",
+          "headline": "科技創業年會早鳥票倒數五天",
+          "context": "TechCrunch Disrupt 2026 的早鳥票優惠即將截止，截止時間為美國太平洋時間 5 月 29 日午夜。現在購票可節省最多 410 美元。活動在舊金山（San Francisco）舉行。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n科技創業年會早鳥票倒數五天\n\nTechCrunch Disrupt 2026 的早鳥票優惠倒數最後五天，截止時間為美國太平洋時間 5 月 29 日午夜。之後票價將調漲，目前最多可省 410 美元。活動在舊金山（San Francisco）舉行。\n\n—— 本則來自 TechCrunch，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "TechCrunch Disrupt 2026 的早鳥票優惠還有五天就截止了。截止時間為美國太平洋時間 5 月 29 日午夜，之後票價將調漲。目前最多可省 410 美元。活動在舊金山舉行。\n\n本則來自 TechCrunch 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "TechCrunch Disrupt 2026 的早鳥票優惠還有五天就截止了。截止時間是太平洋時間 5 月 29 日午夜，之後票價會調漲。現在購票最多可以省 410 美元。活動在舊金山舉行。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n科技創業年會早鳥票倒數五天\n\nTechCrunch Disrupt 2026 的早鳥票優惠倒數最後五天，截止時間為美國太平洋時間 5 月 29 日午夜。之後票價將調漲，目前最多可省 410 美元。活動在舊金山（San Francisco）舉行。\n\n—— 本則來自 TechCrunch，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "TechCrunch Disrupt 2026 的早鳥票優惠還有五天就截止了。截止時間為美國太平洋時間 5 月 29 日午夜，之後票價將調漲。目前最多可省 410 美元。活動在舊金山舉行。\n\n本則來自 TechCrunch 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "TechCrunch Disrupt 2026 的早鳥票優惠還有五天就截止了。截止時間是太平洋時間 5 月 29 日午夜，之後票價會調漲。現在購票最多可以省 410 美元。活動在舊金山舉行。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Early Bird savings for TechCrunch Disrupt 2026 in San Francisco end May 29 at 11:59 p.m. PT. Register now to save up to $410 before prices increase.",
+              "title": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+              "url": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
+              "published_at": "2026-05-25T22:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "TechCrunch Disrupt 2026 早鳥優惠截止於太平洋時間 5 月 29 日午夜，最多可省 410 美元",
+              "source_id": "techcrunch_ai",
+              "source_title": "5 days left: Save up to $410 on TechCrunch Disrupt 2026 passes before prices increase",
+              "source_url": "https://techcrunch.com/2026/05/25/5-days-left-save-up-to-410-on-techcrunch-disrupt-2026-passes-before-prices-increase/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260526_evt_076",
+          "headline": "教宗的 AI 通諭其實在說別的",
+          "context": "教宗良十四世（Pope Leo XIV）發布了就任以來的首份通諭（encyclical）。有分析指出，這份文件雖然以 AI 為主題，真正要診斷的是更古老的問題：權力集中、民主侵蝕，以及科技菁英按自身利益重塑世界的趨勢。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n教宗的 AI 通諭其實在說別的\n\n教宗良十四世（Pope Leo XIV）發布了上任以來的首份通諭（encyclical）。分析指出，這份文件雖然以 AI 為題，談的其實是更深層的問題：權力集中、民主式微，以及科技菁英按自身利益重塑世界。\n\n（這是評論觀點，不代表事實定論。）\n\n—— 本則來自 TechCrunch，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "教宗良十四世（Pope Leo XIV）發布了上任以來的首份通諭（encyclical）。這份文件雖以 AI 為主題，但有分析指出，它真正要診斷的是更古老的問題：權力集中、民主侵蝕，以及科技菁英按自身利益重塑世界的趨勢。\n\n這是評論觀點，不代表事實定論。\n\n本則來自 TechCrunch 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "教宗良十四世上任以來的第一份通諭出來了，主題圍繞人工智慧。但有分析認為，這份文件其實不只在談 AI。\n\n它真正想診斷的，是一些更古老的問題：權力集中在少數人手中、民主機制受到侵蝕，以及科技菁英按自身利益在重塑這個世界。這是一種評論觀點。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n教宗的 AI 通諭其實在說別的\n\n教宗良十四世（Pope Leo XIV）發布了上任以來的首份通諭（encyclical）。分析指出，這份文件雖然以 AI 為題，談的其實是更深層的問題：權力集中、民主式微，以及科技菁英按自身利益重塑世界。\n\n（這是評論觀點，不代表事實定論。）\n\n—— 本則來自 TechCrunch，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "教宗良十四世（Pope Leo XIV）發布了上任以來的首份通諭（encyclical）。這份文件雖以 AI 為主題，但有分析指出，它真正要診斷的是更古老的問題：權力集中、民主侵蝕，以及科技菁英按自身利益重塑世界的趨勢。\n\n這是評論觀點，不代表事實定論。\n\n本則來自 TechCrunch 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "教宗良十四世上任以來的第一份通諭出來了，主題圍繞人工智慧。但有分析認為，這份文件其實不只在談 AI。\n\n它真正想診斷的，是一些更古老的問題：權力集中在少數人手中、民主機制受到侵蝕，以及科技菁英按自身利益在重塑這個世界。這是一種評論觀點。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.",
+              "title": "The pope's AI encyclical isn't really about AI",
+              "url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+              "published_at": "2026-05-25T23:09:41+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "教宗良十四世發布首份通諭，以 AI 為切入點",
+              "source_id": "techcrunch_ai",
+              "source_title": "The pope's AI encyclical isn't really about AI",
+              "source_url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "分析認為通諭真正針對的是權力集中、民主侵蝕、科技菁英主導世界的問題（評論觀點）",
+              "source_id": "techcrunch_ai",
+              "source_title": "The pope's AI encyclical isn't really about AI",
+              "source_url": "https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "explicit_commentary",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260526_evt_011",
+          "headline": "英國精釀啤酒熱潮退燒",
+          "context": "英國曾在近十年間掀起精釀啤酒熱潮，如今浪頭開始退去。目前的消息指出，隨著酒館關門、成本上升、飲酒習慣改變，釀酒廠的數量正在萎縮。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n英國精釀啤酒熱潮退燒\n\n英國曾有一股精釀啤酒熱潮，如今浪頭開始退去。目前的消息指出，酒館接連關閉、成本持續攀升、飲酒習慣改變，三個因素疊加，讓英國釀酒廠的數量正在萎縮。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國的精釀啤酒熱潮，如今浪頭開始退去。酒館接連關閉，成本持續攀升，飲酒習慣也在改變——這三個因素疊加，讓英國釀酒廠的數量正在萎縮。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "英國的精釀啤酒熱潮，正在退燒。酒館在關，成本在漲，飲酒習慣也在改變。三個原因一起壓過來，釀酒廠的數量正在萎縮。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n英國精釀啤酒熱潮退燒\n\n英國曾有一股精釀啤酒熱潮，如今浪頭開始退去。目前的消息指出，酒館接連關閉、成本持續攀升、飲酒習慣改變，三個因素疊加，讓英國釀酒廠的數量正在萎縮。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國的精釀啤酒熱潮，如今浪頭開始退去。酒館接連關閉，成本持續攀升，飲酒習慣也在改變——這三個因素疊加，讓英國釀酒廠的數量正在萎縮。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國的精釀啤酒熱潮，正在退燒。酒館在關，成本在漲，飲酒習慣也在改變。三個原因一起壓過來，釀酒廠的數量正在萎縮。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The UK's brewery scene is shrinking as pubs close, costs rise and drinking habits change.",
+              "title": "Beer boom goes flat as breweries call last orders",
+              "url": "https://www.bbc.com/news/articles/c9werp5keqlo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T08:21:24+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "英國釀酒廠數量正在萎縮，原因包括酒館關閉、成本上升、飲酒習慣改變",
+              "source_id": "bbc_business",
+              "source_title": "Beer boom goes flat as breweries call last orders",
+              "source_url": "https://www.bbc.com/news/articles/c9werp5keqlo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260526_evt_012",
+          "headline": "兼職潮：生活成本高漲人人斜槓",
+          "context": "生活成本上升、工作不穩定，越來越多人被迫同時打多份工。目前的消息指出，「多工勞動力」正在成形——不是主動選擇，而是為了生存的必要。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n兼職潮：生活成本高漲人人斜槓\n\n「我活在生存模式裡。」——這不是一個人的狀況。目前的消息指出，越來越多人被迫同時打多份工，原因是生活成本上升、工作越來越不穩定。這波「多工勞動力」的浪潮，正在重塑我們賺錢的方式。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "「我活在生存模式裡。」這不是一個人的感嘆。越來越多人正在同時打多份工——不是主動選擇，而是生活成本上升、工作愈來愈不穩定的結果。\n\n目前的消息指出，「多工勞動力」的浪潮正在成形，重塑著我們賺錢的方式。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "越來越多人同時打好幾份工。不是因為喜歡，是因為不得不。生活成本在漲，工作越來越不穩定，這兩件事加在一起，催生了所謂的「多工勞動力」。\n\n有人說：「我活在生存模式裡。」這不是一個人的狀況。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n兼職潮：生活成本高漲人人斜槓\n\n「我活在生存模式裡。」——這不是一個人的狀況。目前的消息指出，越來越多人被迫同時打多份工，原因是生活成本上升、工作越來越不穩定。這波「多工勞動力」的浪潮，正在重塑我們賺錢的方式。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "「我活在生存模式裡。」這不是一個人的感嘆。越來越多人正在同時打多份工——不是主動選擇，而是生活成本上升、工作愈來愈不穩定的結果。\n\n目前的消息指出，「多工勞動力」的浪潮正在成形，重塑著我們賺錢的方式。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "越來越多人同時打好幾份工。不是因為喜歡，是因為不得不。生活成本在漲，工作越來越不穩定，這兩件事加在一起，催生了所謂的「多工勞動力」。\n\n有人說：「我活在生存模式裡。」這不是一個人的狀況。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "More people are taking second jobs as rising costs and insecure work reshape how we earn a living.",
+              "title": "'I live in survival mode': The rise of the multi-job workforce",
+              "url": "https://www.bbc.com/news/articles/c70vwr8z7pyo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T08:26:38+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "越來越多人因生活成本上升、工作不穩定而同時打多份工",
+              "source_id": "bbc_business",
+              "source_title": "'I live in survival mode': The rise of the multi-job workforce",
+              "source_url": "https://www.bbc.com/news/articles/c70vwr8z7pyo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260526_evt_008",
+          "headline": "印度富豪出海購併外國企業",
+          "context": "隨著印度國內增長放緩，印度大型企業紛紛轉向海外購併。目前的消息指出，2025 年印度企業在全球收購案中砸下 180 億美元；2026 年上半年，交易金額預估可能突破 150 億美元。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n印度富豪出海購併外國企業\n\n印度國內增長放緩，大型企業開始把眼光轉向海外。目前的消息指出，2025 年印度企業在全球收購案中砸下了 180 億美元；2026 年上半年，交易總額預估可能突破 150 億美元。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "印度國內增長放緩，大型企業開始轉向海外購併。目前的消息指出，2025 年印度企業在全球收購案中共砸下 180 億美元；2026 年上半年，預計交易金額可能突破 150 億美元。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "印度大型企業正在積極出海購併。2025 年，他們在全球收購案裡砸下了大約 180 億美元——大概是新台幣五千多億。\n\n今年上半年的交易金額，目前的消息指出可能還會突破 150 億美元。背景是印度國內的增長有所放緩，促使企業往外找機會。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n印度富豪出海購併外國企業\n\n印度國內增長放緩，大型企業開始把眼光轉向海外。目前的消息指出，2025 年印度企業在全球收購案中砸下了 180 億美元；2026 年上半年，交易總額預估可能突破 150 億美元。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "印度國內增長放緩，大型企業開始轉向海外購併。目前的消息指出，2025 年印度企業在全球收購案中共砸下 180 億美元；2026 年上半年，預計交易金額可能突破 150 億美元。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "印度大型企業正在積極出海購併。2025 年，他們在全球收購案裡砸下了大約 180 億美元——大概是新台幣五千多億。\n\n今年上半年的交易金額，目前的消息指出可能還會突破 150 億美元。背景是印度國內的增長有所放緩，促使企業往外找機會。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "India Inc spent $18bn on global buyouts in 2025 and the deal value could cross $15bn in the first half of 2026.",
+              "title": "Indian billionaires buy foreign companies as growth slows at home",
+              "url": "https://www.bbc.com/news/articles/cwy21x20q23o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T07:01:09+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "2025 年印度企業在全球收購案中砸下 180 億美元（約 18 億美元的十倍）",
+              "source_id": "bbc_business",
+              "source_title": "Indian billionaires buy foreign companies as growth slows at home",
+              "source_url": "https://www.bbc.com/news/articles/cwy21x20q23o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "2026 年上半年印度企業海外收購額預估可能突破 150 億美元",
+              "source_id": "bbc_business",
+              "source_title": "Indian billionaires buy foreign companies as growth slows at home",
+              "source_url": "https://www.bbc.com/news/articles/cwy21x20q23o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260526_evt_013",
+          "headline": "沙烏地巨額建設夢開始降溫",
+          "context": "沙烏地阿拉伯王儲穆罕默德・本・薩勒曼（Mohammed bin Salman，MBS）的「2030 願景」（Vision 2030）計畫曾震驚世界，宏大得像科幻小說。目前的消息指出，現在現實開始咬了回來——這場豪賭似乎走到了瓶頸。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n沙烏地巨額建設夢開始降溫\n\n沙烏地阿拉伯王儲 MBS（Mohammed bin Salman）的「2030 願景」（Vision 2030）曾讓世界驚嘆，計畫宏大得像科幻小說。目前的消息指出，現在現實開始咬了回來——沙烏地的豪賭似乎走到了瓶頸。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "沙烏地阿拉伯王儲 MBS（Mohammed bin Salman）的「2030 願景」（Vision 2030）曾讓世界驚嘆，計畫宏大得像科幻小說。但目前的消息指出，現實已經開始咬了回來——沙烏地的這場豪賭，似乎走到了瓶頸。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "沙烏地阿拉伯王儲穆罕默德・本・薩勒曼，外界稱他 MBS，他主導的「2030 願景」計畫曾讓世界驚嘆。建新城市、推超級工程、多元化經濟——宏大得像科幻小說。不過，目前的消息指出，現實開始咬了回來。這場大手筆的揮霍，似乎走到了瓶頸。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n沙烏地巨額建設夢開始降溫\n\n沙烏地阿拉伯王儲 MBS（Mohammed bin Salman）的「2030 願景」（Vision 2030）曾讓世界驚嘆，計畫宏大得像科幻小說。目前的消息指出，現在現實開始咬了回來——沙烏地的豪賭似乎走到了瓶頸。\n\n—— 本則來自 BBC，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "沙烏地阿拉伯王儲 MBS（Mohammed bin Salman）的「2030 願景」（Vision 2030）曾讓世界驚嘆，計畫宏大得像科幻小說。但目前的消息指出，現實已經開始咬了回來——沙烏地的這場豪賭，似乎走到了瓶頸。\n\n本則來自 BBC 於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "沙烏地阿拉伯王儲穆罕默德・本・薩勒曼，外界稱他 MBS，他主導的「2030 願景」計畫曾讓世界驚嘆。建新城市、推超級工程、多元化經濟——宏大得像科幻小說。不過，目前的消息指出，現實開始咬了回來。這場大手筆的揮霍，似乎走到了瓶頸。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "MBS's Vison 2030 project seemed the stuff of science fiction. Now reality has bitten",
+              "title": "How Saudi Arabia's spending spree reached the end of the line",
+              "url": "https://www.bbc.com/news/articles/cx21g0828reo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-25T09:08:39+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "MBS 的「2030 願景」計畫被形容宏大如科幻，但現實已開始咬回來",
+              "source_id": "bbc_business",
+              "source_title": "How Saudi Arabia's spending spree reached the end of the line",
+              "source_url": "https://www.bbc.com/news/articles/cx21g0828reo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260526_evt_024",
+          "headline": "馬基金會內鬥升級，雙方互控",
+          "context": "馬英九基金會與前執行長蕭旭岑、王光慈之間的財務糾紛持續升溫。調查小組報告認定無法證明違規，但基金會方面由金溥聰出面發布新指控、懷疑調查小組包庇；蕭旭岑隨即宣布將對金溥聰提告。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/2\n📌 台灣\n\n馬基金會內鬥升級，雙方互控\n\n馬英九基金會與前執行長蕭旭岑、王光慈之間的財務紛爭持續延燒。調查小組報告認定，無法證明兩人違反財政紀律，但基金會由金溥聰出面，公布私下收取捐款的相關紀錄，並懷疑調查小組涉嫌包庇。\n\n🧵 2/2\n蕭旭岑隨即反擊，聲稱金溥聰散佈不實訊息，將對其提告。\n\n—— 本則來自公視，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "馬英九基金會與前執行長蕭旭岑、王光慈之間的財務紛爭持續延燒。調查小組報告認定，無法證明兩人違反財政紀律，但基金會方面不接受這個結論——由金溥聰出面，公布王、蕭私下收取捐款的相關紀錄，並懷疑調查小組涉嫌包庇。\n\n蕭旭岑隨即反擊，聲稱金溥聰散佈不實訊息，宣布將對其提告。\n\n本則來自公視於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "馬英九基金會的財務糾紛，今天又升溫了。調查小組報告說，無法證明前執行長蕭旭岑和王光慈違反財政紀律。但基金會不接受——由金溥聰出面，公布了私下收取捐款的紀錄，懷疑調查小組涉及包庇。\n\n蕭旭岑隨即反擊，說金溥聰散佈不實訊息，將提告。雙方各執一詞，事件仍在延燒中。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/2\n📌 台灣\n\n馬基金會內鬥升級，雙方互控\n\n馬英九基金會與前執行長蕭旭岑、王光慈之間的財務紛爭持續延燒。調查小組報告認定，無法證明兩人違反財政紀律，但基金會由金溥聰出面，公布私下收取捐款的相關紀錄，並懷疑調查小組涉嫌包庇。\n\n🧵 2/2\n蕭旭岑隨即反擊，聲稱金溥聰散佈不實訊息，將對其提告。\n\n—— 本則來自公視，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "馬英九基金會與前執行長蕭旭岑、王光慈之間的財務紛爭持續延燒。調查小組報告認定，無法證明兩人違反財政紀律，但基金會方面不接受這個結論——由金溥聰出面，公布王、蕭私下收取捐款的相關紀錄，並懷疑調查小組涉嫌包庇。\n\n蕭旭岑隨即反擊，聲稱金溥聰散佈不實訊息，宣布將對其提告。\n\n本則來自公視於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "馬英九基金會的財務糾紛，今天又升溫了。調查小組報告說，無法證明前執行長蕭旭岑和王光慈違反財政紀律。但基金會不接受——由金溥聰出面，公布了私下收取捐款的紀錄，懷疑調查小組涉及包庇。\n\n蕭旭岑隨即反擊，說金溥聰散佈不實訊息，將提告。雙方各執一詞，事件仍在延燒中。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "馬英九基金會日前指控前執行長蕭旭岑、王光慈違反財政紀律，但調查報告稱未發現兩人私吞狀況。馬英九基金會今（25）日由金溥聰等人召開記者會，公布王、蕭私下收取捐款等相關紀錄，懷疑調查小組涉及包庇。蕭旭岑則出面反擊，稱金溥聰散佈不實訊息將對其提告。",
+              "title": "馬基金會控違財政紀律、調查小組涉包庇 蕭旭岑反擊喊告金溥聰",
+              "url": "https://news.pts.org.tw/article/809864",
+              "published_at": "2026-05-25T14:32:11+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "基金會調查小組認定無法證明蕭旭岑、王光慈違反財政紀律",
+              "source_id": "pts_news",
+              "source_title": "馬基金會控違財政紀律、調查小組涉包庇 蕭旭岑反擊喊告金溥聰",
+              "source_url": "https://news.pts.org.tw/article/809864",
+              "support_type": "direct"
+            },
+            {
+              "claim": "基金會由金溥聰出面公布王、蕭私下收取捐款紀錄，懷疑調查小組涉嫌包庇",
+              "source_id": "pts_news",
+              "source_title": "馬基金會控違財政紀律、調查小組涉包庇 蕭旭岑反擊喊告金溥聰",
+              "source_url": "https://news.pts.org.tw/article/809864",
+              "support_type": "direct"
+            },
+            {
+              "claim": "蕭旭岑聲稱金溥聰散佈不實訊息，宣布將對其提告",
+              "source_id": "pts_news",
+              "source_title": "馬基金會控違財政紀律、調查小組涉包庇 蕭旭岑反擊喊告金溥聰",
+              "source_url": "https://news.pts.org.tw/article/809864",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 0,
+          "single_source_warning": true,
+          "opinion_level": "none"
+        },
+        {
+          "event_id": "daily_20260526_evt_029",
+          "headline": "馬英九基金會風波來龍去脈",
+          "context": "馬英九基金會與前執行長蕭旭岑、王光慈的財務紛爭，已衍生出更多面向：調查小組認定無違規，但馬英九稱結果與事證落差太大；馬家人更向法院聲請馬英九的「輔助宣告」，令外界更加關注整起事件的始末。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/2\n📌 台灣\n\n馬英九基金會風波來龍去脈\n\n馬英九基金會財務風波整理：前執行長蕭旭岑、王光慈遭指控違反財政紀律，但調查小組認定無法證實。馬英九說調查結果與具體事證差距過大，今委由現任執行長戴遐齡、前國安會秘書長金溥聰出面說明。\n\n🧵 2/2\n另一個重要背景：馬家人已向法院聲請馬英九的「輔助宣告」，這也是理解整起事件的關鍵一塊。\n\n—— 本則來自公視，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "馬英九基金會財務風波的整理：前執行長蕭旭岑、王光慈遭指控違反財政紀律，但調查小組認定無法證明，馬英九則說調查結果與具體事證差距太大。今天委由現任執行長戴遐齡、前國安會秘書長金溥聰出面說明細節。\n\n另一個重要背景是：馬家人已向法院聲請馬英九的「輔助宣告」，這也是整起事件的關鍵組成部分。\n\n本則來自公視於 2026 年 5 月 25 日發佈的報導。",
+          "voice_text": "馬英九基金會的財務風波，事情的來龍去脈是這樣的。前執行長蕭旭岑和王光慈遭到指控，說是違反了財政紀律，但調查小組的報告說無法證明。馬英九說，調查結果跟具體事證落差太大，今天委由現任執行長戴遐齡、前國安會秘書長金溥聰出面說明。\n\n另一個重要的背景是，馬家人已向法院聲請馬英九的「輔助宣告」，這也是理解整起事件的重要一塊。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/2\n📌 台灣\n\n馬英九基金會風波來龍去脈\n\n馬英九基金會財務風波整理：前執行長蕭旭岑、王光慈遭指控違反財政紀律，但調查小組認定無法證實。馬英九說調查結果與具體事證差距過大，今委由現任執行長戴遐齡、前國安會秘書長金溥聰出面說明。\n\n🧵 2/2\n另一個重要背景：馬家人已向法院聲請馬英九的「輔助宣告」，這也是理解整起事件的關鍵一塊。\n\n—— 本則來自公視，2026 年 5 月 25 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "馬英九基金會財務風波的整理：前執行長蕭旭岑、王光慈遭指控違反財政紀律，但調查小組認定無法證明，馬英九則說調查結果與具體事證差距太大。今天委由現任執行長戴遐齡、前國安會秘書長金溥聰出面說明細節。\n\n另一個重要背景是：馬家人已向法院聲請馬英九的「輔助宣告」，這也是整起事件的關鍵組成部分。\n\n本則來自公視於 2026 年 5 月 25 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "馬英九基金會的財務風波，事情的來龍去脈是這樣的。前執行長蕭旭岑和王光慈遭到指控，說是違反了財政紀律，但調查小組的報告說無法證明。馬英九說，調查結果跟具體事證落差太大，今天委由現任執行長戴遐齡、前國安會秘書長金溥聰出面說明。\n\n另一個重要的背景是，馬家人已向法院聲請馬英九的「輔助宣告」，這也是理解整起事件的重要一塊。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "馬英九基金會前指控前執行長蕭旭岑、王光慈違反財政紀律，但基金會調查小組昨（24）日出爐的調查報告卻認定，無法證明2人違反財政紀律。對此馬英九稱調查結果和具體事證差距過大，今（25）日委由基金會現任執行長戴遐齡、國安會前秘書長金溥聰出面說明細節。本次事件起因為何？為何馬家人會向法院聲請馬英九的輔助宣告？",
+              "title": "親信違財政紀律？家人聲請輔助宣告？ 馬英九基金會風波一次看",
+              "url": "https://news.pts.org.tw/article/809865",
+              "published_at": "2026-05-25T15:30:09+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "調查小組認定無法證明蕭旭岑、王光慈違反財政紀律，但馬英九稱結果與事證差距過大",
+              "source_id": "pts_news",
+              "source_title": "親信違財政紀律？家人聲請輔助宣告？ 馬英九基金會風波一次看",
+              "source_url": "https://news.pts.org.tw/article/809865",
+              "support_type": "direct"
+            },
+            {
+              "claim": "馬家人向法院聲請馬英九的輔助宣告",
+              "source_id": "pts_news",
+              "source_title": "親信違財政紀律？家人聲請輔助宣告？ 馬英九基金會風波一次看",
+              "source_url": "https://news.pts.org.tw/article/809865",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 0,
+          "single_source_warning": true,
+          "opinion_level": "none"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 26,
+    "total_feeds_failed": 13,
+    "total_articles_fetched": 118,
+    "total_articles_after_filter": 113,
+    "total_events_merged": 104,
+    "total_events_selected": 18,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260526_evt_039",
+      "headline": "In Beirut, refugee girls and women learn more than self-defense in martial arts class",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_075",
+      "headline": "Pope Leo calls for ‘disarming’ of artificial intelligence",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_091",
+      "headline": "Israel escalates Gaza attacks as Netanyahu stalls ceasefire for polls",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_094",
+      "headline": "In Lebanon, everything and nothing has changed since 2000",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_097",
+      "headline": "Kyiv’s Chornobyl Museum devastated in overnight Russian missile attack",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_102",
+      "headline": "How Uyghurs from China helped Syrian rebels overthrow Bashar al-Assad",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_103",
+      "headline": "Trump pays tribute to US troops killed in war on Iran on Memorial Day",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_001",
+      "headline": "Turkish riot police storm opposition offices after leaders ousted",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_003",
+      "headline": "She was told to marry in a country which bans girls' education. So she got in a taxi and fled",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_007",
+      "headline": "Blast targeting train kills at least 20 in Pakistan",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_009",
+      "headline": "Morocco wants tourists to visit Western Sahara. Some say it's tightening its control",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_021",
+      "headline": "'I don't think I'll ever be able to retire'",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_025",
+      "headline": "First Hong Kong astronaut launches into space onboard Chinese mission",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_031",
+      "headline": "Anger grows after China's deadliest coal mining disaster in years",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_041",
+      "headline": "Moment of gas explosion at China coal mine",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_042",
+      "headline": "At least 19 people taken to hospital after 'strong smell' reported at Tokyo mall",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_043",
+      "headline": "Senegal's leadership row mounts as parliament speaker resigns",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_044",
+      "headline": "Clashes as Venezuelan prisoners protest over alleged mistreatment",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_045",
+      "headline": "Deal with US not imminent, Iran says",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_046",
+      "headline": "Three killed in Uganda after crashing into elephant",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_062",
+      "headline": "Cambodia's former opposition leader receives royal pardon for 27-year sentence",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_063",
+      "headline": "Oil prices slide on hopes of US-Iran peace deal",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_079",
+      "headline": "White House gunman had previous run-ins with Secret Service, court documents show",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_087",
+      "headline": "This beach hut costs the same as a three-bedroom house",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_092",
+      "headline": "Watch: Only world record broken at Enhanced Games won't be recognised",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_104",
+      "headline": "Netanyahu says Israel will intensify strikes against Hezbollah",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_019",
+      "headline": "China launches Shenzhou 23 spacecraft with 1 of 3 astronauts set for yearlong stay",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_032",
+      "headline": "Venezuela prisoner releases fall short, fueling doubts over reform",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_034",
+      "headline": "'My body carried me,' Elizabeth Smart says. Now she's celebrating it",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_072",
+      "headline": "Australian Gaza aid flotilla activists allege abuse after Israeli abduction",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_073",
+      "headline": "Trump links Iran negotiations to expansion of Abraham Accords",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_078",
+      "headline": "Train bomb in Pakistan’s Baloch region: Why violence is on the rise",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_080",
+      "headline": "Nearly 300 tourists rescued after cable cars halt mid-air",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_081",
+      "headline": "What ClickUp’s mass layoff tells us about the future of work",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_083",
+      "headline": "Rescuers search for survivors after hotel collapse in Philippines",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_084",
+      "headline": "Pope says AI must be ‘disarmed’ to prevent domination, exclusion, and death",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_085",
+      "headline": "How technology is shaping Hajj",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_088",
+      "headline": "Mexico steps in to host Iran’s World Cup team after US refusal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_089",
+      "headline": "Tunisian court hands presidential critic Sonia Dahmani new jail term",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_090",
+      "headline": "Subdued Lebanon Liberation Day celebrations under new Israeli occupation",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_093",
+      "headline": "Bolivia’s embattled president says will take a 50 percent salary cut",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_095",
+      "headline": "Lebanon marks Liberation Day under Israeli bombardment",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_096",
+      "headline": "Father mourns daughter killed in Israeli strike on Gaza",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_098",
+      "headline": "THE KISWA: BEYOND THE CLOTH",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_099",
+      "headline": "Trump dangles normalisation amid pro-Israel criticism of possible Iran deal",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_100",
+      "headline": "Ex-Scottish National Party chief pleads guilty to embezzling funds",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_030",
+      "headline": "機場服務費預告兩階段調漲 9/1起改為每人750元",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_033",
+      "headline": "旅客行動電源放托運行李充電 英廉航空中緊急改降義大利",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_037",
+      "headline": "日秋田縣防熊害侵擾校園 特教學校移除225棵「誘熊樹木」",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_048",
+      "headline": "涉竊密不法獲利逾295萬 博通在台子公司前工程師遭起訴",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_049",
+      "headline": "東京銀座發生刺激性噴霧攻擊 25人不適、嫌犯仍在逃",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_050",
+      "headline": "台南玉井39.6°C全台最高溫 氣象署連2天發布紅色燈號",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_051",
+      "headline": "日鰻魚採全人工養殖成本大降 月底開賣創全球首例",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_052",
+      "headline": "統計：去年每4至5人即1人背債 個人貸款平均金額增至465.7萬",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_053",
+      "headline": "輝達總部建照尚未申請 北市建管處：核發後才可開工",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_054",
+      "headline": "遭控收台商捐款未入帳 蕭旭岑：有向馬英九請示",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_055",
+      "headline": "海鯤號完成設備調校 今從台船大塢移泊91號碼頭",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_056",
+      "headline": "川習會後第2批軍購可能生變？ 顧立雄：未接獲美方改變通知",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_057",
+      "headline": "高鐵設備故障釀近年最大延誤 運安會：若涉系統安全將調查",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_058",
+      "headline": "今年1至4月查獲逾4千起毒駕 中央研議修法提高刑責",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_059",
+      "headline": "南投斥資7億興建太極峽谷纜車 縣府：拚2029年底完工",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_061",
+      "headline": "滿65歲請領國民年金基本金額 政院擬修法調高至每月5千",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_064",
+      "headline": "土耳其在野黨魁遭法院裁定罷黜 警闖黨部強制驅離",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_065",
+      "headline": "美可用禁藥運動會登場 世界泳聯：參賽選手終身禁賽",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_066",
+      "headline": "中國山西煤礦瓦斯爆炸釀82死 坑道圖與實際不符增搜救難度",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_067",
+      "headline": "英動物園土豚寶寶誕生 全球僅114隻生存挑戰加劇",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_068",
+      "headline": "菲律賓興建中9層樓建築倒塌 已知釀4死、逾10人失蹤",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_069",
+      "headline": "火車遭汽車炸彈攻擊釀24死 巴基斯坦定調為恐怖攻擊",
+      "selection_score": 0,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_016",
+      "headline": "Tirana Architecture City Guide: Negotiating Identity Between Socialism and Urban Reinvention",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_017",
+      "headline": "Julien Sebban and Natasha Jen announced as Dezeen Awards 2026 judges",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_018",
+      "headline": "Alpine landscapes inform Patricia Urquiola's \"nest-like\" interiors for Swiss apartment complex",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_020",
+      "headline": "Herzog & de Meuron's Triangle Tower in Paris Nears Completion, Captured by Stefano Candito",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_022",
+      "headline": "St Raphael's Health and Wellbeing Center / Adam Richards Architects",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_023",
+      "headline": "On Africa Day 2026: Revisiting Architecture’s Role in Identity and Collective Memory",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_026",
+      "headline": "Ute-Strittmatter-Strasse — Collective Living in Freiham / 03 Arch. + ENEFF Architekten + Illiz Architektur + Westner Schührer Zöhrer",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_028",
+      "headline": "Climate, Culture, and Modernism: The Postcolonial Campus as Architectural Laboratory",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_035",
+      "headline": "Renesa's brick-like rug collection explores architecture beyond buildings",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_036",
+      "headline": "Veritas desk by Hulala Home",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_038",
+      "headline": "Captain's House / Miguel Marcelino",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_040",
+      "headline": "Summer Home by Mindspark Architects overlooks cardamom plantation in India",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_047",
+      "headline": "Mabelle Park / LGA Architectural Partners",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_060",
+      "headline": "Leo modular sofa by Km34 for Connection",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_074",
+      "headline": "Clay House / Norenaarquitectos",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_086",
+      "headline": "OPAL \"superinsulates\" mass-timber farming education center in Maine",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_101",
+      "headline": "First electric Ferrari features aerodynamic shell wrapped around sweeping glasshouse",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260526_evt_002",
+      "headline": "Office H / Minuspluse Design",
+      "selection_score": -12,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

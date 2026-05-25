@@ -16,20 +16,7 @@ import re
 import sys
 from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
 
-
-# --- 追蹤參數（同 normalize.py，多加幾個常見的）---
-
-TRACKING_PARAMS = {
-    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-    "utm_id", "utm_source_platform", "utm_creative_format",
-    "fbclid", "gclid", "gclsrc", "dclid", "gbraid", "wbraid",
-    "msclkid", "twclid", "li_fat_id",
-    "mc_cid", "mc_eid",
-    "ref", "ref_src", "ref_url",
-    "source", "s",
-    "at_medium", "at_campaign",  # BBC 自家追蹤
-    "ns_mchannel", "ns_source", "ns_campaign",  # BBC ns_ 系列
-}
+from src.normalize import TRACKING_PARAMS
 
 
 def strip_tracking_params(url: str) -> str:

@@ -82,7 +82,7 @@ def prepare_event_payload(event: dict) -> dict:
             "source_id": s.get("source_id", ""),
             "publisher": s.get("publisher", ""),
             "title": clean_html(s.get("title", "")),
-            "summary": clean_html(s.get("name", "") or ""),
+            "summary": clean_html(s.get("summary", "") or ""),
             "url": strip_tracking_params(s.get("url", "")),
             "published_at": s.get("published_at", ""),
         })

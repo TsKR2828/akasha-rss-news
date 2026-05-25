@@ -1,12 +1,20 @@
 """Tests for src/html_cleaner.py — HTML/script/tracking param cleaning."""
 import pytest
 
-from src.html_cleaner import clean_html, strip_tracking_params, clean_article_for_rewrite
+from src.html_cleaner import clean_html, strip_tracking_params, clean_article_for_rewrite, TRACKING_PARAMS
+from src.normalize import TRACKING_PARAMS as NORMALIZE_TRACKING_PARAMS
 
 
 # ---------------------------------------------------------------------------
 # strip_tracking_params
 # ---------------------------------------------------------------------------
+
+class TestTrackingParamsSingleSource:
+    """HIGH #2: html_cleaner must use the same TRACKING_PARAMS as normalize."""
+
+    def test_same_object(self):
+        assert TRACKING_PARAMS is NORMALIZE_TRACKING_PARAMS
+
 
 class TestStripTrackingParams:
     def test_removes_utm_params(self):

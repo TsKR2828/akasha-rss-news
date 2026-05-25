@@ -113,7 +113,10 @@
     },
     {
       "if": { "properties": { "source_count": { "const": 1 } } },
-      "then": { "required": ["single_source_warning"] }
+      "then": {
+        "properties": { "single_source_warning": { "const": true } },
+        "required": ["single_source_warning"]
+      }
     }
   ],
   "definitions": {
@@ -125,6 +128,7 @@
         "source_id": { "type": "string" },
         "name": { "type": "string" },
         "publisher": { "type": "string" },
+        "summary": { "type": ["string", "null"] },
         "title": { "type": "string" },
         "url": { "type": "string", "format": "uri" },
         "published_at": { "type": "string", "format": "date-time" }

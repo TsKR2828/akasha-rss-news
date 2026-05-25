@@ -123,7 +123,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         LOG.error("Articles directory not found: %s", articles_dir)
         return 1
 
-    files = sorted(articles_dir.glob("*.json"))
+    files = sorted(f for f in articles_dir.glob("*.json")
+                   if not f.name.startswith("_"))
     articles = [json.loads(fp.read_text(encoding="utf-8")) for fp in files]
 
     unique, dropped = dedup_articles(articles, args.threshold)

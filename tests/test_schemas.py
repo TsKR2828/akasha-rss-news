@@ -175,6 +175,19 @@ class TestConditionalRules:
         with pytest.raises(ValidationError):
             Draft7Validator(platform_output_schema).validate(bad)
 
+    def test_event_single_source_warning_must_be_true_when_count_is_one(
+        self, event_schema, sample_event
+    ):
+        """#8: event.schema.json 也必須強制 single_source_warning=true。"""
+        bad = copy.deepcopy(sample_event)
+        bad["source_count"] = 1
+        bad["single_source_warning"] = False
+        bad["sources"] = [bad["sources"][0]]
+        bad["article_ids"] = [bad["article_ids"][0]]
+        bad["source_tiers"] = [bad["source_tiers"][0]]
+        with pytest.raises(ValidationError):
+            Draft7Validator(event_schema).validate(bad)
+
 
 class TestSourceFieldsRequired:
     """規格 §17.3：每個 source 必含 source_id / publisher / title / url / published_at。"""

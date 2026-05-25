@@ -89,6 +89,19 @@ class TestVoiceText:
         warnings = validate_voice_text(text)
         assert len(warnings) >= 3
 
+    def test_date_fraction_not_flagged(self):
+        """#11: 日期、比例、法條不應被 N/N pattern 誤殺。"""
+        assert validate_voice_text("今年5/18發生的事件") == []
+        assert validate_voice_text("需要三分之二即2/3多數通過") == []
+        assert validate_voice_text("依據第14/2條規定") == []
+
+    def test_thread_numbering_still_caught(self):
+        """#11: 真正的 thread 編號（句首或空白包圍）仍須攔截。"""
+        warnings = validate_voice_text("1/3 第一則新聞")
+        assert any("N/N" in w["pattern"] for w in warnings)
+        warnings = validate_voice_text("接下來 2/5 第二則")
+        assert any("N/N" in w["pattern"] for w in warnings)
+
 
 # ---------------------------------------------------------------------------
 # validate_confidence
@@ -108,10 +121,20 @@ class TestConfidence:
         tiers = [1]
         assert validate_confidence("medium", sources, tiers) is None
 
-    def test_low_correct(self):
+    def test_single_tier3_expects_medium(self):
+        """#6: derive_confidence 判 single Tier 3 = medium，validator 須一致。"""
         sources = [{"source_id": "a"}]
         tiers = [3]
-        assert validate_confidence("low", sources, tiers) is None
+        assert validate_confidence("medium", sources, tiers) is None
+
+    def test_single_tier3_low_triggers_mismatch(self):
+        """低信心仍合法值，但與推斷不一致時應警告。"""
+        sources = [{"source_id": "a"}]
+        tiers = [3]
+        warning = validate_confidence("low", sources, tiers)
+        assert warning is not None
+        assert warning["type"] == "confidence_mismatch"
+        assert warning["expected"] == "medium"
 
     def test_mismatch_warns(self):
         sources = [{"source_id": "a"}]
@@ -119,7 +142,7 @@ class TestConfidence:
         warning = validate_confidence("high", sources, tiers)
         assert warning is not None
         assert warning["type"] == "confidence_mismatch"
-        assert warning["expected"] == "low"
+        assert warning["expected"] == "medium"
 
     def test_invalid_value(self):
         warning = validate_confidence("very_high", [], [])

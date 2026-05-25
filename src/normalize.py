@@ -17,8 +17,10 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html as _html_mod
 import json
 import logging
+import re
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -39,9 +41,29 @@ DEFAULT_ARTICLES_BASE = PROJECT_ROOT / "data" / "articles"
 TAIPEI = timezone(timedelta(hours=8))
 
 # 常見追蹤參數，canonicalize 時統一去掉，讓同篇文章在不同 RSS 來源產生一致的 canonical_url。
+# html_cleaner.py 共用此清單，修改時只改這裡。
+def _strip_html(text: str) -> str:
+    """Strip HTML tags and decode entities for RSS summary cleaning."""
+    if not text:
+        return text
+    s = re.sub(r"<script[^>]*>.*?</script>", " ", text, flags=re.DOTALL | re.IGNORECASE)
+    s = re.sub(r"<style[^>]*>.*?</style>", " ", s, flags=re.DOTALL | re.IGNORECASE)
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = _html_mod.unescape(s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
 TRACKING_PARAMS = {
     "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-    "fbclid", "gclid", "mc_cid", "mc_eid", "ref", "ref_src",
+    "utm_id", "utm_source_platform", "utm_creative_format",
+    "fbclid", "gclid", "gclsrc", "dclid", "gbraid", "wbraid",
+    "msclkid", "twclid", "li_fat_id",
+    "mc_cid", "mc_eid",
+    "ref", "ref_src", "ref_url",
+    "source", "s",
+    "at_medium", "at_campaign",
+    "ns_mchannel", "ns_source", "ns_campaign",
+    "traffic_source",
 }
 
 
@@ -149,7 +171,7 @@ def normalize_entry(
         "beat_candidates": source["beats"],
         "sub_beat": source.get("sub_beat"),
         "title": title,
-        "summary": entry.get("summary"),
+        "summary": _strip_html(entry.get("summary")),
         "url": url,
         "canonical_url": canonical,
         "published_at": published_at,

@@ -173,6 +173,36 @@ Claude Code Routine 連跑 7 天無人工介入。
 
 ---
 
+## Data Layer Audit | 資料品質修復
+
+跨 Phase 1–4 的資料層系統審查，修復髒數據與規則不一致問題。
+
+### 髒數據修復
+
+- [x] HIGH #1：`dedup.py` 過濾 `_` 前綴中繼檔（避免 rerun 包含 manifest/stats）
+- [x] HIGH #2：`normalize.py` TRACKING_PARAMS 從 10 項擴充至 27 項（BBC at_* / Reddit ref / Yahoo 等）
+- [x] HIGH #3：`claude_rewrite.py` source summary 取值修正（取 article summary，非 source name）
+- [x] MEDIUM #4：`normalize.py` article summary 在正規化階段即清洗 HTML
+- [x] MEDIUM #5：`event_cluster.py` source name 使用 `publisher` 欄位（非合成名）
+
+### 規則一致性修復
+
+- [x] #6：`validators.py` confidence 驗證邏輯與 `derive_confidence` 對齊
+- [x] #7：`selector.py` 新增 `total_events.max` 強制限制 + beat min advisory warning
+- [x] #8：`event.schema.json` 補齊 `single_source_warning` const:true 條件約束
+- [x] #11：voice_text N/N regex 收窄（避免誤殺日期、比例、法條）
+- [x] #12：TW_STORY beat `min: 0` + `tw_stories.json` 標為 planned
+
+### Schema 同步
+
+- [x] `event.schema.json` + `platform_output.schema.json` sourceRef 加入 optional `summary`
+- [x] 兩份 schema 的 N/N regex 同步收窄
+- [x] `event.schema.json` 補齊 `single_source_warning` allOf 規則
+
+**驗收：** ✅ 359 條測試全綠（新增 18 條覆蓋本次修復）
+
+---
+
 ## Post-MVP
 
 待 MVP 連跑 7 天穩定後啟動，優先順序待月月決定。

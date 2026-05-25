@@ -202,6 +202,28 @@ def select_events(
         if b not in beat_order:
             selected.extend(items)
 
+    # 4. total_events.max enforcement
+    total_limits = daily_limits.get("total_events", {})
+    total_max = total_limits.get("max", 999)
+    if len(selected) > total_max:
+        by_score = sorted(selected, key=lambda e: e.get("selection_score", 0))
+        overflow = by_score[:len(selected) - total_max]
+        keep_ids = {e["event_id"] for e in by_score[len(selected) - total_max:]}
+        for e in overflow:
+            e["drop_reason"] = "total_limit_reached"
+            dropped.append(e)
+        selected = [e for e in selected if e["event_id"] in keep_ids]
+
+    # 5. Advisory warnings for min shortfalls
+    total_min = total_limits.get("min", 0)
+    if total_min and len(selected) < total_min:
+        LOG.warning("Total selected events (%d) < min (%d)", len(selected), total_min)
+    for b in beat_order:
+        b_min = daily_limits.get(b, {}).get("min", 0)
+        b_count = sum(1 for e in selected if e.get("beat") == b)
+        if b_min and b_count < b_min:
+            LOG.warning("Beat %s: %d selected < min %d", b, b_count, b_min)
+
     return selected, dropped
 
 

@@ -1,8 +1,34 @@
 # Dev Log
 
 目前階段：Phase 5 進行中（pipeline + routine 已設定，data layer audit 完成）
-測試合計：359 條全綠
+測試合計：360 條全綠
 Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+
+---
+
+## 2026-05-26 — PTS_LOCAL 選題修復
+
+05-23 ~ 05-26 報告中台灣新聞缺失或不穩定。根因：`selector.py` 有兩個問題。
+
+**問題 1：tier "TW" 不被計分**
+
+- `feeds.yaml` 中公視的 tier 設為 `"TW"`（字串），但 `score_event()` 只判 `tier == 1/2/3`（整數）
+- PTS_LOCAL 事件永遠得 0 分，其他 beat 事件至少 3~15 分
+- 修法：`tier == "TW"` 視同 tier 1（+15 分）
+
+**問題 2：total_events.max 裁切不保護 beat min**
+
+- INTL 5 + ARTS 4 + AI 4 + ECON 4 + PTS_LOCAL 2 = 19 > max 18
+- 裁切砍最低分 → PTS_LOCAL（score=0）被砍，05-24 甚至全砍光
+- 修法：裁切時跳過會讓 beat 低於 min 的事件
+
+**附帶修正：排序 tier 混合型別**
+
+- `source_tiers` 含 `"TW"` 字串時，`min()` 比較 str/int 報 TypeError
+- 修法：排序 key 中把非整數 tier 轉為 1
+
+檔案異動：`src/selector.py`、`tests/test_selector.py`（+1 新測試）
+測試：360 條全綠（~4.4 秒）
 
 ---
 

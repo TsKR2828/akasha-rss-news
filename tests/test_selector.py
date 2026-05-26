@@ -200,11 +200,14 @@ class TestOrdering:
 
 class TestTotalEventsMax:
     def test_total_max_enforced(self):
-        """#7: total_events.max 超出時，最低分者被 drop。"""
+        """#7: total_events.max 超出時，最低分者被 drop（但保護 beat min）。"""
         config = {
             **SCORE_CONFIG,
             "daily_limits": {
-                **SCORE_CONFIG["daily_limits"],
+                "INTL": {"min": 0, "max": 5},
+                "ARTS": {"min": 0, "max": 5},
+                "AI": {"min": 0, "max": 5},
+                "ECON": {"min": 0, "max": 5},
                 "total_events": {"min": 1, "max": 3},
             },
         }
@@ -217,6 +220,29 @@ class TestTotalEventsMax:
         assert len(selected) == 3
         total_dropped = [d for d in dropped if d.get("drop_reason") == "total_limit_reached"]
         assert len(total_dropped) == 2
+
+    def test_total_max_protects_beat_min(self):
+        """total_events.max 裁切不可讓 beat 低於 min。"""
+        config = {
+            **SCORE_CONFIG,
+            "daily_limits": {
+                "INTL": {"min": 1, "max": 5},
+                "PTS_LOCAL": {"min": 1, "max": 2},
+                "total_events": {"min": 1, "max": 2},
+            },
+        }
+        events = [
+            _event(event_id="daily_20260518_evt_001", beat="INTL",
+                   source_count=2, source_tiers=[1, 2]),
+            _event(event_id="daily_20260518_evt_002", beat="INTL",
+                   source_count=1, source_tiers=[1]),
+            _event(event_id="daily_20260518_evt_003", beat="PTS_LOCAL",
+                   source_count=1, source_tiers=["TW"]),
+        ]
+        selected, dropped = selector.select_events(events, config)
+        pts = [e for e in selected if e["beat"] == "PTS_LOCAL"]
+        assert len(pts) == 1, "PTS_LOCAL min=1 must be protected"
+        assert len(selected) <= 3
 
     def test_no_total_limit_by_default(self):
         """total_events 未設定時不限制。"""

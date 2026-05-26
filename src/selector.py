@@ -93,7 +93,7 @@ def score_event(event: dict, score_config: dict) -> tuple[int, list[str]]:
             applied.append("taiwan_related_foreign_report")
 
     for tier in event.get("source_tiers", []):
-        if tier == 1:
+        if tier == 1 or tier == "TW":
             score += weights.get("source_tier_1", 0)
             applied.append("source_tier_1")
         elif tier == 2:
@@ -155,7 +155,7 @@ def select_events(
         key=lambda x: (
             -x[0],
             -x[2].get("source_count", 0),
-            min(x[2].get("source_tiers", [99]), default=99),
+            min((t if isinstance(t, int) else 1 for t in x[2].get("source_tiers", [99])), default=99),
             x[2].get("event_id", ""),
         )
     )
@@ -202,17 +202,31 @@ def select_events(
         if b not in beat_order:
             selected.extend(items)
 
-    # 4. total_events.max enforcement
+    # 4. total_events.max enforcement (protect beat min)
     total_limits = daily_limits.get("total_events", {})
     total_max = total_limits.get("max", 999)
     if len(selected) > total_max:
+        beat_counts: dict[str, int] = {}
+        for e in selected:
+            b = e.get("beat", "")
+            beat_counts[b] = beat_counts.get(b, 0) + 1
+
         by_score = sorted(selected, key=lambda e: e.get("selection_score", 0))
-        overflow = by_score[:len(selected) - total_max]
-        keep_ids = {e["event_id"] for e in by_score[len(selected) - total_max:]}
-        for e in overflow:
-            e["drop_reason"] = "total_limit_reached"
-            dropped.append(e)
-        selected = [e for e in selected if e["event_id"] in keep_ids]
+        to_drop = len(selected) - total_max
+        drop_ids: set[str] = set()
+        for e in by_score:
+            if to_drop <= 0:
+                break
+            b = e.get("beat", "")
+            b_min = daily_limits.get(b, {}).get("min", 0)
+            if beat_counts.get(b, 0) > b_min:
+                drop_ids.add(e["event_id"])
+                e["drop_reason"] = "total_limit_reached"
+                dropped.append(e)
+                beat_counts[b] -= 1
+                to_drop -= 1
+
+        selected = [e for e in selected if e["event_id"] not in drop_ids]
 
     # 5. Advisory warnings for min shortfalls
     total_min = total_limits.get("min", 0)

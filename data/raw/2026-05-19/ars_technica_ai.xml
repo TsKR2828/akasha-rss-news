@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/" >
+    <channel>
+        <title>Biz &amp; IT - Ars Technica</title>
+        <atom:link href="https://arstechnica.com/information-technology/feed/" rel="self" type="application/rss+xml" />
+        <link>https://arstechnica.com</link>
+        <description>Serving the Technologist since 1998. News, reviews, and analysis.</description>
+        <lastBuildDate>Thu, 14 May 2026 18:32:01 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1        </sy:updateFrequency>
+        
+<image>
+	<url>https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-60x60.png</url>
+	<title>Biz &amp; IT - Ars Technica</title>
+	<link>https://arstechnica.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+            <item>
+                <title>Zero-day exploit completely defeats default Windows 11 BitLocker protections</title>
+                <link>https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/</link>
+                                    <comments>https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 14 May 2026 18:32:01 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[BitLocker]]></category>
+		<category><![CDATA[disk encryption]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/</guid>
+
+                                    <description>
+                        <![CDATA[It's not entirely clear how the exploit works. Microsoft says it's investigating.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A zero-day exploit circulating online allows people with physical access to a Windows 11 system to bypass default BitLocker protections and gain complete access to an encrypted drive within seconds.</p>
+<p>The exploit, named YellowKey, was <a href="https://github.com/Nightmare-Eclipse/YellowKey">published</a> earlier this week by a researcher who goes by the alias Nightmare-Eclipse. It reliably bypasses default Windows 11 deployments of BitLocker, the full-volume encryption protection Microsoft provides to make disk contents off-limits to anyone without the decryption key, which is stored in a secured piece of hardware known as a trusted platform module (TPM). BitLocker is a mandatory protection for many organizations, including those that contract with governments.</p>
+<h2>When one disk volume manipulates another</h2>
+<p>The core of the YellowKey exploit is a custom-made FsTx folder. Online documentation of this folder is hard to find. As explained later, the directory associated with the file fstx.dll appears to involve what Microsoft calls the <a href="https://learn.microsoft.com/en-us/windows/win32/fileio/deprecation-of-txf">transactional NTFS</a>, which allows developers to have “transactional atomicity" for file operations in transactions with a single file, multiple files, or ones that span multiple sources.</p><p><a href="https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>59</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg" type="image/jpeg" medium="image">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Cisco announces record revenue and 4,000 layoffs in the same day</title>
+                <link>https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Thu, 14 May 2026 16:47:43 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[AI and jobs]]></category>
+		<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[layoffs]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/</guid>
+
+                                    <description>
+                        <![CDATA[Layoffs are "not a savings-driven restructure," CFO says. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Following a quarter in which his company delivered record revenue, Cisco CEO Chuck Robbins announced that the company's latest round of layoffs begins today.</p>
+<p>In a <a href="https://blogs.cisco.com/news/our-path-forward">blog post</a> yesterday, Robbins was quick to boast that Cisco’s fiscal Q3 2026 earnings saw revenue increase 12 percent year-over-year to $15.8 billion. He told employees that he and the rest of Cisco’s executive leadership team “could not be prouder of the growth you have all delivered for Cisco.”</p>
+<p>But that pride could apparently not save the company’s successful employees from unemployment.</p><p><a href="https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>75</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2251821138-1024x648.jpg" type="image/jpeg" medium="image" width="1024" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2251821138-500x500.jpg" width="500" height="500" />
+<media:credit>Matthias Balk/picture alliance via Getty Images</media:credit><media:text>The Cisco Systems GmbH headquarters building in Garching, Germany. </media:text></media:content>
+            </item>
+                    <item>
+                <title>Linux bitten by second severe vulnerability in as many weeks</title>
+                <link>https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/</link>
+                                    <comments>https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 11 May 2026 22:28:19 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[exploits]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/</guid>
+
+                                    <description>
+                        <![CDATA[Production-version patches are coming online and should be installed pronto.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Linux users have been bitten by yet another vulnerability that gives containers and untrusted users the ability to gain root access, marking the second time in as many weeks that a severe threat has caught defenders off guard.</p>
+<p>The threat, known as Dirty Frag, allows low-privilege users, including those using virtual machines, to gain root control of servers. Attacks are particularly suitable in shared environments, where a server is used by multiple parties. Hackers can also gain root as long as they have access to a separate exploit that gives a toehold into a machine. Exploit code was leaked online three days ago and works reliably across virtually all Linux distributions. Microsoft has <a href="https://www.microsoft.com/en-us/security/blog/2026/05/08/active-attack-dirty-frag-linux-vulnerability-expands-post-compromise-risk/">said</a> it has spotted signs that hackers are experimenting with Dirty Frag in the wild.</p>
+<h2>Immediate and significant threat</h2>
+<p>The leaked exploit is deterministic, meaning it works precisely the same way each time it’s run and across different Linux distributions. It causes no crashes, making it stealthy to run. A vulnerability known as Copy Fail, disclosed <a href="https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/">last week</a> with no patches available to end users, possesses the same characteristics.</p><p><a href="https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>93</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2022/05/caution-tape-1000x648.jpeg" type="image/jpeg" medium="image" width="1000" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2022/05/caution-tape-500x500.jpeg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Chaos erupts as cyberattack disrupts learning platform Canvas amid finals</title>
+                <link>https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/</link>
+                                    <comments>https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 08 May 2026 18:33:48 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[canvas]]></category>
+		<category><![CDATA[Cyberattacks]]></category>
+		<category><![CDATA[outages]]></category>
+		<category><![CDATA[ransomware]]></category>
+		<category><![CDATA[school]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/</guid>
+
+                                    <description>
+                        <![CDATA[Across the country, schools and colleges postpone year-end tests.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Chaos erupted at schools and colleges throughout the US on Thursday as a cyberattack disrupted online learning platform Canvas just as students were due to take final exams.</p>
+<p>Canvas parent company Instructure <a href="https://www.instructure.com/incident_update">said</a> that as of Friday morning, the platform was back online. Instructure said it temporarily took Canvas offline on Thursday after identifying unauthorized activity in its network. The threat actor was the same one responsible for a data breach that Instructure <a href="https://status.instructure.com/incidents/9wm4knj2r64z">disclosed</a> a week ago. Data accessed included user names, email addresses, student ID numbers, and messages exchanged on the platform. The company said it has no indication that passwords, dates of birth, government identifiers, or financial information were involved.</p>
+<h2>Schools and colleges scramble</h2>
+<p>A ransomware group known as ShinyHunters claimed responsibility for the breach on its dark web site. It claimed the data it took came from 275 million people associated with 8,800 schools.</p><p><a href="https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>93</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2192144566-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2192144566-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Mozilla says 271 vulnerabilities found by Mythos have &quot;almost no false positives&quot;</title>
+                <link>https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 07 May 2026 19:18:16 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[firefox]]></category>
+		<category><![CDATA[Mythos]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/</guid>
+
+                                    <description>
+                        <![CDATA[The developer of Firefox says it has "completely bought in" on AI-assisted bug discovery.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The disbelief was palpable when Mozilla’s CTO last month declared that AI-assisted vulnerability detection meant “<a href="https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/">zero-days are numbered</a>” and “defenders finally have a chance to win, decisively.” After all, it looked like part of an all-too-familiar pattern: Cherry-pick a handful of impressive AI-achieved results, leave out any of the fine print that might paint a more nuanced picture, and let the hype train roll on.</p>
+<p>Mindful of the skepticism, Mozilla on Thursday provided a behind-the-scenes look into its use of Anthropic Mythos—an AI model for identifying software vulnerabilities—to ferret out 271 Firefox security flaws over two months. In a <a href="https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/">post</a>, Mozilla engineers said the finally ready-for-prime-time breakthrough they achieved was primarily the result of two things: (1) improvement in the models themselves and (2) Mozilla’s development of a custom “<a href="https://arxiv.org/abs/2603.28052">harness</a>” that supported Mythos as it analyzed Firefox source code.</p>
+<h2>"Almost no false positives"</h2>
+<p>The engineers said their earlier brushes with AI-assisted vulnerability detection were fraught with “unwanted slop.” Typically, someone would prompt a model to analyze a block of code. The model would then produce plausible-reading bug reports, and often at unprecedented scales. Invariably, however, when human developers further investigated, they’d find a large percentage of the details had been hallucinated. The humans would then need to invest significant work handling the vulnerability reports the old-fashioned way.</p><p><a href="https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>138</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/03/GettyImages-2167753513-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/03/GettyImages-2167753513-500x500-1773169243.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit><media:text>Meet your new open source coding team!</media:text></media:content>
+            </item>
+                    <item>
+                <title>Ars Asks: Share your shell and show us your tricked-out terminals!</title>
+                <link>https://arstechnica.com/information-technology/2026/05/ars-asks-share-your-shell-and-show-us-your-tricked-out-terminals/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/05/ars-asks-share-your-shell-and-show-us-your-tricked-out-terminals/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Lee Hutchinson]]>
+                </dc:creator>
+                <pubDate>Wed, 06 May 2026 13:32:47 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Features]]></category>
+		<category><![CDATA[ANSI]]></category>
+		<category><![CDATA[bash]]></category>
+		<category><![CDATA[cli]]></category>
+		<category><![CDATA[command line]]></category>
+		<category><![CDATA[fish]]></category>
+		<category><![CDATA[fish shell]]></category>
+		<category><![CDATA[Terminal]]></category>
+		<category><![CDATA[text mode]]></category>
+		<category><![CDATA[TUI]]></category>
+		<category><![CDATA[Vim]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/05/ars-asks-share-your-shell-and-show-us-your-tricked-out-terminals/</guid>
+
+                                    <description>
+                        <![CDATA[A celebration of the tweaks and customizations that make life easier at the CLI.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>I spend more time today than ever before interacting with terminal windows, which is something I don't think Past Me would have believed in the early '90s. Back then, poor MS-DOS was the staid whipping boy of the industry, and at least on the consumer side, graphical environments like Windows (and maybe even odder creatures like <a href="https://arstechnica.com/series/history-of-the-amiga/" target="_blank" rel="noopener">AmigaOS</a>) seemed poised to stamp the command line into oblivion, leaving text interfaces behind as we all blasted into the ooey-GUI future.</p>
+<p>As it turns out, though, the command line is still the best tool for some jobs—many jobs, in fact. I read a wise post some years ago (probably on Slashdot) arguing that a mouse-driven point-and-click interface essentially reduces the user to pointing at something on the screen and grunting, "DO! DO THAT!" at the computer. (The rise of right-click context menus adds the ability for the user to also grunt "MORE THINGS!" but doesn't otherwise add vocabulary.)</p>
+<p>The command line, by contrast, gives the user the opportunity to precisely tell the computer what they want done, using words instead of one or two gestalts that the computer must interpret based on context.</p><p><a href="https://arstechnica.com/information-technology/2026/05/ars-asks-share-your-shell-and-show-us-your-tricked-out-terminals/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/05/ars-asks-share-your-shell-and-show-us-your-tricked-out-terminals/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>260</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/terminal-hotness-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/terminal-hotness-500x500.jpg" width="500" height="500" />
+<media:credit>Aurich Lawson | Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Widely used Daemon Tools disk app backdoored in monthlong supply-chain attack</title>
+                <link>https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/</link>
+                                    <comments>https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 05 May 2026 19:46:15 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[backdoors]]></category>
+		<category><![CDATA[daemon tools]]></category>
+		<category><![CDATA[supply chain attack]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/</guid>
+
+                                    <description>
+                        <![CDATA[Daemon Tools users: It's time to check your machines for stealthy infections, stat.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Daemon Tools, a widely used app for mounting disk images, has been backdoored in a monthlong compromise that has pushed malicious updates from the servers of its developer, researchers said Tuesday.</p>
+<p>Kaspersky, the security firm <a href="https://securelist.com/tr/daemon-tools-backdoor/119654/">reporting</a> the supply-chain attack, said it began on April 8 and remained active as of the time its post went live. Installers that are signed by the developer’s official digital certificate and downloaded from its website infect Daemon Tools executables, causing the malware to run at boot time. Kaspersky didn’t explicitly say so, but based on technical details, the infected versions appear to be only those that run on Windows. Versions 12.5.0.2421 through 12.5.0.2434 are affected. Neither Kaspersky nor developer AVB could be contacted immediately for additional details.</p>
+<h2>Hard to defend against</h2>
+<p>Infected versions contain an initial payload that collects MAC addresses, hostnames, DNS domain names, running processes, installed software, and system locales. The malware sends them to an attacker-controlled server. Thousands of machines in more than 100 countries were targeted. Out of the many machines infected, about 12 of them, belonging to retail, scientific, government, and manufacturing organizations, have received a follow-on payload—an indication that the supply-chain attack targets select groups.</p><p><a href="https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/05/widely-used-daemon-tools-disk-app-backdoored-in-monthlong-supply-chain-attack/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>63</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2022/08/GettyImages-1230467668-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2022/08/GettyImages-1230467668-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit><media:text>Supply-chain attacks, like the latest PyPI discovery, insert malicious code into seemingly functional software packages used by developers. They're becoming increasingly common.</media:text></media:content>
+            </item>
+                    <item>
+                <title>Why Reddit blocked my daily visit to its mobile website</title>
+                <link>https://arstechnica.com/information-technology/2026/05/why-reddit-blocked-my-daily-visit-to-its-mobile-website/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/05/why-reddit-blocked-my-daily-visit-to-its-mobile-website/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Nate Anderson]]>
+                </dc:creator>
+                <pubDate>Tue, 05 May 2026 11:20:08 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[apps]]></category>
+		<category><![CDATA[mobile web]]></category>
+		<category><![CDATA[reddit]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/05/why-reddit-blocked-my-daily-visit-to-its-mobile-website/</guid>
+
+                                    <description>
+                        <![CDATA[Reddit REALLY wants you to use its app.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>I've recently developed a daily habit—perhaps one I should cut back on—of visiting several subreddits to keep up on things like audio production and the Russian invasion of Ukraine. But I was surprised this weekend to suddenly find myself cut off; Reddit simply would not let me visit the site on my mobile phone.</p>
+<p>Instead, a new overlay popped up, saying, "Get the app to keep using Reddit."</p>
+<p>There was no way to skip, bypass, or close the overlay. It did not provide any instructions or alternatives for continuing to use the mobile web version. What it did offer was a large button I could press to get the app. If I did so, the overlay told me, I would be able to "search better" and "personalize your feed"—two things I don't care to do.</p><p><a href="https://arstechnica.com/information-technology/2026/05/why-reddit-blocked-my-daily-visit-to-its-mobile-website/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/05/why-reddit-blocked-my-daily-visit-to-its-mobile-website/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>317</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2194614711-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-2194614711-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>GameStop offers $56 billion for eBay, struggles to explain how it&#039;ll pay for it</title>
+                <link>https://arstechnica.com/tech-policy/2026/05/gamestop-offers-56-billion-for-ebay-struggles-to-explain-how-itll-pay-for-it/</link>
+                                    <comments>https://arstechnica.com/tech-policy/2026/05/gamestop-offers-56-billion-for-ebay-struggles-to-explain-how-itll-pay-for-it/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Jon Brodkin]]>
+                </dc:creator>
+                <pubDate>Mon, 04 May 2026 17:57:46 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Policy]]></category>
+		<category><![CDATA[eBay]]></category>
+		<category><![CDATA[Gamestop]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/tech-policy/2026/05/gamestop-offers-56-billion-for-ebay-struggles-to-explain-how-itll-pay-for-it/</guid>
+
+                                    <description>
+                        <![CDATA[Amid falling revenue and store closures, GameStop wants to buy the much larger eBay.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>GameStop yesterday made an unsolicited offer to buy eBay for $55.5 billion. GameStop claims that eBay has underperformed and spends too much on sales and marketing and argues that it would become a stronger company if it cuts costs and is combined with GameStop's physical retail locations.</p>
+<p>"GameStop’s ~1,600 US locations give eBay a national network for authentication, intake, fulfillment, and live commerce," GameStop Chairman and CEO Ryan Cohen wrote in a <a href="https://s205.q4cdn.com/272884106/files/doc_downloads/2026/05/Offer-Letter.pdf">letter</a> to eBay Chairman Paul Pressler.</p>
+<p>eBay's market capitalization is over four times larger than GameStop's. GameStop faces skepticism about the viability of its offer but says it will obtain debt financing and pay with a mix of cash and stock.</p><p><a href="https://arstechnica.com/tech-policy/2026/05/gamestop-offers-56-billion-for-ebay-struggles-to-explain-how-itll-pay-for-it/">Read full article</a></p>
+<p><a href="https://arstechnica.com/tech-policy/2026/05/gamestop-offers-56-billion-for-ebay-struggles-to-explain-how-itll-pay-for-it/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>173</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/gamestop-store-1152x648-1777915631.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/gamestop-store-500x500-1777915641.jpg" width="500" height="500" />
+<media:credit>Getty Images | Jeff Greenberg </media:credit><media:text>A GameStop store at Aventura Mall in Miami, Florida, in September 2025. The store has since been closed.</media:text></media:content>
+            </item>
+                    <item>
+                <title>Ubuntu infrastructure has been down for more than a day</title>
+                <link>https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/</link>
+                                    <comments>https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 01 May 2026 19:12:26 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[DDOS attack]]></category>
+		<category><![CDATA[distributed denial of service attack]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/</guid>
+
+                                    <description>
+                        <![CDATA[The outage has hampered communication concerning a critical vulnerability that gives root.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Servers operated by Ubuntu and its parent company Canonical were knocked offline on Thursday morning and have remained down ever since, a situation that’s preventing the OS provider from communicating normally following the <a href="https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/">botched disclosure</a> of a major vulnerability.</p>
+<p>Attempts to connect to most Ubuntu and Canonical webpages and download OS updates from Ubuntu servers have consistently failed over the past 24 hours. Updates from mirror sites, however, have continued to work normally. A Canonical <a href="https://status.canonical.com">status page</a> said: “Canonical’s web infrastructure is under a sustained, cross-border attack and we are working to address it.” Other than that, Ubuntu and Canonical officials have maintained radio silence since the outage began.</p>
+<h2>A decades-long scourge</h2>
+<p>A group sympathetic to the Iranian government has taken credit for the outage. According to posts on Telegram and other social media, the group is responsible for a <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">DDoS attack</a> using Beam, an operation that claims to test the ability of servers to operate under heavy loads but, like other “stressors,” are, in fact, fronts for services miscreants pay for to take down third-party sites. In recent days, the same pro-Iran group has taken credit for DDoSes on eBay.</p><p><a href="https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>76</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2022/11/error-503-1000x648.jpg" type="image/jpeg" medium="image" width="1000" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2022/11/error-503-500x500-1777661362.jpg" width="500" height="500" />
+<media:text>An iteration of what happens when your site gets shut down by a DDoS attack.</media:text></media:content>
+            </item>
+                    <item>
+                <title>The most severe Linux threat to surface in years catches the world flat-footed</title>
+                <link>https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 30 Apr 2026 20:20:48 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[exploits]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[local privilege escalation]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/</guid>
+
+                                    <description>
+                        <![CDATA[CopyFail threatens multi-tenant servers, CI/CD work flows, Kubernetes containers, and more.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Publicly released exploit code for an effectively unpatched vulnerability that gives root access to virtually all releases of Linux is setting off alarm bells as defenders scramble to ward off severe compromises inside data centers and on personal devices.</p>
+<p>The vulnerability and exploit code that exploits it were <a href="https://copy.fail/#contact">released Wednesday evening</a> by researchers from security firm Theori, five weeks after privately disclosing it to the Linux kernel security team. The team patched the vulnerability in versions <a href="https://github.com/torvalds/linux/commit/a664bf3d603dc3bdcf9ae47cc21e0daec706d7a5">7.0</a>, <a href="https://git.kernel.org/stable/c/ce42ee423e58dffa5ec03524054c9d8bfd4f6237">6.19.12</a>, <a href="https://git.kernel.org/stable/c/fafe0fa2995a0f7073c1c358d7d3145bcc9aedd8">6.18.12</a>, 6.12.85, 6.6.137, 6.1.170, 5.15.204, and 5.10.254) but few of the Linux distributions had incorporated those fixes at the time the exploit was released.</p>
+<h2>A single script hacks all distros</h2>
+<p>The critical flaw, tracked as CVE-2026-31431 and the name CopyFail, is a local privilege escalation, a vulnerability class that allows unprivileged users to elevate themselves to administrators. CopyFail is particularly severe because it can be exploited with a single piece of exploit code—released in Wednesday’s disclosure—that works across all vulnerable distributions with no modification. With that, an attacker can, among other things, hack multi-tenant systems, break out of containers based on Kubernetes or other frameworks, and create malicious pull requests that pipe the exploit code through <a href="https://en.wikipedia.org/wiki/CI/CD">CI/CD</a> work flows.</p><p><a href="https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>162</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/09/code-vulnerability-security-1000x648.jpg" type="image/jpeg" medium="image" width="1000" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/09/code-vulnerability-security-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Why a recent supply-chain attack singled out security firms Checkmarx and Bitwarden</title>
+                <link>https://arstechnica.com/information-technology/2026/04/why-a-recent-supply-chain-attack-singled-out-security-firms-checkmarx-and-bitwarden/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/04/why-a-recent-supply-chain-attack-singled-out-security-firms-checkmarx-and-bitwarden/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 29 Apr 2026 11:00:24 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[bitwarden]]></category>
+		<category><![CDATA[checkmarx]]></category>
+		<category><![CDATA[supply chain attacks]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/04/why-a-recent-supply-chain-attack-singled-out-security-firms-checkmarx-and-bitwarden/</guid>
+
+                                    <description>
+                        <![CDATA[Security firms find themselves especially exposed.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>It has been a bad six weeks for security firm Checkmarx. Over the past 40 days, it has been the victim of at least one supply-chain attack that delivered malware to customers on two separate occasions. Now it has been hit by a ransomware attack from prolific fame-seeking hackers.</p>
+<p>The streak of misfortunes started on March 19 with the <a href="https://arstechnica.com/security/2026/03/widely-used-trivy-scanner-compromised-in-ongoing-supply-chain-attack/">supply-chain attack</a> of Trivy, a widely used vulnerability scanner. The attackers behind the breach first breached the Trivy GitHub account and then used their access to push malware to Trivy users, one of which was Checkmarx. The pushed malware scoured infected machines for repository tokens, SSH keys, and other credentials.</p>
+<h2>Both a target and delivery mechanism</h2>
+<p>Four days later, Checkmarx’s GitHub account was compromised and began pushing malware to the security firm’s users. The company contained and remediated the breach and replaced the malware with the legitimate apps. Or so Checkmarx thought.</p><p><a href="https://arstechnica.com/information-technology/2026/04/why-a-recent-supply-chain-attack-singled-out-security-firms-checkmarx-and-bitwarden/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/04/why-a-recent-supply-chain-attack-singled-out-security-firms-checkmarx-and-bitwarden/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>20</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2021/07/data-breach.jpeg" type="image/jpeg" medium="image">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2021/07/data-breach-500x500.jpeg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Open source package with 1 million monthly downloads stole user credentials</title>
+                <link>https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 27 Apr 2026 21:04:03 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[GitHub]]></category>
+		<category><![CDATA[Open source software]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/</guid>
+
+                                    <description>
+                        <![CDATA[If you're one of millions using element-data, it's time to check for compromise.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Open source software with more than 1 million monthly downloads was compromised after a threat actor exploited a vulnerability in the developers’ account workflow that gave access to its signing keys and other sensitive information.</p>
+<p>On Friday, unknown attackers exploited the vulnerability to push a new version of <a href="https://github.com/elementary-data/elementary/pkgs/container/elementary">element-data</a>, a command-line interface that helps users monitor performance and anomalies in machine-learning systems. When run, the malicious package scoured systems for sensitive data, including user profiles, warehouse credentials, cloud provider keys, API tokens, and SSH keys, developers <a href="https://www.elementary-data.com/post/security-incident-report-malicious-release-of-elementary-oss-python-cli-v0-23-3">said</a>. The malicious version was tagged as 0.23.3 and was published to the developers’ Python Package Index and Docker image accounts. It was removed about 12 hours later, on Saturday. Elementary Cloud, the Elementary dbt package, and all other CLI versions weren't affected.</p>
+<h2>Assume compromise</h2>
+<p>“Users who installed 0.23.3, or who pulled and ran the affected Docker image, should assume that any credentials accessible to the environment where it ran may have been exposed,” the developers wrote.</p><p><a href="https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/open-source-package-with-1-million-monthly-downloads-stole-user-credentials/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>33</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2025/06/browser-security-threat-1152x627.jpg" type="image/jpeg" medium="image" width="1152" height="627">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2025/06/browser-security-threat-500x500.jpg" width="500" height="500" />
+</media:content>
+            </item>
+                    <item>
+                <title>Why are top university websites serving porn? It comes down to shoddy housekeeping.</title>
+                <link>https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 24 Apr 2026 19:00:39 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[cname records]]></category>
+		<category><![CDATA[domain hijacking]]></category>
+		<category><![CDATA[porn]]></category>
+		<category><![CDATA[universities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/</guid>
+
+                                    <description>
+                        <![CDATA[Hundreds of subdomains from dozens of universities have been hijacked by scammers.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Websites for some of the world’s most prestigious universities are serving explicit porn and malicious content after scammers exploited the shoddy record-keeping of the site administrators, a researcher found recently.</p>
+<p>The sites included berkeley.edu, columbia.edu, and washu.edu, the official domains for the University of California, Berkeley, Columbia University, and Washington University in St. Louis. Subdomains such as hXXps://causal.stat.berkeley.edu/ymy/video/xxx-porn-girl-and-boy-ej5210.html, hXXps://conversion-dev.svc.cul.columbia[.]edu/brazzers-gym-porn, and hXXps://provost.washu.edu/app/uploads/formidable/6/dmkcsex-10.pdf. All deliver explicit pornography and, in at least one case, a scam site falsely claiming a visitor’s computer is infected and advising the visitor to pay a fee for the non-existent malware to be removed. In all, researcher Alex Shakhov said, hundreds of subdomains for at least 34 universities are being abused. Search results returned by Google list thousands of hijacked pages.</p>
+<img width="640" height="340" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-640x340.png" class="none medium" alt="" decoding="async" loading="lazy" srcset="https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-640x340.png 640w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-1024x545.png 1024w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-768x409.png 768w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-1536x817.png 1536w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-2048x1089.png 2048w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-980x521.png 980w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/hijacked-columbia-university-subdomains-1440x766.png 1440w" sizes="auto, (max-width: 640px) 100vw, 640px">
+      A handful of hijacked columbia.edu subdomains listed by Google
+    
+<img width="640" height="390" src="https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-640x390.png" class="none medium" alt="" decoding="async" loading="lazy" srcset="https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-640x390.png 640w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-1024x623.png 1024w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-768x467.png 768w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-1536x935.png 1536w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-2048x1246.png 2048w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-980x596.png 980w, https://cdn.arstechnica.net/wp-content/uploads/2026/04/redicted-ucberkeley-subdomain-1440x876.png 1440w" sizes="auto, (max-width: 640px) 100vw, 640px">
+      One of the sites redirected by a UC Berkeley subdomain.
+    
+<h2>Hijacking a university's good name</h2>
+<p>Shakhov, founder of SH Consulting, said that the scammers—which a separate researcher has linked to a known group tracked as <a href="https://www.infoblox.com/threat-intel/threat-actors/hazy-hawk/">Hazy Hawk</a>—are seizing on what amounts to a clerical error by site administrators of the affected universities. When they commission a subdomain such as provost.washu.edu, they create a <a href="https://en.wikipedia.org/wiki/CNAME_record">CNAME</a> record, which assignes a subdomain to a "canonical" domain. When the subdomain is eventually decommissioned—something that happens frequently for various reasons—the record is never removed. Scammers like Hazy Hawk then swoop in by hijacking the old record.</p><p><a href="https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/why-are-top-university-websites-serving-porn-it-comes-down-to-shoddy-housekeeping/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>67</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/GettyImages-1137650996-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/GettyImages-1137650996-500x500.jpg" width="500" height="500" />
+<media:credit>ssuaphoto | iStock / Getty Images Plus</media:credit></media:content>
+            </item>
+                    <item>
+                <title>In a first, a ransomware family is confirmed to be quantum-safe</title>
+                <link>https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 23 Apr 2026 20:41:23 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[cryptography]]></category>
+		<category><![CDATA[kyber]]></category>
+		<category><![CDATA[quantum cryptography]]></category>
+		<category><![CDATA[ransomware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/</guid>
+
+                                    <description>
+                        <![CDATA[Technically speaking, there's no practical benefit to use PQC. So why is it being used?]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A relatively new ransomware family is using a novel approach to hype the strength of the encryption used to scramble files—making, or at least claiming, that it is protected against attacks by quantum computers.</p>
+<p>Kyber, as the ransomware is called, has been around since at least <a href="https://www.watchguard.com/wgrd-security-hub/ransomware-tracker/kyber">last September</a> and quickly <a href="https://cyber.netsecops.io/articles/new-kyber-ransomware-strain-discovered-with-advanced-encryption/?utm_me%E2%80%A6=">attracted attention</a> for the claim that it used <a href="https://csrc.nist.gov/pubs/fips/203/final">ML-KEM</a>, short for Module Lattice-based Key Encapsulation Mechanism and is a standard shepherded by the National Institute of Standards and Technology. The Kyber ransomware name comes from the alternate name for ML-KEM, which is also Kyber. For the rest of the article, Kyber refers to the ransomware; the algorithm is referred to as ML-KEM.</p>
+<h2>It's all about marketing</h2>
+<p>ML-KEM is an asymmetric encryption method for exchanging keys. It involves problems based on lattices, a structure in mathematics that quantum computers have no advantage in solving over classic computing. ML-KEM is designed to replace Elliptic Curve and RSA cryptosystems, both of which are based on problems that quantum computers with sufficient strength can tackle.</p><p><a href="https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/now-even-ransomware-is-using-post-quantum-cryptography/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>19</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2025/07/GettyImages-1952157610-1152x648-1753386930.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2025/07/GettyImages-1952157610-500x500-1753386908.jpg" width="500" height="500" />
+<media:credit>JuSun/Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Microsoft issues emergency update for macOS and Linux ASP.NET threat</title>
+                <link>https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 22 Apr 2026 19:32:56 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[ASP.NET]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+		<category><![CDATA[Windows]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/</guid>
+
+                                    <description>
+                        <![CDATA[When authentication fails, things can go very, very wrong.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Microsoft released an emergency patch for its ASP.NET Core to fix a high-severity vulnerability that allows unauthenticated attackers to gain SYSTEM privileges on devices that use the Web development framework to run Linux or macOS apps.</p>
+<p>The software maker <a href="https://github.com/dotnet/announcements/issues/395">said</a> Tuesday evening that the vulnerability, tracked as CVE-2026-40372, affects versions 10.0.0 through 10.0.6 of the <a href="https://www.nuget.org/packages/Microsoft.AspNetCore.DataProtection">Microsoft.AspNetCore.DataProtection</a> NuGet, a package that’s part of the framework. The critical flaw stems from a faulty verification of cryptographic signatures. It can be exploited to allow unauthenticated attackers to forge authentication payloads during the <a href="https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.hmac?view=net-10.0#remarks">HMAC validation</a> process, which is used to verify the integrity and authenticity of data exchanged between a client and a server.</p>
+<h2>Beware: Forged credentials survive patching</h2>
+<p>During the time users ran a vulnerable version of the package, they were left open to an attack that would allow unauthenticated people to gain sensitive SYSTEM privileges that would allow full compromise of the underlying machine. Even after the vulnerability is patched, devices may still be compromised if authentication credentials created by a threat actor aren’t purged.</p><p><a href="https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/microsoft-issues-emergency-update-for-macos-and-linux-asp-net-threat/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>25</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg" type="image/jpeg" medium="image">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Contrary to popular superstition, AES 128 is just fine in a post-quantum world</title>
+                <link>https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 21 Apr 2026 12:35:20 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[aes-128]]></category>
+		<category><![CDATA[grover's algorithm]]></category>
+		<category><![CDATA[quantum conputing]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/</guid>
+
+                                    <description>
+                        <![CDATA[A stubborn misconception is hampering the already hard work of quantum readiness.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>With growing focus on the existential threat quantum computing poses to some of the most crucial and widely used forms of encryption, cryptography engineer Filippo Valsorda wants to make one thing absolutely clear: Contrary to popular mythology that refuses to die, AES 128 is perfectly fine in a post-quantum world.</p>
+<p>AES 128 is the most widely used variety of the <a href="https://en.wikipedia.org/wiki/Advanced_Encryption_Standard">Advanced Encryption Standard</a>, a block cipher suite formally adopted by NIST in 2001. While the specification allows 192- and 256-bit key sizes, AES 128 was widely considered to be the preferred one because it meets the sweet spot between computational resources required to use it and the security it offers. With no known vulnerabilities in its 30-year history, a brute-force attack is the only known way to break it. With 2<sup>128</sup> or 3.4 x 10<sup>38</sup> possible key combinations, such an attack would take about 9 billion years using the entire bitcoin mining resources as of 2026.</p>
+<h2>It boils down to parallelization</h2>
+<p>Over the past decade, something interesting happened to all that public confidence. Amateur cryptographers and mathematicians twisted a series of equations known as <a href="https://en.wikipedia.org/wiki/Grover%27s_algorithm">Grover’s algorithm</a> to declare the death of AES 128 once a cryptographically relevant quantum computer (CRQC) came into being. They said a CRQC would halve the effective strength to just 2<sup>64</sup>, a small enough supply that—if true—would allow the same bitcoin mining resources to brute force it in less than a second (the comparison is purely for illustration purposes; a CRQC almost certainly couldn’t run like clusters of bitcoin ASICs and more importantly couldn’t parallelize the workload as the amateurs assume).</p><p><a href="https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/contrary-to-popular-superstition-aes-128-is-just-fine-in-a-post-quantum-world/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>79</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/quantum-encryption-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/quantum-encryption-500x500.jpg" width="500" height="500" />
+</media:content>
+            </item>
+                    <item>
+                <title>US-sanctioned currency exchange says $15 million heist done by &quot;unfriendly states&quot;</title>
+                <link>https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 17 Apr 2026 21:28:35 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[cryptocurrency exchange]]></category>
+		<category><![CDATA[cyberattack]]></category>
+		<category><![CDATA[Grinex]]></category>
+		<category><![CDATA[russian hacking]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/</guid>
+
+                                    <description>
+                        <![CDATA[Grinex says needed hacking resources "available exclusively to... unfriendly states."]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Grinex, a US-sanctioned cryptocurrency exchange registered in Kyrgyzstan, said it’s halting operations after experiencing a $13 million heist carried out by “western special services” hackers.</p>
+<p>Researchers from TRM, which has confirmed the theft, put the value of stolen assets at $15 million after discovering roughly 70 drained addresses, about 16 more than Grinex reported. Neither TRM nor fellow blockchain research firm Elliptic has said how the attackers slipped past Grinex’s defenses. Grinex said it has been under almost constant attack attempts since incorporating 16 months ago. The latest attacks, it said, targeted Russian users of the exchange.</p>
+<h2>Damaging "Russia's financial sovereignty"</h2>
+<p>“The digital footprints and nature of the attack indicate an unprecedented level of resources and technology available exclusively to the structures of unfriendly states,” Grinex <a href="https://grinex.io">said</a>. “According to preliminary data, the attack was coordinated with the aim of causing direct damage to Russia's financial sovereignty.”</p><p><a href="https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/russia-friendly-exchange-says-western-special-service-behind-15-million-cyberattack/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>78</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/cryptocurrency-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/cryptocurrency-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Recent advances push Big Tech closer to the Q-Day danger zone</title>
+                <link>https://arstechnica.com/security/2026/04/while-some-big-tech-players-accelerate-pqc-readiness-others-stay-the-course/</link>
+                                    <comments>https://arstechnica.com/security/2026/04/while-some-big-tech-players-accelerate-pqc-readiness-others-stay-the-course/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 17 Apr 2026 11:00:50 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Features]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[cryptography]]></category>
+		<category><![CDATA[post quantum cryptography]]></category>
+		<category><![CDATA[quantum computing]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/04/while-some-big-tech-players-accelerate-pqc-readiness-others-stay-the-course/</guid>
+
+                                    <description>
+                        <![CDATA[Here's which players are winning the race to transition to post-quantum crypto.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Sometime around 2010, sophisticated malware known as Flame hijacked the mechanism that Microsoft used to distribute updates to millions of Windows computers around the world. The malware—reportedly jointly developed by the US and Israel—pushed a malicious update throughout an infected network belonging to the Iranian government.</p>
+<p>The lynchpin of the "collision" attack was an exploit of MD5, a cryptographic hash function Microsoft was using to authenticate digital certificates. By minting a cryptographically perfect digital signature based on MD5, the attackers forged a certificate that authenticated their malicious update server. Had the attack been used more broadly, it would have had catastrophic consequences worldwide.</p>
+<h2>Getting uncomfortably close to the danger zone</h2>
+<p>The event, which <a href="https://arstechnica.com/information-technology/2012/06/flame-malware-was-signed-by-rogue-microsoft-certificate/">came to light</a> in 2012, now serves as a cautionary tale for cryptography engineers as they contemplate the downfall of two crucial cryptography algorithms used everywhere. Since <a href="https://arstechnica.com/information-technology/2012/06/flame-malware-was-signed-by-rogue-microsoft-certificate/">2004</a>, MD5 has been known to be vulnerable to "collisions," a fatal flaw that allows adversaries to generate two distinct inputs that produce identical outputs.</p><p><a href="https://arstechnica.com/security/2026/04/while-some-big-tech-players-accelerate-pqc-readiness-others-stay-the-course/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/04/while-some-big-tech-players-accelerate-pqc-readiness-others-stay-the-course/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>69</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2024/03/GettyImages-1070527780-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2024/03/GettyImages-1070527780-500x500.jpg" width="500" height="500" />
+<media:credit>vital</media:credit></media:content>
+            </item>
+                    <item>
+                <title>“Negative” views of Broadcom driving thousands of VMware migrations, rival says</title>
+                <link>https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Thu, 09 Apr 2026 19:44:31 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[acquisitions]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[mergers]]></category>
+		<category><![CDATA[vmware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/</guid>
+
+                                    <description>
+                        <![CDATA[Western Union exec says there were "challenges" working with Broadcom. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Amid customer dissatisfaction around Broadcom's VMware takeover, rivals have been trying to lure customers from the leading virtualization firm. One of VMware's biggest competitors, Nutanix, claims to have swiped tens of thousands of VMware customers.</p>
+<p>Speaking at a press briefing at Nutanix’s .NEXT conference in Chicago this week, CEO Rajiv Ramaswami said that Nutanix has “about 30,000 customers,” with many of them coming from VMwarey, <a href="https://www.sdxcentral.com/news/nutanix-ceo-targets-majority-of-vmwares-customer-base/">SDxCentral</a>, a London-based IT publication, reported today. A Nutanix spokesperson confirmed to Ars Technica that "thousands" of customers have migrated from VMware to the rival platform but didn't specify an exact number.</p>
+<p>At the event, Ramaswami pointed to customer disapproval over Broadcom’s VMware strategy.</p><p><a href="https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>97</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1934095718-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/04/GettyImages-1934095718-500x500.jpg" width="500" height="500" />
+<media:credit>Getty</media:credit><media:text>VMware office in Bellevue, Washington, USA - June 15, 2023. </media:text></media:content>
+            </item>
+            </channel>
+</rss>

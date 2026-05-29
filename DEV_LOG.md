@@ -6,6 +6,33 @@ Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
 
 ---
 
+## 2026-05-29 — 雙層來源策略（Dual-layer Source Strategy）
+
+約 14/26 個 RSS 來源從雲端 IP 抓不到（Guardian 8 個、NYT 3 個、Ars Technica、Wired、MIT），
+導致 remote routine 報告品質受限（尤其 ARTS 只剩 ArchDaily + Dezeen）。
+
+**策略：本地抓取 + 遠端處理**
+
+1. `config/feeds.yaml`：14 個來源標記 `remote_blocked: true`（不影響本地抓取行為）
+2. `src/pipeline.py`：新增 `--skip-fetch` flag，若 `data/raw/{date}/` 已有 XML 則跳過 fetch_rss
+3. `scripts/local_fetch.py`：本地排程腳本，抓取 → git commit → push
+4. `.gitignore`：`data/raw/` 不再被 ignore（articles/ 和 events/ 仍 ignore）
+5. `prompts/routine_prompt.md`：routine 改用 `git pull` + `--skip-fetch`
+
+**流程**
+
+```
+[本地 04:30] local_fetch.py → 26 源 → data/raw/{date}/ → git push
+[遠端 05:00] routine → git pull → pipeline --skip-fetch → 處理+輸出
+```
+
+若本地 fetch 未跑，`--skip-fetch` 自動回退為線上 fetch（~12 源可通）。
+
+檔案異動：`config/feeds.yaml`、`src/pipeline.py`、`prompts/routine_prompt.md`、`.gitignore`、`scripts/local_fetch.py`（新）
+測試：360 條全綠
+
+---
+
 ## 2026-05-26 — PTS_LOCAL 選題修復
 
 05-23 ~ 05-26 報告中台灣新聞缺失或不穩定。根因：`selector.py` 有兩個問題。

@@ -175,9 +175,15 @@ def _read_selected_events(date: str) -> tuple[list[dict], list[dict], list[dict]
 def run_pipeline(
     date: str,
     dry_run: bool = False,
+    skip_fetch: bool = False,
     output_base: Optional[Path] = None,
 ) -> dict:
-    """Run the full daily pipeline and return a summary dict."""
+    """Run the full daily pipeline and return a summary dict.
+
+    Args:
+        skip_fetch: If True, skip fetch_rss step (use pre-fetched raw data).
+                    Useful when raw data is pushed by a local fetch job.
+    """
     pipeline_start = time.time()
     _output_base = output_base or OUTPUT_BASE
     step_records: list[dict] = []
@@ -186,6 +192,23 @@ def run_pipeline(
     # Steps 1–8: call each module's main(argv)
     # ------------------------------------------------------------------
     for name in STEPS[:-1]:  # all except formatter
+        # Skip fetch if raw data already exists
+        if name == "fetch_rss" and skip_fetch:
+            raw_dir = PROJECT_ROOT / "data" / "raw" / date
+            if raw_dir.exists() and any(raw_dir.glob("*.xml")):
+                xml_count = len(list(raw_dir.glob("*.xml")))
+                LOG.info("SKIP fetch_rss: %d raw XML files found in %s", xml_count, raw_dir)
+                step_records.append({
+                    "name": "fetch_rss",
+                    "exit_code": 0,
+                    "duration_s": 0.0,
+                    "skipped": True,
+                    "note": f"pre-fetched ({xml_count} XML files)",
+                })
+                continue
+            else:
+                LOG.warning("--skip-fetch but no raw data at %s; running fetch anyway", raw_dir)
+
         module = MODULE_MAP[name]
         LOG.info("=" * 60)
         LOG.info("PIPELINE STEP: %s", name)
@@ -314,6 +337,10 @@ def main(argv: Optional[list[str]] = None) -> int:
         help="Skip Claude API calls and file writing",
     )
     parser.add_argument(
+        "--skip-fetch", action="store_true",
+        help="Skip fetch_rss step; use pre-fetched raw data from data/raw/{date}/",
+    )
+    parser.add_argument(
         "--output-base", type=Path, default=None,
         help="Override output directory",
     )
@@ -325,9 +352,14 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
 
     date = args.date or datetime.now(TAIPEI).strftime("%Y-%m-%d")
-    LOG.info("Pipeline start: %s%s", date, " (dry-run)" if args.dry_run else "")
+    flags = []
+    if args.dry_run:
+        flags.append("dry-run")
+    if args.skip_fetch:
+        flags.append("skip-fetch")
+    LOG.info("Pipeline start: %s%s", date, f" ({', '.join(flags)})" if flags else "")
 
-    summary = run_pipeline(date, args.dry_run, args.output_base)
+    summary = run_pipeline(date, args.dry_run, args.skip_fetch, args.output_base)
     _print_summary(summary)
 
     if summary["status"] == "failed":

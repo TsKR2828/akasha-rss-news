@@ -37,8 +37,13 @@ Thumbs.db
 output/*
 reports/*
 
-# Pipeline data (raw RSS, normalized articles, events) — regeneratable
-data/
+# Pipeline intermediate data — regeneratable
+data/articles/
+data/events/
+data/feed_health_state.json
+
+# Raw RSS data is tracked (dual-layer strategy: local fetch → remote pipeline)
+# data/raw/ is NOT ignored
 
 # Keep folder placeholders
 !output/.gitkeep

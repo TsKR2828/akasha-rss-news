@@ -123,6 +123,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true  # Guardian 封鎖雲端 IP，需本地抓取
 
   - source_id: guardian_books
     name: "Guardian - Books"
@@ -135,6 +136,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: guardian_music
     name: "Guardian - Music"
@@ -147,6 +149,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: guardian_stage
     name: "Guardian - Stage"
@@ -159,6 +162,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: guardian_film
     name: "Guardian - Film"
@@ -171,6 +175,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: guardian_fashion
     name: "Guardian - Fashion"
@@ -183,6 +188,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: guardian_culture
     name: "Guardian - Culture"
@@ -194,6 +200,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
     note: "綜合文化補充來源。"
 
   # ---------- NYT ----------
@@ -208,6 +215,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
     note: "RSS free; full article may require subscription."
 
   - source_id: nyt_arts
@@ -220,6 +228,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: nyt_business
     name: "NYT Business"
@@ -231,6 +240,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   # ---------- 建築 ----------
   - source_id: archdaily
@@ -268,6 +278,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: the_verge
     name: "The Verge"
@@ -303,6 +314,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: marktechpost
     name: "MarkTechPost"
@@ -338,6 +350,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
     note: "2026-05-19 sweep 新增：日更 ~10 篇。"
 
   # ---------- 經濟 ----------
@@ -351,6 +364,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
+    remote_blocked: true
 
   - source_id: bloomberg_tech_google_news
     name: "Bloomberg Tech via Google News"

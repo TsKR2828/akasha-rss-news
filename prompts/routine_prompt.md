@@ -19,10 +19,17 @@
 
 ```bash
 cd C:\Users\User.DESKTOP-HA8VHD7\Documents\Claude\akasha-rss-news
-python -m src.pipeline
+git pull origin main
+python -m src.pipeline --skip-fetch
 ```
 
-這會依序執行 9 個步驟：
+**`--skip-fetch`**：跳過 Step 1（RSS 抓取），直接使用 `data/raw/{date}/` 的預抓取資料。
+原因：約半數 RSS 來源封鎖雲端 IP（Guardian、NYT、Ars Technica、Wired、MIT），
+由本地排程 `scripts/local_fetch.py` 提前抓取並推送至 git。
+
+若 `data/raw/{date}/` 不存在或沒有 XML 檔，pipeline 會自動回退執行 fetch（但預期只有 ~12 個來源能通）。
+
+這會依序執行 9 個步驟（Step 1 被 --skip-fetch 跳過時為 8 個）：
 
 | # | 步驟 | 對應模組 | 資料目錄 |
 |---|------|---------|---------|
@@ -65,6 +72,7 @@ output/logs/run_YYYYMMDD.json           # run log
 
 | 情境 | 行動 |
 |---|---|
+| `data/raw/{date}/` 無 XML 檔 | `--skip-fetch` 自動回退為線上 fetch；預期僅 ~12 源可用 |
 | Step 1 全部 source 失敗 | pipeline 自動 abort（exit 2），不產出檔案 |
 | Step 1 部分 source 失敗 | 加入 warnings，繼續 |
 | Step 8 Claude API 限流 | `claude_rewrite.py` 內建 retry 3 次；仍失敗則 status: partial |

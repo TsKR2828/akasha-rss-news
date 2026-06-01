@@ -1,0 +1,262 @@
+[
+  {
+    "source_id": "aljazeera_all",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.316322+08:00",
+    "items_found": 25,
+    "items_valid": 25,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "reuters_world_google_news",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.314224+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "reuters_business_google_news",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.315282+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "bbc_technology",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.313140+08:00",
+    "items_found": 21,
+    "items_valid": 2,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "bbc_world",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.309308+08:00",
+    "items_found": 40,
+    "items_valid": 30,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "npr_world",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.317363+08:00",
+    "items_found": 10,
+    "items_valid": 9,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "bbc_business",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:00.310023+08:00",
+    "items_found": 54,
+    "items_valid": 15,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "guardian_art_design",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.319338+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/artanddesign/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "guardian_books",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.644298+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/books/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "guardian_music",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.668830+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/music/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "guardian_stage",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.683802+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/stage/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "guardian_film",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.703398+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/uk/film/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "guardian_fashion",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.862956+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/fashion/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "guardian_culture",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.939351+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/uk/culture/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "nyt_books",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:00.960526+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://rss.nytimes.com/services/xml/rss/nyt/Books.xml",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "mit_ai_news",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:03.914891+08:00",
+    "items_found": 50,
+    "items_valid": 0,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "dezeen",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:03.755205+08:00",
+    "items_found": 50,
+    "items_valid": 11,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "techcrunch_ai",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:04.533243+08:00",
+    "items_found": 20,
+    "items_valid": 6,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "archdaily",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:03.728865+08:00",
+    "items_found": 18,
+    "items_valid": 14,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "marktechpost",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:04.022482+08:00",
+    "items_found": 10,
+    "items_valid": 4,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "nyt_business",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:03.716235+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "nyt_arts",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:03.467896+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://rss.nytimes.com/services/xml/rss/nyt/Arts.xml",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "ars_technica_ai",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:03.758622+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://feeds.arstechnica.com/arstechnica/technology-lab",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "pts_news",
+    "status": "ok",
+    "http_status": 200,
+    "fetched_at": "2026-06-02T05:07:04.756214+08:00",
+    "items_found": 25,
+    "items_valid": 25,
+    "error": null,
+    "consecutive_failures": 0
+  },
+  {
+    "source_id": "guardian_business",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:04.728816+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.theguardian.com/uk/business/rss",
+    "consecutive_failures": 1
+  },
+  {
+    "source_id": "wired_ai",
+    "status": "failed",
+    "http_status": 403,
+    "fetched_at": "2026-06-02T05:07:04.535928+08:00",
+    "items_found": 0,
+    "items_valid": 0,
+    "error": "403 Client Error: Forbidden for url: https://www.wired.com/feed/tag/ai/latest/rss",
+    "consecutive_failures": 1
+  }
+]

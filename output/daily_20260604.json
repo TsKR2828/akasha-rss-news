@@ -1,0 +1,1732 @@
+{
+  "reportId": "daily_20260604",
+  "date": "2026-06-04",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-06-04T05:20:54.628399+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260604_evt_039",
+          "headline": "伊朗無人機轟炸科威特機場",
+          "context": "伊朗無人機攻擊科威特主要機場，造成 1 死數十傷，機場短暫關閉。伊朗聲稱此舉是回應美國早前對伊朗油輪和島嶼的空襲。這是美伊之間持續交火、脆弱停火協議屢屢受考驗的最新一輪衝突。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n伊朗無人機轟炸科威特機場，1 死數十傷\n\n伊朗無人機襲擊科威特主要機場候機大廳，造成 1 人死亡、數十人受傷，機場被迫短暫關閉。伊朗表示，此次攻擊是回應美國早先對一艘伊朗油輪及島嶼的空襲行動。這是美伊之間持續拉鋸、停火協議屢受挑戰的最新事件。\n\n—— 本則整理自 NPR 與 BBC，2026 年 6 月 3 日至 4 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "伊朗無人機攻擊科威特主要機場，造成 1 人死亡、數十人受傷，機場短暫關閉。伊朗表示，此舉是回應美國早先對伊朗油輪及島嶼發動的空襲。這是美伊之間持續交火的最新事件——兩國之間的脆弱停火協議再度受到挑戰。\n\n本則整理自 NPR 與 BBC 於 2026 年 6 月 3 日至 4 日發佈的報導。",
+          "voice_text": "伊朗無人機打到科威特機場。1 人死亡，數十人受傷，機場短暫關閉。伊朗說這是回應——因為美國之前打了伊朗一艘油輪和一座島。美伊之間的停火協議一直很脆弱，這次又是一輪反擊。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n伊朗無人機轟炸科威特機場，1 死數十傷\n\n伊朗無人機襲擊科威特主要機場候機大廳，造成 1 人死亡、數十人受傷，機場被迫短暫關閉。伊朗表示，此次攻擊是回應美國早先對一艘伊朗油輪及島嶼的空襲行動。這是美伊之間持續拉鋸、停火協議屢受挑戰的最新事件。\n\n—— 本則整理自 NPR 與 BBC，2026 年 6 月 3 日至 4 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "伊朗無人機攻擊科威特主要機場，造成 1 人死亡、數十人受傷，機場短暫關閉。伊朗表示，此舉是回應美國早先對伊朗油輪及島嶼發動的空襲。這是美伊之間持續交火的最新事件——兩國之間的脆弱停火協議再度受到挑戰。\n\n本則整理自 NPR 與 BBC 於 2026 年 6 月 3 日至 4 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "伊朗無人機打到科威特機場。1 人死亡，數十人受傷，機場短暫關閉。伊朗說這是回應——因為美國之前打了伊朗一艘油輪和一座島。美伊之間的停火協議一直很脆弱，這次又是一輪反擊。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Kuwait briefly shut its main airport after Iranian drones struck a passenger terminal, the latest in back-and-forth attacks by Iran and the U.S. that test a fragile ceasefire.",
+              "title": "Iran strikes Kuwait's main airport and kills 1 as ceasefire is tested again",
+              "url": "https://www.npr.org/2026/06/03/g-s1-125566/iran-war-updates",
+              "published_at": "2026-06-03T14:45:30+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Iran says the attack on Kuwait was in retaliation for earlier US strikes on an Iranian oil tanker and island.",
+              "title": "One killed and dozens injured in Iranian drone strikes on Kuwait airport",
+              "url": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-04T04:05:58+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "伊朗無人機攻擊科威特主要機場，造成 1 人死亡、數十人受傷，機場短暫關閉。",
+              "source_id": "npr_world",
+              "source_title": "Iran strikes Kuwait's main airport and kills 1 as ceasefire is tested again",
+              "source_url": "https://www.npr.org/2026/06/03/g-s1-125566/iran-war-updates",
+              "support_type": "direct"
+            },
+            {
+              "claim": "伊朗聲稱攻擊是回應美國早先對伊朗油輪及島嶼的空襲。",
+              "source_id": "bbc_world",
+              "source_title": "One killed and dozens injured in Iranian drone strikes on Kuwait airport",
+              "source_url": "https://www.bbc.com/news/articles/c5yx135yg53o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260604_evt_019",
+          "headline": "俄羅斯戰爭民心出現裂縫？",
+          "context": "俄烏戰爭已持續超過四年，據報導，就連部分過去支持普亭（Vladimir Putin）的群體，也開始對戰爭感到憂慮。目前的消息指出，普亭本人在烏克蘭問題上的立場依然強硬不妥協，但俄羅斯社會的公開討論似乎正在悄悄轉變。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n俄烏戰爭打了四年——連普亭支持者內部也開始出現雜音？\n\n俄羅斯持續加強對烏克蘭的攻勢，但目前的消息指出，連部分過去挺普亭（Vladimir Putin）的群體，也開始對戰爭感到不安。普亭在烏克蘭問題上的立場依然強硬，但俄羅斯社會對戰爭的公開討論，似乎正在悄悄出現變化。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "俄烏戰爭打了超過四年，據報導，就連過去支持普亭（Vladimir Putin）的人，也開始出現擔憂聲音。普亭本人在烏克蘭問題上依然不肯妥協，但外界觀察到，俄羅斯社會對戰爭的公開討論，可能正在發生細微的轉變。目前只有一則報導提到這個觀察。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "俄烏戰爭打了四年多。普亭對烏克蘭的立場還是強硬——但目前的消息指出，連一些過去挺普亭的人，也開始對戰爭感到不安了。俄羅斯內部的公開討論是否正在轉向，這個問題現在值得關注。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n俄烏戰爭打了四年——連普亭支持者內部也開始出現雜音？\n\n俄羅斯持續加強對烏克蘭的攻勢，但目前的消息指出，連部分過去挺普亭（Vladimir Putin）的群體，也開始對戰爭感到不安。普亭在烏克蘭問題上的立場依然強硬，但俄羅斯社會對戰爭的公開討論，似乎正在悄悄出現變化。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "俄烏戰爭打了超過四年，據報導，就連過去支持普亭（Vladimir Putin）的人，也開始出現擔憂聲音。普亭本人在烏克蘭問題上依然不肯妥協，但外界觀察到，俄羅斯社會對戰爭的公開討論，可能正在發生細微的轉變。目前只有一則報導提到這個觀察。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "俄烏戰爭打了四年多。普亭對烏克蘭的立場還是強硬——但目前的消息指出，連一些過去挺普亭的人，也開始對戰爭感到不安了。俄羅斯內部的公開討論是否正在轉向，這個問題現在值得關注。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Russia is intensifying attacks in Ukraine but more than four years of war are causing concern even among Putin loyalists.",
+              "title": "Putin remains uncompromising on Ukraine, but is public discourse on war changing in Russia?",
+              "url": "https://www.bbc.com/news/articles/cy82339793go?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T07:33:34+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "俄羅斯持續加強對烏克蘭的攻勢，但四年多的戰爭連部分普亭支持者也開始感到憂慮；普亭立場依然不妥協。",
+              "source_id": "bbc_world",
+              "source_title": "Putin remains uncompromising on Ukraine, but is public discourse on war changing in Russia?",
+              "source_url": "https://www.bbc.com/news/articles/cy82339793go?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260604_evt_014",
+          "headline": "紐約男子鑽地下水道引調查",
+          "context": "紐約警方正在調查一批影片，可見數名男子從城市地下水道系統中鑽出地面。目前的消息指出，當局警告民眾擅自進入下水道既違法，也極度危險。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n紐約男子鑽下水道出現在地面，警方展開調查\n\n紐約警察局正在調查一批流傳的影片——影片中可見男子從城市地下水道系統鑽出地面。根據目前的消息，當局警告民眾：擅自進入下水道系統既違法，也極度危險。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "紐約警察局正在調查一批流傳的影片，影片中可見男子從城市地下水道系統鑽出地面。目前只有一則報導提到這件事，當局的回應是警告民眾：進入下水道違法，而且相當危險。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "紐約有影片在流傳，畫面是男子從地下水道鑽出地面。警方說正在調查。目前的消息指出，擅自進入下水道在紐約是違法的，而且相當危險。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n紐約男子鑽下水道出現在地面，警方展開調查\n\n紐約警察局正在調查一批流傳的影片——影片中可見男子從城市地下水道系統鑽出地面。根據目前的消息，當局警告民眾：擅自進入下水道系統既違法，也極度危險。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "紐約警察局正在調查一批流傳的影片，影片中可見男子從城市地下水道系統鑽出地面。目前只有一則報導提到這件事，當局的回應是警告民眾：進入下水道違法，而且相當危險。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "紐約有影片在流傳，畫面是男子從地下水道鑽出地面。警方說正在調查。目前的消息指出，擅自進入下水道在紐約是違法的，而且相當危險。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Authorities warn that entering the sewer system is both illegal and extremely dangerous.",
+              "title": "New York police investigate videos of men emerging from city's sewer system",
+              "url": "https://www.bbc.com/news/articles/clyply74z9go?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T06:29:15+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "紐約警方正在調查影片，可見男子從地下水道鑽出，當局警告此舉違法且極度危險。",
+              "source_id": "bbc_world",
+              "source_title": "New York police investigate videos of men emerging from city's sewer system",
+              "source_url": "https://www.bbc.com/news/articles/clyply74z9go?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260604_evt_108",
+          "headline": "川普確認罵過納坦亞胡「瘋子」",
+          "context": "美國總統川普（Donald Trump）公開承認曾在一通激烈的電話中罵以色列總理納坦亞胡（Benjamin Netanyahu）「瘋了」，要求他不要轟炸黎巴嫩首都貝魯特（Beirut）。儘管如此，川普表示兩人依然相處融洽，納坦亞胡方面也試圖淡化美以之間的裂縫。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n川普公開承認：電話裡罵過納坦亞胡「瘋了」\n\n美國總統川普（Donald Trump）確認，他曾在一通激烈電話中罵以色列總理納坦亞胡（Benjamin Netanyahu）「瘋了」，還在通話中對他出言不遜，要求他不要轟炸黎巴嫩首都貝魯特（Beirut）。儘管如此，川普說兩人還是「相處融洽」，他「還是喜歡」納坦亞胡。以方則試圖淡化美以之間的裂縫。\n\n—— 本則整理自 Al Jazeera 與 NPR，2026 年 6 月 3 日至 4 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國總統川普（Donald Trump）公開承認，他曾在一通激烈的電話中罵以色列總理納坦亞胡（Benjamin Netanyahu）「瘋了」，並對他說了一些重話，警告他不要轟炸黎巴嫩首都貝魯特（Beirut）。話雖如此，川普說他和納坦亞胡的關係依然很好，納坦亞胡方面也試圖淡化兩國之間的裂痕。\n\n本則整理自 Al Jazeera 與 NPR 於 2026 年 6 月 3 日至 4 日發佈的報導。",
+          "voice_text": "川普親口承認了——他確實曾在電話裡罵納坦亞胡「瘋了」。那通電話很激烈，他在電話裡要求對方不要轟炸黎巴嫩首都貝魯特。不過川普說，他和納坦亞胡還是相處得好，他「喜歡」這個人。以色列方面也在試圖淡化兩國之間的嫌隙。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n川普公開承認：電話裡罵過納坦亞胡「瘋了」\n\n美國總統川普（Donald Trump）確認，他曾在一通激烈電話中罵以色列總理納坦亞胡（Benjamin Netanyahu）「瘋了」，還在通話中對他出言不遜，要求他不要轟炸黎巴嫩首都貝魯特（Beirut）。儘管如此，川普說兩人還是「相處融洽」，他「還是喜歡」納坦亞胡。以方則試圖淡化美以之間的裂縫。\n\n—— 本則整理自 Al Jazeera 與 NPR，2026 年 6 月 3 日至 4 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國總統川普（Donald Trump）公開承認，他曾在一通激烈的電話中罵以色列總理納坦亞胡（Benjamin Netanyahu）「瘋了」，並對他說了一些重話，警告他不要轟炸黎巴嫩首都貝魯特（Beirut）。話雖如此，川普說他和納坦亞胡的關係依然很好，納坦亞胡方面也試圖淡化兩國之間的裂痕。\n\n本則整理自 Al Jazeera 與 NPR 於 2026 年 6 月 3 日至 4 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普親口承認了——他確實曾在電話裡罵納坦亞胡「瘋了」。那通電話很激烈，他在電話裡要求對方不要轟炸黎巴嫩首都貝魯特。不過川普說，他和納坦亞胡還是相處得好，他「喜歡」這個人。以色列方面也在試圖淡化兩國之間的嫌隙。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "US president acknowledges he had harsh words for Netanyahu over Lebanon attacks but says he 'likes' the Israeli leader.",
+              "title": "Netanyahu downplays US-Israel rift after Trump confirms criticism",
+              "url": "https://www.aljazeera.com/news/2026/6/3/netanyahu-downplays-us-israel-rift-after-trump-confirms-criticism?traffic_source=rss",
+              "published_at": "2026-06-04T01:07:43+08:00"
+            },
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "The president also acknowledged that he cursed at the Israeli leader in a heated phone call in which he told Benjamin Netanyahu not to bomb the Lebanese capital Beirut.",
+              "title": "Trump confirms calling Netanyahu 'crazy,' says they still get along",
+              "url": "https://www.npr.org/2026/06/03/g-s1-125631/trump-confirms-calling-netanyahu-crazy-says-they-still-get-along",
+              "published_at": "2026-06-04T02:39:55+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "川普承認對納坦亞胡說了重話，但表示他「喜歡」這位以色列領導人；納坦亞胡淡化美以裂縫。",
+              "source_id": "aljazeera_all",
+              "source_title": "Netanyahu downplays US-Israel rift after Trump confirms criticism",
+              "source_url": "https://www.aljazeera.com/news/2026/6/3/netanyahu-downplays-us-israel-rift-after-trump-confirms-criticism?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "川普確認在一通激烈電話中罵納坦亞胡「瘋了」，要求他不要轟炸貝魯特，但說兩人仍相處融洽。",
+              "source_id": "npr_world",
+              "source_title": "Trump confirms calling Netanyahu 'crazy,' says they still get along",
+              "source_url": "https://www.npr.org/2026/06/03/g-s1-125631/trump-confirms-calling-netanyahu-crazy-says-they-still-get-along",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 38,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260604_evt_051",
+          "headline": "烏克蘭無人機轟炸聖彼得堡油庫",
+          "context": "烏克蘭無人機攻擊俄羅斯聖彼得堡（St. Petersburg）附近石油儲存設施，引發大火。攻擊就在普亭（Vladimir Putin）主導的「聖彼得堡國際經濟論壇」開幕前幾小時發生。烏克蘭總統澤倫斯基（Volodymyr Zelenskyy）確認了這次行動。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n烏克蘭無人機打到聖彼得堡油庫，論壇前夕開打\n\n烏克蘭遠程無人機攻擊聖彼得堡（St. Petersburg）附近油料儲存設施，引發大火。攻擊就在普亭（Vladimir Putin）主導的「聖彼得堡國際經濟論壇」開幕前幾個小時發生。烏克蘭總統澤倫斯基（Volodymyr Zelenskyy）確認了這次行動。\n\n—— 本則整理自 NPR、BBC 與 Al Jazeera，2026 年 6 月 3 日至 4 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "烏克蘭無人機在「聖彼得堡國際經濟論壇」開幕前夕，攻擊了聖彼得堡（St. Petersburg）附近的石油儲存設施，引發大火。這場論壇是普亭（Vladimir Putin）對外展示俄羅斯經濟影響力的年度活動。烏克蘭總統澤倫斯基（Volodymyr Zelenskyy）確認了此次攻擊。\n\n本則整理自 NPR、BBC 與 Al Jazeera 於 2026 年 6 月 3 日至 4 日發佈的報導。",
+          "voice_text": "烏克蘭無人機打到聖彼得堡的石油儲存設施，引發火災。時間點很微妙——就在普亭主導的「聖彼得堡國際經濟論壇」開幕前幾個小時。烏克蘭總統澤倫斯基確認了這次攻擊。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n烏克蘭無人機打到聖彼得堡油庫，論壇前夕開打\n\n烏克蘭遠程無人機攻擊聖彼得堡（St. Petersburg）附近油料儲存設施，引發大火。攻擊就在普亭（Vladimir Putin）主導的「聖彼得堡國際經濟論壇」開幕前幾個小時發生。烏克蘭總統澤倫斯基（Volodymyr Zelenskyy）確認了這次行動。\n\n—— 本則整理自 NPR、BBC 與 Al Jazeera，2026 年 6 月 3 日至 4 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "烏克蘭無人機在「聖彼得堡國際經濟論壇」開幕前夕，攻擊了聖彼得堡（St. Petersburg）附近的石油儲存設施，引發大火。這場論壇是普亭（Vladimir Putin）對外展示俄羅斯經濟影響力的年度活動。烏克蘭總統澤倫斯基（Volodymyr Zelenskyy）確認了此次攻擊。\n\n本則整理自 NPR、BBC 與 Al Jazeera 於 2026 年 6 月 3 日至 4 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "烏克蘭無人機打到聖彼得堡的石油儲存設施，引發火災。時間點很微妙——就在普亭主導的「聖彼得堡國際經濟論壇」開幕前幾個小時。烏克蘭總統澤倫斯基確認了這次攻擊。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Ukrainian drones struck an oil terminal in St. Petersburg and set it ablaze, Ukrainian President Volodymyr Zelenskyy said, as the city hosted an annual economic forum promoted by President Putin.",
+              "title": "Ukrainian drones strike a St. Petersburg oil terminal ahead of Putin visit",
+              "url": "https://www.npr.org/2026/06/03/nx-s1-5844793/ukrainian-drones-hit-st-petersburg",
+              "published_at": "2026-06-03T18:04:00+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Several long-range drones struck oil storage facilities near the city, days before Vladimir Putin is due to address the event.",
+              "title": "Ukrainian drones hit St Petersburg as Putin's flagship economic forum opens",
+              "url": "https://www.bbc.com/news/articles/c0e2vqd3j1vo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T19:34:07+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "A Ukrainian drone strike targeted energy facilities near St Petersburg hours before the forum began.",
+              "title": "What is the St Petersburg forum, Putin's economic outreach to the world?",
+              "url": "https://www.aljazeera.com/news/2026/6/3/what-is-the-st-petersburg-forum-putins-economic-outreach-to-the-world?traffic_source=rss",
+              "published_at": "2026-06-04T00:20:32+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "烏克蘭無人機攻擊聖彼得堡附近石油儲存設施，引發大火，澤倫斯基確認此次行動。",
+              "source_id": "npr_world",
+              "source_title": "Ukrainian drones strike a St. Petersburg oil terminal ahead of Putin visit",
+              "source_url": "https://www.npr.org/2026/06/03/nx-s1-5844793/ukrainian-drones-hit-st-petersburg",
+              "support_type": "direct"
+            },
+            {
+              "claim": "攻擊發生在「聖彼得堡國際經濟論壇」開幕期間，普亭預計在此發表演說。",
+              "source_id": "bbc_world",
+              "source_title": "Ukrainian drones hit St Petersburg as Putin's flagship economic forum opens",
+              "source_url": "https://www.bbc.com/news/articles/c0e2vqd3j1vo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "烏克蘭無人機攻擊發生在論壇開幕前幾小時。",
+              "source_id": "aljazeera_all",
+              "source_title": "What is the St Petersburg forum, Putin's economic outreach to the world?",
+              "source_url": "https://www.aljazeera.com/news/2026/6/3/what-is-the-st-petersburg-forum-putins-economic-outreach-to-the-world?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 33,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260604_evt_030",
+          "headline": "倫敦蛇形展館第25屆亮相",
+          "context": "第 25 屆蛇形展館（Serpentine Pavilion）將於 2026 年 6 月 6 日在倫敦 Serpentine South 開幕，由墨西哥城建築事務所 LANZA atelier 設計，作品名為《A Serpentine》。這座蜿蜒的紅磚結構，靈感來自英國傳統的「鋸齒磚牆」（crinkle-crankle wall）——磚厚僅一塊，卻能靠波浪形設計獨立承重。蛇形展館自 2000 年 Zaha Hadid 首開先例，今年迎來第 25 屆里程碑。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n倫敦蛇形展館第 25 屆：墨西哥事務所用紅磚蓋出蜿蜒牆\n\n第 25 屆倫敦蛇形展館（Serpentine Pavilion）將於 6 月 6 日開幕。今屆由墨西哥城建築事務所 LANZA atelier 操刀，作品《A Serpentine》是一道蜿蜒的紅磚結構，靈感來自英國傳統「鋸齒磚牆」（crinkle-crankle wall）。展覽將持續到 10 月 25 日，主辦方也將與 Zaha Hadid 基金會合作舉辦回顧活動。蛇形展館自 2000 年 Zaha Hadid 的首件作品算起，今年正好第 25 年。\n\n—— 本則整理自 ArchDaily 與 Dezeen，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "第 25 屆倫敦蛇形展館（Serpentine Pavilion）將於 2026 年 6 月 6 日開幕，今年由墨西哥城建築事務所 LANZA atelier 設計，作品名為《A Serpentine》。這座蜿蜒的紅磚建築，靈感來自英國傳統「鋸齒磚牆」（crinkle-crankle wall），磚厚僅一塊。展覽持續至 10 月 25 日；主辦方也將與 Zaha Hadid 基金會及 Architectural Association 合作，舉辦回顧展館歷史的平行活動。蛇形展館自 2000 年 Zaha Hadid 首作以來，今年邁入第 25 屆。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "倫敦蛇形展館迎來第 25 屆里程碑。今年的展館由墨西哥城的 LANZA atelier 設計，作品叫《A Serpentine》。那是一道蜿蜒的紅磚結構，靈感來自英國傳統的鋸齒磚牆，整道牆只有一塊磚那麼厚，靠波浪形站著。6 月 6 日開幕，展到 10 月底。蛇形展館從 2000 年的 Zaha Hadid 第一件作品算起，今年正好第 25 年。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n倫敦蛇形展館第 25 屆：墨西哥事務所用紅磚蓋出蜿蜒牆\n\n第 25 屆倫敦蛇形展館（Serpentine Pavilion）將於 6 月 6 日開幕。今屆由墨西哥城建築事務所 LANZA atelier 操刀，作品《A Serpentine》是一道蜿蜒的紅磚結構，靈感來自英國傳統「鋸齒磚牆」（crinkle-crankle wall）。展覽將持續到 10 月 25 日，主辦方也將與 Zaha Hadid 基金會合作舉辦回顧活動。蛇形展館自 2000 年 Zaha Hadid 的首件作品算起，今年正好第 25 年。",
+                "—— 本則整理自 ArchDaily 與 Dezeen，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "第 25 屆倫敦蛇形展館（Serpentine Pavilion）將於 2026 年 6 月 6 日開幕，今年由墨西哥城建築事務所 LANZA atelier 設計，作品名為《A Serpentine》。這座蜿蜒的紅磚建築，靈感來自英國傳統「鋸齒磚牆」（crinkle-crankle wall），磚厚僅一塊。展覽持續至 10 月 25 日；主辦方也將與 Zaha Hadid 基金會及 Architectural Association 合作，舉辦回顧展館歷史的平行活動。蛇形展館自 2000 年 Zaha Hadid 首作以來，今年邁入第 25 屆。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "倫敦蛇形展館迎來第 25 屆里程碑。今年的展館由墨西哥城的 LANZA atelier 設計，作品叫《A Serpentine》。那是一道蜿蜒的紅磚結構，靈感來自英國傳統的鋸齒磚牆，整道牆只有一塊磚那麼厚，靠波浪形站著。6 月 6 日開幕，展到 10 月底。蛇形展館從 2000 年的 Zaha Hadid 第一件作品算起，今年正好第 25 年。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "The 2026 Serpentine Pavilion , titled \"a serpentine,\" designed by Mexico City-based architecture studio LANZA atelier , will open to the public on 6 June 2026 at Serpentine South in London . Newly released preview-days images show the completed structure ahead of its seasonal activation, which will run through 25 October 2026 and include Serpentine's annual programme of public events. Now in its 25th edition, the Serpentine Pavilion marks a milestone for the annual commission first launched in 2000 with Zaha Hadid 's inaugural project. To commemorate the anniversary, Serpentine Galleries will also collaborate with the Zaha Hadid Foundation and the Architectural Association on a parallel programme reflecting on the Pavilion's legacy and its role in contemporary architectural discourse.",
+              "title": "The 25th Serpentine Pavilion Designed by LANZA atelier Opens to the Public on June 6th, 2026",
+              "url": "https://www.archdaily.com/1042141/the-25th-serpentine-pavilion-designed-by-lanza-atelier-opens-to-the-public-on-june-6th-2026",
+              "published_at": "2026-06-03T13:00:00+08:00"
+            },
+            {
+              "source_id": "dezeen",
+              "name": "Dezeen",
+              "publisher": "Dezeen",
+              "summary": "Mexican studio Lanza Atelier has created A Serpentine, a snaking brick-walled structure for the 25th edition of the Serpentine Pavilion in London. The sinuous red brick structure, which opens to the public this weekend, was designed by the Mexico-city based studio to reference a traditional English brick wall, known as a crinkle-crankle wall. These one-brick-thick The post Lanza Atelier designs snaking brick Serpentine Pavilion in London appeared first on Dezeen .",
+              "title": "Lanza Atelier designs snaking brick Serpentine Pavilion in London",
+              "url": "https://www.dezeen.com/2026/06/03/lanza-atelier-designs-snaking-brick-serpentine-pavilion-in-london/",
+              "published_at": "2026-06-03T18:52:35+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "第 25 屆蛇形展館《A Serpentine》由 LANZA atelier 設計，6 月 6 日於倫敦開幕，持續至 10 月 25 日；主辦方與 Zaha Hadid 基金會合作舉辦周邊活動。",
+              "source_id": "archdaily",
+              "source_title": "The 25th Serpentine Pavilion Designed by LANZA atelier Opens to the Public on June 6th, 2026",
+              "source_url": "https://www.archdaily.com/1042141/the-25th-serpentine-pavilion-designed-by-lanza-atelier-opens-to-the-public-on-june-6th-2026",
+              "support_type": "direct"
+            },
+            {
+              "claim": "作品為蜿蜒紅磚結構，靈感來自英國傳統鋸齒磚牆（crinkle-crankle wall），磚厚僅一塊。",
+              "source_id": "dezeen",
+              "source_title": "Lanza Atelier designs snaking brick Serpentine Pavilion in London",
+              "source_url": "https://www.dezeen.com/2026/06/03/lanza-atelier-designs-snaking-brick-serpentine-pavilion-in-london/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 33,
+          "sub_beat": "建築",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_3"
+        },
+        {
+          "event_id": "daily_20260604_evt_020",
+          "headline": "陝西山腳下的朱鷺故鄉民宿",
+          "context": "kooo architects 在中國陝西省安康市寧陝縣玉灣村設計了「綠寨山房」（LuZhai Cottages），一處位於小山腳下、梯田旁的民宿。目前的消息指出，這個場地是朱鷺（crested ibis）的棲息地之一，四周有亂石砌成的擋土牆，眺望農田視野開闊。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n在朱鷺棲息地蓋民宿：陝西山村裡的日本事務所\n\n目前的消息指出，kooo architects 在中國陝西省安康市寧陝縣設計了「綠寨山房」（LuZhai Cottages），一處緊靠小山、俯瞰梯田農地的精品民宿。場地本身是朱鷺（crested ibis）的棲息地之一，四周以亂石擋土牆圍繞，前方農田景觀開闊。\n\n—— 本則來自 ArchDaily，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "kooo architects 在中國陝西省安康市寧陝縣玉灣村設計了「綠寨山房」（LuZhai Cottages）。目前只有一則報導介紹這個作品：這是一處位於小山腳下、梯田旁的民宿，基地是朱鷺（crested ibis）的棲息地，四周有亂石砌成的擋土牆，前方農田景觀開闊。\n\n本則來自 ArchDaily 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "陝西省安康市有個叫玉灣村的地方，在山腳下、梯田旁邊。建築事務所 kooo architects 在那裡設計了一處民宿，叫做「綠寨山房」。這個地方的特別之處，是朱鷺會在這裡棲息——朱鷺是一種非常稀有的鳥。民宿用亂石堆疊的擋土牆跟地形融在一起，前方視野開向農田。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n在朱鷺棲息地蓋民宿：陝西山村裡的日本事務所\n\n目前的消息指出，kooo architects 在中國陝西省安康市寧陝縣設計了「綠寨山房」（LuZhai Cottages），一處緊靠小山、俯瞰梯田農地的精品民宿。場地本身是朱鷺（crested ibis）的棲息地之一，四周以亂石擋土牆圍繞，前方農田景觀開闊。\n\n—— 本則來自 ArchDaily，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "kooo architects 在中國陝西省安康市寧陝縣玉灣村設計了「綠寨山房」（LuZhai Cottages）。目前只有一則報導介紹這個作品：這是一處位於小山腳下、梯田旁的民宿，基地是朱鷺（crested ibis）的棲息地，四周有亂石砌成的擋土牆，前方農田景觀開闊。\n\n本則來自 ArchDaily 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "陝西省安康市有個叫玉灣村的地方，在山腳下、梯田旁邊。建築事務所 kooo architects 在那裡設計了一處民宿，叫做「綠寨山房」。這個地方的特別之處，是朱鷺會在這裡棲息——朱鷺是一種非常稀有的鳥。民宿用亂石堆疊的擋土牆跟地形融在一起，前方視野開向農田。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "Ningshan LuZhai Cottages is a hotel located at the foot of a small mountain within the village settlement called Yuwan Village, Ningshan County, Ankang City, Shaanxi Province, China. The site is rich in natural resources, with a beautiful environment and well-preserved ecological balance, serving as a habitat for crested ibises. Situated on the terraced slopes, the outer periphery of the slope is surrounded by retaining walls made of rubble. In front of the site, there is an open view of farmland, leaving a lasting impression.",
+              "title": "LuZhai Cottage / kooo architects",
+              "url": "https://www.archdaily.com/1013578/luzhai-cottage-kooo-architects",
+              "published_at": "2026-06-03T08:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "kooo architects 在陝西省安康市寧陝縣玉灣村設計「綠寨山房」民宿，位於梯田山腳，為朱鷺棲息地，四周有亂石擋土牆，前方農田視野開闊。",
+              "source_id": "archdaily",
+              "source_title": "LuZhai Cottage / kooo architects",
+              "source_url": "https://www.archdaily.com/1013578/luzhai-cottage-kooo-architects",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260604_evt_006",
+          "headline": "貝魯特爆炸後的彩色操場",
+          "context": "2020 年貝魯特港口大爆炸（Beirut explosion）後，重建資源大多流向住所與基礎設施，操場被忽略了。目前的消息指出，Studio Etienne Bastormagi 與 Sandra Richani、Nada Borgi 合作，在一所受損學校的操場以地面彩繪完成裝置《Color Pit》，將「玩耍」定義為一種公民療癒行為。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n貝魯特爆炸後的操場，被一個彩繪裝置找了回來\n\n2020 年貝魯特港口大爆炸（Beirut explosion）後，重建資源大多流向住所與基礎設施——操場被放在最後。目前的消息指出，Studio Etienne Bastormagi 與兩位合作者在一所受損學校的操場，以地面彩繪完成了裝置《Color Pit》，把「玩耍」定義為一種公民復原行動。\n\n—— 本則來自 ArchDaily，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "2020 年貝魯特港口爆炸（Beirut explosion）造成大規模破壞，重建工程主要集中在住所和基礎設施。目前只有一則報導提到這件事：建築事務所 Studio Etienne Bastormagi 與兩位合作者，在一所受損學校的操場創作了地面彩繪裝置《Color Pit》，他們認為讓孩子有地方玩，本身就是一種療癒和社區復原的方式。\n\n本則來自 ArchDaily 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "2020 年貝魯特大爆炸之後，城市的重建目標幾乎都放在住所和基礎建設——操場被放在最後。有一個設計團隊認為這不對。他們在一所受損學校的操場上，用地面彩繪完成了一件裝置作品，叫《Color Pit》。核心想法很直接：讓孩子有地方跑跳、有地方玩，本身就是復原的一部分。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n貝魯特爆炸後的操場，被一個彩繪裝置找了回來\n\n2020 年貝魯特港口大爆炸（Beirut explosion）後，重建資源大多流向住所與基礎設施——操場被放在最後。目前的消息指出，Studio Etienne Bastormagi 與兩位合作者在一所受損學校的操場，以地面彩繪完成了裝置《Color Pit》，把「玩耍」定義為一種公民復原行動。\n\n—— 本則來自 ArchDaily，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "2020 年貝魯特港口爆炸（Beirut explosion）造成大規模破壞，重建工程主要集中在住所和基礎設施。目前只有一則報導提到這件事：建築事務所 Studio Etienne Bastormagi 與兩位合作者，在一所受損學校的操場創作了地面彩繪裝置《Color Pit》，他們認為讓孩子有地方玩，本身就是一種療癒和社區復原的方式。\n\n本則來自 ArchDaily 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "2020 年貝魯特大爆炸之後，城市的重建目標幾乎都放在住所和基礎建設——操場被放在最後。有一個設計團隊認為這不對。他們在一所受損學校的操場上，用地面彩繪完成了一件裝置作品，叫《Color Pit》。核心想法很直接：讓孩子有地方跑跳、有地方玩，本身就是復原的一部分。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "Color Pit is a site-specific ground intervention realized within a school playground in Beirut following the 2020 explosion. Developed by Studio Etienne Bastormagi in collaboration with Sandra Richani, and Nada Borgi, the project is rooted in the studio's broader Let's Play philosophy, which frames play as a civic and therapeutic act. In a post-disaster context where reconstruction efforts largely focused on shelter and infrastructure, the playground was identified as an overlooked yet vital space—one where children would eventually return, and where joy, movement, and imagination could quietly support recovery.",
+              "title": "Color Pit / Studio Etienne Bastormagi",
+              "url": "https://www.archdaily.com/1042067/color-pit-studio-etienne-bastormagi",
+              "published_at": "2026-06-03T03:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Studio Etienne Bastormagi 與 Sandra Richani、Nada Borgi 合作，在 2020 年貝魯特爆炸後的一所學校操場，以地面彩繪完成裝置《Color Pit》，以玩耍作為公民療癒行動。",
+              "source_id": "archdaily",
+              "source_title": "Color Pit / Studio Etienne Bastormagi",
+              "source_url": "https://www.archdaily.com/1042067/color-pit-studio-etienne-bastormagi",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260604_evt_085",
+          "headline": "英國要求Google設AI搜尋退出選項",
+          "context": "英國監管機構要求 Google 提供工具，讓網站出版商可以選擇退出（opt-out）生成式 AI 搜尋（generative AI search）功能，避免內容被用於 AI 整合搜尋結果。目前的消息指出，這項選項將先在英國測試，再推向全球。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技／AI\n\n英國出手：要求 Google 給媒體 AI 搜尋退出選項\n\n目前的消息指出，英國監管機構要求 Google 必須提供工具，讓網站出版商可以選擇退出（opt-out）生成式 AI 搜尋（generative AI search）功能。這項退出選項預計先在英國測試，之後擴展到全球。\n\n—— 本則來自 TechCrunch，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國監管機構出手，要求 Google 必須提供工具，讓網站出版商可以選擇不出現在生成式 AI 搜尋（generative AI search）結果中。目前只有一則報導提到這件事：這項退出選項（opt-out）預計先在英國測試，之後擴展到全球。\n\n本則來自 TechCrunch 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "英國監管機構要求 Google 給媒體一個選擇——可以讓自己的內容不被用在生成式 AI 搜尋結果裡。這個「退出」選項，目前的消息指出，會先在英國試行，再往全球推。對長期擔心內容被 AI 吸走的媒體來說，這是一個監管層面的進展。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技／AI\n\n英國出手：要求 Google 給媒體 AI 搜尋退出選項\n\n目前的消息指出，英國監管機構要求 Google 必須提供工具，讓網站出版商可以選擇退出（opt-out）生成式 AI 搜尋（generative AI search）功能。這項退出選項預計先在英國測試，之後擴展到全球。\n\n—— 本則來自 TechCrunch，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國監管機構出手，要求 Google 必須提供工具，讓網站出版商可以選擇不出現在生成式 AI 搜尋（generative AI search）結果中。目前只有一則報導提到這件事：這項退出選項（opt-out）預計先在英國測試，之後擴展到全球。\n\n本則來自 TechCrunch 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國監管機構要求 Google 給媒體一個選擇——可以讓自己的內容不被用在生成式 AI 搜尋結果裡。這個「退出」選項，目前的消息指出，會先在英國試行，再往全球推。對長期擔心內容被 AI 吸走的媒體來說，這是一個監管層面的進展。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "U.K. regulators are requiring Google offer a tool allowing website publishers to opt-out of generative AI search features. The option will be tested in the U.K. then rolled out globally.",
+              "title": "Publishers will be able to opt out of AI Search, thanks to new regulation",
+              "url": "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/",
+              "published_at": "2026-06-03T22:58:33+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "英國監管機構要求 Google 提供工具，讓出版商可退出生成式 AI 搜尋功能；選項先在英國測試，再推向全球。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Publishers will be able to opt out of AI Search, thanks to new regulation",
+              "source_url": "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260604_evt_007",
+          "headline": "微軟開源AI行為測試新框架",
+          "context": "微軟（Microsoft）發布了名為 ASSERT（Adaptive Spec-driven Scoring for Evaluation and Regression Testing）的開放原始碼框架，讓開發者只需用文字描述預期行為，就能自動建立 AI 模型的測試案例。目前的消息指出，這個工具旨在簡化 AI 評估流程。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技／AI\n\n微軟發布 ASSERT：用文字描述就能跑 AI 測試\n\n目前的消息指出，微軟（Microsoft）發布了開源框架 ASSERT（Adaptive Spec-driven Scoring for Evaluation and Regression Testing），讓開發者只需用文字描述預期行為，就能自動產生 AI 模型的評測案例——不用自己從頭手寫測試。\n\n—— 本則來自 TechCrunch，2026 年 6 月 2 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "微軟（Microsoft）推出了開源框架 ASSERT（Adaptive Spec-driven Scoring for Evaluation and Regression Testing）。目前只有一則報導提到這件事：這個工具讓開發者用文字描述 AI 應有的行為，系統便會自動生成對應的測試案例，簡化 AI 模型的行為評估流程。\n\n本則來自 TechCrunch 於 2026 年 6 月 2 日發佈的報導。",
+          "voice_text": "微軟推出了一個新的開源工具，叫 ASSERT，全名是「自適應規格驅動的 AI 評分評測框架」。白話說，就是你用文字告訴它 AI 應該怎麼表現，它幫你自動產生測試案例。之前要手寫這些測試，現在可以省下不少功夫。目前只有一個來源報導了這件事。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技／AI\n\n微軟發布 ASSERT：用文字描述就能跑 AI 測試\n\n目前的消息指出，微軟（Microsoft）發布了開源框架 ASSERT（Adaptive Spec-driven Scoring for Evaluation and Regression Testing），讓開發者只需用文字描述預期行為，就能自動產生 AI 模型的評測案例——不用自己從頭手寫測試。\n\n—— 本則來自 TechCrunch，2026 年 6 月 2 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "微軟（Microsoft）推出了開源框架 ASSERT（Adaptive Spec-driven Scoring for Evaluation and Regression Testing）。目前只有一則報導提到這件事：這個工具讓開發者用文字描述 AI 應有的行為，系統便會自動生成對應的測試案例，簡化 AI 模型的行為評估流程。\n\n本則來自 TechCrunch 於 2026 年 6 月 2 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "微軟推出了一個新的開源工具，叫 ASSERT，全名是「自適應規格驅動的 AI 評分評測框架」。白話說，就是你用文字告訴它 AI 應該怎麼表現，它幫你自動產生測試案例。之前要手寫這些測試，現在可以省下不少功夫。目前只有一個來源報導了這件事。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Microsoft on Tuesday took the wraps off Adaptive Spec-driven Scoring for Evaluation and Regression Testing, an open source framework for spinning up AI evaluations.",
+              "title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+              "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
+              "published_at": "2026-06-03T03:02:21+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "微軟發布開源框架 ASSERT，讓開發者用文字描述即可自動生成 AI 模型行為測試案例。",
+              "source_id": "techcrunch_ai",
+              "source_title": "New Microsoft tool lets devs spin up AI behavior tests using text descriptions",
+              "source_url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260604_evt_012",
+          "headline": "微軟測試可穿戴AI識別裝置",
+          "context": "微軟（Microsoft）正在讓公司員工測試一款可穿戴式 AI 裝置，外型類似識別證（wearable access badge），以及一款桌面裝置，主要面向辦公室工作者。目前的消息指出，細節尚有限。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技／AI\n\n微軟測試可穿戴 AI 識別牌——辦公室版的 AI 助理？\n\n目前的消息指出，微軟（Microsoft）正在讓員工測試一款「可穿戴識別牌」（wearable access badge）和一款桌面裝置，兩者均搭載 AI 功能，主要設計給辦公室工作者使用。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "微軟（Microsoft）正在讓自己的員工測試兩款新裝置：一款是可穿戴的識別牌（wearable access badge），另一款是桌面裝置，兩者都搭載 AI 功能，目標使用者是辦公室工作者。目前只有一則報導提到這件事，細節尚有限。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "微軟正在測試一款可以戴在身上的 AI 裝置，外型像識別證，還有一款桌面版。目前公司員工在試用。這是面向辦公室工作者的設計，但詳細功能目前只有一個來源報導，細節還很有限。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技／AI\n\n微軟測試可穿戴 AI 識別牌——辦公室版的 AI 助理？\n\n目前的消息指出，微軟（Microsoft）正在讓員工測試一款「可穿戴識別牌」（wearable access badge）和一款桌面裝置，兩者均搭載 AI 功能，主要設計給辦公室工作者使用。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "微軟（Microsoft）正在讓自己的員工測試兩款新裝置：一款是可穿戴的識別牌（wearable access badge），另一款是桌面裝置，兩者都搭載 AI 功能，目標使用者是辦公室工作者。目前只有一則報導提到這件事，細節尚有限。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "微軟正在測試一款可以戴在身上的 AI 裝置，外型像識別證，還有一款桌面版。目前公司員工在試用。這是面向辦公室工作者的設計，但詳細功能目前只有一個來源報導，細節還很有限。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The company said its own workers are testing a \"wearable access badge\" and a desktop device.",
+              "title": "Microsoft testing wearable AI gadget aimed at office workers",
+              "url": "https://www.bbc.com/news/articles/cwy25x97wrxo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T05:47:42+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "微軟員工正在測試可穿戴 AI 識別牌（wearable access badge）及桌面裝置，兩者均面向辦公室工作者。",
+              "source_id": "bbc_technology",
+              "source_title": "Microsoft testing wearable AI gadget aimed at office workers",
+              "source_url": "https://www.bbc.com/news/articles/cwy25x97wrxo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260604_evt_009",
+          "headline": "微軟量子晶片可靠度提升千倍",
+          "context": "微軟（Microsoft）宣布其最新量子晶片（quantum chip）的可靠度比前代高出 1,000 倍，並預測在 2030 年代結束前，將完成能夠解決商業實際問題的量子電腦。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技／AI\n\n微軟最新量子晶片：比前代可靠 1,000 倍\n\n目前的消息指出，微軟（Microsoft）宣布新量子晶片（quantum chip）的可靠度比前一代高 1,000 倍。公司預測，在 2030 年代結束前，將建成能夠解決商業實際問題的量子電腦。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "微軟（Microsoft）宣布，其最新量子晶片（quantum chip）的可靠度是前一代的 1,000 倍。目前只有一則報導提到這件事：微軟預測，在 2030 年代結束之前，將開發出能夠解決商業實際問題的量子電腦。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "微軟發布了新一代量子晶片。可靠度是前代的 1,000 倍——量子電腦目前最大的挑戰就是容錯率，這是一個不小的跨步。微軟預測，在 2030 年代結束前，他們能建出一台可以解決商業問題的量子電腦。目前只有一個來源報導了這件事。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技／AI\n\n微軟最新量子晶片：比前代可靠 1,000 倍\n\n目前的消息指出，微軟（Microsoft）宣布新量子晶片（quantum chip）的可靠度比前一代高 1,000 倍。公司預測，在 2030 年代結束前，將建成能夠解決商業實際問題的量子電腦。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "微軟（Microsoft）宣布，其最新量子晶片（quantum chip）的可靠度是前一代的 1,000 倍。目前只有一則報導提到這件事：微軟預測，在 2030 年代結束之前，將開發出能夠解決商業實際問題的量子電腦。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "微軟發布了新一代量子晶片。可靠度是前代的 1,000 倍——量子電腦目前最大的挑戰就是容錯率，這是一個不小的跨步。微軟預測，在 2030 年代結束前，他們能建出一台可以解決商業問題的量子電腦。目前只有一個來源報導了這件事。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The tech giant predicts it will have a quantum computer that can solve commercially useful problems by the end of the decade.",
+              "title": "Microsoft says new quantum chip 1,000 times more reliable than predecessor",
+              "url": "https://www.bbc.com/news/articles/cj4p7gyvp52o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T03:24:31+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "微軟最新量子晶片可靠度比前代高 1,000 倍；公司預測 2030 年代結束前將完成可解決商業問題的量子電腦。",
+              "source_id": "bbc_technology",
+              "source_title": "Microsoft says new quantum chip 1,000 times more reliable than predecessor",
+              "source_url": "https://www.bbc.com/news/articles/cj4p7gyvp52o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260604_evt_089",
+          "headline": "美國以強迫勞動為由再祭新關稅",
+          "context": "美國宣布以強迫勞動（forced labour）問題為由，對部分進口商品加徵新關稅。目前的消息指出，此舉發生在美國最高法院今年 2 月推翻川普（Donald Trump）多項先前關稅措施之後。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n最高法院打掉一批關稅，美國改以強迫勞動為由課新稅\n\n目前的消息指出，美國宣布以強迫勞動（forced labour）問題為由，對特定進口商品加徵新關稅。這次行動發生在美國最高法院今年 2 月推翻川普（Donald Trump）多項關稅措施之後。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國宣布以強迫勞動（forced labour）問題為由，對特定進口商品加徵新關稅。目前只有一則報導提到這件事，背景是美國最高法院今年 2 月推翻了川普（Donald Trump）的多項先前關稅命令。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "美國宣布要課新關稅。這次的理由是強迫勞動——就是說，有些進口商品被認為牽涉強制勞工問題。這個時間點有意思，因為美國最高法院今年 2 月才推翻了川普的一批舊關稅。目前只有一個來源報導了這件事。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n最高法院打掉一批關稅，美國改以強迫勞動為由課新稅\n\n目前的消息指出，美國宣布以強迫勞動（forced labour）問題為由，對特定進口商品加徵新關稅。這次行動發生在美國最高法院今年 2 月推翻川普（Donald Trump）多項關稅措施之後。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國宣布以強迫勞動（forced labour）問題為由，對特定進口商品加徵新關稅。目前只有一則報導提到這件事，背景是美國最高法院今年 2 月推翻了川普（Donald Trump）的多項先前關稅命令。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國宣布要課新關稅。這次的理由是強迫勞動——就是說，有些進口商品被認為牽涉強制勞工問題。這個時間點有意思，因為美國最高法院今年 2 月才推翻了川普的一批舊關稅。目前只有一個來源報導了這件事。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "It comes after the US Supreme Court struck down many of US President Donald Trump's previous duties in February.",
+              "title": "US announces new tariffs over forced labour concerns",
+              "url": "https://www.bbc.com/news/articles/cq6pe7nvldmo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T23:12:28+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "美國以強迫勞動為由對部分進口商品加徵新關稅；此舉發生在最高法院 2 月推翻川普多項關稅措施之後。",
+              "source_id": "bbc_business",
+              "source_title": "US announces new tariffs over forced labour concerns",
+              "source_url": "https://www.bbc.com/news/articles/cq6pe7nvldmo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260604_evt_017",
+          "headline": "英國央行票選未來鈔票動物圖案",
+          "context": "英格蘭銀行（Bank of England）正在舉行公眾票選，讓民眾決定未來英鎊鈔票上的動物圖案。目前的消息指出，18 種候選動物中包括海鸚（puffin）和熊蜂（bumblebee）。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n英國央行辦票選：哪隻動物上新鈔？海鸚、熊蜂都在名單上\n\n目前的消息指出，英格蘭銀行（Bank of England）正在請大眾投票，決定未來英鎊鈔票上的動物圖案。18 種候選動物中包括海鸚（puffin）和熊蜂（bumblebee）。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英格蘭銀行（Bank of England）正在舉行公眾票選，由民眾決定未來英鎊鈔票的動物圖案。目前只有一則報導提到這件事：共有 18 種動物入選候選名單，包括海鸚（puffin）和熊蜂（bumblebee）。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "英格蘭銀行正在辦一個公眾票選，請大家決定未來英鎊鈔票上要印哪種動物。18 種候選動物——包括海鸚和熊蜂。目前只有一個來源報導了這件事。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n英國央行辦票選：哪隻動物上新鈔？海鸚、熊蜂都在名單上\n\n目前的消息指出，英格蘭銀行（Bank of England）正在請大眾投票，決定未來英鎊鈔票上的動物圖案。18 種候選動物中包括海鸚（puffin）和熊蜂（bumblebee）。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英格蘭銀行（Bank of England）正在舉行公眾票選，由民眾決定未來英鎊鈔票的動物圖案。目前只有一則報導提到這件事：共有 18 種動物入選候選名單，包括海鸚（puffin）和熊蜂（bumblebee）。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英格蘭銀行正在辦一個公眾票選，請大家決定未來英鎊鈔票上要印哪種動物。18 種候選動物——包括海鸚和熊蜂。目前只有一個來源報導了這件事。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The Bank of England is asking the public which animals should appear on future banknotes.",
+              "title": "Puffin and bumblebee among 18 creatures shortlisted to feature on banknotes",
+              "url": "https://www.bbc.com/news/articles/cvgzrpe6mzjo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T07:02:18+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "英格蘭銀行向公眾徵詢意見，決定未來鈔票動物圖案，18 種候選包含海鸚和熊蜂。",
+              "source_id": "bbc_business",
+              "source_title": "Puffin and bumblebee among 18 creatures shortlisted to feature on banknotes",
+              "source_url": "https://www.bbc.com/news/articles/cvgzrpe6mzjo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260604_evt_018",
+          "headline": "英國四分之三工作者退休金不足",
+          "context": "英國一份新報告指出，四分之三的工作者，目前退休儲蓄進度不足以支撐「中等生活水準」的退休生活。目前的消息指出，報告定義的「中等水準」是單人每年需約 3.27 萬英鎊、雙人需約 4.54 萬英鎊。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n英國退休儲蓄報告：四分之三工作者存款跟不上\n\n目前的消息指出，一份新發布的報告顯示，英國四分之三的工作者，退休儲蓄進度跟不上「中等生活水準」的標準。所謂「中等退休水準」，單人每年約需 3.27 萬英鎊，雙人則需 4.54 萬英鎊。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國一份新報告指出，目前四分之三的工作者，退休儲蓄進度不足以支持「中等生活水準」的退休生活。報告定義的「中等水準」是：單人每年需要約 3.27 萬英鎊，雙人則需要 4.54 萬英鎊。目前只有一則報導提到這份研究。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "英國有一份新報告，結果不太好看。四分之三的工作者，退休儲蓄目前的進度，不夠支撐退休後的「中等生活水準」。什麼叫中等？報告的定義是：一個人住，每年要 3.27 萬英鎊——大概是新台幣 130 萬。兩個人一起退休，要 4.54 萬英鎊。目前只有一個來源報導了這份研究。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n英國退休儲蓄報告：四分之三工作者存款跟不上\n\n目前的消息指出，一份新發布的報告顯示，英國四分之三的工作者，退休儲蓄進度跟不上「中等生活水準」的標準。所謂「中等退休水準」，單人每年約需 3.27 萬英鎊，雙人則需 4.54 萬英鎊。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國一份新報告指出，目前四分之三的工作者，退休儲蓄進度不足以支持「中等生活水準」的退休生活。報告定義的「中等水準」是：單人每年需要約 3.27 萬英鎊，雙人則需要 4.54 萬英鎊。目前只有一則報導提到這份研究。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國有一份新報告，結果不太好看。四分之三的工作者，退休儲蓄目前的進度，不夠支撐退休後的「中等生活水準」。什麼叫中等？報告的定義是：一個人住，每年要 3.27 萬英鎊——大概是新台幣 130 萬。兩個人一起退休，要 4.54 萬英鎊。目前只有一個來源報導了這份研究。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "A newly-published report suggests a moderate lifestyle in retirement costs £32,700 for one person and £45,400 for two.",
+              "title": "Three-quarters of workers not on track for 'moderate' pension income, report suggests",
+              "url": "https://www.bbc.com/news/articles/c3928m30v89o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T07:02:23+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "報告指出四分之三英國工作者退休儲蓄不足；中等退休生活水準為單人每年 3.27 萬英鎊、雙人 4.54 萬英鎊。",
+              "source_id": "bbc_business",
+              "source_title": "Three-quarters of workers not on track for 'moderate' pension income, report suggests",
+              "source_url": "https://www.bbc.com/news/articles/c3928m30v89o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260604_evt_031",
+          "headline": "波士頓免費餐廳年初人數暴增三成",
+          "context": "美國波士頓一家社區咖啡廳（community cafe）提供免費餐食，今年初以來每日用餐人數從約 60 人增至超過 90 人。目前的消息指出，對某些用餐者來說，失去這頓免費的飯，晚餐就只剩一碗湯了。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n波士頓社區免費餐廳：用餐人數年初起增了三分之一\n\n目前的消息指出，美國波士頓一家提供免費餐食的社區咖啡廳，今年初以來每日用餐人數從約 60 人增至超過 90 人。有人說，若沒有這頓免費的飯，晚餐就只剩一碗湯了。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國波士頓一家社區咖啡廳提供免費餐食，今年初以來每日用餐人數從約 60 人增至超過 90 人。目前只有一則報導提到這件事：對這些人來說，沒有這頓免費的飯，晚餐就只剩一碗湯了。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "美國波士頓有一家社區咖啡廳，提供免費餐食給有需要的人。今年初以來，每天來用餐的人數從大約 60 人，增加到超過 90 人——增幅超過三分之一。有人說，如果沒有這頓免費的飯，晚餐就只剩一碗湯了。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n波士頓社區免費餐廳：用餐人數年初起增了三分之一\n\n目前的消息指出，美國波士頓一家提供免費餐食的社區咖啡廳，今年初以來每日用餐人數從約 60 人增至超過 90 人。有人說，若沒有這頓免費的飯，晚餐就只剩一碗湯了。\n\n—— 本則來自 BBC，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國波士頓一家社區咖啡廳提供免費餐食，今年初以來每日用餐人數從約 60 人增至超過 90 人。目前只有一則報導提到這件事：對這些人來說，沒有這頓免費的飯，晚餐就只剩一碗湯了。\n\n本則來自 BBC 於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國波士頓有一家社區咖啡廳，提供免費餐食給有需要的人。今年初以來，每天來用餐的人數從大約 60 人，增加到超過 90 人——增幅超過三分之一。有人說，如果沒有這頓免費的飯，晚餐就只剩一碗湯了。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Community cafe in Boston says numbers rose from about 60 to more than 90 at the start of the year.",
+              "title": "'Without free meal, it's a cup of soup for dinner'",
+              "url": "https://www.bbc.com/news/articles/ceqp3r4qz2do?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-03T13:01:14+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "波士頓社區咖啡廳提供免費餐食，今年初以來每日用餐人數從約 60 人增至超過 90 人。",
+              "source_id": "bbc_business",
+              "source_title": "'Without free meal, it's a cup of soup for dinner'",
+              "source_url": "https://www.bbc.com/news/articles/ceqp3r4qz2do?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260604_evt_036",
+          "headline": "海豚認聲避開攻擊性雄性同類",
+          "context": "《美國國家科學院院刊》（PNAS）一項研究指出，雌性海豚能透過雄性海豚特有的哨聲，辨認並記住曾在交配季節表現出強迫或攻擊行為的個體，進而主動迴避。年長或正在哺育幼兒的雌性海豚，由於未處於交配狀態，這種迴避反應較不明顯。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/1\n📌 台灣\n\n雌海豚認得出哪隻雄海豚「行為不好」——靠的是哨聲\n\n目前的消息指出，刊於《美國國家科學院院刊》（PNAS）的一項研究發現，雌性海豚能透過雄性的獨特哨聲，辨認並記住曾在交配季節出現攻擊性或強迫行為的個體，並主動迴避。年長或正在哺育幼兒的雌海豚，因不處於交配狀態，這種反應較不明顯。\n\n—— 本則來自公視，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "《美國國家科學院院刊》（PNAS）一項研究指出，雌性海豚可以透過哨聲辨識雄性海豚。目前只有一則報導提到這件事：研究發現，雌海豚能記住哪些雄海豚曾在交配季節出現攻擊或強迫行為，並主動避開這些個體。年長或正在哺育幼兒的雌海豚，因不在交配狀態，這種行為較不明顯。\n\n本則來自公視於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "海豚的溝通能力不只是回聲定位。一項刊於《美國國家科學院院刊》的新研究發現，雌性海豚可以透過哨聲，辨認出哪些雄性曾在交配季節出現攻擊或強迫行為，而且還記得住——然後主動避開這些個體。不過，年長或正在帶小孩的雌海豚，因為不在交配狀態，這種迴避反應就比較不明顯了。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 台灣\n\n雌海豚認得出哪隻雄海豚「行為不好」——靠的是哨聲\n\n目前的消息指出，刊於《美國國家科學院院刊》（PNAS）的一項研究發現，雌性海豚能透過雄性的獨特哨聲，辨認並記住曾在交配季節出現攻擊性或強迫行為的個體，並主動迴避。年長或正在哺育幼兒的雌海豚，因不處於交配狀態，這種反應較不明顯。\n\n—— 本則來自公視，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "《美國國家科學院院刊》（PNAS）一項研究指出，雌性海豚可以透過哨聲辨識雄性海豚。目前只有一則報導提到這件事：研究發現，雌海豚能記住哪些雄海豚曾在交配季節出現攻擊或強迫行為，並主動避開這些個體。年長或正在哺育幼兒的雌海豚，因不在交配狀態，這種行為較不明顯。\n\n本則來自公視於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "海豚的溝通能力不只是回聲定位。一項刊於《美國國家科學院院刊》的新研究發現，雌性海豚可以透過哨聲，辨認出哪些雄性曾在交配季節出現攻擊或強迫行為，而且還記得住——然後主動避開這些個體。不過，年長或正在帶小孩的雌海豚，因為不在交配狀態，這種迴避反應就比較不明顯了。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "《美國國家科學院院刊》一項最新研究指出，雌性海豚會透過雄性海豚獨特的哨聲，辨識並記住曾在交配季節出現強迫或攻擊行為的雄性海豚，進而主動避開這些「行為粗暴」的雄性海豚；不過若是年長或正在育兒的雌性海豚，由於不處於交配狀態，類似反應就會較不明顯。",
+              "title": "研究：雌海豚能憑哨聲辨認雄海豚 交配期主動避開具攻擊性者",
+              "url": "https://news.pts.org.tw/article/811322",
+              "published_at": "2026-06-03T14:26:38+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "《PNAS》研究：雌性海豚可透過哨聲辨認並記住有攻擊行為的雄性個體，主動迴避；不在交配狀態的雌海豚反應較不明顯。",
+              "source_id": "pts_news",
+              "source_title": "研究：雌海豚能憑哨聲辨認雄海豚 交配期主動避開具攻擊性者",
+              "source_url": "https://news.pts.org.tw/article/811322",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260604_evt_043",
+          "headline": "安泰醫院火災案4人遭逆轉起訴",
+          "context": "2024 年屏東安泰醫院大火造成 9 死，榮譽院長蘇清泉等 4 名被告原獲緩起訴處分。屏東地檢署重啟偵辦後，今日將 4 人全數改依違反《建築法》致人於死罪及過失致死等罪起訴。4 人均已坦承犯行，並與多名死者家屬達成和解、負擔部分賠償，檢察官建請法院量處適當刑度。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/1\n📌 台灣\n\n安泰醫院大火案逆轉：蘇清泉等 4 人改遭起訴\n\n屏東安泰醫院 2024 年大火造成 9 人死亡。目前的消息指出，榮譽院長蘇清泉等 4 人原先獲得緩起訴處分，但屏東地檢署重啟偵辦後，今（3）日改將 4 人依違反《建築法》致人於死罪及過失致死等罪全數起訴。4 人均已坦承犯行，並與多名死者家屬達成和解、負擔部分賠償，檢察官建請法院量處適當刑度。\n\n—— 本則來自公視，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "屏東安泰醫院 2024 年大火釀 9 死，榮譽院長蘇清泉等 4 名被告原先獲緩起訴處分。屏東地檢署重啟偵辦後，今（3）日將 4 人全數改依違反《建築法》致人於死罪及過失致死等罪起訴。目前只有一則報導提到，4 人均已坦承犯行，並與多名死者家屬達成和解、負擔部分賠償，檢察官建請法院量處適當刑度。\n\n本則來自公視於 2026 年 6 月 3 日發佈的報導。",
+          "voice_text": "屏東安泰醫院 2024 年大火，當時造成 9 人死亡。這個案子有個轉折：榮譽院長蘇清泉等 4 人，原本拿到的是「緩起訴」——暫時不起訴的處分。但地檢署重啟偵辦，今天把 4 人全部改依《建築法》致人於死、過失致死等罪名起訴。4 人都已坦承犯行，並與部分死者家屬達成和解、支付了部分賠償，所以檢察官建議法院給予適當的刑度。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 台灣\n\n安泰醫院大火案逆轉：蘇清泉等 4 人改遭起訴\n\n屏東安泰醫院 2024 年大火造成 9 人死亡。目前的消息指出，榮譽院長蘇清泉等 4 人原先獲得緩起訴處分，但屏東地檢署重啟偵辦後，今（3）日改將 4 人依違反《建築法》致人於死罪及過失致死等罪全數起訴。4 人均已坦承犯行，並與多名死者家屬達成和解、負擔部分賠償，檢察官建請法院量處適當刑度。\n\n—— 本則來自公視，2026 年 6 月 3 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "屏東安泰醫院 2024 年大火釀 9 死，榮譽院長蘇清泉等 4 名被告原先獲緩起訴處分。屏東地檢署重啟偵辦後，今（3）日將 4 人全數改依違反《建築法》致人於死罪及過失致死等罪起訴。目前只有一則報導提到，4 人均已坦承犯行，並與多名死者家屬達成和解、負擔部分賠償，檢察官建請法院量處適當刑度。\n\n本則來自公視於 2026 年 6 月 3 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "屏東安泰醫院 2024 年大火，當時造成 9 人死亡。這個案子有個轉折：榮譽院長蘇清泉等 4 人，原本拿到的是「緩起訴」——暫時不起訴的處分。但地檢署重啟偵辦，今天把 4 人全部改依《建築法》致人於死、過失致死等罪名起訴。4 人都已坦承犯行，並與部分死者家屬達成和解、支付了部分賠償，所以檢察官建議法院給予適當的刑度。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "屏東安泰醫院2024年大火釀9死，榮譽院長蘇清泉等4人原先獲得緩起訴處分，屏東地檢署重新偵辦後，今（3）日改將4人依違反《建築法》致人於死罪、過失致死等罪全數起訴，不過考量4人均已坦承犯行，並與多名死者家屬達成和解及負擔部分賠償金，因此建請法院量處適當刑度。",
+              "title": "屏東安泰醫院9死大火重啟偵辦 蘇清泉等4人逆轉遭起訴",
+              "url": "https://news.pts.org.tw/article/811324",
+              "published_at": "2026-06-03T15:43:08+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "屏東安泰醫院 2024 年大火 9 死；蘇清泉等 4 人原獲緩起訴，地檢署重啟偵辦後改依《建築法》致人於死及過失致死罪起訴；4 人坦承犯行並與家屬和解。",
+              "source_id": "pts_news",
+              "source_title": "屏東安泰醫院9死大火重啟偵辦 蘇清泉等4人逆轉遭起訴",
+              "source_url": "https://news.pts.org.tw/article/811324",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 26,
+    "total_feeds_failed": 13,
+    "total_articles_fetched": 142,
+    "total_articles_after_filter": 135,
+    "total_events_merged": 125,
+    "total_events_selected": 18,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260604_evt_011",
+      "headline": "Scenes from the aftermath of Russia's latest massive attack on Kyiv",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_112",
+      "headline": "Iran faces a new energy imbalance, but its options are limited",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_117",
+      "headline": "Dalai Lama receives Grammy award for spoken-word album",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_010",
+      "headline": "Mayor cancels DR Congo friendly with Chile in Spain over Ebola concern",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_013",
+      "headline": "Israel strikes southern Lebanon but partial truce with Hezbollah appears to hold",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_016",
+      "headline": "Do you find yourself aimlessly scrolling? You're not alone",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_021",
+      "headline": "Watch: Man attacked by bear at steel works in Japan",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_024",
+      "headline": "Now you can hire people to carry your shopping bags in Delhi - will it work?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_026",
+      "headline": "Indonesia's Prabowo fires head of free meals scheme plagued by poisonings",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_032",
+      "headline": "Shell pumped oil through Nigeria pipeline for years despite pollution evidence, documents show",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_033",
+      "headline": "Publishers in UK can opt out of Google AI search results",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_044",
+      "headline": "首期碳費全台工廠共繳納49.7億 半導體業占比逾4成最多",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_046",
+      "headline": "Celine Dion 'heartbroken' by death of Beauty and the Beast singer Peabo Bryson",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_047",
+      "headline": "台灣芒果、荔枝成功進軍歐洲 首批6.5噸登法國最大批發市場",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_050",
+      "headline": "She watched a wildfire destroy her town, so she's building fire-proof bunkers",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_052",
+      "headline": "日角川漫畫競賽台灣奪3獎 無台詞部門包辦金、銅兩大獎",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_053",
+      "headline": "長大不會好？為什麼我30歲才發現自己有ADHD？【新聞實驗室】",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_054",
+      "headline": "Foreign nationals among at least 21 killed in Delhi fire",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_055",
+      "headline": "川普簽署AI監管行政命令 要求新模型上路前先送政府測試",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_056",
+      "headline": "COMPUTEX第二日 黃仁勳合體鴻海董事長劉揚偉",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_057",
+      "headline": "法務部預告修法 將刪民法兄弟姊妹特留分",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_058",
+      "headline": "台中男子凌虐同居人女兒致死 遭起訴裁定羈押禁見",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_059",
+      "headline": "美301調查擬加徵10%關稅 行政院：最終稅率尚未定案",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_060",
+      "headline": "日菲EEZ談判範圍涵蓋台灣外海 外交部：確認不影響我主權",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_061",
+      "headline": "檢重啟偵辦安泰醫院火警案 起訴蘇清泉等4人",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_062",
+      "headline": "緬北礦產爆炸意外已近60死 居民不知周遭存放大量炸藥",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_063",
+      "headline": "伊朗5月CPI年增率漲77.2% 通膨達二戰以來新高",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_064",
+      "headline": "Norwegian teen was in UK to 'undertake a hit', court hears",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_065",
+      "headline": "亞洲第三座「哈維爾長椅」 大安森林公園揭牌",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_068",
+      "headline": "防堵伊波拉病毒 機場供2國入境者免費採檢",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_069",
+      "headline": "台灣首徵碳費進帳近50億 半導體業成主力佔逾44%",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_070",
+      "headline": "去年逾50名15歲以下兒童涉謀殺 瑞典擬下修刑責至13歲",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_071",
+      "headline": "以「日」計彈性育嬰上路至今 5月男性申請數首超越女性",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_072",
+      "headline": "薔蜜颱風凌晨登陸和歌山 日本多處災情已知23人傷",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_073",
+      "headline": "印度「蟑螂黨」運動獲青年共鳴 創辦人稱遭政府封鎖帳號",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_074",
+      "headline": "加州州長採「叢林初選」制 自61位候選人選出前二",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_075",
+      "headline": "印度新德里飯店失火 已知21死、7人重傷",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_076",
+      "headline": "Universal park officially named as government pledges £1.3bn",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_077",
+      "headline": "六四天安門事件37周年 中國首禁悼念儀式",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_078",
+      "headline": "Trump-backed candidate in Iowa loses primary",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_081",
+      "headline": "Phone signal on trains not good enough most of the time, research says",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_090",
+      "headline": "CBS News fires correspondent Scott Pelley from 60 Minutes",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_092",
+      "headline": "Eight killed after drone hits bus in Russian-occupied part of Ukraine",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_094",
+      "headline": "Director Wim Wenders withdraws 1975 film over actress's teen topless scene",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_097",
+      "headline": "Ex-UK political aide and Biden cabinet secretary lead California governor primary vote count",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_101",
+      "headline": "Man shot dead by FBI after taking hostages at California bank",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_102",
+      "headline": "Four sentenced to death for killing worshippers at Catholic church in Nigeria",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_114",
+      "headline": "The end of Trump's 'anti-weaponisation' fund is another sign Republicans are fighting back",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_115",
+      "headline": "From butterflies to breast milk, Uber's list of lost items reveals wild backseat discoveries",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_123",
+      "headline": "'Crazy' phone call between Trump and Netanyahu complicates Iran talks",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_001",
+      "headline": "Google rolls out fake call detection to protect against AI deepfake impersonation scams",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_002",
+      "headline": "Microsoft offers devs a better way to control AI agent behavior",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_004",
+      "headline": "Microsoft launches Scout, an OpenClaw-inspired personal assistant",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_005",
+      "headline": "Martin Scorsese becomes the latest — and most unlikely — Hollywood voice for AI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_008",
+      "headline": "Uber caps employee AI spending after blowing through budget in 4 months",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_015",
+      "headline": "Cyera eyes $12B valuation at 80x ARR multiple despite operating losses",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_067",
+      "headline": "Coralogix raises $200M on bet that someone needs to watch the AI agents",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_079",
+      "headline": "Meta’s AI agent for WhatsApp Business is now available globally",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_080",
+      "headline": "Greetings from Porto, whose lanes are lined with colorful textiles",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_082",
+      "headline": "‘Doesn’t seem qualified’: Who is Bill Pulte, acting US intelligence chief?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_083",
+      "headline": "Sabalenka the latest French Open shock exit as Shnaider wins quarterfinal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_084",
+      "headline": "Three British navy personnel killed in helicopter crash in England",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_086",
+      "headline": "Pro-Palestine US army veteran Adam Hamawy wins New Jersey primary",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_087",
+      "headline": "These two founders left Goldman and Meta to build voice AI for markets everyone else overlooked",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_091",
+      "headline": "FBI agents fatally shoot alleged hostage-taker in California",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_093",
+      "headline": "Turkiye’s top diplomat, Indonesia’s president discuss $10bn trade goal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_095",
+      "headline": "UK minister condemns violent protests against student’s murder",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_096",
+      "headline": "Which World Cup 2026 stadiums will host matches in US, Canada and Mexico?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_098",
+      "headline": "Amazon will show AI product images when you search for some reason",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_100",
+      "headline": "The Ebola outbreak the world isn’t paying attention to",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_103",
+      "headline": "Israeli settlers are driving Palestinian shepherds from their grazing lands",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_104",
+      "headline": "Bangladesh’s top diplomat elected UN General Assembly leader in tight race",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_106",
+      "headline": "‘Disgraceful’: Egypt jails activist Douma after article on its prisons",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_107",
+      "headline": "FIFA World Cup 2026: Can Asian champions Qatar reach the knockouts?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_109",
+      "headline": "US cites forced labour concerns as grounds for new tariffs",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_110",
+      "headline": "Lula says Brazil cannot ‘accept treatment’ after new US tariffs proposed",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_111",
+      "headline": "Israeli attacks kill nine in Lebanon, reach Beirut outskirts",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_113",
+      "headline": "Gunfire erupts in Mogadishu before protests against Somali president’s rule",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_116",
+      "headline": "Google’s Dreambeans, its weirdest-named AI tool to date, will turn your life into a cartoon",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_119",
+      "headline": "Israeli strikes near Tyre hospital put youngest patient at risk",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_120",
+      "headline": "Alphabet’s record-breaking $85B raise for Google’s AI business is a helluva good signal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_121",
+      "headline": "Israel’s decades-long history of invading Lebanon",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_122",
+      "headline": "Ten years on, world remembers Muhammad Ali ‘the Greatest’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_124",
+      "headline": "Does Israel have nukes? ‘Most of the world assesses they do,’ says Rubio",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_022",
+      "headline": "A World in Between: The Role of Hybrid Forms in Contemporary Bathrooms",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_023",
+      "headline": "Children’s Hospital at Westmead / Billard Leece Partnership",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_025",
+      "headline": "Amaltash House / Design Ni Dukaan",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_027",
+      "headline": "MIT researchers teach AI models to interpret charts",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_028",
+      "headline": "Reimagining Air Conditioning: Traditional Cooling Methods for the Future",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_029",
+      "headline": "VitrA and Snøhetta collaborate on Milan design week installation",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_034",
+      "headline": "Bread & Heart Festival 2026 Gathers International Architects in Tirana to Explore Albania's \"Landscapes of Abundance\"",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_035",
+      "headline": "Ishøj Theater / Svendborg Architects + Wohlert Arkitekter",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_037",
+      "headline": "Diriyah Biennale Foundation Announces Four Studios Shortlisted for the 2027 AlMusalla Prize",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_038",
+      "headline": "How Real-Time Tools Are Transforming Architectural Practice",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_040",
+      "headline": "Red Valley Dwellings / line+ studio",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_041",
+      "headline": "Dezeen Awards 2026 late entries close today",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_042",
+      "headline": "Design as Repair: How Architecture Is Advancing Environmental Justice",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_045",
+      "headline": "First images of crinkle crankle Serpentine Pavilion revealed",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_048",
+      "headline": "T.ark architects cloaks Laugarás Lagoon in Iceland with \"grass tent\"",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_049",
+      "headline": "Lotti chair by Keiji Takeuchi for NaughtOne",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_066",
+      "headline": "Domus outdoor lighting collection by Joan Gaspar for Marset",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_088",
+      "headline": "Urban forest surrounding stadium among projects from Manchester School of Architecture",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_099",
+      "headline": "The architecture of 13 presidential libraries from Hoover to Bush",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_105",
+      "headline": "Felipe Caboclo Arquitectura creates \"sublime path\" at undulating private chapel in São Paulo",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_118",
+      "headline": "TO and Palma design museum as \"climatic infrastructure for Panama City\"",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_125",
+      "headline": "Tod Machover receives George Peabody Medal for contributions to music and technology",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260604_evt_003",
+      "headline": "Dezeen Debate features a \"sorely needed\" toilet block in London",
+      "selection_score": -32,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

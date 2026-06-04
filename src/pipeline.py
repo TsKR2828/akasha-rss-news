@@ -245,7 +245,9 @@ def run_pipeline(
     format_start = time.time()
     stats = _collect_stats(date)
     events, dropped, rewrite_warnings = _read_selected_events(date)
-    stats["tw_highlights_count"] = sum(1 for e in events if e.get("tw_highlight"))
+    stats["tw_highlights_count"] = sum(
+        1 for e in events if e.get("tw_highlight") or e.get("beat") == "PTS_LOCAL"
+    )
 
     try:
         report, validation_issues = generate_all_outputs(

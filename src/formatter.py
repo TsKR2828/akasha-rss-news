@@ -1038,7 +1038,9 @@ def main(argv: Optional[list[str]] = None) -> int:
         "total_articles_after_filter": total_articles_after_filter,
         "total_events_merged": len(selected_ids) + len(dropped),
         "total_events_selected": len(selected_ids),
-        "tw_highlights_count": sum(1 for e in events if e.get("tw_highlight")),
+        "tw_highlights_count": sum(
+            1 for e in events if e.get("tw_highlight") or e.get("beat") == "PTS_LOCAL"
+        ),
     }
 
     LOG.info("Formatting %d selected events (+ %d dropped)", len(events), len(dropped))

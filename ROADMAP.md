@@ -150,12 +150,12 @@ output/logs/run_YYYYMMDD.json
 
 Claude Code Routine 連跑 7 天無人工介入。
 
-- [x] `src/pipeline.py`（串接 Phase 1–4 所有模組的 main 入口）+ 19 條測試
+- [x] `src/pipeline.py`（串接 Phase 1–4 所有模組的 main 入口）+ 21 條測試
 - [x] `prompts/routine_prompt.md` 正式版（指令：`python -m src.pipeline`）
 - [x] Claude Code Routine 設定（每日 05:00 Asia/Taipei → `0 21 * * *` UTC）
 - [ ] 通知管道（月月決定先不做，之後再加）
-- [ ] 同日重跑 idempotent 測試
-- [ ] 連跑 7 天穩定性測試
+- [x] 同日重跑 idempotent 測試（2 條測試：summary 一致 + 檔案覆寫不重複）
+- [ ] 連跑 7 天穩定性測試（routine 已連續產出 6 天報告：05-30~06-04，待補齊 7 天）
 
 **Routine 資訊：**
 - ID: `trig_01YZgdnxrvUsTLDh6YQKaDY4`
@@ -169,7 +169,7 @@ Claude Code Routine 連跑 7 天無人工介入。
 - run log 完整記錄每個 step 的 duration 與 status
 - 連跑 7 天無人工介入仍可產出可讀報告
 
-**Phase 5 狀態：** 🔧 進行中（pipeline + routine 已設定，待穩定性驗證）
+**Phase 5 狀態：** 🔧 進行中（pipeline + routine 已設定，idempotent 測試完成，待 7 天連續穩定驗證）
 
 ---
 

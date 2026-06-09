@@ -169,10 +169,10 @@ tests/test_pipeline.py          19 條
 
 ## Recent Commits
 
+- `dee18c5` docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session
 - `66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
 - `1829402` fix: tw_highlight Chinese keywords + count PTS_LOCAL in stats
 - `ae677b0` chore: add HANDOFF.md, historical raw data, and 05-21 review files
-- `5f0bdc4` fix: data layer audit — dirty data + rule consistency
 
 ---
 
@@ -215,7 +215,7 @@ TODO 清單（`TODO.md`）：
 
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
 - **Branch**：main
-- **Latest commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
+- **Latest commit**：`dee18c5` docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session
 - **User**：月月 / dr1090a@gmail.com
 
 ---

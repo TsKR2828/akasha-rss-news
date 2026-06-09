@@ -80,6 +80,19 @@ def _has_ai_keyword(article: dict, ai_beat_def: dict) -> bool:
     return any(kw.lower() in text for kw in ai_beat_def.get("keywords_en", []))
 
 
+def _has_econ_keyword(article: dict, econ_beat_def: dict) -> bool:
+    """ECON beat 例外規則（同 AI §6.2 模式）。
+
+    商業類 RSS 常夾帶非經濟新聞（空難、機場擴建等），
+    例外來源須 title/summary 命中 ECON 關鍵字才算 ECON。
+    """
+    text = (article.get("title", "") + " " + (article.get("summary") or "")).lower()
+    keywords_en = econ_beat_def.get("keywords_en", [])
+    keywords_zh = econ_beat_def.get("keywords_zh", [])
+    return (any(kw.lower() in text for kw in keywords_en) or
+            any(kw in text for kw in keywords_zh))
+
+
 def classify(
     article: dict,
     beats_config: dict,
@@ -100,6 +113,7 @@ def classify(
 
     source_beats = set(article.get("beat_candidates", []))
     ai_exception_sources = set(beats_config.get("ai_exception_sources", []))
+    econ_exception_sources = set(beats_config.get("econ_exception_sources", []))
     beats = beats_config.get("beats", {})
 
     # 提取一次實體，供所有 beat 共用
@@ -123,7 +137,15 @@ def classify(
             and article.get("source_id") in ai_exception_sources
             and not _has_ai_keyword(article, beat_def)
         ):
-            # 降權：直接給 0，等於排除 AI 候選
+            scores[beat_id] = 0.0
+            continue
+
+        # ECON 例外 — 商業來源若 title/summary 沒命中 ECON 關鍵字，ECON 該篇降權
+        if (
+            beat_id == "ECON"
+            and article.get("source_id") in econ_exception_sources
+            and not _has_econ_keyword(article, beat_def)
+        ):
             scores[beat_id] = 0.0
             continue
 

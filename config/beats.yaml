@@ -231,6 +231,15 @@ ai_match_rules:
   - 出現模型、AI 公司、AI 法規、AI 研究主題
   - Claude 判定與 AI 主題直接相關
 
+# ---------- ECON 分類例外 ----------
+# 商業類 RSS 常夾帶非經濟新聞（空難、機場擴建等），
+# 需二次過濾：title/summary 須命中 ECON 關鍵字才算 ECON
+econ_exception_sources:
+  - bbc_business
+  - reuters_business_google_news
+  - nyt_business
+  - guardian_business
+
 # ---------- Taiwan Highlight 判定 ----------
 # 對應規格 §6.3
 tw_highlight:

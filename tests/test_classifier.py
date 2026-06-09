@@ -23,6 +23,8 @@ BEATS_CONFIG = {
         "min_score": 0.45,
     },
     "ai_exception_sources": ["the_verge", "bbc_technology", "ars_technica_ai"],
+    "econ_exception_sources": ["bbc_business", "reuters_business_google_news",
+                               "nyt_business", "guardian_business"],
     "beats": {
         "INTL": {
             "keywords_en": ["war", "summit", "treaty", "sanctions"],
@@ -132,6 +134,42 @@ class TestAIException:
                        summary="dolor sit amet")
         primary, scores = classifier.classify(art, BEATS_CONFIG)
         assert primary == "AI"
+
+
+class TestECONException:
+    def test_bbc_business_without_econ_keyword_demoted(self):
+        """ECON 例外：BBC Business 沒命中 ECON 關鍵字 → ECON 得 0。"""
+        art = _article(source_id="bbc_business", beats=["ECON"],
+                       title="India air crash kills 200",
+                       summary="Passenger plane crashes near airport.")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert scores.get("ECON", 0) == 0.0
+        assert primary is None
+
+    def test_bbc_business_with_econ_keyword_kept(self):
+        """ECON 例外：BBC Business 命中 ECON 關鍵字 → 正常分類。"""
+        art = _article(source_id="bbc_business", beats=["ECON"],
+                       title="Fed raises interest rate amid inflation fears",
+                       summary="Central bank signals more hikes.")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "ECON"
+        assert scores["ECON"] >= 0.45
+
+    def test_non_exception_econ_source_kept_without_keyword(self):
+        """非例外 ECON 來源即使沒關鍵字，source default 仍給 0.6。"""
+        art = _article(source_id="some_finance_feed", beats=["ECON"],
+                       title="Lorem ipsum", summary="dolor sit amet")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "ECON"
+        assert scores["ECON"] == pytest.approx(0.6)
+
+    def test_econ_exception_chinese_keyword_passes(self):
+        """ECON 例外：中文關鍵字（通膨）也能通過。"""
+        art = _article(source_id="bbc_business", beats=["ECON"],
+                       title="全球通膨壓力持續", summary="各國央行面臨挑戰")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "ECON"
+        assert scores["ECON"] >= 0.45
 
 
 class TestPTSLocal:

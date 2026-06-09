@@ -44,7 +44,7 @@ PROMPT_PATH = PROJECT_ROOT / "prompts" / "rewrite_prompt.md"
 TAIPEI = timezone(timedelta(hours=8))
 
 # Claude API 設定
-MODEL = "claude-sonnet-4-20250514"
+MODEL = "claude-sonnet-4-6"
 MAX_TOKENS = 4096
 TEMPERATURE = 0.3  # 低溫度：改寫需忠於原文
 

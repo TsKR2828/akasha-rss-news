@@ -1,4 +1,4 @@
-# 交接文件 — 2026-05-25（Data Layer Audit 完成後）
+# 交接文件 — 2026-06-09
 
 給下一個 Claude Code 視窗的工作摘要。
 
@@ -12,72 +12,93 @@
 
 ## 目前在哪
 
-**Phase 5（Routine 自動化）— 資料層審查完成，等穩定性測試。**
+**Phase 5（Routine 自動化）— pipeline live 運作中，報告序列 05-21 起連續產出。**
 
 Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
-月月從 05-21 開始每天 review 產出，經歷三輪品質修復 + 一輪資料層審查。
-所有已知問題已修完，359 條測試全綠。
+最近兩個視窗做了：
+1. tw_highlight 中文關鍵字修復 + PTS_LOCAL 計入台灣相關統計
+2. 四項品質改進（CNA 來源、選材去重、remote_blocked 統計分離、rewrite prompt 強化）
+3. 6/1 報告手動補回（routine 當天 limit hit 未執行）
+
+360 條測試全綠。
 
 ---
 
 ## Git 狀態
 
-- **Branch**：`main`
+- **Branch**：`main`（目前 checkout）
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
-- **Latest commit**：`5f0bdc4` fix: data layer audit — dirty data + rule consistency
-- **Tests**：359 passed, 0 failed（~4 秒）
-- **Untracked**：`HANDOFF.md` + 4 個 review 暫存檔（`daily_20260521_review.*`），不需 commit
+- **Latest commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
+- **Tests**：360 passed, 0 failed（~4.5 秒）
+- **Working tree**：clean
+
+### 雙分支策略
+
+| Branch | 用途 | 最新 commit |
+|--------|------|-------------|
+| `main` | 程式碼 | `66c151a` — CNA + dedup tuning + remote_blocked stats + prompt |
+| `daily-reports` | 每日產出（routine push） | `963326e` — daily-report: 2026-06-01 |
 
 ---
 
-## 這個視窗做了什麼（Data Layer Audit）
+## 這個視窗做了什麼
 
-系統性審查整個 pipeline 的資料流，從 normalize → classifier → cluster → selector → rewrite → formatter 逐層檢查欄位是否正確傳遞、規則是否一致。修了 10 項問題，新增 18 條測試。
+### Session 1：tw_highlight 修復 + 6/1 報告補回
 
-### 髒數據修復（5 項）
+| 問題 | 修法 |
+|------|------|
+| 台灣相關統計 = 0（公視文章存在但沒偵測到） | `beats.yaml` 加中文關鍵字（11 positive + 16 context + 3 FP）；`pipeline.py` + `formatter.py` 把 PTS_LOCAL beat 也計入 tw_highlights_count |
+| 6/1 報告缺失（routine limit hit） | 從 6/2 remote raw data + 本地 fetch blocked sources → 跑完整 pipeline → 手動改寫 18 則 → push 到 daily-reports |
+| 6/2 報告被覆蓋 | 確認 merge 保留了更完整的版本（155 vs 141 articles），無需修復 |
 
-| # | 嚴重度 | 模組 | 問題 | 修法 |
-|---|---|---|---|---|
-| 1 | HIGH | dedup.py | `_selection_manifest.json` 被 glob 撈入當 article | 過濾 `_` 前綴檔 |
-| 2 | HIGH | normalize.py | BBC `at_medium` 等追蹤參數未清除 | TRACKING_PARAMS 10→27 項 |
-| 3 | HIGH | claude_rewrite.py | source summary 取了 `name`（publisher）而非 `summary` | 修正取值 + event_cluster 帶入 summary |
-| 4 | MEDIUM | normalize.py | RSS summary 含原始 HTML 流入下游 | 新增 `_strip_html()`（避免循環 import） |
-| 5 | MEDIUM | event_cluster.py | source name 用 `sid.replace("_"," ").title()` 合成 | 改用 `article["publisher"]` |
+**Commit**：`1829402` fix: tw_highlight Chinese keywords + count PTS_LOCAL in stats
 
-### 規則一致性修復（5 項）
+### Session 2：四項品質改進
 
-| # | 模組 | 問題 | 修法 |
-|---|---|---|---|
-| 6 | validators.py | confidence 預期 single T3="low" 但 derive 不產 low | 移除 low 分支（schema enum 保留） |
-| 7 | selector.py | `total_events.max` 定義了但未讀取 | hard enforce + beat min advisory warning |
-| 8 | event.schema.json | 缺 `single_source_warning: true` const 約束 | 補齊 allOf 規則，與 platform_output 對齊 |
-| 11 | validators.py + schema | `\d+/\d+` regex 誤殺日期/比例/法條 | 收窄為 word-boundary + 1-2 digit |
-| 12 | config + README | TW_STORY min=1 但 tw_stories.json 不存在 | min=0 + README 標 planned |
+來自月月的改進方向分析，逐一回應後挑出 4 項可行改動一口氣做完：
 
-### 月月給的 5 個明確決策
+| # | 改動 | 影響 |
+|---|------|------|
+| 1 | **加中央社 CNA RSS 源** `cna_all`（`feeds.yaml`）+ `selector.py` TAIWAN_SOURCE_PREFIXES 加 `cna_` | 台灣新聞覆蓋量翻倍 |
+| 2 | **same_topic_already_selected** 罰分 -20 → **-45**（`selection_score.yaml`） | 減少 WWDC 類重複選材 |
+| 4 | **remote_blocked 統計分離**：`pipeline.py` + `formatter.py` 新增 `total_feeds_failed_remote_blocked` 欄位，Markdown 顯示「失敗來源 13（遠端封鎖 13、實際失敗 0）」 | 報表不再看起來「50% 失敗」 |
+| 5 | **rewrite prompt 加具體事實規則**：每則 context 至少包含一個具體事實（數字/人名/時間點/地點） | 防止空泛趨勢描述 |
 
-1. **confidence enum**：保留 "low" 在 schema，pipeline 不主動產生，但 Claude/人工可回傳
-2. **total_events.min**：advisory only（log warning），不自動塞低分事件
-3. **platform_output sourceRef**：同步加 optional summary，供 trace/debug
-4. **TW_STORY**：維持未啟用，min=0，tw_stories.json 標 planned
-5. **N/N regex**：只用於 voice_text lint，不套用到 article/source summary
+**也更新了**：`report.schema.json`（加 `total_feeds_failed_remote_blocked`）、3 個 test fixtures。
+
+**Commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
+
+---
+
+## 月月提出但未實作的改進
+
+以下是月月同一次分析中提到、但這次未做的項目（供下個視窗參考）：
+
+| 項目 | 原因 | 難度 |
+|------|------|------|
+| ECON 分類太鬆（印度空難、機場擴建歸 ECON） | 需加 `econ_exception_sources` 或調降 source_default_weight 0.6→0.45 | 中 |
+| 加報導者 RSS | 需確認 RSS URL，更新頻率較低（週更） | 低 |
+| 加農業部新聞 RSS | 需寫 3 個 adapter（truncation + 去公文腔 + 濾宣傳稿），ROI 低 | 高 |
+| event_cluster 二次合併（同事件主體 + 24hr 窗口） | 長期改善選材重複的根本方案 | 中 |
 
 ---
 
 ## 關鍵檔案快速參照
 
 | 檔案 | 作用 |
-|---|---|
+|------|------|
 | `AI_CONTEXT.md` | **新視窗先讀這個** — 全貌速覽 |
-| `DEV_LOG.md` | 每次改了什麼、為什麼（最新 2026-05-25 audit 記錄） |
-| `ROADMAP.md` | 全 phase 進度 + Data Layer Audit 段落 |
+| `DEV_LOG.md` | 每次改了什麼、為什麼 |
+| `ROADMAP.md` | 全 phase 進度 |
 | `DECISIONS.md` | 所有架構決策紀錄 |
-| `prompts/rewrite_prompt.md` | Claude 改寫指令（含所有文風規則） |
+| `prompts/rewrite_prompt.md` | Claude 改寫指令（含文風規則 + 具體事實規則） |
 | `src/pipeline.py` | 全 pipeline 入口（9 步串接） |
-| `src/event_cluster.py` | 事件聚合（title sim + keyword + stopwords） |
-| `src/formatter.py` | 多格式輸出（transition pool + 7-event limit） |
-| `src/validators.py` | banned phrases + voice lint + confidence + claim trace |
-| `src/selector.py` | selection_score 計算 + daily_limits + total_events.max |
+| `src/classifier.py` | Beat 分類（source 0.6 + keyword 0.3 + entity 0.1） |
+| `src/selector.py` | selection_score + same_topic 罰分 + daily_limits |
+| `src/formatter.py` | 多格式輸出（含 remote_blocked 統計分離） |
+| `config/feeds.yaml` | RSS 來源清單（27 enabled，含新增 CNA） |
+| `config/beats.yaml` | Beat 關鍵字 + tw_highlight 設定（含中文） |
+| `config/selection_score.yaml` | 選題評分（same_topic -45） |
 
 ---
 
@@ -89,25 +110,43 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 - **管理**：https://claude.ai/code/routines/trig_01YZgdnxrvUsTLDh6YQKaDY4
 - **產出**：push 到 `daily-reports` branch
 - **Step 8 改寫**：遠端 Sonnet agent 自己做（不需 ANTHROPIC_API_KEY）
+- **重要**：routine 用的是 remote clone，code fix 推到 main 後 routine 下次跑就會用新程式碼
 
 ---
 
-## 下一步
+## 來源失敗狀況
 
-### 立即可做
-- [ ] 看 05-23 ~ 05-26 的自動產出，確認資料層修復有效
-- [ ] 如果品質 OK → 開始 5 天穩定性測試
+**每日雲端執行固定 13/26 失敗，全部是 `remote_blocked: true` 來源（預期行為）：**
 
-### TODO 清單（Phase 5 剩餘）
-- [ ] 同日重跑 idempotent 測試
-- [ ] 連跑 5~7 天穩定性測試
-- [ ] 通知管道（月月說先不做，之後再加）
+- Guardian ×8（art, books, film, culture, music, stage, fashion, business）
+- NYT ×3（books, arts, business）
+- Ars Technica, Wired
+
+這些來源在雲端 IP 會被 403，需要月月本機先跑 `python -m src.fetch_rss --date YYYY-MM-DD`，push raw data 到 daily-reports branch，routine 再 `--skip-fetch` 使用。
+
+**另有 3 個實際異常（OK 但 items=0）：**
+- `reuters_world_google_news`：Google News proxy query 可能失效
+- `reuters_business_google_news`：同上
+- `marktechpost`：可能停更
+
+---
+
+## 已知待處理項目
+
+### 程式碼層面
+- [ ] `claude_rewrite.py` MODEL 仍為 `claude-sonnet-4-20250514`（EOL 2026-06-15）→ 需更新為新模型名
+- [ ] ECON 分類太鬆 → 加 exception 機制或調權重
+- [ ] Reuters Google News proxy 需定期 audit query 語法
+
+### 資料/營運層面
+- [ ] CNA RSS 加入後，首次跑 pipeline 需確認 normalize + classify 正常處理中文內容
+- [ ] RSSHub 自架（公共實例 403，AP World 無法使用）
+- [ ] TW_STORY 功能啟用（需建立 tw_stories.json）
 
 ### 待決策
 - [ ] Routine 通知管道：Telegram / Discord / Email？
-- [ ] RSSHub 自架（公共實例 403）
-- [ ] Google News proxy fallback 策略
-- [ ] TW_STORY 何時啟用（需建立 tw_stories.json）
+- [ ] 報導者 RSS 是否加入？
+- [ ] Google News proxy 長期 fallback 策略
 
 ---
 
@@ -119,6 +158,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 - Sonnet prompt 要寫得很硬——「Sonnet 有時候會自作主張，prompt 要寫得夠硬才壓得住」
 - 她在意朗讀體驗（voice.txt），會實際唸出來測
 - 「先調再跑」= 先把品質調到位，再跑穩定性測試
+- 她也會做產品級分析（這次的 5 點改進方向就是她自己分析的）
 
 ---
 
@@ -126,7 +166,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ```bash
 cd C:\Users\User.DESKTOP-HA8VHD7\Documents\Claude\akasha-rss-news
-python -m pytest tests/ -q          # 359 passed, ~4 秒
+python -m pytest tests/ -q          # 360 passed, ~4.5 秒
 python -m src.pipeline --dry-run    # 跑全 pipeline（跳過 Claude API）
-python -m src.formatter --date 2026-05-22  # 單獨跑格式化
+python -m src.formatter --date 2026-06-04  # 單獨跑格式化
 ```

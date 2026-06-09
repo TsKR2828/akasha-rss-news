@@ -36,10 +36,10 @@ output/logs/run_YYYYMMDD.json     # run log
 | 4 多格式輸出 | ✅ 完成 | formatter（JSON / MD / voice / X / Threads + run log + 驗證） |
 | **5 Routine** | 🔧 **進行中** | pipeline.py + routine 已設定，待穩定性驗證 |
 
-**數據快照（2026-05-22）**：
-- 26 enabled sources / 0 failed / 461 articles
+**數據快照（2026-06-09）**：
+- 27 enabled sources（新增 CNA 中央社）/ 13 remote_blocked / 461+ articles
 - 14 個 source modules，0 個 pending
-- 341 條測試全綠（~4.0 秒）
+- 360 條測試全綠（~4.5 秒）
 
 ---
 
@@ -49,7 +49,7 @@ output/logs/run_YYYYMMDD.json     # run log
 
 | 檔案 | 用途 | 對應規格 |
 |---|---|---|
-| `config/feeds.yaml` | 31 個 RSS 來源（26 enabled） | §3.1 |
+| `config/feeds.yaml` | 32 個 RSS 來源（27 enabled，含 CNA 中央社） | §3.1 |
 | `config/beats.yaml` | 4 大 beat 關鍵字 + entity 設定 + TW Highlight + AI 例外 | §2.1, §6 |
 | `config/selection_score.yaml` | 評分表 + daily_limits + dedup 閾值 | §8.2 |
 | `config/style_guide.md` | 文風、禁用詞、轉場語、事實紅線 | §13 |
@@ -114,7 +114,7 @@ tests/test_validators.py        27 條
 tests/test_formatter.py         58 條
 tests/test_pipeline.py          19 條
 ───────────────────────────────────
-合計                            341 條，全綠，~4.0 秒
+合計                            360 條，全綠，~4.5 秒
 ```
 
 ---
@@ -143,17 +143,20 @@ tests/test_pipeline.py          19 條
 
 ---
 
-## Feed Health Snapshot（2026-05-19）
+## Feed Health Snapshot（2026-06-09）
 
-**26 enabled / 0 failed / 461 articles**
+**27 enabled / 13 remote_blocked（雲端 403 預期行為）**
 
-| Beat | 活源數 | 今日文章 | 備註 |
-|---|---|---|---|
-| INTL | 4 | 165 | bbc_world / reuters×2 / aljazeera / npr |
-| ARTS | 11 | 128 | guardian×7 / nyt×2 / archdaily / dezeen |
-| ECON | 4 | 124 | bbc_biz / reuters_biz / guardian_biz / nyt_biz |
-| AI | 4+2 低頻 | 19 | bbc_tech / marktechpost / techcrunch / wired + ars/mit（低頻） |
-| PTS_LOCAL | 1 | 25 | pts_news |
+| Beat | 活源數 | 備註 |
+|---|---|---|
+| INTL | 4 | bbc_world / reuters×2 / aljazeera / npr |
+| ARTS | 11 | guardian×7 / nyt×2 / archdaily / dezeen |
+| ECON | 4 | bbc_biz / reuters_biz / guardian_biz / nyt_biz |
+| AI | 4+2 低頻 | bbc_tech / marktechpost / techcrunch / wired + ars/mit |
+| PTS_LOCAL / TW | 2 | pts_news + **cna_all**（新增 2026-06-09） |
+
+**remote_blocked（13 個）**：Guardian ×8 / NYT ×3 / Ars Technica / Wired
+→ 雲端 IP 被封，需本機先 fetch、push raw data
 
 **Disabled sources**（5 個）：
 - `the_verge`：403 封鎖
@@ -166,10 +169,10 @@ tests/test_pipeline.py          19 條
 
 ## Recent Commits
 
-- `pending` feat: merge voice_style_guide into prompt + formatter
-- `8e04d37` fix: quality round 2 — voice zero-source + beat sort + prompt hardening
-- `7c28fb2` feat(phase-5): pipeline orchestrator + routine prompt
-- `ce185d5` feat(phase-3-4): Claude rewrite pipeline + multi-format output
+- `66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
+- `1829402` fix: tw_highlight Chinese keywords + count PTS_LOCAL in stats
+- `ae677b0` chore: add HANDOFF.md, historical raw data, and 05-21 review files
+- `5f0bdc4` fix: data layer audit — dirty data + rule consistency
 
 ---
 
@@ -212,7 +215,7 @@ TODO 清單（`TODO.md`）：
 
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
 - **Branch**：main
-- **Latest commit**：`7c28fb2` feat(phase-5): pipeline orchestrator + routine prompt
+- **Latest commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
 - **User**：月月 / dr1090a@gmail.com
 
 ---

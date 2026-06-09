@@ -39,7 +39,7 @@ output/logs/run_YYYYMMDD.json     # run log
 **數據快照（2026-06-09）**：
 - 27 enabled sources（新增 CNA 中央社）/ 13 remote_blocked / 461+ articles
 - 14 個 source modules，0 個 pending
-- 360 條測試全綠（~4.5 秒）
+- 366 條測試全綠（~4.5 秒）
 
 ---
 
@@ -76,7 +76,7 @@ output/logs/run_YYYYMMDD.json     # run log
 |---|---|---|
 | `src/fetch_rss.py` | 併發抓取 + retry/backoff + consecutive_failures state | 12 條 |
 | `src/normalize.py` | feedparser 解析 + canonicalize URL + sha256 article_id + time window | 20 條 |
-| `src/classifier.py` | Beat 分類：source 0.6 + keyword 0.3 + entity 0.1（spaCy NER） | 20 條 |
+| `src/classifier.py` | Beat 分類：source 0.6 + keyword 0.3 + entity 0.1（spaCy NER）+ ECON exception | 24 條 |
 | `src/entity_recognizer.py` | spaCy NER 封裝：extract_entities + entity_match_score | 14 條 |
 | `src/tw_highlight.py` | Taiwan Highlight：positive + context + FP review | 10 條 |
 | `src/dedup.py` | 文章去重：canonical URL + 同源相似標題（rapidfuzz ≥0.92） | 9 條 |
@@ -87,7 +87,7 @@ output/logs/run_YYYYMMDD.json     # run log
 | `src/claim_trace.py` | verify + fix + fallback claim + single_source_warning | 19 條 |
 | `src/validators.py` | banned_phrases(8) + voice_text lint(6) + confidence/opinion/claim/platform | 27 條 |
 | `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI（stats 讀取 + transition pool + 7-event voice limit） | 58 條 |
-| `src/pipeline.py` | 全 pipeline 入口（串接 9 步）+ stats 收集 + 摘要 | 19 條 |
+| `src/pipeline.py` | 全 pipeline 入口（串接 9 步）+ stats 收集 + 摘要 + idempotent | 21 條 |
 
 ### Docs
 
@@ -101,7 +101,7 @@ output/logs/run_YYYYMMDD.json     # run log
 tests/test_schemas.py           37 條（schema meta-validation + samples + lint）
 tests/test_fetch_rss.py         12 條
 tests/test_normalize.py         20 條
-tests/test_classifier.py        20 條（含 9 條 entity integration）
+tests/test_classifier.py        24 條（含 9 條 entity integration + 4 條 ECON exception）
 tests/test_entity_recognizer.py 14 條
 tests/test_tw_highlight.py      10 條
 tests/test_dedup.py              9 條
@@ -112,9 +112,9 @@ tests/test_claude_rewrite.py    16 條（mocked SDK）
 tests/test_claim_trace.py       19 條
 tests/test_validators.py        27 條
 tests/test_formatter.py         58 條
-tests/test_pipeline.py          19 條
+tests/test_pipeline.py          21 條（含 2 條 idempotent）
 ───────────────────────────────────
-合計                            360 條，全綠，~4.5 秒
+合計                            366 條，全綠，~4.5 秒
 ```
 
 ---
@@ -126,6 +126,8 @@ tests/test_pipeline.py          19 條
 2. **Entity weight**：spaCy `en_core_web_sm` NER，各 beat 在 beats.yaml 定義 `entity_names`（具名組織/機構）和 `entity_types`（spaCy label 通配）。若 spaCy 未安裝自動回退為 0。
 
 3. **AI 例外**：`ai_exception_sources`（原 The Verge / BBC Tech / Ars Technica）的文章必須 title/summary 命中 AI 關鍵字才算 AI beat。TechCrunch AI / Wired AI 不在例外名單，因為它們的 feed 已是 AI category。
+
+3b. **ECON 例外**：鏡像 AI 例外機制。`econ_exception_sources`（bbc_business / reuters_business / nyt_business / guardian_business）的文章必須命中 ECON 關鍵字才歸 ECON beat，防止非經濟新聞因 source_default 0.6 自動入選。
 
 4. **去重兩層**：dedup（文章層，同源）→ event_cluster（事件層，跨源）。跨源同題不在 dedup 處理。
 
@@ -153,7 +155,7 @@ tests/test_pipeline.py          19 條
 | ARTS | 11 | guardian×7 / nyt×2 / archdaily / dezeen |
 | ECON | 4 | bbc_biz / reuters_biz / guardian_biz / nyt_biz |
 | AI | 4+2 低頻 | bbc_tech / marktechpost / techcrunch / wired + ars/mit |
-| PTS_LOCAL / TW | 2 | pts_news + **cna_all**（新增 2026-06-09） |
+| PTS_LOCAL / TW | 2 | pts_news + **cna_intworld**（feedburner，國際新聞） |
 
 **remote_blocked（13 個）**：Guardian ×8 / NYT ×3 / Ars Technica / Wired
 → 雲端 IP 被封，需本機先 fetch、push raw data
@@ -169,10 +171,11 @@ tests/test_pipeline.py          19 條
 
 ## Recent Commits
 
+- `8b9a340` docs: sync HANDOFF.md with completed audit items
+- `7f2b136` ops: fix broken RSS sources + add idempotent tests
+- `1462591` fix: update deprecated MODEL + add ECON classification exception
 - `dee18c5` docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session
 - `66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
-- `1829402` fix: tw_highlight Chinese keywords + count PTS_LOCAL in stats
-- `ae677b0` chore: add HANDOFF.md, historical raw data, and 05-21 review files
 
 ---
 
@@ -190,8 +193,8 @@ tests/test_pipeline.py          19 條
 TODO 清單（`TODO.md`）：
 
 - [ ] 通知管道（月月決定先不做，之後再加）
-- [ ] 同日重跑 idempotent 測試
-- [ ] 連跑 7 天穩定性測試
+- [x] 同日重跑 idempotent 測試（2 條測試通過）
+- [ ] 連跑 7 天穩定性測試（6 天連續 OK，待第 7 天）
 
 ---
 
@@ -215,7 +218,7 @@ TODO 清單（`TODO.md`）：
 
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
 - **Branch**：main
-- **Latest commit**：`dee18c5` docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session
+- **Latest commit**：`8b9a340` docs: sync HANDOFF.md with completed audit items
 - **User**：月月 / dr1090a@gmail.com
 
 ---

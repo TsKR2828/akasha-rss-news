@@ -87,6 +87,7 @@ class TestCollectStats:
         stats = _collect_stats("2026-05-20")
         assert stats["total_feeds_checked"] == 3
         assert stats["total_feeds_failed"] == 1
+        assert stats["total_feeds_failed_remote_blocked"] == 0  # no feeds.yaml in tmp → 0
         assert stats["total_articles_fetched"] == 15
 
     def test_counts_articles(self, tmp_path, monkeypatch):

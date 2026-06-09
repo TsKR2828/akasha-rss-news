@@ -45,7 +45,7 @@ selection_score:
   economy_macro_policy: 20             # 重大總體經濟政策
 
   # 負向扣分
-  same_topic_already_selected: -20     # 同主題已選入
+  same_topic_already_selected: -45     # 同主題已選入（加重罰分以避免 WWDC 類重複）
   celebrity_gossip: -50                # 八卦娛樂
   crime_without_global_relevance: -30  # 無國際意義的刑案
   press_release_only: -20              # 純廠商新聞稿

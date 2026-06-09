@@ -172,6 +172,7 @@ def sample_report(sample_platform_item) -> dict:
         "stats": {
             "total_feeds_checked": 28,
             "total_feeds_failed": 0,
+            "total_feeds_failed_remote_blocked": 0,
             "total_articles_fetched": 320,
             "total_articles_after_filter": 180,
             "total_events_merged": 60,

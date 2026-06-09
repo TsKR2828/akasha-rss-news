@@ -403,6 +403,7 @@ def _normalize_stats(stats: dict) -> dict:
     """確保 stats 包含 report.schema.json 要求的所有欄位。"""
     required = [
         "total_feeds_checked", "total_feeds_failed",
+        "total_feeds_failed_remote_blocked",
         "total_articles_fetched", "total_articles_after_filter",
         "total_events_merged", "total_events_selected",
         "tw_highlights_count",
@@ -489,8 +490,15 @@ def format_markdown(report: dict, beat_meta: dict[str, dict]) -> str:
     lines.append("")
     lines.append(f"| 指標 | 數值 |")
     lines.append(f"|---|---|")
+    total_failed = stats.get('total_feeds_failed', 0)
+    remote_blocked = stats.get('total_feeds_failed_remote_blocked', 0)
+    real_failed = total_failed - remote_blocked
+    if remote_blocked:
+        failed_display = f"{total_failed}（遠端封鎖 {remote_blocked}、實際失敗 {real_failed}）"
+    else:
+        failed_display = str(total_failed)
     lines.append(f"| 檢查來源 | {stats.get('total_feeds_checked', 0)} |")
-    lines.append(f"| 失敗來源 | {stats.get('total_feeds_failed', 0)} |")
+    lines.append(f"| 失敗來源 | {failed_display} |")
     lines.append(f"| 抓取文章 | {stats.get('total_articles_fetched', 0)} |")
     lines.append(f"| 過濾後文章 | {stats.get('total_articles_after_filter', 0)} |")
     lines.append(f"| 合併事件 | {stats.get('total_events_merged', 0)} |")
@@ -1015,6 +1023,7 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     total_feeds_checked = 0
     total_feeds_failed = 0
+    total_feeds_failed_remote_blocked = 0
     total_articles_fetched = 0
     total_articles_after_filter = 0
 
@@ -1022,7 +1031,23 @@ def main(argv: Optional[list[str]] = None) -> int:
     if health_path.exists():
         health = json.loads(health_path.read_text(encoding="utf-8"))
         total_feeds_checked = len(health)
-        total_feeds_failed = sum(1 for h in health if h.get("status") != "ok")
+        failed_list = [h for h in health if h.get("status") != "ok"]
+        total_feeds_failed = len(failed_list)
+        # Identify remote_blocked sources from feeds.yaml
+        feeds_path = PROJECT_ROOT / "config" / "feeds.yaml"
+        if feeds_path.exists():
+            try:
+                feeds_cfg = yaml.safe_load(feeds_path.read_text(encoding="utf-8"))
+                rb_ids = {
+                    s["source_id"]
+                    for s in feeds_cfg.get("sources", [])
+                    if s.get("remote_blocked")
+                }
+                total_feeds_failed_remote_blocked = sum(
+                    1 for h in failed_list if h.get("source_id") in rb_ids
+                )
+            except Exception:
+                pass
         total_articles_fetched = sum(h.get("items_valid", 0) for h in health)
 
     if articles_dir.exists():
@@ -1034,6 +1059,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     stats = {
         "total_feeds_checked": total_feeds_checked,
         "total_feeds_failed": total_feeds_failed,
+        "total_feeds_failed_remote_blocked": total_feeds_failed_remote_blocked,
         "total_articles_fetched": total_articles_fetched,
         "total_articles_after_filter": total_articles_after_filter,
         "total_events_merged": len(selected_ids) + len(dropped),

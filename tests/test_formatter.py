@@ -185,6 +185,7 @@ def sample_stats():
     return {
         "total_feeds_checked": 26,
         "total_feeds_failed": 0,
+        "total_feeds_failed_remote_blocked": 0,
         "total_articles_fetched": 461,
         "total_articles_after_filter": 400,
         "total_events_merged": 15,

@@ -87,6 +87,7 @@
       "required": [
         "total_feeds_checked",
         "total_feeds_failed",
+        "total_feeds_failed_remote_blocked",
         "total_articles_fetched",
         "total_articles_after_filter",
         "total_events_merged",
@@ -97,6 +98,7 @@
       "properties": {
         "total_feeds_checked": { "type": "integer", "minimum": 0 },
         "total_feeds_failed": { "type": "integer", "minimum": 0 },
+        "total_feeds_failed_remote_blocked": { "type": "integer", "minimum": 0, "description": "Subset of total_feeds_failed: sources marked remote_blocked in feeds.yaml (expected 403 on cloud)" },
         "total_articles_fetched": { "type": "integer", "minimum": 0 },
         "total_articles_after_filter": { "type": "integer", "minimum": 0 },
         "total_events_merged": { "type": "integer", "minimum": 0 },

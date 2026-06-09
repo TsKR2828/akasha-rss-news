@@ -15,12 +15,13 @@
 **Phase 5（Routine 自動化）— pipeline live 運作中，報告序列 05-21 起連續產出。**
 
 Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
-最近兩個視窗做了：
+最近三個視窗做了：
 1. tw_highlight 中文關鍵字修復 + PTS_LOCAL 計入台灣相關統計
 2. 四項品質改進（CNA 來源、選材去重、remote_blocked 統計分離、rewrite prompt 強化）
 3. 6/1 報告手動補回（routine 當天 limit hit 未執行）
+4. MODEL 更新 + ECON 分類例外機制 + 壞源修復（CNA URL、Reuters proxy）+ idempotent 測試
 
-360 條測試全綠。
+366 條測試全綠。
 
 ---
 
@@ -28,15 +29,16 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 - **Branch**：`main`（目前 checkout）
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
-- **Latest commit**：`dee18c5` docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session
-- **Tests**：360 passed, 0 failed（~4.5 秒）
-- **Working tree**：clean
+- **Latest commit**：`7f2b136` ops: fix broken RSS sources + add idempotent tests
+- **Tests**：366 passed, 0 failed（~4.5 秒）
+- **Working tree**：clean（`data/raw/2026-06-09/` untracked — audit 測試產物）
+- **Ahead of origin**：2 commits（需 push）
 
 ### 雙分支策略
 
 | Branch | 用途 | 最新 commit |
 |--------|------|-------------|
-| `main` | 程式碼 | `dee18c5` — docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session |
+| `main` | 程式碼 | `7f2b136` — ops: fix broken RSS sources + add idempotent tests |
 | `daily-reports` | 每日產出（routine push） | `963326e` — daily-report: 2026-06-01 |
 
 ---
@@ -68,15 +70,33 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 **Commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
 
+### Session 3：程式碼修復 + 來源 audit + idempotent 測試
+
+月月列出 17 項待處理，本次完成程式碼與營運層面共 8 項：
+
+| # | 改動 | 結果 |
+|---|------|------|
+| 1 | MODEL `claude-sonnet-4-20250514` → `claude-sonnet-4-6` | EOL 風險消除 |
+| 2 | ECON 分類加 exception 機制（鏡像 AI §6.2） | 印度空難不再歸 ECON |
+| 4 | CNA RSS `cna_all` → `cna_intworld`，URL 改 feedburner | DNS 不存在問題修復 |
+| 5 | pipeline idempotent 測試 ×2 | 同日重跑結果一致 |
+| 7 | RSSHub audit | 確認 403，基礎設施問題 |
+| 8 | Reuters Google News proxy 修復 | allinurl→site: 語法，99+96 entries |
+| 9 | marktechpost audit | 確認健康，之前是暫時性問題 |
+| 6 | 7 天穩定性 | 6 天連續 OK，待第 7 天 routine |
+
+**Commits**：
+- `1462591` fix: update deprecated MODEL + add ECON classification exception（+4 tests）
+- `7f2b136` ops: fix broken RSS sources + add idempotent tests（+2 tests）
+
 ---
 
 ## 月月提出但未實作的改進
 
-以下是月月同一次分析中提到、但這次未做的項目（供下個視窗參考）：
+以下是月月分析中提到、尚未做的項目（供下個視窗參考）：
 
 | 項目 | 原因 | 難度 |
 |------|------|------|
-| ECON 分類太鬆（印度空難、機場擴建歸 ECON） | 需加 `econ_exception_sources` 或調降 source_default_weight 0.6→0.45 | 中 |
 | 加報導者 RSS | 需確認 RSS URL，更新頻率較低（週更） | 低 |
 | 加農業部新聞 RSS | 需寫 3 個 adapter（truncation + 去公文腔 + 濾宣傳稿），ROI 低 | 高 |
 
@@ -95,7 +115,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 | `src/classifier.py` | Beat 分類（source 0.6 + keyword 0.3 + entity 0.1） |
 | `src/selector.py` | selection_score + same_topic 罰分 + daily_limits |
 | `src/formatter.py` | 多格式輸出（含 remote_blocked 統計分離） |
-| `config/feeds.yaml` | RSS 來源清單（27 enabled，含新增 CNA） |
+| `config/feeds.yaml` | RSS 來源清單（27 enabled，含 CNA intworld） |
 | `config/beats.yaml` | Beat 關鍵字 + tw_highlight 設定（含中文） |
 | `config/selection_score.yaml` | 選題評分（same_topic -45） |
 
@@ -115,7 +135,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ## 來源失敗狀況
 
-**每日雲端執行固定 13/26 失敗，全部是 `remote_blocked: true` 來源（預期行為）：**
+**每日雲端執行固定 13/27 失敗，全部是 `remote_blocked: true` 來源（預期行為）：**
 
 - Guardian ×8（art, books, film, culture, music, stage, fashion, business）
 - NYT ×3（books, arts, business）
@@ -123,24 +143,25 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 這些來源在雲端 IP 會被 403，需要月月本機先跑 `python -m src.fetch_rss --date YYYY-MM-DD`，push raw data 到 daily-reports branch，routine 再 `--skip-fetch` 使用。
 
-**另有 3 個實際異常（OK 但 items=0）：**
-- `reuters_world_google_news`：Google News proxy query 可能失效
-- `reuters_business_google_news`：同上
-- `marktechpost`：可能停更
+**之前回報的 3 個異常已全部解決：**
+- Reuters ×2：Google News proxy URL 已修復（`site:` 語法，99+96 entries）
+- marktechpost：確認健康，之前是暫時性問題（10 entries OK）
 
 ---
 
 ## 已知待處理項目
 
 ### 程式碼層面
-- [ ] `claude_rewrite.py` MODEL 仍為 `claude-sonnet-4-20250514`（EOL 2026-06-15）→ 需更新為新模型名
-- [ ] ECON 分類太鬆 → 加 exception 機制或調權重
-- [ ] Reuters Google News proxy 需定期 audit query 語法
+- [x] ~~MODEL 更新~~ → `claude-sonnet-4-6`（`1462591`）
+- [x] ~~ECON 分類例外~~ → `econ_exception_sources` 機制（`1462591`）
+- [x] ~~Reuters proxy 修復~~ → `site:` 語法（`7f2b136`）
+- [x] ~~CNA URL 修復~~ → feedburner（`7f2b136`）
+- [ ] Reuters Google News proxy 需定期 audit（語法曾變更一次）
 
 ### 資料/營運層面
-- [ ] CNA RSS 加入後，首次跑 pipeline 需確認 normalize + classify 正常處理中文內容
 - [ ] RSSHub 自架（公共實例 403，AP World 無法使用）
 - [ ] TW_STORY 功能啟用（需建立 tw_stories.json）
+- [ ] 7 天穩定性驗證最後 1 天（已連續 6 天 OK：05-30~06-04）
 
 ### 待決策
 - [ ] Routine 通知管道：Telegram / Discord / Email？
@@ -165,7 +186,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ```bash
 cd C:\Users\User.DESKTOP-HA8VHD7\Documents\Claude\akasha-rss-news
-python -m pytest tests/ -q          # 360 passed, ~4.5 秒
+python -m pytest tests/ -q          # 366 passed, ~4.5 秒
 python -m src.pipeline --dry-run    # 跑全 pipeline（跳過 Claude API）
 python -m src.formatter --date 2026-06-04  # 單獨跑格式化
 ```

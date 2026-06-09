@@ -135,11 +135,11 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ## 來源失敗狀況
 
-**每日雲端執行固定 13/27 失敗，全部是 `remote_blocked: true` 來源（預期行為）：**
+**每日雲端執行固定 14/27 失敗，全部是 `remote_blocked: true` 來源（預期行為）：**
 
 - Guardian ×8（art, books, film, culture, music, stage, fashion, business）
 - NYT ×3（books, arts, business）
-- Ars Technica, Wired
+- Ars Technica, MIT AI News, Wired
 
 這些來源在雲端 IP 會被 403，需要月月本機先跑 `python -m src.fetch_rss --date YYYY-MM-DD`，push raw data 到 daily-reports branch，routine 再 `--skip-fetch` 使用。
 

@@ -378,7 +378,7 @@ sources:
     enabled: false
     note: "2026-05-19 sweep: Google News proxy 回傳 0 entries，query 失效。"
 
-  # ---------- 台灣（唯一繁中來源） ----------
+  # ---------- 台灣 ----------
   - source_id: pts_news
     name: "公視新聞網"
     publisher: "公視"
@@ -389,7 +389,18 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    note: "唯一繁中新聞來源。"
+
+  - source_id: cna_all
+    name: "中央社即時新聞"
+    publisher: "中央社"
+    url: "https://feeds.cna.com.tw/rss/aall.xml"
+    beats: [INTL, ECON, PTS_LOCAL]
+    lang: zh-TW
+    tier: "TW"
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+    note: "中央社全類別 RSS。含國際+國內，分類由 classifier 依內容判定。beats 候選含 PTS_LOCAL 以便國內新聞歸入台灣區塊。"
 
   - source_id: pts_curations_rsshub
     name: "公視專題策展 via RSSHub"

@@ -34,6 +34,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
+import yaml
+
 from src import (
     fetch_rss,
     normalize,
@@ -95,6 +97,23 @@ def _run_module_step(name: str, module, date: str, dry_run: bool) -> tuple[int, 
     return rc, time.time() - start
 
 
+def _load_remote_blocked_ids() -> set[str]:
+    """Load source_ids marked remote_blocked in feeds.yaml."""
+    feeds_path = PROJECT_ROOT / "config" / "feeds.yaml"
+    if not feeds_path.exists():
+        return set()
+    try:
+        cfg = yaml.safe_load(feeds_path.read_text(encoding="utf-8"))
+        return {
+            s["source_id"]
+            for s in cfg.get("sources", [])
+            if s.get("remote_blocked")
+        }
+    except Exception:
+        LOG.warning("Could not load feeds.yaml for remote_blocked check")
+        return set()
+
+
 def _collect_stats(date: str) -> dict:
     """Read filesystem state after all steps to build accurate pipeline_stats."""
     raw_dir = PROJECT_ROOT / "data" / "raw" / date
@@ -104,6 +123,7 @@ def _collect_stats(date: str) -> dict:
     stats: dict = {
         "total_feeds_checked": 0,
         "total_feeds_failed": 0,
+        "total_feeds_failed_remote_blocked": 0,
         "total_articles_fetched": 0,
         "total_articles_after_filter": 0,
         "total_events_merged": 0,
@@ -114,9 +134,12 @@ def _collect_stats(date: str) -> dict:
     health_path = raw_dir / "feed_health.json"
     if health_path.exists():
         health = json.loads(health_path.read_text(encoding="utf-8"))
+        remote_blocked = _load_remote_blocked_ids()
+        failed = [h for h in health if h.get("status") != "ok"]
         stats["total_feeds_checked"] = len(health)
-        stats["total_feeds_failed"] = sum(
-            1 for h in health if h.get("status") != "ok"
+        stats["total_feeds_failed"] = len(failed)
+        stats["total_feeds_failed_remote_blocked"] = sum(
+            1 for h in failed if h.get("source_id") in remote_blocked
         )
         stats["total_articles_fetched"] = sum(
             h.get("items_valid", 0) for h in health

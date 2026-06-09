@@ -50,7 +50,7 @@ BEAT_SIGNAL_KEYWORDS = {
 }
 
 # Taiwan source 識別（用來判斷 taiwan_related_foreign_report：非台灣源 + tw_highlight）
-TAIWAN_SOURCE_PREFIXES = ("pts_",)
+TAIWAN_SOURCE_PREFIXES = ("pts_", "cna_")
 
 
 def load_score_config(path: Path) -> dict:

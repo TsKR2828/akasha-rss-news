@@ -37,7 +37,7 @@ output/logs/run_YYYYMMDD.json     # run log
 | **5 Routine** | 🔧 **進行中** | pipeline.py + routine 已設定，待穩定性驗證 |
 
 **數據快照（2026-06-09）**：
-- 27 enabled sources（新增 CNA 中央社）/ 13 remote_blocked / 461+ articles
+- 27 enabled sources（含 CNA 中央社）/ 14 remote_blocked / 461+ articles
 - 14 個 source modules，0 個 pending
 - 366 條測試全綠（~4.5 秒）
 
@@ -50,7 +50,7 @@ output/logs/run_YYYYMMDD.json     # run log
 | 檔案 | 用途 | 對應規格 |
 |---|---|---|
 | `config/feeds.yaml` | 32 個 RSS 來源（27 enabled，含 CNA 中央社） | §3.1 |
-| `config/beats.yaml` | 4 大 beat 關鍵字 + entity 設定 + TW Highlight + AI 例外 | §2.1, §6 |
+| `config/beats.yaml` | 4 大 beat 關鍵字 + entity 設定 + TW Highlight + AI/ECON 例外 | §2.1, §6 |
 | `config/selection_score.yaml` | 評分表 + daily_limits + dedup 閾值 | §8.2 |
 | `config/style_guide.md` | 文風、禁用詞、轉場語、事實紅線 | §13 |
 
@@ -147,17 +147,17 @@ tests/test_pipeline.py          21 條（含 2 條 idempotent）
 
 ## Feed Health Snapshot（2026-06-09）
 
-**27 enabled / 13 remote_blocked（雲端 403 預期行為）**
+**27 enabled / 14 remote_blocked（雲端 403 預期行為）**
 
 | Beat | 活源數 | 備註 |
 |---|---|---|
-| INTL | 4 | bbc_world / reuters×2 / aljazeera / npr |
+| INTL | 5 | bbc_world / reuters×2 / aljazeera / npr / cna_intworld |
 | ARTS | 11 | guardian×7 / nyt×2 / archdaily / dezeen |
 | ECON | 4 | bbc_biz / reuters_biz / guardian_biz / nyt_biz |
 | AI | 4+2 低頻 | bbc_tech / marktechpost / techcrunch / wired + ars/mit |
-| PTS_LOCAL / TW | 2 | pts_news + **cna_intworld**（feedburner，國際新聞） |
+| PTS_LOCAL / TW | 1+1 | pts_news（PTS_LOCAL）+ cna_intworld（INTL beat，TW tier） |
 
-**remote_blocked（13 個）**：Guardian ×8 / NYT ×3 / Ars Technica / Wired
+**remote_blocked（14 個）**：Guardian ×8 / NYT ×3 / Ars Technica / MIT AI News / Wired
 → 雲端 IP 被封，需本機先 fetch、push raw data
 
 **Disabled sources**（5 個）：

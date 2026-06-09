@@ -172,10 +172,10 @@ sources:
 | Tier 1 核心 | BBC, Reuters via proxy, Guardian | 每日必抓，權重最高 |
 | Tier 2 補充 | NYT, NPR, Al Jazeera, Ars Technica, TechCrunch, Wired | 補充深度與多元視角 |
 | Tier 3 專題 | ArchDaily, Dezeen, MIT, MarkTechPost | 特定 beat 專用 |
-| Tier TW | 公視 | 台灣在地唯一繁中來源 |
+| Tier TW | 公視, 中央社 | 台灣在地繁中來源 |
 
-> **2026-05-19 Sweep 結果**：31 sources 中 26 enabled / 0 failed / 461 articles。
-> 已停用：The Verge (403)、VentureBeat (停更)、AP RSSHub (403)、Bloomberg proxy (空 feed)。
+> **來源狀態（2026-06-09）**：32 sources 中 27 enabled / 14 remote_blocked / 5 disabled。
+> 已停用：The Verge (403)、VentureBeat (停更)、AP RSSHub (403)、Bloomberg proxy (空 feed)、PTS Curations (需 RSSHub)。
 
 #### 使用限制
 

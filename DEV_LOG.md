@@ -1,8 +1,67 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine 已設定，data layer audit 完成）
-測試合計：360 條全綠
-Enabled sources：26 / 0 failed / 461 articles（2026-05-19 sweep）
+目前階段：Phase 5 進行中（pipeline + routine 已設定，idempotent 測試完成）
+測試合計：366 條全綠
+Enabled sources：27 / 0 failed（2026-06-09 audit）
+
+---
+
+## 2026-06-09 — 程式碼修復 + 來源健康稽核
+
+### 程式碼修復（2 項）
+
+**#1 claude_rewrite.py MODEL 過期修復**
+
+- 問題：MODEL = `claude-sonnet-4-20250514`（EOL 2026-06-15）
+- 修法：改為 `claude-sonnet-4-6`
+
+**#2 ECON 分類例外機制**
+
+- 問題：商業類 RSS（BBC/Reuters/NYT/Guardian Business）的非經濟新聞（空難、機場擴建）被自動歸類 ECON，因 source_default 0.6 > min_score 0.45
+- 修法：鏡像 AI §6.2 例外模式——`beats.yaml` 新增 `econ_exception_sources`；`classifier.py` 新增 `_has_econ_keyword()` + 例外檢查
+- 效果：例外來源須 title/summary 命中 ECON 關鍵字才歸類 ECON
+- 新增測試 4 條（無關鍵字降權 / 有關鍵字保留 / 非例外不受影響 / 中文關鍵字通過）
+
+### CNA RSS 修復 + 驗證（#4）
+
+- 問題：`feeds.cna.com.tw` 域名不存在，CNA 無全類別 RSS feed
+- 修法：`cna_all` → `cna_intworld`，URL 改為 `https://feeds.feedburner.com/rsscna/intworld`，beats 改為 `[INTL]`
+- 驗證：fetch 20 篇 → normalize 20/20 → classify 全部 INTL → 中文 title/summary 正常保留 → tw_highlight 偵測到 2 篇台灣相關
+
+### Idempotent 測試（#5）
+
+- 新增 `test_idempotent_rerun_same_output`：同日重跑 pipeline 產出相同 summary
+- 新增 `test_idempotent_output_files_overwritten`：重跑覆寫檔案而非產生重複
+
+### 來源健康稽核（#7–#9）
+
+**Reuters Google News proxy 修復**
+
+- 問題：原 `allinurl:reuters.com` 語法返回 302 redirect + 0 entries
+- 修法：改用 `site:reuters.com/world` 及 `site:reuters.com/business` 語法
+- 驗證：world 99 entries / business 96 entries
+
+**marktechpost**
+
+- 稽核結果：200 OK，10 entries — 健康正常，先前 items=0 為暫時性問題
+
+**RSSHub（AP World）**
+
+- 稽核結果：仍 403，確認需自架 RSSHub — 此為基礎設施工作，非程式碼可解決
+
+### 動到的檔案
+
+| 檔案 | 變更 |
+|---|---|
+| `src/claude_rewrite.py` | MODEL → `claude-sonnet-4-6` |
+| `src/classifier.py` | `_has_econ_keyword()` + ECON 例外檢查 |
+| `config/beats.yaml` | `econ_exception_sources` 4 個來源 |
+| `config/feeds.yaml` | CNA URL 修復 + Reuters proxy 語法修復 |
+| `tests/test_classifier.py` | +4 條 ECON 例外測試 |
+| `tests/test_pipeline.py` | +2 條 idempotent 測試 |
+| `ROADMAP.md` | Phase 5 idempotent 勾選 |
+
+測試：366 條全綠（+6 條：4 ECON exception + 2 idempotent）
 
 ---
 

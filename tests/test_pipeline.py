@@ -300,6 +300,84 @@ class TestRunPipeline:
         for p in patches.values():
             p.stop()
 
+    def test_idempotent_rerun_same_output(self, tmp_path, monkeypatch):
+        """Running pipeline twice for the same date produces identical summary."""
+        monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
+
+        patches = self._mock_all_modules()
+        for p in patches.values():
+            p.start()
+
+        evt_dir = tmp_path / "data" / "events" / "2026-05-20"
+        evt_dir.mkdir(parents=True)
+        manifest = {
+            "selected_event_ids": ["e1", "e2"],
+            "dropped": [{"event_id": "e3", "drop_reason": "low_score"}],
+        }
+        (evt_dir / "_selection_manifest.json").write_text(json.dumps(manifest))
+        (evt_dir / "e1.json").write_text(json.dumps({"event_id": "e1", "beat": "INTL"}))
+        (evt_dir / "e2.json").write_text(json.dumps({"event_id": "e2", "beat": "AI"}))
+
+        out_dir = tmp_path / "output"
+
+        def _run_once():
+            with patch("src.pipeline.generate_all_outputs") as mock_fmt:
+                mock_fmt.return_value = (
+                    {"status": "ok", "reportId": "daily-report-2026-05-20"},
+                    [],
+                )
+                return run_pipeline("2026-05-20", dry_run=True, output_base=out_dir)
+
+        s1 = _run_once()
+        s2 = _run_once()
+
+        assert s1["status"] == s2["status"] == "ok"
+        assert s1["events_count"] == s2["events_count"] == 2
+        assert s1["beat_counts"] == s2["beat_counts"]
+        assert len(s1["steps"]) == len(s2["steps"]) == 9
+        for a, b in zip(s1["steps"], s2["steps"]):
+            assert a["name"] == b["name"]
+            assert a["exit_code"] == b["exit_code"]
+
+        for p in patches.values():
+            p.stop()
+
+    def test_idempotent_output_files_overwritten(self, tmp_path, monkeypatch):
+        """Re-running overwrites output files rather than creating duplicates."""
+        monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
+
+        patches = self._mock_all_modules()
+        for p in patches.values():
+            p.start()
+
+        evt_dir = tmp_path / "data" / "events" / "2026-05-20"
+        evt_dir.mkdir(parents=True)
+        manifest = {"selected_event_ids": [], "dropped": []}
+        (evt_dir / "_selection_manifest.json").write_text(json.dumps(manifest))
+
+        out_dir = tmp_path / "output"
+        sentinel = out_dir / "daily_20260520.json"
+
+        for run_num in range(1, 3):
+            with patch("src.pipeline.generate_all_outputs") as mock_fmt:
+                def _write_output(*a, **kw):
+                    sentinel.parent.mkdir(parents=True, exist_ok=True)
+                    sentinel.write_text(json.dumps({"run": run_num}))
+                    return {"status": "ok"}, []
+                mock_fmt.side_effect = _write_output
+                run_pipeline("2026-05-20", dry_run=True, output_base=out_dir)
+
+        # File should exist with second run's content (overwritten, not duplicated)
+        assert sentinel.exists()
+        data = json.loads(sentinel.read_text())
+        assert data["run"] == 2
+        # No duplicate files
+        json_files = list(out_dir.glob("daily_20260520*.json"))
+        assert len(json_files) == 1
+
+        for p in patches.values():
+            p.stop()
+
     def test_duration_tracked(self, tmp_path, monkeypatch):
         monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
 

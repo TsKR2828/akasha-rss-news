@@ -55,25 +55,26 @@ sources:
   - source_id: reuters_world_google_news
     name: "Reuters World via Google News"
     publisher: "Reuters"
-    url: "https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com&hl=en"
+    url: "https://news.google.com/rss/search?q=site:reuters.com/world+when:24h&hl=en-US&gl=US&ceid=US:en"
     beats: [INTL, ECON]
     lang: en
     tier: 1
     transport: google_news_proxy
     is_proxy: true
     enabled: true
-    note: "Reuters direct public RSS is not assumed. Google News proxy must be treated as unstable. 2026-05-19 sweep OK (98 entries)."
+    note: "Google News proxy — allinurl 語法已失效（302），改用 site: 語法。2026-06-09 audit OK (99 entries)."
 
   - source_id: reuters_business_google_news
     name: "Reuters Business via Google News"
     publisher: "Reuters"
-    url: "https://news.google.com/rss/search?q=when:24h+allinurl:reuters.com/business&hl=en"
+    url: "https://news.google.com/rss/search?q=site:reuters.com/business+when:24h&hl=en-US&gl=US&ceid=US:en"
     beats: [ECON]
     lang: en
     tier: 1
     transport: google_news_proxy
     is_proxy: true
     enabled: true
+    note: "Google News proxy — allinurl 語法已失效（302），改用 site: 語法。2026-06-09 audit OK (96 entries)."
 
   # ---------- AP (via RSSHub) ----------
   - source_id: ap_world_rsshub
@@ -390,17 +391,17 @@ sources:
     is_proxy: false
     enabled: true
 
-  - source_id: cna_all
-    name: "中央社即時新聞"
+  - source_id: cna_intworld
+    name: "中央社國際新聞"
     publisher: "中央社"
-    url: "https://feeds.cna.com.tw/rss/aall.xml"
-    beats: [INTL, ECON, PTS_LOCAL]
+    url: "https://feeds.feedburner.com/rsscna/intworld"
+    beats: [INTL]
     lang: zh-TW
     tier: "TW"
     transport: direct_rss
     is_proxy: false
     enabled: true
-    note: "中央社全類別 RSS。含國際+國內，分類由 classifier 依內容判定。beats 候選含 PTS_LOCAL 以便國內新聞歸入台灣區塊。"
+    note: "中央社國際新聞 RSS（feedburner）。原 feeds.cna.com.tw 域名不存在，CNA 無全類別 feed，各分類需個別訂閱。"
 
   - source_id: pts_curations_rsshub
     name: "公視專題策展 via RSSHub"

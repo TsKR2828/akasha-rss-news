@@ -75,18 +75,18 @@ output/logs/run_YYYYMMDD.json     # run log
 | 檔案 | 功能 | 測試 |
 |---|---|---|
 | `src/fetch_rss.py` | 併發抓取 + retry/backoff + consecutive_failures state | 12 條 |
-| `src/normalize.py` | feedparser 解析 + canonicalize URL + sha256 article_id + time window | 20 條 |
-| `src/classifier.py` | Beat 分類：source 0.6 + keyword 0.3 + entity 0.1（spaCy NER）+ ECON exception | 24 條 |
-| `src/entity_recognizer.py` | spaCy NER 封裝：extract_entities + entity_match_score | 14 條 |
+| `src/normalize.py` | feedparser 解析 + canonicalize URL + sha256 article_id + time window | 26 條 |
+| `src/classifier.py` | Beat 分類：source 0.6 + keyword 0.3 + entity 0.1（spaCy NER）+ AI/ECON exception | 22 條 |
+| `src/entity_recognizer.py` | spaCy NER 封裝：extract_entities + entity_match_score | 19 條 |
 | `src/tw_highlight.py` | Taiwan Highlight：positive + context + FP review | 10 條 |
-| `src/dedup.py` | 文章去重：canonical URL + 同源相似標題（rapidfuzz ≥0.92） | 9 條 |
-| `src/event_cluster.py` | 事件聚合：title sim 0.88 + 共同關鍵詞 ≥5（同beat+title≥50%） + 24h window + 停用詞 | 22 條 |
-| `src/selector.py` | 選題：selection_score + daily_limits + drop_reason | 13 條 |
-| `src/html_cleaner.py` | strip HTML/script/style + 追蹤參數清理 + entity decode | 18 條 |
-| `src/claude_rewrite.py` | Anthropic SDK 呼叫 + retry + JSON parse + merge + lint | 16 條 |
-| `src/claim_trace.py` | verify + fix + fallback claim + single_source_warning | 19 條 |
-| `src/validators.py` | banned_phrases(8) + voice_text lint(6) + confidence/opinion/claim/platform | 27 條 |
-| `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI（stats 讀取 + transition pool + 7-event voice limit） | 58 條 |
+| `src/dedup.py` | 文章去重：canonical URL + 同源相似標題（rapidfuzz ≥0.92） | 11 條 |
+| `src/event_cluster.py` | 事件聚合：title sim 0.88 + 共同關鍵詞 ≥5（同beat+title≥50%） + 24h window + 停用詞 | 24 條 |
+| `src/selector.py` | 選題：selection_score + daily_limits + drop_reason | 18 條 |
+| `src/html_cleaner.py` | strip HTML/script/style + 追蹤參數清理 + entity decode | 21 條 |
+| `src/claude_rewrite.py` | Anthropic SDK 呼叫 + retry + JSON parse + merge + lint | 23 條 |
+| `src/claim_trace.py` | verify + fix + fallback claim + single_source_warning | 18 條 |
+| `src/validators.py` | banned_phrases(8) + voice_text lint(6) + confidence/opinion/claim/platform | 37 條 |
+| `src/formatter.py` | 六種輸出 + split_posts + 驗證 + CLI（stats 讀取 + transition pool + 7-event voice limit） | 66 條 |
 | `src/pipeline.py` | 全 pipeline 入口（串接 9 步）+ stats 收集 + 摘要 + idempotent | 21 條 |
 
 ### Docs
@@ -98,20 +98,20 @@ output/logs/run_YYYYMMDD.json     # run log
 ### Tests
 
 ```
-tests/test_schemas.py           37 條（schema meta-validation + samples + lint）
+tests/test_schemas.py           38 條（schema meta-validation + samples + lint）
 tests/test_fetch_rss.py         12 條
-tests/test_normalize.py         20 條
-tests/test_classifier.py        24 條（含 9 條 entity integration + 4 條 ECON exception）
-tests/test_entity_recognizer.py 14 條
+tests/test_normalize.py         26 條
+tests/test_classifier.py        22 條（含 entity integration + AI/ECON exception）
+tests/test_entity_recognizer.py 19 條
 tests/test_tw_highlight.py      10 條
-tests/test_dedup.py              9 條
-tests/test_event_cluster.py     22 條
-tests/test_selector.py          13 條
-tests/test_html_cleaner.py      18 條
-tests/test_claude_rewrite.py    16 條（mocked SDK）
-tests/test_claim_trace.py       19 條
-tests/test_validators.py        27 條
-tests/test_formatter.py         58 條
+tests/test_dedup.py             11 條
+tests/test_event_cluster.py     24 條
+tests/test_selector.py          18 條
+tests/test_html_cleaner.py      21 條
+tests/test_claude_rewrite.py    23 條（mocked SDK）
+tests/test_claim_trace.py       18 條
+tests/test_validators.py        37 條
+tests/test_formatter.py         66 條
 tests/test_pipeline.py          21 條（含 2 條 idempotent）
 ───────────────────────────────────
 合計                            366 條，全綠，~4.5 秒

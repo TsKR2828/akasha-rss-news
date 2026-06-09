@@ -28,8 +28,8 @@ output/logs/run_YYYYMMDD.json
 - [x] 建立專案骨架
 - [x] 初始化 Git
 - [x] 建立 GitHub repo（https://github.com/TsKR2828/akasha-rss-news）
-- [x] `config/feeds.yaml`（規格 §3.1，31 sources / 26 enabled）
-- [x] `config/beats.yaml`（規格 §2.1、§6.1，含 entity 設定）
+- [x] `config/feeds.yaml`（規格 §3.1，32 sources / 27 enabled）
+- [x] `config/beats.yaml`（規格 §2.1、§6.1，含 entity 設定 + AI/ECON 例外）
 - [x] `config/selection_score.yaml`（規格 §8.2）
 - [x] `config/style_guide.md`（規格 §13）
 - [x] `schemas/report.schema.json`
@@ -38,7 +38,7 @@ output/logs/run_YYYYMMDD.json
 - [x] `schemas/platform_output.schema.json`
 - [x] `prompts/rewrite_prompt.md`（含規格 §10.1 injection 防護）
 - [x] `prompts/routine_prompt.md`
-- [x] `tests/test_schemas.py`（37 條測試，全綠）
+- [x] `tests/test_schemas.py`（38 條測試，全綠）
 
 **驗收：** ✅ Schema 自我驗證通過、✅ 每個 source 有穩定 `source_id`、✅ prompt 明列 Claude 可做/不可做。
 
@@ -57,7 +57,7 @@ output/logs/run_YYYYMMDD.json
 - [x] feed health log（規格 §4.3）
 - [x] timeout 10s + 2 retries + exponential backoff
 - [x] 時間窗口：`report_date 05:00 - 24h - 3h grace`
-- [x] `tests/test_fetch_rss.py` + `tests/test_normalize.py`（32 條，全綠）
+- [x] `tests/test_fetch_rss.py` + `tests/test_normalize.py`（38 條，全綠）
 - [x] 實機 BBC World fetch + normalize 驗證 end-to-end（32/36 articles 入窗口）
 
 **驗收：**
@@ -72,25 +72,25 @@ output/logs/run_YYYYMMDD.json
 
 一篇文章能走到「被選或被丟」並完整寫進 events JSON。
 
-- [x] `src/classifier.py`（Beat 分類，規格 §6.1，含 §6.2 AI 例外）
+- [x] `src/classifier.py`（Beat 分類，規格 §6.1，含 §6.2 AI 例外 + ECON 例外）
 - [x] `src/entity_recognizer.py`（spaCy NER，補齊 §6.1 entity_weight 0.1）
 - [x] `src/tw_highlight.py`（Taiwan Highlight 偵測，規格 §6.3）
 - [x] `src/dedup.py`（文章去重：canonical URL + 同源相似標題）
 - [x] `src/event_cluster.py`（同事件聚合，規格 §7.2 MVP 策略）
 - [x] `src/selector.py`（selection_score 計算與選題，規格 §8）
 - [x] `data/events/YYYY-MM-DD/` 事件 JSON 輸出
-- [x] `tests/` Phase 2 測試（87 條，全綠）
+- [x] `tests/` Phase 2 測試（104 條，全綠）
 - [x] Feed sweep 全 28 sources 實機掃描（關 4 死源、新增 2 AI 來源）
 - [x] 實機驗證：26 sources → 461 articles，pipeline end-to-end 跑通
 
 **驗收：** ✅ 全部達標
 - ✅ 分類權重：source 0.6 + keyword 0.3 + entity 0.1，min_score 0.45（entity 已接 spaCy NER）
-- ✅ AI beat 例外（BBC Tech / Ars Technica 二次過濾；The Verge 已停用）
+- ✅ AI beat 例外（BBC Tech / Ars Technica 二次過濾；The Verge 已停用）+ ECON beat 例外（bbc/reuters/nyt/guardian business）
 - ✅ TW_HIGHLIGHT 必有 `tw_highlight_reason` 與 `tw_highlight_keywords`
 - ✅ 不用 embedding：標題正規化相似度 0.88 + 共同關鍵詞 ≥ 3
 - ✅ 每個 beat 符合 `daily_limits` min/max
 - ✅ 未選入事件記錄 `drop_reason`
-- ✅ 26 enabled sources 全部 200 OK、0 warnings
+- ✅ 27 enabled sources（14 remote_blocked 為預期行為）
 
 ---
 
@@ -103,7 +103,7 @@ output/logs/run_YYYYMMDD.json
 - [x] `src/claude_rewrite.py`（Anthropic SDK + retry + JSON parse + merge + lint）
 - [x] `src/claim_trace.py`（verify + fix + fallback claim）
 - [x] `src/validators.py`（banned_phrases 8 詞 + voice_text 6 patterns + confidence / opinion / claim / platform lint）
-- [x] `tests/` Phase 3 測試（80 條，全綠；Claude SDK 全部 mocked）
+- [x] `tests/` Phase 3 測試（99 條，全綠；Claude SDK 全部 mocked）
 
 **驗收：** ✅ 全部達標
 - ✅ Claude 改寫由 rewrite_prompt.md 的安全規則保護（injection 防護、事實安全紅線）
@@ -130,7 +130,7 @@ output/logs/run_YYYYMMDD.json
 - [x] `output/platforms/x_YYYYMMDD.json` X 草稿
 - [x] `output/platforms/threads_YYYYMMDD.json` Threads 草稿
 - [x] `output/logs/run_YYYYMMDD.json` run log
-- [x] `tests/test_formatter.py`（56 條測試，全綠）
+- [x] `tests/test_formatter.py`（66 條測試，全綠）
 
 **驗收（P0）：** ✅ 全部達標
 - ✅ report JSON 結構符合 report.schema.json（reportId / sections / stats / warnings）
@@ -199,7 +199,7 @@ Claude Code Routine 連跑 7 天無人工介入。
 - [x] 兩份 schema 的 N/N regex 同步收窄
 - [x] `event.schema.json` 補齊 `single_source_warning` allOf 規則
 
-**驗收：** ✅ 359 條測試全綠（新增 18 條覆蓋本次修復）
+**驗收：** ✅ 測試全綠（Data Layer Audit 新增 18 條；後續品質改進持續增加，目前合計 366 條）
 
 ---
 

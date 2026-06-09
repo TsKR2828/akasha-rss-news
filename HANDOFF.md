@@ -28,7 +28,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 - **Branch**：`main`（目前 checkout）
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
-- **Latest commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
+- **Latest commit**：`dee18c5` docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session
 - **Tests**：360 passed, 0 failed（~4.5 秒）
 - **Working tree**：clean
 
@@ -36,7 +36,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 | Branch | 用途 | 最新 commit |
 |--------|------|-------------|
-| `main` | 程式碼 | `66c151a` — CNA + dedup tuning + remote_blocked stats + prompt |
+| `main` | 程式碼 | `dee18c5` — docs: update HANDOFF.md and AI_CONTEXT.md for 2026-06-09 session |
 | `daily-reports` | 每日產出（routine push） | `963326e` — daily-report: 2026-06-01 |
 
 ---
@@ -79,7 +79,6 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 | ECON 分類太鬆（印度空難、機場擴建歸 ECON） | 需加 `econ_exception_sources` 或調降 source_default_weight 0.6→0.45 | 中 |
 | 加報導者 RSS | 需確認 RSS URL，更新頻率較低（週更） | 低 |
 | 加農業部新聞 RSS | 需寫 3 個 adapter（truncation + 去公文腔 + 濾宣傳稿），ROI 低 | 高 |
-| event_cluster 二次合併（同事件主體 + 24hr 窗口） | 長期改善選材重複的根本方案 | 中 |
 
 ---
 

@@ -347,6 +347,15 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
 
     events_dir.mkdir(parents=True, exist_ok=True)
+
+    # 清理當日 events 目錄中的舊事件檔，避免重跑時新舊事件混雜。
+    # _ 前綴檔（_selection_manifest.json、_rewrite_log.json 等）保留不動。
+    if events_dir.exists():
+        for stale in events_dir.glob("*.json"):
+            if not stale.name.startswith("_"):
+                stale.unlink()
+                LOG.info("刪除舊事件檔：%s", stale.name)
+
     for evt in events:
         (events_dir / f"{evt['event_id']}.json").write_text(
             json.dumps(evt, ensure_ascii=False, indent=2),

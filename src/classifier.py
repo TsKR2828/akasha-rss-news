@@ -198,7 +198,8 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     counts: dict[str, int] = {}
     rejected = 0
-    files = sorted(articles_dir.glob("*.json"))
+    files = sorted(f for f in articles_dir.glob("*.json")
+                   if not f.name.startswith("_"))
 
     for fp in files:
         article = json.loads(fp.read_text(encoding="utf-8"))

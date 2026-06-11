@@ -4,6 +4,8 @@
 """
 from __future__ import annotations
 
+import json
+
 import pytest
 from jsonschema import Draft7Validator
 
@@ -310,3 +312,60 @@ class TestEventSchemaConformance:
         validator = Draft7Validator(event_schema)
         for evt in events:
             validator.validate(evt)
+
+
+# ---------------------------------------------------------------------------
+# main() 清理舊事件檔
+# ---------------------------------------------------------------------------
+
+class TestMainCleansStaleEvents:
+    """CARD-03：main() 重跑前刪除 events 目錄中的舊事件檔，保留 _ 前綴檔。"""
+
+    def test_stale_events_removed_underscore_kept_new_events_written(self, tmp_path):
+        """events 目錄預放 1 個過期事件 json + 1 個 _selection_manifest.json；
+        跑 main() 後：
+        - 過期事件檔消失
+        - _selection_manifest.json 仍在
+        - 本次新事件檔已寫入
+        """
+        date_str = "2026-06-01"
+
+        # 建立 articles 目錄並放入 1 篇已分類文章
+        articles_dir = tmp_path / "articles" / date_str
+        articles_dir.mkdir(parents=True)
+        art = _article("a" * 64, source_id="bbc_world", tier=1,
+                       title="Ukraine summit held in Brussels",
+                       summary="ceasefire talks ongoing")
+        (articles_dir / ("a" * 64 + ".json")).write_text(
+            json.dumps(art), encoding="utf-8"
+        )
+
+        # 建立 events 目錄並預置舊事件檔 + _ 前綴檔
+        # 使用不會與本次輸出衝突的檔名（evt_099），確保刪除驗證準確
+        events_dir = tmp_path / "events" / date_str
+        events_dir.mkdir(parents=True)
+        stale_file = events_dir / "daily_20260601_evt_099.json"
+        stale_file.write_text(json.dumps({"event_id": "stale_old"}), encoding="utf-8")
+        manifest_file = events_dir / "_selection_manifest.json"
+        manifest_file.write_text(json.dumps({"selected": []}), encoding="utf-8")
+
+        # 執行 main()
+        rc = event_cluster.main([
+            "--articles-base", str(tmp_path / "articles"),
+            "--events-base", str(tmp_path / "events"),
+            "--date", date_str,
+        ])
+        assert rc == 0
+
+        # 過期事件檔必須消失
+        assert not stale_file.exists(), "舊事件檔應已被刪除"
+
+        # _ 前綴檔必須保留
+        assert manifest_file.exists(), "_selection_manifest.json 不應被刪除"
+
+        # 本次新事件檔必須寫入
+        new_events = [
+            f for f in events_dir.iterdir()
+            if f.suffix == ".json" and not f.name.startswith("_")
+        ]
+        assert len(new_events) >= 1, "本次執行應寫入至少 1 個新事件檔"

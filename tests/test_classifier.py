@@ -8,9 +8,11 @@ NOTE: 既有的測試用 ``_mock_ner`` fixture 把 entity extraction
 """
 from __future__ import annotations
 
+import json
 from unittest.mock import patch
 
 import pytest
+import yaml
 
 from src import classifier, entity_recognizer
 
@@ -330,3 +332,48 @@ class TestEntityIntegration:
                            summary="Treaty signed")
             _, scores = classifier.classify(art, BEATS_CONFIG)
             assert scores["INTL"] == pytest.approx(1.0)
+
+
+# ---------------------------------------------------------------------------
+# CLI 整合 — 驗證 main() 過濾 _ 前綴檔案
+# ---------------------------------------------------------------------------
+
+class TestMainSkipsUnderscoreFiles:
+    """HIGH: classifier CLI 須過濾 _ 前綴檔案，避免同日重跑 _dedup_log.json 致 exit 99。"""
+
+    def test_ignores_dedup_log_on_rerun(self, tmp_path):
+        """tmp 目錄放 1 個合法 article json + 1 個 _dedup_log.json（JSON list），
+        跑 main()，斷言 exit code 0 且合法 article 有被處理（寫回檔含 beat 欄位）。
+        """
+        articles_dir = tmp_path / "articles" / "2026-05-19"
+        articles_dir.mkdir(parents=True)
+
+        # 合法 article（source_id=bbc_world，beats=[INTL]，score=0.6 > 0.45）
+        art = _article(beats=["INTL"], title="War summit signed", summary="Treaty.")
+        article_file = articles_dir / f"{'a' * 64}.json"
+        article_file.write_text(json.dumps(art), encoding="utf-8")
+
+        # 模擬前次 dedup 步驟產生的 _dedup_log.json（JSON list，非 dict）
+        dedup_log = [{"article_id": "b" * 64, "duplicate_of": "a" * 64,
+                      "reason": "exact_canonical_url"}]
+        (articles_dir / "_dedup_log.json").write_text(
+            json.dumps(dedup_log), encoding="utf-8",
+        )
+
+        # 寫入一個最小 beats.yaml，避免依賴 config/ 絕對路徑
+        beats_yaml = tmp_path / "beats.yaml"
+        beats_yaml.write_text(
+            yaml.dump(BEATS_CONFIG, allow_unicode=True), encoding="utf-8",
+        )
+
+        rc = classifier.main([
+            "--beats-config", str(beats_yaml),
+            "--articles-base", str(tmp_path / "articles"),
+            "--date", "2026-05-19",
+        ])
+
+        assert rc == 0
+        # 合法 article 已被分類並寫回（含 beat 欄位）
+        enriched = json.loads(article_file.read_text(encoding="utf-8"))
+        assert "beat" in enriched
+        assert enriched["beat"] is not None

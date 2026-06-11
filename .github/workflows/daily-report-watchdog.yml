@@ -1,0 +1,79 @@
+name: daily-report-watchdog
+
+# 每天 06:00（Asia/Taipei）檢查 daily-reports 分支上的當日館報：
+# 缺報、六件套缺檔、或 verify_output 守門不過 → 自動開 GitHub issue。
+# 這是 B3-1（排程中斷或靜默失敗）的外部監工：就算 Routine 整個沒跑也會被抓到。
+
+on:
+  schedule:
+    - cron: '0 22 * * *' # 22:00 UTC = 06:00 Asia/Taipei（館報 05:00 後一小時）
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install minimal deps
+        run: pip install --quiet pyyaml jsonschema
+
+      - name: Check today's report on daily-reports
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          git fetch origin daily-reports --quiet
+          DATE=$(TZ=Asia/Taipei date +%F)
+          COMPACT=${DATE//-/}
+          PROB=/tmp/problems.txt
+          : > "$PROB"
+
+          if ! git cat-file -e "origin/daily-reports:output/daily_${COMPACT}.json" 2>/dev/null; then
+            echo "- 今日館報 output/daily_${COMPACT}.json 不存在於 daily-reports 分支（Routine 可能沒跑或中途失敗）" >> "$PROB"
+          else
+            git show "origin/daily-reports:output/daily_${COMPACT}.json" > /tmp/report.json
+            if ! python scripts/verify_output.py --report-file /tmp/report.json > /tmp/verify.log 2>&1; then
+              {
+                echo "- verify_output 守門未通過："
+                echo '```'
+                head -40 /tmp/verify.log
+                echo '```'
+              } >> "$PROB"
+            fi
+            for f in "output/daily_${COMPACT}.md" "output/voice_${COMPACT}.txt" \
+                     "output/platforms/x_${COMPACT}.json" "output/platforms/threads_${COMPACT}.json" \
+                     "output/logs/run_${COMPACT}.json"; do
+              git cat-file -e "origin/daily-reports:${f}" 2>/dev/null || echo "- 六件套缺檔：${f}" >> "$PROB"
+            done
+          fi
+
+          if [ -s "$PROB" ]; then
+            TITLE="館報告警 ${DATE}"
+            EXISTING=$(gh issue list --state open --search "in:title \"${TITLE}\"" --json number --jq 'length')
+            if [ "${EXISTING}" = "0" ]; then
+              {
+                echo "daily-report-watchdog 於 $(TZ=Asia/Taipei date '+%F %T') 檢查發現："
+                echo
+                cat "$PROB"
+                echo
+                echo "處置：開 Claude Code 視窗說「檢查今天館報為什麼告警」，把本 issue 連結貼給它。"
+              } > /tmp/body.md
+              gh issue create --title "${TITLE}" --body-file /tmp/body.md
+            else
+              echo "已有同名 open issue，不重複建立"
+            fi
+            echo "=== 發現問題 ==="
+            cat "$PROB"
+            exit 1
+          fi
+          echo "OK：${DATE} 館報六件套齊全且通過 verify_output"

@@ -1,8 +1,10 @@
 """生產館報輸出守門腳本。
 
 Routine 在每次 push 前必跑，用來確保生產輸出全面符合 P0 規格。
-歷史背景：06-11 館報曾繞過所有驗證出貨（18 則 X 貼文超 280 字、
-schema 驗證 18 錯、status 仍為 ok），此腳本正是為了堵住這條缺口。
+歷史背景：2026-06-11 健檢發現生產輸出在 push 前沒有任何強制驗證關卡
+（警告鏈斷裂、status 可能與內容脫鉤），此腳本用來堵住這條缺口。
+（健檢初版所稱「18 則 X 貼文超 280 / schema 18 錯」經覆核為編碼測量
+誤差，已撤回；X 平台加權計數議題見 DECISIONS.md 2026-06-11 豁免決策。）
 
 CLI 用法：
     python scripts/verify_output.py --date YYYY-MM-DD [--output-base PATH]

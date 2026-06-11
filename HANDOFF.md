@@ -1,4 +1,4 @@
-# 交接文件 — 2026-06-09
+# 交接文件 — 2026-06-11
 
 給下一個 Claude Code 視窗的工作摘要。
 
@@ -12,16 +12,16 @@
 
 ## 目前在哪
 
-**Phase 5（Routine 自動化）— pipeline live 運作中，報告序列 05-21 起連續產出。**
+**Phase 5（Routine 自動化）— 2026-06-11 全量健檢完成（結論 BLOCKED），16 卡修復波執行中/完成。**
 
-Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
-最近三個視窗做了：
-1. tw_highlight 中文關鍵字修復 + PTS_LOCAL 計入台灣相關統計
-2. 四項品質改進（CNA 來源、選材去重、remote_blocked 統計分離、rewrite prompt 強化）
-3. 6/1 報告手動補回（routine 當天 limit hit 未執行）
-4. MODEL 更新 + ECON 分類例外機制 + 壞源修復（CNA URL、Reuters proxy）+ idempotent 測試
+2026-06-11 由 Opus 進行全量健檢，發現多處「宣告正確、執行缺席」失效模式：
+- fetch 失敗告警未落地到 warnings[]（CARD-1 修復）
+- pipeline exit code 邏輯不完整（CARD-2 修復）
+- voice 確定性缺失（CARD-3 修復）
+- split_posts 窗口上限實際未被 verify（CARD-4 修復）
+- 其他共計 16 張修復卡，Opus 設計、Sonnet 執行
 
-366 條測試全綠。
+422 條測試全綠（修復波後實測）。
 
 ---
 
@@ -29,10 +29,9 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 - **Branch**：`main`（目前 checkout）
 - **Remote**：`https://github.com/TsKR2828/akasha-rss-news`（private）
-- **Latest commit**：`7f2b136` ops: fix broken RSS sources + add idempotent tests
-- **Tests**：366 passed, 0 failed（~4.5 秒）
-- **Working tree**：clean（`data/raw/2026-06-09/` untracked — audit 測試產物）
-- **Ahead of origin**：2 commits（需 push）
+- **Latest commit**：16 卡修復波提交（主控統一處理，2026-06-11）
+- **Tests**：422 passed, 0 failed（~5.0 秒）
+- **Working tree**：16 卡修復波完成後待主控 push
 
 ### 雙分支策略
 
@@ -45,49 +44,35 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ## 這個視窗做了什麼
 
-### Session 1：tw_highlight 修復 + 6/1 報告補回
+### 2026-06-11：全量健檢（Opus）+ 16 卡修復波（Sonnet）
 
-| 問題 | 修法 |
-|------|------|
-| 台灣相關統計 = 0（公視文章存在但沒偵測到） | `beats.yaml` 加中文關鍵字（11 positive + 16 context + 3 FP）；`pipeline.py` + `formatter.py` 把 PTS_LOCAL beat 也計入 tw_highlights_count |
-| 6/1 報告缺失（routine limit hit） | 從 6/2 remote raw data + 本地 fetch blocked sources → 跑完整 pipeline → 手動改寫 18 則 → push 到 daily-reports |
-| 6/2 報告被覆蓋 | 確認 merge 保留了更完整的版本（155 vs 141 articles），無需修復 |
+**健檢結論**：BLOCKED — 多處宣告正確但執行缺席。
 
-**Commit**：`1829402` fix: tw_highlight Chinese keywords + count PTS_LOCAL in stats
+**流程說明**：Opus 擔任驗證角色，閱讀全部 src/ 模組與 tests/，制定 16 張 FIX-CARD；Sonnet 擔任執行角色，逐卡實作並在每卡結束前確認 pytest 全綠。
 
-### Session 2：四項品質改進
+**16 張修復卡摘要**：
 
-來自月月的改進方向分析，逐一回應後挑出 4 項可行改動一口氣做完：
-
-| # | 改動 | 影響 |
-|---|------|------|
-| 1 | **加中央社 CNA RSS 源** `cna_all`（`feeds.yaml`）+ `selector.py` TAIWAN_SOURCE_PREFIXES 加 `cna_` | 台灣新聞覆蓋量翻倍 |
-| 2 | **same_topic_already_selected** 罰分 -20 → **-45**（`selection_score.yaml`） | 減少 WWDC 類重複選材 |
-| 4 | **remote_blocked 統計分離**：`pipeline.py` + `formatter.py` 新增 `total_feeds_failed_remote_blocked` 欄位，Markdown 顯示「失敗來源 13（遠端封鎖 13、實際失敗 0）」 | 報表不再看起來「50% 失敗」 |
-| 5 | **rewrite prompt 加具體事實規則**：每則 context 至少包含一個具體事實（數字/人名/時間點/地點） | 防止空泛趨勢描述 |
-
-**也更新了**：`report.schema.json`（加 `total_feeds_failed_remote_blocked`）、3 個 test fixtures。
-
-**Commit**：`66c151a` improve: add CNA source, tune selection dedup, separate remote_blocked stats, strengthen rewrite prompt
-
-### Session 3：程式碼修復 + 來源 audit + idempotent 測試
-
-月月列出 17 項待處理，本次完成程式碼與營運層面共 8 項：
-
-| # | 改動 | 結果 |
-|---|------|------|
-| 1 | MODEL `claude-sonnet-4-20250514` → `claude-sonnet-4-6` | EOL 風險消除 |
-| 2 | ECON 分類加 exception 機制（鏡像 AI §6.2） | 印度空難不再歸 ECON |
-| 4 | CNA RSS `cna_all` → `cna_intworld`，URL 改 feedburner | DNS 不存在問題修復 |
-| 5 | pipeline idempotent 測試 ×2 | 同日重跑結果一致 |
-| 7 | RSSHub audit | 確認 403，基礎設施問題 |
-| 8 | Reuters Google News proxy 修復 | allinurl→site: 語法，99+96 entries |
-| 9 | marktechpost audit | 確認健康，之前是暫時性問題 |
-| 6 | 7 天穩定性 | 6 天連續 OK，待第 7 天 routine |
-
-**Commits**：
-- `1462591` fix: update deprecated MODEL + add ECON classification exception（+4 tests）
-- `7f2b136` ops: fix broken RSS sources + add idempotent tests（+2 tests）
+| 卡號 | 一句話 | 主要動到的檔案 |
+|------|--------|----------------|
+| CARD-1 | fetch 失敗 warnings 落地修復 | `src/fetch_rss.py`, `src/pipeline.py` |
+| CARD-2 | pipeline exit code 完整性修復 | `src/pipeline.py` |
+| CARD-3 | voice 確定性（transition pool seed 固定） | `src/formatter.py` |
+| CARD-4 | split_posts 上限 verify 修復 | `src/formatter.py`, `scripts/verify_output.py` |
+| CARD-5 | fetch_warnings 欄位正式落地 | `src/fetch_rss.py`, `src/pipeline.py` |
+| CARD-6 | --until step-stop flag 實作（pipeline.py）；窗口上限 fetch_window_end 在 normalize.py | `src/pipeline.py`（--until flag）, `src/normalize.py`（fetch_window_end / in_window） |
+| CARD-7 | requirements.lock 生成與鎖定 | `requirements.lock` |
+| CARD-8 | verify_output.py push 前強制驗證腳本 | `scripts/verify_output.py` |
+| CARD-9 | fetch abort → pipeline 明確 exit 2 | `src/pipeline.py` |
+| CARD-10 | 告警鏈：consecutive_failures 觸發路徑修復 | `src/fetch_rss.py` |
+| CARD-11 | voice lint N/N regex 與 schema 同步 | `schemas/platform_output.schema.json`（N/N regex 收窄；validators.py git diff 0 行，未改動） |
+| CARD-12 | claim_trace fallback 覆蓋率補測 | `tests/test_claim_trace.py`（git diff 0 行，此項未落地；覆蓋率缺口仍存在） |
+| CARD-13 | 文件同步：修正失真宣稱 + DEV_LOG/CHANGELOG | `README.md`, `ROADMAP.md`, `AI_CONTEXT.md`, `HANDOFF.md`, `DEV_LOG.md`, `CHANGELOG.md` |
+| CARD-14 | routine_prompt.md 重寫（反映雙層抓取現況） | `prompts/routine_prompt.md` |
+| CARD-15 | selector total_events.max advisory 升格 hard | `src/selector.py`（git diff 0 行，此項未落地；hard enforce 仍為 advisory） |
+| CARD-16 | pipeline --dry-run 覆蓋率補強 | `tests/test_pipeline.py` |
+| *(unattributed)* | classifier ECON 例外 + tests | `src/classifier.py`, `tests/test_classifier.py` |
+| *(unattributed)* | event_cluster 同 beat title_sim 門檻 + tests | `src/event_cluster.py`, `tests/test_event_cluster.py` |
+| *(unattributed)* | tw_highlight 中文關鍵詞 + PTS_LOCAL stats + tests | `src/tw_highlight.py`, `tests/test_tw_highlight.py` |
 
 ---
 
@@ -151,22 +136,27 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ## 已知待處理項目
 
-### 程式碼層面
-- [x] ~~MODEL 更新~~ → `claude-sonnet-4-6`（`1462591`）
-- [x] ~~ECON 分類例外~~ → `econ_exception_sources` 機制（`1462591`）
-- [x] ~~Reuters proxy 修復~~ → `site:` 語法（`7f2b136`）
-- [x] ~~CNA URL 修復~~ → feedburner（`7f2b136`）
+### 程式碼層面（2026-06-11 修復波後）
+- [x] ~~MODEL 更新~~ → `claude-sonnet-4-6`
+- [x] ~~ECON 分類例外~~ → `econ_exception_sources` 機制
+- [x] ~~Reuters proxy 修復~~ → `site:` 語法
+- [x] ~~CNA URL 修復~~ → feedburner
+- [x] ~~fetch 失敗 warnings 未落地~~ → CARD-1/5 修復
+- [x] ~~pipeline exit code 不完整~~ → CARD-2/9 修復
+- [x] ~~voice 確定性缺失~~ → CARD-3 修復
+- [x] ~~split_posts 上限 verify 缺失~~ → CARD-4/8 修復
 - [ ] Reuters Google News proxy 需定期 audit（語法曾變更一次）
+
+### 人工待處理項目（程式碼無法替代）
+- [ ] **claude.ai Routine prompt 更新**：`prompts/routine_prompt.md` 已重寫（CARD-14），但 claude.ai 介面上的 Routine 設定需月月手動貼入新版 prompt
+- [ ] **本地 04:30 schtasks 設定**：`scripts/local_fetch.py` 需月月在 Windows 本機設定 schtasks 排程（`schtasks /create ...`），目前仍為手動
+- [ ] **local_fetch push 分支歸屬決策**：local_fetch.py 抓的 raw data 應 push 到 `main` 還是 `daily-reports` 分支，尚未決定
+- [ ] **通知管道決策**：Telegram / Discord / Email？月月決定後實作
 
 ### 資料/營運層面
 - [ ] RSSHub 自架（公共實例 403，AP World 無法使用）
 - [ ] TW_STORY 功能啟用（需建立 tw_stories.json）
-- [ ] 7 天穩定性驗證最後 1 天（已連續 6 天 OK：05-30~06-04）
-
-### 待決策
-- [ ] Routine 通知管道：Telegram / Discord / Email？
-- [ ] 報導者 RSS 是否加入？
-- [ ] Google News proxy 長期 fallback 策略
+- [ ] 7 天穩定性驗證（6/1 人工補回日已標記，連續計數重置中）
 
 ---
 
@@ -186,7 +176,7 @@ Pipeline + Routine 已 live，每天 05:00 Asia/Taipei 自動執行。
 
 ```bash
 cd C:\Users\User.DESKTOP-HA8VHD7\Documents\Claude\akasha-rss-news
-python -m pytest tests/ -q          # 366 passed, ~4.5 秒
+python -m pytest tests/ -q          # 422 passed, ~5.0 秒
 python -m src.pipeline --dry-run    # 跑全 pipeline（跳過 Claude API）
 python -m src.formatter --date 2026-06-04  # 單獨跑格式化
 ```

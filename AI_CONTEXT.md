@@ -36,10 +36,10 @@ output/logs/run_YYYYMMDD.json     # run log
 | 4 多格式輸出 | ✅ 完成 | formatter（JSON / MD / voice / X / Threads + run log + 驗證） |
 | **5 Routine** | 🔧 **進行中** | pipeline.py + routine 已設定，待穩定性驗證 |
 
-**數據快照（2026-06-09）**：
+**數據快照（2026-06-11）**：
 - 27 enabled sources（含 CNA 中央社）/ 14 remote_blocked / 461+ articles
 - 14 個 source modules，0 個 pending
-- 366 條測試全綠（~4.5 秒）
+- **422 條測試全綠**（實測 ~5.0 秒；2026-06-11 修復波新增 56 條）
 
 ---
 
@@ -114,7 +114,7 @@ tests/test_validators.py        37 條
 tests/test_formatter.py         66 條
 tests/test_pipeline.py          21 條（含 2 條 idempotent）
 ───────────────────────────────────
-合計                            366 條，全綠，~4.5 秒
+合計                            422 條，全綠，~5.0 秒（2026-06-11 修復波實測）
 ```
 
 ---
@@ -133,11 +133,11 @@ tests/test_pipeline.py          21 條（含 2 條 idempotent）
 
 5. **article_id**：`sha256(source_id | canonical_url)`，重跑必得同 ID。
 
-6. **Fail mode**：單源失敗 → continue_with_warning；全源失敗 → abort（exit code 2）。連續 3 次失敗 → 額外告警。
+6. **Fail mode**：單源失敗 → continue_with_warning；全源失敗 → abort（exit code 2）。連續 3 次失敗 → 額外告警。**2026-06-11 起由 `scripts/verify_output.py` 於 push 前強制驗證 warnings[] 落地情況。**
 
 7. **Claude 改寫安全**：rewrite_prompt.md 含 injection 防護；claim_trace verify → fix → fallback 確保至少 1 條；banned_phrases 8 詞 + voice_text 6 patterns lint。
 
-8. **文字切分**：split_posts 三級退讓（句號 → 逗號 → 強制截斷），確保 X ≤280 / Threads ≤500。
+8. **文字切分**：split_posts 三級退讓（句號 → 逗號 → 強制截斷），確保 X ≤280 / Threads ≤500。**2026-06-11 起由 `scripts/verify_output.py` 於 push 前強制驗證切分上限合規。**
 
 9. **朗讀稿獨立生成**：用 voice_text 欄位加上 §13.3 開場 + §13.4 轉場語 + §13.5 來源宣告，不是拿 thread_text 刪 emoji。
 
@@ -171,6 +171,8 @@ tests/test_pipeline.py          21 條（含 2 條 idempotent）
 
 ## Recent Commits
 
+（2026-06-11 全量健檢 + 16 卡修復波，主控統一提交）
+- 16 卡修復波：重跑崩潰、告警鏈、窗口上限、exit code、voice 確定性、fetch_warnings 落地、--until flag、requirements.lock、verify_output.py
 - `8b9a340` docs: sync HANDOFF.md with completed audit items
 - `7f2b136` ops: fix broken RSS sources + add idempotent tests
 - `1462591` fix: update deprecated MODEL + add ECON classification exception

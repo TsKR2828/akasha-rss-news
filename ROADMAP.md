@@ -61,7 +61,7 @@ output/logs/run_YYYYMMDD.json
 - [x] 實機 BBC World fetch + normalize 驗證 end-to-end（32/36 articles 入窗口）
 
 **驗收：**
-- 單一 source 失敗 → `continue_with_warning`，`warnings[]` 有條目
+- 單一 source 失敗 → `continue_with_warning`，`warnings[]` 有條目（**2026-06-11 修復後成立：fetch_warnings 落地 + 報告合併**）
 - 全部 source 失敗 → `abort_report`，**不產出假成功報告**
 - 連續失敗 3 次的 source 觸發告警
 - `article_id = sha256(source_id + canonical_url)` 重跑得到相同 ID
@@ -155,7 +155,7 @@ Claude Code Routine 連跑 7 天無人工介入。
 - [x] Claude Code Routine 設定（每日 05:00 Asia/Taipei → `0 21 * * *` UTC）
 - [ ] 通知管道（月月決定先不做，之後再加）
 - [x] 同日重跑 idempotent 測試（2 條測試：summary 一致 + 檔案覆寫不重複）
-- [ ] 連跑 7 天穩定性測試（routine 已連續產出 6 天報告：05-30~06-04，待補齊 7 天）
+- [ ] 連跑 7 天穩定性測試（routine 已連續產出 6 天報告：05-30~06-04，待補齊 7 天；**6/1 為人工補回日，連續計數已於 2026-06-11 修復波重置**）
 
 **Routine 資訊：**
 - ID: `trig_01YZgdnxrvUsTLDh6YQKaDY4`
@@ -199,7 +199,7 @@ Claude Code Routine 連跑 7 天無人工介入。
 - [x] 兩份 schema 的 N/N regex 同步收窄
 - [x] `event.schema.json` 補齊 `single_source_warning` allOf 規則
 
-**驗收：** ✅ 測試全綠（Data Layer Audit 新增 18 條；後續品質改進持續增加，目前合計 366 條）
+**驗收：** ✅ 測試全綠（Data Layer Audit 新增 18 條；後續品質改進持續增加，目前合計 422 條，2026-06-11 全量健檢確認）
 
 ---
 

@@ -30,6 +30,7 @@ from src.formatter import (
     _collect_all_sources,
     _force_split,
     _format_publisher_list,
+    _load_fetch_warnings_filtered,
     _split_long_sentence,
     build_platform_output_item,
     build_report,
@@ -579,6 +580,14 @@ class TestFormatVoiceScript:
         closing_idx = voice.index("我們明天見")
         assert source_idx < closing_idx
 
+    def test_same_date_str_produces_identical_output(self, sample_event, sample_stats, beat_meta):
+        """同 date_str 呼叫 format_voice_script 兩次，輸出字串完全相等（確定性）。"""
+        items = [build_platform_output_item(sample_event)]
+        report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
+        voice_first = format_voice_script(report, "2026-05-19", beat_meta)
+        voice_second = format_voice_script(report, "2026-05-19", beat_meta)
+        assert voice_first == voice_second
+
     def test_voice_7_event_limit(self, sample_event, sample_stats, beat_meta):
         """voice 版最多展開 7 則，其餘一句 headline 帶過。"""
         # 建 10 個 INTL 事件，score 100~10
@@ -905,3 +914,216 @@ class TestCLIStatsReading:
             assert stats["total_articles_after_filter"] == 40  # 不含 _metadata
         finally:
             formatter.PROJECT_ROOT = original_root
+
+
+# ---------------------------------------------------------------------------
+# TestLoadFetchWarningsFiltered — CARD-06
+# ---------------------------------------------------------------------------
+
+class TestLoadFetchWarningsFiltered:
+    """_load_fetch_warnings_filtered：讀取 fetch_warnings.json 並過濾 remote_blocked 來源。"""
+
+    def test_no_file_returns_empty(self, tmp_path):
+        from src import formatter
+        original_root = formatter.PROJECT_ROOT
+        formatter.PROJECT_ROOT = tmp_path
+        try:
+            result = _load_fetch_warnings_filtered("2026-05-20")
+            assert result == []
+        finally:
+            formatter.PROJECT_ROOT = original_root
+
+    def test_filters_remote_blocked_keeps_real_fail(self, tmp_path):
+        """remote_blocked 來源的 warning 應被過濾；真失敗來源應保留。"""
+        from src import formatter
+        original_root = formatter.PROJECT_ROOT
+        formatter.PROJECT_ROOT = tmp_path
+
+        # 建立 feeds.yaml
+        config_dir = tmp_path / "config"
+        config_dir.mkdir(parents=True)
+        feeds_yaml = (
+            "sources:\n"
+            "  - source_id: rb_src\n"
+            "    remote_blocked: true\n"
+            "  - source_id: real_fail_src\n"
+            "    remote_blocked: false\n"
+        )
+        (config_dir / "feeds.yaml").write_text(feeds_yaml, encoding="utf-8")
+
+        # 建立 fetch_warnings.json
+        raw_dir = tmp_path / "data" / "raw" / "2026-05-20"
+        raw_dir.mkdir(parents=True)
+        warnings = [
+            {"source_id": "rb_src", "type": "source_failed", "message": "remote blocked"},
+            {"source_id": "real_fail_src", "type": "source_failed", "message": "真失敗"},
+        ]
+        (raw_dir / "fetch_warnings.json").write_text(
+            json.dumps(warnings), encoding="utf-8"
+        )
+
+        try:
+            result = _load_fetch_warnings_filtered("2026-05-20")
+        finally:
+            formatter.PROJECT_ROOT = original_root
+
+        assert len(result) == 1
+        assert result[0]["source_id"] == "real_fail_src"
+        assert result[0]["type"] == "source_failed"
+
+
+class TestFormatterMainFetchWarnings:
+    """CARD-06：formatter.main 的 CLI 單跑路徑也讀取並過濾 fetch warnings。"""
+
+    def test_fetch_warning_real_fail_causes_partial(self, sample_event, tmp_path):
+        """fetch_warnings.json 含 1 個 remote_blocked 源 + 1 個真失敗源 →
+        formatter.main 報告 warnings 只含真失敗、status partial、return 1。"""
+        from src import formatter
+
+        date = "2026-05-20"
+
+        # 建立 events
+        events_dir = tmp_path / "events" / date
+        events_dir.mkdir(parents=True)
+        eid = "daily_20260520_evt_001"
+        evt = dict(sample_event)
+        evt["event_id"] = eid
+        (events_dir / f"{eid}.json").write_text(
+            json.dumps(evt, ensure_ascii=False), encoding="utf-8"
+        )
+        manifest = {"selected_event_ids": [eid], "dropped": []}
+        (events_dir / "_selection_manifest.json").write_text(
+            json.dumps(manifest), encoding="utf-8"
+        )
+
+        # 建立 feeds.yaml：rb_src 是 remote_blocked
+        original_root = formatter.PROJECT_ROOT
+        formatter.PROJECT_ROOT = tmp_path
+        try:
+            config_dir = tmp_path / "config"
+            config_dir.mkdir(parents=True)
+            feeds_yaml = (
+                "sources:\n"
+                "  - source_id: rb_src\n"
+                "    remote_blocked: true\n"
+                "  - source_id: real_fail_src\n"
+                "    remote_blocked: false\n"
+            )
+            (config_dir / "feeds.yaml").write_text(feeds_yaml, encoding="utf-8")
+
+            # 建立 fetch_warnings.json
+            raw_dir = tmp_path / "data" / "raw" / date
+            raw_dir.mkdir(parents=True)
+            fetch_warnings_data = [
+                {"source_id": "rb_src", "type": "source_failed", "message": "remote blocked"},
+                {"source_id": "real_fail_src", "type": "source_failed", "message": "真失敗"},
+            ]
+            (raw_dir / "fetch_warnings.json").write_text(
+                json.dumps(fetch_warnings_data), encoding="utf-8"
+            )
+
+            output_dir = tmp_path / "output"
+            rc = formatter.main([
+                "--date", date,
+                "--events-base", str(tmp_path / "events"),
+                "--output-base", str(output_dir),
+            ])
+        finally:
+            formatter.PROJECT_ROOT = original_root
+
+        # status partial → exit 1
+        assert rc == 1
+
+        # 驗證報告中 warnings 只含真失敗
+        dc = date.replace("-", "")
+        report_path = output_dir / f"daily_{dc}.json"
+        assert report_path.exists()
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        assert report["status"] == "partial"
+        source_failed_warnings = [
+            w for w in report["warnings"]
+            if w.get("type") == "source_failed"
+        ]
+        assert len(source_failed_warnings) == 1
+        assert source_failed_warnings[0].get("source_id") == "real_fail_src"
+
+
+# ---------------------------------------------------------------------------
+# TestMainExitCodes — CARD-09
+# ---------------------------------------------------------------------------
+
+def _make_events_dir(tmp_path: Path, date: str, events: list, manifest_extra: dict | None = None) -> Path:
+    """輔助：在 tmp_path 下建立符合 CLI 要求的 events 目錄結構。"""
+    events_dir = tmp_path / date
+    events_dir.mkdir(parents=True, exist_ok=True)
+    selected_ids = []
+    for evt in events:
+        eid = evt["event_id"]
+        selected_ids.append(eid)
+        (events_dir / f"{eid}.json").write_text(
+            json.dumps(evt, ensure_ascii=False), encoding="utf-8"
+        )
+    manifest: dict = {"selected_event_ids": selected_ids, "dropped": []}
+    if manifest_extra:
+        manifest.update(manifest_extra)
+    (events_dir / "_selection_manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False), encoding="utf-8"
+    )
+    return events_dir.parent  # events_base
+
+
+class TestMainExitCodes:
+    """main() 依 report status 回傳正確 exit code。"""
+
+    def test_exit_0_clean_report(self, sample_event, tmp_path):
+        """正常 event、無違規 → report.status='ok' → return 0。"""
+        date = "2026-05-20"
+        events_base = _make_events_dir(tmp_path / "events", date, [sample_event])
+        output_dir = tmp_path / "output"
+
+        from src import formatter
+        rc = formatter.main([
+            "--date", date,
+            "--events-base", str(events_base),
+            "--output-base", str(output_dir),
+        ])
+        assert rc == 0
+
+    def test_exit_1_lint_violation(self, sample_event, tmp_path):
+        """voice_text 含 URL → validate_report_output 產生 issue
+        → report.status='partial' → return 1。"""
+        date = "2026-05-21"
+        evt = dict(sample_event)
+        evt["event_id"] = "daily_20260521_evt_001"
+        evt["voice_text"] = "詳見 https://bad.example.com 的完整報導。"
+
+        events_base = _make_events_dir(tmp_path / "events", date, [evt])
+        output_dir = tmp_path / "output"
+
+        from src import formatter
+        rc = formatter.main([
+            "--date", date,
+            "--events-base", str(events_base),
+            "--output-base", str(output_dir),
+        ])
+        assert rc == 1
+
+    def test_exit_2_no_sections(self, tmp_path):
+        """空 selected_event_ids → 無 sections → report.status='failed' → return 2。"""
+        date = "2026-05-22"
+        # 建立空 manifest，無任何 event 檔
+        events_dir = tmp_path / "events" / date
+        events_dir.mkdir(parents=True)
+        manifest = {"selected_event_ids": [], "dropped": []}
+        (events_dir / "_selection_manifest.json").write_text(
+            json.dumps(manifest, ensure_ascii=False), encoding="utf-8"
+        )
+        output_dir = tmp_path / "output"
+
+        from src import formatter
+        rc = formatter.main([
+            "--date", date,
+            "--events-base", str(tmp_path / "events"),
+            "--output-base", str(output_dir),
+        ])
+        assert rc == 2

@@ -210,3 +210,188 @@ class TestIO:
         assert data[0]["status"] == "ok"
         assert data[1]["status"] == "failed"
         assert data[1]["consecutive_failures"] == 2
+
+    def test_write_warnings_log_creates_file(self, tmp_path):
+        warnings = [
+            {"type": "source_failed", "source_id": "bbc_world", "message": "bbc_world failed: boom"},
+        ]
+        path = fetch_rss.write_warnings_log(tmp_path / "raw", warnings)
+        assert path.exists()
+        data = json.loads(path.read_text(encoding="utf-8"))
+        assert data == warnings
+
+    def test_write_warnings_log_empty_list(self, tmp_path):
+        path = fetch_rss.write_warnings_log(tmp_path / "raw", [])
+        assert path.exists()
+        data = json.loads(path.read_text(encoding="utf-8"))
+        assert data == []
+
+
+# ---------------------------------------------------------------------------
+# main() — fetch_warnings.json 落地
+# ---------------------------------------------------------------------------
+
+MINIMAL_FEEDS_YAML = """\
+sources:
+  - source_id: src_ok
+    name: OK Source
+    publisher: Test
+    url: http://example.com/ok.xml
+    beats: []
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+  - source_id: src_fail
+    name: Fail Source
+    publisher: Test
+    url: http://example.com/fail.xml
+    beats: []
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+"""
+
+MINIMAL_FEEDS_ONE_YAML = """\
+sources:
+  - source_id: src_ok
+    name: OK Source
+    publisher: Test
+    url: http://example.com/ok.xml
+    beats: []
+    lang: en
+    tier: 1
+    transport: direct_rss
+    is_proxy: false
+    enabled: true
+"""
+
+
+class TestMainWarningsLog:
+    """驗證 main() 在執行後把 warnings 寫入 fetch_warnings.json。"""
+
+    def _make_feeds_file(self, tmp_path: Path, content: str) -> Path:
+        feeds_file = tmp_path / "feeds.yaml"
+        feeds_file.write_text(content, encoding="utf-8")
+        return feeds_file
+
+    def test_one_source_failed_writes_source_failed_entry(self, tmp_path, monkeypatch):
+        """一源失敗時 fetch_warnings.json 必須含 source_failed 條目。"""
+        monkeypatch.setattr(fetch_rss, "STATE_FILE", tmp_path / "state.json")
+        feeds_file = self._make_feeds_file(tmp_path, MINIMAL_FEEDS_YAML)
+        out_base = tmp_path / "raw"
+
+        def fake_fetch_one(source, *a, **kw):
+            if source["source_id"] == "src_fail":
+                return (
+                    fetch_rss.FetchResult(
+                        source_id="src_fail", status="failed", error="connection error",
+                    ),
+                    None,
+                )
+            return (
+                fetch_rss.FetchResult(source_id=source["source_id"], status="ok"),
+                b"<rss/>",
+            )
+
+        with patch.object(fetch_rss, "fetch_one", side_effect=fake_fetch_one):
+            rc = fetch_rss.main([
+                "--feeds", str(feeds_file),
+                "--out-base", str(out_base),
+                "--date", "2026-01-01",
+            ])
+
+        assert rc == 0  # partial → continue_with_warning
+        warnings_path = out_base / "2026-01-01" / "fetch_warnings.json"
+        assert warnings_path.exists(), "fetch_warnings.json 必須存在"
+        data = json.loads(warnings_path.read_text(encoding="utf-8"))
+        source_failed = [w for w in data if w.get("type") == "source_failed"]
+        assert len(source_failed) >= 1
+        assert any(w["source_id"] == "src_fail" for w in source_failed)
+
+    def test_all_success_writes_empty_warnings(self, tmp_path, monkeypatch):
+        """全部成功時 fetch_warnings.json 應寫出空 list。"""
+        monkeypatch.setattr(fetch_rss, "STATE_FILE", tmp_path / "state.json")
+        feeds_file = self._make_feeds_file(tmp_path, MINIMAL_FEEDS_ONE_YAML)
+        out_base = tmp_path / "raw"
+
+        def fake_fetch_one(source, *a, **kw):
+            return (
+                fetch_rss.FetchResult(source_id=source["source_id"], status="ok"),
+                b"<rss/>",
+            )
+
+        with patch.object(fetch_rss, "fetch_one", side_effect=fake_fetch_one):
+            rc = fetch_rss.main([
+                "--feeds", str(feeds_file),
+                "--out-base", str(out_base),
+                "--date", "2026-01-01",
+            ])
+
+        assert rc == 0
+        warnings_path = out_base / "2026-01-01" / "fetch_warnings.json"
+        assert warnings_path.exists(), "fetch_warnings.json 即使空也必須存在"
+        data = json.loads(warnings_path.read_text(encoding="utf-8"))
+        assert data == []
+
+
+# ---------------------------------------------------------------------------
+# load_state — STATE_FILE 不存在時從歷史 feed_health.json 推導（CARD-07）
+# ---------------------------------------------------------------------------
+
+def _make_feed_health(date_dir: Path, records: list[dict]) -> None:
+    """在 date_dir 下寫入 feed_health.json。"""
+    date_dir.mkdir(parents=True, exist_ok=True)
+    (date_dir / "feed_health.json").write_text(
+        json.dumps(records, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+class TestLoadStateFromHistory:
+    """STATE_FILE 不存在時，load_state 應從歷史 feed_health.json 推導 consecutive_failures。"""
+
+    def test_consecutive_failures_derived_from_history(self, tmp_path, monkeypatch):
+        """(a) state 檔不存在 + 某源連敗 3 天 → load_state 回傳 {源: 3}。"""
+        monkeypatch.setattr(fetch_rss, "STATE_FILE", tmp_path / "nonexistent_state.json")
+        raw_base = tmp_path / "raw"
+
+        # 建立 3 個日期目錄，bbc_world 每天都 failed
+        _make_feed_health(raw_base / "2026-06-09", [
+            {"source_id": "bbc_world", "status": "failed"},
+        ])
+        _make_feed_health(raw_base / "2026-06-10", [
+            {"source_id": "bbc_world", "status": "failed"},
+        ])
+        _make_feed_health(raw_base / "2026-06-11", [
+            {"source_id": "bbc_world", "status": "failed"},
+        ])
+
+        state = fetch_rss.load_state(raw_base=raw_base)
+
+        assert state.get("bbc_world") == 3, f"期望 bbc_world=3，實際 state={state}"
+
+    def test_source_ok_on_latest_day_returns_zero_or_absent(self, tmp_path, monkeypatch):
+        """(b) 最近一天 ok → 計數為 0 或不在 dict 中。"""
+        monkeypatch.setattr(fetch_rss, "STATE_FILE", tmp_path / "nonexistent_state.json")
+        raw_base = tmp_path / "raw"
+
+        # 最舊兩天 failed，最新一天 ok
+        _make_feed_health(raw_base / "2026-06-09", [
+            {"source_id": "bbc_world", "status": "failed"},
+        ])
+        _make_feed_health(raw_base / "2026-06-10", [
+            {"source_id": "bbc_world", "status": "failed"},
+        ])
+        _make_feed_health(raw_base / "2026-06-11", [
+            {"source_id": "bbc_world", "status": "ok"},
+        ])
+
+        state = fetch_rss.load_state(raw_base=raw_base)
+
+        # 最近一天 ok，連敗計數應為 0 或不在 dict
+        count = state.get("bbc_world", 0)
+        assert count == 0, f"最近一天 ok，期望 count=0，實際 state={state}"

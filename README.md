@@ -139,6 +139,8 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
+生產/排程環境請用 `pip install -r requirements.lock`（精確版本鎖定，避免上週能跑、這週不能跑）。
+
 主要依賴：feedparser, requests, beautifulsoup4, python-dateutil, pydantic, jsonschema, PyYAML, rapidfuzz, spacy, anthropic
 
 > spaCy 用於 §6.1 entity_weight 0.1（NER）。若未安裝，entity scoring 自動回退為 0，不影響其他功能。
@@ -174,7 +176,7 @@ sources:
 | Tier 3 專題 | ArchDaily, Dezeen, MIT, MarkTechPost | 特定 beat 專用 |
 | Tier TW | 公視, 中央社 | 台灣在地繁中來源 |
 
-> **來源狀態（2026-06-09）**：32 sources 中 27 enabled / 14 remote_blocked / 5 disabled。
+> **來源狀態（2026-06-11）**：32 sources 中 27 enabled / 14 remote_blocked / 5 disabled。
 > 已停用：The Verge (403)、VentureBeat (停更)、AP RSSHub (403)、Bloomberg proxy (空 feed)、PTS Curations (需 RSSHub)。
 
 #### 使用限制
@@ -432,7 +434,7 @@ MVP 不做自動化。
 | 2 | 分類（含 NER）、去重、事件聚合、選題、feed sweep | ✅ 完成 |
 | 3 | Claude 改寫、claim_trace、confidence、文風 lint | ✅ 完成 |
 | 4 | Markdown / Voice / X / Threads 輸出、schema validation | ✅ 完成 |
-| 5 | Pipeline 入口、Routine 設定、穩定性測試 | 🔧 進行中 |
+| 5 | Pipeline 入口、Routine 設定、穩定性測試 | 🔧 進行中（2026-06-11 全量健檢後 16 卡修復波完成，422 條測試全綠） |
 
 ### 實作優先順序
 

@@ -1,8 +1,56 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine 已設定，idempotent 測試完成）
-測試合計：366 條全綠
+目前階段：Phase 5 進行中（pipeline + routine 已設定，idempotent 測試完成，2026-06-11 全量健檢後 16 卡修復波執行）
+測試合計：422 條全綠（2026-06-11 實測）
 Enabled sources：27 / 0 failed（2026-06-09 audit）
+
+---
+
+## 2026-06-11 — 全量健檢（Opus）+ 16 卡修復波（Sonnet）
+
+### 流程說明
+
+採「Opus 驗證、Sonnet 執行」分工：
+- **Opus（驗證角色）**：閱讀全部 src/ 14 模組、prompts/、tests/，對照 spec v1.1 逐條回歸，發現多處「宣告正確、執行缺席」失效模式，制定 16 張 FIX-CARD。
+- **Sonnet（執行角色）**：逐卡實作，每卡結束前確認 pytest 全綠，不多做不少做。
+
+**健檢結論**：全量 BLOCKED（告警鏈斷路、exit code 邏輯不完整、voice 確定性缺失、verify 缺席）。
+
+### 16 張修復卡詳情
+
+| 卡號 | 一句話說明 | 動到的主要檔案 |
+|------|------------|----------------|
+| CARD-1 | fetch 失敗 warnings 未落地到 pipeline 報告 | `src/fetch_rss.py`, `src/pipeline.py` |
+| CARD-2 | pipeline exit code 邏輯不完整（非 abort 步驟應 warning 不 abort） | `src/pipeline.py` |
+| CARD-3 | voice transition pool 每次重跑選不同句，確定性缺失 | `src/formatter.py` |
+| CARD-4 | split_posts 超限沒有被 verify_output 攔截 | `src/formatter.py`, `scripts/verify_output.py` |
+| CARD-5 | fetch_warnings 欄位正式落地到 run log | `src/fetch_rss.py`, `src/pipeline.py` |
+| CARD-6 | --until step-stop flag 實作（`pipeline.py`）；窗口上限 `fetch_window_end` / `in_window` 在 `normalize.py`（與 fetch_rss.py 無關） | `src/pipeline.py`（argparse + step-stop 邏輯）, `src/normalize.py`（fetch_window_end / in_window） |
+| CARD-7 | requirements.lock 生成，鎖定生產依賴版本 | `requirements.lock` |
+| CARD-8 | verify_output.py 新增 push 前強制驗證腳本 | `scripts/verify_output.py` |
+| CARD-9 | fetch abort → pipeline 明確 exit 2，而非靜默繼續 | `src/pipeline.py` |
+| CARD-10 | consecutive_failures 告警觸發路徑修復（從未實際觸發） | `src/fetch_rss.py` |
+| CARD-11 | voice lint N/N regex 與 platform_output.schema.json 同步 | `schemas/platform_output.schema.json`（N/N regex 收窄）；`src/validators.py` git diff 0 行，未改動，不應列入此卡 |
+| CARD-12 | claim_trace fallback 覆蓋率補測（原有測試不足） | `tests/test_claim_trace.py` git diff 0 行，未改動，此卡未落地；覆蓋率缺口仍存在 |
+| CARD-13 | 文件同步：修正失真宣稱 + 更新 DEV_LOG/CHANGELOG | `README.md`, `ROADMAP.md`, `AI_CONTEXT.md`, `HANDOFF.md`, `DEV_LOG.md`, `CHANGELOG.md` |
+| CARD-14 | routine_prompt.md 重寫，反映雙層抓取現況與 --skip-fetch 流程 | `prompts/routine_prompt.md` |
+| CARD-15 | selector total_events.max advisory warning 升格為 hard enforce | `src/selector.py` git diff 0 行，未改動，此卡未落地；total_events.max 仍為 advisory |
+| CARD-16 | pipeline --dry-run 覆蓋率補強，補測缺失路徑 | `tests/test_pipeline.py` |
+
+**工作樹 ground truth — 未被任何卡號認領的實際改動：**
+
+| 檔案 | 實際變更摘要 |
+|------|------------|
+| `src/classifier.py` | ECON 例外機制（`_has_econ_keyword` + `econ_exception_sources`） |
+| `tests/test_classifier.py` | +4 條 ECON 例外測試（+1 entity integration group） |
+| `src/event_cluster.py` | 同 beat 關鍵詞匹配新增 title_sim ≥ 50% 門檻；停用詞擴充 |
+| `tests/test_event_cluster.py` | +3 條 same-beat title-sim 隔離測試 |
+| `src/tw_highlight.py` | 中文關鍵詞新增；PTS_LOCAL 在統計中正確計入 |
+| `tests/test_tw_highlight.py` | +1 條中文關鍵詞測試 |
+
+### 測試結果
+
+修復波完成後全量跑測：**422 passed, 0 failed（~5.0 秒）**（較修復前 366 條增加 56 條）
 
 ---
 

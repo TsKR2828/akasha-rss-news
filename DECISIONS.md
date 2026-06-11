@@ -178,3 +178,21 @@ rewrite_prompt.md 新增「⛔ 數字格式規則」，要求 Claude 將英文�
 
 - 新增換算表 + 規則 + checklist 項目
 - Sonnet 改寫時必須做數字單位轉換，不得直譯英文 k/M/B
+
+---
+
+## 2026-06-11 | X 貼文「280 字」計數語義 — 維持 code-point
+
+### Decision
+
+P0「X 每則 ≤ 280 字」維持 Python code-point 計數（producer split_posts、schema maxLength、verify_output 守門三者現狀一致）。**不**改用 X 平台的加權計數（CJK=2）。
+
+### Reason
+
+2026-06-11 全量健檢終驗發現：生產 X 草稿以 code-point 計全數合規（150–234），但以 X 平台加權規則計有 14/18 則達 269–372 單位，直接貼出會被拒。三個選項（加權自動切串文 / prompt 要求縮短 / 維持現狀）由月月決策：**維持現狀**，貼文時人工刪減。
+
+### Impact
+
+- 守門腳本 scripts/verify_output.py 維持 code-point 計數，X 加權超長**不視為缺陷**
+- 未來審查不應將「加權計數超長」列為 P0 違規（本決策明文豁免）
+- 若日後要自動發文（Post-MVP 優先級 4），此決策必須重新評估

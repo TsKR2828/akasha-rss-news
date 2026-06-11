@@ -1,0 +1,18 @@
+# requirements.lock
+# 產生日期：2026-06-11
+# 產生方式：python -m pip list --format=freeze，從輸出篩出 requirements.txt 宣告的直接依賴精確版本
+# 限制說明：僅鎖直接依賴；傳遞依賴未鎖
+# spaCy model 需另跑：python -m spacy download en_core_web_sm
+# 注意：pytest-mock 在本機環境未偵測到已安裝，故不列入
+
+feedparser==6.0.12
+requests==2.33.1
+beautifulsoup4==4.14.3
+python-dateutil==2.9.0.post0
+pydantic==2.13.3
+jsonschema==4.26.0
+PyYAML==6.0.3
+rapidfuzz==3.14.5
+spacy==3.8.14
+anthropic==0.97.0
+pytest==9.0.3

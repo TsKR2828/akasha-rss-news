@@ -135,11 +135,36 @@ def fetch_window_start(
     return date - timedelta(hours=default_hours + grace_hours)
 
 
-def in_window(published_at: Optional[str], window_start: datetime) -> bool:
+def fetch_window_end(report_date: str) -> datetime:
+    """回傳 report_date 05:00 Asia/Taipei，作為時間窗口上限（嚴格小於）。
+
+    與 fetch_window_start 同風格：taipei 時區，小時整點。
+    用途：避免中途重跑時把當日 05:00 之後的新文章撈進前一份館報。
+    """
+    return datetime.strptime(report_date, "%Y-%m-%d").replace(
+        hour=5, minute=0, second=0, microsecond=0, tzinfo=TAIPEI,
+    )
+
+
+def in_window(
+    published_at: Optional[str],
+    window_start: datetime,
+    window_end: Optional[datetime] = None,
+) -> bool:
+    """判斷 published_at 是否落在 [window_start, window_end) 之內。
+
+    window_end 為 None 時只檢查下限（向下相容舊行為）。
+    window_end 非 None 時，要求 published_at < window_end（嚴格小於）。
+    """
     if not published_at:
         return False
     try:
-        return date_parser.parse(published_at) >= window_start
+        dt = date_parser.parse(published_at)
+        if dt < window_start:
+            return False
+        if window_end is not None and dt >= window_end:
+            return False
+        return True
     except (ValueError, TypeError):
         return False
 
@@ -186,8 +211,12 @@ def normalize_source(
     raw_xml_path: Path,
     fetched_at: str,
     window_start: datetime,
+    window_end: Optional[datetime] = None,
 ) -> tuple[list[dict], int]:
     """解析一個 source 的 raw XML，輸出符合時間窗口的 article list。
+
+    Args:
+        window_end: 窗口上限（嚴格小於），None 時不設上限（向下相容）。
 
     Returns:
         (articles, items_found)  -- items_found = parser 取到的 entry 總數
@@ -200,7 +229,7 @@ def normalize_source(
         normalized = normalize_entry(entry, source, fetched_at)
         if normalized is None:
             continue
-        if not in_window(normalized["published_at"], window_start):
+        if not in_window(normalized["published_at"], window_start, window_end):
             continue
         articles.append(normalized)
 
@@ -249,7 +278,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     health_by_id = {h["source_id"]: h for h in health}
 
     window_start = fetch_window_start(date, args.default_hours, args.grace_hours)
+    window_end = fetch_window_end(date)
     LOG.info("Fetch window starts at %s", window_start.isoformat())
+    LOG.info("Fetch window ends at   %s (exclusive)", window_end.isoformat())
 
     total = 0
     for xml_path in sorted(raw_dir.glob("*.xml")):
@@ -259,7 +290,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             LOG.warning("XML file %s has no matching source in feeds.yaml; skip.", xml_path)
             continue
         fetched_at = health_by_id.get(source_id, {}).get("fetched_at", "")
-        articles, items_found = normalize_source(source, xml_path, fetched_at, window_start)
+        articles, items_found = normalize_source(source, xml_path, fetched_at, window_start, window_end)
         written = write_articles(out_dir, articles)
         if source_id in health_by_id:
             health_by_id[source_id]["items_found"] = items_found

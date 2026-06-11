@@ -136,6 +136,53 @@ def load_beat_meta(path: Path = BEATS_PATH) -> dict[str, dict]:
 
 
 # ---------------------------------------------------------------------------
+# Fetch warnings reader（CARD-06）
+# ---------------------------------------------------------------------------
+
+def _load_fetch_warnings_filtered(date: str) -> list[dict]:
+    """讀取 data/raw/{date}/fetch_warnings.json，過濾 remote_blocked 來源後回傳剩餘 warnings。
+
+    - 檔案不存在回傳空 list。
+    - 過濾掉 source_id 屬於 feeds.yaml 中 remote_blocked: true 的條目。
+    - 警告 type 沿用 "source_failed"，以便 _format_warnings 正確處理。
+    """
+    warnings_path = PROJECT_ROOT / "data" / "raw" / date / "fetch_warnings.json"
+    if not warnings_path.exists():
+        return []
+    try:
+        raw = json.loads(warnings_path.read_text(encoding="utf-8"))
+    except Exception:
+        LOG.warning("無法讀取 fetch_warnings.json: %s", warnings_path)
+        return []
+
+    # 載入 remote_blocked source_ids
+    blocked_ids: set[str] = set()
+    feeds_path = PROJECT_ROOT / "config" / "feeds.yaml"
+    if feeds_path.exists():
+        try:
+            cfg = yaml.safe_load(feeds_path.read_text(encoding="utf-8"))
+            blocked_ids = {
+                s["source_id"]
+                for s in cfg.get("sources", [])
+                if s.get("remote_blocked")
+            }
+        except Exception:
+            LOG.warning("無法載入 feeds.yaml 以過濾 remote_blocked")
+
+    result: list[dict] = []
+    for w in raw:
+        sid = w.get("source_id", "")
+        if sid in blocked_ids:
+            LOG.debug("過濾 remote_blocked fetch warning: %s", sid)
+            continue
+        entry = dict(w)
+        if entry.get("type") not in ("source_failed",):
+            entry["type"] = "source_failed"
+        result.append(entry)
+    return result
+
+
+# ---------------------------------------------------------------------------
 # Text splitting（把長文切成不超過 max_chars 的 posts）
 # ---------------------------------------------------------------------------
 
@@ -558,6 +605,9 @@ def format_voice_script(
     except ValueError:
         year, month, day, weekday = 2026, 1, 1, "星期一"
 
+    # 確定性亂數：以 date_str 為種子，確保同日多次呼叫輸出相同
+    rng = random.Random(date_str)
+
     lines: list[str] = []
 
     # 開場（規格 §13.3）——「讓圖書館員翻譯給你聽」只在此出現一次
@@ -591,7 +641,7 @@ def format_voice_script(
         if not available:
             available = pool  # fallback: 全用完了就重頭來
         if available:
-            transition = random.choice(available)
+            transition = rng.choice(available)
             used_transitions.add(transition)
             lines.append(transition)
             lines.append("")
@@ -971,7 +1021,14 @@ def _ensure_dirs(output_base: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Generate all output formats from rewritten events.")
+    parser = argparse.ArgumentParser(
+        description="Generate all output formats from rewritten events.",
+        epilog=(
+            "Exit codes: 0 = ok（全部通過），"
+            "1 = partial（含 lint 警告或驗證問題），"
+            "2 = failed（無 sections，輸出不可用）。"
+        ),
+    )
     parser.add_argument("--events-base", type=Path, default=DEFAULT_EVENTS_BASE)
     parser.add_argument("--output-base", type=Path, default=OUTPUT_BASE)
     parser.add_argument("--date", type=str, default=None)
@@ -1016,6 +1073,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     if rewrite_log_path.exists():
         rlog = json.loads(rewrite_log_path.read_text(encoding="utf-8"))
         rewrite_warnings = rlog.get("lint_warnings", [])
+
+    # 讀 fetch warnings（CARD-06）：過濾 remote_blocked 來源後與 rewrite warnings 合併
+    fetch_warnings = _load_fetch_warnings_filtered(date)
 
     # Pipeline stats — 從磁碟讀取實際數據（與 pipeline._collect_stats 邏輯一致）
     raw_dir = PROJECT_ROOT / "data" / "raw" / date
@@ -1076,15 +1136,21 @@ def main(argv: Optional[list[str]] = None) -> int:
         date_str=date,
         rewritten_events=events,
         dropped_events=dropped,
-        pipeline_warnings=rewrite_warnings,
+        pipeline_warnings=rewrite_warnings + fetch_warnings,
         pipeline_stats=stats,
         output_base=args.output_base,
         dry_run=args.dry_run,
         start_time=start,
     )
 
-    LOG.info("Done. Status: %s, validation issues: %d", report.get("status"), len(issues))
-    return 0
+    status = report.get("status", "failed")
+    LOG.info("Done. Status: %s, validation issues: %d", status, len(issues))
+    if status == "ok":
+        return 0
+    elif status == "partial":
+        return 1
+    else:
+        return 2
 
 
 if __name__ == "__main__":

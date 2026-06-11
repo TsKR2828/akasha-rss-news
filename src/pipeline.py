@@ -64,6 +64,9 @@ STEPS = [
     "formatter",
 ]
 
+# 關鍵步驟：rc != 0 時立即中止整條 pipeline
+CRITICAL_STEPS: frozenset[str] = frozenset({"normalize", "classify"})
+
 MODULE_MAP = {
     "fetch_rss": fetch_rss,
     "normalize": normalize,
@@ -114,6 +117,27 @@ def _load_remote_blocked_ids() -> set[str]:
         return set()
 
 
+def _load_feeds_counts() -> tuple[int, int]:
+    """從 feeds.yaml 讀取 enabled 來源數與 remote_blocked enabled 來源數。
+
+    Returns:
+        (enabled_count, remote_blocked_count) 兩者皆為 enabled:true 的子集。
+        若讀取失敗，回傳 (0, 0)（呼叫端應容忍此情況）。
+    """
+    feeds_path = PROJECT_ROOT / "config" / "feeds.yaml"
+    if not feeds_path.exists():
+        return 0, 0
+    try:
+        cfg = yaml.safe_load(feeds_path.read_text(encoding="utf-8"))
+        sources = cfg.get("sources", [])
+        enabled = [s for s in sources if s.get("enabled", True)]
+        remote_blocked = [s for s in enabled if s.get("remote_blocked")]
+        return len(enabled), len(remote_blocked)
+    except Exception:
+        LOG.warning("無法讀取 feeds.yaml 以計算來源數")
+        return 0, 0
+
+
 def _collect_stats(date: str) -> dict:
     """Read filesystem state after all steps to build accurate pipeline_stats."""
     raw_dir = PROJECT_ROOT / "data" / "raw" / date
@@ -162,6 +186,38 @@ def _collect_stats(date: str) -> dict:
     return stats
 
 
+def _read_fetch_warnings(date: str) -> list[dict]:
+    """讀取 data/raw/{date}/fetch_warnings.json，過濾 remote_blocked 來源後回傳剩餘 warnings。
+
+    規格 CARD-06：
+    - 檔案不存在回傳空 list。
+    - 過濾掉 source_id 屬於 feeds.yaml 中 remote_blocked: true 的條目（沿用 _load_remote_blocked_ids）。
+    - 警告 type 沿用 "source_failed"，以便 _format_warnings 正確處理。
+    """
+    warnings_path = PROJECT_ROOT / "data" / "raw" / date / "fetch_warnings.json"
+    if not warnings_path.exists():
+        return []
+    try:
+        raw = json.loads(warnings_path.read_text(encoding="utf-8"))
+    except Exception:
+        LOG.warning("無法讀取 fetch_warnings.json: %s", warnings_path)
+        return []
+
+    blocked_ids = _load_remote_blocked_ids()
+    result: list[dict] = []
+    for w in raw:
+        sid = w.get("source_id", "")
+        if sid in blocked_ids:
+            LOG.debug("過濾 remote_blocked fetch warning: %s", sid)
+            continue
+        # 確保 type 為 source_failed
+        entry = dict(w)
+        if entry.get("type") not in ("source_failed",):
+            entry["type"] = "source_failed"
+        result.append(entry)
+    return result
+
+
 def _read_selected_events(date: str) -> tuple[list[dict], list[dict], list[dict]]:
     """Read selected events, dropped list, and rewrite warnings from disk."""
     events_dir = PROJECT_ROOT / "data" / "events" / date
@@ -200,20 +256,29 @@ def run_pipeline(
     dry_run: bool = False,
     skip_fetch: bool = False,
     output_base: Optional[Path] = None,
+    until: Optional[str] = None,
 ) -> dict:
     """Run the full daily pipeline and return a summary dict.
 
     Args:
         skip_fetch: If True, skip fetch_rss step (use pre-fetched raw data).
                     Useful when raw data is pushed by a local fetch job.
+        until: 若指定，執行到該步驟（含）即停，不執行後續步驟與 formatter。
+               合法值為 STEPS 內的名稱（如 "select"）。
+               指定 "formatter" 或不給等同不限制。
     """
     pipeline_start = time.time()
     _output_base = output_base or OUTPUT_BASE
     step_records: list[dict] = []
 
+    # 正規化 until：None 或 "formatter" 均視為不限制
+    _until: Optional[str] = until if (until and until != "formatter") else None
+
     # ------------------------------------------------------------------
     # Steps 1–8: call each module's main(argv)
     # ------------------------------------------------------------------
+    step_warnings: list[dict] = []  # 非關鍵步驟失敗時累積的警告
+
     for name in STEPS[:-1]:  # all except formatter
         # Skip fetch if raw data already exists
         if name == "fetch_rss" and skip_fetch:
@@ -221,6 +286,16 @@ def run_pipeline(
             if raw_dir.exists() and any(raw_dir.glob("*.xml")):
                 xml_count = len(list(raw_dir.glob("*.xml")))
                 LOG.info("SKIP fetch_rss: %d raw XML files found in %s", xml_count, raw_dir)
+                # CARD-15：部分資料防護——比較 xml_count 與 enabled 來源數
+                enabled_count, remote_blocked_count = _load_feeds_counts()
+                expected_min = enabled_count - remote_blocked_count
+                if enabled_count > 0 and xml_count < expected_min:
+                    _warn_msg = (
+                        f"partial raw data: {xml_count}/{enabled_count} sources"
+                        f" (expected >= {expected_min})"
+                    )
+                    LOG.warning("skip-fetch 部分資料警告：%s", _warn_msg)
+                    step_warnings.append({"type": "other", "message": _warn_msg})
                 step_records.append({
                     "name": "fetch_rss",
                     "exit_code": 0,
@@ -258,6 +333,38 @@ def run_pipeline(
                 "total_duration_s": round(time.time() - pipeline_start, 2),
             }
 
+        if name in CRITICAL_STEPS and rc != 0:
+            LOG.error("ABORT: 關鍵步驟 %s 失敗（exit %d）— 停止 pipeline", name, rc)
+            return {
+                "status": "failed",
+                "date": date,
+                "reason": f"critical_step_failed:{name}",
+                "steps": step_records,
+                "events_count": 0,
+                "beat_counts": {},
+                "validation_issues": 0,
+                "total_duration_s": round(time.time() - pipeline_start, 2),
+            }
+
+        if name not in CRITICAL_STEPS and name != "fetch_rss" and rc != 0:
+            warn = {"type": "other", "message": f"step {name} exited {rc}"}
+            step_warnings.append(warn)
+            LOG.warning("非關鍵步驟 %s 失敗（exit %d），累積警告並繼續", name, rc)
+
+        # --until 提前停止：已執行到指定步驟，跳過後續步驟與 formatter
+        if _until and name == _until:
+            LOG.info("--until %s：已執行完，提前停止 pipeline", _until)
+            return {
+                "status": "ok",
+                "date": date,
+                "stopped_after": _until,
+                "steps": step_records,
+                "events_count": 0,
+                "beat_counts": {},
+                "validation_issues": 0,
+                "total_duration_s": round(time.time() - pipeline_start, 2),
+            }
+
     # ------------------------------------------------------------------
     # Step 9: formatter — call generate_all_outputs with real stats
     # ------------------------------------------------------------------
@@ -272,12 +379,16 @@ def run_pipeline(
         1 for e in events if e.get("tw_highlight") or e.get("beat") == "PTS_LOCAL"
     )
 
+    # 合併非關鍵步驟警告（step_warnings）、rewrite 階段的 lint_warnings 與 fetch warnings（過濾 remote_blocked）
+    fetch_warnings = _read_fetch_warnings(date)
+    pipeline_warnings = step_warnings + rewrite_warnings + fetch_warnings
+
     try:
         report, validation_issues = generate_all_outputs(
             date_str=date,
             rewritten_events=events,
             dropped_events=dropped,
-            pipeline_warnings=rewrite_warnings,
+            pipeline_warnings=pipeline_warnings,
             pipeline_stats=stats,
             steps=step_records,
             start_time=pipeline_start,
@@ -323,10 +434,13 @@ def _print_summary(summary: dict) -> None:
     status = summary["status"]
     date = summary["date"]
     ok = status != "failed"
+    stopped_after = summary.get("stopped_after")
 
     print()
     print(f"  akasha-rss-news | {date} | {'DONE' if ok else 'FAILED'}")
     print(f"  status: {status}")
+    if stopped_after:
+        print(f"  stopped_after: {stopped_after}")
     print(f"  events: {summary.get('events_count', 0)}")
     for beat, n in sorted(summary.get("beat_counts", {}).items()):
         print(f"    {beat}: {n}")
@@ -338,7 +452,8 @@ def _print_summary(summary: dict) -> None:
         icon = "ok" if step["exit_code"] == 0 else "WARN"
         print(f"    [{icon:>4}] {step['name']:<16} exit={step['exit_code']}  {step['duration_s']:.1f}s")
     print()
-    if ok:
+    # 提前停止時不印輸出檔案清單（因為沒產出 formatter 結果）
+    if ok and not stopped_after:
         dc = date.replace("-", "")
         print(f"  output/daily_{dc}.json")
         print(f"  output/daily_{dc}.md")
@@ -369,6 +484,13 @@ def main(argv: Optional[list[str]] = None) -> int:
         "--output-base", type=Path, default=None,
         help="Override output directory",
     )
+    parser.add_argument(
+        "--until", type=str, default=None, choices=STEPS, metavar="STEP",
+        help=(
+            f"執行到指定步驟（含）即停，不跑後續步驟與 formatter。"
+            f" 合法值：{', '.join(STEPS)}"
+        ),
+    )
     args = parser.parse_args(argv)
 
     logging.basicConfig(
@@ -382,9 +504,11 @@ def main(argv: Optional[list[str]] = None) -> int:
         flags.append("dry-run")
     if args.skip_fetch:
         flags.append("skip-fetch")
+    if args.until:
+        flags.append(f"until={args.until}")
     LOG.info("Pipeline start: %s%s", date, f" ({', '.join(flags)})" if flags else "")
 
-    summary = run_pipeline(date, args.dry_run, args.skip_fetch, args.output_base)
+    summary = run_pipeline(date, args.dry_run, args.skip_fetch, args.output_base, args.until)
     _print_summary(summary)
 
     if summary["status"] == "failed":

@@ -60,15 +60,66 @@ class FetchResult:
 # State management — 跨次執行追蹤 consecutive_failures
 # ---------------------------------------------------------------------------
 
-def load_state() -> dict[str, int]:
-    """讀取每個 source 的 consecutive_failures 計數。"""
-    if not STATE_FILE.exists():
-        return {}
+def load_state(raw_base: Path = DEFAULT_OUT_BASE) -> dict[str, int]:
+    """讀取每個 source 的 consecutive_failures 計數。
+
+    STATE_FILE 存在時直接讀取（行為與原版完全相同）。
+    STATE_FILE 不存在時，從 raw_base 下的歷史 feed_health.json 推導：
+    掃描名稱符合 YYYY-MM-DD 的日期目錄，取字典序最近的最多 7 個，
+    對每個 source 從最近日期往回數連續 status != "ok" 的天數（遇到 ok 即停）。
+    讀檔錯誤一律容錯跳過，不拋例外。
+    """
+    if STATE_FILE.exists():
+        try:
+            return json.loads(STATE_FILE.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as e:
+            LOG.warning("Failed to load state from %s: %s", STATE_FILE, e)
+            return {}
+
+    # STATE_FILE 不存在：從歷史 feed_health.json 推導
+    LOG.info("STATE_FILE 不存在，從 %s 下歷史 feed_health.json 推導 consecutive_failures", raw_base)
+    import re
+    date_pattern = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
     try:
-        return json.loads(STATE_FILE.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as e:
-        LOG.warning("Failed to load state from %s: %s", STATE_FILE, e)
+        date_dirs = sorted(
+            [d for d in raw_base.iterdir() if d.is_dir() and date_pattern.match(d.name)],
+            key=lambda d: d.name,
+            reverse=True,
+        )[:7]
+    except OSError as e:
+        LOG.warning("無法掃描 %s: %s", raw_base, e)
         return {}
+
+    # 從最新到最舊，逐日讀取 feed_health.json
+    # daily_statuses[source_id] = [最新日的 status, 次新日的 status, ...]
+    daily_statuses: dict[str, list[str]] = {}
+    for date_dir in date_dirs:
+        health_file = date_dir / "feed_health.json"
+        try:
+            records = json.loads(health_file.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as e:
+            LOG.warning("跳過 %s: %s", health_file, e)
+            continue
+        for record in records:
+            sid = record.get("source_id")
+            status = record.get("status", "")
+            if sid:
+                daily_statuses.setdefault(sid, []).append(status)
+
+    # 從最新日往回計算連敗天數
+    state: dict[str, int] = {}
+    for sid, statuses in daily_statuses.items():
+        count = 0
+        for s in statuses:  # statuses 已按最新→最舊排列
+            if s != "ok":
+                count += 1
+            else:
+                break
+        if count > 0:
+            state[sid] = count
+
+    return state
 
 
 def save_state(state: dict[str, int]) -> None:
@@ -247,6 +298,20 @@ def write_health_log(out_dir: Path, results: list[FetchResult]) -> Path:
     return path
 
 
+def write_warnings_log(out_dir: Path, warnings: list[dict]) -> Path:
+    """將 decide_overall_status 回傳的 warnings 寫入 fetch_warnings.json。
+
+    warnings 為空時也寫出空 list，確保檔案存在性。
+    """
+    out_dir.mkdir(parents=True, exist_ok=True)
+    path = out_dir / "fetch_warnings.json"
+    path.write_text(
+        json.dumps(warnings, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    return path
+
+
 def report_date_str(now: Optional[datetime] = None) -> str:
     return (now or datetime.now(TAIPEI)).strftime("%Y-%m-%d")
 
@@ -294,6 +359,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     health_path = write_health_log(out_dir, results)
 
     overall, warnings = decide_overall_status(results, enabled)
+    write_warnings_log(out_dir, warnings)
 
     LOG.info(
         "Status: %s (%d ok, %d failed, %d warnings) → %s",

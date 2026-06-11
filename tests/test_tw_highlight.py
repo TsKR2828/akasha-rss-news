@@ -4,6 +4,8 @@
 """
 from __future__ import annotations
 
+import json
+
 import pytest
 
 from src import tw_highlight
@@ -99,3 +101,48 @@ class TestAnnotate:
         assert result["tw_highlight"] is False
         assert result["tw_highlight_reason"] is None
         assert result["tw_highlight_keywords"] == []
+
+
+class TestMainUnderscoreFilter:
+    """驗證 main() 在 articles 目錄含 _dedup_log.json 時可正常跑完 exit 0（CARD-02）。"""
+
+    def test_main_skips_underscore_files(self, tmp_path, monkeypatch):
+        """articles 目錄同時含 _dedup_log.json（list）與正常文章時，main() 返回 0。"""
+        # 建立假 beats.yaml
+        beats_yaml = tmp_path / "beats.yaml"
+        beats_yaml.write_text(
+            "tw_highlight:\n"
+            "  positive_keywords: [Taiwan]\n"
+            "  context_keywords: [semiconductor]\n"
+            "  false_positive_review: []\n",
+            encoding="utf-8",
+        )
+
+        # 建立日期目錄
+        date_str = "2026-06-11"
+        articles_dir = tmp_path / "articles" / date_str
+        articles_dir.mkdir(parents=True)
+
+        # 放一個正常文章 JSON
+        normal_article = {
+            "article_id": "a" * 64,
+            "source_id": "test_src",
+            "title": "Taiwan semiconductor news",
+            "summary": "",
+        }
+        (articles_dir / "article_001.json").write_text(
+            json.dumps(normal_article, ensure_ascii=False), encoding="utf-8"
+        )
+
+        # 放一個 _dedup_log.json（內容為 list，json.loads 後非 dict，原本會崩）
+        (articles_dir / "_dedup_log.json").write_text(
+            json.dumps([{"dropped": "x" * 64}], ensure_ascii=False), encoding="utf-8"
+        )
+
+        exit_code = tw_highlight.main([
+            "--beats-config", str(beats_yaml),
+            "--articles-base", str(tmp_path / "articles"),
+            "--date", date_str,
+            "--dry-run",
+        ])
+        assert exit_code == 0

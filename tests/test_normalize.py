@@ -299,3 +299,67 @@ class TestArticleSchemaConformance:
         for art in articles:
             assert len(art["article_id"]) == 64
             assert all(c in "0123456789abcdef" for c in art["article_id"])
+
+
+# ---------------------------------------------------------------------------
+# CARD-08: fetch_window_end 與上限過濾
+# ---------------------------------------------------------------------------
+
+class TestWindowEnd:
+    """驗證 fetch_window_end 與 in_window 上限邏輯（CARD-08）。"""
+
+    REPORT_DATE = "2026-05-18"
+    # window_end = 2026-05-18 05:00 +08:00
+    WINDOW_START = normalize.fetch_window_start(REPORT_DATE)   # 2026-05-17 02:00 +08:00
+    WINDOW_END = normalize.fetch_window_end(REPORT_DATE)       # 2026-05-18 05:00 +08:00
+
+    def test_fetch_window_end_is_report_date_0500_taipei(self):
+        """fetch_window_end 回傳 report_date 05:00 Asia/Taipei。"""
+        end = normalize.fetch_window_end(self.REPORT_DATE)
+        assert end == datetime(2026, 5, 18, 5, 0, tzinfo=TAIPEI)
+
+    def test_article_at_04_59_59_inside_window(self, tmp_path):
+        """04:59:59 +08:00 嚴格小於 05:00 → 在窗口內，應納入。"""
+        # 2026-05-18 04:59:59 +08:00
+        xml = _xml_with_pubdate("Mon, 18 May 2026 20:59:59 +0000")
+        # UTC 20:59:59 = 台北 2026-05-19 04:59:59 — 不對，需要換算：
+        # 台北 2026-05-18 04:59:59 = UTC 2026-05-17 20:59:59
+        xml = _xml_with_pubdate("Sun, 17 May 2026 20:59:59 +0000")
+        xml_path = tmp_path / "edge_before.xml"
+        xml_path.write_bytes(xml)
+        articles, found = normalize.normalize_source(
+            SAMPLE_SOURCE, xml_path, "", self.WINDOW_START, self.WINDOW_END,
+        )
+        assert found == 1
+        assert len(articles) == 1, "04:59:59 台北時間應在窗口內"
+
+    def test_article_at_05_00_00_excluded_by_upper_bound(self, tmp_path):
+        """05:00:00 +08:00 等於 window_end → 嚴格小於，應排除。"""
+        # 台北 2026-05-18 05:00:00 = UTC 2026-05-17 21:00:00
+        xml = _xml_with_pubdate("Sun, 17 May 2026 21:00:00 +0000")
+        xml_path = tmp_path / "edge_exact.xml"
+        xml_path.write_bytes(xml)
+        articles, found = normalize.normalize_source(
+            SAMPLE_SOURCE, xml_path, "", self.WINDOW_START, self.WINDOW_END,
+        )
+        assert found == 1
+        assert articles == [], "05:00:00 台北時間剛好等於上限，應被排除"
+
+    def test_previous_night_article_inside_window(self, tmp_path):
+        """前一日深夜文章（2026-05-17 23:00 +08:00）應落在窗口內。"""
+        # 台北 2026-05-17 23:00:00 = UTC 2026-05-17 15:00:00
+        # window_start = 2026-05-17 02:00 +08:00 = UTC 2026-05-16 18:00:00
+        xml = _xml_with_pubdate("Sat, 17 May 2026 15:00:00 +0000")
+        xml_path = tmp_path / "prev_night.xml"
+        xml_path.write_bytes(xml)
+        articles, found = normalize.normalize_source(
+            SAMPLE_SOURCE, xml_path, "", self.WINDOW_START, self.WINDOW_END,
+        )
+        assert found == 1
+        assert len(articles) == 1, "前一日深夜文章應在窗口內"
+
+    def test_in_window_no_upper_bound_passes_after_window_end(self):
+        """window_end=None 時，05:00:00 之後文章依然通過（向下相容）。"""
+        # 台北 2026-05-18 06:00:00 +08:00
+        after_end = "2026-05-18T06:00:00+08:00"
+        assert normalize.in_window(after_end, self.WINDOW_START, None) is True

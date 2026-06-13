@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260614_evt_031",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "悉尼海灘鯊魚攻擊女子重傷",
+  "context": "澳洲雪梨一處海灘發生鯊魚攻擊事件，一名 35 歲女子受到嚴重傷害。她被附近民眾從水中拉出，隨後由直升機緊急送往醫院救治。",
+  "thread_text": "悉尼海灘鯊魚攻擊女子重傷\n\n澳洲雪梨一處海灘發生鯊魚攻擊，一名 35 歲女子受重傷。她被附近民眾從水中拉上岸，隨後以直升機緊急送往醫院。\n\n—— 本則來自 Reuters 與 BBC，2026 年 6 月 13 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "悉尼海灘鯊魚攻擊女子重傷\n\n澳洲雪梨一處海灘發生鯊魚攻擊事件，一名 35 歲女子受到嚴重傷害。她由附近民眾從水中拉出，隨後以直升機緊急後送醫院，警方已介入調查。\n\n本則整理自 Reuters 與 BBC 於 2026 年 6 月 13 日發佈的報導。",
+  "voice_text": "澳洲雪梨一處海灘發生鯊魚攻擊，一名 35 歲女子受重傷。她被附近民眾從水中拉上岸，隨後直升機緊急送醫。",
+  "article_ids": [
+    "c2467504b262c25e04805c51f7821c940bc7d9db02122a2582570c4924fd2bae",
+    "f6121a408d2d6b99a79d5fbc9ddb986ce5e3e69c11667d9463265d6c5d9bd780"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Woman seriously injured in shark attack at Sydney beach Reuters",
+      "title": "Woman seriously injured in shark attack at Sydney beach - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNemxuY3hnVjhxbkJ5Z09UMTh4aXJfTmRuRzFqRS0tTVFkMmhJbXg2dmxoU3E4UzJnTm5UZ3BheDZLUFotRk1zc3R2OWVKYWtiT19SWjhXM3RWUzltVDBzakxoR1NTZGZMeHRDYTNKNmloVkZFMVNtVzBsZ2Zldjl6NUZGUjNRb1hJZFpxZ0tEV1E0a3RHY3gyS3A3OGl0R2pzbEdKQ3dKbw?oc=5",
+      "published_at": "2026-06-13T10:52:00+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The woman, 35, was pulled from the water by members of the public and then airlifted to hospital, police say.",
+      "title": "Woman seriously injured in shark attack at Sydney beach",
+      "url": "https://www.bbc.com/news/articles/c3ryw807133o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-06-13T23:24:25+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [1],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "一名 35 歲女子在悉尼海灘遭鯊魚攻擊，被民眾救出後直升機後送醫院。",
+      "source_id": "bbc_world",
+      "source_title": "Woman seriously injured in shark attack at Sydney beach",
+      "source_url": "https://www.bbc.com/news/articles/c3ryw807133o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Woman seriously injured in shark attack at Sydney beach.",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Woman seriously injured in shark attack at Sydney beach - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNemxuY3hnVjhxbkJ5Z09UMTh4aXJfTmRuRzFqRS0tTVFkMmhJbXg2dmxoU3E4UzJnTm5UZ3BheDZLUFotRk1zc3R2OWVKYWtiT19SWjhXM3RWUzltVDBzakxoR1NTZGZMeHRDYTNKNmloVkZFMVNtVzBsZ2Zldjl6NUZGUjNRb1hJZFpxZ0tEV1E0a3RHY3gyS3A3OGl0R2pzbEdKQ3dKbw?oc=5",
+      "support_type": "direct"
+    }
+  ]
+}

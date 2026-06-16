@@ -1,8 +1,27 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine 已設定，idempotent 測試完成，2026-06-11 全量健檢後 16 卡修復波執行）
-測試合計：422 條全綠（2026-06-11 實測）
+目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復 formatter 半邊）
+測試合計：423 條全綠（2026-06-16 實測）
 Enabled sources：27 / 0 failed（2026-06-09 audit）
+
+---
+
+## 2026-06-16 — voice 拼貼感修復（formatter 半邊，FIX-1 / FIX-2）
+
+維運者診斷「館報朗讀像拼貼、像在唸目錄」。根因一半在 prompt、一半在 formatter 寫死組裝。本波先處理 formatter 半邊。
+
+- **FIX-1 換場語去模板**：`BEAT_TRANSITION_POOL` 移除 5 句模板標籤式換場語——「換個節奏，看建築。」「然後是 AI 的部分。」「財經面。」（rewrite_prompt v2 明列禁止）＋同毛病的「科技那邊。」「換到經濟。」，改為自然過渡句。
+- **FIX-2 全則完整朗讀**：`format_voice_script` 移除 7 則展開上限（`VOICE_MAX_FULL_EVENTS`）與「另外還有：A、B、C。」頓號串列拼接，改為每則完整唸出；缺 voice_text 時退回 headline 補一句完整語句。voice_text 本就由改寫階段為每則生成，不增加 API 成本，僅音檔變長（維運者決策：完整 > 簡短）。
+- **關鍵矛盾**：formatter 原本寫死產生 rewrite_prompt 明令禁止的頓號串列——LLM 寫得再自然都被程式重新貼回。本波修掉。CARD-3 的轉場確定性（同日同輸出）維持不變。
+
+| 檔案 | 變更 |
+|------|------|
+| `src/formatter.py` | 換場語 pool 去模板；移除 VOICE_MAX_FULL_EVENTS 與「另外還有」拼貼，全則完整朗讀 |
+| `tests/test_formatter.py` | `test_voice_7_event_limit`→`test_voice_reads_all_events_fully`；新增 `test_no_banned_template_transitions` 防呆 |
+
+測試：422 → 423 全綠（替換 1 + 新增 1）。
+
+**未完成（下一卡 FIX-3）**：prompt 半邊——把 `rewrite_prompt_v2.md`（根目錄草稿）拆成公開骨架 + 私有文風檔（`prompts/_voice_style.private.md`，gitignore），`load_prompt()` 附加私有檔；更新過時的 `.gitignore` 註解。
 
 ---
 

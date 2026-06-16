@@ -71,18 +71,18 @@ BEAT_TRANSITION_POOL = {
     ],
     "ARTS": [
         "接下來，翻開藝術那一頁。",
-        "換個節奏，看建築。",
+        "藝術這邊也有幾件事。",
         "喘口氣，聊聊設計。",
     ],
     "AI": [
-        "然後是 AI 的部分。",
+        "科技面，AI 的消息今天比較多。",
         "AI 這邊照例沒在安靜。",
-        "科技那邊。",
+        "說到科技，今天有幾則。",
     ],
     "ECON": [
         "看看錢的世界。",
-        "財經面。",
-        "換到經濟。",
+        "來看今天的財經。",
+        "經濟這邊，今天有幾個數字。",
     ],
     "PTS_LOCAL": [
         "回到台灣。",
@@ -96,9 +96,6 @@ BEAT_TRANSITION_POOL = {
 
 # 向下相容：舊測試 import BEAT_TRANSITIONS
 BEAT_TRANSITIONS = {k: v[0] for k, v in BEAT_TRANSITION_POOL.items()}
-
-# voice 版最多展開幾則（voice_style_guide：選 selection_score 最高的 7 則完整改寫，其餘一句帶過）
-VOICE_MAX_FULL_EVENTS = 7
 
 # 星期對照
 WEEKDAY_ZH = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
@@ -616,17 +613,6 @@ def format_voice_script(
     lines.append("以下是今日的紀錄檔案，讓圖書館員翻譯給你聽。")
     lines.append("")
 
-    # 收集所有 items 並依 selection_score 排名，用於 7-event 限制
-    all_items_scores = []
-    for section in report.get("sections", []):
-        for item in section.get("items", []):
-            all_items_scores.append(item.get("selection_score", 0))
-    all_items_scores.sort(reverse=True)
-    score_cutoff = all_items_scores[VOICE_MAX_FULL_EVENTS - 1] if len(all_items_scores) >= VOICE_MAX_FULL_EVENTS else -1
-
-    # 追蹤已完整展開數量（確保不超過 VOICE_MAX_FULL_EVENTS）
-    full_count = 0
-
     # 各 beat 區塊
     used_transitions: set[str] = set()
     for section in report.get("sections", []):
@@ -646,25 +632,19 @@ def format_voice_script(
             lines.append(transition)
             lines.append("")
 
-        # voice_style_guide：最多展開 VOICE_MAX_FULL_EVENTS 則，其餘一句 headline 帶過
-        beat_headlines: list[str] = []
+        # 每則都完整朗讀，不設展開上限（維運者 2026-06-16 決策）。
+        # voice_text 已由改寫階段為每則生成，此處全部唸出，不額外耗用 API。
+        # 缺 voice_text 時退回 headline 補一句完整語句——
+        # 嚴禁用「另外還有：A、B、C」頓號串列拼接（rewrite_prompt 明令禁止之格式錯誤）。
         for item in items:
-            score = item.get("selection_score", 0)
             voice_text = item.get("voice_text", "")
             headline = item.get("headline", "")
-
-            if full_count < VOICE_MAX_FULL_EVENTS and score >= score_cutoff and voice_text:
+            if voice_text:
                 lines.append(voice_text)
                 lines.append("")
-                full_count += 1
             elif headline:
-                beat_headlines.append(headline)
-
-        # 未展開的事件用一句帶過
-        if beat_headlines:
-            brief = "另外還有：" + "、".join(beat_headlines) + "。"
-            lines.append(brief)
-            lines.append("")
+                lines.append(headline.rstrip("。.!！?？ ") + "。")
+                lines.append("")
 
     # 來源彙整（一句帶過所有來源名稱）
     all_sources = _collect_all_sources(report)

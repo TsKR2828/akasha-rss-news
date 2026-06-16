@@ -27,6 +27,11 @@ Enabled sources：27 / 0 failed（2026-06-09 audit）
 - `.gitignore` 僅保留 `文風指南*.md`（保護 V10 原始素材；去掉不穩的前導 `/`）。`rewrite_prompt_v2.md` 草稿內容已成正式 prompt，草稿與一度建立的私有檔／注入測試全部移除。
 - ⚠️ CLAUDE.md 要求「改 rewrite_prompt.md 須做修改前後輸出比對」：本次採用維運者自審的 v2 草稿、且 formatter 已與其對齊；**未跑線上 API 實測比對**（環境無金鑰），建議維運者留意次日雲端館報並由 watchdog 兜底。
 
+### 本地抓取（local fetch）排程修復 + 跨機遷移工具
+
+- **修好啟動失敗**：`akasha-local-fetch`（桌機，04:30）原 `0x800710E0`，因 WakeToRun=False（睡眠不喚醒）+ DisallowStartIfOnBatteries=True。已設 WakeToRun / StartWhenAvailable=True、解除電池限制；AC 喚醒計時器本就啟用。手動觸發實測通過：27/27 源、`fetch_warnings=[]`、3.7MB 自動 push（`9db3021`）。前提：夜間睡眠非關機、維持登入；待次日驗證「從睡眠自動喚醒」。
+- **新增 `scripts/setup_local_fetch_task.ps1`**：新家用 Windows 機一鍵建立此排程（含喚醒設定），供維運者把本機腿從公司電腦遷到家用電腦。`local_fetch.py` 只做 fetch RSS + git push、**不需任何 API 金鑰**；遷移僅需 Python + clone repo + GitHub 推送認證 + 家用（residential）IP。
+
 ---
 
 ## 2026-06-11 — 全量健檢（Opus）+ 16 卡修復波（Sonnet）

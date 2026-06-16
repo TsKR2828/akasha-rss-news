@@ -4,7 +4,7 @@
         <atom:link href="https://arstechnica.com/information-technology/feed/" rel="self" type="application/rss+xml" />
         <link>https://arstechnica.com</link>
         <description>Serving the Technologist since 1998. News, reviews, and analysis.</description>
-        <lastBuildDate>Mon, 15 Jun 2026 19:14:35 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 16 Jun 2026 00:06:22 +0000</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>
             hourly        </sy:updatePeriod>
@@ -19,6 +19,42 @@
 	<height>32</height>
 </image> 
             <item>
+                <title>Critical Copilot vulnerability allowed hackers to seal 2FA code from users</title>
+                <link>https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 16 Jun 2026 11:15:46 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[copilot]]></category>
+		<category><![CDATA[LLMs]]></category>
+		<category><![CDATA[parameter to prompt injection]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/</guid>
+
+                                    <description>
+                        <![CDATA[SearchLeak exploit shows why the industry's approach to LLM security fails over and over.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Last Tuesday, Microsoft patched a vulnerability it rated as max critical in its M365 Copilot AI platform. On Monday, the researchers who discovered the vulnerability and reported it to Microsoft revealed how their proof-of-concept exploit could retrieve 2FA codes and other sensitive data from emails accessible to Copilot.</p>
+<p>Microsoft and other LLM providers have been unable to prevent their products from complying with malicious requests to reveal data. The root cause: AI bots are unable to distinguish between instructions provided by users and those snuck into third-party content the models are summarizing, drafting responses to, or using to perform other actions on behalf of the user. With no way to secure this crucial boundary, Microsoft and its peers are left to erect complicated and ad hoc guardrails designed to rein in the consequences of this incurable gullibility.</p>
+<h2>Jumping over guardrails</h2>
+<p>One guardrail built into Copilot and most other LLMs prevents them from submitting web forms, sending emails, and taking similar actions that can be used to exfiltrate data from the user. To work around this, LLM hackers turned to markup language, which, among other things, allows users to add formatting elements such as headings, lists, and links to text without the need for HTML tags. Another workaround is to wrap sensitive data inside HTML tags such as &lt;img&gt; and &lt;form&gt;. In either case, a web request showing the data hits the attacker’s web server, where the secret information is captured in logs.</p><p><a href="https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>44</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg" width="500" height="500" />
+<media:credit>Photo Illustration by Thomas Fuller/SOPA Images/LightRocket via Getty Images</media:credit></media:content>
+            </item>
+                    <item>
                 <title>Users cry foul after AMD stripped memory crypto from its consumer CPUs</title>
                 <link>https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/</link>
                                     <comments>https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/#comments</comments>
@@ -48,7 +84,7 @@
 ]]>
                         </content:encoded>
                                     
-                                    <slash:comments>56</slash:comments>
+                                    <slash:comments>76</slash:comments>
                 
                 
                 <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/01/IMG_7105-1152x648-1769617334.jpeg" type="image/jpeg" medium="image" width="1152" height="648">
@@ -118,7 +154,7 @@
 ]]>
                         </content:encoded>
                                     
-                                    <slash:comments>108</slash:comments>
+                                    <slash:comments>109</slash:comments>
                 
                 
                 <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/09/code-vulnerability-security-1000x648.jpg" type="image/jpeg" medium="image" width="1000" height="648">
@@ -701,42 +737,6 @@
                 <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-1303783356-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
 <media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/GettyImages-1303783356-500x500.jpg" width="500" height="500" />
 <media:credit>Dzmitry Skazau / Getty</media:credit><media:text>Only the best people.</media:text></media:content>
-            </item>
-                    <item>
-                <title>Zero-day exploit completely defeats default Windows 11 BitLocker protections</title>
-                <link>https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/</link>
-                                    <comments>https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/#comments</comments>
-                
-                <dc:creator>
-                    <![CDATA[Dan Goodin]]>
-                </dc:creator>
-                <pubDate>Thu, 14 May 2026 18:32:01 +0000</pubDate>
-                		<category><![CDATA[Biz & IT]]></category>
-		<category><![CDATA[Security]]></category>
-		<category><![CDATA[BitLocker]]></category>
-		<category><![CDATA[disk encryption]]></category>
-		<category><![CDATA[microsoft]]></category>
-		<category><![CDATA[vulnerabilities]]></category>
-                <guid isPermaLink="true">https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/</guid>
-
-                                    <description>
-                        <![CDATA[It's not entirely clear how the exploit works. Microsoft says it's investigating.]]>
-                    </description>
-                                                                <content:encoded>
-                            <![CDATA[<p>A zero-day exploit circulating online allows people with physical access to a Windows 11 system to bypass default BitLocker protections and gain complete access to an encrypted drive within seconds.</p>
-<p>The exploit, named YellowKey, was <a href="https://github.com/Nightmare-Eclipse/YellowKey">published</a> earlier this week by a researcher who goes by the alias Nightmare-Eclipse. It reliably bypasses default Windows 11 deployments of BitLocker, the full-volume encryption protection Microsoft provides to make disk contents off-limits to anyone without the decryption key, which is stored in a secured piece of hardware known as a trusted platform module (TPM). BitLocker is a mandatory protection for many organizations, including those that contract with governments.</p>
-<h2>When one disk volume manipulates another</h2>
-<p>The core of the YellowKey exploit is a custom-made FsTx folder. Online documentation of this folder is hard to find. As explained later, the directory associated with the file fstx.dll appears to involve what Microsoft calls the <a href="https://learn.microsoft.com/en-us/windows/win32/fileio/deprecation-of-txf">transactional NTFS</a>, which allows developers to have “transactional atomicity" for file operations in transactions with a single file, multiple files, or ones that span multiple sources.</p><p><a href="https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/">Read full article</a></p>
-<p><a href="https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/#comments">Comments</a></p>
-]]>
-                        </content:encoded>
-                                    
-                                    <slash:comments>60</slash:comments>
-                
-                
-                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg" type="image/jpeg" medium="image">
-<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg" width="500" height="500" />
-<media:credit>Getty Images</media:credit></media:content>
             </item>
             </channel>
 </rss>

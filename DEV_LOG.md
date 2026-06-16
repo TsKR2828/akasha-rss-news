@@ -1,6 +1,6 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復 formatter 半邊）
+目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復：formatter 半邊 + v2 prompt 上線）
 測試合計：423 條全綠（2026-06-16 實測）
 Enabled sources：27 / 0 failed（2026-06-09 audit）
 
@@ -21,7 +21,11 @@ Enabled sources：27 / 0 failed（2026-06-09 audit）
 
 測試：422 → 423 全綠（替換 1 + 新增 1）。
 
-**未完成（下一卡 FIX-3）**：prompt 半邊——把 `rewrite_prompt_v2.md`（根目錄草稿）拆成公開骨架 + 私有文風檔（`prompts/_voice_style.private.md`，gitignore），`load_prompt()` 附加私有檔；更新過時的 `.gitignore` 註解。
+**FIX-3（prompt 半邊，v2 上線，同日完成）**：依維運者澄清「已公開過的內容無妨，只需保護 V10 原始素材」，捨棄原規劃的私有文風通道（過度設計、且會多一道手動貼後台的維運負擔），改採最簡路徑——
+
+- v2 文風**直接寫進公開** `prompts/rewrite_prompt.md`（新增：零醬具名人格、聲音貫穿全文、情緒基調、禁止外漏、去重規則、換場語規則、禁用詞擴充）。雲端 Routine 讀公開檔，pull 後**自動套用、無需手動貼後台**；本地一致。
+- `.gitignore` 僅保留 `文風指南*.md`（保護 V10 原始素材；去掉不穩的前導 `/`）。`rewrite_prompt_v2.md` 草稿內容已成正式 prompt，草稿與一度建立的私有檔／注入測試全部移除。
+- ⚠️ CLAUDE.md 要求「改 rewrite_prompt.md 須做修改前後輸出比對」：本次採用維運者自審的 v2 草稿、且 formatter 已與其對齊；**未跑線上 API 實測比對**（環境無金鑰），建議維運者留意次日雲端館報並由 watchdog 兜底。
 
 ---
 

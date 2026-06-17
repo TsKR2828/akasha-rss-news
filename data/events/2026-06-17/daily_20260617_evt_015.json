@@ -1,0 +1,81 @@
+{
+  "event_id": "daily_20260617_evt_015",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "日本央行升息至 31 年高點",
+  "context": "日本央行將短期政策利率從 0.75% 上調至 1%，創 31 年來新高，並暗示後續仍可能繼續升息。此舉是在伊朗戰爭通膨壓力、美國施壓與日圓持續走弱的背景下決定的，且與首相高市早苗的意願相悖。相比之下，美聯準會與英格蘭銀行預計按兵不動。",
+  "article_ids": [
+    "9f32dc5d28855a880099d94ae2fadc7068ad09c5d08a0f64414db70bab29b5ea",
+    "2d74fd02a36bc432c1712837419d363f8aeccf1240d18b9d0d4d46769f7eda13",
+    "8f9140b494fe4dc02f8e15c8055b7d276c666af2fd7b657773fbbeeeacab84db"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Bank of Japan raises rates to 31-year high, flags more to come Reuters",
+      "title": "Bank of Japan raises rates to 31-year high, flags more to come - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY3g0RV9ZYVZhWG1HQzEyLVU3MU1PQnduNndhaERJN0dTcWVrYUs3YXFEQ1k4NXFsdllBdDJZOHRGSEt4cy1tV3JnZGJfSVVCdFFxNFppZ2YxN3kxZ2VEa2JpU3phbTFDVllJRVEtNnM2VEFHNTZST2dLeTQxY1N1ODJqMlRZZVlfdUcySllSVU5JREJZSWp1RUdiTko3TnYtUktwdzZhMWNrM0ZHbU0tcXByYU1YZVk?oc=5",
+      "published_at": "2026-06-16T05:02:00+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Country acts amid Iran war inflation pressures, but US Fed and Bank of England expected to hold rates Business live – latest updates The Bank of Japan (BoJ) has raised interest rates to a 31-year high as it tries to dampen inflationary pressures created by the Iran war. Policymakers in Tokyo raised the BoJ’s short-term policy rate by a quarter of one percentage point, to 1% from 0.75% , and warned that companies were passing on rising oil costs to each other at a “relatively fast pace”. Continue reading...",
+      "title": "Bank of Japan raises interest rates to 31-year high … of 1%",
+      "url": "https://www.theguardian.com/business/2026/jun/16/bank-of-japan-raises-interest-rates-iran-war-inflation-us-fed-bank-of-england",
+      "published_at": "2026-06-16T18:41:08+08:00"
+    },
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Going against Prime Minister Takaichi’s wishes, Japan’s central bank acted amid U.S. pressure, a tanking currency and inflation from energy disruptions.",
+      "title": "Japan Raises Rates to 31-Year High to Ward Off War Inflation",
+      "url": "https://www.nytimes.com/2026/06/16/business/japan-interest-rates-war.html",
+      "published_at": "2026-06-17T02:14:56+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "日本央行將短期政策利率上調至 1%，創 31 年高點",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Bank of Japan raises rates to 31-year high, flags more to come - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPY3g0RV9ZYVZhWG1HQzEyLVU3MU1PQnduNndhaERJN0dTcWVrYUs3YXFEQ1k4NXFsdllBdDJZOHRGSEt4cy1tV3JnZGJfSVVCdFFxNFppZ2YxN3kxZ2VEa2JpU3phbTFDVllJRVEtNnM2VEFHNTZST2dLeTQxY1N1ODJqMlRZZVlfdUcySllSVU5JREJZSWp1RUdiTko3TnYtUktwdzZhMWNrM0ZHbU0tcXByYU1YZVk?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "升息決定在伊朗戰爭通膨壓力下做出，企業快速轉嫁成本",
+      "source_id": "guardian_business",
+      "source_title": "Bank of Japan raises interest rates to 31-year high … of 1%",
+      "source_url": "https://www.theguardian.com/business/2026/jun/16/bank-of-japan-raises-interest-rates-iran-war-inflation-us-fed-bank-of-england",
+      "support_type": "direct"
+    },
+    {
+      "claim": "升息違背首相高市早苗意願，同時受美國壓力與日圓走弱影響",
+      "source_id": "nyt_business",
+      "source_title": "Japan Raises Rates to 31-Year High to Ward Off War Inflation",
+      "source_url": "https://www.nytimes.com/2026/06/16/business/japan-interest-rates-war.html",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "日本央行升息至 31 年高點\n\n日本央行將短期政策利率由 0.75% 上調至 1%，創下 31 年來新高，並警告企業正以「相當快的速度」將能源成本轉嫁給彼此。這項決定是在伊朗戰爭通膨、美國壓力及日圓走弱的背景下做出，且違背首相高市早苗的意願。相較之下，美聯準會與英格蘭銀行預計此次均按兵不動。\n\n—— 本則整理自 Reuters、The Guardian、The New York Times 於 2026 年 6 月 17 日發佈的報導。",
+  "threads_text": "日本央行升息至 31 年高點\n\n日本央行將短期政策利率從 0.75% 上調至 1%，創下 31 年來最高水準，同時示警，企業間正以「相當快的速度」相互轉嫁上漲的能源成本。這項決定是在伊朗戰爭帶來的通膨壓力、美國外部施壓和日圓持續貶值的背景下做出，且與首相高市早苗的政策立場相悖。此次會議，美聯準會與英格蘭銀行預計均將維持利率不變。\n\n—— 本則整理自 Reuters、The Guardian、The New York Times 於 2026 年 6 月 17 日發佈的報導。",
+  "voice_text": "日本央行升息了，利率來到 1%，是 31 年來最高的水準。背後的壓力很多：伊朗戰爭帶來的通膨、美國的施壓、日圓一直在貶值。央行還警告，企業正在很快地把成本轉嫁出去。這個決定跟首相高市早苗的意願不一樣，算是央行獨立性的一次展現。反觀美國聯準會跟英國央行，這次應該都不會動。"
+}

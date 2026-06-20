@@ -1,0 +1,98 @@
+{
+  "event_id": "daily_20260621_evt_026",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "美伊瑞士談判霍爾木茲封鎖",
+  "context": "美國與伊朗預定週日在瑞士舉行技術層級會談，由巴基斯坦外交部確認。與此同時，伊朗宣布封閉霍爾木茲海峽，原因是以色列持續攻打黎巴嫩、違反雙方的停戰默契。談判與封鎖同步發生，局勢高度緊張。",
+  "article_ids": [
+    "5b9269d6e54953394be255abe1de2e322e76a5b012d1b04359f3ba7b6ab9b1de",
+    "0b5bf5c2238678910ce7a829bd244c23d33ef47c85c3fd3c4ee6d6dd84da81d3",
+    "26f31f7a6193814efa7481e2c8407fe7c58f70993bdeca5b0c1cda232da0447d",
+    "5ab6b90b010bfba739c0ed92fcf9e8763f18a62fb4378818fb031d6459064c41"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "With Lebanon ceasefire set, Trump envoy heads to Switzerland for U.S.-Iran talks Reuters",
+      "title": "With Lebanon ceasefire set, Trump envoy heads to Switzerland for U.S.-Iran talks - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdGlIRzVkQXRyMi1KZ2xpUGFScEtiNlk2M2VjV0t2M0xsY1NYcFJfQXNxSTFDSXFjaXZmNDVMWkVvU00zX0tXTE80MXpFUlVUeE8xOW1USzJtTERYV09YRU4zbnRic1NwaG1WRHVRT2s2TTl4NkgxMjNVMEtsS0pyQl9ldURhQVkwTzdzcG5sajE3bzhSS1h5NWpoWDJZd05HdTFodHd6azZjN2JLT25xaA?oc=5",
+      "published_at": "2026-06-20T07:49:50+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "U.S. and Iranian teams are set to hold 'technical-level' talks, according to Pakistan's foreign ministry. But fighting in Lebanon and claims over the Strait of Hormuz threaten a tentative agreement.",
+      "title": "Iran says Strait of Hormuz shut as U.S.-Iran talks set for Sunday in Switzerland",
+      "url": "https://www.npr.org/2026/06/20/nx-s1-5865006/fighting-lebanon-despite-ceasefire",
+      "published_at": "2026-06-20T18:02:05+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Planned negotiations come amid tensions over Israeli attacks in Lebanon and Iran’s announced closure of Hormuz again.",
+      "title": "US-Iran talks to kick off Sunday in Switzerland, says Pakistan",
+      "url": "https://www.aljazeera.com/news/2026/6/20/us-iran-talks-to-kick-off-sunday-in-switzerland-says?traffic_source=rss",
+      "published_at": "2026-06-21T01:39:08+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Iran said Israel's continued attacks in Lebanon are a breach of Tehran's agreement with the US to end the war.",
+      "title": "Iran says Strait of Hormuz will be closed over Israel attacks on Lebanon",
+      "url": "https://www.bbc.com/news/articles/cwyekkwm1mmo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-06-21T02:39:55+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 78,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "美伊預定週日在瑞士舉行技術層級談判，由巴基斯坦外交部確認",
+      "source_id": "npr_world",
+      "source_title": "Iran says Strait of Hormuz shut as U.S.-Iran talks set for Sunday in Switzerland",
+      "source_url": "https://www.npr.org/2026/06/20/nx-s1-5865006/fighting-lebanon-despite-ceasefire",
+      "support_type": "direct"
+    },
+    {
+      "claim": "伊朗宣布封閉霍爾木茲海峽，稱以色列攻打黎巴嫩違反停戰默契",
+      "source_id": "bbc_world",
+      "source_title": "Iran says Strait of Hormuz will be closed over Israel attacks on Lebanon",
+      "source_url": "https://www.bbc.com/news/articles/cwyekkwm1mmo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "美伊談判由巴基斯坦外交部確認，地點在瑞士",
+      "source_id": "aljazeera_all",
+      "source_title": "US-Iran talks to kick off Sunday in Switzerland, says Pakistan",
+      "source_url": "https://www.aljazeera.com/news/2026/6/20/us-iran-talks-to-kick-off-sunday-in-switzerland-says?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "川普特使前往瑞士出席美伊談判",
+      "source_id": "reuters_world_google_news",
+      "source_title": "With Lebanon ceasefire set, Trump envoy heads to Switzerland for U.S.-Iran talks - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdGlIRzVkQXRyMi1KZ2xpUGFScEtiNlk2M2VjV0t2M0xsY1NYcFJfQXNxSTFDSXFjaXZmNDVMWkVvU00zX0tXTE80MXpFUlVUeE8xOW1USzJtTERYV09YRU4zbnRic1NwaG1WRHVRT2s2TTl4NkgxMjNVMEtsS0pyQl9ldURhQVkwTzdzcG5sajE3bzhSS1h5NWpoWDJZd05HdTFodHd6azZjN2JLT25xaA?oc=5",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "美伊瑞士談判霍爾木茲封鎖\n\n美國與伊朗預定週日在瑞士舉行技術層級會談，由巴基斯坦外交部確認這個消息。\n\n同一時間，伊朗宣布關閉霍爾木茲海峽（Strait of Hormuz）。伊朗說，以色列持續攻打黎巴嫩，違反了美伊之間的停戰默契。黎巴嫩雖已宣告停火，前線仍有戰鬥繼續。\n\n—— 本則整理自 Reuters、NPR、Al Jazeera 與 BBC 於 2026 年 6 月 20 日至 21 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國與伊朗預定週日在瑞士舉行技術層級會談，由巴基斯坦外交部確認這個消息。\n\n局勢並不平靜。伊朗同時宣布封閉霍爾木茲海峽（Strait of Hormuz）。伊朗說，以色列持續攻打黎巴嫩——這違反了美伊之間的停戰默契。黎巴嫩雖已宣告停火，前線的戰鬥仍在繼續。\n\n本則整理自 Reuters、NPR、Al Jazeera 與 BBC 於 2026 年 6 月 20 日至 21 日發佈的報導。",
+  "voice_text": "美伊談判預定週日在瑞士登場。雙方將進行技術層級磋商，由巴基斯坦外交部對外確認。\n\n同一時間，伊朗宣布封閉霍爾木茲海峽（Strait of Hormuz）。原因是以色列持續攻打黎巴嫩——伊朗說這違反了美伊之間的停戰默契。黎巴嫩雖已宣告停火，前線仍有戰鬥傳出。"
+}

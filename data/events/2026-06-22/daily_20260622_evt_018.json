@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260622_evt_018",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration",
+  "context": "Cisco Foundation AI has open-sourced FAPO (Fully Automated Prompt Optimization), a Claude Code-driven system that autonomously optimizes multi-step LLM pipelines from baseline prompts to target accuracy. FAPO evaluates a chain, attributes failures at the step level, proposes vari",
+  "article_ids": [
+    "a910118396f8a3b738bddadfc26915fb41a7423f44694b0b5acaf02665e8af02"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Cisco Foundation AI has open-sourced FAPO (Fully Automated Prompt Optimization), a Claude Code-driven system that autonomously optimizes multi-step LLM pipelines from baseline prompts to target accuracy. FAPO evaluates a chain, attributes failures at the step level, proposes variants across prompt, parameter, and chain-structure levels, and validates each through an independent reviewer. In Cisco's evaluation, it beat GEPA on 15 of 18 model-benchmark comparisons. Here's how the optimization loop works and how to run it. The post Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration appeared first on MarkTechPost .",
+      "title": "Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration",
+      "url": "https://www.marktechpost.com/2026/06/20/cisco-ai-introduces-fapo-pipeline-aware-prompt-optimization-with-step-level-failure-attribution-and-claude-code-orchestration/",
+      "published_at": "2026-06-21T07:04:55+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration",
+      "source_id": "marktechpost",
+      "source_title": "Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration",
+      "source_url": "https://www.marktechpost.com/2026/06/20/cisco-ai-introduces-fapo-pipeline-aware-prompt-optimization-with-step-level-failure-attribution-and-claude-code-orchestration/",
+      "support_type": "direct"
+    }
+  ]
+}

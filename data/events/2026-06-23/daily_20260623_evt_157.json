@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260623_evt_157",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Qatar says Ras Laffan LNG complex blast killed 13, injured 66 - Reuters",
+  "context": "Qatar says Ras Laffan LNG complex blast killed 13, injured 66 Reuters",
+  "article_ids": [
+    "bb1a5cb038ebd36ed881fcdd8e4331dfc2a6abc1485e5b404df638a4767fa616",
+    "ace2c0be4bbb7054296dd38f959e3db9d7af2cce3d36367e0ca777a8a97473d5"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Qatar says Ras Laffan LNG complex blast killed 13, injured 66 Reuters",
+      "title": "Qatar says Ras Laffan LNG complex blast killed 13, injured 66 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcTl0Y2NTbzZyNTVpSjVaeEJVU29iU1BIVE1wMF9aWmRWdGtCZVNTN0F0M0FDOFZ4akRoM1JlV1RibTNDdzh5V2o2SDNzSC15ZnRyaTdPN0YzZ2hhQ1hjTEd6R0pId19fQ0VxV0ZNVU55VnI2TnMxRG5zOGxjR3h0S0FyUnNNdGtHdTA5QkFIZEwzS0E3SmFyMXRXR3ZpQkR1UTlqUQ?oc=5",
+      "published_at": "2026-06-22T21:23:00+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The city's main liquified natural gas (LNG) processing site suffered a \"technical accident\" in the Ras Laffan industrial zone.",
+      "title": "At least 13 killed and dozens injured after Qatar gas explosion",
+      "url": "https://www.bbc.com/news/articles/cwy05llpjpno?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-06-22T23:15:42+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Qatar says Ras Laffan LNG complex blast killed 13, injured 66 - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Qatar says Ras Laffan LNG complex blast killed 13, injured 66 - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcTl0Y2NTbzZyNTVpSjVaeEJVU29iU1BIVE1wMF9aWmRWdGtCZVNTN0F0M0FDOFZ4akRoM1JlV1RibTNDdzh5V2o2SDNzSC15ZnRyaTdPN0YzZ2hhQ1hjTEd6R0pId19fQ0VxV0ZNVU55VnI2TnMxRG5zOGxjR3h0S0FyUnNNdGtHdTA5QkFIZEwzS0E3SmFyMXRXR3ZpQkR1UTlqUQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "At least 13 killed and dozens injured after Qatar gas explosion",
+      "source_id": "bbc_world",
+      "source_title": "At least 13 killed and dozens injured after Qatar gas explosion",
+      "source_url": "https://www.bbc.com/news/articles/cwy05llpjpno?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "event_id": "daily_20260623_evt_090",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "U.K. Prime Minister Keir Starmer announces resignation",
+  "context": "The U.K. will have its seventh prime minister in 10 years. Keir Starmer is stepping down. His likely successor is the outgoing Manchester Mayor Andy Burnham.",
+  "article_ids": [
+    "9fb234e7d10a6344daa01675736e7276329642e6f3fc853047732e0794894bcf",
+    "07357f2c4efeb88baa1f6172d8e634c363aaba9828ea73be66f8dbc197db57f5",
+    "dbb613b1344a4284b48b215f9da22b2ed485b7df4949ee34237d5b8ace9e04a8"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The U.K. will have its seventh prime minister in 10 years. Keir Starmer is stepping down. His likely successor is the outgoing Manchester Mayor Andy Burnham.",
+      "title": "U.K. Prime Minister Keir Starmer announces resignation",
+      "url": "https://www.npr.org/2026/06/22/nx-s1-5866213/uk-prime-minister-keir-starmer-announces-resignation",
+      "published_at": "2026-06-22T16:52:36+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The United Kingdom will have its seventh prime minister in a decade.",
+      "title": "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
+      "url": "https://www.aljazeera.com/news/2026/6/22/why-has-keir-starmer-resigned-as-uk-prime-minister-and-who-will-take-over?traffic_source=rss",
+      "published_at": "2026-06-22T22:23:45+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "U.K. Prime Minister Keir Starmer announces resignation",
+      "source_id": "npr_world",
+      "source_title": "U.K. Prime Minister Keir Starmer announces resignation",
+      "source_url": "https://www.npr.org/2026/06/22/nx-s1-5866213/uk-prime-minister-keir-starmer-announces-resignation",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Keir Starmer has resigned, paving way for a 7th U.K. prime minister in 10 years",
+      "source_id": "npr_world",
+      "source_title": "Keir Starmer has resigned, paving way for a 7th U.K. prime minister in 10 years",
+      "source_url": "https://www.npr.org/2026/06/22/nx-s1-5866231/keir-starmer-resigns",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
+      "source_id": "aljazeera_all",
+      "source_title": "Why has Keir Starmer resigned as UK prime minister, and who will take over?",
+      "source_url": "https://www.aljazeera.com/news/2026/6/22/why-has-keir-starmer-resigned-as-uk-prime-minister-and-who-will-take-over?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

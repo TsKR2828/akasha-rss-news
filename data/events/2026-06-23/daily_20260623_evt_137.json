@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260623_evt_137",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Alan Greenspan, the legendary former Federal Reserve chair, dies",
+  "context": "During his chairmanship, Greenspan was celebrated as possibly the best central banker in history. But later, his reputation was tarnished by the worst financial crisis since the Great Depression.",
+  "article_ids": [
+    "3bde018f06320cecfc5968be3cc888f8720a64a7d0a135208c03d933367190ed",
+    "89008c4ea48bf1394b66d4791140bce1d38f707ef3820d4fe5fedb569fa58ec2"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "During his chairmanship, Greenspan was celebrated as possibly the best central banker in history. But later, his reputation was tarnished by the worst financial crisis since the Great Depression.",
+      "title": "Alan Greenspan, the legendary former Federal Reserve chair, dies",
+      "url": "https://www.npr.org/2026/06/22/656930918/alan-greenspan-the-legendary-former-federal-reserve-chair-dies",
+      "published_at": "2026-06-22T19:53:51+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Greenspan presided over economic turbulence, including crises and booms, during his 18-year tenure as Fed chairman.",
+      "title": "Former US Federal Reserve Chairman Alan Greenspan dies at age 100",
+      "url": "https://www.aljazeera.com/economy/2026/6/22/former-us-federal-reserve-chairman-alan-greenspan-dies-at-age-100?traffic_source=rss",
+      "published_at": "2026-06-22T23:12:01+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -7,
+  "selection_reason": "multi_source_confirmed; source_tier_2; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Alan Greenspan, the legendary former Federal Reserve chair, dies",
+      "source_id": "npr_world",
+      "source_title": "Alan Greenspan, the legendary former Federal Reserve chair, dies",
+      "source_url": "https://www.npr.org/2026/06/22/656930918/alan-greenspan-the-legendary-former-federal-reserve-chair-dies",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Former US Federal Reserve Chairman Alan Greenspan dies at age 100",
+      "source_id": "aljazeera_all",
+      "source_title": "Former US Federal Reserve Chairman Alan Greenspan dies at age 100",
+      "source_url": "https://www.aljazeera.com/economy/2026/6/22/former-us-federal-reserve-chairman-alan-greenspan-dies-at-age-100?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

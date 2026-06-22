@@ -6,6 +6,33 @@ Enabled sources：27 / 0 failed（2026-06-09 audit）
 
 ---
 
+## 2026-06-23 — 雲端 Routine 館報生成 + sgmllib3k 問題記錄
+
+### 館報狀態
+
+- 日期：2026-06-23（台灣時間）
+- 狀態：ok，17 則，INTL 5 / ARTS 4 / AI 4 / ECON 4
+- verify_output：PASS
+- pipeline：`--skip-fetch`（本地預抓 26 XML 可用）
+
+### ⚠️ 環境問題：sgmllib3k 無法用 pip 安裝
+
+雲端容器（Python 3.11）上，`pip install feedparser>=6.0` 的依賴 `sgmllib3k` 無法編譯 wheel：
+```
+ERROR: Failed building wheel for sgmllib3k
+```
+**暫時修法**：`apt-get install python3-sgmllib3k`（系統套件，Debian/Ubuntu 可用）。
+
+**永久修法待辦**：在雲端 Routine 的 setup hook 或 `scripts/setup_cloud.sh`（如有）加入：
+```bash
+apt-get install -y python3-sgmllib3k
+```
+或 requirements.txt 換成允許降版的 `feedparser==5.2.1`（Python 3.11 原生不需 sgmllib3k，但需確認相容性）。
+
+月月：下次雲端 Routine 如果又炸 feedparser ImportError，先跑 `sudo apt-get install python3-sgmllib3k`。
+
+---
+
 ## 2026-06-16 — voice 拼貼感修復（formatter 半邊，FIX-1 / FIX-2）
 
 維運者診斷「館報朗讀像拼貼、像在唸目錄」。根因一半在 prompt、一半在 formatter 寫死組裝。本波先處理 formatter 半邊。

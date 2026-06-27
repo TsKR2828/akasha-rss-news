@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260628_evt_136",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Brother and sister killed in Israeli attack on Gaza ‘safe zone’",
+  "context": "Israeli drones struck tents in al-Mawasi, killing two Palestinians and wounding several others.",
+  "article_ids": [
+    "a61d0985b46c7200b9b9122cc3cca90b9dcc84e6ef9e398b121cfc53615514b3",
+    "1b3ff6a2586af989aede6f0a38680869a7e1dec0df181d2177126a44f05b7c77"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Israeli drones struck tents in al-Mawasi, killing two Palestinians and wounding several others.",
+      "title": "Brother and sister killed in Israeli attack on Gaza ‘safe zone’",
+      "url": "https://www.aljazeera.com/news/2026/6/27/israeli-drone-attack-kills-young-girl-in-gaza-safe-zone?traffic_source=rss",
+      "published_at": "2026-06-27T23:53:41+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Brother and sister killed in Israeli attack on Gaza ‘safe zone’",
+      "source_id": "aljazeera_all",
+      "source_title": "Brother and sister killed in Israeli attack on Gaza ‘safe zone’",
+      "source_url": "https://www.aljazeera.com/news/2026/6/27/israeli-drone-attack-kills-young-girl-in-gaza-safe-zone?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Two killed, dozens injured in Israeli strike on displacement tents in Gaza",
+      "source_id": "aljazeera_all",
+      "source_title": "Two killed, dozens injured in Israeli strike on displacement tents in Gaza",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/6/27/two-killed-dozens-injured-in-israeli-strike-on-displacement-tents-in-gaza?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

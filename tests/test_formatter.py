@@ -24,7 +24,6 @@ from src.formatter import (
     BEAT_TRANSITION_POOL,
     BEAT_TRANSITIONS,
     THREADS_MAX_CHARS,
-    VOICE_MAX_FULL_EVENTS,
     X_MAX_CHARS,
     _build_source_attribution,
     _collect_all_sources,
@@ -588,8 +587,8 @@ class TestFormatVoiceScript:
         voice_second = format_voice_script(report, "2026-05-19", beat_meta)
         assert voice_first == voice_second
 
-    def test_voice_7_event_limit(self, sample_event, sample_stats, beat_meta):
-        """voice 版最多展開 7 則，其餘一句 headline 帶過。"""
+    def test_voice_reads_all_events_fully(self, sample_event, sample_stats, beat_meta):
+        """voice 版完整朗讀每一則，不設展開上限，不用「另外還有」頓號串列帶過。"""
         # 建 10 個 INTL 事件，score 100~10
         events = []
         for i in range(10):
@@ -606,16 +605,25 @@ class TestFormatVoiceScript:
         report = build_report("2026-05-19", items, [], [], sample_stats, beat_meta)
         voice = format_voice_script(report, "2026-05-19", beat_meta)
 
-        # 前 7 則完整展開
-        for i in range(1, 8):
+        # 10 則全部完整展開
+        for i in range(1, 11):
             assert f"這是第 {i} 則完整語音內容。" in voice
-        # 第 8-10 則只用 headline 帶過
-        assert "這是第 8 則完整語音內容。" not in voice
-        assert "這是第 9 則完整語音內容。" not in voice
-        assert "這是第 10 則完整語音內容。" not in voice
-        # 應該有「另外還有」帶過
-        assert "另外還有" in voice
-        assert "測試標題8" in voice
+        # 不再有「另外還有」頓號串列（rewrite_prompt 明令禁止之格式錯誤）
+        assert "另外還有" not in voice
+
+    def test_no_banned_template_transitions(self):
+        """換場語 pool 不得含 rewrite_prompt 明令禁止的模板標籤。"""
+        banned = {
+            "換個節奏，看建築。",
+            "然後是 AI 的部分。",
+            "財經面。",
+            "科技那邊。",
+            "換到經濟。",
+        }
+        all_transitions = {
+            t for pool in BEAT_TRANSITION_POOL.values() for t in pool
+        }
+        assert not (banned & all_transitions)
 
 
 class TestFormatPublisherList:

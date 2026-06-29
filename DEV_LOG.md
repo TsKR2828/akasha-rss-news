@@ -1,8 +1,36 @@
 # Dev Log
 
-目前階段：Phase 5 進行中（pipeline + routine 已設定，idempotent 測試完成，2026-06-11 全量健檢後 16 卡修復波執行）
-測試合計：422 條全綠（2026-06-11 實測）
+目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復：formatter 半邊 + v2 prompt 上線）
+測試合計：423 條全綠（2026-06-16 實測）
 Enabled sources：27 / 0 failed（2026-06-09 audit）
+
+---
+
+## 2026-06-16 — voice 拼貼感修復（formatter 半邊，FIX-1 / FIX-2）
+
+維運者診斷「館報朗讀像拼貼、像在唸目錄」。根因一半在 prompt、一半在 formatter 寫死組裝。本波先處理 formatter 半邊。
+
+- **FIX-1 換場語去模板**：`BEAT_TRANSITION_POOL` 移除 5 句模板標籤式換場語——「換個節奏，看建築。」「然後是 AI 的部分。」「財經面。」（rewrite_prompt v2 明列禁止）＋同毛病的「科技那邊。」「換到經濟。」，改為自然過渡句。
+- **FIX-2 全則完整朗讀**：`format_voice_script` 移除 7 則展開上限（`VOICE_MAX_FULL_EVENTS`）與「另外還有：A、B、C。」頓號串列拼接，改為每則完整唸出；缺 voice_text 時退回 headline 補一句完整語句。voice_text 本就由改寫階段為每則生成，不增加 API 成本，僅音檔變長（維運者決策：完整 > 簡短）。
+- **關鍵矛盾**：formatter 原本寫死產生 rewrite_prompt 明令禁止的頓號串列——LLM 寫得再自然都被程式重新貼回。本波修掉。CARD-3 的轉場確定性（同日同輸出）維持不變。
+
+| 檔案 | 變更 |
+|------|------|
+| `src/formatter.py` | 換場語 pool 去模板；移除 VOICE_MAX_FULL_EVENTS 與「另外還有」拼貼，全則完整朗讀 |
+| `tests/test_formatter.py` | `test_voice_7_event_limit`→`test_voice_reads_all_events_fully`；新增 `test_no_banned_template_transitions` 防呆 |
+
+測試：422 → 423 全綠（替換 1 + 新增 1）。
+
+**FIX-3（prompt 半邊，v2 上線，同日完成）**：依維運者澄清「已公開過的內容無妨，只需保護 V10 原始素材」，捨棄原規劃的私有文風通道（過度設計、且會多一道手動貼後台的維運負擔），改採最簡路徑——
+
+- v2 文風**直接寫進公開** `prompts/rewrite_prompt.md`（新增：零醬具名人格、聲音貫穿全文、情緒基調、禁止外漏、去重規則、換場語規則、禁用詞擴充）。雲端 Routine 讀公開檔，pull 後**自動套用、無需手動貼後台**；本地一致。
+- `.gitignore` 僅保留 `文風指南*.md`（保護 V10 原始素材；去掉不穩的前導 `/`）。`rewrite_prompt_v2.md` 草稿內容已成正式 prompt，草稿與一度建立的私有檔／注入測試全部移除。
+- ⚠️ CLAUDE.md 要求「改 rewrite_prompt.md 須做修改前後輸出比對」：本次採用維運者自審的 v2 草稿、且 formatter 已與其對齊；**未跑線上 API 實測比對**（環境無金鑰），建議維運者留意次日雲端館報並由 watchdog 兜底。
+
+### 本地抓取（local fetch）排程修復 + 跨機遷移工具
+
+- **修好啟動失敗**：`akasha-local-fetch`（桌機，04:30）原 `0x800710E0`，因 WakeToRun=False（睡眠不喚醒）+ DisallowStartIfOnBatteries=True。已設 WakeToRun / StartWhenAvailable=True、解除電池限制；AC 喚醒計時器本就啟用。手動觸發實測通過：27/27 源、`fetch_warnings=[]`、3.7MB 自動 push（`9db3021`）。前提：夜間睡眠非關機、維持登入；待次日驗證「從睡眠自動喚醒」。
+- **新增 `scripts/setup_local_fetch_task.ps1`**：新家用 Windows 機一鍵建立此排程（含喚醒設定），供維運者把本機腿從公司電腦遷到家用電腦。`local_fetch.py` 只做 fetch RSS + git push、**不需任何 API 金鑰**；遷移僅需 Python + clone repo + GitHub 推送認證 + 家用（residential）IP。
 
 ---
 

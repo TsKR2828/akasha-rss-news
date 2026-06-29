@@ -383,13 +383,14 @@ sources:
   - source_id: pts_news
     name: "公視新聞網"
     publisher: "公視"
-    url: "https://about.pts.org.tw/rss/XML/newsfeed.xml"
+    url: "https://news.pts.org.tw/xml/newsfeed.xml"
     beats: [PTS_LOCAL]
     lang: zh-TW
     tier: "TW"
     transport: direct_rss
     is_proxy: false
     enabled: true
+    note: "2026-06-17 更新：舊 URL about.pts.org.tw/rss/XML/newsfeed.xml 已 301 至此新 URL。"
 
   - source_id: cna_intworld
     name: "中央社國際新聞"

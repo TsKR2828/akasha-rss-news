@@ -91,6 +91,39 @@ class TestFetchOne:
         assert result.status == "failed"
         assert raw is None
 
+    def test_ssl_error_fallback_succeeds(self):
+        """SSL 憑證驗證失敗時降級 verify=False 重試，成功則回傳 ok。"""
+        sess = MagicMock()
+        sess.headers = {}
+        ok_resp = _mock_response(200, b"<rss>SSL-OK</rss>")
+        sess.get.side_effect = [
+            requests.exceptions.SSLError("certificate verify failed"),
+            ok_resp,
+        ]
+        result, raw = fetch_rss.fetch_one(
+            SAMPLE_SOURCE, timeout=1, retries=0, backoff_base=0.0, session=sess,
+        )
+        assert result.status == "ok"
+        assert raw == b"<rss>SSL-OK</rss>"
+        assert sess.get.call_count == 2
+        # 第二次呼叫應帶 verify=False
+        _, kwargs = sess.get.call_args_list[1]
+        assert kwargs.get("verify") is False
+
+    def test_ssl_error_fallback_also_fails(self):
+        """SSL 降級後仍失敗 → 最終回傳 failed。"""
+        sess = MagicMock()
+        sess.headers = {}
+        sess.get.side_effect = [
+            requests.exceptions.SSLError("certificate verify failed"),
+            requests.ConnectionError("still broken"),
+        ]
+        result, raw = fetch_rss.fetch_one(
+            SAMPLE_SOURCE, timeout=1, retries=0, backoff_base=0.0, session=sess,
+        )
+        assert result.status == "failed"
+        assert raw is None
+
 
 # ---------------------------------------------------------------------------
 # decide_overall_status — 規格 §4.2 fail_mode

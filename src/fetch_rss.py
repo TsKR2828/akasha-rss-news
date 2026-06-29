@@ -175,6 +175,27 @@ def fetch_one(
                 ),
                 resp.content,
             )
+        except requests.exceptions.SSLError:
+            # SSL 憑證驗證失敗（如 Missing Subject Key Identifier）時，
+            # 降級為 verify=False 重試一次，避免上游憑證問題阻斷整個來源。
+            LOG.warning("%s: SSL verification failed, retrying without verify", source["source_id"])
+            try:
+                resp = sess.get(source["url"], timeout=timeout, verify=False)
+                last_status = resp.status_code
+                resp.raise_for_status()
+                return (
+                    FetchResult(
+                        source_id=source["source_id"],
+                        status="ok",
+                        http_status=resp.status_code,
+                        fetched_at=fetched_at,
+                    ),
+                    resp.content,
+                )
+            except requests.RequestException as e2:
+                last_error = e2
+                if attempt < retries:
+                    time.sleep(backoff_base * (2 ** attempt))
         except requests.RequestException as e:
             last_error = e
             if attempt < retries:

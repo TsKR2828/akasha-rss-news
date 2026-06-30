@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260701_evt_316",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "New attack provides one more reason why AI browsers are a bad idea",
+  "context": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+  "article_ids": [
+    "49b8d79145d9455410171d618dcf6f6ad2984e29c6ea62a2f7c23211aac81ee0"
+  ],
+  "sources": [
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.",
+      "title": "New attack provides one more reason why AI browsers are a bad idea",
+      "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+      "published_at": "2026-07-01T04:03:14+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "New attack provides one more reason why AI browsers are a bad idea",
+      "source_id": "ars_technica_ai",
+      "source_title": "New attack provides one more reason why AI browsers are a bad idea",
+      "source_url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
+      "support_type": "direct"
+    }
+  ]
+}

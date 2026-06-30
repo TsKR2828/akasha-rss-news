@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260701_evt_168",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "SCOTUS to rule on birthright citizenship. And, U.S. murder rate nears new low",
+  "context": "The Supreme Court is expected to make a long-awaited ruling on birthright citizenship today, on the high court's last day of its term. And, the U.S. murder rate approaches a record low.",
+  "article_ids": [
+    "f04e1b5be3614b0b6fa3159c5a702c5f5fb75df7fa111ed65074d0090879813f",
+    "78915532b167a963600d1cbeb92454b399fa5fdab721a0c0462b490f6599be47"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The Supreme Court is expected to make a long-awaited ruling on birthright citizenship today, on the high court's last day of its term. And, the U.S. murder rate approaches a record low.",
+      "title": "SCOTUS to rule on birthright citizenship. And, U.S. murder rate nears new low",
+      "url": "https://www.npr.org/2026/06/30/g-s1-131004/up-first-newsletter-supreme-court-tps-birthright-citizenship-iran-war-us-murder-rate",
+      "published_at": "2026-06-30T19:46:50+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The BBC asked Americans how they felt after the Supreme Court's ruling on citizenship for babies born in the US.",
+      "title": "Americans react to Supreme Court upholding birthright citizenship",
+      "url": "https://www.bbc.co.uk/news/videos/c621d53wqw0o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-01T03:36:51+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected",
+  "drop_reason": "total_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "SCOTUS to rule on birthright citizenship. And, U.S. murder rate nears new low",
+      "source_id": "npr_world",
+      "source_title": "SCOTUS to rule on birthright citizenship. And, U.S. murder rate nears new low",
+      "source_url": "https://www.npr.org/2026/06/30/g-s1-131004/up-first-newsletter-supreme-court-tps-birthright-citizenship-iran-war-us-murder-rate",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Americans react to Supreme Court upholding birthright citizenship",
+      "source_id": "bbc_world",
+      "source_title": "Americans react to Supreme Court upholding birthright citizenship",
+      "source_url": "https://www.bbc.co.uk/news/videos/c621d53wqw0o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

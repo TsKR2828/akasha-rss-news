@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260702_evt_281",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Germany charges Ukrainian over Nord Stream pipeline blasts - Reuters",
+  "context": "Germany charges Ukrainian over Nord Stream pipeline blasts Reuters",
+  "article_ids": [
+    "aa1b798ccbffab0ecdf3bf5712a4443f11c41b7d87455a4c3d53a12255db11f5",
+    "f5897a798e8ac44c8650b48e40373c59fc64235ca81d3d23d779937841b7a238"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Germany charges Ukrainian over Nord Stream pipeline blasts Reuters",
+      "title": "Germany charges Ukrainian over Nord Stream pipeline blasts - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOalRlaFpyS3FBM2dSdHM0ck5wVzNlWXpQUEZIczhyWF9ITVFqbFNFWE1kQkZkTlVLcUNiWXItYmFTVzNpallnQ1BiVnJ5MmlkWi0zSjNKVzBLMml2cnJ4Vi1RckwxaUxrRFI2OVZaUFJlSWhZem1pUC1tamhWdXFrU29kNTZUTExkZE5ZUHJtUW9TX0xya2M0Z1l6bTltLWJ4UHhmOE5rRHg3UlF5OVRYS3hSWHNRdV96b0ZPRw?oc=5",
+      "published_at": "2026-07-02T01:26:57+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Ukraine denies involvement in the case which may have serious implications for its relationship with Germany.",
+      "title": "Ukrainian charged in Germany over Nord Stream blasts",
+      "url": "https://www.bbc.co.uk/news/articles/c33yjk0ldkdo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-02T02:19:32+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Germany charges Ukrainian over Nord Stream pipeline blasts - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Germany charges Ukrainian over Nord Stream pipeline blasts - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOalRlaFpyS3FBM2dSdHM0ck5wVzNlWXpQUEZIczhyWF9ITVFqbFNFWE1kQkZkTlVLcUNiWXItYmFTVzNpallnQ1BiVnJ5MmlkWi0zSjNKVzBLMml2cnJ4Vi1RckwxaUxrRFI2OVZaUFJlSWhZem1pUC1tamhWdXFrU29kNTZUTExkZE5ZUHJtUW9TX0xya2M0Z1l6bTltLWJ4UHhmOE5rRHg3UlF5OVRYS3hSWHNRdV96b0ZPRw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Ukrainian charged in Germany over Nord Stream blasts",
+      "source_id": "bbc_world",
+      "source_title": "Ukrainian charged in Germany over Nord Stream blasts",
+      "source_url": "https://www.bbc.co.uk/news/articles/c33yjk0ldkdo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

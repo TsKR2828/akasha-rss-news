@@ -1033,11 +1033,12 @@ def main(argv: Optional[list[str]] = None) -> int:
         return 1
 
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    selected_ids = set(manifest.get("selected_event_ids", []))
+    selected_ids_ordered = manifest.get("selected_event_ids", [])
+    selected_ids = set(selected_ids_ordered)
 
-    # 讀 selected events（改寫後）
+    # 讀 selected events（改寫後），保留 manifest 排列順序作為同分時的穩定排序依據
     events = []
-    for eid in selected_ids:
+    for eid in selected_ids_ordered:
         fp = events_dir / f"{eid}.json"
         if fp.exists():
             events.append(json.loads(fp.read_text(encoding="utf-8")))

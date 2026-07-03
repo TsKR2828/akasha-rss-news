@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260704_evt_018",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "RAG-Anything Tutorial: Build a Multimodal Retrieval Pipeline for Text, Tables, Equations, and Images in Colab",
+  "context": "In this tutorial, we build a RAG-Anything workflow to explore how multimodal retrieval works across text, tables, equations, and images. We prepare a Colab environment, enter our OpenAI API key at runtime, and generate a synthetic report with a chart and PDF. We convert that cont",
+  "article_ids": [
+    "c64b949f05ba86f6c2aa54e2a7d1eb54970958366f46ad3d816719b371e58010"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "In this tutorial, we build a RAG-Anything workflow to explore how multimodal retrieval works across text, tables, equations, and images. We prepare a Colab environment, enter our OpenAI API key at runtime, and generate a synthetic report with a chart and PDF. We convert that content into RAG-Anything's direct content_list format and insert it into the retrieval system. We then configure OpenAI chat, vision, and embedding functions and test naive, local, global, and hybrid modes. The post RAG-Anything Tutorial: Build a Multimodal Retrieval Pipeline for Text, Tables, Equations, and Images in Colab appeared first on MarkTechPost .",
+      "title": "RAG-Anything Tutorial: Build a Multimodal Retrieval Pipeline for Text, Tables, Equations, and Images in Colab",
+      "url": "https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab/",
+      "published_at": "2026-07-03T05:38:34+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "RAG-Anything Tutorial: Build a Multimodal Retrieval Pipeline for Text, Tables, Equations, and Images in Colab",
+      "source_id": "marktechpost",
+      "source_title": "RAG-Anything Tutorial: Build a Multimodal Retrieval Pipeline for Text, Tables, Equations, and Images in Colab",
+      "source_url": "https://www.marktechpost.com/2026/07/02/rag-anything-tutorial-build-a-multimodal-retrieval-pipeline-for-text-tables-equations-and-images-in-colab/",
+      "support_type": "direct"
+    }
+  ]
+}

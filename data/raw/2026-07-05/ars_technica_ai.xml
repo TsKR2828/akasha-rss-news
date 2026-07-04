@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/" >
+    <channel>
+        <title>Biz &amp; IT - Ars Technica</title>
+        <atom:link href="https://arstechnica.com/information-technology/feed/" rel="self" type="application/rss+xml" />
+        <link>https://arstechnica.com</link>
+        <description>Serving the Technologist since 1998. News, reviews, and analysis.</description>
+        <lastBuildDate>Thu, 02 Jul 2026 19:49:31 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1        </sy:updateFrequency>
+        
+<image>
+	<url>https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-60x60.png</url>
+	<title>Biz &amp; IT - Ars Technica</title>
+	<link>https://arstechnica.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+            <item>
+                <title>Newly discovered PamStealer isn&#039;t your typical macOS malware</title>
+                <link>https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 02 Jul 2026 19:38:57 +0000</pubDate>
+                		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[infostealers]]></category>
+		<category><![CDATA[MacOS Malware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/</guid>
+
+                                    <description>
+                        <![CDATA[The discovery underscores the increased effort being poured into Mac infostealers.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Researchers have found a never-before-seen piece of macOS malware that combines a series of clever tradecraft to infect Macs with stealthy, custom-developed credential-stealing code.</p>
+<p>The malware is delivered in two stages. The first is distributed in a disk image that masquerades as <a href="https://maccy.app/">Maccy</a>, a clipboard manager for Macs. It’s compiled as AppleScript that is notable for the way it delivers the second stage. The malware is named PamStealer because the Rust-written infostealer uses the Pluggable Authentication Modules interface built into macOS to validate the target’s login password before sending it to an attacker-controlled server.</p>
+<h2>A quieter execution chain</h2>
+<p>The use of both disk image and AppleScript is common in malware for Macs. More unusual is the way PamStealer combines them to gain stealth. When the AppleScript is double-clicked, it’s opened in the macOS Script Editor, where the malicious functionality is buried deep within the file.</p><p><a href="https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>43</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2022/04/GettyImages-1299483011-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2022/04/GettyImages-1299483011-500x500.jpg" width="500" height="500" />
+</media:content>
+            </item>
+                    <item>
+                <title>T-Mobile moving tens of thousands of virtual machines off VMware amid lawsuit</title>
+                <link>https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Wed, 01 Jul 2026 21:21:21 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[lawsuit]]></category>
+		<category><![CDATA[t-mobile]]></category>
+		<category><![CDATA[vmware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/</guid>
+
+                                    <description>
+                        <![CDATA[T-Mobile wants Broadcom to keep supporting its VMware perpetual licenses. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>T-Mobile is asking a New York court to rule that Broadcom was contractually obligated to continue supporting its VMware perpetual licenses.</p>
+<p>In its complaint, T-Mobile said it has tens of thousands of virtual machines using VMware software across approximately 303,140 CPU cores. It also said that it was migrating off VMware but noted the <a href="https://arstechnica.com/information-technology/2025/01/a-long-costly-road-ahead-for-customers-abandoning-broadcoms-vmware/">time-consuming and technical challenges</a> involved in migrating over 1,000 applications.</p>
+<p>It filed its lawsuit, which was first reported by <a href="https://www.theregister.com/virtualization/2026/07/01/t-mobile-appears-to-be-quitting-vmware-and-fighting-a-very-familiar-battle-for-support-rights-on-the-way-out/5264750">The Register</a> today, in the Supreme Court of the State of New York in August 2025 <a href="https://cdn.arstechnica.net/wp-content/uploads/2026/07/654741_2025_T_Mobile_USA_Inc_v_Broadcom_Inc_et_al_COMPLAINT_58.pdf">(PDF)</a>.</p><p><a href="https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>98</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/09/getty-t-mobile-sign-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/09/getty-t-mobile-sign-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images | Anna Moneymaker </media:credit><media:text>A T-Mobile sign on a storefront on August 24, 2023 in Washington, DC. </media:text></media:content>
+            </item>
+                    <item>
+                <title>New attack provides one more reason why AI browsers are a bad idea</title>
+                <link>https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 30 Jun 2026 20:03:14 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[browsers]]></category>
+		<category><![CDATA[jailbreaks]]></category>
+		<category><![CDATA[LLMs]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/</guid>
+
+                                    <description>
+                        <![CDATA[Telling an LLM that 2 + 2 = 5 is enough to make it follow forbidden instructions.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Makers of AI browsers make lofty promises. With a single prompt, users can ask one to find a restaurant in a particular part of town, reserve a table, invite a colleague to lunch, and email a confirmation. These makers are much more reticent about the risks of blurring the once fine line between browsing sites and asking a large language model a question or instructing it to take potentially sensitive actions.</p>
+<p>LLM developers’ answer so far has been to build guardrails that make some requests off-limits. Developing software exploits, stealing credentials, or teaching how to build a pipe bomb are examples. The problem with this approach is that the guardrails are reactive and treat the symptoms rather than solve the root cause. It’s tantamount to the manufacturer of an unsafe vehicle advocating for new road designs rather than fixing the flaws that make it prone to accidents.</p>
+<h2>Lulling LLMs into an alternate reality</h2>
+<p>New research puts this predicament on sharp display. It demonstrates how a website can lull AI browsers into a false reality where the rules governing its behavior no longer apply. After that, an attacker has free rein to invoke all kinds of destructive actions, such as extracting code from a private repository or extracting credentials from the built-in password manager.</p><p><a href="https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>73</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/broken-ai-robot-browser-404-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/broken-ai-robot-browser-404-500x500.jpg" width="500" height="500" />
+</media:content>
+            </item>
+                    <item>
+                <title>US offers $10 million for info on group behind Signal and WhatsApp hacking spree</title>
+                <link>https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 29 Jun 2026 22:05:33 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[phishing]]></category>
+		<category><![CDATA[russia state]]></category>
+		<category><![CDATA[signal messenger]]></category>
+		<category><![CDATA[whatsapp]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/</guid>
+
+                                    <description>
+                        <![CDATA[Operation by two Russia-state groups has been ongoing since at least March.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Federal authorities are offering a reward of up to $10 million for information leading to the identification or location of a Russian state cyber group that has compromised thousands of Signal and WhatsApp accounts belonging to investigative reporters and US government employees.</p>
+<p>The operation has been active since at least March, when the FBI published an <a href="https://www.ic3.gov/PSA/2026/PSA260320">advisory</a> warning of ongoing phishing campaigns targeting high-value targets by attackers associated with Russian intelligence services. Messages masquerading as automated support communications ask that users click a link or provide verification codes or account passcodes. In the event the user complies, they unknowingly link the attacker's device to their account or have their account completely taken over and are locked out.</p>
+<p><img width="300" height="300" src="https://cdn.arstechnica.net/wp-content/uploads/2026/06/messenger-account-hack-techniques-300x300.webp" class="none thumbnail" alt="" decoding="async" loading="lazy" srcset="https://cdn.arstechnica.net/wp-content/uploads/2026/06/messenger-account-hack-techniques-300x300.webp 300w, https://cdn.arstechnica.net/wp-content/uploads/2026/06/messenger-account-hack-techniques-500x500.webp 500w" sizes="auto, (max-width: 300px) 100vw, 300px">
+    </p><p><a href="https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>51</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/russia-hacking-binary-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/russia-hacking-binary-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Notion killing Skiff-influenced email app since most users use AI agents instead</title>
+                <link>https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/</link>
+                                    <comments>https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Thu, 25 Jun 2026 19:04:57 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[apps]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[email client]]></category>
+		<category><![CDATA[Skiff]]></category>
+		<category><![CDATA[software]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/</guid>
+
+                                    <description>
+                        <![CDATA[Notion is "going all in on using agents to run your inbox." ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>In February 2024, <a href="https://arstechnica.com/gadgets/2024/02/encrypted-email-service-skiff-gets-acquired-will-shut-down-in-six-months/">Notion bought Skiff</a>, an encrypted email and productivity software startup. Within a year, Notion shut down Skiff’s email service (taking @skiff.com email addresses with it). And in April 2025, the San Francisco-based company released Notion Mail, a Gmail client primarily built by people who joined Notion through the Skiff acquisition. Today, Notion announced that it’s shutting down Notion Mail, effectively killing what little remained of Skiff email.</p>
+<p>In an <a href="https://x.com/NotionMail/status/2070177267074977991?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E2070177267074977991%7Ctwgr%5Efe47482444044d33c72a3a07a70a065ab8d2fb45%7Ctwcon%5Es1_c10&amp;ref_url=https%3A%2F%2F9to5mac.com%2F2026%2F06%2F25%2Fnotion-shutting-down-its-ai-powered-email-client-including-mac-and-ios-apps%2F">X post (</a>first spotted by <a href="https://9to5mac.com/2026/06/25/notion-shutting-down-its-ai-powered-email-client-including-mac-and-ios-apps/">9to5Mac</a>) today, Notion said that it will shutter the Notion Mail “inbox across web, desktop, and iOS on September 22.”</p>
+<p>The post claimed that most Notion users don’t use email clients anyway and instead rely on AI agents to handle their electronic correspondence. It reads:</p><p><a href="https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/">Read full article</a></p>
+<p><a href="https://arstechnica.com/gadgets/2026/06/notion-killing-skiff-influenced-email-app-since-most-users-use-ai-agents-instead/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>62</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2230437159-1024x648.jpg" type="image/jpeg" medium="image" width="1024" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2230437159-500x500.jpg" width="500" height="500" />
+<media:credit>SOPA Images / Contributor</media:credit></media:content>
+            </item>
+                    <item>
+                <title>One-two punch delivered in global operation disrupts cybercrime &quot;assembly line&quot;</title>
+                <link>https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 24 Jun 2026 21:03:34 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Policy]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[botnets]]></category>
+		<category><![CDATA[cybercrime]]></category>
+		<category><![CDATA[law enforcement]]></category>
+		<category><![CDATA[ransomware]]></category>
+		<category><![CDATA[scams]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/</guid>
+
+                                    <description>
+                        <![CDATA["Operation Endgame" simultaneously disrupts two widely used crime tools.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>International authorities and a raft of private technology companies say they have disrupted a cybercrime “assembly line” that allowed crooks to collect millions of login credentials and steal more than $47 million in ransom payments and by other fraudulent means.</p>
+<p>The crux of the operation was the simultaneous targeting of two unrelated tools that are widely used in various online scams. The first is Amadey, a malware-as-a-service platform for compromising devices and delivering malicious payloads for ransomware and other scams. Amadey has been observed in the wild since at least 2018 and was <a href="https://arstechnica.com/security/2025/07/malware-as-a-service-caught-using-github-to-distribute-its-payloads/">seen last year</a> abusing GitHub as it collected system information from infected devices and installed customized payloads. The second tool was StealC, an infostealer-as-a-service platform that collects credentials, authentication cookies, cryptocurrency wallets, browser extensions, and files whose names match customer-defined patterns.</p>
+<h2>Severing a critical link in the cybercrime chain</h2>
+<p>Amadey and StealC are separate tools that are run independently of each other. Given their widespread use, however, many customers use both in their individual cybercrime activities. The tools also, it turns out, relied on some of the same underlying infrastructure to run. Microsoft said it made this determination after analyzing the tools using AI. This insight allowed Microsoft attorneys to seek an order disrupting both at the same time.</p><p><a href="https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/one-two-punch-delivered-in-global-operation-disrupts-cybercrime-assembly-line/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>13</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2024/09/GettyImages-459908461-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2024/09/GettyImages-459908461-500x500.jpg" width="500" height="500" />
+<media:credit>Alex Schmidt / Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>White House drastically shortens deadline for dropping quantum-vulnerable crypto</title>
+                <link>https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 23 Jun 2026 22:30:57 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Policy]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[cryptography]]></category>
+		<category><![CDATA[encryption]]></category>
+		<category><![CDATA[quantum computing]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/</guid>
+
+                                    <description>
+                        <![CDATA[Order warns of national security risks if post-quantum cryptography isn't adopted in time.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The White House is drastically shortening the deadline for government agencies and organizations to adopt new quantum-resistant encryption systems that will withstand attacks that use quantum computers, as the federal government seeks to protect decades’ worth of secrets belonging to militaries, banks, governments, and most individuals on Earth.</p>
+<p>The executive order, titled <a href="https://www.whitehouse.gov/presidential-actions/2026/06/securing-the-nation-against-advanced-cryptographic-attacks/">Securing the Nation against Advanced Cryptographic Attacks</a>, requires computing systems for “high-value assets” and “high-impact systems” to transition to post-quantum cryptographic key establishment schemes by December 31, 2030, and to quantum-safe digital signature schemes by December 31, 2031.</p>
+<h2>Heading off a significant threat</h2>
+<p>The new deadline, which for many organizations is about five years sooner than the previous one, comes on the heels of recent research showing that the resources and cost for building a cryptographically relevant quantum computer are far less than previous consensus estimates. In response, Google, Cloudflare, and other companies recently <a href="https://arstechnica.com/security/2026/03/google-bumps-up-q-day-estimate-to-2029-far-sooner-than-previously-thought/">tightened their timelines</a> for moving off vulnerable systems to 2029.</p><p><a href="https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/06/executive-order-bumps-up-deadline-to-move-off-quantum-vulnerable-crypto/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>55</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2024/03/GettyImages-1070527780-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2024/03/GettyImages-1070527780-500x500.jpg" width="500" height="500" />
+<media:credit>vital</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Oracle’s 21,000 layoffs help drive its debt-fueled AI investments</title>
+                <link>https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/</link>
+                                    <comments>https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Tue, 23 Jun 2026 20:17:38 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[job losses]]></category>
+		<category><![CDATA[oracle]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/</guid>
+
+                                    <description>
+                        <![CDATA[Oracle is spending billions on data center infrastructure to support AI. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The growing use of AI contributed to Oracle laying off 21,000 workers in a year, according to a <span id="_GeQ6apqDO9-M0PEPjpTWyQ8_45" class="K6pdKd wtBS9"> Securities and Exchange Commission</span> filing on Monday.</p>
+<p>In its annual regulatory filing for the fiscal year ending May 31, Oracle said it has 141,000 full-time employees. In its 2025 filing, Oracle said it had 162,000 employees. The reported 12.9 percent reduction followed <a href="https://www.businessinsider.com/oracle-layoffs-employees-costs-ai-buildout-job-cuts-2026-3">March</a> reports of mass layoffs at the database management software company.</p>
+<p>"[T]he adoption and deployment of AI technologies across our operations have resulted, and may continue to result, in reductions to our workforce," the filing reads.</p><p><a href="https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/">Read full article</a></p>
+<p><a href="https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>91</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2212917669-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2212917669-500x500-1782243478.jpg" width="500" height="500" />
+<media:credit>Getty</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Following user outcry, AMD reinstates memory encryption in consumer CPUs</title>
+                <link>https://arstechnica.com/security/2026/06/following-user-outcry-amd-reinstates-memory-encryption-in-consumer-cpus/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/following-user-outcry-amd-reinstates-memory-encryption-in-consumer-cpus/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 22 Jun 2026 19:16:52 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[AMD]]></category>
+		<category><![CDATA[Ryzen]]></category>
+		<category><![CDATA[tsme]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/following-user-outcry-amd-reinstates-memory-encryption-in-consumer-cpus/</guid>
+
+                                    <description>
+                        <![CDATA[Critics saw the move as an underhanded way to steer them toward more costly chips.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Consumer AMD CPUs will once again offer encryption protections against physical attacks after facing user backlash for silently removing the feature.</p>
+<p>As <a href="https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/">Ars reported</a> last week, AMD stripped the protection, known as <a href="link">TSME</a>, from consumer Ryzen processors. Short for Transparent Secure Memory Encryption, TSME encrypts the entire contents stored in memory, making the data useless to adversaries performing <a href="https://en.wikipedia.org/wiki/Cold_boot_attack">cold boot attacks</a> and similar intrusions requiring physical access.</p>
+<h2>Now you see it, now you don't, soon you'll see it again</h2>
+<p>About a decade ago, AMD added TSME to its high-end CPUs. Over the next few years, AMD added the protection to lower-end processors, including the consumer version of its Ryzen chips, a CPU that costs less than the Pro version. Over the years, users of these lower-end chips have gotten used to the added security, although some security experts (and plenty of novices, too) note that consumer chips are far less likely to be targeted by physical attacks. Recently and without warning or notice, the lower-end line of AMD chips suddenly dropped the protection, and it did so in a way that was impossible to detect on Windows machines and required a fair amount of technical work when using Linux. AMD last week declined to explain or acknowledge the change.</p><p><a href="https://arstechnica.com/security/2026/06/following-user-outcry-amd-reinstates-memory-encryption-in-consumer-cpus/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/following-user-outcry-amd-reinstates-memory-encryption-in-consumer-cpus/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>49</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2025/07/GettyImages-1952157610-1152x648-1753386930.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2025/07/GettyImages-1952157610-500x500-1753386908.jpg" width="500" height="500" />
+<media:credit>JuSun/Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Microsoft discovers new lightweight backdoor that steals cryptocurrency</title>
+                <link>https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 18 Jun 2026 23:28:52 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[crypto stealer]]></category>
+		<category><![CDATA[cryptocurrency]]></category>
+		<category><![CDATA[malware]]></category>
+		<category><![CDATA[worm]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/</guid>
+
+                                    <description>
+                        <![CDATA[Crypto Clipper spreads over USB and communicates over Tor.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Microsoft says it has detected new self-propagating malware that spreads through USB drives in search of cryptocurrency credentials, which it then sends to attacker-controlled servers.</p>
+<p>The company named the worm Crypto Clipper because it monitors the contents of device clipboards for patterns consistent with wallet addresses or seed phrases. When found, the malware also takes five screenshots over a 10-second period. Both the credentials and the screenshots are then sent to the attacker through Tor, a network protocol that provides anonymous routing by sending traffic through redundant nodes so logs can’t capture both the sending and receiving IP addresses. Crypto Clipper establishes the Tor connection by using a SOCKS5 proxy, a network protocol that sends traffic through a proxy server, which then forwards it to its final destination.</p>
+<h2>A lightweight backdoor</h2>
+<p>“The execution of this clipper is notable because it does not depend on a traditional installer or exposed IP-based C2 infrastructure,” Microsoft <a href="https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/">said</a> Thursday. “Instead, it deploys a portable Tor client, routes traffic through a local SOCKS5 proxy, and blends data theft with remote code execution, turning a financially motivated stealer into a lightweight backdoor.”</p><p><a href="https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/microsoft-spots-new-self-propagating-malware-for-stealing-cryptocurrency/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>83</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/02/cryptocurrency-theft-heist-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Apple patches high-severity eavesdropping vulnerability in Beats Studio Buds</title>
+                <link>https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/</link>
+                                    <comments>https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 18 Jun 2026 19:41:35 +0000</pubDate>
+                		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[apple]]></category>
+		<category><![CDATA[Beats Studio Buds]]></category>
+		<category><![CDATA[bluetooth]]></category>
+		<category><![CDATA[eavesdropping]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/</guid>
+
+                                    <description>
+                        <![CDATA[The vulnerability, disclosed 12 months ago, affects multiple manufacturers.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Apple has updated its Beats Studio Buds wireless earbuds to patch a high-severity vulnerability that could be exploited by nearby hackers to eavesdrop on users.</p>
+<p>The vulnerability, <a href="https://www.cve.org/CVERecord?id=CVE-2025-20701">CVE-2025-20701</a>, allowed improper authentication in the firmware running on the Bluetooth-related chips, enabling people within signal range to impersonate devices that had previously been paired with the earbuds. The researchers demonstrated this in a series of end-to-end attacks that allowed them to eavesdrop on conversations or sounds within earshot of the phone microphone.</p>
+<h2>Apple joins the patch party</h2>
+<p>“Impact: An attacker within Bluetooth range may be able to listen through the microphone of a device which is not yet paired and actively seeking pair requests,” Apple said in a Tuesday security <a href="https://support.apple.com/en-us/127557">advisory</a>. The fix is contained in Beats Firmware Update 1B211, which is delivered automatically while headphones are paired with and within Bluetooth range of a user’s iPhone, iPad, or Mac. Users can check their firmware version by going to Settings on their device, navigating to Bluetooth, and tapping the info button next to the headphones.</p><p><a href="https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/">Read full article</a></p>
+<p><a href="https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>15</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2021/11/Beats-Studio-Buds-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2021/11/Beats-Studio-Buds-500x500.jpg" width="500" height="500" />
+<media:credit>Jeff Dunn</media:credit><media:text>Beats' Studio Buds noise-canceling true wireless earphones.</media:text></media:content>
+            </item>
+                    <item>
+                <title>Before SpaceX IPO, investors in China secretly acquired stakes</title>
+                <link>https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Justin Elliott and Joshua Kaplan, ProPublica]]>
+                </dc:creator>
+                <pubDate>Thu, 18 Jun 2026 17:42:18 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Chinese]]></category>
+		<category><![CDATA[spacex]]></category>
+		<category><![CDATA[spacex ipo]]></category>
+		<category><![CDATA[syndication]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/</guid>
+
+                                    <description>
+                        <![CDATA[One previously unreported SpaceX investor has ties to Chinese military contractors.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A businessman with ties to Chinese military contractors was among the overseas investors who acquired stakes in SpaceX while it was still a private company. An entity linked to the Qatari royal family also took a stake.</p>
+<p>The new details come from a <a href="https://www.documentcloud.org/documents/28232877-jx-537-r/">private investor list</a> obtained by ProPublica that sheds light on a particularly delicate issue for Elon Musk’s rocket company: which people in countries like China bought into the company, and how. SpaceX built its business off sensitive US government work like making spy satellites for the Pentagon. While there is no ban on Chinese investment in US military contractors, such investment is heavily regulated.</p>
+<p>In a sign of its sensitivity to the concerns, SpaceX barred investors from China and Hong Kong from buying shares in its initial public offering last week due to “regulatory and compliance risks,” <a href="https://www.bloomberg.com/news/articles/2026-06-05/chinese-hk-investors-banned-from-spacex-ipo-on-security-grounds">Bloomberg reported</a>. The US government alleges that China has a strategy of using investments in sensitive industries for espionage and to get access to cutting-edge technology.</p><p><a href="https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/06/before-spacex-ipo-investors-in-china-secretly-acquired-stakes/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>43</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2281248250-1024x648.jpg" type="image/jpeg" medium="image" width="1024" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2281248250-500x500.jpg" width="500" height="500" />
+<media:credit>Spencer Platt/Getty Images</media:credit><media:text>SpaceX President Gwynne Shotwell (center right) celebrates with family and other SpaceX employees at the Nasdaq Marketsite in Times Square during the launch of the SpaceX initial public offering.</media:text></media:content>
+            </item>
+                    <item>
+                <title>Massive breach spills credentials for thousands of sensitive networks</title>
+                <link>https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 17 Jun 2026 19:54:31 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[breaches]]></category>
+		<category><![CDATA[firewalls]]></category>
+		<category><![CDATA[Fortinet]]></category>
+		<category><![CDATA[passwords]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/</guid>
+
+                                    <description>
+                        <![CDATA[The affected include Oracle, Lenovo, FedEx, a NATO contractor, and Fortinet.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Researchers have uncovered a massive breach of Fortinet firewalls that has given Russian-speaking attackers near-unrestricted access to some of the world’s largest and most powerful organizations, including Oracle, Chevron, Lenovo, Federal Express, a NATO defense contractor, and Fortinet itself.</p>
+<p>Nearly 74,000 Fortinet devices from more than 21,000 IP addresses in 194 countries have been compromised and their plaintext credentials exposed online, Bob Diachenko, a security researcher and head of SecurityDiscovery.com, said <a href="https://www.linkedin.com/feed/update/urn:li:activity:7471222472193830913/">online</a> and in an interview. He said he found the data after gaining access to the attackers’ command-and-control server and other infrastructure. The exposed data also included the industry, revenue, and employee count for each compromised organization.</p>
+<h2>Exceptional scale, poor opsec</h2>
+<p>Independent researcher Kevin Beaumont <a href="https://doublepulsar.com/fortibleed-75k-fortinet-firewalls-have-admin-passwords-cracked-60299faa65f8">reported</a> that “almost all” of the compromised devices remained online as of Wednesday morning. He went on to say that he has confirmed with multiple organizations found in the attackers’ logs that the credentials are real and current. In many cases, once the threat actors compromised the devices, they went on to access affected organizations’ centralized authentication systems, such as Radius servers and Microsoft Active Directory. The number of compromised devices comprises roughly half of all Internet-facing Fortinet firewalls, based on polling from Shodan.</p><p><a href="https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/massive-breach-spills-credentials-for-thousands-of-sensitive-networks/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>89</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg" type="image/jpeg" medium="image">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Tesco moving 40,000 server workloads off VMware amid Broadcom&#039;s “abusive conduct”</title>
+                <link>https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Wed, 17 Jun 2026 19:43:13 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[lawsuit]]></category>
+		<category><![CDATA[vmware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/</guid>
+
+                                    <description>
+                        <![CDATA[Tesco claimed Broadcom hiked its VMware prices by about 175 percent in UK court filings. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Tesco, a retail conglomerate headquartered in the United Kingdom, is moving 40,000 server workloads off of VMware amid "abusive conduct" from Broadcom, recent legal filings claim.</p>
+<p>Tesco filed a lawsuit in the UK’s High Court against Broadcom alleging breach of contract last year. According to a September report from <a href="https://www.theregister.com/software/2025/09/03/supermarket-giant-tesco-sues-vmware-for-breach-of-contract/1420651">The Register</a>, the lawsuit claimed that in January 2021, Tesco bought perpetual licenses for VMware’s vSphere Foundation and Cloud Foundation, a subscription to VMware Tanzu, plus support services until 2026, with the option to extend support for four additional years.</p>
+<p>But when <a href="https://arstechnica.com/information-technology/2022/05/broadcom-will-pay-61-billion-to-become-the-latest-company-to-acquire-vmware/">Broadcom took over VMware</a> in November 2023, it would not honor the deal and instead tried to get Tesco to pay “excessive and inflated prices for virtualization software for which Tesco has already paid” and would not allow it to buy support services for its perpetually licensed software without buying “duplicative subscription-based licenses for those same Software products," the initial complaint read, <a href="https://www.theregister.com/software/2025/09/03/supermarket-giant-tesco-sues-vmware-for-breach-of-contract/1420651">The Register reported</a> at the time.</p><p><a href="https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/06/tesco-moving-40000-server-workloads-off-vmware-amid-broadcoms-abusive-conduct/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>153</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1265241057-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1265241057-500x500.jpg" width="500" height="500" />
+<media:credit>Getty</media:credit></media:content>
+            </item>
+                    <item>
+                <title>&quot;Dangerous&quot; AI models are coming no matter what</title>
+                <link>https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/</link>
+                                    <comments>https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Lily Hay Newman, WIRED.com]]>
+                </dc:creator>
+                <pubDate>Wed, 17 Jun 2026 17:50:46 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Anthropic Claude]]></category>
+		<category><![CDATA[Mythos]]></category>
+		<category><![CDATA[Mythos 5]]></category>
+		<category><![CDATA[syndication]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/</guid>
+
+                                    <description>
+                        <![CDATA[AI models with advanced hacking capabilities will soon be the norm.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Late last week, Anthropic took its new <a href="https://www.wired.com/story/anthropic-releases-claude-fable-5-mythos-5/">Claude Fable 5 and Mythos 5</a> AI models offline following a United States government export-control directive barring “any foreign national” from using the services. The company has been in <a href="https://www.wired.com/story/anthropic-is-still-at-odds-with-the-white-house-over-claude-fable-5/">talks with the White House</a> since Friday but has yet to secure an agreement that would allow it to reinstate the offerings.</p>
+<p>Since <a href="https://www.wired.com/story/anthropic-mythos-preview-project-glasswing/">Mythos debuted in April</a>, Anthropic has claimed—and warned—that the model has advanced capabilities for not only finding software vulnerabilities to help defenders patch them, but also figuring out ways to exploit them that could be used by bad actors. Anthropic itself noted this double-edged sword in its launch of Mythos 5 and Claude Fable 5. “A great deal of advanced usage of AI models is dual use: the same queries that are beneficial in the hands of cybersecurity professionals and biology researchers could be dangerous if available to malicious actors,” the company <a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="nofollow noopener" data-offer-url="https://www.anthropic.com/news/claude-fable-5-mythos-5" data-event-click='{"pattern":"ExternalLink"}' data-event-boundary="click" data-in-view='{"pattern":"ExternalLink"}' data-include-experiments="true">wrote in a blog post</a> last week.</p>
+<p>With this in mind, the company initially released a version called Mythos Preview to a select consortium as part of a working group known as Project Glasswing. Mythos 5 was also privately released to this group last week, while Claude Fable 5, which is a Mythos-grade model, was released to the general public with specific blocks on its ability to give responses to questions about biology and cybersecurity.</p><p><a href="https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/">Read full article</a></p>
+<p><a href="https://arstechnica.com/ai/2026/06/dangerous-ai-models-are-coming-no-matter-what/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>133</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/Dario-Amodei-Code-with-Claude-SF-2026-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/05/Dario-Amodei-Code-with-Claude-SF-2026-500x500.jpg" width="500" height="500" />
+<media:credit>Samuel Axon</media:credit><media:text>Dario Amodei on stage at Code with Claude 2026 in San Francisco.</media:text></media:content>
+            </item>
+                    <item>
+                <title>Windows and Linux users: The deadline to update Secure Boot keys is near</title>
+                <link>https://arstechnica.com/security/2026/06/windows-and-linux-users-the-deadline-to-update-secure-boot-keys-is-near/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/windows-and-linux-users-the-deadline-to-update-secure-boot-keys-is-near/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 17 Jun 2026 11:15:17 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[bootkits]]></category>
+		<category><![CDATA[secure boot]]></category>
+		<category><![CDATA[uefi]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/windows-and-linux-users-the-deadline-to-update-secure-boot-keys-is-near/</guid>
+
+                                    <description>
+                        <![CDATA[What you need to know about the expiration of keys securing your machine's boot sequence.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The clock is ticking for Windows and Linux users to update cryptographic keys that protect their systems against firmware-based UEFI infections, a pernicious form of malware that loads before operating system and anti-malware protections start.</p>
+<p>Beginning June 24, three certificates that cryptographically verify that each piece of firmware and software that loads during system boot will expire. The Microsoft-signed certificates are the linchpins of Secure Boot, a Microsoft-designed chain of trust. Secure Boot checks the digital signatures of all firmware that loads during system startup to ensure it originates from a trusted provider, such as the manufacturer of the motherboard the system runs on.</p>
+<p>Secure Boot is designed to thwart UEFI bootkits, a form of malware that alters the Unified Extensible Firmware Interface, the successor to the BIOS, both of which begin the initial boot sequence. Because these bootkits load before the OS and most other code, they can be difficult to detect. Once installed, they typically load malware onto the OS that steals credentials, backdoors the system, or performs other malicious actions. Even when the OS is disinfected, the bootkit can reinfect the system. Bootkits survive OS reinstallations as well.</p><p><a href="https://arstechnica.com/security/2026/06/windows-and-linux-users-the-deadline-to-update-secure-boot-keys-is-near/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/windows-and-linux-users-the-deadline-to-update-secure-boot-keys-is-near/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>165</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/12/computer-power-button-1000x648.jpg" type="image/jpeg" medium="image" width="1000" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/12/computer-power-button-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Year of free HPE software a “step in the correct direction” in VMware rivalry</title>
+                <link>https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Tue, 16 Jun 2026 22:11:15 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[hewlett packard enterprise]]></category>
+		<category><![CDATA[vmware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/</guid>
+
+                                    <description>
+                        <![CDATA[Partner tells Ars that HPE should be giving out more free VM Essentials licenses. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Hewlett Packard Enterprise’s (HPE) new virtualization software promotion will likely pique the interest of end users and resellers who are unhappy with Broadcom's pricing of VMware.</p>
+<p>During its HPE Discover event in Las Vegas this week, HPE announced that customers could use its “HPE Morpheus Software—VM Essentials” offering for free for “up to one year,” per a press release. <a href="https://www.hpe.com/us/en/morpheus-software/virtualization.html">HPE’s website</a> describes its virtualization platform as a “VMware alternative.” It includes a hardware virtual machine (HVM) hypervisor and unified management and lets users "manage VMware ESXi and HVM clusters from one console and migrate when you’re ready,” HPE’s website says.</p>
+<p>“New VM Essentials customers can receive up to one free year of licenses for VM Essentials, a year of HPE Zerto for $1 to support non-disruptive migration to HPE virtual machines, and 0 percent interest on software through HPE Financial Services,” HPE’s announcement reads, referring to HPE’s group for helping IT teams manage funding.</p><p><a href="https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/06/hpe-tempts-vmware-users-partners-with-year-of-free-virtualization-software/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>39</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1166474639-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-1166474639-500x500.jpg" width="500" height="500" />
+<media:credit>Getty</media:credit><media:text>August 5, 2019 Palo Alto, CA - Hewlett Packard Enterprise (HPE) corporate headquarters located in Silicon Valley.</media:text></media:content>
+            </item>
+                    <item>
+                <title>Critical Copilot vulnerability allowed hackers to steal 2FA code from users</title>
+                <link>https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 16 Jun 2026 11:15:46 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[copilot]]></category>
+		<category><![CDATA[LLMs]]></category>
+		<category><![CDATA[parameter to prompt injection]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/</guid>
+
+                                    <description>
+                        <![CDATA[SearchLeak exploit shows why the industry's approach to LLM security fails over and over.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Last Tuesday, Microsoft patched a vulnerability it rated as max critical in its M365 Copilot AI platform. On Monday, the researchers who discovered the vulnerability and reported it to Microsoft revealed how their proof-of-concept exploit could retrieve 2FA codes and other sensitive data from emails accessible to Copilot.</p>
+<p>Microsoft and other LLM providers have been unable to prevent their products from complying with malicious requests to reveal data. The root cause: AI bots are unable to distinguish between instructions provided by users and those snuck into third-party content the models are summarizing, drafting responses to, or using to perform other actions on behalf of the user. With no way to secure this crucial boundary, Microsoft and its peers are left to erect complicated and ad hoc guardrails designed to rein in the consequences of this incurable gullibility.</p>
+<h2>Jumping over guardrails</h2>
+<p>One guardrail built into Copilot and most other LLMs prevents them from submitting web forms, sending emails, and taking similar actions that can be used to exfiltrate data from the user. To work around this, LLM hackers turned to markup language, which, among other things, allows users to add formatting elements such as headings, lists, and links to text without the need for HTML tags. Another workaround is to wrap sensitive data inside HTML tags such as &lt;img&gt; and &lt;form&gt;. In either case, a web request showing the data hits the attacker’s web server, where the secret information is captured in logs.</p><p><a href="https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/critical-copilot-vulnerability-allowed-hackers-to-seal-2fa-code-from-users/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>92</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/06/GettyImages-2242817595-500x500.jpg" width="500" height="500" />
+<media:credit>Photo Illustration by Thomas Fuller/SOPA Images/LightRocket via Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Users cry foul after AMD stripped memory crypto from its consumer CPUs</title>
+                <link>https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 15 Jun 2026 17:55:46 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[AMD]]></category>
+		<category><![CDATA[CPUs]]></category>
+		<category><![CDATA[processors]]></category>
+		<category><![CDATA[Transparent Secure Memory Encryption]]></category>
+		<category><![CDATA[tsme]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/</guid>
+
+                                    <description>
+                        <![CDATA[AMD's stripping of TSME from consumer CPUs appears to be a deliberate, covert move.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A decade ago, AMD added a protection to its high-end CPUs to protect them against <a href="https://en.wikipedia.org/wiki/Cold_boot_attack">cold boot</a> attacks and other types of physical exploits that siphon sensitive data out of the connected memory chips. Short for Transparent Secure Memory Encryption, TSME encrypts the entire contents stored in memory, making the data useless to physical attackers.</p>
+<p>Over time, AMD added TSME to lower-end processors, including the consumer version of its Ryzen chips, a CPU that costs less than the Pro version. Over the years, users of these lower-end chips have gotten used to the added security. Recently and without warning or notice, this lower-end line of AMD chips suddenly dropped the protection, and did so in a way that was impossible to detect on Windows machines and required a fair amount of technical work when using Linux.</p>
+<h2>Now you see it, now you don't</h2>
+<p>AMD has yet to say why TSME worked on these CPUs, or even to confirm the change. AMD declined to answer questions sent by email other than to say TSME "is a security feature only applied to PRO CPUs as part of AMD PRO Technologies." The statement is the first known time the chipmaker has explicitly made this restriction public.</p><p><a href="https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/users-cry-foul-after-amd-stripped-memory-crypto-from-its-consumer-cpus/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>101</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/01/IMG_7105-1152x648-1769617334.jpeg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/01/IMG_7105-500x500-1769617347.jpeg" width="500" height="500" />
+<media:credit>Andrew Cunningham</media:credit><media:text>AMD's Ryzen 7 9850X3D.</media:text></media:content>
+            </item>
+                    <item>
+                <title>PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data</title>
+                <link>https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/</link>
+                                    <comments>https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 12 Jun 2026 19:26:47 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[oracle]]></category>
+		<category><![CDATA[PeopleSoft]]></category>
+		<category><![CDATA[ShinyHunters]]></category>
+		<category><![CDATA[zerodays]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/</guid>
+
+                                    <description>
+                        <![CDATA[Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>One of the world’s most active ransomware groups exploited a critical vulnerability in Oracle’s PeopleSoft software suite and used it to target about 100 customers and extort at least one of them to pay up in exchange for not leaking stolen data, researchers said.</p>
+<p>The group, tracked as ShinyHunters, had been exploiting the PeopleSoft vulnerability for more than two weeks before Oracle <a href="https://blogs.oracle.com/security/security-alert-cve-2026-35273-released">flagged</a> it. CVE-2026-35273, as the vulnerability is tracked, carries a severity rating of 9.8 out of 10, making the former zero-day one of the year’s most critical vulnerabilities to be exploited.</p>
+<p>Google’s Mandiant security team <a href="https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit">said</a> it’s an SSRF (server-side request forgery), a vulnerability that allows attackers to send requests from a susceptible server to systems used by the targeted organization. Oracle said the SSRF is remotely exploitable, and the company has issued a stopgap mitigation but has yet to fully patch the flaw. Google has confirmed that victims are receiving extortion demands.</p><p><a href="https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>48</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2025/12/GettyImages-1867844462-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2025/12/GettyImages-1867844462-500x500.jpg" width="500" height="500" />
+<media:credit>Mesut Dogan</media:credit></media:content>
+            </item>
+            </channel>
+</rss>

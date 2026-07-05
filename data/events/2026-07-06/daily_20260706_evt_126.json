@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260706_evt_126",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Super Typhoon Bavi threatens Guam with catastrophic winds and flooding",
+  "context": "The storm system is expected to reach landfall on Monday morning.",
+  "article_ids": [
+    "58eab8b2fc4fed53c7ad40344eb37e8b656a7304cdbecf6e9579b47c1ba33eb7",
+    "7c639f1fd170c3a477e621162e83e4fa6f0a926cc58f930f31bddcea01a889e1"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The storm system is expected to reach landfall on Monday morning.",
+      "title": "Super Typhoon Bavi threatens Guam with catastrophic winds and flooding",
+      "url": "https://www.aljazeera.com/news/2026/7/5/super-typhoon-bavi-threatens-guam-with-catastrophic-winds-and-flooding?traffic_source=rss",
+      "published_at": "2026-07-06T00:54:26+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "People in the Northern Mariana Islands – remote U.S. territories in the Pacific Ocean – are preparing for Super Typhoon Bavi, which experts say could bring winds of over 180 miles per hour.",
+      "title": "Guam and surrounding Pacific islands brace for impact of Super Typhoon Bavi",
+      "url": "https://www.npr.org/2026/07/05/g-s1-132052/guam-pacific-islands-brace-super-typhoon-bavi",
+      "published_at": "2026-07-06T01:22:55+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Super Typhoon Bavi threatens Guam with catastrophic winds and flooding",
+      "source_id": "aljazeera_all",
+      "source_title": "Super Typhoon Bavi threatens Guam with catastrophic winds and flooding",
+      "source_url": "https://www.aljazeera.com/news/2026/7/5/super-typhoon-bavi-threatens-guam-with-catastrophic-winds-and-flooding?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Guam and surrounding Pacific islands brace for impact of Super Typhoon Bavi",
+      "source_id": "npr_world",
+      "source_title": "Guam and surrounding Pacific islands brace for impact of Super Typhoon Bavi",
+      "source_url": "https://www.npr.org/2026/07/05/g-s1-132052/guam-pacific-islands-brace-super-typhoon-bavi",
+      "support_type": "direct"
+    }
+  ]
+}

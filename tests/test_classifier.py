@@ -61,6 +61,11 @@ BEATS_CONFIG = {
             },
         },
     },
+    # FIX-A (0706 健檢): 公視在地過濾用的雙閘門關鍵字（代表性子集）
+    "pts_local": {
+        "taiwan_keywords": ["台灣", "台北", "玉山", "我國", "總統", "立法院", "兩岸"],
+        "foreign_keywords": ["西班牙", "葡萄牙", "歐盟", "歐洲", "美國", "烏克蘭", "日本"],
+    },
 }
 
 
@@ -179,6 +184,60 @@ class TestPTSLocal:
         """PTS_LOCAL 來源直接歸類，不參與一般 beat 競爭。"""
         art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
                        title="台北市府公告", summary="...")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "PTS_LOCAL"
+
+    def test_pts_news_foreign_with_intl_keyword_goes_intl(self):
+        """FIX-A: 公視外國新聞（外國地名 + INTL 關鍵字、無台灣訊號）→ 改歸 INTL，
+        不塞進在地新聞，也不被丟棄。"""
+        art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
+                       title="歐洲野火延燒 各國宣布進入緊急狀態",
+                       summary="峰會上各國討論 war 相關的因應對策")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "INTL"
+
+    def test_pts_news_foreign_pure_chinese_no_intl_keyword_goes_intl(self):
+        """FIX-A 漏殺修復: 純中文外國新聞、【未】命中任何 INTL 關鍵字
+        （沒有 war/戰爭/峰會），僅靠外國地名(西班牙/葡萄牙/歐盟)也要判為外國 → INTL。
+        這是 Sonnet 版只比對 INTL 關鍵字時會漏掉、7/6 靠碰巧有『峰會』才過的情境。"""
+        art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
+                       title="西班牙葡萄牙野火失控 數千人撤離",
+                       summary="歐盟啟動緊急應變機制 協助各國滅火")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "INTL"
+
+    def test_pts_taiwan_politics_not_kicked_out(self):
+        """FIX-A 誤殺防護（關鍵回歸）: 台灣國內政治新聞即使命中 INTL 訊號(峰會)，
+        因同時含台灣訊號(台灣/總統)，taiwan 閘門須壓過 → 仍留在地新聞，
+        不得被踢出並因落不到 beat 而整篇丟棄。"""
+        art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
+                       title="台灣總統大選進入倒數 各黨衝刺",
+                       summary="候選人出席國際峰會 暢談外交政見")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "PTS_LOCAL"
+
+    def test_pts_taiwan_foreign_relations_not_kicked_out(self):
+        """FIX-A 誤殺防護: 『我國與友邦…外交/峰會』含台灣訊號(我國)→ 留在地。"""
+        art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
+                       title="我國與友邦簽署外交協議",
+                       summary="雙方於峰會後宣布深化合作")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "PTS_LOCAL"
+
+    def test_pts_news_local_topic_still_forced_local(self):
+        """PTS_LOCAL 且無外國訊號 → 仍歸在地新聞。"""
+        art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
+                       title="台北捷運信義線今起試營運",
+                       summary="市府表示將分階段開放")
+        primary, scores = classifier.classify(art, BEATS_CONFIG)
+        assert primary == "PTS_LOCAL"
+
+    def test_pts_news_local_no_taiwan_word_still_local(self):
+        """FIX-A 不誤殺: 在地新聞不含『台灣』字樣(如玉山山難)、且無外國訊號
+        → 仍歸在地新聞。"""
+        art = _article(source_id="pts_news", beats=["PTS_LOCAL"],
+                       title="玉山登山客墜谷 消防馳援搶救",
+                       summary="一名登山客失足墜落約五十公尺深山谷")
         primary, scores = classifier.classify(art, BEATS_CONFIG)
         assert primary == "PTS_LOCAL"
 

@@ -102,6 +102,33 @@ class TestVoiceText:
         warnings = validate_voice_text("接下來 2/5 第二則")
         assert any("N/N" in w["pattern"] for w in warnings)
 
+    def test_single_source_count_phrase_caught(self):
+        """FIX-B (0706 健檢): 零來源規則明文禁止的「只有一個來源」句型須被擋下。
+        實測 6/30 出現 8 次、7/6 出現 9 次，舊 pattern 完全擋不住。"""
+        warnings = validate_voice_text("這則消息目前只有一個來源，還需要多方查證")
+        assert any("source" in w["pattern"] for w in warnings)
+
+    def test_only_from_source_phrase_caught(self):
+        warnings = validate_voice_text("這則消息目前只來自一家媒體的報導")
+        assert any("source" in w["pattern"] for w in warnings)
+
+    def test_current_source_limited_detail_phrase_caught(self):
+        warnings = validate_voice_text("目前來源提供的細節有限，後續持續追蹤")
+        assert any("source" in w["pattern"] for w in warnings)
+
+    def test_ben_ze_zheng_li_zi_phrase_caught(self):
+        warnings = validate_voice_text("本則整理自路透社的報導")
+        assert any("source" in w["pattern"] for w in warnings)
+
+    def test_gen_ju_bao_dao_phrase_caught(self):
+        warnings = validate_voice_text("根據BBC的報導，英國高鐵可能延到2039年")
+        assert any("source" in w["pattern"] for w in warnings)
+
+    def test_clean_reworded_voice_text_not_flagged(self):
+        """規格範例的正確寫法不應被誤殺。"""
+        assert validate_voice_text("英國高鐵可能延到2039年才能完工") == []
+        assert validate_voice_text("俄羅斯總統普亭飛赴北京，與習近平舉行峰會") == []
+
 
 # ---------------------------------------------------------------------------
 # validate_confidence

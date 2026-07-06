@@ -1111,17 +1111,39 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     LOG.info("Formatting %d selected events (+ %d dropped)", len(events), len(dropped))
 
+    # FIX-C (0706 健檢): Routine 分兩段跑（pipeline --until select 後，formatter 單獨跑）。
+    # 若 pipeline 有落地 _pipeline_run_state.json（前段 step_records + 真正的
+    # pipeline_start），讀出來合併，讓 run log 忠實反映整條 pipeline 的步驟與耗時，
+    # 而不是只有 formatter 自己的 0.01s。
+    from src.pipeline import read_pipeline_run_state  # 延遲匯入避免循環相依
+
+    run_state = read_pipeline_run_state(date)
+    prior_steps: list[dict] = []
     start = time.time()
-    report, issues = generate_all_outputs(
-        date_str=date,
-        rewritten_events=events,
-        dropped_events=dropped,
-        pipeline_warnings=rewrite_warnings + fetch_warnings,
-        pipeline_stats=stats,
-        output_base=args.output_base,
-        dry_run=args.dry_run,
-        start_time=start,
-    )
+    if run_state:
+        prior_steps = run_state.get("steps", [])
+        start = run_state.get("pipeline_start", start)
+
+    format_start = time.time()
+    try:
+        report, issues = generate_all_outputs(
+            date_str=date,
+            rewritten_events=events,
+            dropped_events=dropped,
+            pipeline_warnings=rewrite_warnings + fetch_warnings,
+            pipeline_stats=stats,
+            steps=prior_steps + [{
+                "name": "formatter",
+                "exit_code": 0,
+                "duration_s": round(time.time() - format_start, 2),
+            }],
+            output_base=args.output_base,
+            dry_run=args.dry_run,
+            start_time=start,
+        )
+    except Exception:
+        LOG.exception("Formatter raised an exception")
+        report, issues = {}, []
 
     status = report.get("status", "failed")
     LOG.info("Done. Status: %s, validation issues: %d", status, len(issues))

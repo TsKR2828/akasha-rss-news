@@ -1135,3 +1135,85 @@ class TestMainExitCodes:
             "--output-base", str(output_dir),
         ])
         assert rc == 2
+
+
+class TestMainReadsPipelineRunState:
+    """FIX-C (0706 健檢): formatter 單獨執行時，須讀取 pipeline 分段跑
+    留下的 _pipeline_run_state.json，合併 steps 並用真正的 pipeline_start
+    計算 duration，而不是 steps=[] + 只算 formatter 自己的耗時。
+    """
+
+    def test_run_log_merges_prior_steps_and_true_duration(
+        self, sample_event, tmp_path, monkeypatch,
+    ):
+        date = "2026-05-23"
+        events_base = _make_events_dir(tmp_path / "events", date, [sample_event])
+        output_dir = tmp_path / "output"
+
+        # pipeline.PROJECT_ROOT 指向 tmp_path，讓 read_pipeline_run_state
+        # 讀到我們手動落地的 run state（模擬 --until select 提前停止的結果）。
+        monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
+
+        prior_steps = [
+            {"name": "fetch_rss", "exit_code": 0, "duration_s": 12.3},
+            {"name": "normalize", "exit_code": 0, "duration_s": 1.1},
+            {"name": "classify", "exit_code": 0, "duration_s": 0.5},
+            {"name": "tw_highlight", "exit_code": 0, "duration_s": 0.2},
+            {"name": "dedup", "exit_code": 0, "duration_s": 0.1},
+            {"name": "event_cluster", "exit_code": 0, "duration_s": 0.3},
+            {"name": "select", "exit_code": 0, "duration_s": 0.1},
+        ]
+        pipeline_start = time.time() - 100  # 假裝 pipeline 100 秒前就開始了
+        state_dir = tmp_path / "data" / "events" / date
+        state_dir.mkdir(parents=True)
+        (state_dir / "_pipeline_run_state.json").write_text(
+            json.dumps({"steps": prior_steps, "pipeline_start": pipeline_start},
+                       ensure_ascii=False),
+            encoding="utf-8",
+        )
+
+        from src import formatter
+        rc = formatter.main([
+            "--date", date,
+            "--events-base", str(events_base),
+            "--output-base", str(output_dir),
+        ])
+        assert rc == 0
+
+        run_log = json.loads(
+            (output_dir / "logs" / f"run_{date.replace('-', '')}.json")
+            .read_text(encoding="utf-8")
+        )
+        step_names = [s["name"] for s in run_log["steps"]]
+        # 前段 7 步都在，且 formatter 步驟被附加在最後
+        assert step_names == [
+            "fetch_rss", "normalize", "classify", "tw_highlight",
+            "dedup", "event_cluster", "select", "formatter",
+        ]
+        # duration 涵蓋整條 pipeline（≈100s），不是只有 formatter 的零點幾秒
+        assert run_log["duration_seconds"] >= 99
+
+    def test_run_log_falls_back_when_no_run_state(
+        self, sample_event, tmp_path, monkeypatch,
+    ):
+        """沒有 _pipeline_run_state.json（例如一次跑完全程）→ 行為與修復前一致：
+        steps 只有 formatter 自己一步，duration 只算 formatter 執行時間。"""
+        date = "2026-05-24"
+        events_base = _make_events_dir(tmp_path / "events", date, [sample_event])
+        output_dir = tmp_path / "output"
+        monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)  # 目錄下無 run state 檔
+
+        from src import formatter
+        rc = formatter.main([
+            "--date", date,
+            "--events-base", str(events_base),
+            "--output-base", str(output_dir),
+        ])
+        assert rc == 0
+
+        run_log = json.loads(
+            (output_dir / "logs" / f"run_{date.replace('-', '')}.json")
+            .read_text(encoding="utf-8")
+        )
+        assert [s["name"] for s in run_log["steps"]] == ["formatter"]
+        assert run_log["duration_seconds"] < 5

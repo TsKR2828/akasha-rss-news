@@ -14,6 +14,8 @@ from src.pipeline import (
     _read_fetch_warnings,
     _read_selected_events,
     _run_module_step,
+    _write_pipeline_run_state,
+    read_pipeline_run_state,
     run_pipeline,
 )
 
@@ -950,6 +952,49 @@ class TestUntilFlag:
 
         for p in patches.values():
             p.stop()
+
+    def test_until_select_writes_run_state_for_formatter(self, tmp_path, monkeypatch):
+        """FIX-C (0706 健檢): --until select 提前停止時，須把 step_records 與
+        pipeline_start 落地到 _pipeline_run_state.json，讓稍後單獨執行的
+        formatter 能接續產生忠實的 run log（steps 非空、duration 涵蓋全程）。
+        """
+        monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
+
+        patches = self._mock_all_modules()
+        {k: p.start() for k, p in patches.items()}
+
+        with patch("src.pipeline.generate_all_outputs"):
+            summary = run_pipeline(
+                "2026-05-20",
+                dry_run=True,
+                output_base=tmp_path / "out",
+                until="select",
+            )
+
+        state_path = tmp_path / "data" / "events" / "2026-05-20" / "_pipeline_run_state.json"
+        assert state_path.exists()
+        state = json.loads(state_path.read_text(encoding="utf-8"))
+
+        # 7 步（fetch_rss ~ select）都落地
+        assert len(state["steps"]) == 7
+        assert [s["name"] for s in state["steps"]] == [
+            "fetch_rss", "normalize", "classify", "tw_highlight",
+            "dedup", "event_cluster", "select",
+        ]
+        # pipeline_start 應是個合理的 epoch 時間（早於現在）
+        assert state["pipeline_start"] <= time.time()
+
+        # read_pipeline_run_state 能讀回同樣的內容
+        read_back = read_pipeline_run_state("2026-05-20")
+        assert read_back == state
+
+        for p in patches.values():
+            p.stop()
+
+    def test_read_pipeline_run_state_missing_file_returns_none(self, tmp_path, monkeypatch):
+        """FIX-C: 沒有 run state 檔（例如一次跑完全程沒分段）→ 回傳 None。"""
+        monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
+        assert read_pipeline_run_state("2026-01-01") is None
 
     def test_until_select_main_exits_0(self, tmp_path, monkeypatch):
         """(a) --until select → main() 回傳 0（exit 0）。"""

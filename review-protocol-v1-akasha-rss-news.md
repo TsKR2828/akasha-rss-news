@@ -135,7 +135,7 @@
 - **雙層來源策略**:本地 04:30 `scripts/local_fetch.py` 抓取 26 源 → commit `data/raw/{date}/` → push;遠端 05:00 Routine → `git pull` → `pipeline --skip-fetch` 處理輸出。本地未跑時自動回退線上抓取(僅約 12 源可通,14 源 `remote_blocked`)。
 - **資料即倉庫**:`data/raw/` 已納入 git 追蹤,repo 體積每日增長。
 - **本專案自帶驗收標準**:spec 的 P0 / P1 清單(假成功防護、claim_trace、voice 格式約束、字數上限、idempotent 重跑等)。**P0 全項是每次全量健檢的必跑回歸基準,優先於本協議的任何泛用條目。**
-- **測試基礎良好**:pytest 測試 366 條、`tests/golden/` 樣本存在——審查必須實跑,不准只看測試檔案存在就放行。
+- **測試基礎良好**:pytest 測試 441 條、`tests/golden/` 樣本存在——審查必須實跑,不准只看測試檔案存在就放行。
 - **prompts/ 目錄是生產程式碼**:`rewrite_prompt.md`、`routine_prompt.md` 直接決定輸出品質與 Routine 行為,其變更與 src/ 同等對待。
 
 ## B3. 本專案的 S0 定義
@@ -166,7 +166,7 @@
 
 ## B6. 冒煙測試清單(維運者可手動執行)
 
-1. `pytest` 全數通過(目前基準:366 條)
+1. `pytest` 全數通過(目前基準:441 條)
 2. `python -m src.pipeline --dry-run` 跑完無錯誤
 3. 開啟今日 `output/daily_YYYYMMDD.md`:各 beat 區塊有內容、數量落在 daily_limits 範圍內、warnings 區塊檢視有無異常
 4. **人工事實抽查**:隨機挑一則 item,點開它的 sources 連結,確認 headline 與 context 的核心事實真的出現在來源報導中——這條不需要任何程式能力,而且是整個產品最關鍵的品質稽核

@@ -135,6 +135,21 @@ python scripts/verify_output.py --date {date}
   - `data/raw/{date}/`（所有 XML）
   - `data/events/{date}/`（改寫後的 event JSON）
 
+### ⛔ 分支保護鐵則（FIX-D 0706 健檢——最高優先）
+
+`daily-reports` 分支保存的是**每日累積的歷史館報**，不是單日快照。push 前務必：
+
+- **絕對禁止** `git push --force`、`git reset --hard`、或任何會讓 `daily-reports`
+  分支歷史檔案消失的操作。
+- **絕對禁止**先 `checkout`/`clean` 清空 `daily-reports` 工作目錄再整批複製今天的檔案——
+  這樣會抹掉先前所有日期的館報。
+- 正確流程：在 `daily-reports` 分支**既有的工作目錄基礎上**，只新增/覆寫「今天日期」對應的檔案
+  （`daily_YYYYMMDD.*`、`run_YYYYMMDD.json` 等），不觸碰其他日期的檔案。
+- commit 前先確認：`git status` 顯示的異動只包含今天日期的檔案，
+  沒有任何既有日期的檔案被刪除或修改。若看到非當日檔案被刪除，**立即停止，不要 commit**，
+  回報異常等待人工檢查。
+- 2026-06-30 曾發生一次 commit 抹掉 40 天歷史館報的事故，此規則即為預防重演而加入。
+
 ---
 
 ## 完成時請回報

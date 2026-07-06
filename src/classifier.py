@@ -93,6 +93,43 @@ def _has_econ_keyword(article: dict, econ_beat_def: dict) -> bool:
             any(kw in text for kw in keywords_zh))
 
 
+def _pts_text(article: dict) -> str:
+    return (article.get("title", "") + " " + (article.get("summary") or "")).lower()
+
+
+def _pts_has_taiwan_signal(article: dict, beats_config: dict) -> bool:
+    """公視文章是否含台灣訊號（地名、機構、政治主體）。"""
+    kws = (beats_config.get("pts_local", {}) or {}).get("taiwan_keywords", []) or []
+    text = _pts_text(article)
+    return any(kw.lower() in text for kw in kws if kw)
+
+
+def _pts_has_foreign_signal(article: dict, beats_config: dict) -> bool:
+    """公視文章是否含明顯外國訊號（外國國名/地區，或 INTL 關鍵字）。"""
+    text = _pts_text(article)
+    foreign_kws = (beats_config.get("pts_local", {}) or {}).get("foreign_keywords", []) or []
+    if any(kw.lower() in text for kw in foreign_kws if kw):
+        return True
+    intl_def = beats_config.get("beats", {}).get("INTL", {}) or {}
+    if any(kw.lower() in text for kw in (intl_def.get("keywords_en") or [])):
+        return True
+    if any(kw in text for kw in (intl_def.get("keywords_zh") or [])):
+        return True
+    return False
+
+
+def _is_foreign_pts_news(article: dict, beats_config: dict) -> bool:
+    """FIX-A (0706 健檢)：公視也報國際新聞，不能無條件歸 PTS_LOCAL。
+
+    採雙閘門，避免誤殺台灣在地政治新聞、也避免漏殺純中文外國新聞：
+      有外國訊號（外國地名 or INTL 關鍵字）  且  無台灣訊號  → 視為外國新聞。
+    只命中「選舉/外交/峰會」等 INTL 關鍵字、但同時提到台灣（總統大選、對友邦
+    外交…）者，因含台灣訊號而不判為外國，仍留在地新聞。
+    """
+    return (_pts_has_foreign_signal(article, beats_config)
+            and not _pts_has_taiwan_signal(article, beats_config))
+
+
 def classify(
     article: dict,
     beats_config: dict,
@@ -151,8 +188,13 @@ def classify(
 
         scores[beat_id] = sw * source_score + kw * kw_score + ew * entity_score
 
-    # PTS_LOCAL: 來源是公視 → 直接歸 PTS_LOCAL，不參與 INTL/ARTS/AI/ECON 競爭
+    # PTS_LOCAL: 來源是公視 → 原則上直接歸在地新聞，不參與一般 beat 競爭。
+    # FIX-A (0706 健檢): 但公視也報國際新聞。若該篇有外國訊號且無台灣訊號，
+    # 視為外國新聞 → 改歸 INTL（送進國際大事區塊），不塞進「公視在地新聞」，
+    # 也不因落不到 beat 而被整篇丟棄。
     if "PTS_LOCAL" in source_beats:
+        if _is_foreign_pts_news(article, beats_config):
+            return "INTL", scores | {"INTL": 1.0}
         return "PTS_LOCAL", scores | {"PTS_LOCAL": 1.0}
 
     if not scores:

@@ -22,7 +22,7 @@
 | `prompts/` | 生產程式碼，與 src/ 同等對待；改 `rewrite_prompt.md` 須做修改前後輸出比對 |
 | `config/feeds.yaml` | 新增/修改來源必須**實際 fetch 驗證** feed 存在且有 entries |
 
-- **測試基準：422 條全綠**（2026-06-11 起）。每次修改後全跑，全綠才算完成。
+- **測試基準：441 條全綠**（2026-07-06 起）。每次修改後全跑，全綠才算完成。
 - **禁止手寫/手改 `output/` 下任何檔案**——輸出只能由 `src/formatter.py` 產生，push 前必跑 `python scripts/verify_output.py --date {date}`。
 
 ## 生產架構現實（2026-06-11 起）

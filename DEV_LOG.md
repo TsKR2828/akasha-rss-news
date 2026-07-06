@@ -1,8 +1,36 @@
 # Dev Log
 
 目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復：formatter 半邊 + v2 prompt 上線）
-測試合計：423 條全綠（2026-06-16 實測）
-Enabled sources：27 / 0 failed（2026-06-09 audit）
+測試合計：441 條全綠（2026-07-06 實測）
+Enabled sources：27 / 0 failed（2026-07-06：雲端自抓 27/27 全 200 OK）
+
+---
+
+## 2026-07-06 — 0706 健檢修復波（FIX-A~E；Fable 建圖 / Sonnet 施工 / Opus 驗證）
+
+依 `review-protocol-v1` 全量健檢（結論 PASS WITH ISSUES）→ 5 項修復 + 1 項資料救援。工作流：Fable 建地圖、Sonnet 照圖施工、Opus 三路並行驗證；其中 FIX-A 被 Opus 驗證打回，由 Opus 主模型重做。
+
+- **舊館報救回（S1-1a，已推 daily-reports commit `e6067a7`）**：6/30 生成 commit `28669e6` 以 main 快照覆蓋工作樹後 commit，一次抹除 daily-reports 上 5/21~6/29 全部 output/ 館報（4622 檔、-43 萬行）。自其父 `b1ba9dd` 撿回 234 檔（純新增，未動 6/30~7/6）。daily-reports 現有 5/21~7/6 連續 46 份館報。
+- **FIX-A 公視在地過濾**：`classifier.py` 新增雙閘門 `_is_foreign_pts_news`——「有外國訊號（外國地名 or INTL 關鍵字）且無台灣訊號」才判外國、改歸 INTL。Sonnet 初版只比對 INTL 關鍵字，Opus 驗證抓到兩向缺陷（漏殺純中文外國新聞；誤殺含選舉/外交/峰會字樣的台灣政治新聞並因落不到 beat 整篇丟棄），主模型重做為雙閘門並補回歸測試。關鍵字放 `config/beats.yaml` 的 `pts_local`。
+- **FIX-B voice 來源標注 lint**：`validators.py` `VOICE_FORBIDDEN_PATTERNS` 新增中文 pattern，攔截 rewrite_prompt「零來源規則」明令禁止但舊 lint 擋不住的「只有一個來源」「本則整理自」「根據○○報導」等句型。Opus 拿 6/30、7/6 真檔實測命中、乾淨句不誤殺。
+- **FIX-C run log 忠實**：`pipeline.py` 在 `--until` 提前停止時把 steps/start 落地 `_pipeline_run_state.json`，`formatter.py` 讀回合併，run log 不再 steps=[]、duration=0.01；無 state 檔時向後相容。
+- **FIX-D routine 分支保護**：`routine_prompt.md`「產出與 push」新增分支保護鐵則（禁 force push/reset/整批覆蓋、push 前核對 git status 無既有檔被刪），防 6/30 抹除重演。
+- **FIX-E 文件數字**：CLAUDE.md 422→441、review-protocol 366→441。
+- **附帶**：`claude_rewrite.py` MODEL `claude-sonnet-4-6`→`claude-sonnet-5`（僅影響本地/API 路徑；雲端 Routine 改寫由 claude.ai session 模型執行、不呼叫此 API）。
+
+| 檔案 | 變更 |
+|------|------|
+| `src/classifier.py` / `config/beats.yaml` | FIX-A 雙閘門在地過濾 + `pts_local` 關鍵字 |
+| `src/validators.py` | FIX-B voice 來源標注 pattern |
+| `src/pipeline.py` / `src/formatter.py` | FIX-C run log 銜接（run state 中間檔）|
+| `prompts/routine_prompt.md` | FIX-D 分支保護鐵則 |
+| `src/claude_rewrite.py` | MODEL → claude-sonnet-5 |
+| `CLAUDE.md` / `review-protocol-v1-...md` | FIX-E 測試數字 → 441 |
+| `tests/test_{classifier,validators,pipeline,formatter}.py` | 各修復對應新測試 |
+
+測試：423 → 441 全綠。
+
+**維運者待辦（程式改不到）**：口語稿品質根因是雲端 Routine 改寫模型不穩定遵循 prompt。FIX-B 讓 `verify_output` 能擋下違規（治本）；若要把每日產稿模型換成 Sonnet 5，需在 **claude.ai Routine 設定頁**手動切換（雲端改寫不呼叫程式碼的 API）。
 
 ---
 

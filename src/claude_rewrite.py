@@ -44,7 +44,10 @@ PROMPT_PATH = PROJECT_ROOT / "prompts" / "rewrite_prompt.md"
 TAIPEI = timezone(timedelta(hours=8))
 
 # Claude API 設定
-MODEL = "claude-sonnet-4-6"
+# 注意：雲端 Routine 的改寫由 claude.ai Routine session 模型執行（見
+# prompts/routine_prompt.md Step 2 鐵則），不呼叫這支 API；此常數只影響
+# 本地 / 直接呼叫 API 的路徑，改動不影響 production 的實際改寫模型。
+MODEL = "claude-sonnet-5"
 MAX_TOKENS = 4096
 TEMPERATURE = 0.3  # 低溫度：改寫需忠於原文
 

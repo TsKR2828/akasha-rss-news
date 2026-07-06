@@ -38,6 +38,17 @@ VOICE_FORBIDDEN_PATTERNS = [
     (re.compile(r"📎"), "contains 📎 emoji"),
     (re.compile(r"(?:^|\s)\d{1,2}/\d{1,2}(?=\s|$)"), "contains N/N numbering"),
     (re.compile(r"\[[^\]]+\]\([^)]+\)"), "contains Markdown link"),
+    # FIX-B (0706 健檢): 零來源規則明文禁止的 per-event 來源標注句型，
+    # 例如「這則消息目前只有一個來源」「本則整理自 XX 的報導」等。
+    # 舊 pattern 只擋 URL/emoji/編號/Markdown link，擋不住這類中文敘述句。
+    (re.compile(r"只有(?:一|1|兩|2|\d+)個?來源"), "contains per-event source-count phrase"),
+    (re.compile(r"只有.{0,6}一個來源"), "contains per-event source-count phrase"),
+    (re.compile(r"只(?:來自|來源自)"), "contains single-source attribution phrase"),
+    (re.compile(r"目前(?:的)?來源(?:提供的細節)?"), "contains source-attribution phrase"),
+    (re.compile(r"本則(?:整理自|來自)"), "contains per-event source attribution phrase"),
+    (re.compile(r"本館報來自"), "contains per-event source attribution phrase"),
+    (re.compile(r"根據.{0,10}報導"), "contains per-event source attribution phrase"),
+    (re.compile(r".{0,10}報導指出"), "contains per-event source attribution phrase"),
 ]
 
 

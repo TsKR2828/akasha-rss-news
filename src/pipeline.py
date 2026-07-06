@@ -218,6 +218,43 @@ def _read_fetch_warnings(date: str) -> list[dict]:
     return result
 
 
+def _pipeline_run_state_path(date: str) -> Path:
+    """FIX-C (0706 健檢) 用：跨程序（分兩段跑）交接 run log 所需狀態的檔案路徑。"""
+    return PROJECT_ROOT / "data" / "events" / date / "_pipeline_run_state.json"
+
+
+def _write_pipeline_run_state(date: str, step_records: list[dict], pipeline_start: float) -> None:
+    """FIX-C (0706 健檢)：Routine 分兩段跑（pipeline --until select 後，formatter 單獨跑），
+    formatter 產生 run log 時原本讀不到前段步驟與真正的 pipeline 起始時間，
+    導致 run log 的 steps=[]、duration 只算 formatter 自己的時間。
+
+    在 pipeline 提前停止（--until）時，把已執行的 step_records 與
+    pipeline_start 落地到 data/events/{date}/_pipeline_run_state.json，
+    供之後單獨執行的 `python -m src.formatter` 讀取合併。
+    """
+    events_dir = PROJECT_ROOT / "data" / "events" / date
+    events_dir.mkdir(parents=True, exist_ok=True)
+    state = {
+        "steps": step_records,
+        "pipeline_start": pipeline_start,
+    }
+    _pipeline_run_state_path(date).write_text(
+        json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8",
+    )
+
+
+def read_pipeline_run_state(date: str) -> Optional[dict]:
+    """讀取 `_write_pipeline_run_state` 寫入的狀態；不存在則回傳 None。"""
+    path = _pipeline_run_state_path(date)
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except Exception:
+        LOG.warning("無法讀取 pipeline run state: %s", path)
+        return None
+
+
 def _read_selected_events(date: str) -> tuple[list[dict], list[dict], list[dict]]:
     """Read selected events, dropped list, and rewrite warnings from disk."""
     events_dir = PROJECT_ROOT / "data" / "events" / date
@@ -354,6 +391,9 @@ def run_pipeline(
         # --until 提前停止：已執行到指定步驟，跳過後續步驟與 formatter
         if _until and name == _until:
             LOG.info("--until %s：已執行完，提前停止 pipeline", _until)
+            # FIX-C (0706 健檢): 落地 step_records + pipeline_start，
+            # 讓稍後單獨執行的 formatter 能接續產生忠實的 run log。
+            _write_pipeline_run_state(date, step_records, pipeline_start)
             return {
                 "status": "ok",
                 "date": date,

@@ -1,0 +1,1357 @@
+{
+  "reportId": "daily_20260524",
+  "date": "2026-05-24",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-05-24T05:18:35.565108+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260524_evt_042",
+          "headline": "魯比歐訪印邀莫迪進白宮",
+          "context": "美國國務卿 Marco Rubio 訪問印度，與總理 Narendra Modi 正式會面。能源是核心議題，美方有意對印度輸出能源，背景是伊朗戰爭造成全球供應緊張。Rubio 也在訪問期間正式邀請 Modi 前往白宮。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n魯比歐訪印度，邀莫迪進白宮\n\n美國國務卿 Marco Rubio 訪問印度，與總理 Narendra Modi 正式會面。能源是核心議題——美方有意對印度輸出能源，填補伊朗戰爭造成的供應缺口。Rubio 也在這次訪問中正式邀請 Modi 前往白宮。\n\n—— 本則來自 BBC 與 Al Jazeera，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "魯比歐訪印度，邀莫迪進白宮\n\n美國國務卿 Marco Rubio 訪問印度，與總理 Narendra Modi 正式會面。這次訪問的核心議題是能源——美方有意向印度輸出能源，背景是伊朗戰爭導致全球供應緊張。Rubio 也在訪問期間正式邀請 Modi 前往白宮。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "美國國務卿 Marco Rubio 飛赴印度，與總理 Narendra Modi 舉行會談。能源是最重要的議題。美方有意向印度出口能源，填補伊朗戰爭造成的供應缺口。Rubio 也邀請 Modi 正式訪問白宮。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n魯比歐訪印度，邀莫迪進白宮\n\n美國國務卿 Marco Rubio 訪問印度，與總理 Narendra Modi 正式會面。能源是核心議題——美方有意對印度輸出能源，填補伊朗戰爭造成的供應缺口。Rubio 也在這次訪問中正式邀請 Modi 前往白宮。\n\n—— 本則來自 BBC 與 Al Jazeera，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "魯比歐訪印度，邀莫迪進白宮\n\n美國國務卿 Marco Rubio 訪問印度，與總理 Narendra Modi 正式會面。這次訪問的核心議題是能源——美方有意向印度輸出能源，背景是伊朗戰爭導致全球供應緊張。Rubio 也在訪問期間正式邀請 Modi 前往白宮。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國國務卿 Marco Rubio 飛赴印度，與總理 Narendra Modi 舉行會談。能源是最重要的議題。美方有意向印度出口能源，填補伊朗戰爭造成的供應缺口。Rubio 也邀請 Modi 正式訪問白宮。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "Rubio meets Modi during India visit with energy high on agenda",
+              "url": "https://www.bbc.com/news/articles/c87qrwyyrn2o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T19:55:39+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Aljazeera All",
+              "publisher": "Al Jazeera",
+              "title": "US Secretary of State kicks off India visit, invites Modi to White House",
+              "url": "https://www.aljazeera.com/news/2026/5/23/rubio-kicks-off-india-visit-invites-modi-to-the-white-house?traffic_source=rss",
+              "published_at": "2026-05-23T23:52:14+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "美國國務卿 Rubio 訪問印度，與 Modi 會面，能源是核心議題",
+              "source_id": "bbc_world",
+              "source_title": "Rubio meets Modi during India visit with energy high on agenda",
+              "source_url": "https://www.bbc.com/news/articles/c87qrwyyrn2o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Rubio 邀請 Modi 前往白宮",
+              "source_id": "aljazeera_all",
+              "source_title": "US Secretary of State kicks off India visit, invites Modi to White House",
+              "source_url": "https://www.aljazeera.com/news/2026/5/23/rubio-kicks-off-india-visit-invites-modi-to-the-white-house?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260524_evt_030",
+          "headline": "中國煤礦爆炸至少82人死亡",
+          "context": "中國北部山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡，是中國多年來最嚴重的礦難。事故發生在週五晚間，當時約有 247 名礦工正在值班。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n中國煤礦爆炸，至少 82 人死亡\n\n中國山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡，是中國多年來最嚴重的礦難。事故發生在週五晚間，當時約有 247 名礦工正在值班。\n\n—— 本則來自 NPR 與 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "中國煤礦爆炸，至少 82 人死亡\n\n中國北部山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡。官方媒體新華社報導，事故發生在週五晚間，當時約有 247 名礦工正在值班。這是中國多年來最嚴重的礦難。\n\n本則整理自 NPR 與 BBC 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "中國山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡。這是中國多年來最嚴重的礦難。事故在週五晚間發生，當時坑內約有 247 名礦工值班。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n中國煤礦爆炸，至少 82 人死亡\n\n中國山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡，是中國多年來最嚴重的礦難。事故發生在週五晚間，當時約有 247 名礦工正在值班。\n\n—— 本則來自 NPR 與 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "中國煤礦爆炸，至少 82 人死亡\n\n中國北部山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡。官方媒體新華社報導，事故發生在週五晚間，當時約有 247 名礦工正在值班。這是中國多年來最嚴重的礦難。\n\n本則整理自 NPR 與 BBC 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "中國山西省一處煤礦發生瓦斯爆炸，至少 82 人死亡。這是中國多年來最嚴重的礦難。事故在週五晚間發生，當時坑內約有 247 名礦工值班。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "Npr World",
+              "publisher": "NPR",
+              "title": "Deadliest coal mine explosion in China in years kills at least 82 people",
+              "url": "https://www.npr.org/2026/05/23/nx-s1-5832405/coal-mine-gas-explosion-china",
+              "published_at": "2026-05-23T14:07:39+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "At least 82 killed in Chinese coal mine explosion",
+              "url": "https://www.bbc.com/news/articles/c5y0ve18qlko?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T23:18:40+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "中國山西省煤礦瓦斯爆炸，至少 82 人死亡，是中國多年來最嚴重礦難",
+              "source_id": "npr_world",
+              "source_title": "Deadliest coal mine explosion in China in years kills at least 82 people",
+              "source_url": "https://www.npr.org/2026/05/23/nx-s1-5832405/coal-mine-gas-explosion-china",
+              "support_type": "direct"
+            },
+            {
+              "claim": "事故發生時約 247 名工人在值班",
+              "source_id": "bbc_world",
+              "source_title": "At least 82 killed in Chinese coal mine explosion",
+              "source_url": "https://www.bbc.com/news/articles/c5y0ve18qlko?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260524_evt_003",
+          "headline": "美對古巴施壓，局勢持續緊張",
+          "context": "目前的消息指出，美國已警告和平協議難以實現，對古巴的壓力持續升高。古巴方面則強烈反駁，指控這是一宗「詐欺案」，目的是替軍事干預製造藉口。兩方立場目前差距懸殊。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n美國施壓古巴，哈瓦那指控美設局\n\n目前的消息指出，美國已警告和平協議難以實現，川普政府對古巴的壓力持續升高。古巴方面則強烈反駁，指控這是精心設計的「詐欺案」，用來替軍事干預製造藉口。兩方立場相去甚遠。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國施壓古巴，哈瓦那指控美設局\n\n目前的消息指出，美國已警告和平解決方案難以實現，川普政府對古巴的壓力持續升高。古巴方面強烈反駁，指控這是一宗「詐欺案」，目的是替軍事干預找藉口。兩方立場目前差距懸殊。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "美國對古巴的施壓持續升高。目前的消息指出，美方已警告和平協議難以達成。古巴方面強烈反駁，指控這整件事是精心設計的「詐欺案」，目的是替軍事干預找藉口。兩方目前立場差距很大。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n美國施壓古巴，哈瓦那指控美設局\n\n目前的消息指出，美國已警告和平協議難以實現，川普政府對古巴的壓力持續升高。古巴方面則強烈反駁，指控這是精心設計的「詐欺案」，用來替軍事干預製造藉口。兩方立場相去甚遠。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國施壓古巴，哈瓦那指控美設局\n\n目前的消息指出，美國已警告和平解決方案難以實現，川普政府對古巴的壓力持續升高。古巴方面強烈反駁，指控這是一宗「詐欺案」，目的是替軍事干預找藉口。兩方立場目前差距懸殊。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國對古巴的施壓持續升高。目前的消息指出，美方已警告和平協議難以達成。古巴方面強烈反駁，指控這整件事是精心設計的「詐欺案」，目的是替軍事干預找藉口。兩方目前立場差距很大。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "Trump is putting pressure on Cuba - why and to what end?",
+              "url": "https://www.bbc.com/news/articles/c5yrkl96xwvo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T02:33:36+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "美國警告和平協議難以達成，古巴指控美方製造藉口意圖軍事干預",
+              "source_id": "bbc_world",
+              "source_title": "Trump is putting pressure on Cuba - why and to what end?",
+              "source_url": "https://www.bbc.com/news/articles/c5yrkl96xwvo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260524_evt_017",
+          "headline": "美政府公開UFO目擊檔案近80年",
+          "context": "五角大廈公開了一批 UFO（Unidentified Flying Object，不明飛行物體）目擊報告，案例時間跨度將近 80 年。目前的消息指出，這批檔案中記載了球形體、圓盤、火球等目擊描述，有人曾形容看到「球體從四面八方蜂擁而至」。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n美政府公開 UFO 目擊檔案，長達近 80 年\n\n五角大廈公開了一批 UFO 目擊報告，案例橫跨將近 80 年。目前的消息指出，檔案記載了球形體、圓盤、火球等各種目擊描述，有人曾形容看到「球體從四面八方蜂擁而至」。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美政府公開 UFO 目擊檔案，長達近 80 年\n\n五角大廈公開了一批 UFO（Unidentified Flying Object，不明飛行物體）目擊報告，案例時間跨度將近 80 年。目前的消息指出，這批檔案記載了各種目擊描述，包括球形體、圓盤、火球等形狀，有人曾描述「球體從四面八方蜂擁而至」。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "五角大廈公開了一批 UFO 目擊報告，時間跨度將近 80 年。目前的消息指出，這批檔案記載了各種目擊描述——球形體、圓盤、火球。其中有人曾描述看到「球體從四面八方蜂擁而至」。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n美政府公開 UFO 目擊檔案，長達近 80 年\n\n五角大廈公開了一批 UFO 目擊報告，案例橫跨將近 80 年。目前的消息指出，檔案記載了球形體、圓盤、火球等各種目擊描述，有人曾形容看到「球體從四面八方蜂擁而至」。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美政府公開 UFO 目擊檔案，長達近 80 年\n\n五角大廈公開了一批 UFO（Unidentified Flying Object，不明飛行物體）目擊報告，案例時間跨度將近 80 年。目前的消息指出，這批檔案記載了各種目擊描述，包括球形體、圓盤、火球等形狀，有人曾描述「球體從四面八方蜂擁而至」。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "五角大廈公開了一批 UFO 目擊報告，時間跨度將近 80 年。目前的消息指出，這批檔案記載了各種目擊描述——球形體、圓盤、火球。其中有人曾描述看到「球體從四面八方蜂擁而至」。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "US government releases UFO sighting reports - 'Orbs swarming in all directions'",
+              "url": "https://www.bbc.com/news/articles/cn8pzzlyy66o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T06:32:12+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "五角大廈公開 UFO 目擊報告，時間跨度近 80 年，包含球體、圓盤、火球等記錄",
+              "source_id": "bbc_world",
+              "source_title": "US government releases UFO sighting reports - 'Orbs swarming in all directions'",
+              "source_url": "https://www.bbc.com/news/articles/cn8pzzlyy66o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260524_evt_052",
+          "headline": "法母棄子路邊，葡萄牙收押候審",
+          "context": "目前的消息指出，一名法國女性及其伴侶疑似將她的兩名兒子遺棄在葡萄牙南部的路邊。葡萄牙法院裁定，兩人在審判開始前須持續收押羈押。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n法國母親與伴侶在葡萄牙棄子路邊，候審收押\n\n目前的消息指出，一名法國女性及其伴侶疑似將她的兩名兒子遺棄在葡萄牙南部的路邊。葡萄牙法院裁定，兩人在審判開始前須持續收押。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "法國母親與伴侶在葡萄牙棄子路邊，候審收押\n\n目前的消息指出，一名法國女性及其伴侶疑似將她的兩名兒子遺棄在葡萄牙南部的路邊。葡萄牙法院判決，兩人在審判開始前須持續羈押。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "目前有一則消息：一名法國女性和她的伴侶，疑似把她的兩個兒子遺棄在葡萄牙南部的路邊。葡萄牙法院裁定，兩人在審判前須持續收押。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n法國母親與伴侶在葡萄牙棄子路邊，候審收押\n\n目前的消息指出，一名法國女性及其伴侶疑似將她的兩名兒子遺棄在葡萄牙南部的路邊。葡萄牙法院裁定，兩人在審判開始前須持續收押。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "法國母親與伴侶在葡萄牙棄子路邊，候審收押\n\n目前的消息指出，一名法國女性及其伴侶疑似將她的兩名兒子遺棄在葡萄牙南部的路邊。葡萄牙法院判決，兩人在審判開始前須持續羈押。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "目前有一則消息：一名法國女性和她的伴侶，疑似把她的兩個兒子遺棄在葡萄牙南部的路邊。葡萄牙法院裁定，兩人在審判前須持續收押。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "Bbc World",
+              "publisher": "BBC",
+              "title": "French mum and partner held until trial after sons abandoned by road in Portugal",
+              "url": "https://www.bbc.com/news/articles/cq5p75l7n17o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T22:24:48+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "法國女性及其伴侶疑在葡萄牙南部路邊遺棄兩名兒子，候審期間繼續收押",
+              "source_id": "bbc_world",
+              "source_title": "French mum and partner held until trial after sons abandoned by road in Portugal",
+              "source_url": "https://www.bbc.com/news/articles/cq5p75l7n17o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260524_evt_028",
+          "headline": "猶他州60棟資料中心方案揭幕",
+          "context": "美國建築事務所 Gensler 公開了一個名為「Stratos Hyperscale Data Center」的大規模開發案，地點位於猶他州 Box Elder County。整個開發區預計共 60 棟建築，完工後可能躋身全球規模最大的資料中心之列。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n猶他州 60 棟資料中心方案揭幕\n\n美國建築事務所 Gensler 揭露一座名為 Stratos Hyperscale Data Center 的大規模開發案，地點位於猶他州 Box Elder County。整個開發區預計共 60 棟建築，完工後可能成為全球規模最大的資料中心之一。\n\n—— 本則來自 Dezeen，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "猶他州 60 棟資料中心方案揭幕\n\n美國建築事務所 Gensler 這週公開了一個龐大計畫——在猶他州 Box Elder County 打造「Stratos Hyperscale Data Center」，整個開發區預計涵蓋 60 棟建築。若如期完工，規模可能躋身全球最大資料中心之列。\n\n本則來自 Dezeen 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "建築事務所 Gensler 這週公開了一個龐大計畫。地點在美國猶他州，項目名稱叫做 Stratos Hyperscale Data Center，預計共 60 棟建築。若如期完工，規模可能是全球最大的資料中心之一。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n猶他州 60 棟資料中心方案揭幕\n\n美國建築事務所 Gensler 揭露一座名為 Stratos Hyperscale Data Center 的大規模開發案，地點位於猶他州 Box Elder County。整個開發區預計共 60 棟建築，完工後可能成為全球規模最大的資料中心之一。\n\n—— 本則來自 Dezeen，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "猶他州 60 棟資料中心方案揭幕\n\n美國建築事務所 Gensler 這週公開了一個龐大計畫——在猶他州 Box Elder County 打造「Stratos Hyperscale Data Center」，整個開發區預計涵蓋 60 棟建築。若如期完工，規模可能躋身全球最大資料中心之列。\n\n本則來自 Dezeen 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "建築事務所 Gensler 這週公開了一個龐大計畫。地點在美國猶他州，項目名稱叫做 Stratos Hyperscale Data Center，預計共 60 棟建築。若如期完工，規模可能是全球最大的資料中心之一。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "dezeen",
+              "name": "Dezeen",
+              "publisher": "Dezeen",
+              "title": "This week a 60-building data centre by Gensler was unveiled",
+              "url": "https://www.dezeen.com/2026/05/23/utah-data-centre-gensler-this-week/",
+              "published_at": "2026-05-23T13:00:42+08:00"
+            },
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "Scala-Mare Building / Atelier d'Arquitectura Lopes da Costa",
+              "url": "https://www.archdaily.com/1041326/scala-mare-building-atelier-darquitectura-lopes-da-costa",
+              "published_at": "2026-05-23T14:00:00+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Gensler 規劃的 Stratos Hyperscale Data Center 位於猶他州 Box Elder County，共 60 棟建築，可能是全球最大資料中心之一",
+              "source_id": "dezeen",
+              "source_title": "This week a 60-building data centre by Gensler was unveiled",
+              "source_url": "https://www.dezeen.com/2026/05/23/utah-data-centre-gensler-this-week/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 33,
+          "sub_beat": "建築",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_3"
+        },
+        {
+          "event_id": "daily_20260524_evt_005",
+          "headline": "哈薩克女裝品牌打造預約制沙龍",
+          "context": "哈薩克 Almaty 的女裝品牌 Malli，委託建築師設計了一個封閉式沙龍空間，只在特定日期開放，且須事先預約。這個空間刻意與品牌現有的零售門市區隔，走的是另一套待客邏輯。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n哈薩克女裝品牌打造預約制沙龍\n\n哈薩克 Almaty 的女裝品牌 Malli，委託建築師設計了一個封閉式沙龍空間——只在特定日期開放，且須事先預約才能入內。這個空間刻意與 Malli 現有的一般門市截然不同。\n\n—— 本則來自 ArchDaily，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "哈薩克女裝品牌打造預約制沙龍\n\n位於哈薩克 Almaty 的女裝品牌 Malli，委託建築師設計了一個封閉式沙龍空間。這個空間只在特定日期對外開放，且須事先預約才能入內——與 Malli 現有的一般門市截然不同。\n\n本則來自 ArchDaily 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "哈薩克 Almaty 的女裝品牌 Malli，打造了一個封閉式沙龍空間。這裡只在特定日期開放，而且要事先預約。設計方向刻意與一般零售門市不同，走的是另一種氛圍。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n哈薩克女裝品牌打造預約制沙龍\n\n哈薩克 Almaty 的女裝品牌 Malli，委託建築師設計了一個封閉式沙龍空間——只在特定日期開放，且須事先預約才能入內。這個空間刻意與 Malli 現有的一般門市截然不同。\n\n—— 本則來自 ArchDaily，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "哈薩克女裝品牌打造預約制沙龍\n\n位於哈薩克 Almaty 的女裝品牌 Malli，委託建築師設計了一個封閉式沙龍空間。這個空間只在特定日期對外開放，且須事先預約才能入內——與 Malli 現有的一般門市截然不同。\n\n本則來自 ArchDaily 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "哈薩克 Almaty 的女裝品牌 Malli，打造了一個封閉式沙龍空間。這裡只在特定日期開放，而且要事先預約。設計方向刻意與一般零售門市不同，走的是另一種氛圍。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "Malli Showroom / UP2DATE architects",
+              "url": "https://www.archdaily.com/1041730/malli-showroom-up2date-architects",
+              "published_at": "2026-05-23T03:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Malli 品牌委託 UP2DATE architects 設計封閉式沙龍，位於 Almaty，僅特定日期預約開放",
+              "source_id": "archdaily",
+              "source_title": "Malli Showroom / UP2DATE architects",
+              "source_url": "https://www.archdaily.com/1041730/malli-showroom-up2date-architects",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -32,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source; same_topic_already_selected"
+        },
+        {
+          "event_id": "daily_20260524_evt_024",
+          "headline": "東京35年舊宿舍改建當代租屋",
+          "context": "東京一棟屹立 35 年的企業宿舍，由建築工作室 R/URBAN DESIGN OFFICE 進行全面改建，化身為現代租賃住宅「fuu Oimachi by LATIERRA」。設計的出發點，是在高密度都市生活中，為居住者創造個人空間感。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n東京 35 年舊宿舍翻新，化身當代租屋\n\n東京一棟有 35 年歷史的企業宿舍，由 R/URBAN DESIGN OFFICE 進行全面改建，改造為現代租賃住宅「fuu Oimachi by LATIERRA」。設計目標是在高密度的都市生活裡，讓居住者找到與外界的緩衝空間。\n\n—— 本則來自 ArchDaily，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "東京 35 年舊宿舍翻新，化身當代租屋\n\n東京有一棟屹立 35 年的企業宿舍，由 R/URBAN DESIGN OFFICE 進行大規模翻新，改建為現代租賃住宅「fuu Oimachi by LATIERRA」。設計的出發點，是在密集都市生活中創造一種讓人喘息的個人空間感。\n\n本則來自 ArchDaily 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "東京有一棟屹立 35 年的企業宿舍，整棟翻新改造成現代租賃住宅，案子叫做 fuu Oimachi by LATIERRA。設計上想做的，是在高密度的都市生活裡，幫居住者找回一點個人空間感。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n東京 35 年舊宿舍翻新，化身當代租屋\n\n東京一棟有 35 年歷史的企業宿舍，由 R/URBAN DESIGN OFFICE 進行全面改建，改造為現代租賃住宅「fuu Oimachi by LATIERRA」。設計目標是在高密度的都市生活裡，讓居住者找到與外界的緩衝空間。\n\n—— 本則來自 ArchDaily，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "東京 35 年舊宿舍翻新，化身當代租屋\n\n東京有一棟屹立 35 年的企業宿舍，由 R/URBAN DESIGN OFFICE 進行大規模翻新，改建為現代租賃住宅「fuu Oimachi by LATIERRA」。設計的出發點，是在密集都市生活中創造一種讓人喘息的個人空間感。\n\n本則來自 ArchDaily 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "東京有一棟屹立 35 年的企業宿舍，整棟翻新改造成現代租賃住宅，案子叫做 fuu Oimachi by LATIERRA。設計上想做的，是在高密度的都市生活裡，幫居住者找回一點個人空間感。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "fuu Oimachi by LATIERRA / R/URBAN DESIGN OFFICE",
+              "url": "https://www.archdaily.com/1041620/fuu-oimachi-by-latierra-r-urban-design-office",
+              "published_at": "2026-05-23T10:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "東京 35 年舊企業宿舍由 R/URBAN DESIGN OFFICE 全面改造為現代租賃住宅 fuu Oimachi by LATIERRA",
+              "source_id": "archdaily",
+              "source_title": "fuu Oimachi by LATIERRA / R/URBAN DESIGN OFFICE",
+              "source_url": "https://www.archdaily.com/1041620/fuu-oimachi-by-latierra-r-urban-design-office",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -32,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source; same_topic_already_selected"
+        },
+        {
+          "event_id": "daily_20260524_evt_031",
+          "headline": "戰後美國住宅計畫的理想與局限",
+          "context": "Case Study Houses（案例研究住宅計畫）是美國 1945 年後的一批前衛住宅設計，Charles 和 Ray Eames 等人是其中代表。有文章重新審視這個計畫背後的「普世家庭理想」預設，指出這套單一標準本身有其局限。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n戰後美國住宅計畫的理想與局限\n\nCase Study Houses（案例研究住宅計畫）是 1945 年後美國的一批前衛住宅設計，Charles 和 Ray Eames 等人是代表人物。有文章重新審視這個計畫——它背後預設了一種「普世家庭理想」，這套單一標準本身正在被重新檢視。\n\n—— 本則來自 ArchDaily，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "戰後美國住宅計畫的理想與局限\n\nCase Study Houses（案例研究住宅計畫）是美國戰後建築史上的重要計畫，Charles 和 Ray Eames 等建築師參與其中。有文章指出，這個計畫背後存在一套對「理想家庭」的單一預設——而這個預設，正在被重新檢視與批判。\n\n本則來自 ArchDaily 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "Case Study Houses 是美國戰後的一批前衛住宅設計計畫，Charles 和 Ray Eames 都在其中。有一篇文章重新審視了這個計畫——它背後預設了一種「普世家庭理想」，而這個預設本身是有局限的。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n戰後美國住宅計畫的理想與局限\n\nCase Study Houses（案例研究住宅計畫）是 1945 年後美國的一批前衛住宅設計，Charles 和 Ray Eames 等人是代表人物。有文章重新審視這個計畫——它背後預設了一種「普世家庭理想」，這套單一標準本身正在被重新檢視。\n\n—— 本則來自 ArchDaily，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "戰後美國住宅計畫的理想與局限\n\nCase Study Houses（案例研究住宅計畫）是美國戰後建築史上的重要計畫，Charles 和 Ray Eames 等建築師參與其中。有文章指出，這個計畫背後存在一套對「理想家庭」的單一預設——而這個預設，正在被重新檢視與批判。\n\n本則來自 ArchDaily 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Case Study Houses 是美國戰後的一批前衛住宅設計計畫，Charles 和 Ray Eames 都在其中。有一篇文章重新審視了這個計畫——它背後預設了一種「普世家庭理想」，而這個預設本身是有局限的。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "Archdaily",
+              "publisher": "ArchDaily",
+              "title": "Case Study Houses and the Myth of a Universal Domestic Ideal",
+              "url": "https://www.archdaily.com/1041599/case-study-houses-and-the-myth-of-a-universal-domestic-ideal",
+              "published_at": "2026-05-23T15:30:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Case Study Houses 計畫背後有「普世家庭理想」的預設，Charles 和 Ray Eames 是參與者之一",
+              "source_id": "archdaily",
+              "source_title": "Case Study Houses and the Myth of a Universal Domestic Ideal",
+              "source_url": "https://www.archdaily.com/1041599/case-study-houses-and-the-myth-of-a-universal-domestic-ideal",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -32,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_3; single_low_tier_source; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260524_evt_007",
+          "headline": "AI新創收入數字如何被灌水",
+          "context": "目前的消息指出，部分 AI 新創公司在對外談論進展時，會刻意拉高 ARR（Annual Recurring Revenue，年度經常性收入）等財務指標——而他們的投資人對此完全清楚。這種做法正在成為業內的某種默認慣例。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 科技AI\n\nAI 新創收入數字如何被灌水\n\n目前的消息指出，部分 AI 新創公司在對外談論進展時，會刻意拉高 ARR（Annual Recurring Revenue，年度經常性收入）等傳統財務指標——而他們的投資人對此完全清楚。這種做法已成為 AI 圈的某種潛規則。\n\n—— 本則來自 TechCrunch，2026 年 5 月 22 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "AI 新創收入數字如何被灌水\n\n目前的消息指出，有些 AI 新創公司在公開場合談論公司進展時，會對 ARR（Annual Recurring Revenue，年度經常性收入）等財務指標進行拉高處理。更特別的是，他們的投資人對此完全知情。這種做法正在成為 AI 圈的某種默認慣例。\n\n本則來自 TechCrunch 於 2026 年 5 月 22 日發佈的報導。",
+          "voice_text": "有一個矽谷的現象，最近開始被公開討論。一些 AI 新創公司，在對外說明自家業績時，會刻意把 ARR——也就是年度經常性收入——往高處算。目前的消息指出，投資人對這件事完全清楚，但雙方都默認這種做法。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 科技AI\n\nAI 新創收入數字如何被灌水\n\n目前的消息指出，部分 AI 新創公司在對外談論進展時，會刻意拉高 ARR（Annual Recurring Revenue，年度經常性收入）等傳統財務指標——而他們的投資人對此完全清楚。這種做法已成為 AI 圈的某種潛規則。\n\n—— 本則來自 TechCrunch，2026 年 5 月 22 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "AI 新創收入數字如何被灌水\n\n目前的消息指出，有些 AI 新創公司在公開場合談論公司進展時，會對 ARR（Annual Recurring Revenue，年度經常性收入）等財務指標進行拉高處理。更特別的是，他們的投資人對此完全知情。這種做法正在成為 AI 圈的某種默認慣例。\n\n本則來自 TechCrunch 於 2026 年 5 月 22 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有一個矽谷的現象，最近開始被公開討論。一些 AI 新創公司，在對外說明自家業績時，會刻意把 ARR——也就是年度經常性收入——往高處算。目前的消息指出，投資人對這件事完全清楚，但雙方都默認這種做法。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "Techcrunch Ai",
+              "publisher": "TechCrunch",
+              "title": "How VCs and founders use inflated 'ARR' to crown AI startups",
+              "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+              "published_at": "2026-05-23T04:40:48+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "部分 AI 新創公司刻意拉高 ARR 等財務指標對外展示，投資人知情",
+              "source_id": "techcrunch_ai",
+              "source_title": "How VCs and founders use inflated 'ARR' to crown AI startups",
+              "source_url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260524_evt_009",
+          "headline": "Pixel手機桌面變身迪斯可球",
+          "context": "目前的消息指出，Google 讓 Pixel 手機用戶可以把主畫面所有應用程式圖示，換成閃亮的迪斯可球（disco ball）外型。Google 在發佈這項功能時，還帶著點自嘲地問：「你們真的確定你們想要這個嗎？」",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 科技AI\n\nPixel 手機桌面變身迪斯可球\n\n目前的消息指出，Google 讓 Pixel 手機用戶可以把主畫面圖示，全數換成迪斯可球（disco ball）風格的閃亮外型。Google 在推出時還調皮地問了一句：「你們真的確定要這樣嗎？」\n\n—— 本則來自 TechCrunch，2026 年 5 月 22 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "Pixel 手機桌面變身迪斯可球\n\n目前的消息指出，Google 讓 Pixel 手機用戶可以把主畫面所有應用程式圖示，換成閃亮的迪斯可球（disco ball）外型。Google 在發佈這項功能時，還帶著點自嘲地問：「你們真的確定你們想要這個嗎？」\n\n本則來自 TechCrunch 於 2026 年 5 月 22 日發佈的報導。",
+          "voice_text": "Google 讓 Pixel 手機用戶可以把主畫面的所有圖示換成迪斯可球外型。目前的消息指出，這是 Google 正式提供的主題選項。他們在推出時還帶著點自嘲問說：「你們真的確定要這樣嗎？」",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 科技AI\n\nPixel 手機桌面變身迪斯可球\n\n目前的消息指出，Google 讓 Pixel 手機用戶可以把主畫面圖示，全數換成迪斯可球（disco ball）風格的閃亮外型。Google 在推出時還調皮地問了一句：「你們真的確定要這樣嗎？」\n\n—— 本則來自 TechCrunch，2026 年 5 月 22 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Pixel 手機桌面變身迪斯可球\n\n目前的消息指出，Google 讓 Pixel 手機用戶可以把主畫面所有應用程式圖示，換成閃亮的迪斯可球（disco ball）外型。Google 在發佈這項功能時，還帶著點自嘲地問：「你們真的確定你們想要這個嗎？」\n\n本則來自 TechCrunch 於 2026 年 5 月 22 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Google 讓 Pixel 手機用戶可以把主畫面的所有圖示換成迪斯可球外型。目前的消息指出，這是 Google 正式提供的主題選項。他們在推出時還帶著點自嘲問說：「你們真的確定要這樣嗎？」"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "Techcrunch Ai",
+              "publisher": "TechCrunch",
+              "title": "Google goes for the glitter with disco-ball icons: 'Are y'all sure you still want this?'",
+              "url": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
+              "published_at": "2026-05-23T05:02:36+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Google 讓 Pixel 手機用戶可以把主畫面圖示換成迪斯可球風格",
+              "source_id": "techcrunch_ai",
+              "source_title": "Google goes for the glitter with disco-ball icons: 'Are y'all sure you still want this?'",
+              "source_url": "https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260524_evt_002",
+          "headline": "SpaceX提交上市申請書",
+          "context": "目前的消息指出，SpaceX 的 S-1 上市申請文件終於問世，公司估值約 1.75 兆美元。文件揭示潛在市場規模達 28 兆美元，執行長 Elon Musk 的薪酬方案更直接與「在火星建立文明」的目標掛鉤。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 科技AI\n\nSpaceX 提交上市申請書\n\n目前的消息指出，SpaceX 的 S-1 上市申請文件終於公開，公司估值約 1.75 兆美元。文件揭示潛在市場規模達 28 兆美元，Elon Musk 的薪酬方案更直接與「在火星建立文明」的目標掛鉤。\n\n—— 本則來自 TechCrunch，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "SpaceX 提交上市申請書\n\n目前的消息指出，SpaceX 的 S-1 上市申請文件終於問世。文件顯示公司估值約 1.75 兆美元，並提出潛在市場規模達 28 兆美元的評估。執行長 Elon Musk 的薪酬方案，更直接與「在火星建立文明」的目標綁在一起——這份文件的野心，和公司本身一樣不尋常。\n\n本則來自 TechCrunch 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "SpaceX 的上市申請書終於公開了。目前的消息指出，公司估值約 1.75 兆美元——大概是新台幣 56 兆，一個非常抽象的數字。文件裡說潛在市場規模高達 28 兆美元。還有一件很特別的事：Elon Musk 的薪酬，直接和「在火星建立文明」的目標掛鉤。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 科技AI\n\nSpaceX 提交上市申請書\n\n目前的消息指出，SpaceX 的 S-1 上市申請文件終於公開，公司估值約 1.75 兆美元。文件揭示潛在市場規模達 28 兆美元，Elon Musk 的薪酬方案更直接與「在火星建立文明」的目標掛鉤。\n\n—— 本則來自 TechCrunch，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "SpaceX 提交上市申請書\n\n目前的消息指出，SpaceX 的 S-1 上市申請文件終於問世。文件顯示公司估值約 1.75 兆美元，並提出潛在市場規模達 28 兆美元的評估。執行長 Elon Musk 的薪酬方案，更直接與「在火星建立文明」的目標綁在一起——這份文件的野心，和公司本身一樣不尋常。\n\n本則來自 TechCrunch 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "SpaceX 的上市申請書終於公開了。目前的消息指出，公司估值約 1.75 兆美元——大概是新台幣 56 兆，一個非常抽象的數字。文件裡說潛在市場規模高達 28 兆美元。還有一件很特別的事：Elon Musk 的薪酬，直接和「在火星建立文明」的目標掛鉤。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "Techcrunch Ai",
+              "publisher": "TechCrunch",
+              "title": "Elon Musk can't hear you over the sound of his $1.75 trillion IPO",
+              "url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+              "published_at": "2026-05-23T02:17:07+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "SpaceX S-1 上市申請書公開，公司估值約 1.75 兆美元，潛在市場規模達 28 兆美元",
+              "source_id": "techcrunch_ai",
+              "source_title": "Elon Musk can't hear you over the sound of his $1.75 trillion IPO",
+              "source_url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Musk 薪酬方案與在火星建立文明的目標掛鉤",
+              "source_id": "techcrunch_ai",
+              "source_title": "Elon Musk can't hear you over the sound of his $1.75 trillion IPO",
+              "source_url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260524_evt_019",
+          "headline": "AI重建已故飛行員的聲音",
+          "context": "目前的消息指出，有人用 AI 分析駕駛艙錄音的頻譜圖（spectrogram），從中重建了已故飛行員的聲音。事件引發爭議——美國國家運輸安全委員會（NTSB）因此一度封鎖公眾進入其事故調查資料庫的管道。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 科技AI\n\nAI 重建已故飛行員的聲音\n\n目前的消息指出，有人用 AI 分析駕駛艙錄音的頻譜圖（spectrogram），從中重建出已故飛行員的聲音。事件引發爭議——美國國家運輸安全委員會（NTSB）因此一度緊急封鎖公眾進入其事故調查資料庫的管道。\n\n—— 本則來自 TechCrunch，2026 年 5 月 22 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "AI 重建已故飛行員的聲音\n\n目前的消息指出，有人用 AI 分析駕駛艙錄音的頻譜圖（spectrogram），從中重建出已故飛行員的聲音。事件引發爭議——美國國家運輸安全委員會（National Transportation Safety Board，NTSB）因此一度緊急封鎖公眾進入其檔案系統的管道。\n\n本則來自 TechCrunch 於 2026 年 5 月 22 日發佈的報導。",
+          "voice_text": "有人用 AI 技術，從駕駛艙錄音的頻譜圖像中，重建出已故飛行員的聲音。目前的消息指出，這件事引發了相當大的爭議。美國國家運輸安全委員會因此一度封鎖公眾進入其事故調查資料庫。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 科技AI\n\nAI 重建已故飛行員的聲音\n\n目前的消息指出，有人用 AI 分析駕駛艙錄音的頻譜圖（spectrogram），從中重建出已故飛行員的聲音。事件引發爭議——美國國家運輸安全委員會（NTSB）因此一度緊急封鎖公眾進入其事故調查資料庫的管道。\n\n—— 本則來自 TechCrunch，2026 年 5 月 22 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "AI 重建已故飛行員的聲音\n\n目前的消息指出，有人用 AI 分析駕駛艙錄音的頻譜圖（spectrogram），從中重建出已故飛行員的聲音。事件引發爭議——美國國家運輸安全委員會（National Transportation Safety Board，NTSB）因此一度緊急封鎖公眾進入其檔案系統的管道。\n\n本則來自 TechCrunch 於 2026 年 5 月 22 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有人用 AI 技術，從駕駛艙錄音的頻譜圖像中，重建出已故飛行員的聲音。目前的消息指出，這件事引發了相當大的爭議。美國國家運輸安全委員會因此一度封鎖公眾進入其事故調查資料庫。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "Techcrunch Ai",
+              "publisher": "TechCrunch",
+              "title": "AI is being used to resurrect the voices of dead pilots",
+              "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+              "published_at": "2026-05-23T07:03:33+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "有人用 AI 分析駕駛艙錄音頻譜圖重建已故飛行員聲音，NTSB 一度封鎖資料庫",
+              "source_id": "techcrunch_ai",
+              "source_title": "AI is being used to resurrect the voices of dead pilots",
+              "source_url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260524_evt_001",
+          "headline": "川普要求新聯準會主席完全獨立",
+          "context": "目前的消息指出，美國總統川普表示，他希望接下來的聯準會（Federal Reserve）主席「完全獨立」。這個表態的背景是，他此前曾對前任主席頻繁施壓，要求降息。目前聯準會的新主席為 Kevin Warsh。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n川普要求新聯準會主席「完全獨立」\n\n目前的消息指出，美國總統川普表示，他希望聯準會（Federal Reserve）的新主席 Kevin Warsh「完全獨立」。這個說法有些弔詭——他此前曾對前任主席大力施壓，要求降息。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "川普要求新聯準會主席「完全獨立」\n\n目前的消息指出，美國總統川普對外表示，他希望聯準會（Federal Reserve）的新主席「完全獨立」。這個表態的背景是，他此前曾頻繁對前任主席施壓，要求降息。目前聯準會的新主席為 Kevin Warsh。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "川普說，他希望聯準會的新主席「完全獨立」。目前的消息指出，這位新主席是 Kevin Warsh。有一點對比可以看：川普在任期間，曾多次對前任主席施壓，要求降息。這次他說要「完全獨立」，是一個不太一樣的表態。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n川普要求新聯準會主席「完全獨立」\n\n目前的消息指出，美國總統川普表示，他希望聯準會（Federal Reserve）的新主席 Kevin Warsh「完全獨立」。這個說法有些弔詭——他此前曾對前任主席大力施壓，要求降息。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "川普要求新聯準會主席「完全獨立」\n\n目前的消息指出，美國總統川普對外表示，他希望聯準會（Federal Reserve）的新主席「完全獨立」。這個表態的背景是，他此前曾頻繁對前任主席施壓，要求降息。目前聯準會的新主席為 Kevin Warsh。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普說，他希望聯準會的新主席「完全獨立」。目前的消息指出，這位新主席是 Kevin Warsh。有一點對比可以看：川普在任期間，曾多次對前任主席施壓，要求降息。這次他說要「完全獨立」，是一個不太一樣的表態。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "Bbc Business",
+              "publisher": "BBC",
+              "title": "Trump wants new Fed chair to be 'totally independent'",
+              "url": "https://www.bbc.com/news/articles/cvgz311dq3ko?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T02:16:58+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "川普表示希望新聯準會主席 Kevin Warsh 完全獨立，此前曾向前任主席施壓要求降息",
+              "source_id": "bbc_business",
+              "source_title": "Trump wants new Fed chair to be 'totally independent'",
+              "source_url": "https://www.bbc.com/news/articles/cvgz311dq3ko?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260524_evt_010",
+          "headline": "世銀增撥款項應對伊波拉疫情",
+          "context": "目前的消息指出，世界銀行（World Bank）表示正在回應伊波拉（Ebola）疫情，並計畫增加相關資金投入。疫情目前已在剛果民主共和國（DRC）等地擴散。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n世界銀行增撥款項應對伊波拉疫情\n\n目前的消息指出，世界銀行（World Bank）表示正在回應伊波拉（Ebola）疫情，並計畫增加相關資金投入。疫情目前已在剛果民主共和國（DRC）等地擴散。\n\n—— 本則來自 Reuters，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "世界銀行增撥款項應對伊波拉疫情\n\n目前的消息指出，世界銀行（World Bank）正在回應目前的伊波拉（Ebola）疫情，並計畫增加資金投入。疫情目前已在剛果民主共和國（Democratic Republic of Congo）等地擴散。\n\n本則來自 Reuters 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "世界銀行表示正在回應伊波拉疫情，並計畫增加相關款項。目前的消息指出，疫情已在剛果民主共和國等地擴散。世界銀行是此次其中一個出資應對的國際機構。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n世界銀行增撥款項應對伊波拉疫情\n\n目前的消息指出，世界銀行（World Bank）表示正在回應伊波拉（Ebola）疫情，並計畫增加相關資金投入。疫情目前已在剛果民主共和國（DRC）等地擴散。\n\n—— 本則來自 Reuters，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "世界銀行增撥款項應對伊波拉疫情\n\n目前的消息指出，世界銀行（World Bank）正在回應目前的伊波拉（Ebola）疫情，並計畫增加資金投入。疫情目前已在剛果民主共和國（Democratic Republic of Congo）等地擴散。\n\n本則來自 Reuters 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "世界銀行表示正在回應伊波拉疫情，並計畫增加相關款項。目前的消息指出，疫情已在剛果民主共和國等地擴散。世界銀行是此次其中一個出資應對的國際機構。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters Business Google News",
+              "publisher": "Reuters",
+              "title": "World Bank says responding to Ebola outbreak, plans to increase funding - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUEVUQXBaeFlLa3A2X3VUc1ROTXRnaENYb3NwekdaazdpZVMzcURiSERfWlFLMnNnRTZRT0pBMDVNZm45TlJIMTVLTHBYTDZGZ0R6dFRFdDNISEZ3aGluN3Z5VEZUUi1rRlhuZ05JLTVGU2pEa1J5X1dMUFFCNk01aVJoZkxaMFJCWi1nYkd6WmtNaldOUmJnaGZSX3RQUGF6RlVGVUNGZGtXUktPSnJBLVowWmJqNGQyb3J1OVFYbUplbm5xNE1TdzYwQ3hpN2F4UEE?oc=5",
+              "published_at": "2026-05-23T05:09:22+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "世界銀行表示正在回應伊波拉疫情並計畫增加資金投入",
+              "source_id": "reuters_business_google_news",
+              "source_title": "World Bank says responding to Ebola outbreak, plans to increase funding - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUEVUQXBaeFlLa3A2X3VUc1ROTXRnaENYb3NwekdaazdpZVMzcURiSERfWlFLMnNnRTZRT0pBMDVNZm45TlJIMTVLTHBYTDZGZ0R6dFRFdDNISEZ3aGluN3Z5VEZUUi1rRlhuZ05JLTVGU2pEa1J5X1dMUFFCNk01aVJoZkxaMFJCWi1nYkd6WmtNaldOUmJnaGZSX3RQUGF6RlVGVUNGZGtXUktPSnJBLVowWmJqNGQyb3J1OVFYbUplbm5xNE1TdzYwQ3hpN2F4UEE?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260524_evt_004",
+          "headline": "渣打執行長失言稱員工低價值後道歉",
+          "context": "Standard Chartered（渣打銀行）的執行長因為形容部分員工為「較低價值的人力資本」（lower value human capital）而遭到批評，隨後公開道歉。他表示尊重所有同仁，並承諾協助員工應對目前的組織變化。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n渣打執行長失言，稱員工「低價值人力資本」後道歉\n\nStandard Chartered（渣打銀行）執行長因形容部分員工為「較低價值的人力資本」（lower value human capital）遭批評，隨後公開道歉。他表示自己珍視所有同仁，並承諾協助員工適應目前的組織變化。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "渣打執行長失言，稱員工「低價值人力資本」後道歉\n\nStandard Chartered（渣打銀行）的執行長因為形容部分員工是「較低價值的人力資本」（lower value human capital）而遭到批評，隨後公開道歉。他表示，自己珍視公司的所有同仁，並承諾協助他們面對當前的組織變化。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "渣打銀行的執行長把部分員工稱作「較低價值的人力資本」，引發批評後公開道歉。他說自己珍視所有同仁，也承諾協助員工應對目前的組織變化。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n渣打執行長失言，稱員工「低價值人力資本」後道歉\n\nStandard Chartered（渣打銀行）執行長因形容部分員工為「較低價值的人力資本」（lower value human capital）遭批評，隨後公開道歉。他表示自己珍視所有同仁，並承諾協助員工適應目前的組織變化。\n\n—— 本則來自 BBC，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "渣打執行長失言，稱員工「低價值人力資本」後道歉\n\nStandard Chartered（渣打銀行）的執行長因為形容部分員工是「較低價值的人力資本」（lower value human capital）而遭到批評，隨後公開道歉。他表示，自己珍視公司的所有同仁，並承諾協助他們面對當前的組織變化。\n\n本則來自 BBC 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "渣打銀行的執行長把部分員工稱作「較低價值的人力資本」，引發批評後公開道歉。他說自己珍視所有同仁，也承諾協助員工應對目前的組織變化。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "Bbc Business",
+              "publisher": "BBC",
+              "title": "Bank boss sorry after describing workers as 'lower value human capital'",
+              "url": "https://www.bbc.com/news/articles/c98rqld1j3yo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-23T02:55:10+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "渣打銀行執行長形容員工為「較低價值人力資本」後公開道歉，表示尊重所有同仁",
+              "source_id": "bbc_business",
+              "source_title": "Bank boss sorry after describing workers as 'lower value human capital'",
+              "source_url": "https://www.bbc.com/news/articles/c98rqld1j3yo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260524_evt_011",
+          "headline": "沃爾瑪換CEO後高層大規模異動",
+          "context": "目前的消息指出，Walmart（沃爾瑪）多名資深高階主管在新任執行長接任後陸續離職，相關細節來自一份內部備忘錄。高層大規模更替，通常是新任執行長在以自己的方式整頓組織架構。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n沃爾瑪換 CEO 後高層大規模異動\n\n目前的消息指出，Walmart（沃爾瑪）多名資深高階主管在新任執行長接任後陸續離職，細節來自一份內部備忘錄。高層大規模更替，通常標誌著新任領導層正在以自己的方式整頓組織。\n\n—— 本則來自 Reuters，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "沃爾瑪換 CEO 後高層大規模異動\n\n目前的消息指出，Walmart（沃爾瑪）多名資深高階主管在新任執行長接任後相繼離職。這一批人事調動的細節，來自一份流出的內部備忘錄。這類大規模高層更替，通常標誌著新任領導層正在以自己的方式整頓組織。\n\n本則來自 Reuters 於 2026 年 5 月 23 日發佈的報導。",
+          "voice_text": "Walmart 換了新執行長之後，多名資深高階主管陸續離職。目前的消息指出，這些人事異動的細節來自一份內部備忘錄。大規模高層更替，通常是新任執行長在重新布局自己的團隊。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n沃爾瑪換 CEO 後高層大規模異動\n\n目前的消息指出，Walmart（沃爾瑪）多名資深高階主管在新任執行長接任後陸續離職，細節來自一份內部備忘錄。高層大規模更替，通常標誌著新任領導層正在以自己的方式整頓組織。\n\n—— 本則來自 Reuters，2026 年 5 月 23 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "沃爾瑪換 CEO 後高層大規模異動\n\n目前的消息指出，Walmart（沃爾瑪）多名資深高階主管在新任執行長接任後相繼離職。這一批人事調動的細節，來自一份流出的內部備忘錄。這類大規模高層更替，通常標誌著新任領導層正在以自己的方式整頓組織。\n\n本則來自 Reuters 於 2026 年 5 月 23 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Walmart 換了新執行長之後，多名資深高階主管陸續離職。目前的消息指出，這些人事異動的細節來自一份內部備忘錄。大規模高層更替，通常是新任執行長在重新布局自己的團隊。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters Business Google News",
+              "publisher": "Reuters",
+              "title": "Senior Walmart executives depart amid rejig under new CEO, memo shows - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZW1rN0dZcXFhRHE1dDJyRlI0QktXbHA0NFgtdm5YblhvYjBFY2ktSlhRZHZIc0Y1WXBHNGVMaHZDVzBtbkZxUmpmdXAweWVMWGhCQW5YR3hzZnY4Znp6cUFIdkRkamtxQkt5VUJEME5FeklmcjRYbkRsMUc2RGExd2s0eWVMRXpzU0hDWGVGekNwN3lhbWFuRWpvRG13NGlXOVVLRnludEFseUhXVlRfc0hzUkVVcTA1SmxpYQ?oc=5",
+              "published_at": "2026-05-23T05:26:11+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "沃爾瑪多名高層在新任 CEO 接任後離職，細節見內部備忘錄",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Senior Walmart executives depart amid rejig under new CEO, memo shows - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOZW1rN0dZcXFhRHE1dDJyRlI0QktXbHA0NFgtdm5YblhvYjBFY2ktSlhRZHZIc0Y1WXBHNGVMaHZDVzBtbkZxUmpmdXAweWVMWGhCQW5YR3hzZnY4Znp6cUFIdkRkamtxQkt5VUJEME5FeklmcjRYbkRsMUc2RGExd2s0eWVMRXpzU0hDWGVGekNwN3lhbWFuRWpvRG13NGlXOVVLRnludEFseUhXVlRfc0hzUkVVcTA1SmxpYQ?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -5,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; same_topic_already_selected"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 26,
+    "total_feeds_failed": 13,
+    "total_articles_fetched": 93,
+    "total_articles_after_filter": 92,
+    "total_events_merged": 80,
+    "total_events_selected": 17,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260524_evt_078",
+      "headline": "California declares state of emergency as fire crews race to contain toxic chemical leak",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_065",
+      "headline": "Thousands rally in Taiwan to boost defence spending amid China tensions",
+      "selection_score": 38,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_015",
+      "headline": "Hunger grows in Gaza as food aid is cut due to higher costs caused by war in Iran",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_041",
+      "headline": "NATO allies confused by Trump's unexpected move to deploy 5,000 U.S. troops to Poland",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_044",
+      "headline": "The pollution that outlives war",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_062",
+      "headline": "Overnight Israeli strikes on Gaza leave behind heavy destruction",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_069",
+      "headline": "What will Trump do next with Iran?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_074",
+      "headline": "Tens of thousands rally in Serbia for antigovernment demonstrations",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_077",
+      "headline": "Is pragmatism replacing ideology in international affairs?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_006",
+      "headline": "Tulsi Gabbard to resign as US national intelligence director",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_008",
+      "headline": "Carney says Alberta is 'essential' to Canada as province plans vote on separation",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_012",
+      "headline": "Shein to buy apparel retailer Everlane - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_013",
+      "headline": "AI may speed up search for drugs to treat brain conditions",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_014",
+      "headline": "UK sees hottest day of year as bank holiday travellers face queues",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_016",
+      "headline": "Judge dismisses criminal case against Kilmar Abrego Garcia",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_018",
+      "headline": "Blue Origin to expand Florida campus with new $600 million facility - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_020",
+      "headline": "'Speed, money and compassion' - lessons from an Ebola survivor and other experts",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_021",
+      "headline": "Race for French presidency sees ex-PM Philippe as early favourite to beat populists",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_022",
+      "headline": "The space race to create gym equipment for future astronauts",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_023",
+      "headline": "One dead and dozens of firefighters injured in Staten Island shipyard explosion",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_025",
+      "headline": "Moment SpaceX rocket explodes in the Indian Ocean after splashdown",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_026",
+      "headline": "SpaceX launches massive Starship V3 rocket on test flight",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_032",
+      "headline": "Gaza flotilla activists allege abuse by Israeli forces while detained",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_033",
+      "headline": "DR Congo players told to isolate before World Cup",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_036",
+      "headline": "The Leeds designer outlet that's 15 miles from Leeds",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_039",
+      "headline": "Temperatures are rising - and so are ice cream prices",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_040",
+      "headline": "Senegal's president sacks PM and former ally after months-long feud",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_048",
+      "headline": "Watch: Pitches, PlayStations and protein ice cream - A look inside Brazil's World Cup base camp",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_050",
+      "headline": "Putin vows retaliation after accusing Ukraine of hitting student dormitory",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_057",
+      "headline": "India's parody 'cockroach party' claims website has been blocked",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_058",
+      "headline": "F1 great Prost 'injured as masked gang raid home'",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_067",
+      "headline": "Nascar champion Kyle Busch died of pneumonia and sepsis, family says",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_076",
+      "headline": "Red Cross volunteers die from suspected Ebola in DR Congo",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_080",
+      "headline": "Trump says deal with Iran 'largely negotiated' and would include opening Strait of Hormuz",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_027",
+      "headline": "Rubio arrives in India ahead of Quad talks as U.S. tries to reset strained ties",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_029",
+      "headline": "Trump administration to force foreigners in the U.S. to apply for a green card abroad",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_037",
+      "headline": "Chile's MAGA-inspired border control",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_043",
+      "headline": "U.S. passengers flying from Ebola-affected countries rerouted",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_045",
+      "headline": "Israeli air strike pounds southern Lebanon leaving many injured",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_046",
+      "headline": "Elon Musk has given up on solar power (on Earth)",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_047",
+      "headline": "France bans far-right Israeli minister Ben-Gvir over abuse of activists",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_049",
+      "headline": "Turkish and Syrian officials detain 10 individuals with alleged ISIL ties",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_051",
+      "headline": "Rising global costs threaten Mexico’s production costs and food stability",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_053",
+      "headline": "French Open has ‘positive’ meeting with players over tennis dispute",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_055",
+      "headline": "Five police officers, 13 year-old boy killed in Israeli attack on Gaza",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_056",
+      "headline": "Ferrari is using IBM’s AI to create F1 superfans",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_059",
+      "headline": "More than 500 children die in measles outbreak in Bangladesh",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_060",
+      "headline": "Israeli forces arrest two children in occupied West Bank village",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_061",
+      "headline": "Mamelodi Sundowns vs AS FAR Rabat: CAF Champions League final preview",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_063",
+      "headline": "Iran sends ‘mixed’ messages as Pakistani mediators depart Tehran",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_066",
+      "headline": "Hull beat Boro in world’s most lucrative game to reach Premier League",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_068",
+      "headline": "Thousands march in Madrid demanding Spanish PM quit over graft allegations",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_070",
+      "headline": "Morocco king pardons jailed Senegal football fans from AFCON final",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_071",
+      "headline": "‘United States of the Middle East?’: Trump posts US flag covering Iran",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_072",
+      "headline": "Barcelona beat Lyon 4-0 to win Women’s Champions League",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_073",
+      "headline": "Police beat and detain Gaza flotilla activists at airport",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_075",
+      "headline": "Iran move World Cup base from US to Mexico with FIFA approval",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_079",
+      "headline": "More than 1.5 million pilgrims brave fierce Mecca heat ahead of Hajj",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_034",
+      "headline": "House with a Mountain View / Stempel & Tesar Architects",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_035",
+      "headline": "Seven sensitive interventions to ancient structures and historic ruins",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_038",
+      "headline": "Atelier Backlar wraps Portuguese clifftop house in recycled ocean plastic",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_054",
+      "headline": "UVVA Winery / GAM Arquitetos",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260524_evt_064",
+      "headline": "Mixed-use building by Barde vanVoltt reflects \"slower rhythm\" of Baja California",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    }
+  ]
+}

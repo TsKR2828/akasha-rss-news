@@ -1,0 +1,2217 @@
+{
+  "reportId": "daily_20260527",
+  "date": "2026-05-27",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-05-27T05:19:39.991565+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260527_evt_022",
+          "headline": "俄羅斯再次威脅炮擊基輔",
+          "context": "週六夜間，基輔遭到本場戰爭中最大規模的無人機與飛彈攻擊之一，每個行政區均受到波及。俄羅斯隨即揚言繼續打擊，並要求外籍人士離開基輔。烏克蘭持續對俄羅斯的戰爭設施發動遠程攻擊。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n俄羅斯再次威脅炮擊基輔\n\n週六夜，基輔全區中彈——這是本場戰爭最大規模的無人機與飛彈攻擊之一。俄方隨後揚言繼續轟炸，要求外籍人士撤離。烏克蘭方面持續反擊，對俄羅斯境內的戰爭設施發動遠程打擊。\n\n—— 本則整理自 BBC 與 NPR，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "週六夜間，基輔每一個行政區都遭到無人機與飛彈轟炸——多個來源指出，這是本場戰爭最大規模的空中攻擊之一。\n\n俄羅斯隨後發出警告，揚言繼續打擊基輔，並要求外籍人士儘快離開。烏克蘭並未停手，持續對俄羅斯境內的軍事目標發動遠程攻擊。\n\n本則整理自 BBC 與 NPR 於 2026 年 5 月 26 日發佈的報導。",
+          "voice_text": "基輔週六夜間全區中彈——這是本場戰爭中規模最大的空中攻擊之一。俄羅斯隨後公開揚言繼續轟炸，同時要求外籍人士離開。烏克蘭方面持續以遠程武器反擊俄羅斯境內的軍事目標。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n俄羅斯再次威脅炮擊基輔\n\n週六夜，基輔全區中彈——這是本場戰爭最大規模的無人機與飛彈攻擊之一。俄方隨後揚言繼續轟炸，要求外籍人士撤離。烏克蘭方面持續反擊，對俄羅斯境內的戰爭設施發動遠程打擊。\n\n—— 本則整理自 BBC 與 NPR，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "週六夜間，基輔每一個行政區都遭到無人機與飛彈轟炸——多個來源指出，這是本場戰爭最大規模的空中攻擊之一。\n\n俄羅斯隨後發出警告，揚言繼續打擊基輔，並要求外籍人士儘快離開。烏克蘭並未停手，持續對俄羅斯境內的軍事目標發動遠程攻擊。\n\n本則整理自 BBC 與 NPR 於 2026 年 5 月 26 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "基輔週六夜間全區中彈——這是本場戰爭中規模最大的空中攻擊之一。俄羅斯隨後公開揚言繼續轟炸，同時要求外籍人士離開。烏克蘭方面持續以遠程武器反擊俄羅斯境內的軍事目標。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "It comes after the Ukrainian capital suffered one of the biggest aerial assaults of the war overnight on Saturday.",
+              "title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+              "url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-26T11:06:06+08:00"
+            },
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "As Kyiv recovers from a Russian attack that hit every district in the Ukrainian capital, Ukraine continues long-range strikes on Russia's war machine even as the Kremlin threatens more strikes.",
+              "title": "Russia threatens more strikes against Kyiv after drone and missile attack",
+              "url": "https://www.npr.org/2026/05/26/nx-s1-5833816/russia-threatens-more-strikes-against-kyiv-after-drone-and-missile-attack",
+              "published_at": "2026-05-26T16:47:43+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "基輔週六夜遭到戰爭中最大規模空中攻擊之一，每個行政區均受到波及",
+              "source_id": "bbc_world",
+              "source_title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+              "source_url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "俄羅斯揚言繼續打擊基輔並要求外籍人士撤離",
+              "source_id": "bbc_world",
+              "source_title": "Russia threatens more Kyiv strikes and tells foreign nationals to leave",
+              "source_url": "https://www.bbc.com/news/articles/c1e22n55zn4o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "烏克蘭持續對俄羅斯戰爭設施發動遠程打擊",
+              "source_id": "npr_world",
+              "source_title": "Russia threatens more strikes against Kyiv after drone and missile attack",
+              "source_url": "https://www.npr.org/2026/05/26/nx-s1-5833816/russia-threatens-more-strikes-against-kyiv-after-drone-and-missile-attack",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260527_evt_065",
+          "headline": "美軍空襲伊朗，德黑蘭稱違停火",
+          "context": "美軍在美伊和平談判期間對伊朗境內發動新一輪空襲。攻擊進行時，伊朗與卡達談判代表正在多哈協商停火條件。伊朗稱此舉為嚴重違反停火協議，強烈譴責。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n美軍空襲伊朗，德黑蘭稱違停火\n\n美軍對伊朗發動新一輪空襲，時機敏感：攻擊進行時，伊朗代表正在卡達首都多哈進行和平談判。伊朗將此定性為嚴重違反停火協議，強力譴責。\n\n—— 本則整理自 NPR 與 BBC，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美軍在和平談判進行期間，再度對伊朗境內發動空襲。時間點相當敏感——攻擊發生時，伊朗代表正在卡達首都多哈（Doha）與對方協商停火條件。\n\n伊朗強烈譴責，將此次空襲定性為嚴重違反停火協議的行為。\n\n本則整理自 NPR 與 BBC 於 2026 年 5 月 26 日發佈的報導。",
+          "voice_text": "美軍在和平談判進行期間空襲伊朗。攻擊發生時，伊朗代表正在多哈談判停火條件。伊朗稱這是嚴重違反停火協議，強烈譴責。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n美軍空襲伊朗，德黑蘭稱違停火\n\n美軍對伊朗發動新一輪空襲，時機敏感：攻擊進行時，伊朗代表正在卡達首都多哈進行和平談判。伊朗將此定性為嚴重違反停火協議，強力譴責。\n\n—— 本則整理自 NPR 與 BBC，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美軍在和平談判進行期間，再度對伊朗境內發動空襲。時間點相當敏感——攻擊發生時，伊朗代表正在卡達首都多哈（Doha）與對方協商停火條件。\n\n伊朗強烈譴責，將此次空襲定性為嚴重違反停火協議的行為。\n\n本則整理自 NPR 與 BBC 於 2026 年 5 月 26 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美軍在和平談判進行期間空襲伊朗。攻擊發生時，伊朗代表正在多哈談判停火條件。伊朗稱這是嚴重違反停火協議，強烈譴責。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "The U.S. military has launched new attacks on Iran while talks to end the conflict are ongoing. And, the Department of Justice is using a new tactic in immigration courts to accelerate deportations.",
+              "title": "U.S. strikes Iran. And, immigration courts use new tactic to speed up deportations",
+              "url": "https://www.npr.org/2026/05/26/g-s1-124277/up-first-newsletter-iran-war-russia-ukraine-immigration-courts-trump-health",
+              "published_at": "2026-05-26T19:20:21+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The attacks took place while Iranian and Qatari negotiators were in Doha for peace talks.",
+              "title": "Iran condemns US strikes as 'gross violation' of ceasefire",
+              "url": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-26T23:15:29+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "美軍在談判進行期間對伊朗發動新一輪空襲",
+              "source_id": "npr_world",
+              "source_title": "U.S. strikes Iran. And, immigration courts use new tactic to speed up deportations",
+              "source_url": "https://www.npr.org/2026/05/26/g-s1-124277/up-first-newsletter-iran-war-russia-ukraine-immigration-courts-trump-health",
+              "support_type": "direct"
+            },
+            {
+              "claim": "攻擊發生時伊朗與卡達談判代表正在多哈進行協商",
+              "source_id": "bbc_world",
+              "source_title": "Iran condemns US strikes as 'gross violation' of ceasefire",
+              "source_url": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "伊朗譴責此舉為嚴重違反停火協議",
+              "source_id": "bbc_world",
+              "source_title": "Iran condemns US strikes as 'gross violation' of ceasefire",
+              "source_url": "https://www.bbc.com/news/articles/c4g44yl7q70o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260527_evt_143",
+          "headline": "美國擬將冷戰鈽轉作核電燃料",
+          "context": "美國川普政府計劃將約 20 噸來自拆除核彈頭的鈽，開放給美國電力公司用作核燃料，政府已初步選定合作夥伴。這批材料屬於冷戰時代遺留的軍用核物質。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n美國擬將冷戰鈽轉作核電燃料\n\n川普政府打算把約 20 噸從拆除核彈頭取出的鈽，重新包裝成核燃料，開放給美國電力公司使用。政府已選定初步合作夥伴，推動這批冷戰核材料的民用轉化。\n\n—— 本則整理自 Reuters 與 Al Jazeera，2026 年 5 月 26-27 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國川普政府計劃將約 20 噸的鈽——這些來自冷戰期間拆除的核彈頭——開放給美國電力公司作為核燃料使用。政府已初步選定合作夥伴，準備推動這批核材料的再利用。\n\n這是將冷戰遺留軍用核材料轉入民用能源的一項嘗試。\n\n本則整理自 Reuters 與 Al Jazeera 於 2026 年 5 月 26-27 日發佈的報導。",
+          "voice_text": "川普政府打算把約 20 噸冷戰時代的核彈頭鈽，轉給美國電力公司作為核燃料。政府已選定初步合作夥伴，推進這項軍用核材料的民用轉化計畫。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n美國擬將冷戰鈽轉作核電燃料\n\n川普政府打算把約 20 噸從拆除核彈頭取出的鈽，重新包裝成核燃料，開放給美國電力公司使用。政府已選定初步合作夥伴，推動這批冷戰核材料的民用轉化。\n\n—— 本則整理自 Reuters 與 Al Jazeera，2026 年 5 月 26-27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國川普政府計劃將約 20 噸的鈽——這些來自冷戰期間拆除的核彈頭——開放給美國電力公司作為核燃料使用。政府已初步選定合作夥伴，準備推動這批核材料的再利用。\n\n這是將冷戰遺留軍用核材料轉入民用能源的一項嘗試。\n\n本則整理自 Reuters 與 Al Jazeera 於 2026 年 5 月 26-27 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普政府打算把約 20 噸冷戰時代的核彈頭鈽，轉給美國電力公司作為核燃料。政府已選定初步合作夥伴，推進這項軍用核材料的民用轉化計畫。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "US picks potential partners for using Cold War-era plutonium as fuel Reuters",
+              "title": "US picks potential partners for using Cold War-era plutonium as fuel - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWmp4a3BuX1Joa05aZmo3Q2Y3MXFsRjRXSjM3eWlzeTkzaG9LamVnQTZGNFc5WUJrbXYyb0N3MFplelZkVkcyZTlxeHAwSFF0c19uRlgtcW9xV2hxellnVmRuU0hhTDJRWGNoMURCaDNwWVp3M0xnSV9NQ2RJUFFKTXVnQnhSUS1RZkZnREUyR2hsMXVhay1nTFc0NHpFbTBpMkxfSmxiTC13Yl9EeDc0TmV2aw?oc=5",
+              "published_at": "2026-05-27T00:31:44+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Trump gov't plans to make about 20 tonnes of plutonium from dismantled nuclear warheads available to US power firms.",
+              "title": "US picks potential partners for using Cold War-era plutonium as fuel",
+              "url": "https://www.aljazeera.com/economy/2026/5/26/us-picks-potential-partners-for-using-cold-war-era-plutonium-as-fuel?traffic_source=rss",
+              "published_at": "2026-05-27T04:33:56+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "川普政府計劃將約20噸核彈頭鈽開放給美國電力公司作為燃料",
+              "source_id": "aljazeera_all",
+              "source_title": "US picks potential partners for using Cold War-era plutonium as fuel",
+              "source_url": "https://www.aljazeera.com/economy/2026/5/26/us-picks-potential-partners-for-using-cold-war-era-plutonium-as-fuel?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "政府已初步選定合作夥伴推動核材料再利用",
+              "source_id": "reuters_world_google_news",
+              "source_title": "US picks potential partners for using Cold War-era plutonium as fuel - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWmp4a3BuX1Joa05aZmo3Q2Y3MXFsRjRXSjM3eWlzeTkzaG9LamVnQTZGNFc5WUJrbXYyb0N3MFplelZkVkcyZTlxeHAwSFF0c19uRlgtcW9xV2hxellnVmRuU0hhTDJRWGNoMURCaDNwWVp3M0xnSV9NQ2RJUFFKTXVnQnhSUS1RZkZnREUyR2hsMXVhay1nTFc0NHpFbTBpMkxfSmxiTC13Yl9EeDc0TmV2aw?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260527_evt_138",
+          "headline": "BP董事長遭逐，股價應聲下跌",
+          "context": "BP（英國石油）董事長 Albert Manifold 因治理與行為問題遭到董事會解職。消息傳出後，BP 股價在美英兩地市場同步下跌逾 4%。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\nBP董事長遭逐，股價應聲下跌\n\nBP（英國石油）董事長 Albert Manifold 被罷黜，原因是治理與個人行為方面的問題。消息傳出，BP 股價在美國和英國市場均跌逾 4%。\n\n—— 本則整理自 Al Jazeera 與 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "BP（英國石油）董事長 Albert Manifold 遭到董事會解職，原因涉及治理及個人行為方面的問題。消息公開後，BP 股票在美國和英國兩地市場同步下跌，跌幅超過 4%。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 5 月 27 日發佈的報導。",
+          "voice_text": "BP 英國石油的董事長 Albert Manifold 被解職了，原因是治理和行為方面的問題。消息一出，BP 股價在美英兩地都跌了超過 4%。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\nBP董事長遭逐，股價應聲下跌\n\nBP（英國石油）董事長 Albert Manifold 被罷黜，原因是治理與個人行為方面的問題。消息傳出，BP 股價在美國和英國市場均跌逾 4%。\n\n—— 本則整理自 Al Jazeera 與 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "BP（英國石油）董事長 Albert Manifold 遭到董事會解職，原因涉及治理及個人行為方面的問題。消息公開後，BP 股票在美國和英國兩地市場同步下跌，跌幅超過 4%。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 5 月 27 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "BP 英國石油的董事長 Albert Manifold 被解職了，原因是治理和行為方面的問題。消息一出，BP 股價在美英兩地都跌了超過 4%。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "BP stock falls by over 4 percent in US and UK markets as governance concerns lead to chairman Albert Manifold's removal.",
+              "title": "Albert Manifold ousted as BP chair over governance and conduct concerns",
+              "url": "https://www.aljazeera.com/economy/2026/5/26/albert-manifold-ousted-as-bp-chair-over-governance-and-conduct-concerns?traffic_source=rss",
+              "published_at": "2026-05-27T00:19:40+08:00"
+            },
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "BP ousts Chair Albert Manifold citing governance and conduct issues Reuters",
+              "title": "BP ousts Chair Albert Manifold citing governance and conduct issues - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcFl5R1VSQnhST1NLbkpHblRmdHp6T1daWXc4TV9IaGF6clh3TktKVkpWS0FXZ2ZMS2t1Q1dKS2IxdnRTNkoyazBfQzFTT1gtbElUS0RuYWswMy1Ia01EeERQdHZSbGtzakNtWWJLRzJna3ludXRCb0tIWHhVcGE1N19JMkgtRElqcjBGSEYtNm0?oc=5",
+              "published_at": "2026-05-27T01:00:53+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "BP董事長Albert Manifold因治理與行為問題遭解職",
+              "source_id": "aljazeera_all",
+              "source_title": "Albert Manifold ousted as BP chair over governance and conduct concerns",
+              "source_url": "https://www.aljazeera.com/economy/2026/5/26/albert-manifold-ousted-as-bp-chair-over-governance-and-conduct-concerns?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "BP股價在美英市場跌逾4%",
+              "source_id": "aljazeera_all",
+              "source_title": "Albert Manifold ousted as BP chair over governance and conduct concerns",
+              "source_url": "https://www.aljazeera.com/economy/2026/5/26/albert-manifold-ousted-as-bp-chair-over-governance-and-conduct-concerns?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "BP董事會以治理與行為問題為由罷黜董事長",
+              "source_id": "reuters_world_google_news",
+              "source_title": "BP ousts Chair Albert Manifold citing governance and conduct issues - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcFl5R1VSQnhST1NLbkpHblRmdHp6T1daWXc4TV9IaGF6clh3TktKVkpWS0FXZ2ZMS2t1Q1dKS2IxdnRTNkoyazBfQzFTT1gtbElUS0RuYWswMy1Ia01EeERQdHZSbGtzakNtWWJLRzJna3ludXRCb0tIWHhVcGE1N19JMkgtRElqcjBGSEYtNm0?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260527_evt_108",
+          "headline": "最高法院拒絕NFL仲裁請求",
+          "context": "美國最高法院駁回 NFL 及旗下三支球隊將一位黑人教練種族歧視訴訟移交仲裁的申請。涉案球隊為紐約巨人隊、丹佛野馬隊和休士頓德州人隊。案件將繼續在一般法院系統中進行。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/1\n📌 國際\n\n最高法院拒絕NFL仲裁請求\n\n美國最高法院駁回 NFL 的申請。NFL 及紐約巨人隊（New York Giants）、丹佛野馬隊（Denver Broncos）、休士頓德州人隊（Houston Texans）試圖將一起種族歧視案移交 NFL 自身主導的仲裁程序。法院不允許，案件走一般司法途徑。\n\n—— 本則整理自 Al Jazeera 與 Reuters，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國最高法院拒絕了 NFL 的請求。NFL 及紐約巨人隊（New York Giants）、丹佛野馬隊（Denver Broncos）、休士頓德州人隊（Houston Texans）原本試圖將一位黑人教練提出的種族歧視訴訟，移交至由 NFL 自身控制的仲裁程序。\n\n最高法院不予受理。這意味著案件將繼續在一般法院系統中審理，而非進入聯盟主導的內部裁決。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 5 月 26 日發佈的報導。",
+          "voice_text": "美國最高法院拒絕了 NFL 的申請。NFL 和三支球隊原本想把一起種族歧視訴訟轉進 NFL 自己掌控的仲裁程序。法院不允許。案件將繼續走一般司法途徑，由法院審理。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 國際\n\n最高法院拒絕NFL仲裁請求\n\n美國最高法院駁回 NFL 的申請。NFL 及紐約巨人隊（New York Giants）、丹佛野馬隊（Denver Broncos）、休士頓德州人隊（Houston Texans）試圖將一起種族歧視案移交 NFL 自身主導的仲裁程序。法院不允許，案件走一般司法途徑。\n\n—— 本則整理自 Al Jazeera 與 Reuters，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國最高法院拒絕了 NFL 的請求。NFL 及紐約巨人隊（New York Giants）、丹佛野馬隊（Denver Broncos）、休士頓德州人隊（Houston Texans）原本試圖將一位黑人教練提出的種族歧視訴訟，移交至由 NFL 自身控制的仲裁程序。\n\n最高法院不予受理。這意味著案件將繼續在一般法院系統中審理，而非進入聯盟主導的內部裁決。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 5 月 26 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國最高法院拒絕了 NFL 的申請。NFL 和三支球隊原本想把一起種族歧視訴訟轉進 NFL 自己掌控的仲裁程序。法院不允許。案件將繼續走一般司法途徑，由法院審理。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "The league, plus New York Giants, Denver Broncos and Houston Texans, to move case to proceedings controlled by the NFL.",
+              "title": "US Supreme court rejects NFL attempt to move racism case to arbitration",
+              "url": "https://www.aljazeera.com/sports/2026/5/26/us-supreme-court-rejects-nfl-attempt-to-move-racism-case-to-arbitration?traffic_source=rss",
+              "published_at": "2026-05-26T22:26:58+08:00"
+            },
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "US Supreme Court turns away NFL bid to move Black coach's bias claims into arbitration Reuters",
+              "title": "US Supreme Court turns away NFL bid to move Black coach's bias claims into arbitration - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLWtoZGQtbWRQaTIzWlhDQ3lqQUVoYmpsOWN4LXVCUjB3SWNXdjlnYmhaOGlUNTlXTEl3b092cEpoZjZqX3pNOGFGN1NUQjByOUw1RVNWYkNkQ1dOVVEyOGNKUmR4dVlQZUR4c2NGVmhsd0FveHhuSFdTT1RGTmVEcV82NGVCTVR6Q2IxTHRPaDB4NHU3alZZZW9jRHdNSWVCazFOOUlBa3UxQ3gtV2RuWGVR?oc=5",
+              "published_at": "2026-05-26T23:45:17+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "美國最高法院拒絕NFL及三支球隊將種族歧視案移交仲裁的請求",
+              "source_id": "aljazeera_all",
+              "source_title": "US Supreme court rejects NFL attempt to move racism case to arbitration",
+              "source_url": "https://www.aljazeera.com/sports/2026/5/26/us-supreme-court-rejects-nfl-attempt-to-move-racism-case-to-arbitration?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "涉案球隊包括紐約巨人、丹佛野馬、休士頓德州人",
+              "source_id": "aljazeera_all",
+              "source_title": "US Supreme court rejects NFL attempt to move racism case to arbitration",
+              "source_url": "https://www.aljazeera.com/sports/2026/5/26/us-supreme-court-rejects-nfl-attempt-to-move-racism-case-to-arbitration?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "最高法院駁回NFL將黑人教練偏見索賠案移交仲裁的申請",
+              "source_id": "reuters_world_google_news",
+              "source_title": "US Supreme Court turns away NFL bid to move Black coach's bias claims into arbitration - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQLWtoZGQtbWRQaTIzWlhDQ3lqQUVoYmpsOWN4LXVCUjB3SWNXdjlnYmhaOGlUNTlXTEl3b092cEpoZjZqX3pNOGFGN1NUQjByOUw1RVNWYkNkQ1dOVVEyOGNKUmR4dVlQZUR4c2NGVmhsd0FveHhuSFdTT1RGTmVEcV82NGVCTVR6Q2IxTHRPaDB4NHU3alZZZW9jRHdNSWVCazFOOUlBa3UxQ3gtV2RuWGVR?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260527_evt_037",
+          "headline": "羅馬廢棄車廠將化身多功能空間",
+          "context": "義大利建築師 Stefano Boeri Architetti 的改造設計獲羅馬市議會批准，將把位於 Della Vittoria 街區、廢棄近 20 年的前公共交通車廠，改建為融合文化、教育、共享辦公與休閒的社區複合空間，同時引入大面積景觀綠化與公共廣場。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n羅馬廢棄車廠將化身多功能空間\n\n義大利建築師 Stefano Boeri Architetti 的改造計畫獲羅馬市議會批准。這座建於 1900 年代初、廢棄將近 20 年的公共交通車廠，將被改建為融合文化、教育、共享辦公與休閒的社區複合空間，同時配置大面積景觀綠化與公共廣場。\n\n—— 本則整理自 ArchDaily 與 Dezeen，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "羅馬 Della Vittoria 街區有一座建於 1900 年代初的公共交通車廠，閒置將近 20 年後即將迎來新生。義大利建築師 Stefano Boeri Architetti 的改造設計獲羅馬市議會批准，將把這個廢棄車廠轉變成文化、教育、共享辦公與休閒並存的社區複合空間，同時引入大面積綠化與公共廣場。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 5 月 26 日發佈的報導。",
+          "voice_text": "Stefano Boeri Architetti 的計畫拍板了。羅馬市議會批准，將把一座廢棄近 20 年的老舊交通車廠，改造成結合文化、教育與共享辦公的社區空間，還有大片綠化和公共廣場。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n羅馬廢棄車廠將化身多功能空間\n\n義大利建築師 Stefano Boeri Architetti 的改造計畫獲羅馬市議會批准。這座建於 1900 年代初、廢棄將近 20 年的公共交通車廠，將被改建為融合文化、教育、共享辦公與休閒的社區複合空間，同時配置大面積景觀綠化與公共廣場。\n\n—— 本則整理自 ArchDaily 與 Dezeen，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "羅馬 Della Vittoria 街區有一座建於 1900 年代初的公共交通車廠，閒置將近 20 年後即將迎來新生。義大利建築師 Stefano Boeri Architetti 的改造設計獲羅馬市議會批准，將把這個廢棄車廠轉變成文化、教育、共享辦公與休閒並存的社區複合空間，同時引入大面積綠化與公共廣場。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 5 月 26 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Stefano Boeri Architetti 的計畫拍板了。羅馬市議會批准，將把一座廢棄近 20 年的老舊交通車廠，改造成結合文化、教育與共享辦公的社區空間，還有大片綠化和公共廣場。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "The Rome City Council has approved a Memorandum for the urban regeneration of the Depositi delle Vittorie in Piazza Bainsizza, a former ATAC depot in Rome dating back to the early 1900s. Abandoned for nearly two decades and now privately owned, the site is set to be transformed into a multifunctional complex designed by Stefano Boeri Architetti . The project envisions the adaptive reuse of the former transportation infrastructure through the introduction of cultural, educational, commercial, co-working, and leisure functions, alongside new public spaces and extensive landscaped areas.",
+              "title": "Stefano Boeri Architetti Converts Former Rome Transit Depot Into Multifunctional Civic Space",
+              "url": "https://www.archdaily.com/1041854/stefano-boeri-architetti-converts-former-rome-transit-depot-into-multifunctional-civic-space",
+              "published_at": "2026-05-26T14:30:00+08:00"
+            },
+            {
+              "source_id": "dezeen",
+              "name": "Dezeen",
+              "publisher": "Dezeen",
+              "summary": "Italian studio Stefano Boeri Architetti has unveiled plans to transform a historic transportation depot into a greenery-covered public space in Rome's Della Vittoria neighbourhood. Approved by the Rome City Council, the regeneration project will overhaul the existing Deposit delle Vittorie depot, which was built in the 1900s and had stood abandoned for almost 20 years, The post Stefano Boeri Architetti to convert depot into community hub in Rome appeared first on Dezeen .",
+              "title": "Stefano Boeri Architetti to convert depot into community hub in Rome",
+              "url": "https://www.dezeen.com/2026/05/26/stefano-boeri-architetti-community-hub-rome/",
+              "published_at": "2026-05-26T18:00:48+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "羅馬市議會批准Stefano Boeri Architetti將廢棄車廠改造為多功能社區空間的計畫",
+              "source_id": "archdaily",
+              "source_title": "Stefano Boeri Architetti Converts Former Rome Transit Depot Into Multifunctional Civic Space",
+              "source_url": "https://www.archdaily.com/1041854/stefano-boeri-architetti-converts-former-rome-transit-depot-into-multifunctional-civic-space",
+              "support_type": "direct"
+            },
+            {
+              "claim": "車廠建於1900年代初，廢棄將近20年，現為私人擁有",
+              "source_id": "dezeen",
+              "source_title": "Stefano Boeri Architetti to convert depot into community hub in Rome",
+              "source_url": "https://www.dezeen.com/2026/05/26/stefano-boeri-architetti-community-hub-rome/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "新設計將引入文化、教育、商業、共享辦公、休閒功能及公共景觀空間",
+              "source_id": "archdaily",
+              "source_title": "Stefano Boeri Architetti Converts Former Rome Transit Depot Into Multifunctional Civic Space",
+              "source_url": "https://www.archdaily.com/1041854/stefano-boeri-architetti-converts-former-rome-transit-depot-into-multifunctional-civic-space",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 33,
+          "sub_beat": "建築",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_3"
+        },
+        {
+          "event_id": "daily_20260527_evt_001",
+          "headline": "印度極簡住宅的設計哲學",
+          "context": "印度班加羅爾（Bengaluru）一棟面積約 181 平方公尺的住宅，由 Wright Inspires 為兩人設計，核心概念是「只建必要的，把它建好」。空間、光線與材料都經過仔細考量，不以面積大小為目標。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n印度極簡住宅的設計哲學\n\n印度 Wright Inspires 為班加羅爾（Bengaluru）一對住戶設計的住宅，面積約 181 平方公尺，前提只有一個：「只建必要的，把它建好。」空間、光線、材料——每一項都刻意選擇，不追求大。\n\n—— 本則來自 ArchDaily，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 ArchDaily 報導，印度班加羅爾有一棟面積約 181 平方公尺的住宅，由建築工作室 Wright Inspires 為兩人設計。設計的出發點很簡單：「只建必要的，把它建好。」\n\n這棟房子刻意不追求面積和豐富度，轉而把注意力放在空間感、自然採光與材料本身，試圖找出一種更用心的居住方式。\n\n本則來自 ArchDaily，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "印度班加羅爾有一棟只有兩個住戶的小住宅，出發點只有一句話：「只建必要的，把它建好。」目前的消息指出，這棟約 181 平方公尺的房子，設計師把注意力放在空間感、採光和材料，不以大為目標。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n印度極簡住宅的設計哲學\n\n印度 Wright Inspires 為班加羅爾（Bengaluru）一對住戶設計的住宅，面積約 181 平方公尺，前提只有一個：「只建必要的，把它建好。」空間、光線、材料——每一項都刻意選擇，不追求大。\n\n—— 本則來自 ArchDaily，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 ArchDaily 報導，印度班加羅爾有一棟面積約 181 平方公尺的住宅，由建築工作室 Wright Inspires 為兩人設計。設計的出發點很簡單：「只建必要的，把它建好。」\n\n這棟房子刻意不追求面積和豐富度，轉而把注意力放在空間感、自然採光與材料本身，試圖找出一種更用心的居住方式。\n\n本則來自 ArchDaily，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "印度班加羅爾有一棟只有兩個住戶的小住宅，出發點只有一句話：「只建必要的，把它建好。」目前的消息指出，這棟約 181 平方公尺的房子，設計師把注意力放在空間感、採光和材料，不以大為目標。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "Arth Home is a 1,950 sq ft residence in Bengaluru shaped by a simple premise: to build only what is necessary, and to build it well. Designed for two people, the house reflects a deliberate shift away from excess toward a more attentive way of living, where space, light, and material are carefully considered rather than maximized.",
+              "title": "Arth Home / Wright Inspires",
+              "url": "https://www.archdaily.com/1041792/arth-home-wright-inspires",
+              "published_at": "2026-05-26T03:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Arth Home是班加羅爾一棟約181平方公尺的住宅，由Wright Inspires為兩人設計",
+              "source_id": "archdaily",
+              "source_title": "Arth Home / Wright Inspires",
+              "source_url": "https://www.archdaily.com/1041792/arth-home-wright-inspires",
+              "support_type": "direct"
+            },
+            {
+              "claim": "設計核心是只建必要的、空間光線材料都經過仔細考量",
+              "source_id": "archdaily",
+              "source_title": "Arth Home / Wright Inspires",
+              "source_url": "https://www.archdaily.com/1041792/arth-home-wright-inspires",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        },
+        {
+          "event_id": "daily_20260527_evt_002",
+          "headline": "法拉利首款電動車亮相羅馬",
+          "context": "Ferrari（法拉利）在義大利羅馬揭幕旗下第一款電動汽車 Ferrari Luce，由知名設計師 Jony Ive 與 Marc Newson 的工作室 LoveFrom 操刀。車身採流線形空氣力學外殼，搭載可容納五人的大型弧形玻璃艙。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/1\n📌 藝文\n\n法拉利首款電動車亮相羅馬\n\nFerrari（法拉利）的第一款電動車 Ferrari Luce 在義大利羅馬正式發表，由 Jony Ive 與 Marc Newson 的工作室 LoveFrom 設計。大型跑車最大特色是弧形玻璃艙——五人座、視野開闊，外殼採流線形空氣力學設計。\n\n—— 本則來自 Dezeen，2026 年 5 月 25-26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 Dezeen 報導，Ferrari（法拉利）在義大利羅馬正式發表旗下第一款電動車：Ferrari Luce。車子由 Jony Ive 和 Marc Newson 的設計工作室 LoveFrom 主導設計，外型採流線形空氣力學外殼，車艙是大面積的弧形玻璃罩，提供寬闊的五人空間。\n\n本則來自 Dezeen，2026 年 5 月 25-26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "法拉利推出了第一款電動車。目前的消息指出，這輛名為 Luce 的車在羅馬亮相，由 Jony Ive 和 Marc Newson 共同設計。外型是流線形的空氣動力殼，車艙是大弧度玻璃罩，五個座位。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 藝文\n\n法拉利首款電動車亮相羅馬\n\nFerrari（法拉利）的第一款電動車 Ferrari Luce 在義大利羅馬正式發表，由 Jony Ive 與 Marc Newson 的工作室 LoveFrom 設計。大型跑車最大特色是弧形玻璃艙——五人座、視野開闊，外殼採流線形空氣力學設計。\n\n—— 本則來自 Dezeen，2026 年 5 月 25-26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 Dezeen 報導，Ferrari（法拉利）在義大利羅馬正式發表旗下第一款電動車：Ferrari Luce。車子由 Jony Ive 和 Marc Newson 的設計工作室 LoveFrom 主導設計，外型採流線形空氣力學外殼，車艙是大面積的弧形玻璃罩，提供寬闊的五人空間。\n\n本則來自 Dezeen，2026 年 5 月 25-26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "法拉利推出了第一款電動車。目前的消息指出，這輛名為 Luce 的車在羅馬亮相，由 Jony Ive 和 Marc Newson 共同設計。外型是流線形的空氣動力殼，車艙是大弧度玻璃罩，五個座位。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "dezeen",
+              "name": "Dezeen",
+              "publisher": "Dezeen",
+              "summary": "Ferrari has launched its first electric car, the Ferrari Luce, a large sports car designed by Jony Ive and Marc Newson's studio LoveFrom. Unveiled today in Rome, Italy, the Ferrari Luce features a spacious, five-seat cabin enclosed in a large curvaceous glasshouse – the upper portion of the vehicle that includes the windscreen, side windows, The post First electric Ferrari launches with aerodynamic shell wrapped around sweeping glasshouse appeared first on Dezeen .",
+              "title": "First electric Ferrari launches with aerodynamic shell wrapped around sweeping glasshouse",
+              "url": "https://www.dezeen.com/2026/05/25/electric-ferrari-luce-jony-ive-marc-newson-lovefrom/",
+              "published_at": "2026-05-26T04:10:20+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Ferrari在羅馬發表旗下第一款電動車Ferrari Luce",
+              "source_id": "dezeen",
+              "source_title": "First electric Ferrari launches with aerodynamic shell wrapped around sweeping glasshouse",
+              "source_url": "https://www.dezeen.com/2026/05/25/electric-ferrari-luce-jony-ive-marc-newson-lovefrom/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "由Jony Ive和Marc Newson的工作室LoveFrom設計",
+              "source_id": "dezeen",
+              "source_title": "First electric Ferrari launches with aerodynamic shell wrapped around sweeping glasshouse",
+              "source_url": "https://www.dezeen.com/2026/05/25/electric-ferrari-luce-jony-ive-marc-newson-lovefrom/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "採流線形空氣力學外殼，搭載五人座弧形玻璃艙",
+              "source_id": "dezeen",
+              "source_title": "First electric Ferrari launches with aerodynamic shell wrapped around sweeping glasshouse",
+              "source_url": "https://www.dezeen.com/2026/05/25/electric-ferrari-luce-jony-ive-marc-newson-lovefrom/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -12,
+          "sub_beat": "建築",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_3; single_low_tier_source"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260527_evt_142",
+          "headline": "英首相承諾管制社群媒體",
+          "context": "英國首相 Keir Starmer 與多名因子女在社群媒體上受到傷害而失去孩子的家長會面後，公開承諾將對社群媒體採取行動。部分家長對政府能否做到足夠，仍持保留態度。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n英首相承諾管制社群媒體\n\n英國首相 Keir Starmer 與一群失去孩子的父母會面後，承諾將針對社群媒體採取行動。不過部分家長對政府能否真正做到足夠力道，仍存疑慮。\n\n—— 本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 BBC 報導，英國首相 Keir Starmer 與一群喪親父母會面後，承諾將針對社群媒體採取行動。這些父母的孩子，都與社群媒體的使用有所關聯。\n\n部分家長對政府能否真正採取足夠力道，仍表示懷疑。\n\n本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "英國首相 Starmer 在與一群喪親父母會面後，承諾將對社群媒體採取行動。目前的消息指出，部分家長對政府是否真的有能力做到，仍持保留態度。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n英首相承諾管制社群媒體\n\n英國首相 Keir Starmer 與一群失去孩子的父母會面後，承諾將針對社群媒體採取行動。不過部分家長對政府能否真正做到足夠力道，仍存疑慮。\n\n—— 本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 BBC 報導，英國首相 Keir Starmer 與一群喪親父母會面後，承諾將針對社群媒體採取行動。這些父母的孩子，都與社群媒體的使用有所關聯。\n\n部分家長對政府能否真正採取足夠力道，仍表示懷疑。\n\n本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "英國首相 Starmer 在與一群喪親父母會面後，承諾將對社群媒體採取行動。目前的消息指出，部分家長對政府是否真的有能力做到，仍持保留態度。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Some parents believe whether the government will take strong enough action remains to be seen.",
+              "title": "Starmer vows to act on social media after meeting bereaved parents",
+              "url": "https://www.bbc.com/news/articles/c5y7r9gqp6jo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-27T00:29:53+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "英國首相Starmer與失去孩子的父母會面後承諾對社群媒體採取行動",
+              "source_id": "bbc_technology",
+              "source_title": "Starmer vows to act on social media after meeting bereaved parents",
+              "source_url": "https://www.bbc.com/news/articles/c5y7r9gqp6jo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "部分家長對政府能否採取足夠行動存有疑慮",
+              "source_id": "bbc_technology",
+              "source_title": "Starmer vows to act on social media after meeting bereaved parents",
+              "source_url": "https://www.bbc.com/news/articles/c5y7r9gqp6jo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260527_evt_176",
+          "headline": "AI進教室後老師的角色",
+          "context": "人工智慧開始進入學校課堂，帶來一個新的提問：當 AI 能夠協助甚至部分取代教學功能，老師的角色與定位將如何演變？",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\nAI進教室後老師的角色\n\nAI 開始走進學校教室。當機器能夠完成部分教學工作，老師的角色該往哪裡去？這是目前教育界正在認真思考的問題。\n\n—— 本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 BBC 的報導，AI 開始進入學校課堂，教育現場正面臨一個新的提問：一旦 AI 能夠協助甚至部分取代教學功能，老師的角色與定位將如何演變？\n\n本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "AI 開始進教室了。有一個問題跟著出現：當機器能做越來越多教學上的事，老師的角色是什麼？目前的消息指出，這是教育界正在認真討論的問題。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\nAI進教室後老師的角色\n\nAI 開始走進學校教室。當機器能夠完成部分教學工作，老師的角色該往哪裡去？這是目前教育界正在認真思考的問題。\n\n—— 本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 BBC 的報導，AI 開始進入學校課堂，教育現場正面臨一個新的提問：一旦 AI 能夠協助甚至部分取代教學功能，老師的角色與定位將如何演變？\n\n本則來自 BBC，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "AI 開始進教室了。有一個問題跟著出現：當機器能做越來越多教學上的事，老師的角色是什麼？目前的消息指出，這是教育界正在認真討論的問題。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "What is the role of a teacher once AI arrives in the school classroom?",
+              "title": "Tech Life",
+              "url": "https://www.bbc.co.uk/sounds/play/w3ct8jxx?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-27T03:30:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "AI進入學校課堂帶來關於教師角色的討論",
+              "source_id": "bbc_technology",
+              "source_title": "Tech Life",
+              "source_url": "https://www.bbc.co.uk/sounds/play/w3ct8jxx?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260527_evt_104",
+          "headline": "科技盛會早鳥票即將截止",
+          "context": "TechCrunch Disrupt 2026 科技大會的早鳥票優惠將於美西時間 5 月 29 日晚間截止，屆時票價將調漲。大會在美國舊金山舉行。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n科技盛會早鳥票即將截止\n\nTechCrunch Disrupt 2026 的早鳥優惠剩最後幾天。美西時間 5 月 29 日午夜一過，票價就會調漲。大會在舊金山舉行。\n\n—— 本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 TechCrunch，Disrupt 2026 科技大會的早鳥票優惠即將截止，期限至美西時間 5 月 29 日晚上 11 時 59 分。期限一過，票價就會調漲。大會地點在美國舊金山。\n\n本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "TechCrunch Disrupt 2026 的早鳥票優惠快結束了。目前消息指出，截止時間是美西時間 5 月 29 日，之後票價就會調漲。活動在舊金山舉行。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n科技盛會早鳥票即將截止\n\nTechCrunch Disrupt 2026 的早鳥優惠剩最後幾天。美西時間 5 月 29 日午夜一過，票價就會調漲。大會在舊金山舉行。\n\n—— 本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 TechCrunch，Disrupt 2026 科技大會的早鳥票優惠即將截止，期限至美西時間 5 月 29 日晚上 11 時 59 分。期限一過，票價就會調漲。大會地點在美國舊金山。\n\n本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "TechCrunch Disrupt 2026 的早鳥票優惠快結束了。目前消息指出，截止時間是美西時間 5 月 29 日，之後票價就會調漲。活動在舊金山舉行。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Save up to $410 on your TechCrunch Disrupt 2026 pass before prices increase on May 29 at 11:59 p.m. PT. Register here to join the tech epicenter in San Francisco.",
+              "title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
+              "url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
+              "published_at": "2026-05-26T22:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "TechCrunch Disrupt 2026早鳥票優惠至美西時間5月29日晚間截止",
+              "source_id": "techcrunch_ai",
+              "source_title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
+              "source_url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "大會在美國舊金山舉行",
+              "source_id": "techcrunch_ai",
+              "source_title": "TechCrunch Disrupt 2026 Early Bird ticket rates end May 29",
+              "source_url": "https://techcrunch.com/2026/05/26/techcrunch-disrupt-2026-early-bird-ticket-rates-end-may-29/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260527_evt_113",
+          "headline": "音樂版權方攜手打擊AI侵權",
+          "context": "環球音樂集團（Universal Music Group，UMG）與 TikTok 更新合作協議，重點在打擊平台上未授權的 AI 生成音樂。UMG 多年來持續向串流平台和 AI 公司施壓，要求更嚴格的內容管控。",
+          "beat": "AI",
+          "thread_text": "🧵 1/1\n📌 科技\n\n音樂版權方攜手打擊AI侵權\n\n環球音樂集團（Universal Music Group）與 TikTok 更新合作協議，目標是遏制平台上未授權的 AI 生成音樂。UMG 多年來持續推動各大平台和 AI 公司落實更嚴格的內容管控。\n\n—— 本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 TechCrunch 報導，環球音樂集團（Universal Music Group，UMG）與 TikTok 更新了合作協議，重點在打擊平台上未授權的 AI 生成音樂。\n\nUMG 多年來持續向串流平台和 AI 公司施壓，要求更嚴格的內容審查機制。此次協議續簽是這一長期推動的延伸。\n\n本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "環球音樂集團和 TikTok 更新了協議，針對的是平台上未授權的 AI 生成音樂。目前消息指出，環球音樂多年來一直在推動各平台對這類內容實施更嚴格的管控。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 科技\n\n音樂版權方攜手打擊AI侵權\n\n環球音樂集團（Universal Music Group）與 TikTok 更新合作協議，目標是遏制平台上未授權的 AI 生成音樂。UMG 多年來持續推動各大平台和 AI 公司落實更嚴格的內容管控。\n\n—— 本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 TechCrunch 報導，環球音樂集團（Universal Music Group，UMG）與 TikTok 更新了合作協議，重點在打擊平台上未授權的 AI 生成音樂。\n\nUMG 多年來持續向串流平台和 AI 公司施壓，要求更嚴格的內容審查機制。此次協議續簽是這一長期推動的延伸。\n\n本則來自 TechCrunch，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "環球音樂集團和 TikTok 更新了協議，針對的是平台上未授權的 AI 生成音樂。目前消息指出，環球音樂多年來一直在推動各平台對這類內容實施更嚴格的管控。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "For years, UMG has pushed platforms, streaming services, and AI companies to implement stricter content moderation policies.",
+              "title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
+              "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
+              "published_at": "2026-05-26T22:55:05+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "環球音樂集團與TikTok更新協議以打擊未授權AI生成音樂",
+              "source_id": "techcrunch_ai",
+              "source_title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
+              "source_url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "UMG多年來持續推動平台和AI公司落實更嚴格內容審查",
+              "source_id": "techcrunch_ai",
+              "source_title": "Universal Music Group and TikTok renew agreement to combat unauthorized AI music",
+              "source_url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260527_evt_157",
+          "headline": "聯準會收斂監管，華爾街乘機施壓",
+          "context": "美國聯邦準備理事會（Fed）正在限縮銀行審查員的調查權限。消息人士透露，華爾街正趁機施壓，試圖爭取更大幅度的監管鬆綁。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n聯準會收斂監管，華爾街乘機施壓\n\n消息人士指出，美國聯邦準備理事會（Fed）正在限縮銀行審查員的調查權限。華爾街把握時機，正積極施壓，試圖爭取更多監管上的讓步。\n\n—— 本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 Reuters 報導，美國聯邦準備理事會（Fed）正在縮減銀行審查員的調查權限。消息人士透露，華爾街把握這個時機，正在積極施壓，試圖爭取更多監管上的讓步。\n\n本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "美國聯準會正在縮減銀行審查員的調查權限。目前的消息指出，華爾街看準時機，正在施壓要求更大幅度的監管鬆綁。這是一則來自匿名消息人士的報導。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n聯準會收斂監管，華爾街乘機施壓\n\n消息人士指出，美國聯邦準備理事會（Fed）正在限縮銀行審查員的調查權限。華爾街把握時機，正積極施壓，試圖爭取更多監管上的讓步。\n\n—— 本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 Reuters 報導，美國聯邦準備理事會（Fed）正在縮減銀行審查員的調查權限。消息人士透露，華爾街把握這個時機，正在積極施壓，試圖爭取更多監管上的讓步。\n\n本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "美國聯準會正在縮減銀行審查員的調查權限。目前的消息指出，華爾街看準時機，正在施壓要求更大幅度的監管鬆綁。這是一則來自匿名消息人士的報導。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Exclusive: As Fed leashes bank examiners, Wall Street pushes for more wins, sources say Reuters",
+              "title": "Exclusive: As Fed leashes bank examiners, Wall Street pushes for more wins, sources say - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORVNJaHJMMmJJWXhmTDB2d0s2OE95djQweXM4aDdER0JjRFlFXzV3ajlmTld4bVZpLVNscVRHVmxZaTVUU21CYTFRYXBjalhqSEs5NnlPanhXQi1IZFBKc1p1cE05N09KMjY0N29iZ0dqMVNpYVJsWFdmTzhIclZCTEUwQUQxZ2puNXJ0amtUcmlkZi02b2IzZXNFNi1rZkNyOEtKUkhVdUNHWWg2U0JZbkh4UVc?oc=5",
+              "published_at": "2026-05-27T01:22:22+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Fed正在限縮銀行審查員的調查權限",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Exclusive: As Fed leashes bank examiners, Wall Street pushes for more wins, sources say - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORVNJaHJMMmJJWXhmTDB2d0s2OE95djQweXM4aDdER0JjRFlFXzV3ajlmTld4bVZpLVNscVRHVmxZaTVUU21CYTFRYXBjalhqSEs5NnlPanhXQi1IZFBKc1p1cE05N09KMjY0N29iZ0dqMVNpYVJsWFdmTzhIclZCTEUwQUQxZ2puNXJ0amtUcmlkZi02b2IzZXNFNi1rZkNyOEtKUkhVdUNHWWg2U0JZbkh4UVc?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "華爾街趁機施壓爭取更多監管鬆綁",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Exclusive: As Fed leashes bank examiners, Wall Street pushes for more wins, sources say - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxORVNJaHJMMmJJWXhmTDB2d0s2OE95djQweXM4aDdER0JjRFlFXzV3ajlmTld4bVZpLVNscVRHVmxZaTVUU21CYTFRYXBjalhqSEs5NnlPanhXQi1IZFBKc1p1cE05N09KMjY0N29iZ0dqMVNpYVJsWFdmTzhIclZCTEUwQUQxZ2puNXJ0amtUcmlkZi02b2IzZXNFNi1rZkNyOEtKUkhVdUNHWWg2U0JZbkh4UVc?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260527_evt_161",
+          "headline": "通膨疑慮拖累五月美國消費信心",
+          "context": "美國五月消費者信心因通貨膨脹的擔憂而受到拖累，顯示消費者對當前經濟環境仍抱持謹慎態度。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n通膨疑慮拖累五月美國消費信心\n\n美國五月的消費者信心數據承壓，通膨帶來的擔憂是主要拖累因素。消費者對目前的經濟環境持謹慎態度。\n\n—— 本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 Reuters 報導，美國五月的消費者信心因通貨膨脹的疑慮而承壓。數據顯示，消費者對當前經濟環境仍抱持保留態度。\n\n本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "美國五月消費者信心下滑，通膨帶來的擔憂是主要拖累因素。目前消息指出，消費者對整體經濟環境仍比較保守。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n通膨疑慮拖累五月美國消費信心\n\n美國五月的消費者信心數據承壓，通膨帶來的擔憂是主要拖累因素。消費者對目前的經濟環境持謹慎態度。\n\n—— 本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 Reuters 報導，美國五月的消費者信心因通貨膨脹的疑慮而承壓。數據顯示，消費者對當前經濟環境仍抱持保留態度。\n\n本則來自 Reuters，2026 年 5 月 27 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "美國五月消費者信心下滑，通膨帶來的擔憂是主要拖累因素。目前消息指出，消費者對整體經濟環境仍比較保守。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Inflation worries weigh on US consumer confidence in May Reuters",
+              "title": "Inflation worries weigh on US consumer confidence in May - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUi1Na1U1ZzhDQ3pKc2VxQWFNd0dEVFNEZzhRNVJibExrYVJ0YS14QnJHVXRHckczdTdOaHBJcDdUcFBfYlozRkRVeTNQeHdfaXRpcGN1TkJCNVgyTElEQUU4YUI4X2Rpb0RtTklYQTZXWFktR2NBRmgtWmR6YnZQNWduUzFJYTJMaTdYUEtFTktKdnE1V1pUd1l5ZGxtaDRKNmc?oc=5",
+              "published_at": "2026-05-27T01:37:32+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "五月通膨疑慮壓低美國消費者信心",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Inflation worries weigh on US consumer confidence in May - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUi1Na1U1ZzhDQ3pKc2VxQWFNd0dEVFNEZzhRNVJibExrYVJ0YS14QnJHVXRHckczdTdOaHBJcDdUcFBfYlozRkRVeTNQeHdfaXRpcGN1TkJCNVgyTElEQUU4YUI4X2Rpb0RtTklYQTZXWFktR2NBRmgtWmR6YnZQNWduUzFJYTJMaTdYUEtFTktKdnE1V1pUd1l5ZGxtaDRKNmc?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260527_evt_049",
+          "headline": "歐洲央行：私人信貸或現局部壓力",
+          "context": "歐洲央行（European Central Bank，ECB）警示，歐元區的私人信貸市場可能出現局部性的壓力，但目前判斷不構成系統性風險。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n歐洲央行：私人信貸或現局部壓力\n\n歐洲央行（ECB）警示，歐元區的私人信貸市場可能出現局部性壓力，但目前判斷不會演變成全面的系統性風險。\n\n—— 本則來自 Reuters，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 Reuters 報導，歐洲央行（ECB）表示，歐元區在私人信貸領域可能出現局部性的壓力，但目前的判斷是，這種壓力不會演變成全面的系統性風險。\n\n本則來自 Reuters，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "歐洲央行發出警示。目前消息指出，歐元區的私人信貸市場可能出現局部壓力，但暫時不至於演變成整個金融體系的系統性風險。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n歐洲央行：私人信貸或現局部壓力\n\n歐洲央行（ECB）警示，歐元區的私人信貸市場可能出現局部性壓力，但目前判斷不會演變成全面的系統性風險。\n\n—— 本則來自 Reuters，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 Reuters 報導，歐洲央行（ECB）表示，歐元區在私人信貸領域可能出現局部性的壓力，但目前的判斷是，這種壓力不會演變成全面的系統性風險。\n\n本則來自 Reuters，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "歐洲央行發出警示。目前消息指出，歐元區的私人信貸市場可能出現局部壓力，但暫時不至於演變成整個金融體系的系統性風險。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Euro zone may face pockets of stress from private credit, not systemic risk: ECB Reuters",
+              "title": "Euro zone may face pockets of stress from private credit, not systemic risk: ECB - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUUdqSjJhcmNaaHgyeWhnRFhJVzRiZVRGSExGT3pyanhTQ3FvY3VadE1TdnVSTW5MT1BjQ2VLY3FiY3BMUVFnWFlSdGdtSktIdVhOLU1ZSW5raWRhWFlIRE9fS2lJQ2M3Ylg5LXdUZ3VrbXV6cHUtbmcyUjB4UG5YcTVCMTVjZjJNVFJ5VGxBWEdiRExsSlgyYXNxU1o2Uk12U1gwV1FkcXpneGtGc1JxZ0dDSGZfTlpTZko1UExsSEQ4aE1R?oc=5",
+              "published_at": "2026-05-26T16:02:50+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "ECB警示歐元區私人信貸可能出現局部壓力但非系統性風險",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Euro zone may face pockets of stress from private credit, not systemic risk: ECB - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUUdqSjJhcmNaaHgyeWhnRFhJVzRiZVRGSExGT3pyanhTQ3FvY3VadE1TdnVSTW5MT1BjQ2VLY3FiY3BMUVFnWFlSdGdtSktIdVhOLU1ZSW5raWRhWFlIRE9fS2lJQ2M3Ylg5LXdUZ3VrbXV6cHUtbmcyUjB4UG5YcTVCMTVjZjJNVFJ5VGxBWEdiRExsSlgyYXNxU1o2Uk12U1gwV1FkcXpneGtGc1JxZ0dDSGZfTlpTZko1UExsSEQ4aE1R?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260527_evt_012",
+          "headline": "滋味似卡仕達的番荔枝走紅",
+          "context": "番荔枝（custard apple）是一種口感綿密香甜、滋味像卡仕達醬的熱帶水果，植株耐旱、好種，但果實非常嬌嫩，長途運輸難度高，讓出口推廣一直面臨挑戰。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/1\n📌 財經\n\n滋味似卡仕達的番荔枝走紅\n\n番荔枝（custard apple）吃起來像卡仕達醬——綿密香甜。植株耐旱、好種，但果實太脆弱，碰就爛，長途出口大不易。出口商正在設法克服這個運輸難題。\n\n—— 本則來自 BBC，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據 BBC 報導，番荔枝（custard apple）正在逐漸受到市場關注。這種熱帶水果口感像卡仕達醬，植株耐旱，種植相對容易，但果實非常嬌嫩，長途運輸很難不損傷，讓出口一直是個難題。\n\n本則來自 BBC，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "有一種水果叫番荔枝，吃起來像卡仕達醬——滑嫩香甜。植株耐旱，好種。但果實太脆弱，一運就壞。目前的消息指出，出口一直是個難題。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 財經\n\n滋味似卡仕達的番荔枝走紅\n\n番荔枝（custard apple）吃起來像卡仕達醬——綿密香甜。植株耐旱、好種，但果實太脆弱，碰就爛，長途出口大不易。出口商正在設法克服這個運輸難題。\n\n—— 本則來自 BBC，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據 BBC 報導，番荔枝（custard apple）正在逐漸受到市場關注。這種熱帶水果口感像卡仕達醬，植株耐旱，種植相對容易，但果實非常嬌嫩，長途運輸很難不損傷，讓出口一直是個難題。\n\n本則來自 BBC，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "有一種水果叫番荔枝，吃起來像卡仕達醬——滑嫩香甜。植株耐旱，好種。但果實太脆弱，一運就壞。目前的消息指出，出口一直是個難題。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Custard apple plants are prized for their hardiness but exporting their delicate fruit is difficult.",
+              "title": "The rise of the fruit that tastes like custard",
+              "url": "https://www.bbc.com/news/articles/ce8pmrp0m47o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-05-26T07:27:04+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "番荔枝植株耐旱種植成本較低但果實嬌嫩不易出口",
+              "source_id": "bbc_business",
+              "source_title": "The rise of the fruit that tastes like custard",
+              "source_url": "https://www.bbc.com/news/articles/ce8pmrp0m47o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260527_evt_030",
+          "headline": "監院：科技業混充身障就業名額",
+          "context": "監察院發布調查報告，指出有科技業者過去三年以「校園代表」名義聘用逾 500 名身心障礙學生，並列為法定保障名額。由於薪資多為最低工資、工作內容與正式員工有明顯差距，監察院要求勞動部和教育部共同檢討制度設計。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/1\n📌 台灣\n\n監院：科技業混充身障就業名額\n\n監察院調查指出，有科技業者過去三年以「校園代表」名義雇用逾 500 名身心障礙學生，並列入法定保障名額。但這些職位薪資多為最低工資，工作性質也與正式員工有落差。監察院要求勞動部和教育部共同改善制度。\n\n—— 本則來自 公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據公視報導，監察院發布調查報告，指出有科技業者過去三年以「校園代表」名義聘用 500 多名身心障礙學生，並將這些職位計入法定保障名額。問題在於：許多校園代表的薪資只有最低工資，工作內容也與正式員工有明顯差距，恐怕削弱了法定保障制度原本的目的。\n\n監察院要求勞動部和教育部共同檢討，訂定更明確的教育輔導與正式就業的界線。\n\n本則來自公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "監察院發布調查報告。目前消息指出，有科技業者過去三年用「校園代表」的名義雇用超過 500 名身心障礙學生，把這些職位計入法定保障名額，但許多人只拿最低工資，工作內容也和正式員工差很多。監察院要求勞動部和教育部一起改善這個制度。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 台灣\n\n監院：科技業混充身障就業名額\n\n監察院調查指出，有科技業者過去三年以「校園代表」名義雇用逾 500 名身心障礙學生，並列入法定保障名額。但這些職位薪資多為最低工資，工作性質也與正式員工有落差。監察院要求勞動部和教育部共同改善制度。\n\n—— 本則來自 公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據公視報導，監察院發布調查報告，指出有科技業者過去三年以「校園代表」名義聘用 500 多名身心障礙學生，並將這些職位計入法定保障名額。問題在於：許多校園代表的薪資只有最低工資，工作內容也與正式員工有明顯差距，恐怕削弱了法定保障制度原本的目的。\n\n監察院要求勞動部和教育部共同檢討，訂定更明確的教育輔導與正式就業的界線。\n\n本則來自公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "監察院發布調查報告。目前消息指出，有科技業者過去三年用「校園代表」的名義雇用超過 500 名身心障礙學生，把這些職位計入法定保障名額，但許多人只拿最低工資，工作內容也和正式員工差很多。監察院要求勞動部和教育部一起改善這個制度。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "監察院昨（25）日發布調查報告指出，有科技業者過去3年以「校園代表」名義聘用500多名身心障礙學生，並將其列為法定身心障礙保障名額。由於許多校園代表僅領取最低工資，且工作內容與正式職場工作存在明顯差異，恐弱化促進身心障礙者實質就業目的。監察院要求勞動部與教育部應共同檢討制度設計，建立更清楚的「教育輔導」與「正式就業」界線。",
+              "title": "企業招校園代表填身心障礙法定名額 監院促勞動部、教育部檢討",
+              "url": "https://news.pts.org.tw/article/810052",
+              "published_at": "2026-05-26T13:05:01+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "科技業者過去三年以校園代表名義雇用500多名身心障礙學生並計入法定保障名額",
+              "source_id": "pts_news",
+              "source_title": "企業招校園代表填身心障礙法定名額 監院促勞動部、教育部檢討",
+              "source_url": "https://news.pts.org.tw/article/810052",
+              "support_type": "direct"
+            },
+            {
+              "claim": "許多校園代表僅領最低工資工作內容與正式職場差異明顯",
+              "source_id": "pts_news",
+              "source_title": "企業招校園代表填身心障礙法定名額 監院促勞動部、教育部檢討",
+              "source_url": "https://news.pts.org.tw/article/810052",
+              "support_type": "direct"
+            },
+            {
+              "claim": "監察院要求勞動部與教育部共同檢討制度設計",
+              "source_id": "pts_news",
+              "source_title": "企業招校園代表填身心障礙法定名額 監院促勞動部、教育部檢討",
+              "source_url": "https://news.pts.org.tw/article/810052",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260527_evt_036",
+          "headline": "台灣高鐵故障初判電源模組異常",
+          "context": "台灣高鐵 5 月 25 日發生號誌訊號異常，當天縮減服務運行至收班，夜間維修人員進場搶修，在 26 日凌晨 1 時 43 分確認號誌系統恢復正常。高鐵初步研判，故障原因為更換轉轍器控制機箱電源模組時首次出現異常所致。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/1\n📌 台灣\n\n台灣高鐵故障初判電源模組異常\n\n台灣高鐵 25 日號誌系統出狀況，列車改以縮減模式運行至收班。維修人員漏夜搶修，在 26 日凌晨 1 時 43 分恢復正常。高鐵初步研判，問題出在更換轉轍器控制機箱電源模組時首次出現的異常。\n\n—— 本則來自 公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "根據公視報導，台灣高鐵 5 月 25 日發生號誌訊號異常，當天改以縮減模式運行至收班，夜間維修人員進場緊急搶修，在 26 日凌晨 1 時 43 分確認系統恢復正常。\n\n高鐵表示，初步研判故障原因是更換轉轍器控制機箱的電源模組時首次出現異常所致，將保存相關設備聯繫原廠進一步釐清原因。\n\n本則來自公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。",
+          "voice_text": "台灣高鐵 25 日號誌系統出問題，當天列車縮減運行，維修人員連夜搶修，到 26 日凌晨才恢復正常。目前消息指出，初步研判是更換轉轍器控制機箱的電源模組時首次出現異常所引起。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/1\n📌 台灣\n\n台灣高鐵故障初判電源模組異常\n\n台灣高鐵 25 日號誌系統出狀況，列車改以縮減模式運行至收班。維修人員漏夜搶修，在 26 日凌晨 1 時 43 分恢復正常。高鐵初步研判，問題出在更換轉轍器控制機箱電源模組時首次出現的異常。\n\n—— 本則來自 公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "根據公視報導，台灣高鐵 5 月 25 日發生號誌訊號異常，當天改以縮減模式運行至收班，夜間維修人員進場緊急搶修，在 26 日凌晨 1 時 43 分確認系統恢復正常。\n\n高鐵表示，初步研判故障原因是更換轉轍器控制機箱的電源模組時首次出現異常所致，將保存相關設備聯繫原廠進一步釐清原因。\n\n本則來自公視，2026 年 5 月 26 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "voice": {
+              "text": "台灣高鐵 25 日號誌系統出問題，當天列車縮減運行，維修人員連夜搶修，到 26 日凌晨才恢復正常。目前消息指出，初步研判是更換轉轍器控制機箱的電源模組時首次出現異常所引起。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "台灣高鐵25日發生號誌訊號異常，隨後採降維營運到收班，昨（25）日夜收班後，維修人員漏夜進場搶修，在清晨1時43分確認號誌系統恢復正常。高鐵指出本次故障，初判斷應為更換轉轍器控制機箱電源模組，首度出現異常狀況所導致。",
+              "title": "高鐵故障初判轉轍器異常釀禍 擬保存設備找原廠釐清原因",
+              "url": "https://news.pts.org.tw/article/810049",
+              "published_at": "2026-05-26T14:15:01+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "高鐵25日發生號誌訊號異常採降維運行至收班",
+              "source_id": "pts_news",
+              "source_title": "高鐵故障初判轉轍器異常釀禍 擬保存設備找原廠釐清原因",
+              "source_url": "https://news.pts.org.tw/article/810049",
+              "support_type": "direct"
+            },
+            {
+              "claim": "維修人員漏夜搶修，26日凌晨1時43分號誌系統恢復正常",
+              "source_id": "pts_news",
+              "source_title": "高鐵故障初判轉轍器異常釀禍 擬保存設備找原廠釐清原因",
+              "source_url": "https://news.pts.org.tw/article/810049",
+              "support_type": "direct"
+            },
+            {
+              "claim": "初判原因為更換轉轍器控制機箱電源模組時首次出現異常",
+              "source_id": "pts_news",
+              "source_title": "高鐵故障初判轉轍器異常釀禍 擬保存設備找原廠釐清原因",
+              "source_url": "https://news.pts.org.tw/article/810049",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 26,
+    "total_feeds_failed": 13,
+    "total_articles_fetched": 197,
+    "total_articles_after_filter": 195,
+    "total_events_merged": 185,
+    "total_events_selected": 18,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260527_evt_025",
+      "headline": "Iran says new US strikes violate ceasefire - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_038",
+      "headline": "A warning to critical minerals buyers: avoid butter mountains, aluminium floods - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_103",
+      "headline": "US plans to cut strategic bombers and warships available to NATO in a crisis, Spiegel reports - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_117",
+      "headline": "NATO to beef up forces assigned to defend Baltics in war, sources say - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_124",
+      "headline": "US and Armenia sign partnership agreement ahead of Armenian election - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_128",
+      "headline": "EU queries Czech PM's moves to tackle conflicts of interest - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_144",
+      "headline": "Internet starts coming back in Iran after months-long blackout",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_156",
+      "headline": "Reuters wins Financial Communications Society Portfolio Awards, Telly Awards - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_164",
+      "headline": "Why temperature records are being not only broken but smashed",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_172",
+      "headline": "Exclusive: Pentagon spars with SpaceX over Starlink price hike during Iran war - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_003",
+      "headline": "How Uyghurs from China helped Syrian rebels overthrow Bashar al-Assad",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_102",
+      "headline": "Prospects fade for imminent end to Iran war as attacks restart",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_114",
+      "headline": "‘Leave Kyiv’: Why Russia’s latest Ukraine threat is a major escalation",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_120",
+      "headline": "Hajj pilgrims gather at Mount Arafat under scorching desert sun",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_121",
+      "headline": "Israel is no longer ‘shooting and crying’",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_123",
+      "headline": "Tehran labels US attacks ‘gross violation’, says it is prepared to respond",
+      "selection_score": 13,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_147",
+      "headline": "What has Pope Leo warned about AI – and why that’s significant",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_160",
+      "headline": "Armenia signs strategic partnership deal with US as election approaches",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_163",
+      "headline": "An exceptionally early heat wave shatters records and brings deaths in Europe",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_181",
+      "headline": "Did Trump oversell a broken Iran ceasefire deal?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_183",
+      "headline": "US Senate confirms veteran naval officer Frank Garcia as top Africa envoy",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_004",
+      "headline": "Canada demands Israel probe 'appalling' treatment of flotilla members - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_005",
+      "headline": "Strong Chile earthquake shakes mining hub, but damage is minimal - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_006",
+      "headline": "Brent crude jumps 4%, as US strikes in Iran set back hopes for Hormuz re-opening - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_007",
+      "headline": "Watch: Trump to have annual medical exam ahead of 80th birthday",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_008",
+      "headline": "Wave of child abuse cases shakes schools in Paris",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_010",
+      "headline": "US forces conducted 'self-defense strikes' in southern Iran, Fox News says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_011",
+      "headline": "Second group of Australian women linked to Islamic State return from Syria - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_013",
+      "headline": "Japan slips to third-largest creditor behind China despite record net external assets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_015",
+      "headline": "Samsung consumer electronics union asks court to block vote on pay deal - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_016",
+      "headline": "Tech lifts US stocks, WTI crude falls on Iran peace deal hopes - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_017",
+      "headline": "Australia-India-Japan-US Quad to build a port, unveil pact on critical minerals - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_018",
+      "headline": "Rescuers race to free seven people trapped in flooded Laos cave",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_020",
+      "headline": "Ferrari unveils first fully electric car",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_023",
+      "headline": "Japan, Mercosur to start EPA trade talks, Kyodo says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_024",
+      "headline": "Exchange operator ASX sinks most in 26 years as tech revamp swells costs - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_027",
+      "headline": "Morning Bid: Peace talks hit turbulence - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_028",
+      "headline": "Oil and LNG tankers exit Hormuz, heading for Pakistan and China - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_031",
+      "headline": "Bank holiday sun boosts South West tourism",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_032",
+      "headline": "'An £8,000 debt pushed me to breaking point'",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_034",
+      "headline": "Exclusive: India prepares interim, not final, report as Air India crash anniversary nears, source says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_040",
+      "headline": "Next boss warns of 'dramatic' fall in entry-level jobs",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_043",
+      "headline": "Australia confirms first diphtheria death amid worst outbreak in decades",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_044",
+      "headline": "Watch: Drones crash into water after Sydney light show malfunction",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_045",
+      "headline": "日職巨人隊主帥涉家暴引咎辭職 女兒報案建議來自ChatGPT",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_047",
+      "headline": "UN Climate Change Conference - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_050",
+      "headline": "Spain blocks prediction markets Polymarket, Kalshi over lack of gambling licences - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_053",
+      "headline": "China executes man for poisoning billionaire gaming tycoon",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_054",
+      "headline": "'I live in survival mode': The rise of the multi-job workforce",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_056",
+      "headline": "Watch: Bridge collapses and car swept away in China river",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_057",
+      "headline": "April shipments of foreign-branded phones in China up 1.8% Y/Y, CAICT data shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_059",
+      "headline": "South Africa targets January 2027 for revised AI policy after earlier withdrawal - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_061",
+      "headline": "Delhi's most exclusive club is under threat of shutdown - can it survive?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_062",
+      "headline": "Australia's Element 25 reviews US project as it looks to renegotiate GM, Stellantis contracts - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_063",
+      "headline": "Ireland to ban goods from Israeli settlements in West Bank by July - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_064",
+      "headline": "Estée Lauder exits Puig talks, preserves firepower for selective M&A - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_066",
+      "headline": "Ebola needs swift response to prevent catastrophe, says DR Congo governor",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_067",
+      "headline": "Swiss-based Terra Quantum changes partner ahead of $3.5 bln listing - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_068",
+      "headline": "BNP Paribas steps up Mistral partnership to bolster rapid AI defences - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_069",
+      "headline": "India's fifth spot in global market cap list under threat as Taiwan closes in - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_071",
+      "headline": "Spotify launches 'narrated articles' from publications like The Atlantic, Vogue - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_072",
+      "headline": "Treasurer stole £20k from dog clubs to pay bills",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_073",
+      "headline": "2男釣二二八公園鱷雀鱔烹煮 遭依違規釣魚各罰3600元",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_074",
+      "headline": "國中籃球隊14人擠8人座車 嘉義縣府：超載依規處理",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_075",
+      "headline": "我擬引進友邦史瓦帝尼勞工？ 外交部：處可行性評估階段",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_076",
+      "headline": "沈伯洋質疑北士科用電問題未解 蔣萬安：無能源怎有穩定電力",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_077",
+      "headline": "台股市值首度超過印度 躍居全球第5大",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_078",
+      "headline": "India's Maruti Suzuki adopts fuel-saving measures - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_079",
+      "headline": "德國會友台小組議員訪台 稱民主交流不接受他國干涉",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_080",
+      "headline": "運安會調查三峽4死車禍 揭駕駛操作失當、高齡換照漏洞",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_081",
+      "headline": "南韓拆除中高架橋坍塌 釀3死3傷",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_082",
+      "headline": "高鐵史上最大規模延誤 初判轉轍器控制機箱異常",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_083",
+      "headline": "AfDB expects Africa's economic growth to slow to 4.2% due to the Middle East crisis - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_084",
+      "headline": "Ferry frustrations and housing concerns in Gorey",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_085",
+      "headline": "Applied Aerospace & Defense eyes $3.59 billion valuation in US IPO - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_086",
+      "headline": "伊朗赴卡達談停戰協議 美軍同日攻擊飛彈基地",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_087",
+      "headline": "I Squared bets on AI inference with $225 million data center buy from Cogent - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_088",
+      "headline": "氣象局指高溫持續至週四 熱帶性低壓不排除成颱",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_089",
+      "headline": "創虛擬EGT幣吸金57億元 絕對能源集團再遭起訴",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_090",
+      "headline": "潤泰總裁尹衍樑辭世享壽76歲 醫界、企業界同聲哀悼",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_091",
+      "headline": "Advent, ADIA-backed gas engine maker Innio targets $20.3 billion valuation in US IPO - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_092",
+      "headline": "鄭成鼎全障運聽障羽球奪3金 包辦男單、男雙、混雙",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_093",
+      "headline": "涉家暴遭逮捕無保請回 日職巨人監督阿部慎之助請辭",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_094",
+      "headline": "非洲伊波拉病毒株無疫苗可防治 世衛指傳播速度不及應對",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_095",
+      "headline": "家長控台中某國小午餐品質低落 全班30人抽籤分9顆貢丸",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_096",
+      "headline": "非洲安哥拉非法金礦場坍塌 已知28人喪命",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_097",
+      "headline": "南韓高架橋拆除中坍塌 監管工程主管3人死亡",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_098",
+      "headline": "麥加朝覲首日逾150萬人湧入 逾40℃高溫釀百人中暑",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_099",
+      "headline": "遭法官批無工作如寄生蟲 印度青年創「蟑螂人民黨」",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_100",
+      "headline": "韓星巴克「坦克日活動」引眾怒 母公司新世界集團會長致歉",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_101",
+      "headline": "Florida insurer Safepoint eyes $1.16 billion valuation in US IPO - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_105",
+      "headline": "US Supreme Court won't hear Meta's challenge to Vermont social media addiction lawsuit - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_106",
+      "headline": "Micron closes in on $1 trillion market value as UBS triples share price target - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_107",
+      "headline": "OpenAI's Altman says AI unlikely to lead to 'jobs apocalypse' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_112",
+      "headline": "Exclusive: Starlink and Amazon may be able to buy into EU mobile satellite spectrum plan - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_118",
+      "headline": "'Bullying' and 'overbearing' behaviour behind abrupt BP chairman removal",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_119",
+      "headline": "American Airlines to equip over 500 narrow-body jets with Starlink Wi-Fi from 2027 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_122",
+      "headline": "Dropbox CEO Andrew Houston to step down, insider Ashraf Alkarmi named successor - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_126",
+      "headline": "Analysts see limited upside to Ackman's Pershing Square as they kick off coverage - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_127",
+      "headline": "U.S. 3-month bills high rate 3.595% - TradingView",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_129",
+      "headline": "Doncasters reveals 26% revenue jump in US IPO filing as defense listings run hot - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_130",
+      "headline": "How Trump's bank regulators are paring back supervision - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_131",
+      "headline": "Ecopetrol files tender offer to take control of Brazil's Brava - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_132",
+      "headline": "China pharma industry not impacted by Beijing scrutiny of sensitive tech deals, JW chief says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_133",
+      "headline": "Uber, Lyft drivers in Massachusetts form first US ride-share union - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_134",
+      "headline": "Supreme Court sides with Trump in fight tied to speech curbs on immigration judges - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_140",
+      "headline": "Lilly to buy three vaccine developers for nearly $4 billion in infectious disease push - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_141",
+      "headline": "Big Tobacco comes out on top after US FDA shake-up - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_145",
+      "headline": "Critics give Ferrari Luce EV a cool response, shares fall - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_146",
+      "headline": "Paris 'punishingly hot' as Western Europe hit by heatwave",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_148",
+      "headline": "Ukraine fails to pass key vote on parcels tax ahead of IMF's visit to Kyiv - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_150",
+      "headline": "U.S. 6-week bills high rate 3.620% - TradingView",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_151",
+      "headline": "U.S. 2-year notes high yield 4.071% - TradingView",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_153",
+      "headline": "Tank maker KNDS seeking spare production capacity from other sectors, CEO says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_154",
+      "headline": "Four killed as school minibus collides with train in Belgium",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_158",
+      "headline": "Sunshine Silver eyes $2.32 billion valuation in US IPO - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_159",
+      "headline": "South African president mounts legal challenge against report that could lead to impeachment",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_168",
+      "headline": "Osaka sparkles in golden French Open outfit",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_169",
+      "headline": "Canada's Telesat eyes secure Italian satellite connectivity contract, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_171",
+      "headline": "Iranian hackers responsible for Los Angeles transit system breach, Israeli researchers say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_174",
+      "headline": "S&P 500, Nasdaq rise on AI optimism, Micron joins $1 trillion club - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_175",
+      "headline": "SoftBank hires banks for US IPOs of SB Energy and AI robotics spinoff Roze, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_178",
+      "headline": "Post Office investigation could be delayed by five years, police warn",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_179",
+      "headline": "Eleven killed in Lebanon village as Israel intensifies strikes",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_182",
+      "headline": "Qualcomm strikes AI chip deal with TikTok owner ByteDance, Bloomberg News reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_184",
+      "headline": "Nasa unveils next steps to build permanent Moon base",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_009",
+      "headline": "Ahead of the World Cup, pressure to win and grow American soccer is on Tim Ream's mind",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_039",
+      "headline": "Attacks from residents complicate the fight against a rare type of Ebola",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_051",
+      "headline": "What's Russia's next move amid its latest attacks against Ukraine?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_052",
+      "headline": "Ecuadorian survivors of suspected drone strike seek answers and restitution",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_109",
+      "headline": "Twitch to politics: Hasan Piker on Gaza and the US right-wing",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_110",
+      "headline": "India, US strike critical minerals deal: What’s in it, why does it matter?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_111",
+      "headline": "Iran’s president praises military after US strikes",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_125",
+      "headline": "European countries and EU summon Russian envoys over threats on Kyiv",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_135",
+      "headline": "This startup is betting India’s gig economy can train the world’s robots",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_136",
+      "headline": "Scotland fans book 20 school buses for games at ‘inaccessible’ US World Cup",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_137",
+      "headline": "Iranian fishermen struggle to survive amid Hormuz blockade",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_139",
+      "headline": "France’s Kouame becomes youngest male Grand Slam match-winner in 17 years",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_152",
+      "headline": "Lebanon latest: Netanyahu vows escalation against Hezbollah",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_155",
+      "headline": "India’s World Cup broadcast hopes boosted by Zee Entertainment talks",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_162",
+      "headline": "Former Arsenal midfielder Partey named in Ghana squad ahead of World Cup",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_167",
+      "headline": "Why the French Open is named after Roland Garros, who didn't play tennis",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_170",
+      "headline": "OpenRouter more than doubles valuation to $1.3B in a year",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_173",
+      "headline": "Russia slams US for not granting visa to diplomat for UN meeting",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_177",
+      "headline": "White House proposes NDAs for all US federal workers",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_180",
+      "headline": "Children perform ‘mini Hajj’ in Gaza as Israel blocks pilgrims",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_185",
+      "headline": "Trump-led push to redraw Congress maps faces setbacks in Southern states",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_019",
+      "headline": "The Wood Cabin / S.O.S Architects",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_021",
+      "headline": "El Mayab Sports and Cultural Center / Taller de Arquitectura Miguel Montor",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_026",
+      "headline": "When Modernism Meets Local Resistance: Housing and Urban Friction in Latin America",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_029",
+      "headline": "Tile-clad Japanese buildings inform self-designed office in Valencia",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_033",
+      "headline": "MAC Panamá Selects Palma + Taller TO to Design Its New Museum Building",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_035",
+      "headline": "Tribeca Residence / Muqaddas Akkari Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_041",
+      "headline": "Dongguan MIXC VILLAGE IP Installation / PILLS",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_042",
+      "headline": "Two days left to enter Dezeen Awards 2026",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_046",
+      "headline": "Material Culture and Heritage in Contemporary Cinema Architecture",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_048",
+      "headline": "Heatherwick Studio designs glasses for Jins informed by movement of liquid",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_055",
+      "headline": "AMO releases playful stone grocery items with SolidNature",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_058",
+      "headline": "WiChair by Alina Schnizler for Wilkhahn",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_060",
+      "headline": "Tower House / kit",
+      "selection_score": -32,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_070",
+      "headline": "Mitte Café 2.0 / LIS design studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_115",
+      "headline": "Municipal Environmental School 15 October Mayor Firmino Filho / Rômulo Marques-Carvalho + Ana Lucia Ribeiro Camillo da Silveira",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_116",
+      "headline": "School for visually impaired children among projects from Abu Dhabi University",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_149",
+      "headline": "Little Giant draws on \"spirit of a treehouse\" for Forest Studio on Vancouver Island",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_165",
+      "headline": "Dezeen Debate features \"proper dystopian\" Prairie Ark Gallery",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_166",
+      "headline": "Lume tiles by Marazzi among new products on Dezeen Showroom",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260527_evt_014",
+      "headline": "Node House / Ming Architects",
+      "selection_score": -32,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

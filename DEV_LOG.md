@@ -6,6 +6,45 @@ Enabled sources：27 / 0 failed（2026-07-06：雲端自抓 27/27 全 200 OK）
 
 ---
 
+## 2026-07-08 — daily-reports 分支重建 + 7/8 館報 + 7/7 缺報說明
+
+**背景**：7/7 早上（10:38 CST）有一筆 `merge: squash daily-reports 分支館報產出進 main`
+（`6542d56`）把 5/21~7/06 全部館報資料併回 main、並刪掉遠端 `daily-reports` 分支。當天稍晚
+（10:27 CST，同一批修復）`42a59c7` 才修好跨日邊界 bug；兩者疊加的結果是 7/7 當天 Routine
+視窗**完全沒有執行**（既有分支不在，也沒有 7/7 的 raw/events/output），watchdog 開了
+issue #13。
+
+**7/8 本次執行**：
+- 用台北時區實算 `$DATE` = 2026-07-08（沙盒時鐘在跑當下是 UTC 7/7 22:xx）。
+- `data/raw/2026-07-08/` 不存在 → `--skip-fetch` 依規則自動回退線上抓取，27/27 來源 200 OK
+  （優於預期的 ~12 個）。
+- pipeline 跑到 select：284 事件 → 選 18（INTL 5 / ARTS 4 / AI 3 / ECON 4 / PTS_LOCAL 2）。
+- Step 2 改寫：本 session 直接依 `rewrite_prompt.md` + 文風私有層逐則改寫 18 則 event（未呼叫
+  API）。`validators.lint_rewrite_output` 僅 3 則 `confidence_mismatch`（該檢查用「來源
+  tier 種類數 ≥2」近似 spec 的「2+ Tier1/2 來源」，兩來源同屬同一 tier 時會誤判，非阻擋性
+  警告，spec 原文規則本身允許）。
+- `formatter` → `verify_output`：一次 PASS，無需回頭修事件欄位。
+- **`daily-reports` 遠端分支不存在**（如上述已被刪除），從目前 main（已含全歷史）重新
+  `git checkout -b daily-reports` 並用 `git add -f`（main 的 `.gitignore` 排除
+  `data/events/`、`output/*`，這兩者本來就只該活在 daily-reports 分支）加入 7/8 的
+  raw + events + 六件套，commit + `push -u origin daily-reports`。本 Routine 依
+  `routine_prompt.md` 規則不開 PR。
+
+**7/7 缺報無法補產**：RSS 來源只帶當下抓取時間點的內容，此刻補抓 7/7 只會抓到 7/8 的新聞、
+標成 7/7 是錯的資料，不予執行。issue #13 保留給月月決定是否要接受這個缺口（未主動關閉或
+回覆）。
+
+測試維持 441 全綠（未動 `src/`，僅資料 + 本檔文件變更）。
+
+| 項目 | 內容 |
+|------|------|
+| 事件數 | 18（INTL 5 / ARTS 4 / AI 3 / ECON 4 / PTS_LOCAL 2） |
+| verify_output | PASS |
+| daily-reports 分支 | 重新從 main 建立並推送（遠端原分支已於 7/7 上午被刪） |
+| 7/7 館報 | 仍缺，無法安全補產（見上），issue #13 保持開啟 |
+
+---
+
 ## 2026-07-07 — Routine 跨日邊界事故：漏產當日館報（routine_prompt 修復）
 
 **症狀**：7/7 的 Routine 正常執行卻沒寫進 GitHub，daily-reports 無 `daily_20260707`。

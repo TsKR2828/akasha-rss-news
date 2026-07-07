@@ -1,0 +1,82 @@
+{
+  "event_id": "daily_20260708_evt_001",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "兩本新書書評登場",
+  "context": "今天有兩本書值得一提。丹尼爾・梅森（Daniel Mason）的新小說《Country People》延續 2023 年暢銷作《North Woods》的佛蒙特州背景，講一個家庭在故事與傳說之間的轉變。另一本《We Are Not Machines》由《金融時報》記者莎拉・歐康納（Sarah O'Connor）撰寫，探討 AI 與自動化時代下，勞動者尊嚴能否存續——英國六月職缺數已跌到五年新低。",
+  "article_ids": [
+    "af26701a00f4a4bb62edd56ea8f4c982928d1f71b48eb914ce6b1f37a748046c",
+    "01da3d8b6b5b8aef92309845bc98bc1d060f81decc72746637cd252adcb157f3",
+    "8f9b1bea6e22c7d6573fbad9bfd9b1858965ee60260d6957a2af6977c3eefde0",
+    "9b012a1390f137aa51d82650905061f438c48b9521ca99001c09824764ce2d81"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "In Daniel Mason’s charming “Country People,” a stuck father and his happier family are tempted, and changed, during a stint on a bucolic campus.",
+      "title": "Book Review: ‘Country People,’ by Daniel Mason",
+      "url": "https://www.nytimes.com/2026/07/05/books/review/country-people-daniel-mason.html",
+      "published_at": "2026-07-07T02:01:48+08:00"
+    },
+    {
+      "source_id": "guardian_books",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "This fantastical journey through family, folktales and a world beneath our feet is witty, uplifting and gorgeously written Daniel Mason’s latest novel sees him return to the verdant New England landscape that so captivated readers of 2023’s acclaimed North Woods . This time, though, he hops the border from Massachusetts into Vermont – and effects a deeper shift in the process. Where North Woods was a foray into history, telling the tale of a house and its inhabitants over three centuries, in Country People Mason turns his attention to literature and mines the rich seams of text, from myths to Milton to Shakespeare to Tolstoy and all points in between, that make up his novel’s foundations. This is, at its core, a story about stories; a tale about the tales we tell each other, and our children, and ourselves. It’s also a far simpler thing: the linear account of a year in the life of a contemporary family. On the surface, this might look like a step back from the scope and ambition of North Woods, which spooled out over hundreds of years in a polyphony of forms and voices. But if Country People teaches us anything, it’s that surfaces are only ever a fraction of what we’re dealing with – or, to borrow from one of its three, gloriously baroque epigraphs: “for every terrestrial stream, there run a thousand below the earth. For each pond, a hundred inner seas.” The book’s action is driven, in fact, by its characters’ compulsive need to dig deeper: to burrow into their physical and metaphorical landscapes for meaning, for inspiration, and on occasion just for the hell of it. Sometimes the digging in Country People is literal; often it’s metaphorical. And occasionally – well, occasionally, it turns out, the boundary between the two isn’t as solid as it might first appear. Continue reading...",
+      "title": "Country People by Daniel Mason review – a joyful follow-up to North Woods",
+      "url": "https://www.theguardian.com/books/2026/jul/07/country-people-by-daniel-mason-review-a-joyful-follow-up-to-north-woods",
+      "published_at": "2026-07-07T14:00:31+08:00"
+    },
+    {
+      "source_id": "guardian_culture",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "A Financial Times journalist ponders the future of labour in world increasingly dominated by AI and automation It’s never been easy to land and keep a decent job. But it feels like it’s getting harder. In June, the number of job vacancies in the UK fell to a five-year low; headlines warn of a looming AI-employment shock. What might the future of work look like – and who or what will shape its terms? In her new book, Sarah O’Connor goes looking for answers in the modern collision of artificial intelligence, automation, and human labour. This clash between human and machine – and the fight to secure decent working conditions even as the pressure to maximise production mounts – is nothing new. Neither are concerns about the health risks of repetitive factory work or the loss of creative craftsmanship and independent judgment in the wake of mechanisation. O’Connor has been a reporter at the Financial Times for nearly two decades, and although We Are Not Machines looks to the future, many of the threats AI poses to workers’ dignity and safety look a lot like reconfigurations of old battles. The book takes its title from the signs striking Swedish miners carried in 1969 as they protested their employers’ new methods of monitoring their output. “ Vi är ej maskiner ”, their signs read: “We are not machines.” Continue reading...",
+      "title": "We Are Not Machines by Sarah O’Connor review – can dignity at work survive the tech revolution?",
+      "url": "https://www.theguardian.com/books/2026/jul/07/we-are-not-machines-by-sarah-oconnor-review-can-dignity-at-work-survive-the-tech-revolution",
+      "published_at": "2026-07-07T16:00:34+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "《Country People》寫一個陷入僵局的父親與家人，在鄉間生活裡被改變。",
+      "source_id": "nyt_books",
+      "source_title": "Book Review: ‘Country People,’ by Daniel Mason",
+      "source_url": "https://www.nytimes.com/2026/07/05/books/review/country-people-daniel-mason.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "書評形容《Country People》是丹尼爾・梅森《North Woods》之後，一部講故事的故事。",
+      "source_id": "guardian_books",
+      "source_title": "Country People by Daniel Mason review – a joyful follow-up to North Woods",
+      "source_url": "https://www.theguardian.com/books/2026/jul/07/country-people-by-daniel-mason-review-a-joyful-follow-up-to-north-woods",
+      "support_type": "direct"
+    },
+    {
+      "claim": "《We Are Not Machines》探討 AI 與自動化時代下勞動者尊嚴的存續，書名來自 1969 年瑞典礦工罷工標語。",
+      "source_id": "guardian_culture",
+      "source_title": "We Are Not Machines by Sarah O’Connor review – can dignity at work survive the tech revolution?",
+      "source_url": "https://www.theguardian.com/books/2026/jul/07/we-are-not-machines-by-sarah-oconnor-review-can-dignity-at-work-survive-the-tech-revolution",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "兩本新書書評登場\n\n書評界今天有兩本新書。丹尼爾・梅森（Daniel Mason）推出新小說《Country People》，延續他 2023 年暢銷作《North Woods》的佛蒙特州背景，講一個陷入僵局的父親與家人，在一段鄉間生活裡被故事、傳說改變。書評形容這是一部「講故事的故事」，延續了梅森擅長的奇幻筆調。\n\n另一本是《金融時報》記者莎拉・歐康納（Sarah O'Connor）的《We Are Not Machines》，探討 AI 與自動化浪潮下，勞動者的尊嚴還能不能存續。書名來自 1969 年瑞典礦工罷工時舉的標語「我們不是機器」。英國六月的職缺數字，已經跌到五年來最低。\n\n本則整理自 The New York Times 與 The Guardian 於 2026 年 7 月 7 日發佈的報導。",
+  "threads_text": "兩本新書書評登場\n\n書評界今天有兩本新書。丹尼爾・梅森（Daniel Mason）推出新小說《Country People》，延續他 2023 年暢銷作《North Woods》的佛蒙特州背景，講一個陷入僵局的父親與家人，在一段鄉間生活裡被故事、傳說改變。書評形容這是一部「講故事的故事」，延續了梅森擅長的奇幻筆調，也是《North Woods》的精神續作。\n\n另一本是《金融時報》記者莎拉・歐康納（Sarah O'Connor）的《We Are Not Machines》，探討 AI 與自動化浪潮下，勞動者的尊嚴還能不能存續。書名來自 1969 年瑞典礦工罷工時舉的標語「我們不是機器」。英國六月的職缺數字，已經跌到五年來最低，工作愈來愈難找的感覺不只是心理作用。\n\n本則整理自 The New York Times 與 The Guardian 於 2026 年 7 月 7 日發佈的報導。",
+  "voice_text": "書評今天有兩本新書。丹尼爾・梅森（Daniel Mason）推出新小說《Country People》，延續他 2023 年暢銷作《North Woods》的佛蒙特州背景，寫一個陷入僵局的父親，在鄉間生活裡被故事和傳說改變。這是一部講故事的故事。另一本是記者莎拉・歐康納（Sarah O'Connor）的《We Are Not Machines》，探討 AI 與自動化時代下，勞動者的尊嚴還能不能存續。書名來自 1969 年瑞典礦工罷工時的標語，「我們不是機器」。英國六月的職缺數字，已經跌到五年新低。"
+}

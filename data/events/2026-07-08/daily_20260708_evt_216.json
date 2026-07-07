@@ -1,0 +1,63 @@
+{
+  "event_id": "daily_20260708_evt_216",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Claude登上手機",
+  "context": "Anthropic 把旗下的 AI 代理工具 Claude Cowork 擴展到手機與網頁版。現在使用者可以在電腦上啟動一項任務，闔上筆電後，任務仍會繼續跑，還能在手機上收到進度通知，最後直接在手機上看結果。",
+  "article_ids": [
+    "d2da1caf025980716c47440e77196ffb788c49e4785cc8ca958e33a3f21dc964",
+    "ae83886aa0141c62419853eb95cf2a6bc6f97a41904156214e7f43482d46cc42"
+  ],
+  "sources": [
+    {
+      "source_id": "wired_ai",
+      "name": "Wired",
+      "publisher": "Wired",
+      "summary": "Claude Cowork now keeps working on tasks even after you close your laptop. It’s part of a larger push toward smartphone-controlled agents.",
+      "title": "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone",
+      "url": "https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/",
+      "published_at": "2026-07-08T00:00:00+08:00"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "With this update, users can start a task from their desk, get status updates on their phone, and pick up the finished output later — even if their laptop is closed.",
+      "title": "Claude Cowork expands to mobile and web",
+      "url": "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/",
+      "published_at": "2026-07-08T00:27:18+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 58,
+  "selection_reason": "multi_source_confirmed; source_tier_2; ai_major_model_or_policy",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Claude Cowork 現在闔上筆電後仍會繼續執行任務，是往手機操控 AI 代理發展的一部分。",
+      "source_id": "wired_ai",
+      "source_title": "Shut Those Laptops! Anthropic Puts Its Claude Cowork Agent on Your Phone",
+      "source_url": "https://www.wired.com/story/shut-those-laptops-anthropic-puts-its-claude-cowork-agent-on-your-phone/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "使用者可以在電腦上啟動任務，在手機收到進度通知，最後在手機上看完成的結果。",
+      "source_id": "techcrunch_ai",
+      "source_title": "Claude Cowork expands to mobile and web",
+      "source_url": "https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "Claude登上手機\n\nAnthropic 把旗下的 AI 代理工具 Claude Cowork 擴展到手機與網頁版。現在使用者可以在電腦上啟動一項任務，闔上筆電後，任務仍會繼續在背景執行，還能在手機上收到進度通知，最後直接在手機上看到完成的結果。\n\n這是 AI 代理工具往「手機也能操控」方向前進的一部分。\n\n本則整理自 Wired 與 TechCrunch 於 2026 年 7 月 8 日發佈的報導。",
+  "threads_text": "Claude登上手機\n\nAnthropic 把旗下的 AI 代理工具 Claude Cowork 擴展到手機與網頁版。現在使用者可以在電腦上啟動一項任務，闔上筆電後，任務仍會在背景繼續執行，還能在手機上收到進度通知，最後直接在手機上看到完成的結果，不用一直守在電腦前。\n\n這是 AI 代理工具往「手機也能操控」方向前進的一部分，也是這波 AI 助理搶進行動裝置的一環。\n\n本則整理自 Wired 與 TechCrunch 於 2026 年 7 月 8 日發佈的報導。",
+  "voice_text": "Anthropic 把旗下的 AI 代理工具 Claude Cowork 擴展到手機與網頁版。現在你可以在電腦上啟動一項任務，闔上筆電後，任務會在背景繼續跑，手機上還能收到進度通知，最後直接在手機看完成的結果。這是 AI 代理工具往手機端發展的一部分。"
+}

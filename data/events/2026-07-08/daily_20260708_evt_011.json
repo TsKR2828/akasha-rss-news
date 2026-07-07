@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260708_evt_011",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "Want to Truly Understand the World Cup? Check Out These Books.",
+  "context": "Three authors chronicle the history of the World Cup and of U.S. men’s soccer.",
+  "article_ids": [
+    "6483970d2e0601dac60fe84a3d6ed206cdc0a527fc5c19e291481e7d272e0543",
+    "344bbadb6917e89704fd259ca59f91cdf6ac73a0df894a3c32d183fcbb1d4455"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Three authors chronicle the history of the World Cup and of U.S. men’s soccer.",
+      "title": "Want to Truly Understand the World Cup? Check Out These Books.",
+      "url": "https://www.nytimes.com/2026/07/06/books/review/world-cup-soccer-books.html",
+      "published_at": "2026-07-07T04:30:07+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Want to Truly Understand the World Cup? Check Out These Books.",
+      "source_id": "nyt_books",
+      "source_title": "Want to Truly Understand the World Cup? Check Out These Books.",
+      "source_url": "https://www.nytimes.com/2026/07/06/books/review/world-cup-soccer-books.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Understanding the World Cup in 3 Books",
+      "source_id": "nyt_books",
+      "source_title": "Understanding the World Cup in 3 Books",
+      "source_url": "https://www.nytimes.com/video/books/100000010953525/understanding-the-world-cup-in-3-books.html",
+      "support_type": "direct"
+    }
+  ]
+}

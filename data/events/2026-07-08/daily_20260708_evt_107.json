@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260708_evt_107",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "Book Review: ‘City of Fortune,’ by Mason B. Williams",
+  "context": "A new book by the historian Mason B. Williams chronicles the dubious effects of school, housing and police reforms by local politicians on the right.",
+  "article_ids": [
+    "add5ad8ac1b44bb5f58f164c6aa9a39c81de61c50fa688df712491f36ff2941b"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "A new book by the historian Mason B. Williams chronicles the dubious effects of school, housing and police reforms by local politicians on the right.",
+      "title": "Book Review: ‘City of Fortune,’ by Mason B. Williams",
+      "url": "https://www.nytimes.com/2026/07/07/books/review/city-of-fortune-mason-williams.html",
+      "published_at": "2026-07-07T17:03:07+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -37,
+  "selection_reason": "source_tier_2; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Book Review: ‘City of Fortune,’ by Mason B. Williams",
+      "source_id": "nyt_books",
+      "source_title": "Book Review: ‘City of Fortune,’ by Mason B. Williams",
+      "source_url": "https://www.nytimes.com/2026/07/07/books/review/city-of-fortune-mason-williams.html",
+      "support_type": "direct"
+    }
+  ]
+}

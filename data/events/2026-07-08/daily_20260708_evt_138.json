@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260708_evt_138",
+  "beat": "ARTS",
+  "sub_beat": null,
+  "headline": "Dolly Parton Musical Heads to Broadway in December",
+  "context": "The show about the country music queen, “Dolly: A True Original Musical,” will begin performances on Broadway in December.",
+  "article_ids": [
+    "e2b407669b37747e631425d9e9799ad6cc24ad0d1f4e9a444d8202de35549a73",
+    "80d749f0846e87a6189af7d4e49987bea230d647716a5b72b46a0b2ba3c41d55"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_arts",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The show about the country music queen, “Dolly: A True Original Musical,” will begin performances on Broadway in December.",
+      "title": "Dolly Parton Musical Heads to Broadway in December",
+      "url": "https://www.nytimes.com/2026/07/07/theater/dolly-parton-musical-broadway-opening.html",
+      "published_at": "2026-07-07T20:00:06+08:00"
+    },
+    {
+      "source_id": "guardian_culture",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "After a run in Nashville, Dolly: A True Original Musical is set to open in New York in December Dolly Parton will celebrate turning 81 with the opening of a musical about her life on Broadway later this year. Dolly: A True Original Musical is billed as “a remarkable journey through the life of this trailblazing woman” and is set to begin previews at New York’s St James Theatre on 7 December before opening on 19 January, the singer’s birthday. Continue reading...",
+      "title": "Dolly Parton musical set for Broadway this winter: ‘a dream come true’",
+      "url": "https://www.theguardian.com/music/2026/jul/07/dolly-parton-broadway-musical",
+      "published_at": "2026-07-07T23:07:25+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Dolly Parton Musical Heads to Broadway in December",
+      "source_id": "nyt_arts",
+      "source_title": "Dolly Parton Musical Heads to Broadway in December",
+      "source_url": "https://www.nytimes.com/2026/07/07/theater/dolly-parton-musical-broadway-opening.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Dolly Parton musical set for Broadway this winter: ‘a dream come true’",
+      "source_id": "guardian_culture",
+      "source_title": "Dolly Parton musical set for Broadway this winter: ‘a dream come true’",
+      "source_url": "https://www.theguardian.com/music/2026/jul/07/dolly-parton-broadway-musical",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -18,6 +18,29 @@
 
 ## 確切指令序列（依序執行，不得跳步）
 
+### ⚠️ 前置最高優先 — 鎖定今天日期（Asia/Taipei），不准用系統時鐘判斷
+
+**不准用沙盒系統時鐘、`date`、或憑印象判斷「今天」。** 沙盒時鐘是 UTC；台北早上
+05:00 觸發時，UTC 還停在「昨天」的 21:00。若直接讀系統時間，日期會算成昨天，
+於是看到昨天的館報已存在、就誤判「今天已完成、無事可做」而收工——
+**這正是 2026-07-07 當天整份館報漏產、沒寫進 GitHub 的事故原因。**
+
+先用台北時區實算今天日期，之後所有 `{date}` / `YYYYMMDD` 一律代入這個值：
+
+```bash
+DATE=$(python -c "from datetime import datetime, timezone, timedelta; print(datetime.now(timezone(timedelta(hours=8))).strftime('%Y-%m-%d'))")
+echo "今天（Asia/Taipei）= $DATE"
+```
+
+（`src/pipeline.py` 未給 `--date` 時預設即用 `datetime.now(TAIPEI)`，本來就會算對——
+但**唯一安全的做法是實際把 pipeline 跑起來**，不要在跑之前自己先用系統時鐘推斷日期。）
+
+**⛔ 嚴禁「看起來做過就跳過」。** 不准因為 git log 有近期 commit、或 `output/`
+已有某天的檔案，就判定「今天已完成」而不跑流程。**每天都必須實際跑完下列 Step，
+產出 `$DATE` 當天的館報。** 同日重跑是安全的（idempotent，formatter 覆寫）。
+判斷「今天做了沒」的唯一依據，是 `output/daily_<今天YYYYMMDD>.json` 是否為
+**這次流程新產生的**——不是 git log 上有沒有近期報告。
+
 ### Step 0 — 同步最新程式碼
 
 ```bash
@@ -118,6 +141,9 @@ python scripts/verify_output.py --date {date}
 - 中間資料（`data/raw/`、`data/articles/`、`data/events/`）也會覆寫
 - run log 同名覆寫
 
+→ 因此「今天好像已經有報告」**不是**跳過的理由；idempotent 的用意就是讓你可以放心
+一律重跑。唯一要小心的是別動到**其他日期**的檔案（見下方分支保護鐵則）。
+
 ---
 
 ## 產出與 push
@@ -176,3 +202,14 @@ verify_output 結果：{PASS | FAILED（{N} 條）}
 ```
 
 若 pipeline 失敗（exit 2）或 status = failed，回報失敗步驟和錯誤訊息。
+
+### ⛔ 完成的唯一標準
+
+本 Routine 的產物是「`$DATE` 當天的六件套館報，已 push 到 `daily-reports` 分支」。
+
+- **不准**把本任務當成「檢查工作分支有沒有程式要 commit / 要不要開 PR」。工作分支
+  （`claude/*`）乾不乾淨、有沒有 PR，**與本任務無關**——本 Routine 不開 PR，
+  產物直接進 `daily-reports`。
+- 只要 `$DATE` 當天的館報還沒 push 到 `daily-reports`，任務就**尚未完成**，
+  即使工作分支是乾淨的。回報「無事可做」之前，先確認 `daily-reports` 上確實有
+  `output/daily_<今天YYYYMMDD>.md`。

@@ -6,6 +6,36 @@ Enabled sources：27 / 0 failed（2026-07-06：雲端自抓 27/27 全 200 OK）
 
 ---
 
+## 2026-07-07 — Routine 跨日邊界事故：漏產當日館報（routine_prompt 修復）
+
+**症狀**：7/7 的 Routine 正常執行卻沒寫進 GitHub，daily-reports 無 `daily_20260707`。
+
+**根因（時區/跨日邊界，review-protocol B5-3 明列的經典地雷）**：Routine 於 05:00
+Asia/Taipei 觸發 = 21:00 UTC（前一天）。雲端 sandbox 時鐘是 UTC。agent 這次**沒先跑
+pipeline**，而是用系統時鐘/git log 自行判斷「今天」→ 得到 7/6 → 看到 7/6 館報已存在
+→ 誤判「今天已完成、無事可做」而收工（還把任務當成「工作分支要不要開 PR」，見乾淨即結束）。
+`src/pipeline.py:541` 的 `datetime.now(TAIPEI)` 其實會算對 7/7，但 agent 根本沒讓它跑。
+（現在 UTC 已過午夜、也是 7/7，故此刻重跑即正確——反證 bug 僅發生在 05:00–08:00 台北窗口。）
+
+**修復（prompts/routine_prompt.md，純文件；無測試基礎設施）**：
+- 新增「前置最高優先 — 鎖定今天日期（Asia/Taipei）」：明令不准用系統時鐘/`date`/印象判斷
+  今天，改用 `python -c "...timezone(timedelta(hours=8))..."` 實算 `$DATE`，所有 `{date}`
+  代入此值。
+- 明令「⛔ 嚴禁看起來做過就跳過」：git log 有近期 commit 或 output/ 已有某天檔案，都不是
+  跳過理由；每天必實跑產出 `$DATE` 當天館報（idempotent 覆寫安全）。
+- idempotent 段補「已存在不是跳過理由」。
+- 新增「完成的唯一標準」：產物 = `$DATE` 當天六件套已 push 到 daily-reports；工作分支
+  乾不乾淨/有無 PR 與本任務無關，本 Routine 不開 PR。
+
+**教訓**：排程 prompt 不能只寫「現在是台灣早上 05:00」就把日期判斷丟給 agent——跨日邊界
+＋UTC sandbox 會讓 agent 算成前一天。日期必須在 prompt 裡強制用目標時區實算，且禁止
+agent 用「看起來已完成」短路跳過實際產製。測試維持 441 全綠（未動 src/）。
+
+當日 7/7 館報補產：修復推 main 後，於 claude.ai 重新觸發 Routine 即可（此刻已過 UTC 午夜、
+會正確算成 7/7，且會 git pull 到修好的 prompt）。
+
+---
+
 ## 2026-07-06 — 0706 健檢修復波（FIX-A~E；Fable 建圖 / Sonnet 施工 / Opus 驗證）
 
 依 `review-protocol-v1` 全量健檢（結論 PASS WITH ISSUES）→ 5 項修復 + 1 項資料救援。工作流：Fable 建地圖、Sonnet 照圖施工、Opus 三路並行驗證；其中 FIX-A 被 Opus 驗證打回，由 Opus 主模型重做。

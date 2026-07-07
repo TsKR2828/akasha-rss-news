@@ -1,0 +1,1778 @@
+{
+  "reportId": "daily_20260622",
+  "date": "2026-06-22",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-06-22T05:15:31.642625+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260622_evt_060",
+          "headline": "烏克蘭打油庫，克里米亞停售汽油",
+          "context": "俄羅斯占領的克里米亞半島（Crimea）週日宣布暫停對一般民眾的汽油銷售，因烏克蘭密集攻擊當地油料設施。在這之前，燃料就已因戰時補給吃緊而開始配給。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n烏克蘭打油庫，克里米亞停售汽油\n\n俄羅斯控制的克里米亞（Crimea）週日下令暫停民用汽油銷售。理由是烏克蘭近期密集攻擊當地的油料設施，讓本來就吃緊的燃料供應雪上加霜。在這之前，燃料就已因補給路線屢遭攻擊而開始配給了。\n\n—— 本則來自 BBC 與 NPR，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "俄羅斯控制的克里米亞半島（Crimea）週日宣布，暫停一般民眾的汽油銷售。烏克蘭近期密集攻擊當地油料設施，讓補給本就吃緊的燃料情況更加惡化。其實早在這次禁售前，克里米亞就已因供應路線受到攻擊而實施燃料配給。\n\n本則整理自 BBC 與 NPR 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "克里米亞停賣汽油了。俄羅斯占領的克里米亞半島週日宣布暫停民用汽油銷售，烏克蘭近期密集攻擊當地油料設施，是導火線之一。其實在這之前，當地燃料就已開始配給限量。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n烏克蘭打油庫，克里米亞停售汽油\n\n俄羅斯控制的克里米亞（Crimea）週日下令暫停民用汽油銷售。理由是烏克蘭近期密集攻擊當地的油料設施，讓本來就吃緊的燃料供應雪上加霜。在這之前，燃料就已因補給路線屢遭攻擊而開始配給了。\n\n—— 本則來自 BBC 與 NPR，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "俄羅斯控制的克里米亞半島（Crimea）週日宣布，暫停一般民眾的汽油銷售。烏克蘭近期密集攻擊當地油料設施，讓補給本就吃緊的燃料情況更加惡化。其實早在這次禁售前，克里米亞就已因供應路線受到攻擊而實施燃料配給。\n\n本則整理自 BBC 與 NPR 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "克里米亞停賣汽油了。俄羅斯占領的克里米亞半島週日宣布暫停民用汽油銷售，烏克蘭近期密集攻擊當地油料設施，是導火線之一。其實在這之前，當地燃料就已開始配給限量。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Fuel had already been rationed due to shortages caused by Kyiv's attacks against supply routes in Russian-occupied territories.",
+              "title": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
+              "url": "https://www.bbc.com/news/articles/clyx2lk9d15o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-21T18:55:05+08:00"
+            },
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Officials in Russia-occupied Crimea suspended civilian gasoline sales Sunday as Ukraine ramped up attacks on fuel supplies on the Black Sea peninsula.",
+              "title": "Ukrainian attacks prompt Russian-held Crimea to halt civilian gasoline sales",
+              "url": "https://www.npr.org/2026/06/21/g-s1-129200/ukrainian-attacks-russia-crimea-halt-gas-sales",
+              "published_at": "2026-06-21T21:55:06+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "克里米亞暫停民用汽油銷售，因烏克蘭攻擊油料設施",
+              "source_id": "bbc_world",
+              "source_title": "Fuel sales halted in occupied Crimea as Ukraine targets oil facilities",
+              "source_url": "https://www.bbc.com/news/articles/clyx2lk9d15o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "俄占克里米亞週日暫停民用汽油銷售，烏克蘭加強攻擊燃料供應",
+              "source_id": "npr_world",
+              "source_title": "Ukrainian attacks prompt Russian-held Crimea to halt civilian gasoline sales",
+              "source_url": "https://www.npr.org/2026/06/21/g-s1-129200/ukrainian-attacks-russia-crimea-halt-gas-sales",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260622_evt_026",
+          "headline": "川普威脅伊朗，范斯赴瑞士談判",
+          "context": "美國副總統 JD Vance（范斯）本週日飛抵瑞士，與伊朗官員直接對話。川普人不在現場，卻同步放話威脅：伊朗若不約束黎巴嫩的真主黨（Hezbollah），美軍隨時可以再打。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n川普威脅伊朗，范斯赴瑞士談判\n\n副總統 JD Vance（范斯）人在瑞士，與伊朗官員展開直接對談。川普沒有出席，但他一邊讓外交進行，一邊威脅要「再狠狠打一次」——條件是伊朗得管住黎巴嫩的真主黨（Hezbollah）。伊朗談判代表也放話還擊，現場你來我往。\n\n—— 本則來自 Reuters、NPR 與 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "副總統 JD Vance（范斯）本週日飛抵瑞士，與伊朗官員展開直接對話。川普沒有出席談判，但他同步在網路上威脅：如果伊朗不約束黎巴嫩的真主黨（Hezbollah），美軍隨時準備「再狠狠打一次」。伊朗談判代表毫不客氣，也放話還擊。談判桌上談、場外互相警告，這場瑞士峰會既像是外交突破，又像是邊談邊吵。\n\n本則整理自 Reuters、NPR 與 BBC 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "川普威脅：伊朗若不約束真主黨，美軍隨時再打。副總統 JD Vance 范斯本週日飛赴瑞士，與伊朗官員面對面坐下來。川普人不在場，卻在外面同步放話，說可以「再狠狠打一次」。伊朗這邊也不示弱，談判代表還了嘴。兩邊一邊談、一邊互相喊話，局面算不上穩定。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n川普威脅伊朗，范斯赴瑞士談判\n\n副總統 JD Vance（范斯）人在瑞士，與伊朗官員展開直接對談。川普沒有出席，但他一邊讓外交進行，一邊威脅要「再狠狠打一次」——條件是伊朗得管住黎巴嫩的真主黨（Hezbollah）。伊朗談判代表也放話還擊，現場你來我往。\n\n—— 本則來自 Reuters、NPR 與 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "副總統 JD Vance（范斯）本週日飛抵瑞士，與伊朗官員展開直接對話。川普沒有出席談判，但他同步在網路上威脅：如果伊朗不約束黎巴嫩的真主黨（Hezbollah），美軍隨時準備「再狠狠打一次」。伊朗談判代表毫不客氣，也放話還擊。談判桌上談、場外互相警告，這場瑞士峰會既像是外交突破，又像是邊談邊吵。\n\n本則整理自 Reuters、NPR 與 BBC 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普威脅：伊朗若不約束真主黨，美軍隨時再打。副總統 JD Vance 范斯本週日飛赴瑞士，與伊朗官員面對面坐下來。川普人不在場，卻在外面同步放話，說可以「再狠狠打一次」。伊朗這邊也不示弱，談判代表還了嘴。兩邊一邊談、一邊互相喊話，局面算不上穩定。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Trump threatens Iran with fresh strikes as Vance leads peace talks in Switzerland Reuters",
+              "title": "Trump threatens Iran with fresh strikes as Vance leads peace talks in Switzerland - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd3B1UzBaM0FMeEpSTFF5N3J3NXFHanp0a0VKUlprczNXWVJCa0VmSUZxY1ZqYkNPdHBrVml3clJUZzdpck1DY3djZHR6ZTFMeU5HdHVTaTJPMV81Q0VJY1E3TWZyU2RlM0ZVZDJKZ2RERnRETURQRmM4MElPajdMV3VzNW4tUEVVWDZlWG1QTGU5dHVTX2NXdjd5UHd2blpVeW5QNE91cnRnYy1vN25BRTA0RjdzMTZ4X2lQd01JdmM2SnVD?oc=5",
+              "published_at": "2026-06-21T07:49:00+08:00"
+            },
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "President Trump has threatened further attacks on Iran while Vice President Vance attended talks with Iranian officials in Switzerland on Sunday.",
+              "title": "Trump threatens to 'hit Iran very hard again' while Vance in Switzerland for talks",
+              "url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance",
+              "published_at": "2026-06-22T01:29:57+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The US president, who is not at the talks, threatens to attack Iran if it does not restrain Hezbollah in Lebanon.",
+              "title": "Trump and Iran's negotiator trade warnings as talks held in Switzerland",
+              "url": "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-22T03:33:09+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "副總統 Vance 赴瑞士與伊朗官員直接對話",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Trump threatens Iran with fresh strikes as Vance leads peace talks in Switzerland - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOd3B1UzBaM0FMeEpSTFF5N3J3NXFHanp0a0VKUlprczNXWVJCa0VmSUZxY1ZqYkNPdHBrVml3clJUZzdpck1DY3djZHR6ZTFMeU5HdHVTaTJPMV81Q0VJY1E3TWZyU2RlM0ZVZDJKZ2RERnRETURQRmM4MElPajdMV3VzNW4tUEVVWDZlWG1QTGU5dHVTX2NXdjd5UHd2blpVeW5QNE91cnRnYy1vN25BRTA0RjdzMTZ4X2lQd01JdmM2SnVD?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "川普威脅若伊朗不約束黎巴嫩真主黨將再度攻擊",
+              "source_id": "npr_world",
+              "source_title": "Trump threatens to 'hit Iran very hard again' while Vance in Switzerland for talks",
+              "source_url": "https://www.npr.org/2026/06/21/g-s1-129222/us-iran-deal-lebanon-israel-strait-hormuz-jd-vance",
+              "support_type": "direct"
+            },
+            {
+              "claim": "伊朗談判代表與川普互相放話警告",
+              "source_id": "bbc_world",
+              "source_title": "Trump and Iran's negotiator trade warnings as talks held in Switzerland",
+              "source_url": "https://www.bbc.com/news/articles/cwy0q41v1lzo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260622_evt_021",
+          "headline": "澤倫斯基：俄軍大規模攻勢逼近",
+          "context": "烏克蘭總統 Volodymyr Zelenskyy（澤倫斯基）發出警告，稱俄羅斯即將發動大規模攻擊。目前消息來自單一來源，細節有限。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n澤倫斯基：俄軍大規模攻勢逼近\n\n烏克蘭總統 Volodymyr Zelenskyy（澤倫斯基）發出警告，稱俄羅斯正準備對烏克蘭發動大規模攻擊。目前這則消息來自單一來源，細節待後續報導確認。\n\n—— 本則來自 Reuters，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "烏克蘭總統 Volodymyr Zelenskyy（澤倫斯基）發出警告，俄羅斯正準備對烏克蘭發動大規模攻擊。目前這則消息來自單一報導，細節尚待更多確認。\n\n本則整理自 Reuters 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "澤倫斯基發出警告：俄軍大規模攻勢即將來臨。烏克蘭總統 Volodymyr Zelenskyy 說，俄羅斯正在籌備一波大規模攻擊。目前消息只有一個來源，細節待後續確認。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n澤倫斯基：俄軍大規模攻勢逼近\n\n烏克蘭總統 Volodymyr Zelenskyy（澤倫斯基）發出警告，稱俄羅斯正準備對烏克蘭發動大規模攻擊。目前這則消息來自單一來源，細節待後續報導確認。\n\n—— 本則來自 Reuters，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "烏克蘭總統 Volodymyr Zelenskyy（澤倫斯基）發出警告，俄羅斯正準備對烏克蘭發動大規模攻擊。目前這則消息來自單一報導，細節尚待更多確認。\n\n本則整理自 Reuters 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "澤倫斯基發出警告：俄軍大規模攻勢即將來臨。烏克蘭總統 Volodymyr Zelenskyy 說，俄羅斯正在籌備一波大規模攻擊。目前消息只有一個來源，細節待後續確認。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Zelenskiy warns of impending massive Russian attack on Ukraine Reuters",
+              "title": "Zelenskiy warns of impending massive Russian attack on Ukraine - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNG40dHk2d1d1a3NhdEZudGk4LXVFYVVkbVVrX3hnUmdSaVJRUGRwR2lSU2gtSFJTVXoxM1JlbWtkQmFWRklVV0lsNU5nUXdaZGMzV1RFcTR1VkU5bzc1WXhKMXRnRlNUUnBiVjYzaHdROURPdF9pekVIUUJiSVViWlRHQTF6NFhnVU56REJ0XzFZaFdHVFRuMDJlb2NyUE5UU1RtQUxhV2g?oc=5",
+              "published_at": "2026-06-21T07:11:43+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "澤倫斯基警告俄羅斯即將發動大規模攻擊",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Zelenskiy warns of impending massive Russian attack on Ukraine - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNG40dHk2d1d1a3NhdEZudGk4LXVFYVVkbVVrX3hnUmdSaVJRUGRwR2lSU2gtSFJTVXoxM1JlbWtkQmFWRklVV0lsNU5nUXdaZGMzV1RFcTR1VkU5bzc1WXhKMXRnRlNUUnBiVjYzaHdROURPdF9pekVIUUJiSVViWlRHQTF6NFhnVU56REJ0XzFZaFdHVFRuMDJlb2NyUE5UU1RtQUxhV2g?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260622_evt_022",
+          "headline": "哥倫比亞大選，左右兩路對決",
+          "context": "哥倫比亞（Colombia）總統大選決選登場，一位主張和武裝幫派談判的左派參議員，對上一位獲得川普背書的政治素人候選人。選戰核心是這個國家持續升溫的內部武裝衝突問題。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n哥倫比亞大選，左右兩路對決\n\n哥倫比亞（Colombia）總統大選進入決選，一位主張與武裝幫派展開談判的左派參議員，對上一位受川普公開背書的政治素人。兩人的分歧核心，是一場越來越激烈、也越來越血腥的國內武裝衝突。這則消息來自單一來源。\n\n—— 本則來自 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "哥倫比亞（Colombia）總統大選進入最終決選。一位左派參議員主張與國內武裝幫派展開談判，對上一位獲得川普公開背書的政治素人候選人。兩人之間的路線差異，被一場不斷升溫的國內武裝衝突所放大。這則消息來自單一報導，細節待確認。\n\n本則整理自 BBC 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "哥倫比亞大選決賽開打了。一位主張跟武裝幫派談判的左派參議員，對上一位受川普背書的政治素人。兩人選情的底色，是這個國家持續惡化的內部武裝衝突。目前消息來自單一報導。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n哥倫比亞大選，左右兩路對決\n\n哥倫比亞（Colombia）總統大選進入決選，一位主張與武裝幫派展開談判的左派參議員，對上一位受川普公開背書的政治素人。兩人的分歧核心，是一場越來越激烈、也越來越血腥的國內武裝衝突。這則消息來自單一來源。\n\n—— 本則來自 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "哥倫比亞（Colombia）總統大選進入最終決選。一位左派參議員主張與國內武裝幫派展開談判，對上一位獲得川普公開背書的政治素人候選人。兩人之間的路線差異，被一場不斷升溫的國內武裝衝突所放大。這則消息來自單一報導，細節待確認。\n\n本則整理自 BBC 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "哥倫比亞大選決賽開打了。一位主張跟武裝幫派談判的左派參議員，對上一位受川普背書的政治素人。兩人選情的底色，是這個國家持續惡化的內部武裝衝突。目前消息來自單一報導。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "A left-wing senator who backs talks with armed gangs faces an outsider endorsed by Trump.",
+              "title": "Colombia's escalating, brutal internal conflict is defining its presidential election",
+              "url": "https://www.bbc.com/news/articles/cvgqv8q1ndpo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-21T07:17:51+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "哥倫比亞總統大選決選：左派參議員對上川普背書的政治素人",
+              "source_id": "bbc_world",
+              "source_title": "Colombia's escalating, brutal internal conflict is defining its presidential election",
+              "source_url": "https://www.bbc.com/news/articles/cvgqv8q1ndpo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260622_evt_013",
+          "headline": "塞爾維亞北部示威，要求提前選舉",
+          "context": "塞爾維亞（Serbia）北部有數千人上街示威，要求政府提前舉行大選。目前消息來自單一來源，細節有限。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際\n\n塞爾維亞北部示威，要求提前選舉\n\n目前報導指出，塞爾維亞（Serbia）北部有數千人走上街頭，要求政府提前舉行大選。這則消息目前來自單一來源，更多細節尚待確認。\n\n—— 本則來自 Reuters，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "塞爾維亞（Serbia）北部有數千人上街示威，要求政府提前舉行大選。這則消息目前來自單一報導，更多細節尚待確認。\n\n本則整理自 Reuters 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "塞爾維亞北部有人在示威。數千人走上街頭，要求提前舉行大選。目前這則消息尚待更多資訊確認。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際\n\n塞爾維亞北部示威，要求提前選舉\n\n目前報導指出，塞爾維亞（Serbia）北部有數千人走上街頭，要求政府提前舉行大選。這則消息目前來自單一來源，更多細節尚待確認。\n\n—— 本則來自 Reuters，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "塞爾維亞（Serbia）北部有數千人上街示威，要求政府提前舉行大選。這則消息目前來自單一報導，更多細節尚待確認。\n\n本則整理自 Reuters 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "塞爾維亞北部有人在示威。數千人走上街頭，要求提前舉行大選。目前這則消息尚待更多資訊確認。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Thousands rally in Serbia's north to demand early elections Reuters",
+              "title": "Thousands rally in Serbia's north to demand early elections - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS2h3OUJSaUFGbEhXblpmNTRIbUkyQkdUU2dIamtYclBfSlNMdmhjMDZ2VFJYLTdkYjJIY0p2UUJQRFNZbTdsRXBKOUJXcWE2bDRSeEJWZjVhcHNMV2RTd2JUR2JFUC1ncEhzX3I0ZGpOM1RyMGNEajNaZHlWb21yX2xhY3Q0cExPMEFlTFhrR2NURGZJbGc2Zmd3?oc=5",
+              "published_at": "2026-06-21T05:54:11+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "塞爾維亞北部數千人示威要求提前大選",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Thousands rally in Serbia's north to demand early elections - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNS2h3OUJSaUFGbEhXblpmNTRIbUkyQkdUU2dIamtYclBfSlNMdmhjMDZ2VFJYLTdkYjJIY0p2UUJQRFNZbTdsRXBKOUJXcWE2bDRSeEJWZjVhcHNMV2RTd2JUR2JFUC1ncEhzX3I0ZGpOM1RyMGNEajNaZHlWb21yX2xhY3Q0cExPMEFlTFhrR2NURGZJbGc2Zmd3?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260622_evt_002",
+          "headline": "《龍之家族》回歸，兩位主演談心",
+          "context": "《龍之家族》（House of the Dragon）——《冰與火之歌》的前傳——新季即將播出，Matt Smith 談如何從《神秘博士》的正派轉型演反派；Olivia Cooke 則分享新一季爭議角色的感受。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n《龍之家族》回歸，兩位主演談心\n\n《龍之家族》（House of the Dragon）——《冰與火之歌》（Game of Thrones）的前傳——新季快到了，兩位主演各自接受採訪。Matt Smith 因《神秘博士》（Doctor Who）廣受喜愛，他說偏偏就是喜歡拿這種討喜形象去演一個個殺手和壞人。Olivia Cooke 則說新一季她飾演的角色很容易讓觀眾起爭議，她接受這一點。\n\n—— 本則來自 The New York Times 與 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "《龍之家族》（House of the Dragon）是《冰與火之歌》（Game of Thrones）的前傳，新季即將回歸。Matt Smith 因主演《神秘博士》（Doctor Who）而廣受喜愛，但他說自己偏偏喜歡拿這種討喜形象，去演一系列殺手和反派角色。另一位主演 Olivia Cooke 也接受採訪，說新一季的角色會讓不少觀眾有意見，她本人接受這件事——還笑說她爸爸才剛開始追第一季。\n\n本則整理自 The New York Times 與 The Guardian 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "《龍之家族》新季快來了。Matt Smith 從《神秘博士》的親切主角，一路演到系列殺手和反派，他說這種反差正是他著迷的地方。Olivia Cooke 飾演的新角色有點爭議性，她說她早就有心理準備，還說她爸爸才剛開始追第一季。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n《龍之家族》回歸，兩位主演談心\n\n《龍之家族》（House of the Dragon）——《冰與火之歌》（Game of Thrones）的前傳——新季快到了，兩位主演各自接受採訪。Matt Smith 因《神秘博士》（Doctor Who）廣受喜愛，他說偏偏就是喜歡拿這種討喜形象去演一個個殺手和壞人。Olivia Cooke 則說新一季她飾演的角色很容易讓觀眾起爭議，她接受這一點。\n\n—— 本則來自 The New York Times 與 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "《龍之家族》（House of the Dragon）是《冰與火之歌》（Game of Thrones）的前傳，新季即將回歸。Matt Smith 因主演《神秘博士》（Doctor Who）而廣受喜愛，但他說自己偏偏喜歡拿這種討喜形象，去演一系列殺手和反派角色。另一位主演 Olivia Cooke 也接受採訪，說新一季的角色會讓不少觀眾有意見，她本人接受這件事——還笑說她爸爸才剛開始追第一季。\n\n本則整理自 The New York Times 與 The Guardian 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "《龍之家族》新季快來了。Matt Smith 從《神秘博士》的親切主角，一路演到系列殺手和反派，他說這種反差正是他著迷的地方。Olivia Cooke 飾演的新角色有點爭議性，她說她早就有心理準備，還說她爸爸才剛開始追第一季。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "nyt_arts",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "“Doctor Who” made him beloved. He channeled that likability into a series of murderers and misanthropes, including in this “Game of Thrones” prequel.",
+              "title": "Matt Smith Goes Dark on ‘House of the Dragon’",
+              "url": "https://www.nytimes.com/2026/06/19/arts/television/matt-smith-house-of-the-dragon.html",
+              "published_at": "2026-06-21T02:13:54+08:00"
+            },
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "The actor has a knack for playing characters that test viewers’ loyalties. As the Game of Thrones prequel returns, she talks problem fans, ‘boy mums’ and why the arts should be for everyone House of the Dragon is a massive television series. Over two seasons, the prequel to Game of Thrones has seduced viewers with its plotting, backstabbing, candlelit meetings about war, and massive sheep-munching dragons. Olivia Cooke’s dad, however, did not get the memo. We’re in London, on a stormy summer afternoon, and Cooke is sipping a bottle of neon juice (“Tell me if my teeth go purple”). Her dad texted her yesterday. She gets her phone and pulls up a photo of a television screen, with the first season of House of the Dragon loaded up and ready to go. “He said: ‘Raining outside, so starting a binge-watch.’” She laughs. “I was like, great, Dad, worked on it for six years, hope you like, kiss kiss.” What was his review? “Yes, I like it. Quite violent.” He was planning to watch another episode after he’d picked up Cooke’s nephew from school. Continue reading...",
+              "title": "‘My mum says I’m not working class any more!’: Olivia Cooke on power, privilege, and dividing audiences in House of Dragon",
+              "url": "https://www.theguardian.com/tv-and-radio/2026/jun/21/olivia-cooke-interview-house-dragon-game-thrones-girlfriend",
+              "published_at": "2026-06-21T17:00:27+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Matt Smith 談如何從 Doctor Who 正派轉型演反派",
+              "source_id": "nyt_arts",
+              "source_title": "Matt Smith Goes Dark on 'House of the Dragon'",
+              "source_url": "https://www.nytimes.com/2026/06/19/arts/television/matt-smith-house-of-the-dragon.html",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Olivia Cooke 談 House of Dragon 新角色爭議性",
+              "source_id": "guardian_culture",
+              "source_title": "'My mum says I'm not working class any more!': Olivia Cooke on power, privilege, and dividing audiences in House of Dragon",
+              "source_url": "https://www.theguardian.com/tv-and-radio/2026/jun/21/olivia-cooke-interview-house-dragon-game-thrones-girlfriend",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 38,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260622_evt_003",
+          "headline": "杜嘉班納男裝秀：浮誇是本命",
+          "context": "米蘭時裝周（Milan Fashion Week）男裝日，杜嘉班納（Dolce & Gabbana）在走秀台上玩起義大利夏天主題：微短褲、露臍背心、水晶珠寶牛仔褲，部分男模直接上身全空。這波浮誇美學是刻意的，品牌近期債務問題和管理層異動纏身。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n杜嘉班納男裝秀：浮誇是本命\n\n米蘭時裝周（Milan Fashion Week）男裝登場，杜嘉班納（Dolce & Gabbana）走秀台上是義大利夏天加強版：超短褲、肌肉背心、水晶牛仔褲，有幾位男模索性上身全空。這家品牌目前面臨債務問題和管理層異動，走秀的劇場感，有轉移外界視線的作用。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 20 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "米蘭時裝周（Milan Fashion Week）男裝日，杜嘉班納（Dolce & Gabbana）把「molto sexy 義大利美學」推到最大音量：超短褲、肌肉背心、水晶牛仔褲，部分男模直接不穿上衣走秀。這場秀的劇場感很明顯，品牌本身正面臨債務問題和管理層異動，走秀側重視覺衝擊。目前消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 20 日發佈的報導。",
+          "voice_text": "杜嘉班納在米蘭時裝周把義大利夏天玩到了極致。超短褲、肌肉背心、全身貼滿水晶的牛仔褲，幾位男模甚至直接不穿上衣走台步。品牌眼前有債務問題和管理層動盪，這場秀的劇場感，跟那個脈絡不無關係。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n杜嘉班納男裝秀：浮誇是本命\n\n米蘭時裝周（Milan Fashion Week）男裝登場，杜嘉班納（Dolce & Gabbana）走秀台上是義大利夏天加強版：超短褲、肌肉背心、水晶牛仔褲，有幾位男模索性上身全空。這家品牌目前面臨債務問題和管理層異動，走秀的劇場感，有轉移外界視線的作用。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 20 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "米蘭時裝周（Milan Fashion Week）男裝日，杜嘉班納（Dolce & Gabbana）把「molto sexy 義大利美學」推到最大音量：超短褲、肌肉背心、水晶牛仔褲，部分男模直接不穿上衣走秀。這場秀的劇場感很明顯，品牌本身正面臨債務問題和管理層異動，走秀側重視覺衝擊。目前消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 20 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "杜嘉班納在米蘭時裝周把義大利夏天玩到了極致。超短褲、肌肉背心、全身貼滿水晶的牛仔褲，幾位男模甚至直接不穿上衣走台步。品牌眼前有債務問題和管理層動盪，這場秀的劇場感，跟那個脈絡不無關係。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_fashion",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Italian house’s catwalk emphasised the brand’s ‘molto sexy’ look with flamboyant, sometimes revealing outfits Dolce & Gabbana leaned heavily into the art of theatrical misdirection on the second day of Milan fashion week as it aimed to draw attention away from its debt issues, catwalk controversies and management reshuffles. On the catwalk its signature “molto sexy” Italian aesthetic that comes served with a generous scoop of la dolce vita was in full swing. This was Euro summer on steroids. There were clingy muscle vests and micro shorts that made short shorts look modest while some models simply went topless. Jeans came ripped, shredded or smothered in sparkling jewels while T-shirts featured everything from giant prints of Sicilian lemons and ancient amphitheatres to a mosaic depiction of Christ. Continue reading...",
+              "title": "Nothing succeeds like excess at Dolce & Gabbana’s Milan menswear show",
+              "url": "https://www.theguardian.com/fashion/2026/jun/20/nothing-succeeds-like-excess-at-dolce-gabbanas-milan-menswear-show",
+              "published_at": "2026-06-21T02:55:57+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Dolce & Gabbana 米蘭時裝周男裝秀：浮誇性感美學，品牌面臨債務問題",
+              "source_id": "guardian_fashion",
+              "source_title": "Nothing succeeds like excess at Dolce & Gabbana's Milan menswear show",
+              "source_url": "https://www.theguardian.com/fashion/2026/jun/20/nothing-succeeds-like-excess-at-dolce-gabbanas-milan-menswear-show",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "sub_beat": "時尚與美學",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_033",
+          "headline": "英製片人五十公司被剔除名冊",
+          "context": "英國電影製片人 Alan Latham 旗下 50 家公司遭英國公司登記處（Companies House）強制除名，欠薪的工人和供應商已無法律主體可追討。他的作品曾找來《Frasier》的 Kelsey Grammer 出演。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n英製片人五十公司被剔除名冊\n\n英國電影製片人 Alan Latham 旗下有 50 家公司被英國公司登記處（Companies House）強制除名。問題是，那些還沒拿到錢的工人和供應商，現在連追討的法律主體都沒了——沒有公司，就沒有人可以告。他過去的作品找過《Frasier》的 Kelsey Grammer 和《Four Weddings and a Funeral》的 Anna Chancellor 出演。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國電影製片人 Alan Latham 旗下 50 家公司遭英國公司登記處（Companies House）強制除名。這帶來一個問題：那些薪水或款項還沒到帳的工人和供應商，現在連法律上的追討對象都沒有了。Latham 的製作公司過去曾找來《Frasier》的 Kelsey Grammer 和《Four Weddings and a Funeral》的 Anna Chancellor 參與演出，另有使用稅務優惠的紀錄。目前消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "英國一位電影製片人的五十家公司被政府登記處強制除名了。那些還沒拿到薪水的員工和供應商，現在連追討的法律主體都沒了。這位製片人 Alan Latham 的過去作品，曾找來《Frasier》的 Kelsey Grammer 和《Four Weddings and a Funeral》的 Anna Chancellor 出演。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n英製片人五十公司被剔除名冊\n\n英國電影製片人 Alan Latham 旗下有 50 家公司被英國公司登記處（Companies House）強制除名。問題是，那些還沒拿到錢的工人和供應商，現在連追討的法律主體都沒了——沒有公司，就沒有人可以告。他過去的作品找過《Frasier》的 Kelsey Grammer 和《Four Weddings and a Funeral》的 Anna Chancellor 出演。這則消息來自單一來源。",
+                "—— 本則來自 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國電影製片人 Alan Latham 旗下 50 家公司遭英國公司登記處（Companies House）強制除名。這帶來一個問題：那些薪水或款項還沒到帳的工人和供應商，現在連法律上的追討對象都沒有了。Latham 的製作公司過去曾找來《Frasier》的 Kelsey Grammer 和《Four Weddings and a Funeral》的 Anna Chancellor 參與演出，另有使用稅務優惠的紀錄。目前消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國一位電影製片人的五十家公司被政府登記處強制除名了。那些還沒拿到薪水的員工和供應商，現在連追討的法律主體都沒了。這位製片人 Alan Latham 的過去作品，曾找來《Frasier》的 Kelsey Grammer 和《Four Weddings and a Funeral》的 Anna Chancellor 出演。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_film",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Removal of Alan Latham’s firms means there is no longer an entity for creditors to make claims against A prolific film producer, whose projects have starred Frasier’s Kelsey Grammer and Four Weddings and a Funeral’s Anna Chancellor , has had scores of his production businesses forcibly removed from the UK’s companies register, leaving workers unable to chase unpaid fees. Alan Latham, whose low-budget films have previously raised questions over his use of tax credits , has seen 50 of his film businesses compulsorily struck off by Companies House, according to data compiled by the film workers’ union, Bectu. Continue reading...",
+              "title": "Suppliers unable to chase fees after film producer’s 50 companies are struck off",
+              "url": "https://www.theguardian.com/film/2026/jun/21/film-producer-firms-companies-register-alan-latham",
+              "published_at": "2026-06-21T14:00:22+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "製片人 Alan Latham 旗下 50 家公司遭英國公司登記處強制除名，欠薪員工無法追討",
+              "source_id": "guardian_film",
+              "source_title": "Suppliers unable to chase fees after film producer's 50 companies are struck off",
+              "source_url": "https://www.theguardian.com/film/2026/jun/21/film-producer-firms-companies-register-alan-latham",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "sub_beat": "電影",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_009",
+          "headline": "倫敦肥皂箱賽車，扮裝賽車齊飛",
+          "context": "倫敦亞歷山大宮（Alexandra Palace）舉辦年度紅牛肥皂箱賽（Red Bull Soapbox Race），參賽者穿奇裝異服、駕自製小車衝下坡道，沿途障礙重重，車子常常當場解體，吸引大批人潮圍觀。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 藝文\n\n倫敦肥皂箱賽車，扮裝賽車齊飛\n\n倫敦亞歷山大宮（Alexandra Palace）舉辦一年一度的紅牛肥皂箱賽（Red Bull Soapbox Race）。參賽者穿著奇裝異服，駕著自製小車衝下設有重重障礙的坡道，過程中車子常常直接解體。現場吸引大批人潮觀看。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 20 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "倫敦亞歷山大宮（Alexandra Palace）迎來年度紅牛肥皂箱賽（Red Bull Soapbox Race）。參賽者穿各種奇裝異服，駕著自製小車衝下設有重重障礙的坡道，不少車子就在半路散架了。現場吸引大批人潮圍觀。目前消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 20 日發佈的報導。",
+          "voice_text": "倫敦亞歷山大宮舉辦年度紅牛肥皂箱賽。參賽者穿奇裝異服，坐自製小車衝坡道，沿途有重重障礙，不少車子直接在半途散架了。現場大批人潮圍觀。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 藝文\n\n倫敦肥皂箱賽車，扮裝賽車齊飛\n\n倫敦亞歷山大宮（Alexandra Palace）舉辦一年一度的紅牛肥皂箱賽（Red Bull Soapbox Race）。參賽者穿著奇裝異服，駕著自製小車衝下設有重重障礙的坡道，過程中車子常常直接解體。現場吸引大批人潮觀看。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 20 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "倫敦亞歷山大宮（Alexandra Palace）迎來年度紅牛肥皂箱賽（Red Bull Soapbox Race）。參賽者穿各種奇裝異服，駕著自製小車衝下設有重重障礙的坡道，不少車子就在半路散架了。現場吸引大批人潮圍觀。目前消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 20 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "倫敦亞歷山大宮舉辦年度紅牛肥皂箱賽。參賽者穿奇裝異服，坐自製小車衝坡道，沿途有重重障礙，不少車子直接在半途散架了。現場大批人潮圍觀。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "The high-spirited and eccentric annual event attracts large crowds to the spectacle of fancy dress soapboxes racing – and falling apart – on a downhill course with hazards aplenty Continue reading...",
+              "title": "The Red Bull Soapbox Race at Alexandra Palace, London – in pictures",
+              "url": "https://www.theguardian.com/artanddesign/gallery/2026/jun/20/the-red-bull-soapbox-race-at-alexandra-palace-london",
+              "published_at": "2026-06-21T05:32:42+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "紅牛肥皂箱賽在倫敦亞歷山大宮舉辦，奇裝異服小車衝坡道",
+              "source_id": "guardian_art_design",
+              "source_title": "The Red Bull Soapbox Race at Alexandra Palace, London – in pictures",
+              "source_url": "https://www.theguardian.com/artanddesign/gallery/2026/jun/20/the-red-bull-soapbox-race-at-alexandra-palace-london",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "sub_beat": "視覺藝術",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260622_evt_058",
+          "headline": "AI提示升級術：二十八招",
+          "context": "想讓 ChatGPT 的回答更有用？有整理了 28 個提示技巧，涵蓋如何下提示才能得到更聰明的結果。提示工程已不只是工程師的專利。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI\n\nAI提示升級術：二十八招\n\n想讓 ChatGPT 的答案更有用？有人整理了 28 個提示技巧（prompt tips），教你怎麼問才能得到更有料的結果。這種「提示工程」（prompt engineering）已經不是工程師的專利了——普通人用對方法，也能讓 AI 的輸出質量大不同。這則消息來自單一來源。\n\n—— 本則來自 Wired，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "有人整理了 28 個讓 ChatGPT 更好用的提示技巧（prompt engineering）。這類指南的出發點是：人人都能用 AI 聊天機器人，但懂得「問法」的人，能得到差距很大的結果。目前這則消息來自單一報導。\n\n本則整理自 Wired 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "有份清單列了二十八個讓 ChatGPT 更好用的技巧。提示工程這件事，以前聽起來很技術，現在愈來愈像是一般人都值得學的基本功。怎麼問、問什麼，直接決定 AI 給你的答案好不好用。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI\n\nAI提示升級術：二十八招\n\n想讓 ChatGPT 的答案更有用？有人整理了 28 個提示技巧（prompt tips），教你怎麼問才能得到更有料的結果。這種「提示工程」（prompt engineering）已經不是工程師的專利了——普通人用對方法，也能讓 AI 的輸出質量大不同。這則消息來自單一來源。\n\n—— 本則來自 Wired，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "有人整理了 28 個讓 ChatGPT 更好用的提示技巧（prompt engineering）。這類指南的出發點是：人人都能用 AI 聊天機器人，但懂得「問法」的人，能得到差距很大的結果。目前這則消息來自單一報導。\n\n本則整理自 Wired 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有份清單列了二十八個讓 ChatGPT 更好用的技巧。提示工程這件事，以前聽起來很技術，現在愈來愈像是一般人都值得學的基本功。怎麼問、問什麼，直接決定 AI 給你的答案好不好用。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "wired_ai",
+              "name": "Wired",
+              "publisher": "Wired",
+              "summary": "Sure, anyone can use OpenAI’s chatbot. But with smart engineering, you can get way more interesting results.",
+              "title": "28 Tips to Take Your ChatGPT Prompts to the Next Level",
+              "url": "https://www.wired.com/story/28-tips-to-take-your-chatgpt-prompts-to-the-next-level/",
+              "published_at": "2026-06-21T18:30:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Wired 整理 28 個 ChatGPT 提示技巧",
+              "source_id": "wired_ai",
+              "source_title": "28 Tips to Take Your ChatGPT Prompts to the Next Level",
+              "source_url": "https://www.wired.com/story/28-tips-to-take-your-chatgpt-prompts-to-the-next-level/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260622_evt_024",
+          "headline": "AI用免費清潔來訓練機器人",
+          "context": "有家 AI 公司在紐約市提供免費到府清潔服務。背後目的不是慈善，而是收集人類清潔員的動作資料，用來訓練機器人在真實家庭環境中工作。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI\n\nAI用免費清潔來訓練機器人\n\n有家 AI 公司在紐約市（New York City）挨家挨戶提供免費清潔服務。不是慈善，是為了訓練機器人——人類清潔員在你家打掃的同時，公司收集這些動作資料，目標是讓機器人學會在真實家庭環境中工作。那些清潔員，某種程度上是在訓練未來取代自己的機器。這則消息來自單一來源。\n\n—— 本則來自 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "有家 AI 公司正在紐約市（New York City）挨家挨戶提供免費清潔服務，吸引住戶預約。免費不是慈善——公司真正的目的，是派人類清潔員上門，藉此收集家庭環境下真實的打掃動作資料，用來訓練他們希望有朝一日能取代清潔員的機器人。這則消息來自單一報導。\n\n本則整理自 BBC 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "有家 AI 公司在紐約免費幫人打掃家裡，真正目的是訓練機器人。人類清潔員上門打掃，公司收集這些動作資料，用來教機器人如何在真實家庭環境中工作。目標是有一天讓機器人取代清潔員。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI\n\nAI用免費清潔來訓練機器人\n\n有家 AI 公司在紐約市（New York City）挨家挨戶提供免費清潔服務。不是慈善，是為了訓練機器人——人類清潔員在你家打掃的同時，公司收集這些動作資料，目標是讓機器人學會在真實家庭環境中工作。那些清潔員，某種程度上是在訓練未來取代自己的機器。這則消息來自單一來源。\n\n—— 本則來自 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "有家 AI 公司正在紐約市（New York City）挨家挨戶提供免費清潔服務，吸引住戶預約。免費不是慈善——公司真正的目的，是派人類清潔員上門，藉此收集家庭環境下真實的打掃動作資料，用來訓練他們希望有朝一日能取代清潔員的機器人。這則消息來自單一報導。\n\n本則整理自 BBC 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有家 AI 公司在紐約免費幫人打掃家裡，真正目的是訓練機器人。人類清潔員上門打掃，公司收集這些動作資料，用來教機器人如何在真實家庭環境中工作。目標是有一天讓機器人取代清潔員。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "An AI company is sending free cleaners door-to-door in a bid to train the robots it hopes one day will replace them.",
+              "title": "Why an AI company cleaned my New York City apartment for free",
+              "url": "https://www.bbc.com/news/articles/cpwerjy20kyo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-21T07:18:55+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "AI 公司在紐約市提供免費清潔服務以收集資料訓練機器人",
+              "source_id": "bbc_technology",
+              "source_title": "Why an AI company cleaned my New York City apartment for free",
+              "source_url": "https://www.bbc.com/news/articles/cpwerjy20kyo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_023",
+          "headline": "社群媒體禁令如何改變網路使用？",
+          "context": "有論點認為，針對年輕人的社群媒體禁令，影響的不只是被禁的那群人。當年輕人的資訊管道受限，整個網路的流量模式和瀏覽習慣可能也會跟著位移。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI\n\n社群媒體禁令如何改變網路使用？\n\n有論點認為，針對年輕人的社群媒體禁令，影響的不只是被禁的那群人。隨著年輕人獲取資訊的管道被限縮，整個網路上的流量分配和瀏覽習慣，可能都會跟著位移——也就是說，這個禁令最後可能改變所有人上網的方式。這則消息來自單一來源。\n\n—— 本則來自 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "針對年輕人的社群媒體禁令，有論點認為影響的不只是被禁的一群人。當年輕人的資訊管道受限，整個網路上的流量模式和瀏覽習慣可能也會跟著變——這個論點在說，禁令最終可能重塑所有人使用網路的方式。這則消息來自單一報導，細節待確認。\n\n本則整理自 BBC 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "社群媒體禁令可能改變的，不只是被禁的年輕人。目前有觀點認為，當青少年的資訊管道受到限制，整個網路的流量和使用習慣都可能跟著位移。換句話說，這個禁令最後可能影響到所有人上網的方式。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI\n\n社群媒體禁令如何改變網路使用？\n\n有論點認為，針對年輕人的社群媒體禁令，影響的不只是被禁的那群人。隨著年輕人獲取資訊的管道被限縮，整個網路上的流量分配和瀏覽習慣，可能都會跟著位移——也就是說，這個禁令最後可能改變所有人上網的方式。這則消息來自單一來源。\n\n—— 本則來自 BBC，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "針對年輕人的社群媒體禁令，有論點認為影響的不只是被禁的一群人。當年輕人的資訊管道受限，整個網路上的流量模式和瀏覽習慣可能也會跟著變——這個論點在說，禁令最終可能重塑所有人使用網路的方式。這則消息來自單一報導，細節待確認。\n\n本則整理自 BBC 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "社群媒體禁令可能改變的，不只是被禁的年輕人。目前有觀點認為，當青少年的資訊管道受到限制，整個網路的流量和使用習慣都可能跟著位移。換句話說，這個禁令最後可能影響到所有人上網的方式。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Why some argue the social media ban could have a profound affect on how young people gain new knowledge and the rest of us move around online",
+              "title": "How the social media ban could reshape how all of us use the internet",
+              "url": "https://www.bbc.com/news/articles/c1jy512r19ro?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-06-21T07:18:12+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "社群媒體禁令可能重塑年輕人和所有人使用網路的方式",
+              "source_id": "bbc_technology",
+              "source_title": "How the social media ban could reshape how all of us use the internet",
+              "source_url": "https://www.bbc.com/news/articles/c1jy512r19ro?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_004",
+          "headline": "新工具讓你查自己在AI裡的分量",
+          "context": "「In the Weights」是一個新工具，讓你搜尋 AI 語言模型裡有多少關於你或特定主題的知識。有人說這是 AI 時代的「虛榮搜尋」。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI\n\n新工具讓你查自己在AI裡的分量\n\n「In the Weights」是一個新工具，讓你搜尋 AI 語言模型裡有多少關於你（或任何主題）的知識。有人說這是 AI 版的「虛榮搜尋」（vanity search）——就像以前 Google 自己的名字看有什麼結果，現在是去問 AI 對你的了解有多深。這則消息來自單一來源。\n\n—— 本則來自 TechCrunch，2026 年 6 月 20 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "「In the Weights」是一個新上線的工具，讓人搜尋 AI 語言模型裡有多少關於特定人物或主題的知識。有人說它是 AI 版的「虛榮搜尋」（vanity search）——類似以前 Google 自己看有什麼結果，只是搜尋對象換成了 AI 模型。目前消息來自單一報導。\n\n本則整理自 TechCrunch 於 2026 年 6 月 20 日發佈的報導。",
+          "voice_text": "有個新工具叫「In the Weights」，讓你查某個 AI 模型對你認識多少。有人把它叫做 AI 版的「虛榮搜尋」——以前是 Google 自己，現在是問 AI 你是誰。目前這則消息來自單一報導。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI\n\n新工具讓你查自己在AI裡的分量\n\n「In the Weights」是一個新工具，讓你搜尋 AI 語言模型裡有多少關於你（或任何主題）的知識。有人說這是 AI 版的「虛榮搜尋」（vanity search）——就像以前 Google 自己的名字看有什麼結果，現在是去問 AI 對你的了解有多深。這則消息來自單一來源。\n\n—— 本則來自 TechCrunch，2026 年 6 月 20 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "「In the Weights」是一個新上線的工具，讓人搜尋 AI 語言模型裡有多少關於特定人物或主題的知識。有人說它是 AI 版的「虛榮搜尋」（vanity search）——類似以前 Google 自己看有什麼結果，只是搜尋對象換成了 AI 模型。目前消息來自單一報導。\n\n本則整理自 TechCrunch 於 2026 年 6 月 20 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有個新工具叫「In the Weights」，讓你查某個 AI 模型對你認識多少。有人把它叫做 AI 版的「虛榮搜尋」——以前是 Google 自己，現在是問 AI 你是誰。目前這則消息來自單一報導。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "So ... what's your In the Weights score?",
+              "title": "In the Weights is your new AI-centric vanity search",
+              "url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
+              "published_at": "2026-06-21T03:41:11+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "「In the Weights」新工具讓用戶搜尋 AI 模型對其了解程度",
+              "source_id": "techcrunch_ai",
+              "source_title": "In the Weights is your new AI-centric vanity search",
+              "source_url": "https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260622_evt_075",
+          "headline": "川普稱讚伊朗協議，原油下跌",
+          "context": "川普在凡爾賽宮高調稱讚美伊協議，稱「市場愛它」。但荷莫茲海峽（Strait of Hormuz）的局勢仍不穩定——伊朗揚言再度關閉海峽，原油價格正在走低，這條水道承載全球約兩成的石油供應。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n川普稱讚伊朗協議，原油下跌\n\n川普在凡爾賽宮（Versailles）大力稱讚美伊協議，說市場已給出背書，並稱沒有這份協議可能引發「全球性蕭條」。但同一個周末，瑞士的和談一度取消又重啟，伊朗又聲稱以色列炸了約旦境內目標，打算再度關閉荷莫茲海峽（Strait of Hormuz）。這個海峽承載全球約兩成的石油供應，目前原油價格正在走低。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "川普在凡爾賽宮（Versailles）高調慶祝美伊協議，說「市場愛它」，並稱沒有這份協議可能導致全球性蕭條。但同個周末，瑞士和談一度喊停、又重啟，伊朗還以以色列在約旦炸了目標為由，揚言再次關閉荷莫茲海峽（Strait of Hormuz）——這條海峽運輸全球約兩成的石油。目前原油價格正在走低，希望荷莫茲能在近期全面重開。這則消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "川普稱讚美伊協議，全球石油市場卻還在等著看。荷莫茲海峽承載全球約兩成的石油，伊朗揚言再度關閉，原油價格目前走低。川普在凡爾賽宮說，少了這份協議可能是全球性蕭條——市場算是接受了這個說法，但局勢仍未穩定。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n川普稱讚伊朗協議，原油下跌\n\n川普在凡爾賽宮（Versailles）大力稱讚美伊協議，說市場已給出背書，並稱沒有這份協議可能引發「全球性蕭條」。但同一個周末，瑞士的和談一度取消又重啟，伊朗又聲稱以色列炸了約旦境內目標，打算再度關閉荷莫茲海峽（Strait of Hormuz）。這個海峽承載全球約兩成的石油供應，目前原油價格正在走低。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "川普在凡爾賽宮（Versailles）高調慶祝美伊協議，說「市場愛它」，並稱沒有這份協議可能導致全球性蕭條。但同個周末，瑞士和談一度喊停、又重啟，伊朗還以以色列在約旦炸了目標為由，揚言再次關閉荷莫茲海峽（Strait of Hormuz）——這條海峽運輸全球約兩成的石油。目前原油價格正在走低，希望荷莫茲能在近期全面重開。這則消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普稱讚美伊協議，全球石油市場卻還在等著看。荷莫茲海峽承載全球約兩成的石油，伊朗揚言再度關閉，原油價格目前走低。川普在凡爾賽宮說，少了這份協議可能是全球性蕭條——市場算是接受了這個說法，但局勢仍未穩定。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "As the price of crude oil falls governments are counting the costs of the war in the Middle East Hailing his Iran deal this week amid the excess of Versailles, Donald Trump urged sceptics to take Wall Street’s word for its success. “There is nothing as smart as the market – and the market loves it,” he said, claiming credit for ending the economic chaos that had kicked off when he started bombing Iran in late February. Without the agreement, he said, “the alternative would be a worldwide depression”. By the weekend, the outlook was less optimistic after planned US-Iran peace talks in Switzerland were abruptly called off , then reinstated, and Iran said Israeli bombing in Jordan meant it was justified in closing the strait of Hormuz again. Still, hopes persist that the sea passage carrying about 20% of the world’s oil supplies will reopen fully in the coming days and weeks. Continue reading...",
+              "title": "Trump hails Iran deal but conflict continues to cast long shadow over global economy",
+              "url": "https://www.theguardian.com/business/2026/jun/21/trump-iran-deal-long-shadow-global-economy",
+              "published_at": "2026-06-21T20:24:47+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "川普稱讚美伊協議；伊朗揚言再關閉荷莫茲海峽；原油下跌；荷莫茲承載全球約兩成石油",
+              "source_id": "guardian_business",
+              "source_title": "Trump hails Iran deal but conflict continues to cast long shadow over global economy",
+              "source_url": "https://www.theguardian.com/business/2026/jun/21/trump-iran-deal-long-shadow-global-economy",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_056",
+          "headline": "伯納姆贏補選，財政政策是關鍵",
+          "context": "英國工黨政治人物 Andy Burnham（伯納姆）在梅克菲爾德（Makerfield）補選大勝，被看好接任首相。有評論認為他必須坦誠說明稅政走向，才能繼續穩住英國債券市場的信心。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n伯納姆贏補選，財政政策是關鍵\n\n工黨政治人物 Andy Burnham（伯納姆）在梅克菲爾德（Makerfield）補選大勝，被外界看好很快進駐唐寧街。英國債券市場在他勝選後只是小幅波動，分析認為這是因為他早已宣布會遵守 Rachel Reeves 的預算規則。評論認為，接下來他得坦誠談稅，才能繼續穩住金融市場。這是評論分析，不是純新聞。\n\n—— 本則來自 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國工黨政治人物 Andy Burnham（伯納姆）大勝梅克菲爾德（Makerfield）補選，外界普遍預期他將很快接任英國首相。勝選後英國公債殖利率只微幅上升，分析認為是因為他早就公開承諾遵守前財相 Rachel Reeves 的預算規則。有評論指出，他接下來得坦誠說明稅收走向，才能讓金融市場繼續保持穩定。這是評論分析，不是純新聞報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "伯納姆大勝補選，英國首相之路看來就在眼前。Andy Burnham 贏得梅克菲爾德補選後，公債市場只是小幅波動，主要是因為他早承諾會沿用前任財相的預算規則。有評論認為，他接下來要坦誠說明稅政，才能繼續穩住市場信心。這是評論，不是定論。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n伯納姆贏補選，財政政策是關鍵\n\n工黨政治人物 Andy Burnham（伯納姆）在梅克菲爾德（Makerfield）補選大勝，被外界看好很快進駐唐寧街。英國債券市場在他勝選後只是小幅波動，分析認為這是因為他早已宣布會遵守 Rachel Reeves 的預算規則。評論認為，接下來他得坦誠談稅，才能繼續穩住金融市場。這是評論分析，不是純新聞。\n\n—— 本則來自 The Guardian，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國工黨政治人物 Andy Burnham（伯納姆）大勝梅克菲爾德（Makerfield）補選，外界普遍預期他將很快接任英國首相。勝選後英國公債殖利率只微幅上升，分析認為是因為他早就公開承諾遵守前財相 Rachel Reeves 的預算規則。有評論指出，他接下來得坦誠說明稅收走向，才能讓金融市場繼續保持穩定。這是評論分析，不是純新聞報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "伯納姆大勝補選，英國首相之路看來就在眼前。Andy Burnham 贏得梅克菲爾德補選後，公債市場只是小幅波動，主要是因為他早承諾會沿用前任財相的預算規則。有評論認為，他接下來要坦誠說明稅政，才能繼續穩住市場信心。這是評論，不是定論。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Victory in Makerfield is propelling him towards No 10 but investors expect to know how he will fund his promises Burnham allies confident of ‘coronation’ Andy Burnham’s thumping victory in the Makerfield byelection came and went without the bond market rout that Rachel Reeves’s backers had warned about. But as he moves towards the premiership, Burnham would be wise to set clear expectations about tax and spend, and to be upfront about the fact that not everyone can be a winner. The yield, or interest rate, on UK government bonds did move up on Friday, but only modestly. That relative calm was partly because a Burnham win was already priced in, and because he took out the insurance policy of loudly promising to stick by Reeves’s budget rules. Continue reading...",
+              "title": "Burnham must be upfront about tax or risk spooking the bond markets | Heather Stewart",
+              "url": "https://www.theguardian.com/politics/2026/jun/21/andy-burnham-leadership-labour-makerfield-no-10-tax-spooking-bond-markets",
+              "published_at": "2026-06-21T18:04:02+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Burnham 大勝 Makerfield 補選；英債殖利率微幅上升；他承諾遵守 Reeves 預算規則",
+              "source_id": "guardian_business",
+              "source_title": "Burnham must be upfront about tax or risk spooking the bond markets | Heather Stewart",
+              "source_url": "https://www.theguardian.com/politics/2026/jun/21/andy-burnham-leadership-labour-makerfield-no-10-tax-spooking-bond-markets",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "explicit_commentary",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_113",
+          "headline": "伯納姆盟友擬逆轉四十年私有化",
+          "context": "伯納姆的盟友週一將發布政策文件《生產性國家》（The Productive State），計畫讓英國政府逐步重新掌控 40 年來被私有化的公共事業，工具包括「以債換股」（bonds for shares）。同一天，伯納姆將在議會宣誓就任新議員席次。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n伯納姆盟友擬逆轉四十年私有化\n\n伯納姆的盟友週一發布政策文件《生產性國家》（The Productive State），計畫讓英國政府逐步接管因經營不善而面臨破產的公共事業公司，工具包括「以債換股」（bonds for shares）和設立國有競爭者。同一天，伯納姆也將在議會宣誓就任梅克菲爾德議員席次。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 22 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "伯納姆的盟友週一發布《生產性國家》（The Productive State）政策文件，要推動英國政府逆轉 40 年來的私有化政策。方案包括接管陷入困境的公共事業公司，透過「以債換股」（bonds for shares）重新取得掌控，或設立國有競爭業者。同一天，伯納姆也將在議會宣誓就任梅克菲爾德議員，外界普遍預期他將在幾週內接任首相。這則消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 22 日發佈的報導。",
+          "voice_text": "伯納姆盟友：要把四十年的私有化政策翻過來。新政策文件《生產性國家》計畫讓政府重新接管快撐不下去的公共事業，方式包括「以債換股」和設立國有競爭者。同一天，伯納姆也將在議會宣誓就任新議員席次。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n伯納姆盟友擬逆轉四十年私有化\n\n伯納姆的盟友週一發布政策文件《生產性國家》（The Productive State），計畫讓英國政府逐步接管因經營不善而面臨破產的公共事業公司，工具包括「以債換股」（bonds for shares）和設立國有競爭者。同一天，伯納姆也將在議會宣誓就任梅克菲爾德議員席次。這則消息來自單一來源。\n\n—— 本則來自 The Guardian，2026 年 6 月 22 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "伯納姆的盟友週一發布《生產性國家》（The Productive State）政策文件，要推動英國政府逆轉 40 年來的私有化政策。方案包括接管陷入困境的公共事業公司，透過「以債換股」（bonds for shares）重新取得掌控，或設立國有競爭業者。同一天，伯納姆也將在議會宣誓就任梅克菲爾德議員，外界普遍預期他將在幾週內接任首相。這則消息來自單一報導。\n\n本則整理自 The Guardian 於 2026 年 6 月 22 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "伯納姆盟友：要把四十年的私有化政策翻過來。新政策文件《生產性國家》計畫讓政府重新接管快撐不下去的公共事業，方式包括「以債換股」和設立國有競爭者。同一天，伯納姆也將在議會宣誓就任新議員席次。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Exclusive: Productive State policy paper envisages state regaining control of basics to make life affordable, in fleshing out of Manchesterism Andy Burnham’s government should reverse 40 years of privatisation with a long-term plan to take over failing utilities in administration, issuing “bonds for shares” and setting up state competitors, according to a new blueprint for “Manchesterism”. The policy paper – The Productive State – is released on Monday as Burnham arrives in Westminster to be sworn in as the MP for Makerfield. He widely expected to seek to enter No 10 to replace Keir Starmer in a matter of weeks. Continue reading...",
+              "title": "Burnham ally to unveil ambitious plan to reverse decades of privatisation",
+              "url": "https://www.theguardian.com/politics/2026/jun/21/burnham-ally-to-unveil-ambitious-plan-to-reverse-decades-of-privatisation",
+              "published_at": "2026-06-22T00:00:34+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "伯納姆盟友發布《生產性國家》政策文件，計畫逆轉 40 年私有化",
+              "source_id": "guardian_business",
+              "source_title": "Burnham ally to unveil ambitious plan to reverse decades of privatisation",
+              "source_url": "https://www.theguardian.com/politics/2026/jun/21/burnham-ally-to-unveil-ambitious-plan-to-reverse-decades-of-privatisation",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260622_evt_050",
+          "headline": "荷莫茲或重開，但中國不急補油",
+          "context": "全球因中東衝突而搶購石油，但中國已在衝突期間大量囤積原油。即使荷莫茲海峽（Strait of Hormuz）重新開放，北京也未必會立刻恢復戰前的進口規模。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 財經\n\n荷莫茲或重開，但中國不急補油\n\n全球各地為石油供應緊張而焦頭爛額，中國卻早已囤好了。目前的報導指出，即使荷莫茲海峽（Strait of Hormuz）重開，中國也不太可能立刻恢復戰前從波斯灣的石油進口量——因為倉庫已經夠滿了。這則消息來自單一來源。\n\n—— 本則來自 The New York Times，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "世界各地都在為石油供應緊張傷腦筋，中國卻已在中東衝突期間大量囤積原油。據分析，即使荷莫茲海峽（Strait of Hormuz）重開，中國短期內也不會立刻恢復戰前水準的石油採購，因為儲備量已經夠了。這則消息來自單一報導。\n\n本則整理自 The New York Times 於 2026 年 6 月 21 日發佈的報導。",
+          "voice_text": "全球搶石油，中國不急。中東衝突期間，中國已大量囤積原油，即使荷莫茲海峽重開，北京也不太可能立刻恢復戰前的進口量。目前消息來自單一報導，細節待確認。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 財經\n\n荷莫茲或重開，但中國不急補油\n\n全球各地為石油供應緊張而焦頭爛額，中國卻早已囤好了。目前的報導指出，即使荷莫茲海峽（Strait of Hormuz）重開，中國也不太可能立刻恢復戰前從波斯灣的石油進口量——因為倉庫已經夠滿了。這則消息來自單一來源。\n\n—— 本則來自 The New York Times，2026 年 6 月 21 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "世界各地都在為石油供應緊張傷腦筋，中國卻已在中東衝突期間大量囤積原油。據分析，即使荷莫茲海峽（Strait of Hormuz）重開，中國短期內也不會立刻恢復戰前水準的石油採購，因為儲備量已經夠了。這則消息來自單一報導。\n\n本則整理自 The New York Times 於 2026 年 6 月 21 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "全球搶石油，中國不急。中東衝突期間，中國已大量囤積原油，即使荷莫茲海峽重開，北京也不太可能立刻恢復戰前的進口量。目前消息來自單一報導，細節待確認。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "nyt_business",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "The possible reopening of the Strait of Hormuz may not prompt China to return quickly to prewar levels of oil purchases from the Persian Gulf.",
+              "title": "While the World Scrambles for Oil, China Sits on Full Tanks",
+              "url": "https://www.nytimes.com/2026/06/21/business/china-oil-iran.html",
+              "published_at": "2026-06-21T17:01:52+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "荷莫茲海峽可能重開，但中國因已囤積大量原油不急於恢復採購",
+              "source_id": "nyt_business",
+              "source_title": "While the World Scrambles for Oil, China Sits on Full Tanks",
+              "source_url": "https://www.nytimes.com/2026/06/21/business/china-oil-iran.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 1,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 191,
+    "total_articles_after_filter": 180,
+    "total_events_merged": 144,
+    "total_events_selected": 17,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260622_evt_030",
+      "headline": "Los Angeles mayor declares emergency over warehouse fire - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_066",
+      "headline": "Iran's Tasnim news agency says Hormuz will not reopen until Lebanon ceasefire holds, oil waivers issued - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_103",
+      "headline": "Ethiopia PM's party wins landslide as fears grow of new conflict",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_108",
+      "headline": "Half of France under red heat alert as alcohol banned at street music festival",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_071",
+      "headline": "Colombia runoff vote shaped by security fears and conflict warnings",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_107",
+      "headline": "Mbappe, France play Iraq in World Cup match: prediction, team news, lineups",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_126",
+      "headline": "Ethiopian prime minister’s party easily wins parliamentary election",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_141",
+      "headline": "Colombia elections take place as Abelardo de la Espriella leads polls",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_006",
+      "headline": "Ukraine's Zelenskiy says he returned state decoration to Polish president - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_014",
+      "headline": "Israeli strikes kill six people in Gaza including Al Jazeera cameraman, officials say",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_015",
+      "headline": "Three people die in single story pavilion fire in London - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_016",
+      "headline": "Zelenskiy again urges Belarus to dismantle relay stations - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_017",
+      "headline": "Israeli fire kills nine people in Gaza, including a child and journalist, medics say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_019",
+      "headline": "Scottish counterterrorism police investigating apparent anti-Muslim attacks in Edinburgh - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_020",
+      "headline": "Report says UK PM Starmer ready to quit, but source says he is still focused on the job - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_025",
+      "headline": "At CrimeCon true crime obsessives come face-to-face with real loss",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_027",
+      "headline": "Trump, blaming alleged vandals, says Washington Reflecting Pool needs repairs - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_028",
+      "headline": "Backstage at Gorillaz' epic, one-off stadium show: 'The vibe is ridiculous'",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_035",
+      "headline": "From the US-Mexico border to protests in Poland: highlights of PhotoEspaña 2026",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_036",
+      "headline": "Brands using AI-generated influencers to promote products on social media",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_037",
+      "headline": "Israel says it 'eliminated' two Hamas and Islamic Jihad operatives tied to major funding network - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_039",
+      "headline": "Former Olympian denies vandalising Washington Reflecting Pool after arrest",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_041",
+      "headline": "印度醫學院入學考試題外洩風波　227萬考生重考",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_043",
+      "headline": "何欣純菲律賓後援會成立　提3大政見爭取支持",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_044",
+      "headline": "Ukraine attack kills five as Crimea halts public fuel sales - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_045",
+      "headline": "芝加哥大規模槍擊案13傷　歹徒開車掃射後逃逸",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_046",
+      "headline": "台積電全額資助　熊本大學設新獎學金培育半導體人才",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_047",
+      "headline": "烏克蘭無人機攻擊克里米亞與俄邊疆區　釀5死28傷",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_052",
+      "headline": "日經：美國將在日本常態部署泰風飛彈系統　可嚇阻中國",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_053",
+      "headline": "Dutch royals enjoy two big results in one World Cup day",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_057",
+      "headline": "台灣輪椅夫妻首爾遇醉漢騷擾　韓男助解危義舉曝光",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_059",
+      "headline": "Ukraine's battlefield shift has not solved its humanitarian crisis, IRC says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_061",
+      "headline": "M John Harrison: ‘If we met a real alien we’d have no clue what they thought’",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_062",
+      "headline": "傳施凱爾將請辭　英商貿大臣：首相正考慮政治現實",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_063",
+      "headline": "Tight security as Indian students resit medical exam after alleged paper leak",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_064",
+      "headline": "Indian cricketer, 15, hits record-breaking 50 in just 11 balls",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_065",
+      "headline": "日本阿蘇山噴發警戒升至2級　事故機吊掛作業延期",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_067",
+      "headline": "伊朗媒體：黎巴嫩停火落實前　荷莫茲海峽不會重啟",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_068",
+      "headline": "蘇黎世同志大遊行　熱浪中2萬人上街籲關注年輕酷兒",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_069",
+      "headline": "逾9成以色列民眾認為伊朗勝利　尼坦雅胡面臨嚴峻輿論",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_070",
+      "headline": "David Hockney’s funeral held in private with just two mourners",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_073",
+      "headline": "Much Ado About Nothing review – a riot of romcom energy",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_074",
+      "headline": "卡達證實美伊在瑞士展開談判　盼促成長久協議",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_076",
+      "headline": "AI熱潮帶動亞股狂飆　台韓日全民瘋炒股吸引美媒關注",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_077",
+      "headline": "No-fly zone for Iran talks disrupted flights at Zurich airport, authorities say - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_078",
+      "headline": "King Charles to reveal tax details for the first time, palace says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_079",
+      "headline": "Erdogan orders talks to reopen Orthodox Christian seminary in Turkey, a focus for Trump - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_080",
+      "headline": "Israeli soldiers in Lebanon are free to take action if under threat, Israel's Katz says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_081",
+      "headline": "Low-key funeral held for giant of the art world David Hockney",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_087",
+      "headline": "Trump says US will resume attacks if Iran does not restrain Hezbollah allies - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_089",
+      "headline": "川普：伊朗若不阻止其黎巴嫩代理人　美國將再攻擊",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_092",
+      "headline": "Trump says Starmer will resign as UK prime minister - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_095",
+      "headline": "美國與伊朗展開談判　范斯期盼重塑雙方關係",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_096",
+      "headline": "French railways boss advises vulnerable travellers to shun trains during heatwave - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_097",
+      "headline": "英國首相施凱爾傳遭逼宮　川普斷言將請辭",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_099",
+      "headline": "瑞士外交部：促進中東局勢穩定是優先事項",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_102",
+      "headline": "Tom Gauld on Christopher Nolan’s The Odyssey – cartoon",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_104",
+      "headline": "南非反移民示威揚言全國停擺　駐處籲僑民注意安全",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_106",
+      "headline": "Poland PM Tusk says political row with Ukraine is a 'strategic mistake' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_109",
+      "headline": "UK's Starmer considers political future, could decide as soon as Monday - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_116",
+      "headline": "Hezbollah chief says would respond to any violation from Israel - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_117",
+      "headline": "‘Little ingredients but well executed’: Prada design duo outline minimalist vision",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_120",
+      "headline": "Ethiopian prime minister's party gets another big parliamentary majority - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_127",
+      "headline": "Parisians cool off in canal amid 'red alert' heatwave",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_128",
+      "headline": "Colombia votes in runoff pitting leftist reformer against law-and-order newcomer - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_132",
+      "headline": "熱穹籠罩中西歐　氣溫直逼40度交通受阻雛鳥跳巢求生",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_133",
+      "headline": "Bolivia crisis begins easing, air force jet on assistance flight crashes - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_136",
+      "headline": "Ramiro Valdes, lauded as hero of Cuban revolution, dies at 94 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_137",
+      "headline": "Majority of Britons disappointed by Brexit, according to ECFR poll - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_138",
+      "headline": "People ticketed for vandalizing Washington Reflecting Pool to be fully prosecuted, US Attorney Pirro says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_144",
+      "headline": "Qatar reports explosion at factory in Ras Laffan, no injuries or leak reported - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_001",
+      "headline": "David Thomson Loves the Movies but Not What They Have Done to America",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_005",
+      "headline": "Signal’s Meredith Whittaker wants you to remember that AI chatbots ‘are not your friends’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_008",
+      "headline": "Iran claims Hormuz closure, U.S. says ships still passing",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_010",
+      "headline": "For Pakistan's Ismaili muslims, a visit from their spiritual leader brings a homecoming",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_012",
+      "headline": "Israel's growing fight over Palestinian symbols",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_031",
+      "headline": "The Dad Movie Canon: Films That Define Dad Cinema",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_034",
+      "headline": "One Van Gogh is never enough! So how many Sunflowers did he paint? Find out in our great British museum quiz",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_042",
+      "headline": "‘Beyoncé’s Crazy in Love makes you move your body’: Gloria Gaynor’s honest playlist",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_048",
+      "headline": "A Tenacious Lifeguard Still Swims Against the Tide",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_051",
+      "headline": "With ‘Girls Like Girls,’ Hayley Kiyoko Turns Her Teenage Pain Into Art",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_054",
+      "headline": "Cambodia cracked down on scams costing Americans billions. It created a new crisis",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_072",
+      "headline": "What could make a peace deal with Iran viable? One expert weighs in",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_082",
+      "headline": "Why Lebanon may make or break the Iran-US deal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_083",
+      "headline": "Claude Guillemot, Ubisoft Co-Founder, Is Dead After Plane Crash in France",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_084",
+      "headline": "Marc Marquez wins the Czech MotoGP, narrows title gap to leader Bezzecchi",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_085",
+      "headline": "Andy Burnham says Israel would be his first overseas visit in old clip",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_086",
+      "headline": "Is the French judiciary against Palestine?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_088",
+      "headline": "Police charge man after suspected anti-Muslim attacks in Edinburgh",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_090",
+      "headline": "Gaza bids farewell to slain journalist Ahmed Wishah",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_091",
+      "headline": "Bolivian authorities say no active blockades after state of emergency decree",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_093",
+      "headline": "Beyond Siri: Here are the practical AI features coming to your iPhone in iOS 27",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_094",
+      "headline": "Fans flood Atlanta streets before Spain-Saudi Arabia match",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_098",
+      "headline": "Iran-US launch historic peace talks with 60-day roadmap",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_105",
+      "headline": "US-Iran negotiations in Switzerland kick off",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_110",
+      "headline": "When the Trump administration cracks down on Anthropic, who benefits?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_111",
+      "headline": "For Heirs of Custer and Sitting Bull, a 150-Year-Old Battle Is Personal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_112",
+      "headline": "Syria frees activist Hassan Akkad days after he was detained",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_114",
+      "headline": "How Basel Went From Art to Art Basel",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_115",
+      "headline": "Robert Thurman, Leading Expert on Tibetan Buddhism and Uma Thurman’s Father, Dies at 84",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_118",
+      "headline": "The Newest Wing in the City’s Oldest Museum Celebrates Democracy",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_119",
+      "headline": "India’s ‘Cockroach’ movement camps out until education minister resigns",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_121",
+      "headline": "Tom Dreesen, Comic Who Kept Sinatra’s Crowds Laughing, Dies at 86",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_122",
+      "headline": "The looming Super El Nino",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_123",
+      "headline": "Iran, US, Israel: Memorandum of misunderstanding?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_125",
+      "headline": "Khamenei’s MoU stance stirs debate as Iran and US meet in Switzerland",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_129",
+      "headline": "San Antonio Mayor Says Kanye West’s July 4 Concert There Should Be Canceled",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_130",
+      "headline": "What’s next in the Strait of Hormuz crisis?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_131",
+      "headline": "Mines, Logistics and Deep Uncertainty Threaten a Middle East Oil Rebound",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_134",
+      "headline": "Lamine Yamal scores first World Cup goal as Spain thrash Saudi Arabia",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_135",
+      "headline": "Europe heatwave scorches cities and wildlife",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_139",
+      "headline": "Ramiro Valdes, one of Cuba’s last living revolutionary figures, dies at 94",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_140",
+      "headline": "Japan fans celebrate 4-0 World Cup win in Tokyo",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_142",
+      "headline": "Displaced Lebanese inspect shattered Nabatieh after Israel halts attacks",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_143",
+      "headline": "Serena Williams to play women’s singles at Wimbledon as wildcard entrant",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_018",
+      "headline": "Cisco AI Introduces FAPO: Pipeline-Aware Prompt Optimization With Step-Level Failure Attribution and Claude Code Orchestration",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_007",
+      "headline": "Saddleback Mountain House / Casey Brown Architecture",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_011",
+      "headline": "Nous Research Updates Hermes Agent With a Blank Slate Mode That Pins Toolsets via platform_toolsets.cli and disabled_toolsets",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_029",
+      "headline": "Flat for One / Metrics Architecture Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_032",
+      "headline": "Compact Warsaw apartment evokes \"ingenuity and efficiency\" of maritime architecture",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_038",
+      "headline": "Crawlee for Python: Build a Web Crawling Pipeline with Robots Handling, Link Graphs, and RAG Chunk Export",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_040",
+      "headline": "Feeding the Land: What We Eat Built the World We Inhabit",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_049",
+      "headline": "Eight scenic bathrooms with a window to the great outdoors",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_055",
+      "headline": "Century-old Melbourne corner shop transformed into family home",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_100",
+      "headline": "House for María / Metriq Estudio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_101",
+      "headline": "Restorative retreat for students among projects from Regent's University London",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260622_evt_124",
+      "headline": "Diamond Schmitt adapts civic centre into TMU School of Medicine",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    }
+  ]
+}

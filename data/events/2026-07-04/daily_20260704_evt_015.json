@@ -1,0 +1,63 @@
+{
+  "event_id": "daily_20260704_evt_015",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "大馬士革咖啡館爆炸九死廿傷",
+  "context": "敘利亞首都大馬士革（Damascus）一間咖啡館發生爆炸，造成 9 人死亡、20 人受傷。爆炸地點在司法宮（Palace of Justice）附近，目前無任何組織認領責任。",
+  "article_ids": [
+    "2ff83ae6bf6afd0ee3a23d409d76bee8608ff88337532d99f1ebfd1a8c00ed39",
+    "70f084ff6ced07bde541504fdd098e66582914994e865a529d0b0e994daf98f6"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Blast at Damascus cafe kills nine, wounds 20, Syrian interior ministry says Reuters",
+      "title": "Blast at Damascus cafe kills nine, wounds 20, Syrian interior ministry says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQ1FuZFNuTEZTUUhkZmNuOFJ1VXBOR3JCNTJSeWE1bzlGUm5LSGZ4aGVWREdueU9uckxILVUzMzlyZWprdDc0cXBzQnVBR3h0YXJta2hBdG0yS3IyS3cwYWozN3UzNV9xTUpySFVkQW5FR2sxUmIxbmRabml3RTh1eGduZDF5RmtaZkZKT2hRQXNZYXBvc1UtbUhvT25rSHRMY0RkSHRYOHp1cUtOempvQWZ1WQ?oc=5",
+      "published_at": "2026-07-03T05:26:41+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "There was no immediate claim for the bombing at a cafe close to the Palace of Justice, a major government building.",
+      "title": "Bomb blast at Damascus cafe kills nine, Syrian state media say",
+      "url": "https://www.bbc.co.uk/news/articles/cn0vwxyz40zo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-03T14:42:14+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "大馬士革咖啡館爆炸，9 人死亡、20 人受傷，地點在司法宮附近",
+      "source_id": "bbc_world",
+      "source_title": "Bomb blast at Damascus cafe kills nine, Syrian state media say",
+      "source_url": "https://www.bbc.co.uk",
+      "support_type": "direct"
+    },
+    {
+      "claim": "敘利亞內政部確認傷亡數字，目前無組織認領",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Blast at Damascus cafe kills nine, wounds 20, Syrian interior ministry says",
+      "source_url": "https://news.google.com",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "敘利亞首都大馬士革（Damascus）一間咖啡館發生爆炸，造成 9 人死亡、20 人受傷。爆炸地點在司法宮（Palace of Justice）附近，敘利亞內政部確認了傷亡數字。\n\n目前無任何組織出面認領責任，爆炸原因尚未公布。\n\n本則整理自 Reuters 與 BBC 於 2026 年 7 月 3 日發佈的報導。",
+  "threads_text": "敘利亞首都大馬士革（Damascus）一間咖啡館發生爆炸，9 人死亡、20 人受傷。爆炸地點在司法宮（Palace of Justice）附近，是大馬士革的主要政府建築群之一。\n\n敘利亞內政部確認了傷亡數字。目前無任何組織認領責任，當局尚未公布爆炸原因。\n\n本則整理自 Reuters 與 BBC 於 2026 年 7 月 3 日發佈的報導。",
+  "voice_text": "敘利亞首都大馬士革的一間咖啡館發生爆炸，9 人死亡、20 人受傷。爆炸地點在司法宮（Palace of Justice）附近。目前沒有任何組織出面認領責任，爆炸原因尚未公布。"
+}

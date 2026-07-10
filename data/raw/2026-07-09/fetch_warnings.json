@@ -1,0 +1,12 @@
+[
+  {
+    "type": "source_failed",
+    "source_id": "pts_news",
+    "message": "pts_news failed: HTTPSConnectionPool(host='news.pts.org.tw', port=443): Max retries exceeded with url: /xml/newsfeed.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)')))"
+  },
+  {
+    "type": "source_failed",
+    "source_id": "pts_news",
+    "message": "pts_news has failed 24 times in a row."
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260710_evt_008",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
+  "context": "Both vulnerabilities allow untrusted users to gain root privileges.",
+  "article_ids": [
+    "ae80deb664ed7c5a9f5fe9f73861189e15742e6632c3260a972805a65d44d3a7"
+  ],
+  "sources": [
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "Both vulnerabilities allow untrusted users to gain root privileges.",
+      "title": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
+      "url": "https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/",
+      "published_at": "2026-07-09T03:01:19+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
+      "source_id": "ars_technica_ai",
+      "source_title": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
+      "source_url": "https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/",
+      "support_type": "direct"
+    }
+  ]
+}

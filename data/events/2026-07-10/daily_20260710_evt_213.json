@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260710_evt_213",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Meet Nemotron Labs 3 Puzzle 75B A9B: A Compressed Hybrid MoE LLM Delivering 2.03x Server Throughput",
+  "context": "NVIDIA has released Nemotron-Labs-3-Puzzle-75B-A9B, a compressed variant of Nemotron-3-Super. Iterative Puzzle alternates hardware-aware structural compression with short knowledge distillation recovery phases. The model drops from 120.7B total / 12.8B active parameters to 75.3B ",
+  "article_ids": [
+    "a7a246da66e164430a47ba7bca5d2a3af02bdf98e687a70fbc4ebcf75253b31e"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "NVIDIA has released Nemotron-Labs-3-Puzzle-75B-A9B, a compressed variant of Nemotron-3-Super. Iterative Puzzle alternates hardware-aware structural compression with short knowledge distillation recovery phases. The model drops from 120.7B total / 12.8B active parameters to 75.3B / 9.3B. On a single 8xB200 node it delivers 2.03x Super's total throughput at 100 tok/s per user. On one H100, 1M-token concurrency rises from 1 request to 8. The post Meet Nemotron Labs 3 Puzzle 75B A9B: A Compressed Hybrid MoE LLM Delivering 2.03x Server Throughput appeared first on MarkTechPost .",
+      "title": "Meet Nemotron Labs 3 Puzzle 75B A9B: A Compressed Hybrid MoE LLM Delivering 2.03x Server Throughput",
+      "url": "https://www.marktechpost.com/2026/07/09/meet-nemotron-labs-3-puzzle-75b-a9b/",
+      "published_at": "2026-07-10T03:31:25+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Meet Nemotron Labs 3 Puzzle 75B A9B: A Compressed Hybrid MoE LLM Delivering 2.03x Server Throughput",
+      "source_id": "marktechpost",
+      "source_title": "Meet Nemotron Labs 3 Puzzle 75B A9B: A Compressed Hybrid MoE LLM Delivering 2.03x Server Throughput",
+      "source_url": "https://www.marktechpost.com/2026/07/09/meet-nemotron-labs-3-puzzle-75b-a9b/",
+      "support_type": "direct"
+    }
+  ]
+}

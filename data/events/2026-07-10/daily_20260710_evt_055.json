@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260710_evt_055",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Datalab Lift vs the Field: How a 9B Schema-First Extractor Compares with NuExtract3, LlamaExtract, Marker, and Docling",
+  "context": "Datalab’s Lift is a focused document extraction tool with a specific promise: give it a PDF or image plus a JSON Schema, and it returns schema-shaped JSON directly. Instead of converting a document to Markdown first and then asking another model to extract fields, Lift reads rend",
+  "article_ids": [
+    "35b62c66e336c0a4a7cc5bd35f4f60f059e42f67ac068a7a9bb03f90259cb045"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Datalab’s Lift is a focused document extraction tool with a specific promise: give it a PDF or image plus a JSON Schema, and it returns schema-shaped JSON directly. Instead of converting a document to Markdown first and then asking another model to extract fields, Lift reads rendered page images and attempts to emit the final […] The post Datalab Lift vs the Field: How a 9B Schema-First Extractor Compares with NuExtract3, LlamaExtract, Marker, and Docling appeared first on MarkTechPost .",
+      "title": "Datalab Lift vs the Field: How a 9B Schema-First Extractor Compares with NuExtract3, LlamaExtract, Marker, and Docling",
+      "url": "https://www.marktechpost.com/2026/07/09/datalab-lift-vs-the-field-how-a-9b-schema-first-extractor-compares-with-nuextract3-llamaextract-marker-and-docling/",
+      "published_at": "2026-07-09T15:50:47+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Datalab Lift vs the Field: How a 9B Schema-First Extractor Compares with NuExtract3, LlamaExtract, Marker, and Docling",
+      "source_id": "marktechpost",
+      "source_title": "Datalab Lift vs the Field: How a 9B Schema-First Extractor Compares with NuExtract3, LlamaExtract, Marker, and Docling",
+      "source_url": "https://www.marktechpost.com/2026/07/09/datalab-lift-vs-the-field-how-a-9b-schema-first-extractor-compares-with-nuextract3-llamaextract-marker-and-docling/",
+      "support_type": "direct"
+    }
+  ]
+}

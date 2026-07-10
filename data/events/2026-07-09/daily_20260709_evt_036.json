@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260709_evt_036",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "NVIDIA’s Cosmos-Framework Tutorial: Designing a Colab-Friendly Miniature of Cosmos 3 World Models with Omnimodal Mixture-of-Transformers",
+  "context": "In this tutorial, we explore NVIDIA's cosmos-framework from a practical Colab angle while staying honest about the hardware needed for real Cosmos 3 checkpoints. We probe the runtime, then use the framework's real structure, CLI surface, and input schema as a foundation. We build",
+  "article_ids": [
+    "64b17ea0dfbb3d4e3ad660553dc02da09c80cb87d1904ba4851b126f5909ec3b"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "In this tutorial, we explore NVIDIA's cosmos-framework from a practical Colab angle while staying honest about the hardware needed for real Cosmos 3 checkpoints. We probe the runtime, then use the framework's real structure, CLI surface, and input schema as a foundation. We build and train a compact omnimodal Mixture-of-Transformers that shares cross-modal attention while routing each modality to its own expert. Using synthetic physical-world data and an autoregressive rollout, we show how the model predicts future latent states across text, vision, and action. The post NVIDIA’s Cosmos-Framework Tutorial: Designing a Colab-Friendly Miniature of Cosmos 3 World Models with Omnimodal Mixture-of-Transformers appeared first on MarkTechPost .",
+      "title": "NVIDIA’s Cosmos-Framework Tutorial: Designing a Colab-Friendly Miniature of Cosmos 3 World Models with Omnimodal Mixture-of-Transformers",
+      "url": "https://www.marktechpost.com/2026/07/08/nvidias-cosmos-framework-tutorial-designing-a-colab-friendly-miniature-of-cosmos-3-world-models-with-omnimodal-mixture-of-transformers/",
+      "published_at": "2026-07-08T15:15:35+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "NVIDIA’s Cosmos-Framework Tutorial: Designing a Colab-Friendly Miniature of Cosmos 3 World Models with Omnimodal Mixture-of-Transformers",
+      "source_id": "marktechpost",
+      "source_title": "NVIDIA’s Cosmos-Framework Tutorial: Designing a Colab-Friendly Miniature of Cosmos 3 World Models with Omnimodal Mixture-of-Transformers",
+      "source_url": "https://www.marktechpost.com/2026/07/08/nvidias-cosmos-framework-tutorial-designing-a-colab-friendly-miniature-of-cosmos-3-world-models-with-omnimodal-mixture-of-transformers/",
+      "support_type": "direct"
+    }
+  ]
+}

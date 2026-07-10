@@ -1,0 +1,2027 @@
+{
+  "reportId": "daily_20260709",
+  "date": "2026-07-09",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-07-11T01:10:34.471341+08:00",
+  "status": "partial",
+  "warnings": [
+    {
+      "type": "source_failed",
+      "message": "pts_news failed: HTTPSConnectionPool(host='news.pts.org.tw', port=443): Max retries exceeded with url: /xml/newsfeed.xml (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c:1028)')))",
+      "source_id": "pts_news"
+    },
+    {
+      "type": "source_failed",
+      "message": "pts_news has failed 24 times in a row.",
+      "source_id": "pts_news"
+    }
+  ],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260709_evt_020",
+          "headline": "民主黨施壓參選人退選",
+          "context": "美國緬因州聯邦參議員參選人 Graham Platner 遭到性侵指控，民主黨高層施壓要他退出選戰。他否認指控，稱其「完全不實」，但也說自己正在思考最好的下一步。",
+          "beat": "INTL",
+          "thread_text": "美國緬因州聯邦參議員參選人 Graham Platner 遭到性侵指控，民主黨高層正施壓要他退選。他否認指控，稱其「完全不實」（categorically false），但也表示自己「正在花時間思考最好的下一步」。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "美國緬因州的聯邦參議員選戰出現風波。參選人 Graham Platner 遭到性侵指控，民主黨高層正施壓要他退出選戰。他本人否認，稱指控「完全不實」（categorically false）——但同時也說，自己「正在花時間思考最好的下一步」。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "美國緬因州一位參議員參選人，被自家黨內高層施壓退選。起因是一項性侵指控。參選人 Graham Platner 否認，說指控完全不實——但他也說，自己正在思考最好的下一步。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "美國緬因州聯邦參議員參選人 Graham Platner 遭到性侵指控，民主黨高層正施壓要他退選。他否認指控，稱其「完全不實」（categorically false），但也表示自己「正在花時間思考最好的下一步」。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國緬因州的聯邦參議員選戰出現風波。參選人 Graham Platner 遭到性侵指控，民主黨高層正施壓要他退出選戰。他本人否認，稱指控「完全不實」（categorically false）——但同時也說，自己「正在花時間思考最好的下一步」。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國緬因州一位參議員參選人，被自家黨內高層施壓退選。起因是一項性侵指控。參選人 Graham Platner 否認，說指控完全不實——但他也說，自己正在思考最好的下一步。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Graham Platner denied the allegation, calling it \"categorically false\" but said he was \"taking the time to reflect on the best path forward\".",
+              "title": "Top Democrats press Maine Senate candidate to drop out of race over sexual assault allegation",
+              "url": "https://www.bbc.co.uk/news/articles/cm2004nx8v9o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-08T09:05:26+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "緬因州參議員參選人 Graham Platner 遭性侵指控，民主黨高層施壓其退選；他否認指控但表示正思考下一步。",
+              "source_id": "bbc_world",
+              "source_title": "Top Democrats press Maine Senate candidate to drop out of race over sexual assault allegation",
+              "source_url": "https://www.bbc.co.uk/news/articles/cm2004nx8v9o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260709_evt_107",
+          "headline": "北約峰會團結蒙上陰影",
+          "context": "北約峰會這次談的是團結，氣氛卻不太對。美國總統川普（Donald Trump）在會上批評盟友對他的伊朗戰事支持不夠，還重新提起拿下格陵蘭的興趣。",
+          "beat": "INTL",
+          "thread_text": "北約峰會的「團結」上空飄著烏雲。美國總統川普（Donald Trump）在峰會上批評盟友，指他們對他的伊朗戰事支持不足，同時重新提起他對取得格陵蘭的興趣。\n\n本則來自 BBC，2026 年 7 月 9 日發佈的報導。",
+          "threads_text": "北約峰會這次主打團結，但氣氛不太對。美國總統川普（Donald Trump）在會上批評盟友，說大家對他在伊朗的戰事支持不夠；同一場合，他還重新提起了拿下格陵蘭的興趣。峰會的「團結」二字，上空飄著一朵烏雲。\n\n本則來自 BBC，2026 年 7 月 9 日發佈的報導。",
+          "voice_text": "北約峰會的「團結」，這次上頭飄著一朵烏雲。美國總統川普在會上批評盟友，說大家對他在伊朗的戰事支持不夠。他還順勢重提了對格陵蘭的興趣。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "北約峰會的「團結」上空飄著烏雲。美國總統川普（Donald Trump）在峰會上批評盟友，指他們對他的伊朗戰事支持不足，同時重新提起他對取得格陵蘭的興趣。\n\n本則來自 BBC，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "北約峰會這次主打團結，但氣氛不太對。美國總統川普（Donald Trump）在會上批評盟友，說大家對他在伊朗的戰事支持不夠；同一場合，他還重新提起了拿下格陵蘭的興趣。峰會的「團結」二字，上空飄著一朵烏雲。\n\n本則來自 BBC，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "北約峰會的「團結」，這次上頭飄著一朵烏雲。美國總統川普在會上批評盟友，說大家對他在伊朗的戰事支持不夠。他還順勢重提了對格陵蘭的興趣。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "US President Donald Trump has used the Nato summit to criticise the lack of support for his war on Iran, and revive his interest in taking over Greenland.",
+              "title": "Watch: Why is there a 'black cloud' over unity at the Nato summit?",
+              "url": "https://www.bbc.co.uk/news/videos/cn75n0lyzedo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-09T00:05:37+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "川普在北約峰會上批評盟友對其伊朗戰事支持不足，並重提對取得格陵蘭的興趣。",
+              "source_id": "bbc_world",
+              "source_title": "Watch: Why is there a 'black cloud' over unity at the Nato summit?",
+              "source_url": "https://www.bbc.co.uk/news/videos/cn75n0lyzedo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260709_evt_026",
+          "headline": "北約370億英鎊飛彈計畫",
+          "context": "北約盟國宣布一項 370 億英鎊的新飛彈計畫。英國首相斯塔默（Keir Starmer）將在安卡拉召集約十二位領袖，討論這個項目。",
+          "beat": "INTL",
+          "thread_text": "北約盟國宣布投入 370 億英鎊，啟動新的飛彈計畫。英國首相斯塔默（Keir Starmer）將在土耳其安卡拉召集約十二位領袖，討論這項計畫。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "北約盟國宣布一項新的飛彈計畫，規模 370 億英鎊。英國首相斯塔默（Keir Starmer）將在土耳其安卡拉召集大約十二位領袖開會，討論這個項目怎麼推進。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "北約要砸 370 億英鎊——大概是新台幣一兆五千億——做一個新的飛彈計畫。英國首相斯塔默會在土耳其的安卡拉，召集大約十二位領袖來談這件事。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "北約盟國宣布投入 370 億英鎊，啟動新的飛彈計畫。英國首相斯塔默（Keir Starmer）將在土耳其安卡拉召集約十二位領袖，討論這項計畫。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "北約盟國宣布一項新的飛彈計畫，規模 370 億英鎊。英國首相斯塔默（Keir Starmer）將在土耳其安卡拉召集大約十二位領袖開會，討論這個項目怎麼推進。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "北約要砸 370 億英鎊——大概是新台幣一兆五千億——做一個新的飛彈計畫。英國首相斯塔默會在土耳其的安卡拉，召集大約十二位領袖來談這件事。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Prime Minister Sir Keir Starmer will convene around a dozen leaders to discuss the programme in Ankara.",
+              "title": "Nato allies announce £37bn for new missile project",
+              "url": "https://www.bbc.co.uk/news/articles/ckg4e3lwzqzo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-08T13:57:53+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "北約盟國宣布 370 億英鎊新飛彈計畫，英國首相 Starmer 將在安卡拉召集約十二位領袖討論。",
+              "source_id": "bbc_world",
+              "source_title": "Nato allies announce £37bn for new missile project",
+              "source_url": "https://www.bbc.co.uk/news/articles/ckg4e3lwzqzo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260709_evt_108",
+          "headline": "波羅的海空防升級",
+          "context": "北約把波羅的海的空中警戒任務（Baltic Air Policing）升級為空中防禦任務。原本是替波羅的海國家看守領空的巡邏性質，現在任務層級正式往上提了一階。",
+          "beat": "INTL",
+          "thread_text": "北約宣布把波羅的海空中警戒任務（Baltic Air Policing）升級為空中防禦。這項任務原本是替波羅的海國家看守領空的巡邏性質，現在正式升格。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "threads_text": "北約把波羅的海的空中任務升了一級。原本的空中警戒任務（Baltic Air Policing），是替波羅的海國家看守領空的巡邏性質；現在正式升級成空中防禦任務，性質從「看著」變成「防著」。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "voice_text": "北約把波羅的海上空的任務，升了一級。原本叫空中警戒，是替波羅的海國家看守領空的巡邏任務；現在正式升格成空中防禦。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "北約宣布把波羅的海空中警戒任務（Baltic Air Policing）升級為空中防禦。這項任務原本是替波羅的海國家看守領空的巡邏性質，現在正式升格。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "北約把波羅的海的空中任務升了一級。原本的空中警戒任務（Baltic Air Policing），是替波羅的海國家看守領空的巡邏性質；現在正式升級成空中防禦任務，性質從「看著」變成「防著」。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "北約把波羅的海上空的任務，升了一級。原本叫空中警戒，是替波羅的海國家看守領空的巡邏任務；現在正式升格成空中防禦。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "NATO upgrades Baltic Air Policing mission to air defence Reuters",
+              "title": "NATO upgrades Baltic Air Policing mission to air defence - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWE9UbHRtcVltMlhNakVFQ2JpOVJOdC1iVUpYY3ZNQ3JiYnMxZWNxb2RMVTA4NE1xMXNvemN2TGI5ZlhJREtVSUVBX2k1Q2cyWXhZc1lmd3NEY3lubHVld2FJZ3NTNXBMZzJoTVM4YURJTjBOLWduV3JYalJLMXlvcWNVMmNrQmF6QzBsdnJzT3hCbXpnaWNHVWRmWTdtY1dJZm83Rw?oc=5",
+              "published_at": "2026-07-09T00:09:19+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "北約將波羅的海空中警戒任務升級為空中防禦。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "NATO upgrades Baltic Air Policing mission to air defence - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWE9UbHRtcVltMlhNakVFQ2JpOVJOdC1iVUpYY3ZNQ3JiYnMxZWNxb2RMVTA4NE1xMXNvemN2TGI5ZlhJREtVSUVBX2k1Q2cyWXhZc1lmd3NEY3lubHVld2FJZ3NTNXBMZzJoTVM4YURJTjBOLWduV3JYalJLMXlvcWNVMmNrQmF6QzBsdnJzT3hCbXpnaWNHVWRmWTdtY1dJZm83Rw?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Baltic Air Policing 原為替波羅的海國家看守領空的巡邏任務。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "NATO upgrades Baltic Air Policing mission to air defence - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWE9UbHRtcVltMlhNakVFQ2JpOVJOdC1iVUpYY3ZNQ3JiYnMxZWNxb2RMVTA4NE1xMXNvemN2TGI5ZlhJREtVSUVBX2k1Q2cyWXhZc1lmd3NEY3lubHVld2FJZ3NTNXBMZzJoTVM4YURJTjBOLWduV3JYalJLMXlvcWNVMmNrQmF6QzBsdnJzT3hCbXpnaWNHVWRmWTdtY1dJZm83Rw?oc=5",
+              "support_type": "background"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260709_evt_016",
+          "headline": "蘇丹圍城恐釀屠殺",
+          "context": "聯合國人權事務負責人警告，蘇丹城市歐拜伊德（El-Obeid）已經被圍困 18 個月，處於「近似圍城」的狀態。這座城市位在內戰前線，外界擔心接下來會發生屠殺。",
+          "beat": "INTL",
+          "thread_text": "蘇丹內戰前線的城市歐拜伊德（El-Obeid），被圍困已經 18 個月。聯合國人權事務負責人形容當地是「近似圍城」的狀態，外界憂心這座城市正走向一場屠殺。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "蘇丹內戰前線的城市歐拜伊德（El-Obeid），已經被圍困 18 個月。聯合國人權事務負責人形容，當地處於「近似圍城」的狀態——物資與人員進出都被掐住。外界現在最擔心的，是這座城市接下來會發生屠殺。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "蘇丹的歐拜伊德，可能正走向一場屠殺。這座城市在內戰的前線，被圍困已經十八個月。聯合國人權事務負責人說，當地是「近似圍城」的狀態。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "蘇丹內戰前線的城市歐拜伊德（El-Obeid），被圍困已經 18 個月。聯合國人權事務負責人形容當地是「近似圍城」的狀態，外界憂心這座城市正走向一場屠殺。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "蘇丹內戰前線的城市歐拜伊德（El-Obeid），已經被圍困 18 個月。聯合國人權事務負責人形容，當地處於「近似圍城」的狀態——物資與人員進出都被掐住。外界現在最擔心的，是這座城市接下來會發生屠殺。\n\n本則來自 BBC，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "蘇丹的歐拜伊德，可能正走向一場屠殺。這座城市在內戰的前線，被圍困已經十八個月。聯合國人權事務負責人說，當地是「近似圍城」的狀態。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "El-Obeid has been under \"siege-like conditions\" for 18 months says the UN human rights chief.",
+              "title": "Fears of a massacre in this city on the front line of Sudan's war",
+              "url": "https://www.bbc.co.uk/news/articles/c20yyjdzw7po?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-08T07:32:04+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "蘇丹城市 El-Obeid 被圍困 18 個月，聯合國人權負責人形容為「近似圍城」狀態，外界憂心發生屠殺。",
+              "source_id": "bbc_world",
+              "source_title": "Fears of a massacre in this city on the front line of Sudan's war",
+              "source_url": "https://www.bbc.co.uk/news/articles/c20yyjdzw7po?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260709_evt_011",
+          "headline": "劇場與電影評論三則",
+          "context": "藝文這邊是三篇評論。倫敦帕拉丁劇院的《萬世巨星》由 Sam Ryder 主演；改編自柏格曼（Ingmar Bergman）劇本的《Faithless》影集版評價微妙；還有一部 1978 年的斯里蘭卡電影《The Girls》被重新發掘。",
+          "beat": "ARTS",
+          "thread_text": "藝文評論三則。倫敦帕拉丁劇院的《萬世巨星》（Jesus Christ Superstar）由歐洲歌唱大賽出身的 Sam Ryder 主演，評論說他唱得掀屋頂，但整場戲少了脈絡與清晰度。改編自柏格曼（Ingmar Bergman）劇本的影集《Faithless》選擇令人費解，卻常常迷人。1978 年斯里蘭卡電影《The Girls》則被譽為低調的珍品。\n\n本則整理自 The Guardian 於 2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "今天藝文這邊有三篇評論。倫敦帕拉丁劇院重演的搖滾音樂劇《萬世巨星》（Jesus Christ Superstar），由歐洲歌唱大賽出身的 Sam Ryder 主演——評論說他把屋頂都唱掀了，但整場戲開到最大聲，反而少了脈絡和清晰度。改編自柏格曼（Ingmar Bergman）劇本、Liv Ullmann 執導的 2000 年電影《Faithless》出了影集版，攝影和女主角的寫法讓評論摸不著頭緒，卻又承認它常常迷人。最後是 1978 年的斯里蘭卡電影《The Girls》，導演 Sumitra Peries 拍一對青春期姊妹和說不出口的感情，黑白攝影，被形容是低調的珍品。\n\n本則整理自 The Guardian 於 2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "藝文這邊有三部作品可以聊。倫敦的《萬世巨星》搖滾音樂劇重新開演，主角是歌唱比賽出身的 Sam Ryder。評論說他把屋頂都唱掀了，不過整場戲開太大聲，脈絡反而糊掉。再來是改編自柏格曼劇本的影集《Faithless》，攝影和女主角的寫法讓人摸不著頭緒——但評論也承認，它常常迷人得很。最後是一部 1978 年的斯里蘭卡電影《The Girls》，講一對姊妹和說不出口的感情，黑白攝影，被形容是低調的珍品。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "藝文評論三則。倫敦帕拉丁劇院的《萬世巨星》（Jesus Christ Superstar）由歐洲歌唱大賽出身的 Sam Ryder 主演，評論說他唱得掀屋頂，但整場戲少了脈絡與清晰度。改編自柏格曼（Ingmar Bergman）劇本的影集《Faithless》選擇令人費解，卻常常迷人。1978 年斯里蘭卡電影《The Girls》則被譽為低調的珍品。\n\n本則整理自 The Guardian 於 2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "今天藝文這邊有三篇評論。倫敦帕拉丁劇院重演的搖滾音樂劇《萬世巨星》（Jesus Christ Superstar），由歐洲歌唱大賽出身的 Sam Ryder 主演——評論說他把屋頂都唱掀了，但整場戲開到最大聲，反而少了脈絡和清晰度。改編自柏格曼（Ingmar Bergman）劇本、Liv Ullmann 執導的 2000 年電影《Faithless》出了影集版，攝影和女主角的寫法讓評論摸不著頭緒，卻又承認它常常迷人。最後是 1978 年的斯里蘭卡電影《The Girls》，導演 Sumitra Peries 拍一對青春期姊妹和說不出口的感情，黑白攝影，被形容是低調的珍品。\n\n本則整理自 The Guardian 於 2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "藝文這邊有三部作品可以聊。倫敦的《萬世巨星》搖滾音樂劇重新開演，主角是歌唱比賽出身的 Sam Ryder。評論說他把屋頂都唱掀了，不過整場戲開太大聲，脈絡反而糊掉。再來是改編自柏格曼劇本的影集《Faithless》，攝影和女主角的寫法讓人摸不著頭緒——但評論也承認，它常常迷人得很。最後是一部 1978 年的斯里蘭卡電影《The Girls》，講一對姊妹和說不出口的感情，黑白攝影，被形容是低調的珍品。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "This reboot of a 2000 film, based on a script by the great Ingmar Bergman, features some extremely odd camera work and a very strangely written female lead. But it’s frequently bewitching The film Faithless, a cruel adultery fable directed by Liv Ullmann from a screenplay by the great Ingmar Bergman, was something of a throwback even when it came out in 2000: that sort of sensual dissection of arty middle-class mores was no longer common cinematic currency. Arthouse indulgence hadn’t died out altogether and it still hasn’t today, but, for generations of viewers in 2026 weaned on premium streaming, the lofty waft of the new Faithless TV reboot, adapted from the Bergman scripts by Sara Johnsen and directed by Tomas Alfredson (Let the Right One In, Tinker Tailor Soldier Spy), might seem alien. We’re smoking on planes and wearing corduroy suits in deep maroon: yes, it’s 1977 and, in Stockholm, actor Marianne (Frida Gustavsson) and her pianist husband Markus (August Wittgenstein) are visited by Markus’s oldest friend David (Gustav Lindh), a wannabe film auteur who’s returned from London bruised by his divorce. Episode two introduces a second timeline, in the present, where lauded director David (Jesper Christensen) and veteran performer Marianne (Lena Endre, who was the younger Marianne in the Ullman movie) meet again and reflect on the damage caused by their affair. Faithless aired on Sky Atlantic and is on Now Continue reading...",
+              "title": "Faithless review – if you understand some of the baffling choices in this show, please let us know",
+              "url": "https://www.theguardian.com/tv-and-radio/2026/jul/07/faithless-review-if-you-understand-some-of-the-baffling-choices-in-this-show-please-let-us-know",
+              "published_at": "2026-07-08T05:00:10+08:00"
+            },
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "London Palladium The Eurovision star leads a glittery production of Andrew Lloyd Webber and Tim Rice’s blockbuster but this booming show lacks context and clarity This amped-up version of Andrew Lloyd Webber and Tim Rice’s rock opera is presented by the same triumvirate who near enough blew the critics – and crowds – to heaven with their 2016 revival . Tim Sheader is again director, designer Tom Scutt’s set has a similar scaffold structure (but with some audience members standing around it this time) and Drew McOnie is once more the choreographer. The production, in spirit, goes back not just to the first century when Jesus of Nazareth rises to become an inspiring preacher, radical tearaway and thorn in the side of the temple clerics, but also to the 1970s era of hippy-dom and flower power from which the original show arose. Continue reading...",
+              "title": "Jesus Christ Superstar review – Sam Ryder raises the roof in rock opera turned up to 11",
+              "url": "https://www.theguardian.com/stage/2026/jul/08/jesus-christ-superstar-review-sam-ryder",
+              "published_at": "2026-07-08T07:01:13+08:00"
+            },
+            {
+              "source_id": "guardian_film",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Sumitra Peries’ 1978 film about teenage sisters and thwarted romance is laden with passions that can’t be spoken aloud Here is a gem of South Asian cinema from 1978, by the Sri Lankan director and editor Sumitra Peries. With its lucid monochrome cinematography and calm, natural, unselfconscious performances, there is a freshness and warmth to this film. It is often on the brink of melodrama or soap opera, many shots having a tendency to slow zoom into the actors’ faces, and yet The Girls is in fact rather understated. A great deal of its poignancy resides in this very suppression of emotion. We are in a world of passions that can’t be spoken aloud. It is a story through whose entire running time I wistfully hoped for a happy ending, but that is what Peries ruthlessly withholds from her audience. Kusum (Vasanthi Chathurani) is a studious, serious teen from a poor family with a scholarship to a very good school. Her father is seriously ill and her mother works hard to make ends meet. She has a rather tense, quarrelsome relationship with her sister Soma (Jenita Samaraweera), who is naughtier, flightier and always receiving letters from “pen pals” – boys. Kusum’s sobering story is triggered in flashback by the sight of a visiting local dignitary, the “divisional revenue officer”, being welcomed to her village. Continue reading...",
+              "title": "The Girls review – poignant coming-of-age romance is an understated gem of Sri Lankan cinema",
+              "url": "https://www.theguardian.com/film/2026/jul/08/the-girls-review-sumitra-peries-sri-lanka",
+              "published_at": "2026-07-08T14:00:22+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "《萬世巨星》倫敦帕拉丁劇院版由 Sam Ryder 主演，評論認為演唱出色但全劇缺乏脈絡與清晰度。",
+              "source_id": "guardian_stage",
+              "source_title": "Jesus Christ Superstar review – Sam Ryder raises the roof in rock opera turned up to 11",
+              "source_url": "https://www.theguardian.com/stage/2026/jul/08/jesus-christ-superstar-review-sam-ryder",
+              "support_type": "direct"
+            },
+            {
+              "claim": "影集《Faithless》改編自 Ingmar Bergman 劇本（2000 年 Liv Ullmann 執導電影），評論認為選擇費解但常常迷人。",
+              "source_id": "guardian_culture",
+              "source_title": "Faithless review – if you understand some of the baffling choices in this show, please let us know",
+              "source_url": "https://www.theguardian.com/tv-and-radio/2026/jul/07/faithless-review-if-you-understand-some-of-the-baffling-choices-in-this-show-please-let-us-know",
+              "support_type": "direct"
+            },
+            {
+              "claim": "1978 年斯里蘭卡電影《The Girls》（導演 Sumitra Peries）被評為低調珍品。",
+              "source_id": "guardian_film",
+              "source_title": "The Girls review – poignant coming-of-age romance is an understated gem of Sri Lankan cinema",
+              "source_url": "https://www.theguardian.com/film/2026/jul/08/the-girls-review-sumitra-peries-sri-lanka",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "電影",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260709_evt_079",
+          "headline": "草原小木屋新版直面爭議",
+          "context": "Netflix 新版《草原上的小木屋》直接處理原作的歷史包袱：真實的 Ingalls 一家當年把屋子蓋在歐塞奇（Osage）原住民的土地上，原作也帶有種族偏見。新版強化媽媽的角色，並加入黑人與原住民角色。",
+          "beat": "ARTS",
+          "thread_text": "Netflix 的新版《草原上的小木屋》（Little House on the Prairie）選擇直面原作的歷史包袱：真實的 Ingalls 一家把屋子蓋在歐塞奇（Osage）原住民的土地上，原作亦帶有種族偏見。新版強化媽媽的角色，加入黑人與原住民角色，製作團隊表示已預期會有批評。\n\n本則整理自 The New York Times 於 2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "經典的《草原上的小木屋》（Little House on the Prairie）要在 Netflix 重生，而且這次直接面對原作的歷史包袱。真實的 Ingalls 一家，當年是把屋子蓋在歐塞奇（Osage）原住民的土地上，原作字裡行間也有種族偏見的痕跡。新版一邊保留故事的核心溫度，一邊把媽媽的角色做大，並加入黑人與原住民的新角色來回應這些偏見。製作團隊自己也說，批評一定會來。\n\n本則整理自 The New York Times 於 2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "經典的《草原上的小木屋》要在 Netflix 重生，這次直接面對原作的歷史包袱。真實的 Ingalls 一家，當年把屋子蓋在歐塞奇原住民的土地上，原作裡也有種族偏見的痕跡。新版把媽媽的戲份做大，加入黑人和原住民角色，同時想保住故事原本的溫度。製作團隊自己也說，批評一定會來。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Netflix 的新版《草原上的小木屋》（Little House on the Prairie）選擇直面原作的歷史包袱：真實的 Ingalls 一家把屋子蓋在歐塞奇（Osage）原住民的土地上，原作亦帶有種族偏見。新版強化媽媽的角色，加入黑人與原住民角色，製作團隊表示已預期會有批評。\n\n本則整理自 The New York Times 於 2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "經典的《草原上的小木屋》（Little House on the Prairie）要在 Netflix 重生，而且這次直接面對原作的歷史包袱。真實的 Ingalls 一家，當年是把屋子蓋在歐塞奇（Osage）原住民的土地上，原作字裡行間也有種族偏見的痕跡。新版一邊保留故事的核心溫度，一邊把媽媽的角色做大，並加入黑人與原住民的新角色來回應這些偏見。製作團隊自己也說，批評一定會來。\n\n本則整理自 The New York Times 於 2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "經典的《草原上的小木屋》要在 Netflix 重生，這次直接面對原作的歷史包袱。真實的 Ingalls 一家，當年把屋子蓋在歐塞奇原住民的土地上，原作裡也有種族偏見的痕跡。新版把媽媽的戲份做大，加入黑人和原住民角色，同時想保住故事原本的溫度。製作團隊自己也說，批評一定會來。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "nyt_arts",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "The real Ingalls family built their “little house on the prairie” on Osage land and evinced racist attitudes. A new TV adaptation tries to reckon with this while preserving the story’s heart.",
+              "title": "How ‘Little House’ Welcomes Native Neighbors",
+              "url": "https://www.nytimes.com/2026/07/08/arts/television/how-little-house-welcomes-native-neighbors.html",
+              "published_at": "2026-07-08T22:21:43+08:00"
+            },
+            {
+              "source_id": "nyt_books",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "A Netflix adaptation of the beloved tale empowers Ma and adds new Black and Native characters to challenge prejudices. The creators know criticism is coming.",
+              "title": "A New ‘Little House’ Broadens and Updates the Prairie",
+              "url": "https://www.nytimes.com/2026/07/08/arts/television/little-house-on-the-prairie-netflix.html",
+              "published_at": "2026-07-08T23:08:22+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "真實的 Ingalls 家族將小屋建在 Osage 原住民土地上，原作帶有種族偏見；新版影集嘗試處理此事並保留故事核心。",
+              "source_id": "nyt_arts",
+              "source_title": "How ‘Little House’ Welcomes Native Neighbors",
+              "source_url": "https://www.nytimes.com/2026/07/08/arts/television/how-little-house-welcomes-native-neighbors.html",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Netflix 新版強化 Ma 的角色並加入黑人與原住民新角色，製作團隊預期會有批評。",
+              "source_id": "nyt_books",
+              "source_title": "A New ‘Little House’ Broadens and Updates the Prairie",
+              "source_url": "https://www.nytimes.com/2026/07/08/arts/television/little-house-on-the-prairie-netflix.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 38,
+          "sub_beat": "文學",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260709_evt_042",
+          "headline": "七萬張攝影作品入館藏",
+          "context": "牙買加裔英國攝影師 Armet Francis 的全部攝影遺產，捐給了倫敦哈克尼（Hackney）的視覺藝術機構 Autograph——超過 7 萬張影像進入永久典藏。他長期記錄非洲離散族群。",
+          "beat": "ARTS",
+          "thread_text": "牙買加裔英國攝影師 Armet Francis 的完整攝影遺產，交給了倫敦哈克尼（Hackney）的視覺藝術慈善機構 Autograph。這份大禮讓超過 7 萬張影像進入其永久攝影典藏，他的作品長期記錄非洲離散族群。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "一份超過 7 萬張影像的攝影遺產，找到了永久的家。牙買加裔英國攝影師 Armet Francis 的完整作品，交給了位在倫敦哈克尼（Hackney）的視覺藝術慈善機構 Autograph，全數進入永久攝影典藏。他的鏡頭，長年對準非洲離散族群（African diaspora）的身影。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "一份超過七萬張影像的攝影遺產，找到了家。牙買加裔英國攝影師 Armet Francis 的全部作品，交給了倫敦的視覺藝術機構 Autograph 永久收藏。他的鏡頭，長年對準非洲離散族群的身影。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "牙買加裔英國攝影師 Armet Francis 的完整攝影遺產，交給了倫敦哈克尼（Hackney）的視覺藝術慈善機構 Autograph。這份大禮讓超過 7 萬張影像進入其永久攝影典藏，他的作品長期記錄非洲離散族群。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "一份超過 7 萬張影像的攝影遺產，找到了永久的家。牙買加裔英國攝影師 Armet Francis 的完整作品，交給了位在倫敦哈克尼（Hackney）的視覺藝術慈善機構 Autograph，全數進入永久攝影典藏。他的鏡頭，長年對準非洲離散族群（African diaspora）的身影。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "一份超過七萬張影像的攝影遺產，找到了家。牙買加裔英國攝影師 Armet Francis 的全部作品，交給了倫敦的視覺藝術機構 Autograph 永久收藏。他的鏡頭，長年對準非洲離散族群的身影。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Hackney-based visual arts charity Autograph has received the entire photographic estate of Jamaican-British photographer Armet Francis – a major gift that brings more than 70,000 images into their permanent photography collection Continue reading...",
+              "title": "Celebrating the African diaspora: the photography of Armet Francis",
+              "url": "https://www.theguardian.com/artanddesign/gallery/2026/jul/08/celebrating-the-african-diaspora-the-photography-of-armet-francis",
+              "published_at": "2026-07-08T16:00:24+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Autograph 獲贈 Armet Francis 完整攝影遺產，超過 7 萬張影像進入永久典藏。",
+              "source_id": "guardian_art_design",
+              "source_title": "Celebrating the African diaspora: the photography of Armet Francis",
+              "source_url": "https://www.theguardian.com/artanddesign/gallery/2026/jul/08/celebrating-the-african-diaspora-the-photography-of-armet-francis",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 30,
+          "sub_beat": "視覺藝術",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; arts_major_award_or_institution"
+        },
+        {
+          "event_id": "daily_20260709_evt_043",
+          "headline": "當代鬼故事新作獲好評",
+          "context": "英國作家 Lauren Mooney 的首部小說《Service》是一個鬼屋故事，把當代生活的不穩定寫進恐怖裡。評論說，它的寒意是真的嚇人。",
+          "beat": "ARTS",
+          "thread_text": "Lauren Mooney 的首部小說《Service》獲得好評：一個關於當代生活不穩定（precarity）的鬼屋故事，評論形容那股寒意「真的發毛」，而且說的是我們這個時代的事。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "有一本新的鬼故事，評論說是真的會發毛。英國作家 Lauren Mooney 的首部小說《Service》，表面是鬼屋故事，裡子寫的是當代生活的不穩定（precarity）。評論給它的評價是：夠嚇人，而且說的是我們這個時代的事。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "有一本新的鬼故事小說，評論說是真的會發毛。Lauren Mooney 的首部作品《Service》，表面是鬼屋故事，裡子講的是當代生活的不穩定。評論的結論是：夠嚇人，而且講的就是我們這個時代。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Lauren Mooney 的首部小說《Service》獲得好評：一個關於當代生活不穩定（precarity）的鬼屋故事，評論形容那股寒意「真的發毛」，而且說的是我們這個時代的事。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "有一本新的鬼故事，評論說是真的會發毛。英國作家 Lauren Mooney 的首部小說《Service》，表面是鬼屋故事，裡子寫的是當代生活的不穩定（precarity）。評論給它的評價是：夠嚇人，而且說的是我們這個時代的事。\n\n本則來自 The Guardian，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有一本新的鬼故事小說，評論說是真的會發毛。Lauren Mooney 的首部作品《Service》，表面是鬼屋故事，裡子講的是當代生活的不穩定。評論的結論是：夠嚇人，而且講的就是我們這個時代。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_books",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "The chills are genuinely spooky in this haunted-house tale about contemporary precarity – a debut that speaks to our times There are, MR James tells us, five conditions that must be met for a perfect ghost story: the pretence of truth, a “pleasing terror”, no explanation of the machinery, no gratuitous horror, and that the story belong to the writer’s (and reader’s) “own day”. In Lauren Mooney’s sharply observed debut novel, Danielle lives a precarious existence as a PA at a dilettante arts charity called Hodgepodge (strapline: “for ideas”) . She types emails, makes tea and increasingly finds herself running personal errands for her monstrous boss Jeannie. Jeannie seems to see no difference between working for the charity, and working for her. After a horrible breakup, Danielle finds herself unexpectedly homeless. With no savings, no bank of Mum and Dad, and no room left in her overdraft, she winds up staying alone in Jeannie’s ancestral home, a rambling pile in the middle of nowhere. “We could do with somebody to take care of the place,” Jeannie says, as Danielle bursts into uncharacteristic tears. “You’d be doing us a huge favour.” Continue reading...",
+              "title": "Service by Lauren Mooney review – a very modern ghost story",
+              "url": "https://www.theguardian.com/books/2026/jul/08/service-by-lauren-mooney-review-a-very-modern-ghost-story",
+              "published_at": "2026-07-08T16:00:24+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Lauren Mooney 首部小說《Service》為描寫當代 precarity 的鬼屋故事，評論認為驚悚效果出色。",
+              "source_id": "guardian_books",
+              "source_title": "Service by Lauren Mooney review – a very modern ghost story",
+              "source_url": "https://www.theguardian.com/books/2026/jul/08/service-by-lauren-mooney-review-a-very-modern-ghost-story",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "sub_beat": "文學",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260709_evt_124",
+          "headline": "OpenAI新語音邊聽邊說",
+          "context": "OpenAI 發布新一代語音模型 GPT-Live，採用全雙工架構，能同時聽和說——這是即時翻譯的關鍵能力。新模型已接手 ChatGPT 的語音模式，較深的推理會交給 GPT-5.5 處理。",
+          "beat": "AI",
+          "thread_text": "OpenAI 發布新一代語音模型 GPT-Live 與 GPT-Live-1 mini：全雙工架構，能同時聽和說，被視為即時翻譯的關鍵能力。新模型已開始驅動 ChatGPT Voice，搜尋與較深的推理則交由 GPT-5.5 處理。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 9 日發佈的報導。",
+          "threads_text": "OpenAI 的語音模型換代了。新發布的 GPT-Live 與 GPT-Live-1 mini 採用全雙工（full-duplex）架構——可以一邊聽你說話、一邊開口回答，不用再輪流等待。這種能力被視為即時翻譯的關鍵。新模型已經開始驅動 ChatGPT 的語音模式；遇到搜尋和比較深的推理，它會把工作交給 GPT-5.5。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 9 日發佈的報導。",
+          "voice_text": "OpenAI 的新語音模型，能一邊聽你講話、一邊開口回答。這一代叫 GPT-Live，用的是全雙工架構——同時聽和說，正是即時翻譯需要的能力。它已經開始驅動 ChatGPT 的語音模式，遇到比較深的問題，會把推理交給 GPT-5.5。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "OpenAI 發布新一代語音模型 GPT-Live 與 GPT-Live-1 mini：全雙工架構，能同時聽和說，被視為即時翻譯的關鍵能力。新模型已開始驅動 ChatGPT Voice，搜尋與較深的推理則交由 GPT-5.5 處理。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "OpenAI 的語音模型換代了。新發布的 GPT-Live 與 GPT-Live-1 mini 採用全雙工（full-duplex）架構——可以一邊聽你說話、一邊開口回答，不用再輪流等待。這種能力被視為即時翻譯的關鍵。新模型已經開始驅動 ChatGPT 的語音模式；遇到搜尋和比較深的推理，它會把工作交給 GPT-5.5。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "OpenAI 的新語音模型，能一邊聽你講話、一邊開口回答。這一代叫 GPT-Live，用的是全雙工架構——同時聽和說，正是即時翻譯需要的能力。它已經開始驅動 ChatGPT 的語音模式，遇到比較深的問題，會把推理交給 GPT-5.5。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+              "title": "OpenAI releases new voice models for more natural live conversations",
+              "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+              "published_at": "2026-07-09T01:00:00+08:00"
+            },
+            {
+              "source_id": "marktechpost",
+              "name": "MarkTechPost",
+              "publisher": "MarkTechPost",
+              "summary": "OpenAI released GPT-Live, a new generation of voice models now powering ChatGPT Voice. It uses a full-duplex architecture to listen and speak at once, and delegates search and reasoning to GPT-5.5. The post OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5 appeared first on MarkTechPost .",
+              "title": "OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5",
+              "url": "https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/",
+              "published_at": "2026-07-09T02:08:21+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "OpenAI 新語音模式可同時聽與說，為即時翻譯的關鍵能力。",
+              "source_id": "techcrunch_ai",
+              "source_title": "OpenAI releases new voice models for more natural live conversations",
+              "source_url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "新模型名為 GPT-Live／GPT-Live-1 mini，全雙工架構，驅動 ChatGPT Voice，並將搜尋與推理委派給 GPT-5.5。",
+              "source_id": "marktechpost",
+              "source_title": "OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5",
+              "source_url": "https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 41,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3"
+        },
+        {
+          "event_id": "daily_20260709_evt_013",
+          "headline": "IG照片預設可被AI取用",
+          "context": "Meta 推出新的圖像生成模型 Muse Image。Instagram 公開帳號的照片，預設可以被拿去做 AI 生成——想擋，得自己去設定退出（opt out）。用戶的反彈已經開始。",
+          "beat": "AI",
+          "thread_text": "Meta 推出新圖像生成模型 Muse Image：Instagram 公開帳號的照片預設可被用於 AI 生成，用戶必須主動退出（opt out）才能阻擋。官方列的用途包括廣告、佈置與創作者機會，但用戶反彈已經開始。\n\n本則整理自 Wired 與 TechCrunch 於 2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "你放在 Instagram 上的照片，現在預設可以被拿去做 AI 圖。Meta 推出新的圖像生成模型 Muse Image，公開帳號的內容都在取用範圍內——不想被用，要自己去設定退出（opt out）。官方說用途很多：廣告、居家佈置、創作者的新機會。但推出沒多久，用戶的反彈已經先來了。\n\n本則整理自 Wired 與 TechCrunch 於 2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "你放在 Instagram 上的照片，現在預設可以被拿去做 AI 圖。Meta 推出新的圖像生成模型 Muse Image，公開帳號的內容都在範圍內——不想被用，要自己去設定退出。官方說用途包括廣告、居家佈置、創作者機會。但反彈聲，已經先來了。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Meta 推出新圖像生成模型 Muse Image：Instagram 公開帳號的照片預設可被用於 AI 生成，用戶必須主動退出（opt out）才能阻擋。官方列的用途包括廣告、佈置與創作者機會，但用戶反彈已經開始。\n\n本則整理自 Wired 與 TechCrunch 於 2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "你放在 Instagram 上的照片，現在預設可以被拿去做 AI 圖。Meta 推出新的圖像生成模型 Muse Image，公開帳號的內容都在取用範圍內——不想被用，要自己去設定退出（opt out）。官方說用途很多：廣告、居家佈置、創作者的新機會。但推出沒多久，用戶的反彈已經先來了。\n\n本則整理自 Wired 與 TechCrunch 於 2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "你放在 Instagram 上的照片，現在預設可以被拿去做 AI 圖。Meta 推出新的圖像生成模型 Muse Image，公開帳號的內容都在範圍內——不想被用，要自己去設定退出。官方說用途包括廣告、居家佈置、創作者機會。但反彈聲，已經先來了。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "wired_ai",
+              "name": "Wired",
+              "publisher": "Wired",
+              "summary": "As part of Meta’s Muse Image model rollout, Instagram users with public accounts need to opt out to block AI generations of their content.",
+              "title": "Meta Now Lets Anyone Use Your Instagram Photos in AI Images—Unless You Opt Out",
+              "url": "https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/",
+              "published_at": "2026-07-08T05:59:29+08:00"
+            },
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "The new image-generating model has numerous use cases, including advertising and decorating, and creator-based opportunities.",
+              "title": "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos",
+              "url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
+              "published_at": "2026-07-08T06:18:10+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Muse Image 上線後，Instagram 公開帳號用戶須主動 opt out 才能阻止其內容被用於 AI 生成。",
+              "source_id": "wired_ai",
+              "source_title": "Meta Now Lets Anyone Use Your Instagram Photos in AI Images—Unless You Opt Out",
+              "source_url": "https://www.wired.com/story/meta-now-lets-anyone-use-your-instagram-photos-in-ai-images-unless-you-opt-out/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Meta 新圖像模型用途含廣告、佈置與創作者機會，用戶已對照片使用方式反彈。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Meta just launched a new AI generator, Muse Image, and users are already pushing back over use of their photos",
+              "source_url": "https://techcrunch.com/2026/07/07/meta-rolls-out-muse-a-new-ai-image-generator/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 38,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260709_evt_008",
+          "headline": "開源AI還沒傷到前沿實驗室",
+          "context": "一篇分析認為，開源模型的成功目前沒有以 Anthropic 這類前沿實驗室為代價——兩邊像是接住了同一個生命週期的不同階段。標題裡的「還沒」（yet），是整篇的重點。",
+          "beat": "AI",
+          "thread_text": "開源 AI 崛起，為什麼還沒傷到 Anthropic？一篇分析認為，開源模型的成功並不是以前沿實驗室為代價——兩者各自抓住了同一個生命週期的不同階段。關鍵字是「還沒」（yet）。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的分析。",
+          "threads_text": "開源 AI 模型越來越強，前沿實驗室卻還沒受傷——為什麼？一篇分析的看法是：開源模型的成功，目前並不是從 Anthropic 這類公司手上搶來的。兩邊比較像是接住了同一個生命週期的不同階段，各做各的生意。不過標題裡那個「還沒」（yet），才是整篇分析真正的重點。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的分析。",
+          "voice_text": "開源 AI 模型越來越強，但前沿實驗室的日子，暫時還過得去。有一篇分析認為，開源模型的成功，目前不是從 Anthropic 這類公司手上搶來的——兩邊像是接住了同一個生命週期的不同階段。重點在「暫時」兩個字。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "開源 AI 崛起，為什麼還沒傷到 Anthropic？一篇分析認為，開源模型的成功並不是以前沿實驗室為代價——兩者各自抓住了同一個生命週期的不同階段。關鍵字是「還沒」（yet）。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的分析。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "開源 AI 模型越來越強，前沿實驗室卻還沒受傷——為什麼？一篇分析的看法是：開源模型的成功，目前並不是從 Anthropic 這類公司手上搶來的。兩邊比較像是接住了同一個生命週期的不同階段，各做各的生意。不過標題裡那個「還沒」（yet），才是整篇分析真正的重點。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的分析。"
+              ]
+            },
+            "voice": {
+              "text": "開源 AI 模型越來越強，但前沿實驗室的日子，暫時還過得去。有一篇分析認為，開源模型的成功，目前不是從 Anthropic 這類公司手上搶來的——兩邊像是接住了同一個生命週期的不同階段。重點在「暫時」兩個字。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Open source models’ success isn’t coming at the expense of frontier labs. Instead, they each seem to capture two phases of the same life cycle.",
+              "title": "Why the rise of open source AI isn’t hurting Anthropic … yet",
+              "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
+              "published_at": "2026-07-08T04:04:32+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "分析認為開源模型的成功未以前沿實驗室為代價，兩者各佔同一生命週期的不同階段。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Why the rise of open source AI isn’t hurting Anthropic … yet",
+              "source_url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260709_evt_067",
+          "headline": "遊戲數據能通往AGI？",
+          "context": "一家有貝佐斯（Jeff Bezos）投資的新創押注：語言模型擅長文字，卻不懂物體怎麼在空間和時間裡移動——這個通往 AGI 的缺口，他們想用遊戲數據來補。",
+          "beat": "AI",
+          "thread_text": "通往 AGI 的祕密藏在遊戲數據裡？一家有貝佐斯（Jeff Bezos）投資的新創這麼押注：語言模型擅長文字，卻不懂物體如何在空間與時間中移動，而這個缺口可能由玩家的遊戲資料補上。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "有一家新創覺得，通往通用人工智慧（AGI）的祕密，藏在遊戲數據裡。他們的說法是：ChatGPT、Claude 這類語言模型很會處理文字，可是不太懂物體怎麼在空間和時間裡移動——而那正是「會舉一反三的智慧」需要的能力。這個缺口，他們押注可以用玩家的遊戲資料補起來。這家公司背後，有貝佐斯（Jeff Bezos）的投資。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "有一家新創覺得，通往通用人工智慧的祕密，藏在遊戲數據裡。他們的說法是：語言模型很會處理文字，可是不太懂物體怎麼在空間和時間裡移動。這個缺口，他們押注可以用玩家的遊戲資料補起來。這家公司背後，有貝佐斯的投資。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "通往 AGI 的祕密藏在遊戲數據裡？一家有貝佐斯（Jeff Bezos）投資的新創這麼押注：語言模型擅長文字，卻不懂物體如何在空間與時間中移動，而這個缺口可能由玩家的遊戲資料補上。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "有一家新創覺得，通往通用人工智慧（AGI）的祕密，藏在遊戲數據裡。他們的說法是：ChatGPT、Claude 這類語言模型很會處理文字，可是不太懂物體怎麼在空間和時間裡移動——而那正是「會舉一反三的智慧」需要的能力。這個缺口，他們押注可以用玩家的遊戲資料補起來。這家公司背後，有貝佐斯（Jeff Bezos）的投資。\n\n本則來自 TechCrunch，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有一家新創覺得，通往通用人工智慧的祕密，藏在遊戲數據裡。他們的說法是：語言模型很會處理文字，可是不太懂物體怎麼在空間和時間裡移動。這個缺口，他們押注可以用玩家的遊戲資料補起來。這家公司背後，有貝佐斯的投資。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "When it comes to achieving artificial general intelligence (AGI), large language models just don’t have what it takes. Models like ChatGPT and Claude are great at text, but they’re less skilled at understanding how things actually move through space and time — an essential skill for producing intelligence that generalizes. That gap, it turns out, might be filled by gaming data. That’s the bet behind General Intuition, a […]",
+              "title": "Your gaming data could be the secret to AGI, according to this Bezos-backed startup",
+              "url": "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/",
+              "published_at": "2026-07-08T21:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "貝佐斯投資的新創主張 LLM 缺乏空間與時間的理解能力，擬以遊戲數據補足以邁向 AGI。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Your gaming data could be the secret to AGI, according to this Bezos-backed startup",
+              "source_url": "https://techcrunch.com/podcast/your-gaming-data-could-be-the-secret-to-agi-according-to-this-bezos-backed-startup/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260709_evt_169",
+          "headline": "聯準會六月更憂通膨",
+          "context": "聯準會公布六月會議紀要。紀要顯示，決策官員對通膨的擔憂在那場會議上升溫。",
+          "beat": "ECON",
+          "thread_text": "聯準會公布六月會議紀要：決策官員對通膨的擔憂，在那場會議上升溫。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "threads_text": "聯準會官員對通膨的擔心，變重了。剛公布的六月會議紀要顯示，決策官員的通膨憂慮在那場會議上升溫。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "voice_text": "聯準會官員對通膨的擔心，變重了。剛公布的六月會議紀要顯示，這股憂慮在那場會議上升溫。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "聯準會公布六月會議紀要：決策官員對通膨的擔憂，在那場會議上升溫。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "聯準會官員對通膨的擔心，變重了。剛公布的六月會議紀要顯示，決策官員的通膨憂慮在那場會議上升溫。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "聯準會官員對通膨的擔心，變重了。剛公布的六月會議紀要顯示，這股憂慮在那場會議上升溫。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Fed policymakers' inflation concerns grew at June meeting, minutes show Reuters",
+              "title": "Fed policymakers' inflation concerns grew at June meeting, minutes show - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ0RTaXNnWWRiR3R0S2lvUlNhQVBYcktaZ00wQmxEc25PZldQUkpJdEpUWGlncExsWGR6M2pISWNYQWpxYUtvMDJFaHlrVVZOMHA3Z3cyd1ZWR2RMVjczczZIeGNucll2d3ByUDJqeElKZ3hkUGw2cUdDUXAxSmFrdktTbkJtYVJ2bWpyR1ZoTUM3TlNTM3pyYjhqeGxqYlNGU1ZXRDI2SzU1TlZn?oc=5",
+              "published_at": "2026-07-09T04:10:47+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "六月 FOMC 會議紀要顯示決策官員通膨擔憂升溫。",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Fed policymakers' inflation concerns grew at June meeting, minutes show - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNQ0RTaXNnWWRiR3R0S2lvUlNhQVBYcktaZ00wQmxEc25PZldQUkpJdEpUWGlncExsWGR6M2pISWNYQWpxYUtvMDJFaHlrVVZOMHA3Z3cyd1ZWR2RMVjczczZIeGNucll2d3ByUDJqeElKZ3hkUGw2cUdDUXAxSmFrdktTbkJtYVJ2bWpyR1ZoTUM3TlNTM3pyYjhqeGxqYlNGU1ZXRDI2SzU1TlZn?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260709_evt_097",
+          "headline": "關稅成本還會繼續轉嫁",
+          "context": "紐約聯邦準備銀行表示，轄區內的企業還沒把關稅成本轉嫁完畢。換句話說，價格端的壓力還沒走完。",
+          "beat": "ECON",
+          "thread_text": "紐約聯邦準備銀行表示，轄區內的企業尚未把關稅成本轉嫁完畢——價格端的壓力，還沒走完。\n\n本則來自 Reuters，2026 年 7 月 8 日發佈的報導。",
+          "threads_text": "關稅的帳單，還沒收完。紐約聯邦準備銀行表示，轄區內的企業到現在還沒把關稅成本完全轉嫁出去。換句話說，這部分的漲價壓力，後面還有。\n\n本則來自 Reuters，2026 年 7 月 8 日發佈的報導。",
+          "voice_text": "關稅的帳單，還沒收完。紐約聯邦準備銀行說，轄區的企業還沒把關稅成本完全轉嫁出去。換句話說，這部分的漲價壓力，後面還有。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "紐約聯邦準備銀行表示，轄區內的企業尚未把關稅成本轉嫁完畢——價格端的壓力，還沒走完。\n\n本則來自 Reuters，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "關稅的帳單，還沒收完。紐約聯邦準備銀行表示，轄區內的企業到現在還沒把關稅成本完全轉嫁出去。換句話說，這部分的漲價壓力，後面還有。\n\n本則來自 Reuters，2026 年 7 月 8 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "關稅的帳單，還沒收完。紐約聯邦準備銀行說，轄區的企業還沒把關稅成本完全轉嫁出去。換句話說，這部分的漲價壓力，後面還有。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "NY Fed says firms in its district aren't done passing on tariff costs Reuters",
+              "title": "NY Fed says firms in its district aren't done passing on tariff costs - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaS1NX3ZZVHBUMUJVc3B2R3lLSE5iQ3FuOXdJUHUwUkMwbXgxLXVjdS0yUjEteWtTTVpYMVNNUVdMZzJVc0NKd1M0RTU2NkxkWFFmWEZJbmJLZ1VQZzBlckx3eUw1cVQxRWpSckhnMGdab2xLYjF1aFZzRmRmN05qZkxROEtTSEhDNlhudm5pNklqRFRlNU9oS1A5bDJLUFlpU1R2ZDZzM3g1c00?oc=5",
+              "published_at": "2026-07-08T23:33:49+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "紐約聯準銀行表示轄區企業尚未把關稅成本轉嫁完畢。",
+              "source_id": "reuters_business_google_news",
+              "source_title": "NY Fed says firms in its district aren't done passing on tariff costs - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaS1NX3ZZVHBUMUJVc3B2R3lLSE5iQ3FuOXdJUHUwUkMwbXgxLXVjdS0yUjEteWtTTVpYMVNNUVdMZzJVc0NKd1M0RTU2NkxkWFFmWEZJbmJLZ1VQZzBlckx3eUw1cVQxRWpSckhnMGdab2xLYjF1aFZzRmRmN05qZkxROEtTSEhDNlhudm5pNklqRFRlNU9oS1A5bDJLUFlpU1R2ZDZzM3g1c00?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260709_evt_120",
+          "headline": "油價竄升敲響通膨警鐘",
+          "context": "川普的動作推高了油價，市場把這當成一記通膨的「鬧鐘」。據報導，投資人正在重新掂量通膨風險。",
+          "beat": "ECON",
+          "thread_text": "川普的動作點燃油價，投資人收到一記通膨「鬧鐘」（wake-up call）。據報導，市場正在重新評估通膨風險。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "threads_text": "油價一竄，投資人被通膨的鬧鐘叫醒了。據報導，川普的舉動把油價點了起來，市場形容這是一記通膨的「wake-up call」——投資人正在重新掂量通膨風險。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "voice_text": "油價一竄，投資人被通膨的鬧鐘叫醒了。據報導，川普的舉動把油價點了起來，市場開始重新盤算通膨的風險。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "川普的動作點燃油價，投資人收到一記通膨「鬧鐘」（wake-up call）。據報導，市場正在重新評估通膨風險。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "油價一竄，投資人被通膨的鬧鐘叫醒了。據報導，川普的舉動把油價點了起來，市場形容這是一記通膨的「wake-up call」——投資人正在重新掂量通膨風險。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "油價一竄，投資人被通膨的鬧鐘叫醒了。據報導，川普的舉動把油價點了起來，市場開始重新盤算通膨的風險。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Investors get inflation 'wake-up call' as Trump fires up oil prices Reuters",
+              "title": "Investors get inflation 'wake-up call' as Trump fires up oil prices - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOUlsWGRCWlNlNDNKOWRucV85aUlzWVRwaUpkanJjbGltWURSSWlFbWUwaFpwX0JjbXRfa2Z0cHk4WXJ2QlJiSDNOeG9PcXphYUNnRDZTQmdkTks4MDVqV3lRODZrVE1oSU02c0h5RkItN1FtMG45cDVwQUoyYko0elhIaGoyY3Y1RFhERA?oc=5",
+              "published_at": "2026-07-09T00:46:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "川普推升油價，投資人視為通膨警訊並重新評估風險。",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Investors get inflation 'wake-up call' as Trump fires up oil prices - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNOUlsWGRCWlNlNDNKOWRucV85aUlzWVRwaUpkanJjbGltWURSSWlFbWUwaFpwX0JjbXRfa2Z0cHk4WXJ2QlJiSDNOeG9PcXphYUNnRDZTQmdkTks4MDVqV3lRODZrVE1oSU02c0h5RkItN1FtMG45cDVwQUoyYko0elhIaGoyY3Y1RFhERA?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260709_evt_144",
+          "headline": "瑞士估15%關稅將維持",
+          "context": "一位瑞士官員表示，美國對瑞士課徵的 15% 關稅稅率，很有機會維持不變。這是官員的判斷，不是正式定案。",
+          "beat": "ECON",
+          "thread_text": "一位瑞士官員表示，美國對瑞士的 15% 關稅稅率有很大機會維持不變。目前這仍是官員的判斷，並非正式定案。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "threads_text": "美國對瑞士的關稅，可能就停在 15%。一位瑞士官員表示，這個稅率有很大的機會維持不變。要注意的是，這是官員口中的判斷，不是正式定案。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。",
+          "voice_text": "瑞士官員估計，美國對瑞士課的 15% 關稅，很有機會就這樣維持下去。這是官員的判斷，還不是正式定案。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "一位瑞士官員表示，美國對瑞士的 15% 關稅稅率有很大機會維持不變。目前這仍是官員的判斷，並非正式定案。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國對瑞士的關稅，可能就停在 15%。一位瑞士官員表示，這個稅率有很大的機會維持不變。要注意的是，這是官員口中的判斷，不是正式定案。\n\n本則來自 Reuters，2026 年 7 月 9 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "瑞士官員估計，美國對瑞士課的 15% 關稅，很有機會就這樣維持下去。這是官員的判斷，還不是正式定案。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Swiss official sees good chance 15% US tariff rate maintained Reuters",
+              "title": "Swiss official sees good chance 15% US tariff rate maintained - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVVBbFMzZzVVX3VRRE9MOFBJaV9TREg4TFVobzA4SGdJQVRKY1N3eUlxRUd5UlMzOGJDVENpS0RSZlhQcVUxa2V2c0NaV3FWdjRacDZ1dzV1Wmpad3otZlNHcnJva1RnZEcxeG5qUDEtcldiVXI2LUdSaEtJOFg4aG9WbDV4dDZWT1NZVm9YT3hJY214Wk84TUhtOWYwWmdFUmt4Z2Y0c2I?oc=5",
+              "published_at": "2026-07-09T02:10:36+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "瑞士官員認為美國 15% 關稅稅率有很大機會維持。",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Swiss official sees good chance 15% US tariff rate maintained - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVVVBbFMzZzVVX3VRRE9MOFBJaV9TREg4TFVobzA4SGdJQVRKY1N3eUlxRUd5UlMzOGJDVENpS0RSZlhQcVUxa2V2c0NaV3FWdjRacDZ1dzV1Wmpad3otZlNHcnJva1RnZEcxeG5qUDEtcldiVXI2LUdSaEtJOFg4aG9WbDV4dDZWT1NZVm9YT3hJY214Wk84TUhtOWYwWmdFUmt4Z2Y0c2I?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 1,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 284,
+    "total_articles_after_filter": 263,
+    "total_events_merged": 180,
+    "total_events_selected": 17,
+    "tw_highlights_count": 0
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260709_evt_118",
+      "headline": "Trump cites 'tremendous unity' at NATO summit, progress on defense spending - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_129",
+      "headline": "Ukraine to get licence to produce Patriot missiles, Trump says",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_131",
+      "headline": "Judge authorizes payment of multi-million dollar award to E. Jean Carroll in Trump case - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_133",
+      "headline": "The Pitt leads Emmy nominations, but Stranger Things snubbed in top categories",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_152",
+      "headline": "Trump's visit a win for Turkey's Erdogan, NATO tensions aside - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_153",
+      "headline": "Trump says he doesn't think Iran conflict will start again - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_154",
+      "headline": "Watch: Nato chief asked if there really is 'unity' in Nato",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_171",
+      "headline": "Global economy resilient to Middle East war shock, agencies say - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_176",
+      "headline": "Starmer gifted gun and ammunition by Turkish president at Nato",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_179",
+      "headline": "Nato chief tells BBC that Trump comments are like 'family argument'",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_166",
+      "headline": "Trump threatens Iran as NATO summit wraps",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_167",
+      "headline": "In a West Bank cave, Israelis and Palestinians hold an out-of-the-ordinary lunch",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_162",
+      "headline": "At Warsh’s First Fed Meeting, Some Officials Signaled Support for Raising Interest Rates",
+      "selection_score": -17,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_177",
+      "headline": "EU Rejects Plea to Pause Troubled EES Biometrics System at Airports Ahead of Summer Rush",
+      "selection_score": 28,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_009",
+      "headline": "New video shows man believed to be Tyler Robinson before Charlie Kirk shooting",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_018",
+      "headline": "'The water just came so fast': Typhoon triggers floods and rare tornadoes in China",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_021",
+      "headline": "Utah boarding school where Paris Hilton alleged abuse as a teen loses its licence",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_023",
+      "headline": "Will Le Pen rise again? French nationalist leader defiant after court's ruling",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_038",
+      "headline": "Watch: Gaza football fans watch World Cup from rubble",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_040",
+      "headline": "Trains and emergency calls affected after major outage at Australia's largest telecoms company",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_055",
+      "headline": "Cubans protest after third nationwide power cut this year",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_059",
+      "headline": "Physical Education review – boisterous, cliche-busting lesson on teen masculinity",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_066",
+      "headline": "New barnet: why is everyone wigging out over Dwayne Johnson’s Moana hairpiece?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_069",
+      "headline": "Jess Cartner-Morley on fashion: flip-flops are once again having a fashion moment. But please tread carefully",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_070",
+      "headline": "An Afghan girl calmly milks a giant yak: Daniel Malikyar’s best photograph",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_074",
+      "headline": "King symbolically commutes death sentence for last British woman to be hanged - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_075",
+      "headline": "Trump on Iran: US will probably hit them again Wednesday night - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_076",
+      "headline": "Most Gulf markets slip on Middle East hostilities - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_077",
+      "headline": "Eight killed after landslide hits girls' school in Bangladesh",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_078",
+      "headline": "Explainer: How can Trump 'cut off all trade' with Spain? - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_081",
+      "headline": "German doctor jailed for murder of 15 patients and suspected of more",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_082",
+      "headline": "Brazilian police search former President Bolsonaro's home for weapons - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_083",
+      "headline": "Trump flies old Air Force One out of Turkey, switches to new jet in Britain for trip home - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_084",
+      "headline": "Poland's zloty pulls back from 19-month low after interest rates unchanged - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_085",
+      "headline": "Khamenei's coffin carried through Shia shrines as ceremonies held in Iraq",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_086",
+      "headline": "Cost of driving in Singapore soars as ownership certificates reach nearly $100,000 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_088",
+      "headline": "Datacentres are a ticking timebomb. We must make sure AI’s benefits outweigh the costs | Nicki Hutley",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_089",
+      "headline": "Bed rot, doomscrolling and a single goldfish: the Melbourne art show blowing loneliness open",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_090",
+      "headline": "SBI Funds Management targets $12.24 billion valuation in India IPO - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_091",
+      "headline": "China plans to let top AI firms buy limited Nvidia H200 chips, the Information reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_093",
+      "headline": "Teenager arrested after two girls, 13, seriously injured in German school attack",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_095",
+      "headline": "Mexico expects economy to outperform IMF projections - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_096",
+      "headline": "Bowen: For all his bluster, Trump has no better option than talks with Iran",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_098",
+      "headline": "Trump says he thinks Israel will withdraw troops from southern Lebanon - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_099",
+      "headline": "ADB raises developing Asia 2026 growth forecast to 4.9% - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_100",
+      "headline": "French antitrust watchdog orders Meta to resume talks with media groups over publishing fees - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_102",
+      "headline": "‘I dealt with death, bankruptcy and HIV in three months’: Andreas Angelidakis on his radical, Ru Paul-influenced art installation",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_103",
+      "headline": "China's Nexchip to raise $890 million in Hong Kong share sale - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_104",
+      "headline": "Trump's Board of Peace planning pilot humanitarian zone in Gaza, official says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_106",
+      "headline": "Eight Iranian army members killed in U.S. attacks on southern parts of Iran - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_109",
+      "headline": "Trump invokes communism 81 times in two weeks as aides test midterms message - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_110",
+      "headline": "Albania's PM defends €4 million Kanye West concert - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_111",
+      "headline": "VIEW Stocks, bonds retreat after Trump says Iran MOU 'is over' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_113",
+      "headline": "Britain's FTSE 100 sees worst day since May as Trump says Iran deal 'over' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_114",
+      "headline": "How Iran's 'golden weapon' of Hormuz became a bigger priority than its long-disputed nuclear programme - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_116",
+      "headline": "Venezuela's Rodriguez signs oil and gas reform framework - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_117",
+      "headline": "IMF lowers 2026 global growth forecast to 3%, sees rebound in 2027 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_119",
+      "headline": "Cheers and boos for Le Pen's French campaign launch after guilty verdict - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_126",
+      "headline": "Democrat Rahm Emanuel tells Israel to change course or risk US alliance - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_127",
+      "headline": "UN probe says mass killings, rapes, abductions, starvation by Sudan force amount to genocide - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_130",
+      "headline": "Pakistan urges all sides to uphold commitments under Islamabad MoU - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_134",
+      "headline": "Nigeria's president demands to know how fake agency was allegedly set up in his office",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_135",
+      "headline": "NEWSLETTER: Are the US and Iran escalating to negotiate? - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_137",
+      "headline": "Fatal ICE shooting in Houston sparks mass protest, demands for transparency - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_138",
+      "headline": "Pierpaolo Piccioli’s couture debut reimagines Balenciaga in his own colourful image",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_139",
+      "headline": "Israeli fire kills nine people, including two children, in Gaza, medics say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_140",
+      "headline": "Trump rescinds Syria state sponsor of terrorism designation - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_143",
+      "headline": "Major AI offerings at a glance - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_145",
+      "headline": "Venezuelan fashion workshop swaps gowns for body bags after deadly earthquakes - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_146",
+      "headline": "Etihad nearing deal to order 10 Boeing 787 jets, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_147",
+      "headline": "Pentagon seeks to rally Latin America behind new Monroe Doctrine - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_150",
+      "headline": "Russian attack kills four in Ukraine port of Odesa, official says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_163",
+      "headline": "Thousands march as Khamenei's funeral procession crosses into Iraq - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_164",
+      "headline": "Greenlanders reject Trump's renewed push for control of island - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_165",
+      "headline": "Eleven more Trump deportees arrive in Eswatini from the United States, lawyer says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_170",
+      "headline": "Arizona toddler found alive in morgue after being declared dead from drowning",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_172",
+      "headline": "US military is conducting fresh strikes on Iran - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_173",
+      "headline": "Companies must address self-driving car interference with emergency vehicles, U.S. says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_180",
+      "headline": "Justin Bieber joins Madonna, Shakira and BTS for Fifa World Cup final half-time show",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_003",
+      "headline": "Trump’s World Cup Intervention Roils the Soccer World, and Beyond",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_004",
+      "headline": "Hachette Book Group Employees Vote to Unionize",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_005",
+      "headline": "Madonna’s Retro Reverie and 5 More New Songs You Should Hear",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_006",
+      "headline": "Microsoft joins AI cost-cutting trend by relying more on its own models",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_010",
+      "headline": "Louise Lasser, Star of TV’s ‘Mary Hartman,’ Is Dead at 87",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_012",
+      "headline": "OpenAI’s Chief Futurist Is Leaving the Company",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_014",
+      "headline": "Iran’s Strikes on Ships in Strait of Hormuz Threaten Oil Flow",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_015",
+      "headline": "New Museum’s Next Director Will Be Massimiliano Gioni",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_017",
+      "headline": "Book Review: ‘American Trickster,’ by Ru Marshall",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_024",
+      "headline": "From legal threats to ‘the worst haircut you can think of’: 25 years of The Office",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_027",
+      "headline": "The Kiss by Katie Barclay review – on passion, power and puckering up",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_028",
+      "headline": "Late Night Calls a Foul on Trump After His World Cup Intervention",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_035",
+      "headline": "Hackers can use 9 of the most popular AI tools to assemble massive botnets",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_037",
+      "headline": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_041",
+      "headline": "Hot French startup ZML releases free product to speed inference across lots of AI chips",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_044",
+      "headline": "A Grand Day Out/The Wrong Trousers review – rereleased Nick Park classics are a complete treat",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_045",
+      "headline": "Lindsey Santoro: ‘The problems I have are my own – I’ve caused them, I’m the issue!’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_046",
+      "headline": "5 Minutes That Will Make You Love Geri Allen",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_047",
+      "headline": "America250? Try Bangladesh 2.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_048",
+      "headline": "‘He saw signs saying No Blacks – but he never got bitter’: Sterling Betancourt, the man who brought steelpan music to the UK",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_050",
+      "headline": "This Former DeepMind Exec Thinks the AI Arms Race Could End in Disaster",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_051",
+      "headline": "Booyakasha! Sacha Baron Cohen has completed a new Ali G movie",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_056",
+      "headline": "Pickup Artist Mystery Has an AI Girlfriend",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_057",
+      "headline": "The unknown photos that tell the story of the US’s Black colleges",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_058",
+      "headline": "Assassin’s Creed Black Flag Resynced review – bootyful high seas adventure, now with 20% more swashbuckling",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_060",
+      "headline": "Imagine a world without Wagner … it’s not easy, but let’s try",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_064",
+      "headline": "Former OpenAI exec Kevin Weil is now on the board of Stoke Space",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_071",
+      "headline": "Indio Solari, Argentine Rocker Who Packed Stadiums, Dies at 77",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_072",
+      "headline": "US rare earths flow to Asia as domestic demand is slow to emerge",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_073",
+      "headline": "‘The Hole’: Urban Apocalypse as Tuneful Chamber Drama",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_080",
+      "headline": "Penelope Keith, Effortlessly Posh Star of British Sitcoms, Dies at 86",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_092",
+      "headline": "Greetings from a Syrian church, infused with a mix of sweet fruit and diverse faiths",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_094",
+      "headline": "In Some U.K. Hospitals, the T.L.C. Includes a Movie Theater",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_101",
+      "headline": "These AI startups are growing  revenue at faster and faster rates",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_112",
+      "headline": "The IOC clears the way for Russian athletes to return to Olympic competition",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_115",
+      "headline": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_121",
+      "headline": "Why ‘Heated Rivalry’ Received No Emmy Nominations While Connor Storrie Did",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_122",
+      "headline": "‘Love Story,’ FX’s JFK Jr. Series, Picks Up Fewer Emmy Nods Than Expected",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_123",
+      "headline": "Book Review: ‘Men in Love,’ by Irvine Welsh",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_128",
+      "headline": "Meta wants its AI glasses to seem less creepy. Its AI strategy says otherwise.",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_132",
+      "headline": "New U.S. passports with Trump's image are available. Here's how to get (or avoid) one",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_136",
+      "headline": "Trump’s Name Must Remain Off Kennedy Center For Now, Appeals Court Rules",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_142",
+      "headline": "Trump Lashes Out at Spain: ‘Cut Off All Trade.’ Here’s Why That’s Unlikely.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_148",
+      "headline": "Google Photos adds a new AI ‘Video Remix’ tool",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_149",
+      "headline": "Where to Stream 2026 Emmy-Nominated Series: ‘The Pitt,’ ‘Hacks’ and More",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_151",
+      "headline": "Oil Market Calm Shattered by Fresh Hostilities Between US and Iran",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_157",
+      "headline": "Google pays $250K for Linux vulnerability allowing guest VM escapes",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_158",
+      "headline": "Taylor Swift and Reality TV Shows Like ‘Summer House’ Earn Emmy Nods",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_159",
+      "headline": "Justin Bieber and Burna Boy Join Inaugural World Cup Halftime Show",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_160",
+      "headline": "SpaceXAI releases Grok 4.5, which Elon describes as an ‘Opus-class model’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_161",
+      "headline": "Oil Prices Jump After Trump Says Deal With Iran Is ‘Over’",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_168",
+      "headline": "I Built a Self-Improving AI, and So Can You",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_174",
+      "headline": "The Good List: 6 Things to Add Delight to Your Day",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_175",
+      "headline": "Google’s deepfake detector system used to debunk McConnell hoax pic",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_178",
+      "headline": "Book Review: ‘A Table for Fortune,’ by William T. Vollmann",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_022",
+      "headline": "Ant Group’s Robbyant Open-Sources LingBot-Vision: A 1B Boundary-Centric Vision Foundation Model for Dense Spatial Perception",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_036",
+      "headline": "NVIDIA’s Cosmos-Framework Tutorial: Designing a Colab-Friendly Miniature of Cosmos 3 World Models with Omnimodal Mixture-of-Transformers",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_031",
+      "headline": "Explicit Bodies, Hidden Bodies Exhibition / Vão",
+      "selection_score": 3,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_001",
+      "headline": "Nitsche Arquitetos integrates timber kiosks into São Paulo metro station renovations",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_002",
+      "headline": "Dezeen Debate features \"intensely geometric\" headquarters by BIG",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_007",
+      "headline": "Award-winning student projects from Interior Educators spotlight regenerative practice",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_019",
+      "headline": "NVIDIA Releases Audex (Nemotron-Labs-Audex-30B-A3B): A Unified Audio-Text LLM That Preserves the Text Intelligence of Its Backbone",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_025",
+      "headline": "Sthapati \"draws from Jodhpur's royal past\" for pastel-coloured airport",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_029",
+      "headline": "Casaluna / Anarquitectura",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_030",
+      "headline": "Unusual Brick House / PLUG modular architecture",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_032",
+      "headline": "Timber Studio / Koichi Takada Architects",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_033",
+      "headline": "House Tenjin / atelier yoo",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_034",
+      "headline": "TU Munich Kinderoase Daycare / Kéré Architecture  + HK Architekten",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_039",
+      "headline": "From Homes to Coffee Shops: Adaptive Reuse Projects Transforming Domestic History",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_049",
+      "headline": "David Chipperfield Architects transforms historic Spanish bank into Faro Santander museum",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_052",
+      "headline": "Amonti Chalets / Architekt Andreas Gruber",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_053",
+      "headline": "Yinka Ilori's Dunelm collection aims to make good design \"a lot more accessible\"",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_054",
+      "headline": "Estudio Futuro renovates compact Argentinian home around terracotta-paved patios",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_061",
+      "headline": "Lorcan O’Herlihy’s Los Angeles: Dignity, Beauty, and Belonging - Free Self Guided Architectural Trail Map",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_062",
+      "headline": "Mycelium Resources in Architecture and Design",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_063",
+      "headline": "Walzwerk - Student Design Competition",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_065",
+      "headline": "ECC Creative / A Parallel Architecture",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_068",
+      "headline": "Aunt Val’s House / Márcio Flávio Motta",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_087",
+      "headline": "Villas de San Pablo Cultural Center, Barranquilla / ETHZ + Alejandro Restrepo Montoya",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_105",
+      "headline": "Snarkitecture creates \"unexpected\" playground in DC's National Building Museum",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_125",
+      "headline": "Yano House / Peninsula Arquitetura",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_141",
+      "headline": "MIDEA Science Center / Atelier Ma_BIAD",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_155",
+      "headline": "Pukará House / El Sindicato Arquitectura",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260709_evt_156",
+      "headline": "KPMB reveals designs for David Geffen School of Drama at Yale University",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    }
+  ]
+}

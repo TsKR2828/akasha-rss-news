@@ -1,0 +1,64 @@
+{
+  "event_id": "daily_20260709_evt_124",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "OpenAI新語音邊聽邊說",
+  "context": "OpenAI 發布新一代語音模型 GPT-Live，採用全雙工架構，能同時聽和說——這是即時翻譯的關鍵能力。新模型已接手 ChatGPT 的語音模式，較深的推理會交給 GPT-5.5 處理。",
+  "article_ids": [
+    "642baa13dfc4a20e8cc9432cd42643bedf59a3cb28b6f9547112f3be83d97d0f",
+    "4435b062a161d827d615f4c8942ca577f4f1934bd2eba9c04d3beb3226516ba6"
+  ],
+  "sources": [
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "OpenAI says its new voice mode can speak and listen at the same time, a key ability for live translation.",
+      "title": "OpenAI releases new voice models for more natural live conversations",
+      "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+      "published_at": "2026-07-09T01:00:00+08:00"
+    },
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "OpenAI released GPT-Live, a new generation of voice models now powering ChatGPT Voice. It uses a full-duplex architecture to listen and speak at once, and delegates search and reasoning to GPT-5.5. The post OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5 appeared first on MarkTechPost .",
+      "title": "OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5",
+      "url": "https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/",
+      "published_at": "2026-07-09T02:08:21+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2,
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 41,
+  "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "OpenAI 新語音模式可同時聽與說，為即時翻譯的關鍵能力。",
+      "source_id": "techcrunch_ai",
+      "source_title": "OpenAI releases new voice models for more natural live conversations",
+      "source_url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "新模型名為 GPT-Live／GPT-Live-1 mini，全雙工架構，驅動 ChatGPT Voice，並將搜尋與推理委派給 GPT-5.5。",
+      "source_id": "marktechpost",
+      "source_title": "OpenAI Releases GPT-Live and GPT-Live-1 mini: Full-Duplex Voice Models That Delegate Deeper Reasoning to GPT-5.5",
+      "source_url": "https://www.marktechpost.com/2026/07/08/openai-releases-gpt-live-and-gpt-live-1-mini-full-duplex-voice-models-that-delegate-deeper-reasoning-to-gpt-5-5/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "OpenAI 發布新一代語音模型 GPT-Live 與 GPT-Live-1 mini：全雙工架構，能同時聽和說，被視為即時翻譯的關鍵能力。新模型已開始驅動 ChatGPT Voice，搜尋與較深的推理則交由 GPT-5.5 處理。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 9 日發佈的報導。",
+  "threads_text": "OpenAI 的語音模型換代了。新發布的 GPT-Live 與 GPT-Live-1 mini 採用全雙工（full-duplex）架構——可以一邊聽你說話、一邊開口回答，不用再輪流等待。這種能力被視為即時翻譯的關鍵。新模型已經開始驅動 ChatGPT 的語音模式；遇到搜尋和比較深的推理，它會把工作交給 GPT-5.5。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 9 日發佈的報導。",
+  "voice_text": "OpenAI 的新語音模型，能一邊聽你講話、一邊開口回答。這一代叫 GPT-Live，用的是全雙工架構——同時聽和說，正是即時翻譯需要的能力。它已經開始驅動 ChatGPT 的語音模式，遇到比較深的問題，會把推理交給 GPT-5.5。"
+}

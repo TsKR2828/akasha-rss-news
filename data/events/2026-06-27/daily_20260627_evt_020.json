@@ -1,0 +1,65 @@
+{
+  "event_id": "daily_20260627_evt_020",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "海峽遇襲油價跳漲",
+  "context": "荷莫茲海峽的攻擊讓航運暫停，油價應聲跳漲。在這之前，油價其實已經回落到接近二月伊朗戰爭開打前的水準——這次遇襲把行情又拉了回去。",
+  "article_ids": [
+    "fcc9155bd2a3993fd185b1c251caac2a07d92142087301eab24f47d81bd187b6",
+    "089bc6fcf543b1c7f2e0c404341cdd8fcaf5bff6279377be07f5e99cf7aa39de",
+    "528229be4d2326840210cd43593ec4a72cc00e7024b7b14a4204b4be11262861"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Oil prices fell, moving closer to levels not seen since the war in Iran began in February.",
+      "title": "Oil Prices Jump After Attack Halts Shipping in Strait of Hormuz",
+      "url": "https://www.nytimes.com/2026/06/25/business/oil-prices-gas-iran.html",
+      "published_at": "2026-06-26T04:27:32+08:00"
+    },
+    {
+      "source_id": "bbc_business",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "When the conflict began on 28 February, fuel costs jumped as the war disrupted the production and transportation of energy across the Middle East.",
+      "title": "What's happening to petrol prices now oil is back to pre-Iran war levels?",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-06-26T21:51:15+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "荷莫茲海峽攻擊使航運暫停後油價上漲。",
+      "source_id": "nyt_business",
+      "source_title": "Oil Prices Jump After Attack Halts Shipping in Strait of Hormuz",
+      "source_url": "https://www.nytimes.com/2026/06/25/business/oil-prices-gas-iran.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "油價先前已回落至接近 2 月伊朗戰爭開打前水準。",
+      "source_id": "bbc_business",
+      "source_title": "What's happening to petrol prices now oil is back to pre-Iran war levels?",
+      "source_url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "荷莫茲海峽遇襲、航運暫停後，油價跳漲。此前油價已回落至接近二月伊朗戰爭開打前的水準；市場關注加油站端的價格接下來怎麼走。\n\n本則整理自 The New York Times 與 BBC 於 2026 年 6 月 26 日發佈的報導。",
+  "threads_text": "油價本來都快回到戰前水準了，一次攻擊又把它拉了回去。荷莫茲海峽遇襲、航運暫停之後，油價跳漲。回顧一下：二月底伊朗戰爭開打時，能源的生產和運輸被打亂，燃料成本跳升；這幾個月行情慢慢消化，眼看要回到戰前——然後就是這次遇襲。加油站的價格接下來怎麼走，市場正在看。\n\n本則整理自 The New York Times 與 BBC 於 2026 年 6 月 26 日發佈的報導。",
+  "voice_text": "油價本來都快回到戰前水準了，一次攻擊又把它拉了回去。海峽遇襲、航運暫停之後，油價跳漲。回顧一下：二月底戰爭開打時，燃料成本跳升，這幾個月行情慢慢消化，眼看要回到原點——然後就是這次遇襲。"
+}

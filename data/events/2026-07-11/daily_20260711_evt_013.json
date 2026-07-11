@@ -1,0 +1,65 @@
+{
+  "event_id": "daily_20260711_evt_013",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Meta進軍AI寫程式大戰",
+  "context": "Meta 超級智慧實驗室發布 Muse Spark 1.1，殺進擁擠的 AI 寫程式戰場：多模態推理模型、100 萬 token 上下文、主打大型代理工作負載、修 bug 和大規模程式碼搬遷，同步開放 Meta Model API 公測。",
+  "article_ids": [
+    "6481ec97997970b9fcecf27c221ac591eaa815a9d5e87457b97e797c725632c5",
+    "7e7a46a295e7b4d7082f34d5a589b372aa42231ef5e1f2cadffc25d2fe62f9b5",
+    "08f0cbb1ef54eb187b183ec0311d60a22e4600724abcd15be5622b0f863645fd"
+  ],
+  "sources": [
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Meta's pitch to users is Spark's ability to handle large agentic workloads, fix bugs, and help with large code migrations — the kind of automation that enterprises are increasingly turning to AI companies to provide.",
+      "title": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
+      "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+      "published_at": "2026-07-10T03:40:45+08:00"
+    },
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Meta Superintelligence Labs released Muse Spark 1.1 on July 9, 2026, alongside a public preview of the Meta Model API. It is a multimodal reasoning model built for agentic tasks, with a 1,000,000-token context window the model actively compacts, zero-shot generalization to new tools and MCP servers, and multi-agent delegation across parallel subagents. Meta's own launch table shows it leading tool use while trailing Opus 4.8 and GPT-5.5 on coding. The post Meta Superintelligence Labs Releases Muse Spark 1.1: A Multimodal Reasoning Model for Agentic Tasks on Meta Model API appeared first on MarkTechPost .",
+      "title": "Meta Superintelligence Labs Releases Muse Spark 1.1: A Multimodal Reasoning Model for Agentic Tasks on Meta Model API",
+      "url": "https://www.marktechpost.com/2026/07/09/meta-superintelligence-labs-releases-muse-spark-1-1/",
+      "published_at": "2026-07-10T06:26:16+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2,
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 41,
+  "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Meta 以 Muse Spark 1.1 進軍 AI 程式碼市場，主打代理負載、修 bug 與程式碼搬遷。",
+      "source_id": "techcrunch_ai",
+      "source_title": "Meta enters the crowded AI coding battle with Muse Spark 1.1",
+      "source_url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Muse Spark 1.1 為多模態推理模型，100 萬 token 上下文、零樣本工具適應，隨 Meta Model API 公測發布。",
+      "source_id": "marktechpost",
+      "source_title": "Meta Superintelligence Labs Releases Muse Spark 1.1: A Multimodal Reasoning Model for Agentic Tasks on Meta Model API",
+      "source_url": "https://www.marktechpost.com/2026/07/09/meta-superintelligence-labs-releases-muse-spark-1-1/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "Meta 超級智慧實驗室發布 Muse Spark 1.1，進軍 AI 寫程式大戰：多模態推理模型、100 萬 token 上下文（模型會主動壓縮）、零樣本適應新工具與 MCP 伺服器，同步開放 Meta Model API 公測。主打企業要的：大型代理工作負載、修 bug、大規模程式碼搬遷。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 10 日發佈的報導。",
+  "threads_text": "AI 寫程式的戰場已經很擠，Meta 還是跳進來了。超級智慧實驗室（Meta Superintelligence Labs）發布 Muse Spark 1.1——一個為代理任務打造的多模態推理模型，100 萬 token 的上下文窗口由模型主動壓縮管理，號稱能零樣本適應新工具和 MCP 伺服器，同步開放 Meta Model API 公測。對用戶的推銷詞很務實：接得住大型代理工作負載、會修 bug、能幫忙做大規模的程式碼搬遷——正是企業現在最想外包給 AI 的那些活。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 7 月 10 日發佈的報導。",
+  "voice_text": "AI 寫程式的戰場已經很擠，Meta 還是跳進來了。他們發布了 Muse Spark 1.1，一個為代理任務打造的多模態推理模型，有一百萬 token 的上下文窗口，還同步開放自家的模型 API 公測。推銷詞很務實：接得住大型的代理工作、會修 bug、能幫忙搬遷大量程式碼——正是企業現在最想交給 AI 的活。"
+}

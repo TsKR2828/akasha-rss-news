@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260711_evt_086",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Meet LingBot-World-Infinity: An Open Causal World Model With An Agentic Harness",
+  "context": "Robbyant, Ant Group's embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.0). It is a 14B causal video generation model that behaves as an interactive world simulator. The core idea is the Mixture of Bidirectional and Autoregressive (MoBA) attention m",
+  "article_ids": [
+    "1066c293844dd8884be6f00eb1afc081df2b65ab743d37f136a8761e40ba15de"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Robbyant, Ant Group's embodied-intelligence unit, has released LingBot-World-Infinity (LingBot-World 2.0). It is a 14B causal video generation model that behaves as an interactive world simulator. The core idea is the Mixture of Bidirectional and Autoregressive (MoBA) attention mask, paired with distribution matching distillation applied over long self-rollout trajectories. Together they target long-horizon drift, the failure mode that smears textures and warps geometry in most interactive world models. A Director-Pilot agentic harness wraps the generator, where a VLM proposes events and the Diffusion Transformer renders them. The report shows a single 60-minute uninterrupted session covering 20 scenarios. But the release is thinner than the paper: one checkpoint, a 480P reference script, no deployment code, no quantitative benchmarks, and a non-commercial CC BY-NC-SA 4.0 license. The post Meet LingBot-World-Infinity: An Open Causal World Model With An Agentic Harness appeared first on MarkTechPost .",
+      "title": "Meet LingBot-World-Infinity: An Open Causal World Model With An Agentic Harness",
+      "url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness/",
+      "published_at": "2026-07-10T12:38:20+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Meet LingBot-World-Infinity: An Open Causal World Model With An Agentic Harness",
+      "source_id": "marktechpost",
+      "source_title": "Meet LingBot-World-Infinity: An Open Causal World Model With An Agentic Harness",
+      "source_url": "https://www.marktechpost.com/2026/07/09/meet-lingbot-world-infinity-an-open-causal-world-model-with-an-agentic-harness/",
+      "support_type": "direct"
+    }
+  ]
+}

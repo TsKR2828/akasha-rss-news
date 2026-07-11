@@ -1,0 +1,42 @@
+{
+  "steps": [
+    {
+      "name": "fetch_rss",
+      "exit_code": 0,
+      "duration_s": 0.0,
+      "skipped": true,
+      "note": "pre-fetched (27 XML files)"
+    },
+    {
+      "name": "normalize",
+      "exit_code": 0,
+      "duration_s": 2.39
+    },
+    {
+      "name": "classify",
+      "exit_code": 0,
+      "duration_s": 10.41
+    },
+    {
+      "name": "tw_highlight",
+      "exit_code": 0,
+      "duration_s": 6.17
+    },
+    {
+      "name": "dedup",
+      "exit_code": 0,
+      "duration_s": 5.02
+    },
+    {
+      "name": "event_cluster",
+      "exit_code": 0,
+      "duration_s": 10.28
+    },
+    {
+      "name": "select",
+      "exit_code": 0,
+      "duration_s": 3.49
+    }
+  ],
+  "pipeline_start": 1783788390.5050035
+}

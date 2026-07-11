@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260711_evt_015",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "Too Many Books?",
+  "context": "Mendel Uminer faced a crisis when his landlord objected to the 10,000 volumes in his New York studio apartment.",
+  "article_ids": [
+    "4e5c57060688cc280646b824f168ee86d5b31bcb75bfe0cabdd3fcfb30ddd3a6"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Mendel Uminer faced a crisis when his landlord objected to the 10,000 volumes in his New York studio apartment.",
+      "title": "Too Many Books?",
+      "url": "https://www.nytimes.com/2026/07/09/style/too-many-books-new-york-city-apartment-scholar-landlord.html",
+      "published_at": "2026-07-10T03:54:57+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Too Many Books?",
+      "source_id": "nyt_books",
+      "source_title": "Too Many Books?",
+      "source_url": "https://www.nytimes.com/2026/07/09/style/too-many-books-new-york-city-apartment-scholar-landlord.html",
+      "support_type": "direct"
+    }
+  ]
+}

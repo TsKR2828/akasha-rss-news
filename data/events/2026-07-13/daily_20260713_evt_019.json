@@ -1,0 +1,46 @@
+{
+  "event_id": "daily_20260713_evt_019",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "NVIDIA磚塊式GPU教學",
+  "context": "MarkTechPost 釋出一份教學，教人用 NVIDIA 的「磚塊式」（tile-based）GPU 程式設計工具 cuTile 與 Triton，從基本的向量加法一路做到 Flash Attention，且整套流程可以在免費的 Colab 環境上執行。",
+  "article_ids": [
+    "340e020091d59e8a69b8df56f72fbfc96ab07d4150e7763bc6fca2afd7eb1462"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "In this tutorial, we explore NVIDIA tile-based GPU programming with TileGym, building a Colab workflow that runs across different hardware. We probe the CUDA environment, try the real cuTile backend, and fall back to Triton when standard Colab GPUs lack the cuTile stack. We learn the core tile idea: operate on whole data tiles instead of single threads, then load, compute, and store them. We implement vector addition, fused GELU, row-wise softmax, tiled matrix multiplication, and flash attention, checking each against PyTorch. The post A Coding Guide to NVIDIA’s Tile-Based GPU Programming: From cuTile and Triton Kernels to Flash Attention appeared first on MarkTechPost .",
+      "title": "A Coding Guide to NVIDIA’s Tile-Based GPU Programming: From cuTile and Triton Kernels to Flash Attention",
+      "url": "https://www.marktechpost.com/2026/07/11/a-coding-guide-to-nvidias-tile-based-gpu-programming-from-cutile-and-triton-kernels-to-flash-attention/",
+      "published_at": "2026-07-12T08:01:06+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "MarkTechPost教學介紹NVIDIA磚塊式GPU程式設計工具cuTile與Triton，涵蓋向量加法到Flash Attention，可在Colab執行。",
+      "source_id": "marktechpost",
+      "source_title": "A Coding Guide to NVIDIA’s Tile-Based GPU Programming: From cuTile and Triton Kernels to Flash Attention",
+      "source_url": "https://www.marktechpost.com/2026/07/11/a-coding-guide-to-nvidias-tile-based-gpu-programming-from-cutile-and-triton-kernels-to-flash-attention/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "一份給工程師的教學上線了：用 NVIDIA 的「磚塊式」（tile-based）GPU 程式設計工具 cuTile 與 Triton，從最基本的向量加法開始，一路做到進階的 Flash Attention。核心概念是一次處理整塊資料，而不是逐一執行緒運算。整套流程可以在免費的 Colab 環境上跑，沒有 cuTile 支援的顯卡也能改用 Triton 完成。\n\n本則來自 MarkTechPost，2026 年 7 月 12 日發佈的報導。",
+  "threads_text": "GPU 程式設計又多了一份實戰教材。這篇教學介紹 NVIDIA 的「磚塊式」（tile-based）GPU 程式設計工具 cuTile 與 Triton——核心概念是一次處理整塊資料，用載入、運算、寫回三個步驟，取代逐一執行緒的傳統寫法。內容從最基本的向量加法開始，逐步做到融合 GELU、逐列 softmax、平舖矩陣乘法，最後完成進階的 Flash Attention。整套流程可以在免費的 Colab 環境上執行，就算手邊的顯卡沒有 cuTile 支援，也能自動改用 Triton 跑完全部練習。\n\n本則來自 MarkTechPost，2026 年 7 月 12 日發佈的報導。",
+  "voice_text": "有一份給工程師的教學上線了，教人怎麼用 NVIDIA 的磚塊式 GPU 程式設計工具。核心概念是一次處理整塊資料，用載入、運算、寫回三個步驟，取代傳統逐一執行緒的寫法。內容從最基本的向量加法開始，一路做到進階的注意力機制運算。整套流程可以在免費的線上環境跑，沒有專門硬體支援也能改用替代方案完成。"
+}

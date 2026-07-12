@@ -1,0 +1,85 @@
+{
+  "event_id": "daily_20260713_evt_033",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "卡達前埃米爾逝世",
+  "context": "卡達前埃米爾哈瑪德·本·哈里發·阿勒薩尼（Sheikh Hamad bin Khalifa Al Thani）逝世，享年 74 歲。他在 1996 年發動不流血政變推翻父親奪權，之後將卡達打造成天然氣蘊藏豐富的區域強權。",
+  "article_ids": [
+    "10dc5256897320f4813949640fbbe62495c4e2b52f8986efa462c4a944594399",
+    "505b05f0d69a9d183419c9dea595b02331b436737ebd19d256a280be0f91ac60",
+    "790614d34d82bbf2348e6ad170e9a60c673503c5ca6838a863cdcd54d37ffede",
+    "39a500e8d9e58db634bf065ee495668b4aeb5d182d6ea6229231891cb84846e6",
+    "a4343a1f955f164333d1ddcfc7abda35b4cd609b76b8112ccb10ea4a7af4069e",
+    "7e762b02dae4baeab8c8f823895991c237dd791817754cb0dc1b54fc2aa199e4",
+    "5052f08cde7b9724d0346203db54eab33e478ba98cb2cb007e7eab68528f04f1"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Former emir of Qatar, Sheikh Hamad bin Khalifa Al Thani, dies at 74 Reuters",
+      "title": "Former emir of Qatar, Sheikh Hamad bin Khalifa Al Thani, dies at 74 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNa0haajRKdWJvZENRMEpjQnFRUFJ1cEptbFRKQ1B5WHN2LTlHeDNEUUc2Q1lVS2FNV25jd2cxQUx5M1UwWXB0WWppa2FLallzNnAtWnVxc1I1eGo0UGJQNmpzRUdGR2p0OVVDdmNnODFVdGtuYjM4ZllpX3V3bDBLREVtNDlPUHp4N2ZVV1JZb1JTbkFheVllMDFNMFNTSHdmSGh6bWpUN3NXcDlxWTJMa0h2RQ?oc=5",
+      "published_at": "2026-07-12T13:15:00+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Former UK Ambassador to Qatar Sir Graham Boyce remembers the late Emir Sheikh Hamad Bin Khalifa Al Thani.",
+      "title": "UK ambassador remembers former emir of Qatar as humble and humorous",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/uk-ambassador-remembers-former-emir-of-qatar-as-humble-and-humorous?traffic_source=rss",
+      "published_at": "2026-07-13T00:05:05+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "He took power in 1996 after staging a bloodless coup against his father, and went on to transform Qatar into the gas-rich power it is today.",
+      "title": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani dies aged 74",
+      "url": "https://www.bbc.co.uk/news/articles/cql1qdq14xro?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-13T00:35:50+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "卡達前埃米爾哈瑪德·本·哈里發·阿勒薩尼逝世，享年74歲。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Former emir of Qatar, Sheikh Hamad bin Khalifa Al Thani, dies at 74 - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNa0haajRKdWJvZENRMEpjQnFRUFJ1cEptbFRKQ1B5WHN2LTlHeDNEUUc2Q1lVS2FNV25jd2cxQUx5M1UwWXB0WWppa2FLallzNnAtWnVxc1I1eGo0UGJQNmpzRUdGR2p0OVVDdmNnODFVdGtuYjM4ZllpX3V3bDBLREVtNDlPUHp4N2ZVV1JZb1JTbkFheVllMDFNMFNTSHdmSGh6bWpUN3NXcDlxWTJMa0h2RQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "他在1996年發動不流血政變推翻父親奪權，把卡達打造成天然氣蘊藏豐富的區域強權。",
+      "source_id": "bbc_world",
+      "source_title": "Former Emir of Qatar Sheikh Hamad bin Khalifa Al Thani dies aged 74",
+      "source_url": "https://www.bbc.co.uk/news/articles/cql1qdq14xro?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "前英國駐卡達大使回憶他為人謙遜又幽默。",
+      "source_id": "aljazeera_all",
+      "source_title": "UK ambassador remembers former emir of Qatar as humble and humorous",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/12/uk-ambassador-remembers-former-emir-of-qatar-as-humble-and-humorous?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "卡達前埃米爾哈瑪德·本·哈里發·阿勒薩尼（Sheikh Hamad bin Khalifa Al Thani）逝世，享年 74 歲。他在 1996 年發動不流血政變推翻父親奪權，之後把卡達打造成天然氣蘊藏豐富的區域強權。前英國駐卡達大使回憶他為人謙遜又幽默。\n\n本則整理自 Reuters、Al Jazeera 與 BBC 於 2026 年 7 月 12 日發佈的報導。",
+  "threads_text": "卡達的一段歷史落幕了。前埃米爾哈瑪德·本·哈里發·阿勒薩尼（Sheikh Hamad bin Khalifa Al Thani）過世，享年 74 歲。他在 1996 年發動不流血政變，從父親手中接下權力，此後三十年把這個波斯灣小國打造成天然氣蘊藏豐富的區域強權，也讓卡達在中東外交舞台上取得舉足輕重的地位。前英國駐卡達大使回憶他為人謙遜又幽默，是難得能與外界輕鬆相處的君主。\n\n本則整理自 Reuters、Al Jazeera 與 BBC 於 2026 年 7 月 12 日發佈的報導。",
+  "voice_text": "卡達前埃米爾過世了，享年七十四歲。他在一九九六年發動不流血政變，從父親手中接下權力，之後花了三十年，把這個波斯灣小國打造成天然氣蘊藏豐富的區域強權。認識他的人回憶，他為人謙遜又幽默——這在君主裡不常見。"
+}

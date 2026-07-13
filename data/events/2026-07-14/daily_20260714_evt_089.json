@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260714_evt_089",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Prime Intellect Releases Verifiers v1: Composable Tasksets, Harnesses, and Runtimes for Agentic RL Training and Evaluations",
+  "context": "Prime Intellect launched verifiers 0.2.0, previewing a rewritten \"v1\" core under the verifiers.v1 namespace. It splits an environment into a taskset (what), a harness (how), and a runtime (where), with an interception server that proxies requests and records training-ready traces",
+  "article_ids": [
+    "1918a0cf58a82f3b1fa490bf74e084e0b24dec15ffb697dee2367eafca01de75",
+    "638f3b152787496ff12dab914bd591fe238a504cc47050480f059512a2644e92"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Prime Intellect launched verifiers 0.2.0, previewing a rewritten \"v1\" core under the verifiers.v1 namespace. It splits an environment into a taskset (what), a harness (how), and a runtime (where), with an interception server that proxies requests and records training-ready traces. Any taskset runs under any compatible harness, with full prime-rl training support at launch. The post Prime Intellect Releases Verifiers v1: Composable Tasksets, Harnesses, and Runtimes for Agentic RL Training and Evaluations appeared first on MarkTechPost .",
+      "title": "Prime Intellect Releases Verifiers v1: Composable Tasksets, Harnesses, and Runtimes for Agentic RL Training and Evaluations",
+      "url": "https://www.marktechpost.com/2026/07/13/prime-intellect-releases-verifiers-v1/",
+      "published_at": "2026-07-13T15:40:18+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Prime Intellect Releases Verifiers v1: Composable Tasksets, Harnesses, and Runtimes for Agentic RL Training and Evaluations",
+      "source_id": "marktechpost",
+      "source_title": "Prime Intellect Releases Verifiers v1: Composable Tasksets, Harnesses, and Runtimes for Agentic RL Training and Evaluations",
+      "source_url": "https://www.marktechpost.com/2026/07/13/prime-intellect-releases-verifiers-v1/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Stanford Researchers Introduce TRACE: A Capability-Targeted Agentic Training System That Turns Recurrent Agent Failures Into Synthetic RL Environment",
+      "source_id": "marktechpost",
+      "source_title": "Stanford Researchers Introduce TRACE: A Capability-Targeted Agentic Training System That Turns Recurrent Agent Failures Into Synthetic RL Environment",
+      "source_url": "https://www.marktechpost.com/2026/07/13/stanford-researchers-introduce-trace/",
+      "support_type": "direct"
+    }
+  ]
+}

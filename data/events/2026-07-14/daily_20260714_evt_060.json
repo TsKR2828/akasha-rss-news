@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260714_evt_060",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "New Zealand actor Sam Neill dies aged 78 - Reuters",
+  "context": "New Zealand actor Sam Neill dies aged 78 Reuters",
+  "article_ids": [
+    "791066ed8c632096236692f5f22b5e926b3d1591eef210d46d2fb67abf903679",
+    "8f3afaf0b9a4fe4d791bb7c075b2ee406b42384f125ddbee020feeb15621e161"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "New Zealand actor Sam Neill dies aged 78 Reuters",
+      "title": "New Zealand actor Sam Neill dies aged 78 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTzFTOTJCRG9BaEc5ZVM3R1pGSi1pY2dMNEhqYUVfaEdaM0VIWmtlMnFTQ1piQUh1aXdnakNwcUtvMWl6QkRla0xsYlpxaTZrYU9QMW9vOFVHRE03VzdFR2p5NlhpMVV5d0Jra01ZU2ZzbGFDbExGN1FVNnp2T1dDelBYNE8zY0lvZXpvU3d6Tmd5c0ZsNnJtRlFxZEtQd21XblJ6ZlljODB4aE5PNUdjMW9Paw?oc=5",
+      "published_at": "2026-07-13T13:55:00+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The actor built up a long string of screen credits over a five-decade career.",
+      "title": "A versatile actor whose roles went far beyond Jurassic Park - Sam Neill dies aged 78",
+      "url": "https://www.bbc.co.uk/news/articles/cx2wrvqq9rlo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-13T20:10:38+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 0,
+  "selection_reason": "multi_source_confirmed; source_tier_1; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "New Zealand actor Sam Neill dies aged 78 - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "New Zealand actor Sam Neill dies aged 78 - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQTzFTOTJCRG9BaEc5ZVM3R1pGSi1pY2dMNEhqYUVfaEdaM0VIWmtlMnFTQ1piQUh1aXdnakNwcUtvMWl6QkRla0xsYlpxaTZrYU9QMW9vOFVHRE03VzdFR2p5NlhpMVV5d0Jra01ZU2ZzbGFDbExGN1FVNnp2T1dDelBYNE8zY0lvZXpvU3d6Tmd5c0ZsNnJtRlFxZEtQd21XblJ6ZlljODB4aE5PNUdjMW9Paw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "A versatile actor whose roles went far beyond Jurassic Park - Sam Neill dies aged 78",
+      "source_id": "bbc_world",
+      "source_title": "A versatile actor whose roles went far beyond Jurassic Park - Sam Neill dies aged 78",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2wrvqq9rlo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

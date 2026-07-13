@@ -1,0 +1,64 @@
+{
+  "event_id": "daily_20260714_evt_224",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "油價因荷莫茲封鎖大漲",
+  "context": "受川普重啟荷莫茲海峽封鎖影響，油價應聲上漲，布蘭特原油一度漲到每桶79.37美元，漲幅約5%，美股同步走跌。",
+  "thread_text": "川普重啟荷莫茲海峽封鎖的消息一出，油價立刻有反應。布蘭特原油一度衝到每桶79.37美元，漲幅大約5%，美股也跟著走跌。這場美伊之間的緊張對峙，正實實在在地反映到全球市場上。\n\n——本則整理自《衛報》與《紐約時報》於 2026 年 7 月 14 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "川普重啟荷莫茲海峽封鎖的消息一出，油價立刻有反應。布蘭特原油一度衝上每桶79.37美元，漲幅大約5%，美股也跟著同步走跌。美伊之間持續交火、局勢升溫，這場地緣政治的緊張，正實實在在反映到全球油市和股市上。\n\n本則整理自《衛報》與《紐約時報》於 2026 年 7 月 14 日發佈的報導。",
+  "voice_text": "荷莫茲海峽的封鎖消息一出，油價立刻有反應。布蘭特原油漲到每桶七十九點三七美元，漲幅大約百分之五，美股也跟著走跌。這場美伊之間的緊張對峙，正實實在在反映到全球市場上。",
+  "article_ids": [
+    "72a68a28d10815dd4d7683e8c6b114d900875f0337dba42fb456fb35a4a6b483",
+    "c950dac26ab8f198bc37abb768f5dfdda60e9c9425dbd4c94bdca7ceb31453c9"
+  ],
+  "sources": [
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Brent crude rises 5% after US president says 20% toll will be imposed on key trade route to cover ‘safety and security’ Business live – latest updates Oil prices rose 5% on Monday as Donald Trump reinstated the US blockade of Iranian shipping in the Gulf and will charge other countries to pass through the strait of Hormuz. As the US and Iran exchanged strikes amid an escalating standoff over the vital trade route, the price of Brent crude climbed to $79.37 a barrel. Continue reading...",
+      "title": "Oil prices leap and stocks fall as Trump reinstates Hormuz blockade on Iranian shipping",
+      "url": "https://www.theguardian.com/business/2026/jul/13/oil-prices-leap-stocks-fall-us-iran-strait-of-hormuz-brent-crude-markets",
+      "published_at": "2026-07-14T00:36:16+08:00"
+    },
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The renewed hostilities posed fresh risks to ships seeking to navigate the Strait of Hormuz.",
+      "title": "Oil Prices Surge After Iran and U.S. Trade Strikes",
+      "url": "https://www.nytimes.com/2026/07/12/business/oil-shipping-iran-hormuz.html",
+      "published_at": "2026-07-14T04:13:52+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Brent crude rises 5% to $79.37 a barrel after Trump reinstates Hormuz shipping blockade",
+      "source_id": "guardian_business",
+      "source_title": "Oil prices leap and stocks fall as Trump reinstates Hormuz blockade on Iranian shipping",
+      "source_url": "https://www.theguardian.com/business/2026/jul/13/oil-prices-leap-stocks-fall-us-iran-strait-of-hormuz-brent-crude-markets",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Renewed US-Iran hostilities pose fresh risks to ships navigating the Strait of Hormuz",
+      "source_id": "nyt_business",
+      "source_title": "Oil Prices Surge After Iran and U.S. Trade Strikes",
+      "source_url": "https://www.nytimes.com/2026/07/12/business/oil-shipping-iran-hormuz.html",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260714_evt_235",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Trump administration launches effort to isolate International Criminal Court - Reuters",
+  "context": "Trump administration launches effort to isolate International Criminal Court Reuters",
+  "article_ids": [
+    "afc92a3059fee4b6b580e7cb3a151055f73e9bc3f1399237a81a13a350e6b2e8",
+    "f6846383fb7e48c7708b48a9f59ed3aa3a84b516b46d5d161e9bce65b14558dd"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump administration launches effort to isolate International Criminal Court Reuters",
+      "title": "Trump administration launches effort to isolate International Criminal Court - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQTBNdERDYVRUMURpVDAzcXVQWUwtRl80S09ud3hCc0ZZZkdQNFZXSEVUV0UySGJEZjE5aUJyeWtwM0VHVHNJeVNIR05RWFhWODcwZy1oLWZwNnZLU2E0SUxobTlFSDNrQ1hsRkdrYmxjd3JyVk40NlFFdkdZZGVEc2dGU2R6X1RheWxoOTdpdTBsMmJtN0tBRnhsc0ZjVzZWRUI5YVc0d2NUSUdzRlJJcEwwUlBuZw?oc=5",
+      "published_at": "2026-07-14T01:09:51+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "US State Department ups pressure campaign on international tribunal, threatening allies who support investigations.",
+      "title": "Trump administration vows to ‘disable’ International Criminal Court",
+      "url": "https://www.aljazeera.com/news/2026/7/13/trump-administration-vows-to-disable-international-criminal-court?traffic_source=rss",
+      "published_at": "2026-07-14T02:32:24+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Trump administration launches effort to isolate International Criminal Court - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump administration launches effort to isolate International Criminal Court - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQTBNdERDYVRUMURpVDAzcXVQWUwtRl80S09ud3hCc0ZZZkdQNFZXSEVUV0UySGJEZjE5aUJyeWtwM0VHVHNJeVNIR05RWFhWODcwZy1oLWZwNnZLU2E0SUxobTlFSDNrQ1hsRkdrYmxjd3JyVk40NlFFdkdZZGVEc2dGU2R6X1RheWxoOTdpdTBsMmJtN0tBRnhsc0ZjVzZWRUI5YVc0d2NUSUdzRlJJcEwwUlBuZw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump administration vows to ‘disable’ International Criminal Court",
+      "source_id": "aljazeera_all",
+      "source_title": "Trump administration vows to ‘disable’ International Criminal Court",
+      "source_url": "https://www.aljazeera.com/news/2026/7/13/trump-administration-vows-to-disable-international-criminal-court?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

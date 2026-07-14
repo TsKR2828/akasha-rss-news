@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260715_evt_142",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "Book Review: ‘Cloudthief,’ by Nathaniel Rich",
+  "context": "“Cloudthief,” by Nathaniel Rich, follows a dispirited writer into a scheme to get rich and find romance along the way.",
+  "article_ids": [
+    "ae0c7668be42058a56b2fa091352e54a3e888c8bd00567cd5d996ddea84b16f7"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "“Cloudthief,” by Nathaniel Rich, follows a dispirited writer into a scheme to get rich and find romance along the way.",
+      "title": "Book Review: ‘Cloudthief,’ by Nathaniel Rich",
+      "url": "https://www.nytimes.com/2026/07/14/books/review/nathaniel-rich-cloudthief.html",
+      "published_at": "2026-07-14T17:01:00+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -37,
+  "selection_reason": "source_tier_2; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Book Review: ‘Cloudthief,’ by Nathaniel Rich",
+      "source_id": "nyt_books",
+      "source_title": "Book Review: ‘Cloudthief,’ by Nathaniel Rich",
+      "source_url": "https://www.nytimes.com/2026/07/14/books/review/nathaniel-rich-cloudthief.html",
+      "support_type": "direct"
+    }
+  ]
+}

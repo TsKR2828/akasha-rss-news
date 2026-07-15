@@ -1,0 +1,3086 @@
+{
+  "reportId": "daily_20260716",
+  "date": "2026-07-16",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-07-16T05:18:19.826824+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260716_evt_212",
+          "headline": "俄烏互襲黑海油輪起火",
+          "context": "俄羅斯攻擊烏克蘭四個地區，造成至少 8 人死亡，多處通報平民傷亡。同一天，烏克蘭公布影片，顯示海軍在黑海打擊 20 艘俄羅斯船艦，其中 17 艘是油輪。",
+          "beat": "INTL",
+          "thread_text": "俄羅斯對烏克蘭四個地區發動攻擊，目前已知至少 8 人死亡，多處傳出平民傷亡。同一時間，烏克蘭公布畫面，顯示部隊在黑海打擊 20 艘俄羅斯船艦，其中 17 艘是油輪，陸海兩線同時交火。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 7 月 16 日的報導。",
+          "threads_text": "俄羅斯對烏克蘭四個地區發動攻擊，目前已知至少 8 人死亡，多處傳出平民傷亡。幾乎同一時間，烏克蘭公布最新畫面，顯示部隊在黑海打擊了 20 艘俄羅斯船艦，其中 17 艘是油輪，等於在陸地與海上同時開打。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 7 月 16 日的報導。",
+          "voice_text": "俄羅斯和烏克蘭這兩天在陸地和海上同時開打。俄軍攻擊烏克蘭四個地區，目前已知至少八人死亡，多處傳出平民傷亡——這件事，沉一點說。差不多同一時間，烏克蘭這邊也公布畫面，顯示部隊打擊了黑海二十艘俄羅斯船艦，其中十七艘是油輪。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "俄羅斯對烏克蘭四個地區發動攻擊，目前已知至少 8 人死亡，多處傳出平民傷亡。同一時間，烏克蘭公布畫面，顯示部隊在黑海打擊 20 艘俄羅斯船艦，其中 17 艘是油輪，陸海兩線同時交火。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "俄羅斯對烏克蘭四個地區發動攻擊，目前已知至少 8 人死亡，多處傳出平民傷亡。幾乎同一時間，烏克蘭公布最新畫面，顯示部隊在黑海打擊了 20 艘俄羅斯船艦，其中 17 艘是油輪，等於在陸地與海上同時開打。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "俄羅斯和烏克蘭這兩天在陸地和海上同時開打。俄軍攻擊烏克蘭四個地區，目前已知至少八人死亡，多處傳出平民傷亡——這件事，沉一點說。差不多同一時間，烏克蘭這邊也公布畫面，顯示部隊打擊了黑海二十艘俄羅斯船艦，其中十七艘是油輪。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Civilian casualties are reported in four Ukrainian regions, while Kyiv hits 20 Russian vessels in the Black Sea.",
+              "title": "Russian attacks kill eight as Ukraine hits Black Sea oil tankers",
+              "url": "https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-15T21:32:05+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Ukraine released video of strikes on 20 Russian vessels in the Black Sea, including 17 oil tankers.",
+              "title": "Ukraine strikes 20 Russian vessels",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/ukraine-strikes-20-russian-vessels?traffic_source=rss",
+              "published_at": "2026-07-16T03:58:08+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Russian attacks kill eight as Ukraine hits Black Sea oil tankers",
+              "source_id": "bbc_world",
+              "source_title": "Russian attacks kill eight as Ukraine hits Black Sea oil tankers",
+              "source_url": "https://www.bbc.co.uk/news/articles/c8929jv8kdzo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Ukraine strikes 20 Russian vessels",
+              "source_id": "aljazeera_all",
+              "source_title": "Ukraine strikes 20 Russian vessels",
+              "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/15/ukraine-strikes-20-russian-vessels?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260716_evt_243",
+          "headline": "港查扣書店5人被捕",
+          "context": "香港警方搜查多間獨立書店，5人被捕，官方指控他們涉嫌販售「煽動」書籍，內容被指煽動對當局的「仇恨」。香港曾以出版自由著稱，但近年的政治變化讓獨立書店的經營環境愈趨艱難。",
+          "beat": "INTL",
+          "thread_text": "香港警方搜查多間獨立書店，逮捕 5 人。官方指控他們涉嫌販售「煽動」書籍，內容被認定煽動對當局的「仇恨」。香港曾以出版自由聞名，但近年的政治氛圍讓獨立書店愈來愈難經營。\n\n本則整理自 NPR 與 BBC 於 2026 年 7 月 16 日的報導。",
+          "threads_text": "香港警方搜查多間獨立書店，逮捕 5 人，官方指控他們涉嫌販售「煽動」書籍，內容被認定煽動對當局的「仇恨」。香港曾以出版自由聞名，但近年的政治氛圍，讓獨立書店的經營環境愈來愈艱難。\n\n本則整理自 NPR 與 BBC 於 2026 年 7 月 16 日的報導。",
+          "voice_text": "香港的獨立書店，這次被盯上了。警方搜查多間書店，逮捕五人，官方說他們賣的是「煽動」書籍，內容被認定煽動對當局的「仇恨」。香港曾經以出版自由聞名，但這幾年的政治氣氛，讓獨立書店愈來愈難撐下去。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "香港警方搜查多間獨立書店，逮捕 5 人。官方指控他們涉嫌販售「煽動」書籍，內容被認定煽動對當局的「仇恨」。香港曾以出版自由聞名，但近年的政治氛圍讓獨立書店愈來愈難經營。\n\n本則整理自 NPR 與 BBC 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "香港警方搜查多間獨立書店，逮捕 5 人，官方指控他們涉嫌販售「煽動」書籍，內容被認定煽動對當局的「仇恨」。香港曾以出版自由聞名，但近年的政治氛圍，讓獨立書店的經營環境愈來愈艱難。\n\n本則整理自 NPR 與 BBC 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "香港的獨立書店，這次被盯上了。警方搜查多間書店，逮捕五人，官方說他們賣的是「煽動」書籍，內容被認定煽動對當局的「仇恨」。香港曾經以出版自由聞名，但這幾年的政治氣氛，讓獨立書店愈來愈難撐下去。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Hong Kong was once known for its freedom of publication, but political changes have created a challenging environment for independent bookstores.",
+              "title": "Hong Kong booksellers arrested for allegedly selling seditious books",
+              "url": "https://www.npr.org/2026/07/15/g-s1-133697/hong-kong-booksellers-arrested-for-allegedly-selling-seditious-books",
+              "published_at": "2026-07-15T23:37:22+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Officials say they are suspected of selling \"seditious\" books which incited \"hatred\" against authorities.",
+              "title": "Five arrested after Hong Kong police raid independent bookshops",
+              "url": "https://www.bbc.co.uk/news/articles/cq61660qpdpo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-16T00:51:07+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Hong Kong booksellers arrested for allegedly selling seditious books",
+              "source_id": "npr_world",
+              "source_title": "Hong Kong booksellers arrested for allegedly selling seditious books",
+              "source_url": "https://www.npr.org/2026/07/15/g-s1-133697/hong-kong-booksellers-arrested-for-allegedly-selling-seditious-books",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Five arrested after Hong Kong police raid independent bookshops",
+              "source_id": "bbc_world",
+              "source_title": "Five arrested after Hong Kong police raid independent bookshops",
+              "source_url": "https://www.bbc.co.uk/news/articles/cq61660qpdpo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260716_evt_233",
+          "headline": "黎以羅馬會談談撤軍安排",
+          "context": "黎巴嫩與以色列在羅馬結束第六輪美國斡旋會談。美方官員表示，雙方在以色列自黎巴嫩南部「試辦區」撤軍的計畫上已有進展。",
+          "beat": "INTL",
+          "thread_text": "黎巴嫩與以色列在羅馬結束第六輪由美國斡旋的會談。美方官員說，雙方就以色列從黎巴嫩南部「試辦區」撤軍的計畫，已經談出一些進展。\n\n本則整理自 Reuters 與 Al Jazeera 於 2026 年 7 月 16 日的報導。",
+          "threads_text": "黎巴嫩與以色列在羅馬結束第六輪由美國斡旋的會談，這已經是雙方近期第六次坐下來談。美方官員說，雙方就以色列從黎巴嫩南部「試辦區」撤軍的計畫，已經談出一些進展。\n\n本則整理自 Reuters 與 Al Jazeera 於 2026 年 7 月 16 日的報導。",
+          "voice_text": "黎巴嫩和以色列談出一點進展了。兩國在羅馬結束第六輪美國斡旋的會談，這已經是近期第六次談。美方官員說，雙方就以色列從黎巴嫩南部「試辦區」撤軍的計畫，已經有些眉目——但還沒定案。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "黎巴嫩與以色列在羅馬結束第六輪由美國斡旋的會談。美方官員說，雙方就以色列從黎巴嫩南部「試辦區」撤軍的計畫，已經談出一些進展。\n\n本則整理自 Reuters 與 Al Jazeera 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "黎巴嫩與以色列在羅馬結束第六輪由美國斡旋的會談，這已經是雙方近期第六次坐下來談。美方官員說，雙方就以色列從黎巴嫩南部「試辦區」撤軍的計畫，已經談出一些進展。\n\n本則整理自 Reuters 與 Al Jazeera 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "黎巴嫩和以色列談出一點進展了。兩國在羅馬結束第六輪美國斡旋的會談，這已經是近期第六次談。美方官員說，雙方就以色列從黎巴嫩南部「試辦區」撤軍的計畫，已經有些眉目——但還沒定案。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Lebanon, Israel conclude US-brokered talks on 'pilot zones' in Rome Reuters",
+              "title": "Lebanon, Israel conclude US-brokered talks on 'pilot zones' in Rome - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcUdKQzdMbnFfbTd4QTBfT1dvOUlkdGJiTkxSNjk0NFdKQWpwa1ZqNGVjellQUXV1NWpFcXVzYjE1XzV5dW15bnVnM3NCakJCOElXRG9udmtNNlZFem5EdS1RLUZFS0hNZG1ad3VXeE5QRmJhSlVTbkg4bFF0ZjRQR1hKbFFpUjBxNmUwU25IQi1DOVFHbkJocm83aldfZDJ3UGxrOUZfM0NFOXJveko5cDF3?oc=5",
+              "published_at": "2026-07-15T22:54:45+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "A US official said the two sides made progress on a plan for Israel to withdraw from 'pilot zones' in southern Lebanon.",
+              "title": "Lebanon and Israel end sixth round of US-brokered talks",
+              "url": "https://www.aljazeera.com/news/2026/7/15/lebanon-and-israel-end-sixth-round-of-us-brokered?traffic_source=rss",
+              "published_at": "2026-07-16T02:34:34+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Lebanon, Israel conclude US-brokered talks on 'pilot zones' in Rome - Reuters",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Lebanon, Israel conclude US-brokered talks on 'pilot zones' in Rome - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcUdKQzdMbnFfbTd4QTBfT1dvOUlkdGJiTkxSNjk0NFdKQWpwa1ZqNGVjellQUXV1NWpFcXVzYjE1XzV5dW15bnVnM3NCakJCOElXRG9udmtNNlZFem5EdS1RLUZFS0hNZG1ad3VXeE5QRmJhSlVTbkg4bFF0ZjRQR1hKbFFpUjBxNmUwU25IQi1DOVFHbkJocm83aldfZDJ3UGxrOUZfM0NFOXJveko5cDF3?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Lebanon and Israel end sixth round of US-brokered talks",
+              "source_id": "aljazeera_all",
+              "source_title": "Lebanon and Israel end sixth round of US-brokered talks",
+              "source_url": "https://www.aljazeera.com/news/2026/7/15/lebanon-and-israel-end-sixth-round-of-us-brokered?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260716_evt_075",
+          "headline": "美對伊朗開火情勢再升溫",
+          "context": "美國對伊朗發動新一波攻擊，升溫的情勢威脅到航運安全。川普揚言，如果伊朗不重回談判桌，下週將攻擊伊朗的橋樑與發電廠。伊朗則揚言封鎖更多貿易航線反制。",
+          "beat": "INTL",
+          "thread_text": "美國對伊朗發動新一波攻擊，情勢持續升溫，也開始威脅到航運安全。美國總統川普揚言，如果伊朗不重回談判桌，下週要打伊朗的橋樑和發電廠。伊朗這邊則揚言，要封鎖更多貿易航線反制。\n\n本則整理自 Reuters 與 BBC 於 2026 年 7 月 16 日的報導。",
+          "threads_text": "美國對伊朗發動新一波攻擊，情勢持續升溫，也開始威脅到航運安全。美國總統川普揚言，如果伊朗不重回談判桌，下週就要打伊朗的橋樑和發電廠。伊朗這邊也不甘示弱，揚言要封鎖更多貿易航線反制。\n\n本則整理自 Reuters 與 BBC 於 2026 年 7 月 16 日的報導。",
+          "voice_text": "美伊之間又打起來了。美國對伊朗發動新一波攻擊，情勢持續升溫，開始威脅到航運安全。川普放話，伊朗如果不回到談判桌，下週就要打伊朗的橋樑和發電廠——這句狠話，說得不小。伊朗那邊也不甘示弱，揚言封鎖更多貿易航線反制。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "美國對伊朗發動新一波攻擊，情勢持續升溫，也開始威脅到航運安全。美國總統川普揚言，如果伊朗不重回談判桌，下週要打伊朗的橋樑和發電廠。伊朗這邊則揚言，要封鎖更多貿易航線反制。\n\n本則整理自 Reuters 與 BBC 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國對伊朗發動新一波攻擊，情勢持續升溫，也開始威脅到航運安全。美國總統川普揚言，如果伊朗不重回談判桌，下週就要打伊朗的橋樑和發電廠。伊朗這邊也不甘示弱，揚言要封鎖更多貿易航線反制。\n\n本則整理自 Reuters 與 BBC 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美伊之間又打起來了。美國對伊朗發動新一波攻擊，情勢持續升溫，開始威脅到航運安全。川普放話，伊朗如果不回到談判桌，下週就要打伊朗的橋樑和發電廠——這句狠話，說得不小。伊朗那邊也不甘示弱，揚言封鎖更多貿易航線反制。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "US launches fresh strikes against Iran as escalation threatens shipping Reuters",
+              "title": "US launches fresh strikes against Iran as escalation threatens shipping - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUFEyN1NxTHNCaG5RT2lOTWY4WWxWd1JQUGpLdV8wY3J0RVp3RmZaN21hcm9YX1A1TWdYc3RMU3BKNV9rd0tqdnM4SEpmamFRLXJIU1NvdnhUYlo5WDFnb2dPY2JfZU5HXzBMR184ei1kSS1zeUthWmltb1VzZWhOR0lCX2FlR0NXSGUxY0gxbVJTVkw2RFo5NnZSVXFhcGYxOUhOS1BJU2gza3VYY3VHT2JEWVV2VHdCdDdmeTRyOElucVF4Mk9r?oc=5",
+              "published_at": "2026-07-15T12:57:00+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "US President Donald Trump vowed to strike Iran's bridges and power plants next week if the country does not return to talks.",
+              "title": "Iran threatens to block more trade routes as US launches fresh strikes",
+              "url": "https://www.bbc.co.uk/news/articles/c9323zgq6wvo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-16T02:41:21+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "US launches fresh strikes against Iran as escalation threatens shipping - Reuters",
+              "source_id": "reuters_world_google_news",
+              "source_title": "US launches fresh strikes against Iran as escalation threatens shipping - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQUFEyN1NxTHNCaG5RT2lOTWY4WWxWd1JQUGpLdV8wY3J0RVp3RmZaN21hcm9YX1A1TWdYc3RMU3BKNV9rd0tqdnM4SEpmamFRLXJIU1NvdnhUYlo5WDFnb2dPY2JfZU5HXzBMR184ei1kSS1zeUthWmltb1VzZWhOR0lCX2FlR0NXSGUxY0gxbVJTVkw2RFo5NnZSVXFhcGYxOUhOS1BJU2gza3VYY3VHT2JEWVV2VHdCdDdmeTRyOElucVF4Mk9r?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Iran threatens to block more trade routes as US launches fresh strikes",
+              "source_id": "bbc_world",
+              "source_title": "Iran threatens to block more trade routes as US launches fresh strikes",
+              "source_url": "https://www.bbc.co.uk/news/articles/c9323zgq6wvo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 45,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1"
+        },
+        {
+          "event_id": "daily_20260716_evt_008",
+          "headline": "荷姆茲海峽停火裂痕浮現",
+          "context": "以色列與伊朗的停火出現裂縫，荷姆茲海峽的控制權成為美伊角力的關鍵戰場。這條航道，正逐漸變成雙方緊張關係裡最敏感的斷層線之一。",
+          "beat": "INTL",
+          "thread_text": "荷姆茲海峽的控制權，正成為美伊之間新的角力焦點。隨著停火協議出現裂縫，這條全球重要的能源航道，變成雙方緊張關係的關鍵斷層線。目前只有 BBC 提到這個角度的分析。\n\n本則來自 BBC 於 2026 年 7 月 16 日的報導。",
+          "threads_text": "荷姆茲海峽的控制權，正成為美伊之間新的角力焦點。隨著停火協議出現裂縫，這條全球重要的能源航道，逐漸變成雙方緊張關係裡最敏感的斷層線。這個角度的分析，目前只有 BBC 提出。\n\n本則來自 BBC 於 2026 年 7 月 16 日的報導。",
+          "voice_text": "荷姆茲海峽，可能是美伊關係下一個引爆點。停火協議出現裂縫之後，這條航道的控制權，變成雙方角力的核心。目前的消息指出，這已經是這場對峙裡最敏感的斷層線之一——後續怎麼走，還要再看。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "荷姆茲海峽的控制權，正成為美伊之間新的角力焦點。隨著停火協議出現裂縫，這條全球重要的能源航道，變成雙方緊張關係的關鍵斷層線。目前只有 BBC 提到這個角度的分析。\n\n本則來自 BBC 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "荷姆茲海峽的控制權，正成為美伊之間新的角力焦點。隨著停火協議出現裂縫，這條全球重要的能源航道，逐漸變成雙方緊張關係裡最敏感的斷層線。這個角度的分析，目前只有 BBC 提出。\n\n本則來自 BBC 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "荷姆茲海峽，可能是美伊關係下一個引爆點。停火協議出現裂縫之後，這條航道的控制權，變成雙方角力的核心。目前的消息指出，這已經是這場對峙裡最敏感的斷層線之一——後續怎麼走，還要再看。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Control of the waterway has become a key point of contention between the US and Iran, as a ceasefire deal falters.",
+              "title": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
+              "url": "https://www.bbc.co.uk/news/articles/cwy0ydn033yo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-15T03:13:49+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
+              "source_id": "bbc_world",
+              "source_title": "Strait of Hormuz 'faultline' exposes weakness of the US-Iran deal",
+              "source_url": "https://www.bbc.co.uk/news/articles/cwy0ydn033yo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Watch: The clash between US and Iran for control of the Strait of Hormuz",
+              "source_id": "bbc_world",
+              "source_title": "Watch: The clash between US and Iran for control of the Strait of Hormuz",
+              "source_url": "https://www.bbc.co.uk/news/videos/cx2425dmpl3o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260716_evt_068",
+          "headline": "本週英倫影劇書評摘要",
+          "context": "英國影劇圈這週很忙：Hannah Waddingham主演的喜劇《Ride Or Die》讓她一人分飾殺手與會計師兩種身分，備受好評；克里斯多福·諾蘭（Christopher Nolan）新作《The Odyssey》被讚為近年最具野心的史詩之作。劇場方面，Soho劇院的音樂產業題材新戲《Hit Machine》評價則普遍不理想。",
+          "beat": "ARTS",
+          "thread_text": "英國影劇圈這幾天很熱鬧。Hannah Waddingham主演的喜劇《Ride Or Die》講一位當了二十年殺手的女子，如何瞞著死黨假扮成會計師，兩人的化學反應被讚爆笑又有溫度。南韓導演洪常秀（Hong Sang-soo）的新片《The Day She Returns》延續他一貫的黑白長鏡頭美學，講一位女演員回歸演藝圈後的反思，被形容「莫名讓人上癮」。書市這邊，Avni Doshi的新作《The First House》被評為對婚姻與自由的深刻描寫，另一本《Hidden Creatures》則帶讀者認識寄生蟲的世界。動畫改編方面，Andy Serkis執導的《動物農莊》被批評把歐威爾的諷刺經典包裝得過於溫吞討喜；反倒是《華萊士與阿高》的雙集合輯，被誇是完美的組合。劇場這邊，Simon Stone重新編排的《奧瑞斯提亞》三部曲評價褒貶參半，Soho劇院的音樂產業新戲《Hit Machine》則被認為彈得不太準。音樂方面，英國的DIY樂迷雜誌文化正在復興，五十年前龐克時代《Sniffin' Glue》的精神，如今在對抗演算法疲勞的年輕世代身上重新發芽；BBC逍遙音樂節（Proms）今年的節目單也已經出爐。最後，諾蘭的新作《The Odyssey》被形容為近年最具野心的史詩電影之一，「每一格畫面都充滿熱情」。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 7 月 15、16 日的報導。",
+          "threads_text": "英國影劇圈這幾天很熱鬧。喜劇《Ride Or Die》講一位當了二十年殺手的女子，如何瞞著死黨假扮成會計師，兩人的化學反應被讚爆笑又有溫度。洪常秀（Hong Sang-soo）的新片延續他一貫的黑白長鏡頭美學，講一位女演員回歸演藝圈後的反思，被形容「莫名讓人上癮」。書市這邊，《The First House》被評為對婚姻與自由的深刻描寫，《Hidden Creatures》則帶讀者認識寄生蟲的世界。動畫改編的《動物農莊》被批評包裝得過於溫吞討喜，《華萊士與阿高》雙集合輯則被誇是完美組合。劇場的《奧瑞斯提亞》三部曲評價褒貶參半，《Hit Machine》則被認為彈得不太準。音樂方面，英國DIY樂迷雜誌文化正在復興，逍遙音樂節（Proms）節目單也已出爐。最後，諾蘭新作《The Odyssey》被讚是近年最具野心的史詩電影之一。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 7 月 15、16 日的報導。",
+          "voice_text": "英國影劇圈這幾天有點忙。喜劇《Ride Or Die》裡，女主角白天假扮會計師，晚上其實是幹了二十年的殺手，這個反差讓故事笑點十足。南韓導演洪常秀的新片，一如既往用黑白長鏡頭，講一位女演員重返演藝圈的心境，步調慢，卻讓人捨不得轉台。書市這邊也有兩本新書，一本寫婚姻裡的自由與拉扯，另一本則帶你認識寄生蟲的世界——聽起來嚇人，寫得倒挺迷人。動畫改編的《動物農莊》，把歐威爾的諷刺經典包得太甜，反而失了諷刺的力道；同期上的《華萊士與阿高》雙集合輯，倒是評價亮眼。劇場這邊，重新編排的《奧瑞斯提亞》三部曲評價兩極，講音樂產業的新戲則被說彈得不太準。克里斯多福·諾蘭的新片《The Odyssey》，被讚是近年最有野心的史詩電影，畫面熱血又講究。最後，英國的手工樂迷雜誌文化正在復興，五十年前龐克時代那股精神，這幾年反倒成了年輕人對抗演算法疲勞的方式。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "英國影劇圈這幾天很熱鬧。Hannah Waddingham主演的喜劇《Ride Or Die》講一位當了二十年殺手的女子，如何瞞著死黨假扮成會計師，兩人的化學反應被讚爆笑又有溫度。南韓導演洪常秀（Hong Sang-soo）的新片《The Day She Returns》延續他一貫的黑白長鏡頭美學，講一位女演員回歸演藝圈後的反思，被形容「莫名讓人上癮」。書市這邊，Avni Doshi的新作《The First House》被評為對婚姻與自由的深刻描寫，另一本《Hidden Creatures》則帶讀者認識寄生蟲的世界。",
+                "動畫改編方面，Andy Serkis執導的《動物農莊》被批評把歐威爾的諷刺經典包裝得過於溫吞討喜；反倒是《華萊士與阿高》的雙集合輯，被誇是完美的組合。劇場這邊，Simon Stone重新編排的《奧瑞斯提亞》三部曲評價褒貶參半，Soho劇院的音樂產業新戲《Hit Machine》則被認為彈得不太準。音樂方面，英國的DIY樂迷雜誌文化正在復興，五十年前龐克時代《Sniffin' Glue》的精神，如今在對抗演算法疲勞的年輕世代身上重新發芽；BBC逍遙音樂節（Proms）今年的節目單也已經出爐。",
+                "最後，諾蘭的新作《The Odyssey》被形容為近年最具野心的史詩電影之一，「每一格畫面都充滿熱情」。本則整理自 The Guardian 與 The New York Times 於 2026 年 7 月 15、16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國影劇圈這幾天很熱鬧。喜劇《Ride Or Die》講一位當了二十年殺手的女子，如何瞞著死黨假扮成會計師，兩人的化學反應被讚爆笑又有溫度。洪常秀（Hong Sang-soo）的新片延續他一貫的黑白長鏡頭美學，講一位女演員回歸演藝圈後的反思，被形容「莫名讓人上癮」。書市這邊，《The First House》被評為對婚姻與自由的深刻描寫，《Hidden Creatures》則帶讀者認識寄生蟲的世界。動畫改編的《動物農莊》被批評包裝得過於溫吞討喜，《華萊士與阿高》雙集合輯則被誇是完美組合。劇場的《奧瑞斯提亞》三部曲評價褒貶參半，《Hit Machine》則被認為彈得不太準。音樂方面，英國DIY樂迷雜誌文化正在復興，逍遙音樂節（Proms）節目單也已出爐。最後，諾蘭新作《The Odyssey》被讚是近年最具野心的史詩電影之一。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 7 月 15、16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國影劇圈這幾天有點忙。喜劇《Ride Or Die》裡，女主角白天假扮會計師，晚上其實是幹了二十年的殺手，這個反差讓故事笑點十足。南韓導演洪常秀的新片，一如既往用黑白長鏡頭，講一位女演員重返演藝圈的心境，步調慢，卻讓人捨不得轉台。書市這邊也有兩本新書，一本寫婚姻裡的自由與拉扯，另一本則帶你認識寄生蟲的世界——聽起來嚇人，寫得倒挺迷人。動畫改編的《動物農莊》，把歐威爾的諷刺經典包得太甜，反而失了諷刺的力道；同期上的《華萊士與阿高》雙集合輯，倒是評價亮眼。劇場這邊，重新編排的《奧瑞斯提亞》三部曲評價兩極，講音樂產業的新戲則被說彈得不太準。克里斯多福·諾蘭的新片《The Odyssey》，被讚是近年最有野心的史詩電影，畫面熱血又講究。最後，英國的手工樂迷雜誌文化正在復興，五十年前龐克時代那股精神，這幾年反倒成了年輕人對抗演算法疲勞的方式。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "This tale of a 50-year-old assassin going rogue – and having to confess all to her best mate – is so much fun. The chemistry between its leads is a thing of beauty The bone-deep magnificence of Hannah Waddingham is such that she could, I suspect, talk most of us into a burning car should she wish to. So selling viewers on the delightfully ludicrous premise of the comedy caper Ride Or Die is but the work of a moment. Waddingham plays Whiptail, a deadly assassin for the last 20-odd years whose work has recently become more attention-grabbing than her bosses like. Octavia Spencer (who occupies god-tier comedy status in my heart for her tiny part as Tracy Morgan’s nemesis in 30 Rock alone) is her best friend Debbie. Debbie knows Whiptail as Judith, a forensic accountant, and has no idea that behind the woman she depends on for laughs, emotional support and notes on the latest book club book she hasn’t read is a trained killer. Debbie is married to David (Jamie Parker), a politician, and is the gentle power behind his throne. His personal and professional life have been shaped and smoothed by her for the past 25 years, and he is now on course to be the next prime minister. Continue reading...",
+              "title": "Ride Or Die review – Hannah Waddingham’s comedy caper is the perimenopausal TV of your dreams",
+              "url": "https://www.theguardian.com/tv-and-radio/2026/jul/15/ride-or-die-review-hannah-waddinghams-comedy-thriller-prime-video",
+              "published_at": "2026-07-15T12:00:44+08:00"
+            },
+            {
+              "source_id": "guardian_film",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "No film-maker shows more day-drinking than Hong, and this study of an actor returning from a career break is the same again – as mysteriously addictive as ever It will not surprise fans of the prolific lo-fi Korean master Hong Sang-soo that his new film in black-and-white – which might be described as “experimental” by those who don’t quite realise that they all look like this – features long scenes, shot from a single, static camera position, featuring a conversation in a restaurant. Nor will they be surprised that one of these scenes contains a sudden, unobtrusive zoom-in to a closer position, for no obvious reason. It will not be startling for them that the film features someone playing a female screen star of a certain age philosophically pondering her career and life-choices (a key Hong trope). And it certainly won’t be a shock that the film has a character ordering a beer or two before the sun is technically over the yardarm. There is no one in the movies, or in any of the arts, or any aspect of public life, anywhere in the world, who is more utterly dedicated to day-drinking than Hong Sang-soo. Continue reading...",
+              "title": "The Day She Returns review – another Hong Sang-soo round of slow, reflective boozing really hits the spot",
+              "url": "https://www.theguardian.com/film/2026/jul/15/the-day-she-returns-review-another-round-of-slow-reflective-boozing-really-hits-the-spot",
+              "published_at": "2026-07-15T14:00:47+08:00"
+            },
+            {
+              "source_id": "guardian_music",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Five decades since punk bible Sniffin’ Glue, DIY magazines are in rude, rich health. Their creators talk fandom, community-building and resisting the algorithm ‘The most important part of the word ‘fanzine’ is ‘fan’,” says London-based zine-maker Jon Marsh. Existing outside mainstream media, free from the demands of release cycles and search engine optimisation, music fanzines are obsessions turned into tangible objects; self-published primarily for the maker’s own enjoyment, but with the potential of forging connections with like-minded people. In the 1970s, punk zines such as Sniffin’ Glue, Alternative Ulster and Ripped & Torn allowed fans to share news and enthusiasm quickly and cheaply. Half a century on, music fanzines are enjoying a resurgence as a form of resistance to algorithm fatigue and the hyper-capitalist music industry. “Digital attention span is at an all-time low,” says hip-hop musician ExP, creator of the West Yorkshire Hip-Hop zine. “You’re almost definitely going to spend more time looking at a zine than anything you see scrolling. It’s more interesting and more real.” In the words of Stephen McRobbie, from indie-pop icons and fanzine regulars the Pastels: “It’s the long way round compared to other media, but the scenery is always better.” Continue reading...",
+              "title": "‘More real than anything you’ll see scrolling’: the radical resurgence of UK fanzines, 50 years after punk",
+              "url": "https://www.theguardian.com/music/2026/jul/15/uk-fanzines-zine-radical-resurgence",
+              "published_at": "2026-07-15T20:00:55+08:00"
+            },
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Soho theatre, London Josh Radnor is a music executive whose life is upended by his wayward brother, in a play about masculinity, creativity, appropriation and trauma On paper, writer Jonathan Caren’s Hit Machine has all the makings of a chart-topping smash. Featuring the London stage debuts of Josh Radnor (How I Met Your Mother) and Noah Galvin (Dear Evan Hansen), with direction from Daniel Bailey ( Red Pitch ) and music by Grammy-winning bluesman Ben Harper, the three-hander tackles the topics of masculinity, appropriation and buried family trauma through the prism of the creative process. Set in the louche, soft-furnished home of music mogul Wes (Radnor), the play begins promisingly. Wayward younger brother Alex (Galvin) arrives and throws a plaid-shirted bomb into Wes’s carefully manicured and minimalist life. We begin to see how each sibling plays their role in the strained family dynamic: Wes the high-achiever on the hedonic treadmill always striving for more, and Alex the sprightly yet secretive youngster striving only for approval. At Soho theatre, London , until 15 August Continue reading...",
+              "title": "Hit Machine review – slick music biz drama strikes too many false notes",
+              "url": "https://www.theguardian.com/stage/2026/jul/15/hit-machine-review-soho-theatre",
+              "published_at": "2026-07-16T00:00:01+08:00"
+            },
+            {
+              "source_id": "nyt_arts",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "Few directors close the divide between the art film and the blockbuster like Christopher Nolan.",
+              "title": "‘The Odyssey’ Review: Passion in Every Frame",
+              "url": "https://www.nytimes.com/2026/07/15/movies/the-odyssey-review.html",
+              "published_at": "2026-07-16T00:01:34+08:00"
+            }
+          ],
+          "source_count": 5,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Ride Or Die review – Hannah Waddingham’s comedy caper is the perimenopausal TV of your dreams",
+              "source_id": "guardian_culture",
+              "source_title": "Ride Or Die review – Hannah Waddingham’s comedy caper is the perimenopausal TV of your dreams",
+              "source_url": "https://www.theguardian.com/tv-and-radio/2026/jul/15/ride-or-die-review-hannah-waddinghams-comedy-thriller-prime-video",
+              "support_type": "direct"
+            },
+            {
+              "claim": "The Day She Returns review – another Hong Sang-soo round of slow, reflective boozing really hits the spot",
+              "source_id": "guardian_film",
+              "source_title": "The Day She Returns review – another Hong Sang-soo round of slow, reflective boozing really hits the spot",
+              "source_url": "https://www.theguardian.com/film/2026/jul/15/the-day-she-returns-review-another-round-of-slow-reflective-boozing-really-hits-the-spot",
+              "support_type": "direct"
+            },
+            {
+              "claim": "The First House by Avni Doshi review – an intense portrait of marriage and freedom",
+              "source_id": "guardian_culture",
+              "source_title": "The First House by Avni Doshi review – an intense portrait of marriage and freedom",
+              "source_url": "https://www.theguardian.com/books/2026/jul/15/the-first-house-by-avni-doshi-review-an-intense-portrait-of-marriage-and-freedom",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Hidden Creatures by Dino Martins review – the revolting world of parasites",
+              "source_id": "guardian_culture",
+              "source_title": "Hidden Creatures by Dino Martins review – the revolting world of parasites",
+              "source_url": "https://www.theguardian.com/books/2026/jul/15/hidden-creatures-by-dino-martins-review-the-revolting-world-of-parasites",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Animal Farm review – Andy Serkis’ Orwell adaptation slaughters the classic farmyard satire with sugar",
+              "source_id": "guardian_culture",
+              "source_title": "Animal Farm review – Andy Serkis’ Orwell adaptation slaughters the classic farmyard satire with sugar",
+              "source_url": "https://www.theguardian.com/film/2026/jul/15/animal-farm-review-orwell-animation",
+              "support_type": "direct"
+            },
+            {
+              "claim": "A Close Shave/A Matter of Loaf and Death review – Wallace and Gromit knit together a cracking double bill",
+              "source_id": "guardian_culture",
+              "source_title": "A Close Shave/A Matter of Loaf and Death review – Wallace and Gromit knit together a cracking double bill",
+              "source_url": "https://www.theguardian.com/film/2026/jul/15/a-close-shavea-matter-of-loaf-and-death-review-wallace-and-gromit-knit-together-a-cracking-double-bill",
+              "support_type": "direct"
+            },
+            {
+              "claim": "The Oresteia review – Simon Stone’s patchwork tragedy is a gripping and exasperating epic",
+              "source_id": "guardian_culture",
+              "source_title": "The Oresteia review – Simon Stone’s patchwork tragedy is a gripping and exasperating epic",
+              "source_url": "https://www.theguardian.com/stage/2026/jul/15/the-oresteia-review-bridge-theatre-london-david-morrissey-mary-louise-parker",
+              "support_type": "direct"
+            },
+            {
+              "claim": "‘More real than anything you’ll see scrolling’: the radical resurgence of UK fanzines, 50 years after punk",
+              "source_id": "guardian_music",
+              "source_title": "‘More real than anything you’ll see scrolling’: the radical resurgence of UK fanzines, 50 years after punk",
+              "source_url": "https://www.theguardian.com/music/2026/jul/15/uk-fanzines-zine-radical-resurgence",
+              "support_type": "direct"
+            },
+            {
+              "claim": "From a forest to an all-star trio and the fires of hell – my pick of new music coming to the Proms this year",
+              "source_id": "guardian_culture",
+              "source_title": "From a forest to an all-star trio and the fires of hell – my pick of new music coming to the Proms this year",
+              "source_url": "https://www.theguardian.com/music/2026/jul/15/new-music-summer-of-proms-tom-service-on-music",
+              "support_type": "direct"
+            },
+            {
+              "claim": "The Odyssey review – Nolan goes god-tier with breathtaking epic of men, monsters and moral metamorphosis",
+              "source_id": "guardian_culture",
+              "source_title": "The Odyssey review – Nolan goes god-tier with breathtaking epic of men, monsters and moral metamorphosis",
+              "source_url": "https://www.theguardian.com/film/2026/jul/15/the-odyssey-review-christopher-nolan-matt-damon",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Hit Machine review – slick music biz drama strikes too many false notes",
+              "source_id": "guardian_stage",
+              "source_title": "Hit Machine review – slick music biz drama strikes too many false notes",
+              "source_url": "https://www.theguardian.com/stage/2026/jul/15/hit-machine-review-soho-theatre",
+              "support_type": "direct"
+            },
+            {
+              "claim": "‘The Odyssey’ Review: Passion in Every Frame",
+              "source_id": "nyt_arts",
+              "source_title": "‘The Odyssey’ Review: Passion in Every Frame",
+              "source_url": "https://www.nytimes.com/2026/07/15/movies/the-odyssey-review.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "電影",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260716_evt_090",
+          "headline": "英倫視覺藝術一週評",
+          "context": "Apple TV新劇《Lucky》讓Anya Taylor-Joy飾演一位邊逃亡邊搞笑的女騙子，被形容是「無腦又好看」的夏日消遣。倫敦白教堂畫廊（Whitechapel Gallery）的最新聯展則評價慘烈，被批評主題模糊、脈絡交代不清。",
+          "beat": "ARTS",
+          "thread_text": "Apple TV新劇《Lucky》，讓Anya Taylor-Joy飾演一位邊逃亡邊耍寶的女騙子，被形容是「無腦又好看」的夏日消遣。演唱會方面，七零年代傳奇歌手James Taylor在愛丁堡城堡開唱，被讚金嗓子在最簡單的編制下最動人。攝影專題回顧了巴西世界盃傳奇球星Jairzinho的經典瞬間。至於倫敦白教堂畫廊（Whitechapel Gallery）的最新聯展，評價就沒那麼客氣了——被批評主題模糊、脈絡交代不清，讓人看得一頭霧水。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。",
+          "threads_text": "Apple TV新劇《Lucky》，讓Anya Taylor-Joy飾演一位邊逃亡邊耍寶的女騙子，被形容是「無腦又好看」的夏日消遣。七零年代傳奇歌手James Taylor在愛丁堡城堡開唱，被讚金嗓子在最簡單的編制下最動人，另有攝影專題回顧巴西世界盃傳奇球星Jairzinho的經典瞬間。倫敦白教堂畫廊的最新聯展，評價就沒那麼客氣了——被批評主題模糊、脈絡交代不清。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。",
+          "voice_text": "《Lucky》這部新劇，女主角一邊逃亡，一邊耍寶。故事裡她是個女騙子，被形容成「無腦又好看」的夏日消遣。七零年代的傳奇歌手，這次在愛丁堡城堡開唱，金嗓子在最簡單的編制下反而最動人。還有一組攝影專題，回顧了巴西世界盃傳奇球星的經典瞬間。倫敦一間畫廊的最新聯展，評價就沒那麼客氣了——主題模糊、脈絡交代不清，看完讓人一頭霧水。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Apple TV新劇《Lucky》，讓Anya Taylor-Joy飾演一位邊逃亡邊耍寶的女騙子，被形容是「無腦又好看」的夏日消遣。演唱會方面，七零年代傳奇歌手James Taylor在愛丁堡城堡開唱，被讚金嗓子在最簡單的編制下最動人。攝影專題回顧了巴西世界盃傳奇球星Jairzinho的經典瞬間。至於倫敦白教堂畫廊（Whitechapel Gallery）的最新聯展，評價就沒那麼客氣了——被批評主題模糊、脈絡交代不清，讓人看得一頭霧水。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Apple TV新劇《Lucky》，讓Anya Taylor-Joy飾演一位邊逃亡邊耍寶的女騙子，被形容是「無腦又好看」的夏日消遣。七零年代傳奇歌手James Taylor在愛丁堡城堡開唱，被讚金嗓子在最簡單的編制下最動人，另有攝影專題回顧巴西世界盃傳奇球星Jairzinho的經典瞬間。倫敦白教堂畫廊的最新聯展，評價就沒那麼客氣了——被批評主題模糊、脈絡交代不清。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "《Lucky》這部新劇，女主角一邊逃亡，一邊耍寶。故事裡她是個女騙子，被形容成「無腦又好看」的夏日消遣。七零年代的傳奇歌手，這次在愛丁堡城堡開唱，金嗓子在最簡單的編制下反而最動人。還有一組攝影專題，回顧了巴西世界盃傳奇球星的經典瞬間。倫敦一間畫廊的最新聯展，評價就沒那麼客氣了——主題模糊、脈絡交代不清，看完讓人一頭霧水。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "This series about a conwoman fleeing for her life is packed with explosions and preposterous coincidences. It’s bunkum with bells on – but who can resist it in this heat? Luciana “Lucky” Armstrong (Anya Taylor‑Joy) is on the run, scampering across the US in her fashionably rumpled sateen blouson and prompting much fist-shaking from the hapless feds on her tail. “Lucky!” they bellow, cheeks puffing in disbelief as the incorrigible grifter bounds across the roofs of parked lorries, wriggles out of an exploding car, scams a sobbing gran and sets fire to a goon’s cowboy boots. “Lucky?! Stop!” But, no, too late, she’s off again; capering, conning and smirking her way through the Apple TV crime thriller that bears her pointedly ambiguous nickname. Based on Marissa Stapley’s bestselling novel, the story follows thus: after her boyfriend has made off with the proceeds of their multimillion-dollar heist, our penniless protagonist finds herself pursued by the FBI and a ruthless crime boss determined to relieve the duo of their ill-gotten spoils. Continue reading...",
+              "title": "Lucky review – Anya Taylor-Joy’s daft thriller is classic summer viewing",
+              "url": "https://www.theguardian.com/tv-and-radio/2026/jul/15/lucky-review-anya-taylor-joy-apple-tv",
+              "published_at": "2026-07-15T14:00:47+08:00"
+            },
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Whitechapel Gallery, London I feel bad for the artists whose work has been crowbarred into a wonky show about migration, protest, climate and identity It’s rare that an exhibition is so bad you feel compelled to text a friend saying “you wouldn’t believe the garbage I just saw” as soon as you get out. And if you can walk around this badly explained, undercontextualised, barely linked, poorly thought through mess of a show without getting a migraine, you have a stronger constitution than me. This is an exhibition about east London. Or maybe it’s about Britishness. Or migration. Or the climate crisis. Or music. Or global trade. Whitechapel Gallery doesn’t seem to really know, so what chance do the rest of us have of figuring it out? The gallery would argue it’s about all of these things; I’d say it manages to be about none of them. Continue reading...",
+              "title": "Backyard Biennial: East review – this morose and meaningless exhibition gave me a migraine",
+              "url": "https://www.theguardian.com/artanddesign/2026/jul/15/backyard-biennial-east-review-whitechapel-gallery-london",
+              "published_at": "2026-07-16T00:09:29+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Lucky review – Anya Taylor-Joy’s daft thriller is classic summer viewing",
+              "source_id": "guardian_culture",
+              "source_title": "Lucky review – Anya Taylor-Joy’s daft thriller is classic summer viewing",
+              "source_url": "https://www.theguardian.com/tv-and-radio/2026/jul/15/lucky-review-anya-taylor-joy-apple-tv",
+              "support_type": "direct"
+            },
+            {
+              "claim": "James Taylor review – 70s legend’s golden baritone shines best when stripped bare",
+              "source_id": "guardian_culture",
+              "source_title": "James Taylor review – 70s legend’s golden baritone shines best when stripped bare",
+              "source_url": "https://www.theguardian.com/music/2026/jul/15/james-taylor-review-edinburgh-castle",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Brazilian World Cup legend Jairzinho takes a shot: Michael Donald’s best photograph",
+              "source_id": "guardian_culture",
+              "source_title": "Brazilian World Cup legend Jairzinho takes a shot: Michael Donald’s best photograph",
+              "source_url": "https://www.theguardian.com/artanddesign/2026/jul/15/jairzinho-footballer-brazil-rio-favelas-michael-donalds-best-photograph",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Backyard Biennial: East review – this morose and meaningless exhibition gave me a migraine",
+              "source_id": "guardian_art_design",
+              "source_title": "Backyard Biennial: East review – this morose and meaningless exhibition gave me a migraine",
+              "source_url": "https://www.theguardian.com/artanddesign/2026/jul/15/backyard-biennial-east-review-whitechapel-gallery-london",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "視覺藝術",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260716_evt_082",
+          "headline": "李伯斯金設計首爾住宅",
+          "context": "建築師丹尼爾·李伯斯金（Daniel Libeskind）的事務所，公布首爾一處高密度住宅重建案設計。這個「大峙雙龍一區」重建計畫，將把現有5棟630戶的舊社區，改建成6座最高49層樓、近1000戶的住宅塔樓，預計2027年動工、2030年完工。",
+          "beat": "ARTS",
+          "thread_text": "建築師丹尼爾·李伯斯金（Daniel Libeskind）的事務所，公布了首爾大峙洞（Daechi-dong）江南區的高密度住宅重建設計。這項「大峙雙龍一區」重建案，將把現有5棟、630戶的舊社區，改建成6座最高49層樓、近1000戶的新塔樓。開發方是三星物產（Samsung C&T），預計2027年動工、2030年完工。設計團隊形容，希望這座社區能成為「有生命的藝術品」，讓住戶更貼近周遭的地景。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "建築師丹尼爾·李伯斯金（Daniel Libeskind）的事務所，公布了首爾江南區的高密度住宅重建設計。這項「大峙雙龍一區」重建案，將把現有5棟、630戶的舊社區，改建成6座最高49層樓、近1000戶的新塔樓，開發方是三星物產，預計2027年動工、2030年完工。設計團隊說，希望這座社區能成為「有生命的藝術品」。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "首爾要蓋一批新地標住宅了。設計者是建築師丹尼爾·李伯斯金，他的事務所公布了江南區的高密度住宅重建設計。現有5棟、630戶的舊社區，將改建成6座最高49層樓、近1000戶的新塔樓，預計2027年動工，2030年完工。設計團隊說，希望這座社區能成為「有生命的藝術品」，讓住戶和周遭的地景更貼近一些。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "建築師丹尼爾·李伯斯金（Daniel Libeskind）的事務所，公布了首爾大峙洞（Daechi-dong）江南區的高密度住宅重建設計。這項「大峙雙龍一區」重建案，將把現有5棟、630戶的舊社區，改建成6座最高49層樓、近1000戶的新塔樓。開發方是三星物產（Samsung C&T），預計2027年動工、2030年完工。設計團隊形容，希望這座社區能成為「有生命的藝術品」，讓住戶更貼近周遭的地景。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "建築師丹尼爾·李伯斯金（Daniel Libeskind）的事務所，公布了首爾江南區的高密度住宅重建設計。這項「大峙雙龍一區」重建案，將把現有5棟、630戶的舊社區，改建成6座最高49層樓、近1000戶的新塔樓，開發方是三星物產，預計2027年動工、2030年完工。設計團隊說，希望這座社區能成為「有生命的藝術品」。\n\n本則整理自 ArchDaily 與 Dezeen 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "首爾要蓋一批新地標住宅了。設計者是建築師丹尼爾·李伯斯金，他的事務所公布了江南區的高密度住宅重建設計。現有5棟、630戶的舊社區，將改建成6座最高49層樓、近1000戶的新塔樓，預計2027年動工，2030年完工。設計團隊說，希望這座社區能成為「有生命的藝術品」，讓住戶和周遭的地景更貼近一些。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "Studio Libeskind , in collaboration with HJ Design Partners and Seoul-based SAMOO Architects & Engineers , has designed a new high-density residential development in Seoul , South Korea . The Daechi Ssangyong 1 Redevelopment Project replaces an existing five-building, 630-unit complex in Daechi-dong, Gangnam-gu, with six new residential towers up to 49 storeys tall and nearly 1,000 housing units. The project is being developed for the Daechi Ssangyong 1 Redevelopment Union by Samsung C&T, with construction expected to begin in 2027 and be completed in 2030.",
+              "title": "Studio Libeskind Designs New High-Density Residential Towers in Seoul",
+              "url": "https://www.archdaily.com/1148691/studio-libeskind-designs-new-high-density-residential-towers-in-seoul",
+              "published_at": "2026-07-15T13:30:00+08:00"
+            },
+            {
+              "source_id": "dezeen",
+              "name": "Dezeen",
+              "publisher": "Dezeen",
+              "summary": "Architecture firm Studio Libeskind has unveiled designs for six skyscrapers set to form a residential complex in Seoul's Gangnam district. Studio Libeskind collaborated with local architecture studios Samoo and HJ Design Partners on the design for the Daechi Ssangyong redevelopment project, which aims to connect residents with the landscape. The development is set to be built The post Studio Libeskind designs cluster of Seoul skyscrapers as \"a living work of art\" appeared first on Dezeen .",
+              "title": "Studio Libeskind designs cluster of Seoul skyscrapers as \"a living work of art\"",
+              "url": "https://www.dezeen.com/2026/07/15/daechi-ssangyong-studio-libeskind-seoul/",
+              "published_at": "2026-07-15T17:45:40+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Studio Libeskind Designs New High-Density Residential Towers in Seoul",
+              "source_id": "archdaily",
+              "source_title": "Studio Libeskind Designs New High-Density Residential Towers in Seoul",
+              "source_url": "https://www.archdaily.com/1148691/studio-libeskind-designs-new-high-density-residential-towers-in-seoul",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Studio Libeskind designs cluster of Seoul skyscrapers as \"a living work of art\"",
+              "source_id": "dezeen",
+              "source_title": "Studio Libeskind designs cluster of Seoul skyscrapers as \"a living work of art\"",
+              "source_url": "https://www.dezeen.com/2026/07/15/daechi-ssangyong-studio-libeskind-seoul/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 33,
+          "sub_beat": "建築",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_3"
+        },
+        {
+          "event_id": "daily_20260716_evt_069",
+          "headline": "倫敦劇場音樂雙評",
+          "context": "倫敦Bush劇院的新戲《Tender》，讓Francesca Amewudah-Rivers飾演的角色驚豔全場，劇情圍繞兩名女性間曖昧又危險的情感糾葛。Wigmore Hall的男高音Karim Sulayman與吉他手Sean Shibe，則以橫跨英、日、蘇格蘭、黎巴嫩與美國的曲目，帶來一場即興又動人的音樂會。",
+          "beat": "ARTS",
+          "thread_text": "倫敦Bush劇院的新戲《Tender》，讓Francesca Amewudah-Rivers飾演的角色驚豔全場——這齣詭異又迷人的兩人劇，講的是兩名女性之間曖昧又危險的情感糾葛，只是有些地方留白得有點多。同一晚，Wigmore Hall的男高音Karim Sulayman與吉他手Sean Shibe，合作演出橫跨英國、日本、蘇格蘭、黎巴嫩與美國曲目的音樂會，即興又動人，氣氛意外地歡快。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。",
+          "threads_text": "倫敦Bush劇院的新戲《Tender》，讓Francesca Amewudah-Rivers飾演的角色驚豔全場，這齣兩人劇講的是兩名女性之間曖昧又危險的情感糾葛，只是有些地方留白得有點多。同一晚，Wigmore Hall的男高音與吉他手搭檔演出，曲目橫跨英國、日本、蘇格蘭、黎巴嫩與美國，即興又動人，氣氛意外地歡快。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。",
+          "voice_text": "倫敦這兩晚有兩場好戲。劇場《Tender》裡，女主角的演出讓人一眼忘不掉——這齣戲講兩名女性之間曖昧又危險的情感，只是有些地方留白得有點多。同一晚，一場音樂會橫跨英國、日本、蘇格蘭、黎巴嫩和美國的曲目，男高音和吉他手搭檔演出，即興又動人，氣氛意外地歡快。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "倫敦Bush劇院的新戲《Tender》，讓Francesca Amewudah-Rivers飾演的角色驚豔全場——這齣詭異又迷人的兩人劇，講的是兩名女性之間曖昧又危險的情感糾葛，只是有些地方留白得有點多。同一晚，Wigmore Hall的男高音Karim Sulayman與吉他手Sean Shibe，合作演出橫跨英國、日本、蘇格蘭、黎巴嫩與美國曲目的音樂會，即興又動人，氣氛意外地歡快。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "倫敦Bush劇院的新戲《Tender》，讓Francesca Amewudah-Rivers飾演的角色驚豔全場，這齣兩人劇講的是兩名女性之間曖昧又危險的情感糾葛，只是有些地方留白得有點多。同一晚，Wigmore Hall的男高音與吉他手搭檔演出，曲目橫跨英國、日本、蘇格蘭、黎巴嫩與美國，即興又動人，氣氛意外地歡快。\n\n本則整理自 The Guardian 於 2026 年 7 月 15、16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "倫敦這兩晚有兩場好戲。劇場《Tender》裡，女主角的演出讓人一眼忘不掉——這齣戲講兩名女性之間曖昧又危險的情感，只是有些地方留白得有點多。同一晚，一場音樂會橫跨英國、日本、蘇格蘭、黎巴嫩和美國的曲目，男高音和吉他手搭檔演出，即興又動人，氣氛意外地歡快。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Bush theatre, London Francesca Amewudah-Rivers is a phenomenal presence in this queer thriller that leaves a little too much unexplained This strange and alluring two-hander was first performed in this theatre’s smaller studio space two years ago . It is a dark romance between two women, one in a long-term relationship with a man and the other experimenting with women. Both are tormented, in different ways. Nadi Kemp-Sayfi returns as Ivy while the abundantly talented Francesca Amewudah-Rivers takes the role of Ash. She is taut, sexy and disturbed. The play sits in and around Amewudah-Rivers, such a phenomenal presence that she eclipses everything else. Continue reading...",
+              "title": "Tender review – passion and dangerous promise in surreal horror romance",
+              "url": "https://www.theguardian.com/stage/2026/jul/15/tender-review-bush-theatre-london",
+              "published_at": "2026-07-15T12:00:45+08:00"
+            },
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Wigmore Hall, London From a lament to the Lebanese capital to Sephardic love songs, melancholy Monteverdi to Purcell and Britten, the pair’s ‘Broken Branches’ programme felt spontaneous and engaging The tenor Karim Sulayman and guitarist Sean Shibe together bring a microcosm of world heritage to the concert platform: English, Japanese, Scottish, Lebanese and American. Their recital programme Broken Branches offers similarly a multitude of perspectives, both remembered and imagined. Its title comes from a poem by Sinan Antoon on being an Iraqi refugee in New York, set to music in 2022 by Layale Chaker – a song that came at the end of a sequence beginning with Li Beirut, a powerful lament for the Lebanese capital. Yet if that suggests a programme that’s heavy going, this performance ultimately leaned towards joy. The programme is well run-in – they released a recording in 2023 – but much here still felt spontaneous. The small but evocative dialogues between cultures in the songs played out with tenor and guitarist seated alongside each other, on an equal level, and Sulayman was the balladeer. Purcell’s Music for a While was the scene-setter, merging into pieces by his well-travelled compatriot Dowland. In a trio of eastward-looking Italian Renaissance madrigals, melancholy Monteverdi found Sulayman holding high notes that wouldn’t have sounded out of place in Italian opera of three centuries later; the same composer’s La Mia Turca had him boo-hooing down the melodic lines at the end of each verse in a way that made the rejected suitor aptly the butt of the joke. A quietly intense Sephardic love song gave way to an Arab-Andalusian guitar piece leading in turn into El Helwa Di, a gleeful Egyptian number with Sulayman whooping into falsetto. Only in Britten’s Songs from the Chinese, setting ancient words translated by a 1920s western poet, did the music feel self-conscious – perhaps unsurprisingly given that Britten’s propensity for the outsider’s view. Continue reading...",
+              "title": "Karim Sulayman/Sean Shibe review – tenor and guitarist beguile in wide-ranging and joyful recital",
+              "url": "https://www.theguardian.com/music/2026/jul/15/karim-sulaymansean-shibe-review-wigmore-hall-london",
+              "published_at": "2026-07-15T22:04:55+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Tender review – passion and dangerous promise in surreal horror romance",
+              "source_id": "guardian_stage",
+              "source_title": "Tender review – passion and dangerous promise in surreal horror romance",
+              "source_url": "https://www.theguardian.com/stage/2026/jul/15/tender-review-bush-theatre-london",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Karim Sulayman/Sean Shibe review – tenor and guitarist beguile in wide-ranging and joyful recital",
+              "source_id": "guardian_culture",
+              "source_title": "Karim Sulayman/Sean Shibe review – tenor and guitarist beguile in wide-ranging and joyful recital",
+              "source_url": "https://www.theguardian.com/music/2026/jul/15/karim-sulaymansean-shibe-review-wigmore-hall-london",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "sub_beat": "戲劇",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260716_evt_291",
+          "headline": "思考機器推首款開源模型",
+          "context": "AI新創思考機器實驗室（Thinking Machines Lab）發表首個開源模型「Inkling」，這是該公司成立一年半以來首次公開的具體成果。Inkling擁有 9750 億參數，能理解影片與音訊內容，被視為挑戰OpenAI、Anthropic等業界巨頭的第一步。",
+          "beat": "AI",
+          "thread_text": "AI新創思考機器實驗室（Thinking Machines Lab）發表了成立以來第一個公開模型「Inkling」。這款開源模型擁有 9750 億參數，能理解影片與音訊內容。這家公司過去一年半大多在低調打造AI基礎設施，這次是首次真正拿出東西讓外界檢視，目標是在OpenAI、Anthropic這些對手之間，證明「一體適用」不是唯一解方。\n\n本則整理自 TechCrunch 與 Wired 於 2026 年 7 月 16 日的報導。",
+          "threads_text": "AI新創思考機器實驗室發表了成立以來第一個公開模型「Inkling」，這款開源模型擁有 9750 億參數，能理解影片與音訊內容。這家公司過去一年半大多在低調打造AI基礎設施，這次是首次真正拿出東西讓外界檢視，目標是證明「一體適用」不是AI唯一的解方。\n\n本則整理自 TechCrunch 與 Wired 於 2026 年 7 月 16 日的報導。",
+          "voice_text": "有一家AI新創，這次終於拿出東西了。思考機器實驗室成立一年半，大多時間都在低調打造基礎設施，這次發表了第一個公開模型，叫Inkling。這款開源模型有9750億參數，能理解影片和音訊內容。他們想證明的是，AI不必只有「一體適用」這一種做法，也算是對其他大型AI公司放話。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "AI新創思考機器實驗室（Thinking Machines Lab）發表了成立以來第一個公開模型「Inkling」。這款開源模型擁有 9750 億參數，能理解影片與音訊內容。這家公司過去一年半大多在低調打造AI基礎設施，這次是首次真正拿出東西讓外界檢視，目標是在OpenAI、Anthropic這些對手之間，證明「一體適用」不是唯一解方。\n\n本則整理自 TechCrunch 與 Wired 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "AI新創思考機器實驗室發表了成立以來第一個公開模型「Inkling」，這款開源模型擁有 9750 億參數，能理解影片與音訊內容。這家公司過去一年半大多在低調打造AI基礎設施，這次是首次真正拿出東西讓外界檢視，目標是證明「一體適用」不是AI唯一的解方。\n\n本則整理自 TechCrunch 與 Wired 於 2026 年 7 月 16 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有一家AI新創，這次終於拿出東西了。思考機器實驗室成立一年半，大多時間都在低調打造基礎設施，這次發表了第一個公開模型，叫Inkling。這款開源模型有9750億參數，能理解影片和音訊內容。他們想證明的是，AI不必只有「一體適用」這一種做法，也算是對其他大型AI公司放話。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
+              "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+              "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+              "published_at": "2026-07-16T02:04:06+08:00"
+            },
+            {
+              "source_id": "wired_ai",
+              "name": "Wired",
+              "publisher": "Wired",
+              "summary": "Inkling, a 975-billion-parameter open source model, was trained to understand video and audio. It could help Thinking Machines establish itself among competitors like Anthropic and OpenAI.",
+              "title": "Thinking Machines Lab Drops Its First Model",
+              "url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+              "published_at": "2026-07-16T02:05:00+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+              "source_id": "techcrunch_ai",
+              "source_title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+              "source_url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Thinking Machines Lab Drops Its First Model",
+              "source_id": "wired_ai",
+              "source_title": "Thinking Machines Lab Drops Its First Model",
+              "source_url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 38,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260716_evt_035",
+          "headline": "OpenAI首款硬體曝光",
+          "context": "外媒報導指出，OpenAI籌備中的第一款硬體產品，可能是一台沒有螢幕、但「能自己移動」的喇叭。報導引述消息來源形容，這款裝置的設計目標是讓人覺得像個陪伴者，成為ChatGPT的「實體化身」。",
+          "beat": "AI",
+          "thread_text": "外媒報導，OpenAI籌備中的第一款硬體產品，可能是一台沒有螢幕、卻「能自己移動」的喇叭，裝置裡有機械結構能自主運作。報導引述消息來源指出，這款裝置的設計目標，是要讓人覺得像個陪伴者，某種程度上成為ChatGPT的「實體化身」。目前這項消息只有Bloomberg消息來源、TechCrunch轉述。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "外媒報導，OpenAI籌備中的第一款硬體產品，可能是一台沒有螢幕、卻「能自己移動」的喇叭，裝置裡有機械結構能自主運作。報導引述消息來源指出，設計目標是要讓人覺得像個陪伴者，某種程度上成為ChatGPT的「實體化身」。這項消息目前只由TechCrunch轉述。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "OpenAI可能要做硬體了，而且長得有點怪。傳聞中的第一款產品，是一台沒有螢幕、卻能自己移動的喇叭，裡面有機械結構可以自主運作。消息來源形容，設計目標是讓人覺得像個陪伴者——某種程度上，就是把ChatGPT變成一個實體的存在。這個說法目前還只是傳聞，還沒有官方證實。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "外媒報導，OpenAI籌備中的第一款硬體產品，可能是一台沒有螢幕、卻「能自己移動」的喇叭，裝置裡有機械結構能自主運作。報導引述消息來源指出，這款裝置的設計目標，是要讓人覺得像個陪伴者，某種程度上成為ChatGPT的「實體化身」。目前這項消息只有Bloomberg消息來源、TechCrunch轉述。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "外媒報導，OpenAI籌備中的第一款硬體產品，可能是一台沒有螢幕、卻「能自己移動」的喇叭，裝置裡有機械結構能自主運作。報導引述消息來源指出，設計目標是要讓人覺得像個陪伴者，某種程度上成為ChatGPT的「實體化身」。這項消息目前只由TechCrunch轉述。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "OpenAI可能要做硬體了，而且長得有點怪。傳聞中的第一款產品，是一台沒有螢幕、卻能自己移動的喇叭，裡面有機械結構可以自主運作。消息來源形容，設計目標是讓人覺得像個陪伴者——某種程度上，就是把ChatGPT變成一個實體的存在。這個說法目前還只是傳聞，還沒有官方證實。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "The device is weirdly described as involving \"mechanical elements that can move on their own\" and the Bloomberg report includes the detail that the device is designed to \"feel like a companion and become a physical manifestation of OpenAI’s ChatGPT.\"",
+              "title": "OpenAI’s first hardware device is reportedly a screenless speaker that can move",
+              "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
+              "published_at": "2026-07-15T06:22:24+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "OpenAI’s first hardware device is reportedly a screenless speaker that can move",
+              "source_id": "techcrunch_ai",
+              "source_title": "OpenAI’s first hardware device is reportedly a screenless speaker that can move",
+              "source_url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260716_evt_028",
+          "headline": "GPT-5.6被爆自行刪檔",
+          "context": "社群媒體上多篇貼文指稱，OpenAI最新旗艦模型GPT-5.6 Sol會在未經警告的情況下，自行刪除使用者的檔案與資料。OpenAI其實在6月就已經大致揭露過這個問題。",
+          "beat": "AI",
+          "thread_text": "社群媒體上出現多篇貼文，指稱OpenAI最新旗艦模型GPT-5.6 Sol，會在沒有警告的情況下自行刪除使用者的檔案和資料。目前只有TechCrunch報導這件事，而且OpenAI其實在6月就已經大致揭露過這個問題。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "社群媒體上出現多篇貼文，指稱OpenAI最新旗艦模型GPT-5.6 Sol，會在沒有警告的情況下自行刪除使用者的檔案和資料。這件事目前只有TechCrunch報導，OpenAI其實在6月就已經大致揭露過這個問題，只是這次又被重新提起。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "有使用者發現，OpenAI的新模型會自己刪檔案。社群媒體上出現不少貼文，說最新的旗艦模型在沒有警告的情況下，自己刪掉使用者的檔案和資料。這個問題，OpenAI其實六月就已經大致講過了——只是這次又被重新提起。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "社群媒體上出現多篇貼文，指稱OpenAI最新旗艦模型GPT-5.6 Sol，會在沒有警告的情況下自行刪除使用者的檔案和資料。目前只有TechCrunch報導這件事，而且OpenAI其實在6月就已經大致揭露過這個問題。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "社群媒體上出現多篇貼文，指稱OpenAI最新旗艦模型GPT-5.6 Sol，會在沒有警告的情況下自行刪除使用者的檔案和資料。這件事目前只有TechCrunch報導，OpenAI其實在6月就已經大致揭露過這個問題，只是這次又被重新提起。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "有使用者發現，OpenAI的新模型會自己刪檔案。社群媒體上出現不少貼文，說最新的旗艦模型在沒有警告的情況下，自己刪掉使用者的檔案和資料。這個問題，OpenAI其實六月就已經大致講過了——只是這次又被重新提起。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "A number of social media posts claim that GPT-5.6 Sol deleted files and data without warning. OpenAI had basically disclosed the problem in June.",
+              "title": "OpenAI’s new flagship model deletes files on its own, people keep warning",
+              "url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
+              "published_at": "2026-07-15T05:50:11+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "OpenAI’s new flagship model deletes files on its own, people keep warning",
+              "source_id": "techcrunch_ai",
+              "source_title": "OpenAI’s new flagship model deletes files on its own, people keep warning",
+              "source_url": "https://techcrunch.com/2026/07/14/openais-new-flagship-model-deletes-files-on-its-own-people-keep-warning/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260716_evt_010",
+          "headline": "Anthropic新廣告惹議",
+          "context": "TechCrunch報導，Anthropic最新一支廣告讓不少人看了直呼「毛骨悚然」。報導認為，這支廣告延續該公司一貫的行銷手法——刻意碰觸外界對AI的疑慮，想藉此塑造自己「比較負責任」的形象，只是這次似乎沒有達到預期效果。",
+          "beat": "AI",
+          "thread_text": "Anthropic最新一支廣告，讓不少觀眾看了直呼「毛骨悚然」。報導指出，這支廣告延續該公司一貫手法：刻意碰觸外界對AI的疑慮，想藉此塑造自己「比較負責任」的形象。只是這一次，效果似乎不太理想。目前這個說法只有TechCrunch一家報導。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "Anthropic最新一支廣告，讓不少觀眾看了直呼「毛骨悚然」。報導指出，這支廣告延續該公司一貫手法：刻意碰觸外界對AI的疑慮，想藉此塑造自己「比較負責任」的形象，只是這一次效果似乎不太理想。這個說法目前只有TechCrunch一家報導。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "Anthropic的新廣告，這次好像拍過頭了。這支廣告讓不少人看了直呼毛骨悚然。這家公司一直想把自己塑造成AI界裡「比較負責任」的那一個，做法通常是刻意碰觸外界對AI的疑慮——只是這一次，好像沒達到預期效果。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Anthropic最新一支廣告，讓不少觀眾看了直呼「毛骨悚然」。報導指出，這支廣告延續該公司一貫手法：刻意碰觸外界對AI的疑慮，想藉此塑造自己「比較負責任」的形象。只是這一次，效果似乎不太理想。目前這個說法只有TechCrunch一家報導。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Anthropic最新一支廣告，讓不少觀眾看了直呼「毛骨悚然」。報導指出，這支廣告延續該公司一貫手法：刻意碰觸外界對AI的疑慮，想藉此塑造自己「比較負責任」的形象，只是這一次效果似乎不太理想。這個說法目前只有TechCrunch一家報導。\n\n本則來自 TechCrunch 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Anthropic的新廣告，這次好像拍過頭了。這支廣告讓不少人看了直呼毛骨悚然。這家公司一直想把自己塑造成AI界裡「比較負責任」的那一個，做法通常是刻意碰觸外界對AI的疑慮——只是這一次，好像沒達到預期效果。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Anthropic has consistently attempted to depict itself as the ethical foil to other AI companies. This latest marketing stunt — which leans into criticism of AI as a way to make Anthropic seem aware of the responsibility it carries — would appear to be more of the same.",
+              "title": "Anthropic’s newest ad is creeping people out",
+              "url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/",
+              "published_at": "2026-07-15T03:41:27+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Anthropic’s newest ad is creeping people out",
+              "source_id": "techcrunch_ai",
+              "source_title": "Anthropic’s newest ad is creeping people out",
+              "source_url": "https://techcrunch.com/2026/07/14/anthropics-newest-ad-is-creeping-people-out/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260716_evt_040",
+          "headline": "英暖氣油漲價用戶获賠",
+          "context": "英國競爭與市場管理局（CMA）調查發現，中東情勢引發原油價格飆升期間，暖氣油業者片面取消訂單、改用更高價格重新收費，影響約1700名用戶。這些用戶現在最高可获得350英鎊的賠償。",
+          "beat": "ECON",
+          "thread_text": "英國競爭與市場管理局（CMA）展開調查後發現，美國與以色列對伊朗開戰、原油價格飆升期間，有暖氣油業者片面取消既有訂單，再用更高價格重新收費，影響約1700名用戶。這些用戶現在最高可以拿到350英鎊賠償。\n\n本則整理自 BBC 與 The Guardian 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "英國競爭與市場管理局（CMA）展開調查後發現，中東情勢引發原油價格飆升期間，有暖氣油業者片面取消既有訂單，再用更高價格重新收費，影響約1700名用戶。這些用戶現在最高可以拿到350英鎊的賠償。\n\n本則整理自 BBC 與 The Guardian 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "英國一批暖氣油用戶，這次能拿到賠償了。中東情勢讓原油價格飆升那段期間，有業者片面取消原本的訂單，換成更高價格重新收費，影響大約1700人。監管機關調查後決定，這些用戶最高可以拿到350英鎊賠償。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "英國競爭與市場管理局（CMA）展開調查後發現，美國與以色列對伊朗開戰、原油價格飆升期間，有暖氣油業者片面取消既有訂單，再用更高價格重新收費，影響約1700名用戶。這些用戶現在最高可以拿到350英鎊賠償。\n\n本則整理自 BBC 與 The Guardian 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國競爭與市場管理局（CMA）展開調查後發現，中東情勢引發原油價格飆升期間，有暖氣油業者片面取消既有訂單，再用更高價格重新收費，影響約1700名用戶。這些用戶現在最高可以拿到350英鎊的賠償。\n\n本則整理自 BBC 與 The Guardian 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國一批暖氣油用戶，這次能拿到賠償了。中東情勢讓原油價格飆升那段期間，有業者片面取消原本的訂單，換成更高價格重新收費，影響大約1700人。監管機關調查後決定，這些用戶最高可以拿到350英鎊賠償。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The cost of heating oil spiked following the US-Israel war with Iran which forced up crude prices.",
+              "title": "Heating oil customers to get compensation after price hikes",
+              "url": "https://www.bbc.co.uk/news/articles/cy494yypnv3o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-07-15T07:00:41+08:00"
+            },
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Watchdog says about 1,700 people were affected during a price surge triggered by the Middle East crisis Heating oil customers whose deliveries were cancelled when the war in the Middle East caused a price surge are to receive compensation of up to £350 each following an investigation by the UK competition watchdog. As the crisis unfolded, the Competition and Markets Authority (CMA) said it was investigating heating oil suppliers after complaints that existing orders were being scrapped, with customers offered new deliveries at a significantly higher price. Continue reading...",
+              "title": "Heating oil customers to get up to £350 compensation for cancelled orders",
+              "url": "https://www.theguardian.com/money/2026/jul/15/heating-oil-customers-compensation-cancelled-orders-cma",
+              "published_at": "2026-07-15T13:00:45+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "Heating oil customers to get compensation after price hikes",
+              "source_id": "bbc_business",
+              "source_title": "Heating oil customers to get compensation after price hikes",
+              "source_url": "https://www.bbc.co.uk/news/articles/cy494yypnv3o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Heating oil customers to get up to £350 compensation for cancelled orders",
+              "source_id": "guardian_business",
+              "source_title": "Heating oil customers to get up to £350 compensation for cancelled orders",
+              "source_url": "https://www.theguardian.com/money/2026/jul/15/heating-oil-customers-compensation-cancelled-orders-cma",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 45,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1"
+        },
+        {
+          "event_id": "daily_20260716_evt_021",
+          "headline": "美通膨降溫股市走高",
+          "context": "美國最新公布的通膨數據優於預期，市場對聯準會升息的預期因此降溫，加拿大多倫多股市（TSX）收盤走高。同一天，華爾街也在溫和通膨數據與亮眼財報帶動下收紅。",
+          "beat": "ECON",
+          "thread_text": "美國最新公布的通膨數據比市場預期溫和，投資人對聯準會升息的預期因此降溫。加拿大多倫多股市（TSX）收盤走高，同一天華爾街也在溫和通膨數據與亮眼財報帶動下收紅。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "美國最新公布的通膨數據比市場預期溫和，投資人對聯準會升息的預期因此降溫。加拿大多倫多股市（TSX）收盤走高，同一天華爾街也在溫和通膨數據與亮眼財報帶動下收紅，市場情緒明顯回穩。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "美股和加股，這次一起收紅了。美國最新公布的通膨數據，比市場預期溫和，投資人對聯準會升息的想像也跟著降溫。加拿大的多倫多股市收盤走高，同一天的華爾街，也在溫和通膨數據和亮眼財報的帶動下收紅。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "美國最新公布的通膨數據比市場預期溫和，投資人對聯準會升息的預期因此降溫。加拿大多倫多股市（TSX）收盤走高，同一天華爾街也在溫和通膨數據與亮眼財報帶動下收紅。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國最新公布的通膨數據比市場預期溫和，投資人對聯準會升息的預期因此降溫。加拿大多倫多股市（TSX）收盤走高，同一天華爾街也在溫和通膨數據與亮眼財報帶動下收紅，市場情緒明顯回穩。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美股和加股，這次一起收紅了。美國最新公布的通膨數據，比市場預期溫和，投資人對聯準會升息的想像也跟著降溫。加拿大的多倫多股市收盤走高，同一天的華爾街，也在溫和通膨數據和亮眼財報的帶動下收紅。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "TSX ends higher as US inflation data trims Fed rate hike bets Reuters",
+              "title": "TSX ends higher as US inflation data trims Fed rate hike bets - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdlE3dTktWE5vaHpuTVR0blp4cThXTk1IVG5OaUR0MnRldFN2TG82dFZJcUdicGJvZTVVQnV0MWFnSldKZ0RzeDZXdkdiSE1zSnlxQk8wNjBsaEo1Tm1jbDZCeVNTcWRCN0dHTUxkTnY5OFRRSHRYY1pjbVBjSDk2NXNjdE5MOW9HQjRXOQ?oc=5",
+              "published_at": "2026-07-15T04:54:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "TSX ends higher as US inflation data trims Fed rate hike bets - Reuters",
+              "source_id": "reuters_business_google_news",
+              "source_title": "TSX ends higher as US inflation data trims Fed rate hike bets - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdlE3dTktWE5vaHpuTVR0blp4cThXTk1IVG5OaUR0MnRldFN2TG82dFZJcUdicGJvZTVVQnV0MWFnSldKZ0RzeDZXdkdiSE1zSnlxQk8wNjBsaEo1Tm1jbDZCeVNTcWRCN0dHTUxkTnY5OFRRSHRYY1pjbVBjSDk2NXNjdE5MOW9HQjRXOQ?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Wall St ends higher on cool inflation data, strong earnings - Reuters",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Wall St ends higher on cool inflation data, strong earnings - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOWUtNV3dNS0otQllnaU9ZVG83WlpzSDB0MlB4OVJFQ0V3QjRCT1BhbjRjMkdXeTFwbUwwczE2cVFkREhxSkpwZTJvZmZLUGtPYlk5Vk53cnlxSmdXZjgwb1JEZ284QmJ2SGlUSkgzRlZSQ1k4bzhaM0wzajRMbVV4bGZEaUtSOUFZVGxtRHlNYW5ucEtuRVA1Q3NpOWRXdExXYWNr?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260716_evt_056",
+          "headline": "中東局勢未退股市仍收紅",
+          "context": "美股在溫和通膨數據帶動下走高，儘管中東的緊張局勢仍未緩解，投資人的目光仍聚焦在美伊衝突的後續發展。",
+          "beat": "ECON",
+          "thread_text": "美股在溫和通膨數據的帶動下收高，但中東的緊張局勢並未真正緩解，市場的目光仍然放在美伊衝突可能如何發展。目前這則消息只有Reuters的簡短報導。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。",
+          "threads_text": "美股在溫和通膨數據的帶動下收高，但中東的緊張局勢並未真正緩解，市場的目光仍然放在美伊衝突接下來會怎麼發展。這則消息目前只有Reuters簡短報導。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。",
+          "voice_text": "美股又漲了一天，但大家其實還在看中東。溫和的通膨數據帶動股市走高，只是中東的緊張情勢還沒真正緩解，投資人的目光，仍然放在美伊衝突接下來會怎麼走。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "美股在溫和通膨數據的帶動下收高，但中東的緊張局勢並未真正緩解，市場的目光仍然放在美伊衝突可能如何發展。目前這則消息只有Reuters的簡短報導。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美股在溫和通膨數據的帶動下收高，但中東的緊張局勢並未真正緩解，市場的目光仍然放在美伊衝突接下來會怎麼發展。這則消息目前只有Reuters簡短報導。\n\n本則來自 Reuters 於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美股又漲了一天，但大家其實還在看中東。溫和的通膨數據帶動股市走高，只是中東的緊張情勢還沒真正緩解，投資人的目光，仍然放在美伊衝突接下來會怎麼走。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Stocks rise after soft US inflation reading with Middle East in focus Reuters",
+              "title": "Stocks rise after soft US inflation reading with Middle East in focus - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEtOY19xRkd1VVhIYWg3cmFaU1BOUXRpRDhzaXN6UzFSa2Z2c3cwOE5YYjV5bXRwQVhiX2VhTGE1d1dvR2dQS3FnQm56VkZwOE00WER6bWoyM3U5aWtjd0xjUENON1dXcWVlLW85TGhZazVKY3BZbmRQT19IaE9TMm43Yw?oc=5",
+              "published_at": "2026-07-15T09:48:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Stocks rise after soft US inflation reading with Middle East in focus - Reuters",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Stocks rise after soft US inflation reading with Middle East in focus - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcEtOY19xRkd1VVhIYWg3cmFaU1BOUXRpRDhzaXN6UzFSa2Z2c3cwOE5YYjV5bXRwQVhiX2VhTGE1d1dvR2dQS3FnQm56VkZwOE00WER6bWoyM3U5aWtjd0xjUENON1dXcWVlLW85TGhZazVKY3BZbmRQT19IaE9TMm43Yw?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -10,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260716_evt_178",
+          "headline": "林口長庚連9年最賺錢",
+          "context": "健保署公布2024年度240家醫療院所財務報告，林口長庚醫院以37.26億元結餘，連續第9年蟬聯全台最賺錢醫院。相對地，部分癌症專責醫院面臨虧損，其中台大癌醫虧損3.63億元。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "健保署公布2024年度240家醫療院所的財務報告，林口長庚醫院以37.26億元的結餘，連續第9年蟬聯全台最賺錢醫院。相對地，部分癌症專責醫院面臨虧損壓力，其中台大癌醫虧損3.63億元。至於外界關注的醫護人員薪資，健保署分析，人事費用總計新台幣3102億元，比前一年增加81億元，認為與健保總額成長、公務預算挹注都有關。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。",
+          "threads_text": "健保署公布2024年度240家醫療院所的財務報告，林口長庚醫院以37.26億元的結餘，連續第9年蟬聯全台最賺錢醫院。部分癌症專責醫院則面臨虧損，其中台大癌醫虧損3.63億元。健保署分析，醫護人事費用總計新台幣3102億元，比前一年增加81億元，與健保總額成長、公務預算挹注都有關。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。",
+          "voice_text": "全台最賺錢的醫院，又是林口長庚。健保署公布2024年度的財務報告，林口長庚醫院以37.26億元的結餘，連續第9年蟬聯冠軍。同一份報告也顯示，有些癌症專責醫院正面臨虧損，像台大癌醫就虧了3.63億元。至於大家關心的醫護人員薪資，健保署說，人事費用總計新台幣3102億元，比前一年多了81億元，這跟健保總額成長、還有公務預算的挹注都有關。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "健保署公布2024年度240家醫療院所的財務報告，林口長庚醫院以37.26億元的結餘，連續第9年蟬聯全台最賺錢醫院。相對地，部分癌症專責醫院面臨虧損壓力，其中台大癌醫虧損3.63億元。至於外界關注的醫護人員薪資，健保署分析，人事費用總計新台幣3102億元，比前一年增加81億元，認為與健保總額成長、公務預算挹注都有關。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "健保署公布2024年度240家醫療院所的財務報告，林口長庚醫院以37.26億元的結餘，連續第9年蟬聯全台最賺錢醫院。部分癌症專責醫院則面臨虧損，其中台大癌醫虧損3.63億元。健保署分析，醫護人事費用總計新台幣3102億元，比前一年增加81億元，與健保總額成長、公務預算挹注都有關。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "全台最賺錢的醫院，又是林口長庚。健保署公布2024年度的財務報告，林口長庚醫院以37.26億元的結餘，連續第9年蟬聯冠軍。同一份報告也顯示，有些癌症專責醫院正面臨虧損，像台大癌醫就虧了3.63億元。至於大家關心的醫護人員薪資，健保署說，人事費用總計新台幣3102億元，比前一年多了81億元，這跟健保總額成長、還有公務預算的挹注都有關。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "健保署公布2024年共240家醫療院所財務報告，林口長庚醫院以37.26億元結餘，連續第9年蟬連最賺錢醫院。不過，癌症專責醫院則是面臨虧損壓力，其中台大癌醫虧損3.63億元。至於外界關注醫護人員薪資問題，健保署分析，人事費用加總新台幣3102億，較前一年增加81億元，認為與健保總額高成長與公務預算挹注都有關。",
+              "title": "林口長庚年度結餘達37.26億元 連9年成全台最賺錢醫院",
+              "url": "https://news.pts.org.tw/article/817800",
+              "published_at": "2026-07-15T20:53:02+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "林口長庚年度結餘達37.26億元 連9年成全台最賺錢醫院",
+              "source_id": "pts_news",
+              "source_title": "林口長庚年度結餘達37.26億元 連9年成全台最賺錢醫院",
+              "source_url": "https://news.pts.org.tw/article/817800",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260716_evt_177",
+          "headline": "高雄飯店轉型樂齡莊園",
+          "context": "高雄市人口約270多萬人，市府統計「老化指數」已經逼近200%，扶老比高達31%。看準這波銀髮商機，一間經營超過30年的高雄飯店決定熄燈轉型，預計明年（2027）變身「樂齡莊園」，並與醫院合作。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "高雄市人口約270多萬人，市府統計顯示，當地的「老化指數」已經逼近200%，扶老比更高達31%。看準這波銀髮商機，一間經營超過30年的高雄飯店決定熄燈，預計明年（2027年）轉型成「樂齡莊園」，並與醫院合作提供照護服務。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。",
+          "threads_text": "高雄市人口約270多萬人，市府統計顯示，當地的「老化指數」已經逼近200%，扶老比更高達31%。看準這波銀髮商機，一間經營超過30年的高雄飯店決定熄燈，預計明年轉型成「樂齡莊園」，並與醫院合作提供照護服務。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。",
+          "voice_text": "高雄有一間老飯店，準備轉型迎接銀髮商機了。高雄市人口大約270多萬，市府統計的「老化指數」已經逼近200%，扶老比更高達31%。看準這股趨勢，一間經營超過30年的飯店決定熄燈，預計明年變身「樂齡莊園」，還會跟醫院合作提供照護。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "高雄市人口約270多萬人，市府統計顯示，當地的「老化指數」已經逼近200%，扶老比更高達31%。看準這波銀髮商機，一間經營超過30年的高雄飯店決定熄燈，預計明年（2027年）轉型成「樂齡莊園」，並與醫院合作提供照護服務。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "高雄市人口約270多萬人，市府統計顯示，當地的「老化指數」已經逼近200%，扶老比更高達31%。看準這波銀髮商機，一間經營超過30年的高雄飯店決定熄燈，預計明年轉型成「樂齡莊園」，並與醫院合作提供照護服務。\n\n本則來自公視新聞於 2026 年 7 月 15 日的報導。"
+              ]
+            },
+            "voice": {
+              "text": "高雄有一間老飯店，準備轉型迎接銀髮商機了。高雄市人口大約270多萬，市府統計的「老化指數」已經逼近200%，扶老比更高達31%。看準這股趨勢，一間經營超過30年的飯店決定熄燈，預計明年變身「樂齡莊園」，還會跟醫院合作提供照護。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "高雄市人口有270多萬人，根據市府民政局的統計，高雄市的「老化指數」已經逼近200%，扶老比更高達31%。這樣的社會人口結構變化，讓建商看準商機，投入銀髮市場。高雄有一家飯店，在經營了30多年後熄燈，預計在明（2027）年成為「樂齡莊園」。",
+              "title": "高雄飯店看準銀髮市場 與醫院合作轉型「樂齡莊園」",
+              "url": "https://news.pts.org.tw/article/817799",
+              "published_at": "2026-07-15T20:52:25+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "高雄飯店看準銀髮市場 與醫院合作轉型「樂齡莊園」",
+              "source_id": "pts_news",
+              "source_title": "高雄飯店看準銀髮市場 與醫院合作轉型「樂齡莊園」",
+              "source_url": "https://news.pts.org.tw/article/817799",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 0,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 509,
+    "total_articles_after_filter": 481,
+    "total_events_merged": 317,
+    "total_events_selected": 18,
+    "tw_highlights_count": 2
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260716_evt_044",
+      "headline": "Trump retreat over Hormuz tolls suggests he is struggling to end Iran war",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_045",
+      "headline": "US targets Iran shipping network with new sanctions - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_065",
+      "headline": "Nepal court jails 2 former ministers, 14 others over refugee scam - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_124",
+      "headline": "Italy's coalition vows to pursue election law reform after setback - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_127",
+      "headline": "Congo forms new council in push for war crimes justice - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_132",
+      "headline": "Information from NATO member states shows Russia attempted sabotage, Latvia's president says - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_155",
+      "headline": "Sierra Leone drops treason charge against ex-president over attempted coup",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_157",
+      "headline": "Italy's Meloni suffers surprise setback in close vote on electoral reform",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_169",
+      "headline": "UN warns Sudan gum arabic trade helps sustain civil war - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_197",
+      "headline": "Moody's cuts Israel's 2026 growth estimate on tenuous ceasefire deals - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_222",
+      "headline": "Merz reaches out to AfD voters before pivotal German regional election - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_266",
+      "headline": "White House weighs extending Jones Act waivers as Iran conflict raises price concerns - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_293",
+      "headline": "What if Bluey spoke one of the world's oldest living languages?",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_165",
+      "headline": "Acting AG Todd Blanche faces a key test. And, ICE pauses most traffic stops",
+      "selection_score": 38,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_223",
+      "headline": "Old rivals, new battle: Argentina and England clash in World Cup Semifinal",
+      "selection_score": 38,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_081",
+      "headline": "ECB's Kocher sees currently no second-round effects from Iran war, but bank is ready to act - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_099",
+      "headline": "South African rand flat as traders await more US inflation data - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_159",
+      "headline": "India approves $13.3 billion for fresh semiconductor push - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_171",
+      "headline": "India-UK trade pact takes effect, cutting tariffs and boosting services trade - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_196",
+      "headline": "Brazil braces for new U.S. tariffs as Washington broadens trade push, sources say - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_199",
+      "headline": "Fed's Williams: \"Unquestionably too-high\" inflation may soon subside - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_262",
+      "headline": "US producer prices post largest drop in 14 months; inflation risks still tilted to the upside - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_275",
+      "headline": "US money market funds turn defensive with Fed rate outlook uncertain - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_290",
+      "headline": "Brazil government now expects 2026 inflation to be above central bank's target - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_297",
+      "headline": "Fed's Cook says she is prepared to act soon if inflation does not begin to slow - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_269",
+      "headline": "Why are right-wing parties gaining ground in Latin America?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_284",
+      "headline": "Mapping the latest US strikes across Iran",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_295",
+      "headline": "Prominent Moroccan journalist Ali Lmrabet released from custody",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_314",
+      "headline": "Russia pounds Ukraine with missile, drone strikes",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_037",
+      "headline": "White House Cheers Inflation Data While Iran War Sparks New Price Surge",
+      "selection_score": -17,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_038",
+      "headline": "Warsh Reiterates Fed’s Pledge to Get Inflation Down but Doesn’t Specify How",
+      "selection_score": -17,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_017",
+      "headline": "Pat Oliphant, Cartoonist Who Skewered the Powerful, Dies at 90",
+      "selection_score": 23,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_004",
+      "headline": "Book publishers sue Google for copyright infringement over Gemini AI training",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_022",
+      "headline": "China's Q2 growth set to lose steam, stimulus to remain calibrated - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_023",
+      "headline": "UK to issue first 'digital' bond by early 2027, finance minister says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_025",
+      "headline": "US House passes bill to make daylight saving time permanent - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_026",
+      "headline": "US supporting efforts to revive Iraq-Syria crude oil pipeline, US official says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_027",
+      "headline": "IEA warns EU methane law could limit bloc's oil supply options - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_030",
+      "headline": "New bids from Fairfax and Emirates revive stalled IDBI Bank sale, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_031",
+      "headline": "US judge blocks Trump administration's visa limits for social media researchers - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_032",
+      "headline": "Kosovo bans Serb minister over ethnic cleansing remarks - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_034",
+      "headline": "Writers Guild sues to block Paramount deal, saying it would hurt writers - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_041",
+      "headline": "Japan manufacturers stay upbeat on chip demand, services hit by costs - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_042",
+      "headline": "Wife of Ryanair passenger partially sucked out of plane window recalls incident - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_046",
+      "headline": "Meta used AI to tag workers who took leave to be laid off, lawsuit claims",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_047",
+      "headline": "UK summons senior Iranian diplomat over alleged proxy attacks in Europe - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_048",
+      "headline": "AI cloud company CoreWeave explores Wall Street playbook to hedge memory-chip price risk - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_051",
+      "headline": "One dead, 2 missing after boat with 19 aboard capsizes in San Francisco Bay - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_052",
+      "headline": "SK Hynix shares surge 13% on AI hopes as US tech stocks resume their climb - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_053",
+      "headline": "Brutal killing of 11-year-old highlights unrelenting sexual violence in India - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_054",
+      "headline": "Oil prices sink, shrugging off renewed Middle East fighting - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_057",
+      "headline": "Dollar slips after cooling producer prices, Middle East escalation in focus - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_059",
+      "headline": "Taiwan's premium mangoes wing their way to Europe for the first time - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_060",
+      "headline": "China's Q2 economic growth cools to 3-1/2-year low as imbalances worsen - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_061",
+      "headline": "China detains US scientist who studied North Korea nuclear tests",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_062",
+      "headline": "VIEW China's second-quarter economic growth misses market forecast - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_063",
+      "headline": "Indian shares edge higher as financials lead; U.S.-Iran tensions cap gains - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_070",
+      "headline": "‘The world wasn’t ready for me’: Del LaGrace Volcano on photographing S&M scenes, leather-clad lesbians and a drag king self-portrait",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_071",
+      "headline": "Air India crash probe enters final stages after cockpit recorder, psychology reviews - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_072",
+      "headline": "Death toll in Thai pub fire rises to 32, officials say, with dozens still in hospital - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_073",
+      "headline": "Morning Bid: Big Blue's bad day raises the bar for ASML - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_074",
+      "headline": "China new home prices fall at slower pace, but recovery doubtful - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_077",
+      "headline": "Malaysia says residents at tech commune run by ex-Coinbase exec have valid travel documents - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_078",
+      "headline": "India's SBI Funds' $1 billion IPO fully subscribed amid bets on market growth - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_080",
+      "headline": "Russian strike on Ukraine's Odesa kills three as Moscow, Kyiv battle over Black Sea - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_085",
+      "headline": "Gillian Armstrong remembers Sam Neill: ‘I can’t believe that the very next day he was gone’",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_086",
+      "headline": "China turns to electric taxis to soften Hormuz oil shock - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_087",
+      "headline": "Indian missing after attack on ship off Oman coast is dead, family says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_091",
+      "headline": "Drivers charging electric cars handed shock parking fines",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_092",
+      "headline": "Barratt Redrow to return £400 million to shareholders via buybacks - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_094",
+      "headline": "Japan PM Takaichi says draft economic blueprint not cause of bond market rout - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_095",
+      "headline": "G7 urges halt to attacks in Sudan's El-Obeid, calls for wider arms embargo - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_096",
+      "headline": "Lithuania says Russia is planning attacks on infrastructure - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_101",
+      "headline": "UK's Dr Martens backs annual outlook on US wholesale demand - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_108",
+      "headline": "‘People are picking the dumbest fights’: the tortured history of America’s culture wars",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_109",
+      "headline": "Labour should ditch triple-lock pensions promise, says OECD",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_117",
+      "headline": "Canadian home sales rise in June, prices unchanged from prior month - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_118",
+      "headline": "Briton jailed in Iran given additional two-year sentence, family says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_119",
+      "headline": "German engineering body urges broader EU duties, tougher action on China - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_120",
+      "headline": "Explainer: What is CXMT and how did it become China's DRAM champion? - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_121",
+      "headline": "Eyeing valuation jump, investors prep bids for chip giant CXMT's $8.6 billion IPO - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_122",
+      "headline": "China refineries seek less fuel oil as they opt for cheaper crude, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_123",
+      "headline": "Peru approves $2.8 bln budget hike ahead of Fujimori transition - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_125",
+      "headline": "Boss of fake government agency arrested in Nigeria after weeks on the run",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_126",
+      "headline": "Air India crash report likely to be ready in October, say investigators",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_131",
+      "headline": "Kremlin rejects Lithuanian allegations of planned Russian attacks as 'scare stories' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_133",
+      "headline": "Celebrations as Gibraltar-Spain border fence removed",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_134",
+      "headline": "China economic growth falls sharply, missing target",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_135",
+      "headline": "Next Israel government must halt rise in debt burden, central bank chief says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_136",
+      "headline": "India's June unemployment rate at 5.5% y/y - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_137",
+      "headline": "Brazil's Lula gains ground on Flavio Bolsonaro ahead of presidential vote, poll shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_138",
+      "headline": "英國擬實施青少年社群宵禁令 深夜12時至凌晨6時強制停用",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_140",
+      "headline": "US says it has begun new wave of strikes on Iran - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_141",
+      "headline": "China’s economy grows at 4.3%, one of its lowest rates on record",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_142",
+      "headline": "In US West, drought pits farms against towns, industry in scramble for water - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_143",
+      "headline": "Rastafarians in Kenya fail in bid to get cannabis legalised for religious purposes",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_144",
+      "headline": "EXCLUSIVE: Former DP World boss Bin Sulayem takes charge of Malaysia MMC Port, memo shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_145",
+      "headline": "Bank of England governor would have put off Farage meeting had £5m gift been under investigation",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_146",
+      "headline": "‘Please don’t lose another pound!’: Ozempic is upending the wedding dress industry",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_148",
+      "headline": "Pakistan's crypto push clouded by Islamic edict, regulator asks for clarification - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_149",
+      "headline": "立陶宛及拉脫維亞掌握情報　揭俄破壞企圖與攻擊計畫",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_150",
+      "headline": "How a former 'street kid' is key to South Africa's police corruption inquiry",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_151",
+      "headline": "Morocco releases dissident journalist Ali Lmrabet - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_152",
+      "headline": "世界盃與英格蘭交鋒　阿根廷外長再提福克蘭群島爭議",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_153",
+      "headline": "日本芥川賞、直木賞揭曉 小砂川與朝倉可斯蜜獲獎",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_154",
+      "headline": "Heatwave prompts Italy's delivery riders to strike for extra rights",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_156",
+      "headline": "日朝野黨魁辯論　高市：食品消費稅降至1%方向不變",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_164",
+      "headline": "Surviving extreme heat increasingly boils down to this: access to air conditioning | Mark Wolfe",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_166",
+      "headline": "拜登將出版回憶錄　講述放棄競選連任總統等決定",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_167",
+      "headline": "Venezuela government to launch formal talks with opposition members",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_168",
+      "headline": "Seven Britons among those killed in Spain wildfires",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_170",
+      "headline": "美國全面反制國際刑事法院　意外牽動杜特蒂案",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_172",
+      "headline": "軟銀執行長孫正義駁AI泡沫化 估2040年全球GDP兩成靠AI產業",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_173",
+      "headline": "世足賽／西班牙2比0完封法國 睽違16年挺進冠軍戰",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_175",
+      "headline": "泰國外長：緬甸總統敏昂萊8月將訪泰",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_176",
+      "headline": "范德賴恩訪基輔　宣布歐盟與烏克蘭達無人機生產協議",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_179",
+      "headline": "營造業者涉綁標拿下工程案 檢搜索基市府、議會約談17人",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_180",
+      "headline": "美軍：對伊朗90分鐘精準打擊　鎖定大通布島防禦系統",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_181",
+      "headline": "俄烏拉爾地區大雨釀河水暴漲 數百人撤離、上萬人面臨停電",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_182",
+      "headline": "Uber Eats公布外送員4大保障 每單報酬至少有45元",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_183",
+      "headline": "彰化合成皮廠涉逃漏空污費 勾結環工技師造假6人遭起訴",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_184",
+      "headline": "萬里溪堰塞湖蓄水率達95% 林保署估17日上午溢堤",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_185",
+      "headline": "雲豹甲車深夜現蹤台北 演練守護關鍵基礎設施",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_186",
+      "headline": "中國吸收地下錢莊誘軍人借貸 空軍士官兵洩密抵債遭判刑",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_187",
+      "headline": "陽明交大教授涉持刀殺人 校方調整開課、助研究生換老師",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_188",
+      "headline": "台積電7/16法說會 分析師：若財報亮眼可帶動台股",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_189",
+      "headline": "伊朗擬加碼封鎖曼德海峽 中東戰火升溫牽動全球能源",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_190",
+      "headline": "問題油受波及業者增至1006家 累計回收逾7600公噸",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_195",
+      "headline": "Jess Cartner-Morley on fashion: forget delicate chains – this summer, make your jewellery big and bold",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_198",
+      "headline": "民眾黨徵召戴于文參選花蓮市長 黃國昌：爭取選民認同優先",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_200",
+      "headline": "Brazil services activity shrinks 0.4% in May, missing forecasts - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_201",
+      "headline": "泰軍方破獲邊境詐騙園區 路透：房東為柬埔寨富商林興",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_203",
+      "headline": "Alleged Russian cyber spy in Boston case previously worked for Kaspersky, source says and documents show - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_204",
+      "headline": "日冷集團遭駭客攻擊、系統故障 逾5千企業冷凍食品物流受影響",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_205",
+      "headline": "湖南成立中國首間燒烤學院 訓練火候準度、經營管理",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_206",
+      "headline": "澳洲兒少社群媒體禁令滿半年 官方坦言成效不彰、加重處罰",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_207",
+      "headline": "台少盟推手遊模擬社群情境 引導青少年正確使用網路",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_208",
+      "headline": "日超市導入AI預測進貨量 自動決定即期商品折扣",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_209",
+      "headline": "瑞安航空班機窗戶脫落 乘客遭吸出艙外、妻偕眾人拉回",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_210",
+      "headline": "東京放寬公務員服裝規定 首度鼓勵可穿短褲上班",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_211",
+      "headline": "民主剛果伊波拉疫情確診增至2011例　累計754死",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_213",
+      "headline": "Russia says foreign troops sent to Ukraine after a peace deal would be legitimate targets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_214",
+      "headline": "Richard Dadd: the painter whose fantastical vision was unconfined by his 43 years in an asylum",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_215",
+      "headline": "美國通膨放緩　6月PPI月減0.3%近1年以來首見",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_216",
+      "headline": "西班牙與英屬直布羅陀解除邊境管制　自由通行協議生效",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_217",
+      "headline": "印度核准半導體2.0計畫　投入逾4千億元推國產晶片",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_221",
+      "headline": "Most Gulf markets subdued as US-Iran tensions escalate - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_225",
+      "headline": "美國執法人員頻擊斃移民　川普：交通攔檢不能停",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_226",
+      "headline": "George Lucas likens AI sceptics to luddites clinging to horses and carts",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_227",
+      "headline": "Israel kills four people in Gaza, including a child, medics say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_229",
+      "headline": "Ukraine says it will protect ports to maintain export volumes after attacks - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_230",
+      "headline": "China investigates retired top media censor - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_232",
+      "headline": "EQT sweetens pursuit of Australia's Perpetual with $1.75 billion bid - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_234",
+      "headline": "專家：一旦北京動武　英國支持軍援台灣民意可能飆升",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_236",
+      "headline": "Nuclear fuel firm Standard Nuclear slashes US IPO size by more than half - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_237",
+      "headline": "馬來西亞森美蘭州議員選舉升溫　希盟國陣全面交鋒",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_238",
+      "headline": "Dramatic video shows wildfire surround freight train in Canada",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_239",
+      "headline": "South African asset manager PIC names CFO Damoyi as acting CEO amid probe - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_240",
+      "headline": "Ghana approves revised mining law to strengthen oversight - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_242",
+      "headline": "Special police team to investigate killing of an anti-migrant leader in South Africa",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_244",
+      "headline": "Trump's pick to head Bureau of Labor Statistics clears key Senate hurdle - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_245",
+      "headline": "Sheinbaum rejects DEA comments of \"deadly connection\" between her government and cartels - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_246",
+      "headline": "EXCLUSIVE: Orange, Iliad, Bouygues' SFR deal faces French antitrust scrutiny - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_247",
+      "headline": "US House panel unveils $95 billion plan to fund defense and parts of Trump's voter ID bill - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_248",
+      "headline": "曼谷啤酒餐廳大火奪33命　政府承諾檢討娛樂場所規範",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_249",
+      "headline": "Morocco signs agreement to join Gaza international force, state media say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_250",
+      "headline": "A classicist’s verdict on Nolan’s Odyssey: a soulful hero flatters our times as women and nuance pushed overboard",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_251",
+      "headline": "EXCLUSIVE: Latvia's airBaltic seeks new financing from bondholders as debt woes worsen - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_252",
+      "headline": "U.S. burrito chain Chipotle opens first eatery in Mexico - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_253",
+      "headline": "German government not stopping UniCredit's takeover of Commerzbank, Merz says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_255",
+      "headline": "UK's FTSE 100 slips as miners, oil stocks fall - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_259",
+      "headline": "UK's incoming prime minister Burnham to name Mahmood as finance minister, FT reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_264",
+      "headline": "ASML has room to raise prices, CFO says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_267",
+      "headline": "Amazon Leo to bring satellite internet to South Africa in 2027 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_272",
+      "headline": "More people around the world now favour China over the US, Pew study suggests",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_273",
+      "headline": "US agency to vote to end 39% local TV station ownership cap - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_274",
+      "headline": "Serbia pledges aid to Ukraine but ducks call for more pressure on Russia - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_276",
+      "headline": "EU, Ukraine seal 'drone deal' to boost production, establish joint ventures - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_277",
+      "headline": "Senegal expected to pick Lazard as financial advisor on debt matters, source says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_278",
+      "headline": "傳蘋果尋求收購晶片公司 強化AI伺服器實力",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_279",
+      "headline": "UK police charge 14-year-old boy with terrorism offence over mosque plot - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_280",
+      "headline": "French MPs approve assisted dying law with strict rules after years of argument",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_281",
+      "headline": "Zelenskiy to propose Interior Minister Klymenko as Ukraine's new defence minister, lawmakers say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_282",
+      "headline": "Goldman counsel Ruemmler says she would have reported Epstein if she knew he abused women - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_283",
+      "headline": "Democratic debate to replace Platner in Maine will have 8 candidates - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_285",
+      "headline": "Nigeria launches $500 million farm fund to drive food security - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_286",
+      "headline": "Ukraine's Black Sea ports lose a third of grain export capacity, farmers' union says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_287",
+      "headline": "EXCLUSIVE: Files relating to India’s largest nuclear power plant Kudankulam exposed in data breach - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_294",
+      "headline": "投資人狂熱消退　SpaceX跌破135美元IPO發行價",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_296",
+      "headline": "Rubio to host conference on 'far-left terrorism' on Thursday - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_310",
+      "headline": "不忘30年前救命之恩　黃仁勳親赴秋葉原感謝SEGA與恩人同框",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_315",
+      "headline": "Drones, AI and white paint: Europe races to protect infrastructure from heat - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_316",
+      "headline": "SpaceX shares slide below IPO price for first time as surge fizzles",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_317",
+      "headline": "Some ships refusing US-military guided Hormuz transits after attacks, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_002",
+      "headline": "A Soundtrack to the 2026 World Cup Semifinals",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_005",
+      "headline": "Sizzling, Sexy Age-Gap Romance Novels",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_006",
+      "headline": "Historical Fiction Books That Will Transport You to the 1960s",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_011",
+      "headline": "Apple opens its new Siri AI to everyone with the iOS 27 public beta",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_012",
+      "headline": "75 Years Later, ‘The Catcher in the Rye’ Remains a Great American Novel",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_013",
+      "headline": "Oil Price Dips From High After Trump Changes Plans for Shipping Fees",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_014",
+      "headline": "How Good Is Jon Hamm at Playing Jon Hamm?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_018",
+      "headline": "T. Rex Fossil Sells for $50.1 Million, Putting the King Back On Top",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_019",
+      "headline": "Chipotle Is Bringing Its Mexican-Inspired Fast Food to Monterrey, Mexico",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_029",
+      "headline": "OpenAI pushes back on Apple trade secret lawsuit",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_033",
+      "headline": "Microsoft’s Secure Boot has been broken for a decade and no one noticed until now",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_036",
+      "headline": "Rep. Ro Khanna on being detained by Israeli settlers in the West Bank",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_043",
+      "headline": "Lorde says AI glasses are ‘not sexy’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_050",
+      "headline": "OpenAI researcher Miles Wang in talks to launch AI drug discovery startup valued at $2B",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_079",
+      "headline": "TV tonight: an eye-popping account of Katie Price in the Playboy mansion",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_083",
+      "headline": "Ebola is spreading faster in eastern Congo than it can be tracked, as deaths pass 700",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_084",
+      "headline": "Late Night Calls Lindsey Graham’s Senate Seat ‘an Inheritance Jackpot’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_089",
+      "headline": "Before the gold rush: a South African story – in pictures",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_103",
+      "headline": "Retired vice admiral on whether the U.S. can control the Strait of Hormuz",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_104",
+      "headline": "OpenAI Staffers Are Funding a Rival Super PAC to Take on Their Boss",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_105",
+      "headline": "American AI is expensive. Some startups are turning to cheap Chinese models",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_106",
+      "headline": "Book Review: ‘Air,’ by Christian Kracht",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_107",
+      "headline": "‘Frank Bough told me: I do have a very big cock’: how Fern Britton survived in TV in the 1980s – and beyond",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_110",
+      "headline": "For the Eclipse or a Weekend, How to Save Money in Reykjavik",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_111",
+      "headline": "On ‘Caribenya,’ Lido Pimienta Found a Lifeline",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_112",
+      "headline": "Robert Wilson’s Watermill Center Without Robert Wilson",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_113",
+      "headline": "Book Review: ‘They Stole a City,’ by Lauren Collins",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_114",
+      "headline": "Octavia Spencer Believed in Herself Even When Hollywood Didn’t",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_115",
+      "headline": "‘Hadestown’ Hits Movie Theaters, and Theater to Stream in July",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_116",
+      "headline": "‘Heartstopper Forever’: Growing Up, and Staying True to Themselves",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_128",
+      "headline": "The U.S. launches another wave of strikes on Iran as the Hormuz standoff intensifies",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_129",
+      "headline": "My Ebike Delivery Went Missing. When I Tried to Recover It, I Ended Up in Chatbot Hell",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_147",
+      "headline": "Bite my shiny metal ass! TV’s all-time top robots",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_158",
+      "headline": "What Trump’s New Iran Blockade Could Mean for Oil Prices",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_160",
+      "headline": "Vint Cerf is working on a plan to unleash AI agents on the open internet",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_161",
+      "headline": "An Inventor of Apple’s FaceID Wants to Analyze Your Brain’s Health With AI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_163",
+      "headline": "Indian AI coding startup Emergent becomes a unicorn with $130M Series C",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_174",
+      "headline": "Greetings from Paris, where an art installation transformed the Pont Neuf into a rocky cave",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_192",
+      "headline": "Rime picks up $24M Series A to help enterprises field customer calls",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_193",
+      "headline": "Reelful’s AI turns your camera roll into short-form videos for social media",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_202",
+      "headline": "Anthropic, Blackstone bet the next trillion-dollar AI business is implementation, not just models",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_218",
+      "headline": "Michelangelo’s Forgotten Renaissance Masterpiece",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_220",
+      "headline": "Zombies, gore and creepy kids – why we can’t stop playing horror games",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_224",
+      "headline": "China's economy grows 4.3% in Q2, slowest since late 2022",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_228",
+      "headline": "Why Did a Major Museum’s Bong Show Go Up in Smoke?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_231",
+      "headline": "Archaeologists Unearth a 2,400-Year-Old Sanctuary for the Worship of Odysseus",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_235",
+      "headline": "Inside Ode with Anthropic, the startup betting AI services are the future of enterprise",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_241",
+      "headline": "Apple Intelligence approved for launch in China with Alibaba’s Qwen AI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_254",
+      "headline": "Microsoft patches record number of security vulnerabilities, citing its use of AI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_256",
+      "headline": "World Cup: Spain and Barcelona star Yamal’s home hit by attempted burglary",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_257",
+      "headline": "Father, mother, daughter killed in Israeli attack on Gaza home",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_258",
+      "headline": "Golden Age Mysteries: A Starter Pack",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_260",
+      "headline": "‘The Potluck’ Review: The Greensboro Massacre, and a Heavy Legacy to Bear",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_261",
+      "headline": "Starmer bids MPs goodbye as British PM and pledges to support his successor",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_263",
+      "headline": "Norway’s Waerenskjold wins fastest Tour de France stage in history",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_265",
+      "headline": "Zelenskyy backs state energy company chief Koretskyi for new Ukraine PM",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_268",
+      "headline": "Cruise ship hotel left listing in China port after high tides",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_270",
+      "headline": "Whatnot acquires Shaped to power real-time live shopping recommendations",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_271",
+      "headline": "Hack suggests AI music generator Suno scraped YouTube for training data",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_288",
+      "headline": "Gas tanker explodes in fire near army barracks in Lebanon",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_292",
+      "headline": "SpaceX falls to $135 IPO price ahead of Starship launch",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_298",
+      "headline": "Iran unveils huge billboard showing Trump in coffin",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_299",
+      "headline": "AI Isn’t Smarter Than a Baby—Yet",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_300",
+      "headline": "US intelligence director pick refuses to acknowledge Trump loss in 2020",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_301",
+      "headline": "What Happens if Pernambuco Wood Becomes Illegal in Music?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_302",
+      "headline": "Palestinian homes sealed off by Israeli military restrictions",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_303",
+      "headline": "European Athletics moves to curb on-screen sexualisation of female athletes",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_304",
+      "headline": "Syrian authorities arrest ex-officer accused of chemical weapons crimes",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_305",
+      "headline": "Argentina fans flood Atlanta ahead of England World Cup match",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_306",
+      "headline": "Scott Bryce, ‘As the World Turns’ Actor, Dies at 68",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_307",
+      "headline": "Fourteen-year-old boy charged over alleged plot targeting London mosques",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_308",
+      "headline": "Book Review: ‘Catch the Devil,’ by Pamela Colloff",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_309",
+      "headline": "Amid hardware legal battle, OpenAI releases a $230 keyboard for Codex",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_311",
+      "headline": "Protests in Paris, Gaza for release of Hussam Abu Safia",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_312",
+      "headline": "The history of the US and Iraq’s complicated relationship",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_313",
+      "headline": "French Parliament approves landmark assisted-dying bill",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_020",
+      "headline": "Mistral Vibe for Code vs Claude Code vs Cursor vs Codex: Four Agents Scored on One Scaffold-to-PR Task",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_067",
+      "headline": "Panasonic launches Japanese Microwave designed for modern American kitchens",
+      "selection_score": 3,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_001",
+      "headline": "Can AI build a jet engine? JARVIS Challenge tests role of AI copilots in tough-tech engineering",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_003",
+      "headline": "Dezeen debate features \"refuge for the uncreative\"",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_007",
+      "headline": "L.A. House / Emedos Proyectos",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_009",
+      "headline": "Colorado house by Studio B and Studio Brother John appears to \"hover over the land\"",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_015",
+      "headline": "OpenCoreDev Releases Domain SDK 0.2.0: One TypeScript API to Add, Verify, and Remove Customer Domains Across Five Platforms",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_016",
+      "headline": "Helping AI models to meet the real world",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_039",
+      "headline": "PrismML Releases Bonsai 27B: 1-bit and Ternary Builds of Qwen3.6-27B That Run on Laptops and Phones",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_049",
+      "headline": "Shanghai Qiyuan Experimental Primary School / Atelier Archmixing",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_055",
+      "headline": "How a New Generation Is Designing at the Confluence of Cultures",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_058",
+      "headline": "Drifting - Fusuma-e House and Studio / knof",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_064",
+      "headline": "Casa Jar / Estudio Nada",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_066",
+      "headline": "Beyond the Canopy: Six Architectural Strategies for Urban Shade",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_076",
+      "headline": "Robert Wun adorns couture gown with kaleidoscope of colourful balloons",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_088",
+      "headline": "Rebecca Cheptegei Sports Hall, Pantin / Atelier Ramdam",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_093",
+      "headline": "OMA's The Martin Completes as Part of the Transformation of Amsterdam's Former Bijlmerbajes Prison",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_097",
+      "headline": "Cathedral House / JAK Architecture",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_098",
+      "headline": "Delcy Morelos creates 30-tonne earthen installation informed by a mother's womb for the Barbican",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_100",
+      "headline": "Movement, Innovation, and Memory: The Bizkaia Bridge Between Engineering and Heritage",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_102",
+      "headline": "IKEA releases portable furniture designed to be moved without a car",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_130",
+      "headline": "Studio Fuksas-designed Rike Concert Hall in Tbilisi set to be demolished",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_139",
+      "headline": "Roberts Gray Architects tops New Zealand sand dune with rammed-earth home",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_162",
+      "headline": "Apartment in the Heart of Jeżyce in Poznań / LBWA",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_191",
+      "headline": "Vila Talha / Contacto Atlântico",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_194",
+      "headline": "Essence Cannetté tiles by Casalgrande Padana",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_219",
+      "headline": "SoFi Stadium in California set the standard for integrated stadium technology",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_289",
+      "headline": "Building a Gin Config Controlled PyTorch Pipeline with Configurable MLP Variants, Cosine Scheduling, and Runtime Parameter Overrides",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260716_evt_024",
+      "headline": "Top Fed officials embrace cooler inflation reading, clamor for more - Reuters",
+      "selection_score": -10,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

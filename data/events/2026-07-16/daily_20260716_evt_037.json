@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260716_evt_037",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "White House Cheers Inflation Data While Iran War Sparks New Price Surge",
+  "context": "The news of an improvement in consumer prices in June came as the U.S. and Iran escalated attacks, risking a return to high energy prices.",
+  "article_ids": [
+    "08da50bd8a8d4640240d6670fe0da29b17f48f9d2e9868496c2127357e532ce1",
+    "a4ce097dadeebe7f8f91c1cb3df5ed8e01e0580478817537eaf664c5fafaf221"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The news of an improvement in consumer prices in June came as the U.S. and Iran escalated attacks, risking a return to high energy prices.",
+      "title": "White House Cheers Inflation Data While Iran War Sparks New Price Surge",
+      "url": "https://www.nytimes.com/2026/07/14/business/economy/inflation-data-iran-war-price-surge.html",
+      "published_at": "2026-07-15T06:43:32+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -17,
+  "selection_reason": "source_tier_2; economy_macro_policy; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "White House Cheers Inflation Data While Iran War Sparks New Price Surge",
+      "source_id": "nyt_business",
+      "source_title": "White House Cheers Inflation Data While Iran War Sparks New Price Surge",
+      "source_url": "https://www.nytimes.com/2026/07/14/business/economy/inflation-data-iran-war-price-surge.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Inflation Slowed During Pause in War With Iran",
+      "source_id": "nyt_business",
+      "source_title": "Inflation Slowed During Pause in War With Iran",
+      "source_url": "https://www.nytimes.com/2026/07/14/business/economy/inflation-cpi.html",
+      "support_type": "direct"
+    }
+  ]
+}

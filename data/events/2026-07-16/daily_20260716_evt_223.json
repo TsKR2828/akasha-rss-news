@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260716_evt_223",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Old rivals, new battle: Argentina and England clash in World Cup Semifinal",
+  "context": "Old rivals. New stakes. A World Cup final spot on the line. Argentina vs. England.",
+  "article_ids": [
+    "e9b43a35dbfec78318c07cbbe5b6b17b6d2434a6a0902cbe99f0114f76c9343b",
+    "5888b25ff1135187f99a1bff2d33cab27f3604cd8f129bfc6041385fbc4116e3"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Old rivals. New stakes. A World Cup final spot on the line. Argentina vs. England.",
+      "title": "Old rivals, new battle: Argentina and England clash in World Cup Semifinal",
+      "url": "https://www.npr.org/2026/07/15/nx-s1-5893686/old-rivals-new-battle-argentina-and-england-clash-in-world-cup-semifinal",
+      "published_at": "2026-07-15T22:05:39+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Argentina vice president's remarks made ahead of the World Cup semifinal against England and amid sovereignty dispute.",
+      "title": "Argentine VP calls England ‘pirates’ ahead of World Cup semifinal clash",
+      "url": "https://www.aljazeera.com/sports/2026/7/15/argentine-vp-calls-england-pirates-ahead-of-world-cup-semifinal-clash?traffic_source=rss",
+      "published_at": "2026-07-16T00:57:23+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Old rivals, new battle: Argentina and England clash in World Cup Semifinal",
+      "source_id": "npr_world",
+      "source_title": "Old rivals, new battle: Argentina and England clash in World Cup Semifinal",
+      "source_url": "https://www.npr.org/2026/07/15/nx-s1-5893686/old-rivals-new-battle-argentina-and-england-clash-in-world-cup-semifinal",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Argentine VP calls England ‘pirates’ ahead of World Cup semifinal clash",
+      "source_id": "aljazeera_all",
+      "source_title": "Argentine VP calls England ‘pirates’ ahead of World Cup semifinal clash",
+      "source_url": "https://www.aljazeera.com/sports/2026/7/15/argentine-vp-calls-england-pirates-ahead-of-world-cup-semifinal-clash?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

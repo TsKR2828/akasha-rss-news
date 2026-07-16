@@ -1,0 +1,81 @@
+{
+  "event_id": "daily_20260717_evt_002",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "思考機器發布首個模型",
+  "context": "AI 新創思考機器實驗室（Thinking Machines Lab）發布首個公開模型 Inkling，這是一個 9,750 億參數的混合專家（MoE）模型，實際啟用參數為 410 億，支援文字、圖像與音訊輸入，並以 Apache 2.0 授權開源。",
+  "article_ids": [
+    "8b9601f326e948706eb714c48a7738eb4073ec2bd9154fd0581beade647ab788",
+    "ae07f5f37f8b96a703e937cea35e53031f73fb465d937b3867bc1bb5ebfd846f",
+    "caa70c85dc1707ce745e514e3db30ce81a21a578143c942e7cee1e1ca0bc96fc"
+  ],
+  "sources": [
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "It's the company's first public proof point after a year and a half spent building AI infrastructure largely out of public view.",
+      "title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+      "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+      "published_at": "2026-07-16T02:04:06+08:00"
+    },
+    {
+      "source_id": "wired_ai",
+      "name": "Wired",
+      "publisher": "Wired",
+      "summary": "Inkling, a 975-billion-parameter open source model, was trained to understand video and audio. It could help Thinking Machines establish itself among competitors like Anthropic and OpenAI.",
+      "title": "Thinking Machines Lab Drops Its First Model",
+      "url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+      "published_at": "2026-07-16T02:05:00+08:00"
+    },
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Thinking Machines Lab released Inkling on July 15, 2026, its first model trained from scratch. The full weights ship under Apache 2.0. It is a 975B-parameter Mixture-of-Experts transformer with 41B active parameters, a 1M-token context window, and native text, image, and audio input. The lab states plainly that Inkling is not the strongest model available, open or closed. It is positioned instead as a customization base, with controllable thinking effort as the practical differentiator. The post Thinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort appeared first on MarkTechPost .",
+      "title": "Thinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort",
+      "url": "https://www.marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort/",
+      "published_at": "2026-07-16T07:48:58+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    2,
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 41,
+  "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+      "source_id": "techcrunch_ai",
+      "source_title": "Thinking Machines amps up its bet against one-size-fits-all AI with its first open model, Inkling",
+      "source_url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Thinking Machines Lab Drops Its First Model",
+      "source_id": "wired_ai",
+      "source_title": "Thinking Machines Lab Drops Its First Model",
+      "source_url": "https://www.wired.com/story/thinking-machines-lab-releases-its-first-model-inkling/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Thinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort",
+      "source_id": "marktechpost",
+      "source_title": "Thinking Machines Lab Releases Inkling: A 975B-Parameter Open-Weights Multimodal MoE With 41B Active Parameters And Controllable Thinking Effort",
+      "source_url": "https://www.marktechpost.com/2026/07/15/thinking-machines-lab-releases-inkling-a-975b-parameter-open-weights-multimodal-moe-with-41b-active-parameters-and-controllable-thinking-effort/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "AI 新創思考機器實驗室（Thinking Machines Lab）發布了成立一年半以來首個公開模型 Inkling。這是一個 9,750 億參數的混合專家（MoE）模型，實際啟用參數為 410 億，具備 100 萬 token 的上下文長度，能理解文字、圖像與音訊，並以 Apache 2.0 授權完全開源。團隊坦言 Inkling 不是目前最強的模型，但主打可自訂的「思考強度」，走客製化路線。\n\n本則整理自 TechCrunch、Wired 與 MarkTechPost 於 2026 年 7 月 16 日的報導。",
+  "threads_text": "AI 新創思考機器實驗室（Thinking Machines Lab）成立一年半以來，大多時間都低調打造基礎設施，這次終於發布了首個公開模型 Inkling。這是一個 9,750 億參數的混合專家（MoE）模型，實際啟用參數為 410 億，具備 100 萬 token 的超長上下文，能同時理解文字、圖像與音訊，並以 Apache 2.0 授權完全開源釋出權重。團隊坦言，Inkling 並不是目前市面上最強的模型，無論開源或閉源都不是，但他們主打的是可自訂的「思考強度」，希望把 Inkling 定位成一個可以讓開發者客製化的基礎模型，藉此和其他大型 AI 實驗室做出區隔。\n\n本則整理自 TechCrunch、Wired 與 MarkTechPost 於 2026 年 7 月 16 日的報導。",
+  "voice_text": "思考機器實驗室，這次終於拿出東西了。這家 AI 新創成立一年半，大多時間都在低調打造基礎設施，這次發布了第一個公開模型，叫 Inkling。這款模型有九千七百五十億參數，實際啟用四百一十億，能理解文字、圖像和音訊，而且直接開源釋出。團隊自己也說，Inkling 不是目前最強的模型，但主打的是可以自訂的「思考強度」，走客製化這條路。"
+}

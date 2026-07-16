@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260717_evt_310",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "Books Our Editors Loved This Week",
+  "context": "Reading recommendations from critics and editors at The New York Times.",
+  "article_ids": [
+    "9180fbc5472208544d5a6913a6abf88d10c7d8aa8cd808b84b4211793f5a33e7"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Reading recommendations from critics and editors at The New York Times.",
+      "title": "Books Our Editors Loved This Week",
+      "url": "https://www.nytimes.com/2026/07/16/books/review/new-recommended-books.html",
+      "published_at": "2026-07-17T04:04:57+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Books Our Editors Loved This Week",
+      "source_id": "nyt_books",
+      "source_title": "Books Our Editors Loved This Week",
+      "source_url": "https://www.nytimes.com/2026/07/16/books/review/new-recommended-books.html",
+      "support_type": "direct"
+    }
+  ]
+}

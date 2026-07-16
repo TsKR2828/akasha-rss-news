@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260717_evt_001",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Building a Gin Config Controlled PyTorch Pipeline with Configurable MLP Variants, Cosine Scheduling, and Runtime Parameter Overrides",
+  "context": "We build a Gin Config controlled PyTorch pipeline where the training code stays fixed and the experiment variables move into .gin files. We construct a nonlinear spiral binary classification task and define a configurable MLP with scoped architectural variants. We expose the opti",
+  "article_ids": [
+    "2d7edb833dc77992eed71e4f886c126c390bb874b247a413c700dc9fac8b0a1e",
+    "5519b17680b7d280247103b0d284a8dc32230ded61ba4d5183998dd23c04b99b"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "We build a Gin Config controlled PyTorch pipeline where the training code stays fixed and the experiment variables move into .gin files. We construct a nonlinear spiral binary classification task and define a configurable MLP with scoped architectural variants. We expose the optimizer, scheduler, loss, batching, seeding, and training loop through @gin.configurable bindings. We then run two scoped experiments, apply runtime overrides without editing source, and export the operative config for each run. The post Building a Gin Config Controlled PyTorch Pipeline with Configurable MLP Variants, Cosine Scheduling, and Runtime Parameter Overrides appeared first on MarkTechPost .",
+      "title": "Building a Gin Config Controlled PyTorch Pipeline with Configurable MLP Variants, Cosine Scheduling, and Runtime Parameter Overrides",
+      "url": "https://www.marktechpost.com/2026/07/15/building-a-gin-config-controlled-pytorch-pipeline-with-configurable-mlp-variants-cosine-scheduling-and-runtime-parameter-overrides/",
+      "published_at": "2026-07-16T02:03:38+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Building a Gin Config Controlled PyTorch Pipeline with Configurable MLP Variants, Cosine Scheduling, and Runtime Parameter Overrides",
+      "source_id": "marktechpost",
+      "source_title": "Building a Gin Config Controlled PyTorch Pipeline with Configurable MLP Variants, Cosine Scheduling, and Runtime Parameter Overrides",
+      "source_url": "https://www.marktechpost.com/2026/07/15/building-a-gin-config-controlled-pytorch-pipeline-with-configurable-mlp-variants-cosine-scheduling-and-runtime-parameter-overrides/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Patter SDK Guide to Building a Restaurant Booking Phone Agent with Dynamic Variables, Guardrails, Latency Dashboards, and Eval Checks",
+      "source_id": "marktechpost",
+      "source_title": "Patter SDK Guide to Building a Restaurant Booking Phone Agent with Dynamic Variables, Guardrails, Latency Dashboards, and Eval Checks",
+      "source_url": "https://www.marktechpost.com/2026/07/16/patter-sdk-guide-to-building-a-restaurant-booking-phone-agent-with-dynamic-variables-guardrails-latency-dashboards-and-eval-checks/",
+      "support_type": "direct"
+    }
+  ]
+}

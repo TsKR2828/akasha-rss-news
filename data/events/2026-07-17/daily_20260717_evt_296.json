@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260717_evt_296",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "OpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection",
+  "context": "OpenAI trained GPT-Red, an internal-only attacker model, using self-play reinforcement learning against a population of defender LLMs. It beat human red-teamers 84% to 13% on a replicated indirect prompt injection arena, found a novel \"Fake Chain-of-Thought\" attack class, and cut",
+  "article_ids": [
+    "e763575a015d513dde6b0457f533cf72b8a0c04b4e38b1c8a5ed194a4cb893ff"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "OpenAI trained GPT-Red, an internal-only attacker model, using self-play reinforcement learning against a population of defender LLMs. It beat human red-teamers 84% to 13% on a replicated indirect prompt injection arena, found a novel \"Fake Chain-of-Thought\" attack class, and cut GPT-5.6 Sol's failures 6x on OpenAI's hardest direct injection benchmark. OpenAI concedes it still struggles with multi-turn and image-based attacks. The post OpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection appeared first on MarkTechPost .",
+      "title": "OpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection",
+      "url": "https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/",
+      "published_at": "2026-07-17T02:48:04+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "OpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection",
+      "source_id": "marktechpost",
+      "source_title": "OpenAI Details GPT-Red: An Internal Automated Red-Teaming Model That Beat Human Red-Teamers 84% To 13% On Prompt Injection",
+      "source_url": "https://www.marktechpost.com/2026/07/16/openai-details-gpt-red-an-internal-automated-red-teaming-model-that-beat-human-red-teamers-84-to-13-on-prompt-injection/",
+      "support_type": "direct"
+    }
+  ]
+}

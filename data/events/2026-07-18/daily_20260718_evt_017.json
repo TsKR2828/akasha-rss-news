@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260718_evt_017",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "Strait of Hormuz Tanker Traffic Erodes Further as Oil Prices Rise",
+  "context": "Very few ships passed through the waterway on the first full day of the U.S. naval blockade of Iran.",
+  "article_ids": [
+    "2107f1128e8292e537c7b98dc986f713728d9f4263a95e85da84910a343e4f14",
+    "e87420fcecb077f7789b6ac5fef5ca73fa0cd06c18d681e4cb7574f92b154f74"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Very few ships passed through the waterway on the first full day of the U.S. naval blockade of Iran.",
+      "title": "Strait of Hormuz Tanker Traffic Erodes Further as Oil Prices Rise",
+      "url": "https://www.nytimes.com/2026/07/16/business/strait-hormuz-iran-war-oil.html",
+      "published_at": "2026-07-17T05:09:59+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Strait of Hormuz Tanker Traffic Erodes Further as Oil Prices Rise",
+      "source_id": "nyt_business",
+      "source_title": "Strait of Hormuz Tanker Traffic Erodes Further as Oil Prices Rise",
+      "source_url": "https://www.nytimes.com/2026/07/16/business/strait-hormuz-iran-war-oil.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Oil Prices Rise to Highest Level in a Month as Shipping in the Persian Gulf Nears a Halt",
+      "source_id": "nyt_business",
+      "source_title": "Oil Prices Rise to Highest Level in a Month as Shipping in the Persian Gulf Nears a Halt",
+      "source_url": "https://www.nytimes.com/2026/07/17/business/strait-hormuz-iran-oil-prices.html",
+      "support_type": "direct"
+    }
+  ]
+}

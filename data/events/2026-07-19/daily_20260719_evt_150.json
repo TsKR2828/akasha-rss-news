@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260719_evt_150",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Two US service members in Jordan killed in Iranian attack, US says - Reuters",
+  "context": "Two US service members in Jordan killed in Iranian attack, US says Reuters",
+  "article_ids": [
+    "ac9b0b9cabe5d497bea5209e3f718d544c81d4b8d222608383742a2eb70d0a94",
+    "519ba795ff54210e0971c78e83e43f97138afdc38666d1292891966f06d3d19d"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Two US service members in Jordan killed in Iranian attack, US says Reuters",
+      "title": "Two US service members in Jordan killed in Iranian attack, US says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORC1tbUY3UU5OWWVubE9NZzhlTjZDNGNxMERBSUwxZ0d2clRBaldEZWtTUXhjZmVzb182N1M4T0VCY1JnQWhqNW5oM3ZIUV8wbno1TkdYbFM2RGNsYklHVFJ4VTZpVDdHOHcyY1BZUWNLaGxBMFBTQUJVanMxellKenFwazlMQWVYeERKa2dDVFZ3a2JBaElnRHVJcGdVc0RtVGZhM3hsRjF3REZvRzZCeFlFUQ?oc=5",
+      "published_at": "2026-07-19T01:27:35+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "US and Iran have stepped up attacks in the last week, prompting alarm about return to full-scale war across the region.",
+      "title": "US military says two service members killed in Iranian strike in Jordan",
+      "url": "https://www.aljazeera.com/news/2026/7/18/us-military-says-two-service-members-killed-in-iranian-strike-in-jordan?traffic_source=rss",
+      "published_at": "2026-07-19T02:04:47+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Two US service members in Jordan killed in Iranian attack, US says - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Two US service members in Jordan killed in Iranian attack, US says - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORC1tbUY3UU5OWWVubE9NZzhlTjZDNGNxMERBSUwxZ0d2clRBaldEZWtTUXhjZmVzb182N1M4T0VCY1JnQWhqNW5oM3ZIUV8wbno1TkdYbFM2RGNsYklHVFJ4VTZpVDdHOHcyY1BZUWNLaGxBMFBTQUJVanMxellKenFwazlMQWVYeERKa2dDVFZ3a2JBaElnRHVJcGdVc0RtVGZhM3hsRjF3REZvRzZCeFlFUQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "US military says two service members killed in Iranian strike in Jordan",
+      "source_id": "aljazeera_all",
+      "source_title": "US military says two service members killed in Iranian strike in Jordan",
+      "source_url": "https://www.aljazeera.com/news/2026/7/18/us-military-says-two-service-members-killed-in-iranian-strike-in-jordan?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

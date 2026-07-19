@@ -1,0 +1,63 @@
+{
+  "event_id": "daily_20260720_evt_015",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "美伊衝突再添死傷",
+  "context": "美軍兩名人員因伊朗發動的攻擊喪生，美國隨即對伊朗展開新一輪空襲反擊。另有消息指出，繼約旦兩名美軍身亡後，又有一名美軍士兵在伊拉克遇襲喪生、一人受傷。",
+  "article_ids": [
+    "d652659a1147c3aa8da6b4137c4c2b2f523a52b431c8983c7f1c4e610aafcfb5",
+    "cb5c344e76331b783e410aada814dc8b505f86e150eca04fde3eda920fd85f22"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "US renews strikes on Iran after two military personnel killed by Iranian attack Reuters",
+      "title": "US renews strikes on Iran after two military personnel killed by Iranian attack - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcmZSOG9seXNyMUFGTW1NMF9XWUVNYUZLczBFRWFTTDZZYnRjX081R3pnUzl6NTFVM053aG50T09hb2pMSlFxTGV6T2V0ZEZaRUFtNjVTSk01MWFrb05KcHdVdHZHMktERXlFVEdKTGFrTlo0cl9SY0hjb0dpb01rMDh6Z2l5MFoyWGI2VjA3cGx1UTN1T1RqU0RCeHVLdVlWUEJIU0dHaFl2SEpKN1AySUlMeUJPQVBtWUtPY1BHUUw5bGZxTEpCRQ?oc=5",
+      "published_at": "2026-07-19T07:21:00+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The US military reports another death a day after two of its soldiers were killed in Jordan.",
+      "title": "US soldier killed and one injured after Iranian attack in Iraq",
+      "url": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-20T03:45:12+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "thread_text": "美國和伊朗的衝突又升級了。兩名美軍人員在伊朗發動的攻擊中喪生，美方隨即對伊朗展開新一輪空襲反擊。就在前一天，兩名美軍已在約旦身亡，如今又傳出一名美軍士兵在伊拉克遇襲喪生、另一人受傷。死傷數字還在增加。\n\n—— 本則整理自 Reuters、BBC 於2026年7月19日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國與伊朗的衝突持續升溫。兩名美軍人員因伊朗發動的攻擊喪生，美方因此對伊朗展開新一輪空襲反擊。就在前一天，已經有兩名美軍在約旦身亡；如今又傳出一名美軍士兵在伊拉克遇襲喪生、另一人受傷。短短數日內，美軍死傷人數持續往上疊加，這場對抗看不出降溫的跡象。\n\n本則整理自 Reuters 與 BBC 於2026年7月19日發佈的報導。",
+  "voice_text": "美伊衝突又添死傷了。兩名美軍在伊朗發動的攻擊中喪生，美方隨即對伊朗發起新一輪空襲。前一天已經有兩名美軍在約旦身亡，現在又多了一名美軍士兵在伊拉克遇襲喪生、一人受傷。死傷數字還在往上疊。",
+  "claim_trace": [
+    {
+      "claim": "兩名美軍人員因伊朗發動的攻擊喪生，美方隨即對伊朗展開新一輪空襲反擊",
+      "source_id": "reuters_world_google_news",
+      "source_title": "US renews strikes on Iran after two military personnel killed by Iranian attack - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPcmZSOG9seXNyMUFGTW1NMF9XWUVNYUZLczBFRWFTTDZZYnRjX081R3pnUzl6NTFVM053aG50T09hb2pMSlFxTGV6T2V0ZEZaRUFtNjVTSk01MWFrb05KcHdVdHZHMktERXlFVEdKTGFrTlo0cl9SY0hjb0dpb01rMDh6Z2l5MFoyWGI2VjA3cGx1UTN1T1RqU0RCeHVLdVlWUEJIU0dHaFl2SEpKN1AySUlMeUJPQVBtWUtPY1BHUUw5bGZxTEpCRQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "繼兩名美軍在約旦身亡後，又有一名美軍士兵在伊拉克遇襲喪生、一人受傷",
+      "source_id": "bbc_world",
+      "source_title": "US soldier killed and one injured after Iranian attack in Iraq",
+      "source_url": "https://www.bbc.co.uk/news/articles/cgk417jp83po?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

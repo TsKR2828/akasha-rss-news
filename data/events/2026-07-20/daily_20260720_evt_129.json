@@ -1,0 +1,70 @@
+{
+  "event_id": "daily_20260720_evt_129",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "蓋亞那渡輪沉沒多人失蹤",
+  "context": "一艘載有133名乘客與船員的渡輪，在蓋亞那外海沉沒。當局表示已救起67人，其中15人是兒童，但仍有數十人下落不明。",
+  "article_ids": [
+    "627dcecd883ea4694703c4ea468fbfddd5158d3dcec52f798d6ff33b0282f60a",
+    "744c60cbf647d1e934aba4acc42fec60ec2b08b2250a42a8a34749a0ecc8a7c4"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Dozens missing after passenger ferry sinks off coast of Guyana Reuters",
+      "title": "Dozens missing after passenger ferry sinks off coast of Guyana - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTmozNzhIUWdXZ0thOFdIZHhqNF9vM18xNnhkbUJtMTNpaC1xSU8wU3ZvSzJMMXVoMHItUTlNS1kzLVJlbXZqSE5Uc1R5dlJFSzVtYlZkODRaQm9YTnh1eXkxZktRczYyWkpSLXQ3U0xRZFNlRVVVNzN5UHVMeFFFaHl4VS03TEtSYzl0QjJ3T0JUNS0ySGFzUW15MkNIR2RkMWdj?oc=5",
+      "published_at": "2026-07-19T23:56:43+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Fifteen children are among 67 people rescued, officials say, with dozens still missing.",
+      "title": "Ferry carrying 133 passengers and crew sinks off Guyana coast",
+      "url": "https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-20T02:18:05+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "thread_text": "蓋亞那外海發生渡輪沉沒事故，船上原本載有133名乘客與船員。當局說目前已經救起67人，其中15人是小孩，但還有數十人下落不明。搜救行動仍在進行。\n\n—— 本則整理自 Reuters、BBC 於2026年7月20日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "蓋亞那外海發生嚴重渡輪事故，一艘載有133名乘客與船員的渡輪沉沒。當局表示，目前已救起67人，其中15人是兒童，但仍有數十人下落不明，搜救行動仍在進行中。這起事故的傷亡數字，可能還會隨著搜救進度變動。\n\n本則整理自 Reuters 與 BBC 於2026年7月20日發佈的報導。",
+  "voice_text": "蓋亞那外海一艘渡輪沉沒了，船上原本有133人。目前救起67人，其中15人是小孩。還有數十人下落不明，搜救仍在進行。",
+  "claim_trace": [
+    {
+      "claim": "一艘載有133名乘客與船員的渡輪在蓋亞那外海沉沒",
+      "source_id": "bbc_world",
+      "source_title": "Ferry carrying 133 passengers and crew sinks off Guyana coast",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "當局已救起67人，其中15人是兒童，仍有數十人下落不明",
+      "source_id": "bbc_world",
+      "source_title": "Ferry carrying 133 passengers and crew sinks off Guyana coast",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm2gm99nrm7o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "蓋亞那外海渡輪沉沒事故，數十人失蹤",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Dozens missing after passenger ferry sinks off coast of Guyana - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTmozNzhIUWdXZ0thOFdIZHhqNF9vM18xNnhkbUJtMTNpaC1xSU8wU3ZvSzJMMXVoMHItUTlNS1kzLVJlbXZqSE5Uc1R5dlJFSzVtYlZkODRaQm9YTnh1eXkxZktRczYyWkpSLXQ3U0xRZFNlRVVVNzN5UHVMeFFFaHl4VS03TEtSYzl0QjJ3T0JUNS0ySGFzUW15MkNIR2RkMWdj?oc=5",
+      "support_type": "direct"
+    }
+  ]
+}

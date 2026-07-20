@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260721_evt_130",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "At least 930 people have died in Congo's Ebola outbreak",
+  "context": "Congo's health ministry said the deaths were recorded out of the 2,344 cases confirmed as of Saturday. Thirty-seven new deaths were recorded in the previous 24 hours in one of the highest totals.",
+  "article_ids": [
+    "a0a6bc41b788dbdda341efda715ee2f499488780c8f1abf2546e3712f8709c59",
+    "582b8e5e8574bfb84e2c64443a4b226a8a3aee59291e272b651e24c98b58a7a1"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Congo's health ministry said the deaths were recorded out of the 2,344 cases confirmed as of Saturday. Thirty-seven new deaths were recorded in the previous 24 hours in one of the highest totals.",
+      "title": "At least 930 people have died in Congo's Ebola outbreak",
+      "url": "https://www.npr.org/2026/07/20/g-s1-134548/ebola-congo-deaths",
+      "published_at": "2026-07-20T18:36:08+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Ebola spreading faster than any previous outbreak in DRC, with 37 new deaths recorded over just 24 hours at the weekend.",
+      "title": "Ebola death toll in DRC surges to at least 930 as outbreak continues spread",
+      "url": "https://www.aljazeera.com/news/2026/7/20/ebola-death-toll-in-drc-surges-to-at-least-930-as-outbreak-gathers-pace?traffic_source=rss",
+      "published_at": "2026-07-20T23:20:42+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "At least 930 people have died in Congo's Ebola outbreak",
+      "source_id": "npr_world",
+      "source_title": "At least 930 people have died in Congo's Ebola outbreak",
+      "source_url": "https://www.npr.org/2026/07/20/g-s1-134548/ebola-congo-deaths",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Ebola death toll in DRC surges to at least 930 as outbreak continues spread",
+      "source_id": "aljazeera_all",
+      "source_title": "Ebola death toll in DRC surges to at least 930 as outbreak continues spread",
+      "source_url": "https://www.aljazeera.com/news/2026/7/20/ebola-death-toll-in-drc-surges-to-at-least-930-as-outbreak-gathers-pace?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

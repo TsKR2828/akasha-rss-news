@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260721_evt_244",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US prison",
+  "context": "US judge hands life sentence to Ismael Zambada for leading one of Mexico's most violent drug cartels for decades.",
+  "article_ids": [
+    "caa236c5fd3e4975a7fd8d655b2416396b5662f7887381e5bb76d02aebd6ac2e",
+    "eca5cae30a0906d50574bd88f6ae3a7325d8f839c1b96673a4374ceeff8e8b40"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "US judge hands life sentence to Ismael Zambada for leading one of Mexico's most violent drug cartels for decades.",
+      "title": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US prison",
+      "url": "https://www.aljazeera.com/news/2026/7/20/mexican-drug-lord-ismael-el-mayo-zambada-sentenced-to-life-in-us-prison?traffic_source=rss",
+      "published_at": "2026-07-21T01:05:49+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Known as \"El Mayo\", the co-founder the Sinaloa Cartel was also ordered to pay $15bn after he admitted to sending vast amounts of drugs to the US.",
+      "title": "Notorious drug cartel leader Ismael Zambada sentenced to life in US prison",
+      "url": "https://www.bbc.co.uk/news/articles/ce3q1d1ed5do?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-21T01:21:27+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US prison",
+      "source_id": "aljazeera_all",
+      "source_title": "Mexican drug lord Ismael ‘El Mayo’ Zambada sentenced to life in US prison",
+      "source_url": "https://www.aljazeera.com/news/2026/7/20/mexican-drug-lord-ismael-el-mayo-zambada-sentenced-to-life-in-us-prison?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Notorious drug cartel leader Ismael Zambada sentenced to life in US prison",
+      "source_id": "bbc_world",
+      "source_title": "Notorious drug cartel leader Ismael Zambada sentenced to life in US prison",
+      "source_url": "https://www.bbc.co.uk/news/articles/ce3q1d1ed5do?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

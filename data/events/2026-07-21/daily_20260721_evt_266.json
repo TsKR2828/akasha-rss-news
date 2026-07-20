@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260721_evt_266",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Trump vows Iran will ‘pay’ for killing US soldiers",
+  "context": "The US intensifies air strikes on Iran, targeting critical sites after the deaths of American soldiers in the region.",
+  "article_ids": [
+    "40991a5e66ce9b96279bfdd4bffdcce67c099766d13deae29b519b153b33ccf6",
+    "80617abfb647e4fa9f25df0d832c102d64003ff86d76192055e25a4e83e94936"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The US intensifies air strikes on Iran, targeting critical sites after the deaths of American soldiers in the region.",
+      "title": "Trump vows Iran will ‘pay’ for killing US soldiers",
+      "url": "https://www.aljazeera.com/news/2026/7/20/trump-vows-iran-will-pay-for-killing-us-soldiers?traffic_source=rss",
+      "published_at": "2026-07-21T02:21:39+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The US president spoke just hours after the two warring sides exchanged strikes for the ninth consecutive day.",
+      "title": "Trump warns Iran will pay 'many times over' for deaths of US soldiers",
+      "url": "https://www.bbc.co.uk/news/articles/cly52xzjd3qo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-21T04:14:57+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Trump vows Iran will ‘pay’ for killing US soldiers",
+      "source_id": "aljazeera_all",
+      "source_title": "Trump vows Iran will ‘pay’ for killing US soldiers",
+      "source_url": "https://www.aljazeera.com/news/2026/7/20/trump-vows-iran-will-pay-for-killing-us-soldiers?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump warns Iran will pay 'many times over' for deaths of US soldiers",
+      "source_id": "bbc_world",
+      "source_title": "Trump warns Iran will pay 'many times over' for deaths of US soldiers",
+      "source_url": "https://www.bbc.co.uk/news/articles/cly52xzjd3qo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

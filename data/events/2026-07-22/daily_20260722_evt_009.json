@@ -1,0 +1,65 @@
+{
+  "event_id": "daily_20260722_evt_009",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "胡塞威脅推升油價",
+  "context": "國際油價一度衝上每桶90美元，隨後又因區域緊張情勢可能降溫的跡象而回落。市場緊盯葉門胡塞組織（Houthi）對紅海航運與沙烏地港口的威脅會不會進一步升級。",
+  "article_ids": [
+    "969cd6b0ed905c40e50c240850cdaf95822d688e651e320c29963dadd45ad4bb",
+    "a8cf9635ca152e148e1aca36bb707de625df86a27c48d8ef058ea0b1e2e78e63",
+    "50d15326ed0ff437af9ed571aa0da0ccf34b63c0ac7be57925bfd003ada55873"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The global oil price went above $90 but pulled back on signs of hope for a reduction in tensions.",
+      "title": "Oil Markets on Edge as Houthi Rebels Threaten Shipping in the Middle East",
+      "url": "https://www.nytimes.com/2026/07/19/business/oil-prices-stocks-gas.html",
+      "published_at": "2026-07-21T04:28:37+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Warning to shipping companies, on top of Iran’s chokehold on strait of Hormuz, may severely affect Saudi oil exports Middle East crisis live – latest updates Yemen’s Iranian-aligned Houthis have warned shipping companies that their tankers risk being attacked if they use Saudi Arabian ports, as the militia moved quickly to enforce a blockade announced the previous day. The Houthi warning for the Red Sea, coming on top of Iran’s threat to shipping on the other side of the Arabian peninsular in the Gulf, could affect the substantial Saudi oil exports that have so far been unscathed by the months-long conflict and deepen the rapidly escalating crisis in the region. Continue reading...",
+      "title": "Houthis threaten to attack shipping tankers if they use Saudi Arabian ports on Red Sea",
+      "url": "https://www.theguardian.com/world/2026/jul/21/houthis-threaten-attack-tankers-saudi-arabian-ports-red-sea-shipping",
+      "published_at": "2026-07-22T01:27:45+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "國際油價一度衝破每桶90美元，隨後回落。",
+      "source_id": "nyt_business",
+      "source_title": "Oil Markets on Edge as Houthi Rebels Threaten Shipping in the Middle East",
+      "source_url": "https://www.nytimes.com/2026/07/19/business/oil-prices-stocks-gas.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "胡塞組織警告航運業者，油輪若使用沙烏地港口恐遭攻擊。",
+      "source_id": "guardian_business",
+      "source_title": "Houthis threaten to attack shipping tankers if they use Saudi Arabian ports on Red Sea",
+      "source_url": "https://www.theguardian.com/world/2026/jul/21/houthis-threaten-attack-tankers-saudi-arabian-ports-red-sea-shipping",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n胡塞威脅推升油價\n\n國際油價一度衝破每桶90美元，隨後因區域緊張情勢可能降溫的跡象回落。市場正緊盯葉門胡塞組織（Houthi）對紅海航運與沙烏地港口的威脅，是否會進一步升級，牽動全球油市神經。\n\n—— 本則來自 The New York Times、The Guardian，2026 年 7 月 21 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "胡塞威脅推升油價\n\n國際油價一度衝破每桶90美元，隨後因區域緊張情勢出現可能降溫的跡象而回落。葉門胡塞組織（Houthi）警告，若航運業者的油輪繼續使用沙烏地阿拉伯的港口，恐怕會遭到攻擊；再加上伊朗（Iran）先前對荷姆茲海峽（Strait of Hormuz）的威脅，市場擔心沙烏地相對未受戰事影響的石油出口，這次也可能受到波及。\n\n本則整理自 The New York Times 與 The Guardian 於 2026 年 7 月 21 日發佈的報導。",
+  "voice_text": "國際油價一度衝上每桶90美元。葉門的胡塞組織警告，油輪如果繼續用沙烏地阿拉伯的港口，可能會被攻擊，再加上伊朗先前對荷姆茲海峽（Strait of Hormuz）的威脅，市場一度緊張。後來油價又回落了一些，因為也有跡象顯示，這波區域緊張情勢或許有機會降溫。"
+}

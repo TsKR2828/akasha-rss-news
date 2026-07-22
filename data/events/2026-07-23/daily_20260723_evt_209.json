@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260723_evt_209",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Trump: US will attack Iranian bridge, power plant for every ship targeted in Hormuz - Reuters",
+  "context": "Trump: US will attack Iranian bridge, power plant for every ship targeted in Hormuz Reuters",
+  "article_ids": [
+    "e5ceeed14ace7c44983516d5ba6493634d7f02a0f69f4661f798c41bee4717d5",
+    "5459b6ed56e7876ca0596ca252b56c15b45291fb00c154891fd2cfd14ddcb42b"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump: US will attack Iranian bridge, power plant for every ship targeted in Hormuz Reuters",
+      "title": "Trump: US will attack Iranian bridge, power plant for every ship targeted in Hormuz - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZWlVdEVsdmI1TDRsamNjMzc3R1BFcERycV9lQVpZd0E3U08ya044Ql94TEJFMTI0eUIzUkstWU1ucmJhZWZ6bkZCUFlmb1NLVnRxT0M4U0FJN3gtNjhZWjhLSXVDcDVOTGpjNWdSYllSNlVyRWoxejJ5U2oyVnhRYVc4Z2JueDVudDRvYnZGMV9EcnJJakFFZDVlOVd0TG1BOWJoS1FRLWl4QmNQbVROZjZadkJjMEk?oc=5",
+      "published_at": "2026-07-22T21:40:09+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Donald Trump says the US will respond any time Iranian forces shoot at a ship in the Strait of Hormuz.",
+      "title": "Trump threatens to target Iran's bridges and power plants if Hormuz attacks persist",
+      "url": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-23T02:57:46+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Trump: US will attack Iranian bridge, power plant for every ship targeted in Hormuz - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump: US will attack Iranian bridge, power plant for every ship targeted in Hormuz - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZWlVdEVsdmI1TDRsamNjMzc3R1BFcERycV9lQVpZd0E3U08ya044Ql94TEJFMTI0eUIzUkstWU1ucmJhZWZ6bkZCUFlmb1NLVnRxT0M4U0FJN3gtNjhZWjhLSXVDcDVOTGpjNWdSYllSNlVyRWoxejJ5U2oyVnhRYVc4Z2JueDVudDRvYnZGMV9EcnJJakFFZDVlOVd0TG1BOWJoS1FRLWl4QmNQbVROZjZadkJjMEk?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump threatens to target Iran's bridges and power plants if Hormuz attacks persist",
+      "source_id": "bbc_world",
+      "source_title": "Trump threatens to target Iran's bridges and power plants if Hormuz attacks persist",
+      "source_url": "https://www.bbc.co.uk/news/articles/cdrv0p37k8jo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

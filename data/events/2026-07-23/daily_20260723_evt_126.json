@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260723_evt_126",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Unsloth vs Axolotl vs TRL vs LLaMA-Factory: A Fine-Tuning Framework Comparison on Speed, VRAM, and Multi-GPU",
+  "context": "Four open source projects dominate LLM fine-tuning today. Unsloth, Axolotl, TRL, and LLaMA-Factory all wrap the same underlying PyTorch and Hugging Face stack. They diverge on where they spend engineering effort. Unsloth rewrites kernels. Axolotl composes parallelism strategies. ",
+  "article_ids": [
+    "dab606e923f2cd22842152f82720f7bad91f278c2de92f5096f3736db7e96887"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Four open source projects dominate LLM fine-tuning today. Unsloth, Axolotl, TRL, and LLaMA-Factory all wrap the same underlying PyTorch and Hugging Face stack. They diverge on where they spend engineering effort. Unsloth rewrites kernels. Axolotl composes parallelism strategies. TRL defines the trainer APIs the others build on. LLaMA-Factory optimizes for breadth of model coverage and […] The post Unsloth vs Axolotl vs TRL vs LLaMA-Factory: A Fine-Tuning Framework Comparison on Speed, VRAM, and Multi-GPU appeared first on MarkTechPost .",
+      "title": "Unsloth vs Axolotl vs TRL vs LLaMA-Factory: A Fine-Tuning Framework Comparison on Speed, VRAM, and Multi-GPU",
+      "url": "https://www.marktechpost.com/2026/07/22/unsloth-vs-axolotl-vs-trl-vs-llama-factory-a-fine-tuning-framework-comparison-on-speed-vram-and-multi-gpu/",
+      "published_at": "2026-07-22T17:16:40+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_3; ai_major_model_or_policy; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Unsloth vs Axolotl vs TRL vs LLaMA-Factory: A Fine-Tuning Framework Comparison on Speed, VRAM, and Multi-GPU",
+      "source_id": "marktechpost",
+      "source_title": "Unsloth vs Axolotl vs TRL vs LLaMA-Factory: A Fine-Tuning Framework Comparison on Speed, VRAM, and Multi-GPU",
+      "source_url": "https://www.marktechpost.com/2026/07/22/unsloth-vs-axolotl-vs-trl-vs-llama-factory-a-fine-tuning-framework-comparison-on-speed-vram-and-multi-gpu/",
+      "support_type": "direct"
+    }
+  ]
+}

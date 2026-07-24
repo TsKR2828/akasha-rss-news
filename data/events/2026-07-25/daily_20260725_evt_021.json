@@ -1,0 +1,100 @@
+{
+  "event_id": "daily_20260725_evt_021",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "川普新關稅週五上路",
+  "context": "美國總統川普的暫時性 10% 全球關稅週五到期，他將祭出新一輪關稅，鎖定 80 多個國家，稅率落在 10% 至 12.5% 之間——這是他繞過國會、延續貿易戰的最新招數，起因是最高法院先前推翻了他原本的關稅措施。英國雖然稅率維持不變，但其他國家陸續談到更好的條件，讓原本被視為「全球最佳」的英美貿易協議，如今看起來不再那麼突出。",
+  "article_ids": [
+    "b5074fa49fe9e4616fd84f0ab859b9142981987fed239918c8fa892072108377",
+    "565119ca8662d33b26c1fe6f6a15aaab3b53c68a4c6591aeab0575a26903bca2",
+    "393468de58070ab7b519fe1eb7bb7e9d190c18e9cedad344f87e35bcb4c9f9d7",
+    "761d3c4f2da43e78d9b5cc7d2b0a52e36751e8340b66093d6f227111f8f6bd2a",
+    "d2b5cbf483eba550853f2a7a5ae3f5fe84838489e8bca3749b1a8cf27fac82ab",
+    "b8968387476eda3879dde081881c05289e74d87409a23cd92b3f959223fcd731"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump to impose 'forced labor' duties on Friday as temporary 10% US tariffs expire Reuters",
+      "title": "Trump to impose 'forced labor' duties on Friday as temporary 10% US tariffs expire - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZjlYNnVfaDJNN2FOQldfTTRPclB4cmxtTWxaSDkyUGJJZHhtYjJEVUZnRmxhNjZEV0daUkZJS1ZHWHFJM1hSNDlBcVlwUlRIdVN4ZmVzVmgtbUpxM1NyVlotQVA3NmhUb090NVFzamlaUkhCTjFuRzZWTjVTUTYxMzhBLXNld09NWGdadEx1bXdnemUwbWdtbzg1X0I2Y3VJZFpiOFk0blpFSS1ieklCeFItZzQ4UQ?oc=5",
+      "published_at": "2026-07-24T05:10:00+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Tariffs ranging from 10%-12.5%, taking effect on Friday, are US president’s latest effort to circumvent Congress Just before a temporary levy on global imports was set to expire, the Trump administration issued a fresh wave of tariffs on more than 80 countries late on Thursday, ranging from 10% to 12.5%. The new tariffs take effect on Friday morning. It’s Donald Trump’s latest effort to continue imposing global levies without congressional approval, despite the supreme court ruling in February that found the US president had illegally used his executive power to implement his global trade policies. Trump has long maintained that the US has been paying more than its fair share in tariffs, and that increased duties are necessary to boost American manufacturing and jobs. Continue reading...",
+      "title": "What to know about Trump’s new tariffs on more than 80 countries",
+      "url": "https://www.theguardian.com/us-news/2026/jul/23/trump-tariffs-what-to-know",
+      "published_at": "2026-07-24T09:56:13+08:00"
+    },
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The president has unveiled a complicated system to forge ahead with his trade war, after the Supreme Court struck down his original levies.",
+      "title": "Trump’s Section 301 Tariffs: Map of Countries Targeted With New Rates",
+      "url": "https://www.nytimes.com/article/trump-tariffs-trade.html",
+      "published_at": "2026-07-24T21:57:42+08:00"
+    },
+    {
+      "source_id": "bbc_business",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "While the US tariffs imposed on the UK are effectively unchanged, other countries now have a better deal.",
+      "title": "Faisal Islam: The UK's Trump trade deal no longer looks world-beating",
+      "url": "https://www.bbc.co.uk/news/articles/c9v4ymwddwgo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-24T22:02:26+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 73,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; economy_macro_policy",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "美國暫時性 10% 全球關稅週五到期，川普將祭出「forced labor」新關稅。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump to impose 'forced labor' duties on Friday as temporary 10% US tariffs expire - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZjlYNnVfaDJNN2FOQldfTTRPclB4cmxtTWxaSDkyUGJJZHhtYjJEVUZnRmxhNjZEV0daUkZJS1ZHWHFJM1hSNDlBcVlwUlRIdVN4ZmVzVmgtbUpxM1NyVlotQVA3NmhUb090NVFzamlaUkhCTjFuRzZWTjVTUTYxMzhBLXNld09NWGdadEx1bXdnemUwbWdtbzg1X0I2Y3VJZFpiOFk0blpFSS1ieklCeFItZzQ4UQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "新關稅鎖定 80 多個國家，稅率介於 10% 至 12.5%，是川普繞過國會的貿易戰最新招數。",
+      "source_id": "guardian_business",
+      "source_title": "What to know about Trump's new tariffs on more than 80 countries",
+      "source_url": "https://www.theguardian.com/us-news/2026/jul/23/trump-tariffs-what-to-know",
+      "support_type": "direct"
+    },
+    {
+      "claim": "最高法院先前推翻川普原本的關稅措施，促使他改用 Section 301 條款重新設計稅率。",
+      "source_id": "nyt_business",
+      "source_title": "Trump's Section 301 Tariffs: Map of Countries Targeted With New Rates",
+      "source_url": "https://www.nytimes.com/article/trump-tariffs-trade.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "英國對美關稅維持不變，但其他國家陸續談到更好條件，英美貿易協議不再顯得突出。",
+      "source_id": "bbc_business",
+      "source_title": "Faisal Islam: The UK's Trump trade deal no longer looks world-beating",
+      "source_url": "https://www.bbc.co.uk/news/articles/c9v4ymwddwgo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n川普新關稅週五上路\n\n美國總統川普的暫時性 10% 全球關稅週五到期，他將祭出新一輪關稅，鎖定 80 多個國家，稅率落在 10% 至 12.5% 之間——這是他繞過國會、延續貿易戰的最新招數，起因是最高法院先前推翻了他原本的關稅措施。英國雖然稅率維持不變，但其他國家陸續談到更好的條件，讓原本被視為「全球最佳」的英美貿易協議，如今看起來不再那麼突出。\n\n—— 本則來自 Reuters、The Guardian、The New York Times、BBC，2026 年 7 月 24 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "川普新關稅週五上路\n\n美國總統川普的暫時性 10% 全球關稅週五到期，他將祭出新一輪關稅，鎖定 80 多個國家，稅率落在 10% 至 12.5% 之間——這是他繞過國會、延續貿易戰的最新招數，起因是最高法院先前推翻了他原本的關稅措施。英國雖然稅率維持不變，但其他國家陸續談到更好的條件，讓原本被視為「全球最佳」的英美貿易協議，如今看起來不再那麼突出。\n\n本則整理自 Reuters、The Guardian、The New York Times 與 BBC 於 2026 年 7 月 24 日發佈的報導。",
+  "voice_text": "美國的暫時性關稅，週五就要到期了。川普準備祭出新一輪關稅，鎖定 80 多個國家，稅率落在 10% 到 12.5%之間。這是他繞過國會、延續貿易戰的最新招數，起因是最高法院先前推翻了他原本的關稅做法。英國的稅率雖然維持不變，但其他國家陸續談到更好的條件，讓原本被說成「全球最佳」的英美貿易協議，現在看起來不再那麼突出了。"
+}

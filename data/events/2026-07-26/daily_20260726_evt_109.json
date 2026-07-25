@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260726_evt_109",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Two buses collide in Syria, killing at least 35 people",
+  "context": "One of the buses was carrying members of the Internal Security Forces, while the other was transporting civilians.",
+  "article_ids": [
+    "36374e7c4fcd6aaa4249659f6425b787eb7a3fdf1d6dcd64e026e63cae29c2e6",
+    "ad39123ad9c5af57fb5ce80edaa4386e5f820b485cfb69235e926f0b1976573d"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "One of the buses was carrying members of the Internal Security Forces, while the other was transporting civilians.",
+      "title": "Two buses collide in Syria, killing at least 35 people",
+      "url": "https://www.aljazeera.com/news/2026/7/25/two-buses-collide-in-syria-killing-at-least-35-people?traffic_source=rss",
+      "published_at": "2026-07-25T19:14:14+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Two buses collide in Syria, killing at least 35 people",
+      "source_id": "aljazeera_all",
+      "source_title": "Two buses collide in Syria, killing at least 35 people",
+      "source_url": "https://www.aljazeera.com/news/2026/7/25/two-buses-collide-in-syria-killing-at-least-35-people?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "At least 35 killed after two buses collide in eastern Syria",
+      "source_id": "aljazeera_all",
+      "source_title": "At least 35 killed after two buses collide in eastern Syria",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/at-least-35-killed-after-two-buses-collide-in-eastern-syria?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

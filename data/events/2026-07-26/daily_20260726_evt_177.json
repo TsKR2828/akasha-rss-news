@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260726_evt_177",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Designing High-Performance GPU Kernels with TileLang: Tensor-Core GEMM, Fused Softmax, FlashAttention, and Autotuning",
+  "context": "Explore TileLang, a high-level Python domain-specific language that simplifies the design of high-performance GPU kernels. This tutorial provides a step-by-step approach to implementing complex workloads—including tiled tensor-core GEMM, fused softmax, and FlashAttention—while le",
+  "article_ids": [
+    "26e8c4af5126a624d1294f011abfe61f95e6d2ced17784869631061b9c3c5fe2"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Explore TileLang, a high-level Python domain-specific language that simplifies the design of high-performance GPU kernels. This tutorial provides a step-by-step approach to implementing complex workloads—including tiled tensor-core GEMM, fused softmax, and FlashAttention—while letting the compiler handle intricate thread mapping, memory layouts, and low-level CUDA instruction generation. The post Designing High-Performance GPU Kernels with TileLang: Tensor-Core GEMM, Fused Softmax, FlashAttention, and Autotuning appeared first on MarkTechPost .",
+      "title": "Designing High-Performance GPU Kernels with TileLang: Tensor-Core GEMM, Fused Softmax, FlashAttention, and Autotuning",
+      "url": "https://www.marktechpost.com/2026/07/25/designing-high-performance-gpu-kernels-with-tilelang-tensor-core-gemm-fused-softmax-flashattention-and-autotuning/",
+      "published_at": "2026-07-26T02:08:12+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Designing High-Performance GPU Kernels with TileLang: Tensor-Core GEMM, Fused Softmax, FlashAttention, and Autotuning",
+      "source_id": "marktechpost",
+      "source_title": "Designing High-Performance GPU Kernels with TileLang: Tensor-Core GEMM, Fused Softmax, FlashAttention, and Autotuning",
+      "source_url": "https://www.marktechpost.com/2026/07/25/designing-high-performance-gpu-kernels-with-tilelang-tensor-core-gemm-fused-softmax-flashattention-and-autotuning/",
+      "support_type": "direct"
+    }
+  ]
+}

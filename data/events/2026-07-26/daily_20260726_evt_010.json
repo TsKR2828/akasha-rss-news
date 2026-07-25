@@ -1,0 +1,86 @@
+{
+  "event_id": "daily_20260726_evt_010",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "ICC member nations vote to remove chief prosecutor",
+  "context": "Member nations voted to remove chief prosecutor Karim Khan on Friday and the Trump administration is vowing to do whatever it can to dismantle the court.",
+  "article_ids": [
+    "65d000083904b00da9658ced2fba4f96fb4a2330d42caed7b18c98533075cd72",
+    "8b971e3566c6937a662af18609b4739a68f1901acb4a73f60f44e9e6619d7645",
+    "12fe662e8166f8e8a72df0ad7e28885ed83dd287844f660392047b7b37b183df",
+    "5881ae4329dbcbae942fc4ffd2b6047757e755836cf7892d6a7f9d797c8e275c"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Member nations voted to remove chief prosecutor Karim Khan on Friday and the Trump administration is vowing to do whatever it can to dismantle the court.",
+      "title": "ICC member nations vote to remove chief prosecutor",
+      "url": "https://www.npr.org/2026/07/24/nx-s1-5901054/icc-member-nations-vote-to-remove-chief-prosecutor",
+      "published_at": "2026-07-25T04:25:58+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Karim Khan denies allegations of engaging in an improper sexual relationship with a junior ICC staff member and seeking to stop her pursuing her complaint.",
+      "title": "ICC top prosecutor removed over sexual misconduct allegations",
+      "url": "https://www.bbc.co.uk/news/articles/cqjxddx12qqo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-25T05:02:30+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Lawyers for the ICC’s ousted Chief Prosecutor Karim Khan say he is the victim of a political witchhunt",
+      "title": "What’s behind the ICC investigation into Karim Khan?",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/whats-behind-the-icc-investigation-into-karim-khan?traffic_source=rss",
+      "published_at": "2026-07-25T20:53:41+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected",
+  "drop_reason": "total_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "ICC member nations vote to remove chief prosecutor",
+      "source_id": "npr_world",
+      "source_title": "ICC member nations vote to remove chief prosecutor",
+      "source_url": "https://www.npr.org/2026/07/24/nx-s1-5901054/icc-member-nations-vote-to-remove-chief-prosecutor",
+      "support_type": "direct"
+    },
+    {
+      "claim": "ICC top prosecutor removed over sexual misconduct allegations",
+      "source_id": "bbc_world",
+      "source_title": "ICC top prosecutor removed over sexual misconduct allegations",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqjxddx12qqo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "ICC member states vote to remove chief prosecutor Karim Khan",
+      "source_id": "npr_world",
+      "source_title": "ICC member states vote to remove chief prosecutor Karim Khan",
+      "source_url": "https://www.npr.org/2026/07/24/g-s1-135498/icc-court-prosecutor-karim-khan-vote",
+      "support_type": "direct"
+    },
+    {
+      "claim": "What’s behind the ICC investigation into Karim Khan?",
+      "source_id": "aljazeera_all",
+      "source_title": "What’s behind the ICC investigation into Karim Khan?",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/7/25/whats-behind-the-icc-investigation-into-karim-khan?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260728_evt_036",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Three killed, four wounded in Seattle food festival shooting, police say - Reuters",
+  "context": "Three killed, four wounded in Seattle food festival shooting, police say Reuters",
+  "article_ids": [
+    "09c8f8b028258504fdf5344c0ad0aad7eaf47f171fd9f03e06aa6a6f5ca9e284",
+    "db94fa05b4580de6c8f2853d2cda5bde9c2b6fe30025f1f13fed8fa336125ebe"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Three killed, four wounded in Seattle food festival shooting, police say Reuters",
+      "title": "Three killed, four wounded in Seattle food festival shooting, police say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOHdnckxsV0hjY2pWQzhxUGpSMk1ldm8wcmJia1B3MDJ2b3p5R09abkFVTERYZ3JTdWFEQktGVzRvNHlKZHR2dGdlNWt0ZkRBQ1hHeUFid3ZZSzRIaW40VExRaXJaYVVnS25qSWRkU0dvS3F0b2o2bEk0Q1pRUmZVaC1LYjhFSXI3bjNONzJOdmlNTFdQUEM1NXVSUHBrRmJyS2o3d013?oc=5",
+      "published_at": "2026-07-27T11:38:00+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "One suspect, a teenager, is in custody following the shooting, in which three people were killed and others injured.",
+      "title": "Police still searching for second suspect in fatal Seattle food festival shooting",
+      "url": "https://www.bbc.co.uk/news/articles/c78gjyx4q2yo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-07-28T03:23:08+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Three killed, four wounded in Seattle food festival shooting, police say - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Three killed, four wounded in Seattle food festival shooting, police say - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOHdnckxsV0hjY2pWQzhxUGpSMk1ldm8wcmJia1B3MDJ2b3p5R09abkFVTERYZ3JTdWFEQktGVzRvNHlKZHR2dGdlNWt0ZkRBQ1hHeUFid3ZZSzRIaW40VExRaXJaYVVnS25qSWRkU0dvS3F0b2o2bEk0Q1pRUmZVaC1LYjhFSXI3bjNONzJOdmlNTFdQUEM1NXVSUHBrRmJyS2o3d013?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Police still searching for second suspect in fatal Seattle food festival shooting",
+      "source_id": "bbc_world",
+      "source_title": "Police still searching for second suspect in fatal Seattle food festival shooting",
+      "source_url": "https://www.bbc.co.uk/news/articles/c78gjyx4q2yo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "reportId": "daily_20260728",
+  "date": "2026-07-28",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-07-28T05:19:01.298506+08:00",
+  "status": "ok",
+  "duration_seconds": 589.31,
+  "steps": [
+    {
+      "name": "fetch_rss",
+      "exit_code": 0,
+      "duration_s": 3.45
+    },
+    {
+      "name": "normalize",
+      "exit_code": 0,
+      "duration_s": 1.4
+    },
+    {
+      "name": "classify",
+      "exit_code": 0,
+      "duration_s": 0.55
+    },
+    {
+      "name": "tw_highlight",
+      "exit_code": 0,
+      "duration_s": 0.08
+    },
+    {
+      "name": "dedup",
+      "exit_code": 0,
+      "duration_s": 0.03
+    },
+    {
+      "name": "event_cluster",
+      "exit_code": 0,
+      "duration_s": 5.76
+    },
+    {
+      "name": "select",
+      "exit_code": 0,
+      "duration_s": 0.05
+    },
+    {
+      "name": "formatter",
+      "exit_code": 0,
+      "duration_s": 0.0
+    }
+  ],
+  "warnings_count": 0,
+  "warnings": [],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 0,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 462,
+    "total_articles_after_filter": 442,
+    "total_events_merged": 294,
+    "total_events_selected": 18,
+    "tw_highlights_count": 2
+  }
+}

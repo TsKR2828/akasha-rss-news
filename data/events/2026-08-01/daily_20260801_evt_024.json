@@ -1,0 +1,46 @@
+{
+  "event_id": "daily_20260801_evt_024",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "俄駭客入侵Exchange漏洞",
+  "context": "資安研究人員發現，一個嚴重等級最高的微軟 Exchange 伺服器漏洞，正被親俄駭客組織用來攻擊未修補的網路。這個後門一旦植入，換密碼、甚至重灌硬碟都清不掉，能持續留在伺服器裡。",
+  "article_ids": [
+    "7e4715d21c4a92b0ad6886830fdb5c9d79230ce89d187adeed6d7a6b3640a113"
+  ],
+  "sources": [
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "Exploits can give persistent server access that survives credential rotation and disk re-imaging.",
+      "title": "Max-severity Exchange server flaw under active exploitation by Kremlin hackers",
+      "url": "https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/",
+      "published_at": "2026-07-31T04:57:22+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 28,
+  "selection_reason": "source_tier_2; ai_major_model_or_policy",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Max-severity Exchange server flaw under active exploitation by Kremlin hackers",
+      "source_id": "ars_technica_ai",
+      "source_title": "Max-severity Exchange server flaw under active exploitation by Kremlin hackers",
+      "source_url": "https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "俄駭客入侵Exchange漏洞\n\n資安研究人員發現，一個嚴重等級最高的微軟 Exchange 伺服器漏洞，正被親俄駭客組織拿來攻擊未修補的網路，植入後門。這個後門很難清——就算換密碼、重灌硬碟，駭客都還是能留在伺服器裡。\n\n—— 本則來自 Ars Technica，2026 年 7 月 31 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "俄駭客入侵Exchange漏洞\n\n資安研究人員發現，一個嚴重等級最高的微軟 Exchange 伺服器漏洞，正被親俄駭客組織拿來攻擊未修補的網路，植入後門。\n\n這個後門很難清乾淨。就算受害單位換了密碼，甚至把硬碟整個重灌，駭客留下的存取權限依然還在，能持續潛伏在伺服器裡。\n\n本則來自 Ars Technica，2026 年 7 月 31 日發佈。",
+  "voice_text": "微軟 Exchange 一個漏洞被列為最高等級，正被親俄駭客用來攻擊。這個後門很難清——就算換密碼、重灌硬碟，駭客留下的存取權限還是在，能一直潛伏在伺服器裡。這則消息目前還沒有其他管道證實，細節有限。"
+}

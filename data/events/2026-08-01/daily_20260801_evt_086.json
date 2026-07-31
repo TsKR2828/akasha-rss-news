@@ -1,0 +1,97 @@
+{
+  "event_id": "daily_20260801_evt_086",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "川普稱哈瑪斯同意解除武裝",
+  "context": "川普宣布，他主導的「和平委員會」已與哈瑪斯談成協議，讓哈瑪斯全面解除武裝，稱是「歷史性突破」。哈瑪斯一名資深官員則回應，以色列得先從加薩撤軍，協議才算數。",
+  "article_ids": [
+    "43b7f0ec0fcdc733c8fc02f3bd76ef49c7834db6aa247327957b1025b2ad68ed",
+    "ebf3acca4e75a2e35536bfe5f0e95476353c85b8fe2180f36a5d5f50b1945655",
+    "728d652239c2338ce8154f6da63c40fd0aa06706d7fd9b98e8a2206e19a72860",
+    "062e0c41f73f40c146f5dcea9fe1fdcd7605c8edcd36f8b8be18f4d2fb2114ab",
+    "fb9cdfcabdaf2224e23aa21ee62419545ec41acca58edf6df317a95f98ef2aac"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "President Trump announced that his Board of Peace has reached a deal with Hamas to completely disarm, calling it a \"historic breakthrough.\" But a senior Hamas official says Israel must withdraw first.",
+      "title": "Trump announces deal for Hamas to disarm, militants demand Israel withdraws from Gaza first",
+      "url": "https://www.npr.org/2026/07/31/g-s1-136500/trump-hamas-gaza",
+      "published_at": "2026-07-31T13:20:19+08:00"
+    },
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump hails Gaza deal, while Hamas and Israeli officials see hurdles Reuters",
+      "title": "Trump hails Gaza deal, while Hamas and Israeli officials see hurdles - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNjNyWTNWX1YxTjU0OEJlQjZZRWxGa3dLSDlrTzRma0dNMzczQm1sNldhbVRsT0Q0OVc4OXpSeXMyYXNCM21EX1BhbVd3XzdCeXhFdUktZEVFZjgtYXhiS1pfWEFKS2htMktkZDdyQTBmOGlmOFc0enhNNlFiRWdwVWJYUzBwdXZkTi0wTlRMNWh2d0VIS2tqaWo5WXNxcEl1VFdDRlN5VmdGaXFURG5ralM2RzNBLTFINFMzRzhNYjNWbnRVZTV4c0pzU0F1XzA?oc=5",
+      "published_at": "2026-08-01T02:35:09+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Deal for Hamas to disarm in stages in return for Israeli withdrawal has been announced, but implementation will be key.",
+      "title": "World reacts with cautious optimism to Hamas disarmament agreement",
+      "url": "https://www.aljazeera.com/news/2026/7/31/world-reacts-with-cautious-optimism-to-hamas-disarmament-agreement?traffic_source=rss",
+      "published_at": "2026-08-01T02:51:50+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Trump announces deal for Hamas to disarm, militants demand Israel withdraws from Gaza first",
+      "source_id": "npr_world",
+      "source_title": "Trump announces deal for Hamas to disarm, militants demand Israel withdraws from Gaza first",
+      "source_url": "https://www.npr.org/2026/07/31/g-s1-136500/trump-hamas-gaza",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump announced a deal for Hamas to disarm. And, the U.S. economy slowed a bit",
+      "source_id": "npr_world",
+      "source_title": "Trump announced a deal for Hamas to disarm. And, the U.S. economy slowed a bit",
+      "source_url": "https://www.npr.org/2026/07/31/g-s1-136527/up-first-newsletter-trump-hamas-israel-todd-blanche-us-economy",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump hails Gaza deal, while Hamas and Israeli officials see hurdles - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump hails Gaza deal, while Hamas and Israeli officials see hurdles - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPNjNyWTNWX1YxTjU0OEJlQjZZRWxGa3dLSDlrTzRma0dNMzczQm1sNldhbVRsT0Q0OVc4OXpSeXMyYXNCM21EX1BhbVd3XzdCeXhFdUktZEVFZjgtYXhiS1pfWEFKS2htMktkZDdyQTBmOGlmOFc0enhNNlFiRWdwVWJYUzBwdXZkTi0wTlRMNWh2d0VIS2tqaWo5WXNxcEl1VFdDRlN5VmdGaXFURG5ralM2RzNBLTFINFMzRzhNYjNWbnRVZTV4c0pzU0F1XzA?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "World reacts with cautious optimism to Hamas disarmament agreement",
+      "source_id": "aljazeera_all",
+      "source_title": "World reacts with cautious optimism to Hamas disarmament agreement",
+      "source_url": "https://www.aljazeera.com/news/2026/7/31/world-reacts-with-cautious-optimism-to-hamas-disarmament-agreement?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump says US has ‘understanding’ with Israel on Hamas disarmament deal",
+      "source_id": "aljazeera_all",
+      "source_title": "Trump says US has ‘understanding’ with Israel on Hamas disarmament deal",
+      "source_url": "https://www.aljazeera.com/news/2026/7/31/trump-says-us-has-understanding-with-israel-on-hamas-disarmament-deal?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "川普稱哈瑪斯同意解除武裝\n\n川普宣布，他主導的「和平委員會」已經和哈瑪斯談成協議，讓哈瑪斯全面解除武裝，稱這是「歷史性的突破」。哈瑪斯一名資深官員隨即回應——以色列得先從加薩撤軍，這份協議才算數。\n\n—— 本則整理自 NPR、Reuters 與 Al Jazeera 於 2026 年 7 月 31 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "川普稱哈瑪斯同意解除武裝\n\n川普宣布，他主導的「和平委員會」已經和哈瑪斯談成協議，讓哈瑪斯全面解除武裝，稱這是「歷史性的突破」。\n\n不過哈瑪斯一名資深官員很快回應：以色列得先從加薩撤軍，這份協議才算數。雙方對協議的理解顯然還有落差，後續能不能真正落地，還是未知數。\n\n本則整理自 NPR、Reuters 與 Al Jazeera 於 2026 年 7 月 31 日發佈的報導。",
+  "voice_text": "川普說哈瑪斯已經同意全面解除武裝。他稱這是歷史性的突破。不過哈瑪斯一名資深官員馬上回應——這件事得先等以色列從加薩撤軍才算數。雙方各說各話，加薩的和平協議還沒真正落地。"
+}

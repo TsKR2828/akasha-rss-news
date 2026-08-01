@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260802_evt_177",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "At least three killed in explosion near cafe in Russia’s Moscow",
+  "context": "Fifteen also ​injured ‌in the blast in Kudrinskaya Square, authorities say.",
+  "article_ids": [
+    "813a58fb6339c2cb314b4e07a0d8f85576fc16ea4ecba3b6eb5ec32f46fce33f",
+    "b060ee233c15293ef4bbb630210cffacab41289e38f44e06eda6823abb49c13b"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Fifteen also ​injured ‌in the blast in Kudrinskaya Square, authorities say.",
+      "title": "At least three killed in explosion near cafe in Russia’s Moscow",
+      "url": "https://www.aljazeera.com/news/2026/8/1/russia-says-explosion-near-cafe-in-moscow-kills-three?traffic_source=rss",
+      "published_at": "2026-08-02T02:22:35+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The deadly blast took place in a venue near the centre of the city, as a woman carrying explosives tried to enter.",
+      "title": "Three killed in Moscow restaurant bombing",
+      "url": "https://www.bbc.co.uk/news/articles/c86n4ljxp63o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-02T04:20:44+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "At least three killed in explosion near cafe in Russia’s Moscow",
+      "source_id": "aljazeera_all",
+      "source_title": "At least three killed in explosion near cafe in Russia’s Moscow",
+      "source_url": "https://www.aljazeera.com/news/2026/8/1/russia-says-explosion-near-cafe-in-moscow-kills-three?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Three killed in Moscow restaurant bombing",
+      "source_id": "bbc_world",
+      "source_title": "Three killed in Moscow restaurant bombing",
+      "source_url": "https://www.bbc.co.uk/news/articles/c86n4ljxp63o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

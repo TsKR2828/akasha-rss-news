@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260802_evt_148",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Israeli strike destroys Gaza hospital warehouse",
+  "context": "Israeli strike destroys medical supplies warehouse at Gaza's Al-Aqsa Martyrs Hospital, staff say.",
+  "article_ids": [
+    "26b830a92e291629b781c998825a80fcdaf2f57d28427bbc50189acba24df6f6",
+    "88f5b58ee216f673215204508881863c8d7b25243206091cc8c7d0a7c65ff45c"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Israeli strike destroys medical supplies warehouse at Gaza's Al-Aqsa Martyrs Hospital, staff say.",
+      "title": "Israeli strike destroys Gaza hospital warehouse",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/1/01-08-israel-strike-gaza-hospital-sv-mp4?traffic_source=rss",
+      "published_at": "2026-08-01T22:07:36+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 33,
+  "selection_reason": "source_tier_2; major_geopolitical_event",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Israeli strike destroys Gaza hospital warehouse",
+      "source_id": "aljazeera_all",
+      "source_title": "Israeli strike destroys Gaza hospital warehouse",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/1/01-08-israel-strike-gaza-hospital-sv-mp4?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Israeli strikes kill four across Gaza, destroy medical supply warehouse",
+      "source_id": "aljazeera_all",
+      "source_title": "Israeli strikes kill four across Gaza, destroy medical supply warehouse",
+      "source_url": "https://www.aljazeera.com/news/2026/8/1/israeli-strikes-kill-four-across-gaza-destroy-medical-supply-warehouse?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

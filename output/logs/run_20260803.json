@@ -1,0 +1,64 @@
+{
+  "reportId": "daily_20260803",
+  "date": "2026-08-03",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-08-03T05:14:35.843426+08:00",
+  "status": "ok",
+  "duration_seconds": 512.26,
+  "steps": [
+    {
+      "name": "fetch_rss",
+      "exit_code": 0,
+      "duration_s": 0.0,
+      "skipped": true,
+      "note": "pre-fetched (27 XML files)"
+    },
+    {
+      "name": "normalize",
+      "exit_code": 0,
+      "duration_s": 1.19
+    },
+    {
+      "name": "classify",
+      "exit_code": 0,
+      "duration_s": 0.49
+    },
+    {
+      "name": "tw_highlight",
+      "exit_code": 0,
+      "duration_s": 0.04
+    },
+    {
+      "name": "dedup",
+      "exit_code": 0,
+      "duration_s": 0.01
+    },
+    {
+      "name": "event_cluster",
+      "exit_code": 0,
+      "duration_s": 1.26
+    },
+    {
+      "name": "select",
+      "exit_code": 0,
+      "duration_s": 0.05
+    },
+    {
+      "name": "formatter",
+      "exit_code": 0,
+      "duration_s": 0.0
+    }
+  ],
+  "warnings_count": 0,
+  "warnings": [],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 0,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 194,
+    "total_articles_after_filter": 188,
+    "total_events_merged": 148,
+    "total_events_selected": 18,
+    "tw_highlights_count": 2
+  }
+}

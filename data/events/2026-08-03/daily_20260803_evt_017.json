@@ -1,0 +1,98 @@
+{
+  "event_id": "daily_20260803_evt_017",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "川普喊停攻伊 稱協議近了",
+  "context": "美國總統川普表示，暫緩對伊朗發動新一輪攻擊，因為伊朗與其他中東國家要求美方先停手，協議的「輪廓」已經談妥。伊朗則說，與阿曼之間關於荷莫茲海峽的談判已進入最後階段。",
+  "article_ids": [
+    "0953565a8fc67eb9dc32dda1c9997dd6d1080b58783868c1cd2b1fbcc5023a1c",
+    "3d41bf5a6504e98e1587f31f9369f76025a73a4625313b5860021a52e1fcc601",
+    "16ab86a1aa108161e90d867a4e980aa8f51819686997820a232da4ca0c5181b6",
+    "81373ab59fd405aa25f608be28ebfb6c62ad29d7d8cb7eb1ae0f105155986194"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump says US will hold off on fresh Iran attack in hope of quick deal Reuters",
+      "title": "Trump says US will hold off on fresh Iran attack in hope of quick deal - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQnFCZlNtaWNsWjNfQzZYSUltNnlianRRMlRsUmVqWFNEWlEwWERhVmp5dVdSazcwNmo4bTNzQjNwcW1rS1pYSFRzUXZvUkF5dEFRYzY4T3Q4UUF0ZVBFLXlxVzA5YnRXZTliVWN0M2ZlcV9WVEw4ZjZqblVxOFJ6N2JmX1FMSk5HUXdLWWpOM2l1SWI3b0E2NHB5UU5rLUFRbjRXUEZ6ajZ1VUt1N0JIdURWT1VNbkVHX2UxUVU1b1lFTzY4aFNaOEJ5TTJJdw?oc=5",
+      "published_at": "2026-08-02T06:33:00+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Trump said Iran and other Middle Eastern countries had asked the U.S. \"to hold off any attack\" on Iran because \"the perimeters of a deal has been agreed to.\"",
+      "title": "Trump says he's cancelling Iran strikes, deal pending",
+      "url": "https://www.npr.org/2026/08/02/nx-s1-5917113/trump-says-hes-cancelling-iran-strikes-deal-pending",
+      "published_at": "2026-08-02T15:34:27+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The US president claims Iran and other Middle Eastern countries asked Washington to hold off on any attack as the \"perimeters\" of a deal had been agreed.",
+      "title": "Trump cancels Iran strikes subject to deal being made 'rapidly'",
+      "url": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-02T19:12:00+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Tehran's announcement comes after Trump said US would hold off on new Iran attack in hope of quick deal.",
+      "title": "Iran says negotiations with Oman over Strait of Hormuz in final stages",
+      "url": "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages?traffic_source=rss",
+      "published_at": "2026-08-03T03:08:06+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "川普表示美國將暫緩對伊朗發動新攻擊，盼望盡快達成協議。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump says US will hold off on fresh Iran attack in hope of quick deal - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQnFCZlNtaWNsWjNfQzZYSUltNnlianRRMlRsUmVqWFNEWlEwWERhVmp5dVdSazcwNmo4bTNzQjNwcW1rS1pYSFRzUXZvUkF5dEFRYzY4T3Q4UUF0ZVBFLXlxVzA5YnRXZTliVWN0M2ZlcV9WVEw4ZjZqblVxOFJ6N2JmX1FMSk5HUXdLWWpOM2l1SWI3b0E2NHB5UU5rLUFRbjRXUEZ6ajZ1VUt1N0JIdURWT1VNbkVHX2UxUVU1b1lFTzY4aFNaOEJ5TTJJdw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "川普說伊朗與其他中東國家要求美方暫緩攻擊，協議輪廓已談妥。",
+      "source_id": "npr_world",
+      "source_title": "Trump says he's cancelling Iran strikes, deal pending",
+      "source_url": "https://www.npr.org/2026/08/02/nx-s1-5917113/trump-says-hes-cancelling-iran-strikes-deal-pending",
+      "support_type": "direct"
+    },
+    {
+      "claim": "川普稱只要協議能盡快談成，就會取消對伊朗的攻擊。",
+      "source_id": "bbc_world",
+      "source_title": "Trump cancels Iran strikes subject to deal being made 'rapidly'",
+      "source_url": "https://www.bbc.co.uk/news/articles/cjwx74qgld2o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "伊朗表示與阿曼就荷莫茲海峽議題的談判已進入最後階段。",
+      "source_id": "aljazeera_all",
+      "source_title": "Iran says negotiations with Oman over Strait of Hormuz in final stages",
+      "source_url": "https://www.aljazeera.com/news/2026/8/2/iran-says-negotiations-with-oman-over-strait-of-hormuz-in-final-stages?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "川普喊停對伊朗的新攻勢。美國總統川普表示，伊朗與其他中東國家已要求美方暫緩攻擊，因為協議的「輪廓」已經談妥，只要進展夠快，攻擊就會取消。同一時間，伊朗表示與阿曼就荷莫茲海峽議題的談判已進入最後階段。\n\n—— 本則整理自 Reuters、NPR、BBC 與 Al Jazeera 的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國總統川普說，他打算暫緩對伊朗發動新一輪攻擊。川普表示，伊朗與其他中東國家已經要求美方「暫緩任何攻擊」，理由是協議的「輪廓」已經談妥，只要進展夠快就會停手。幾乎同一時間，伊朗方面也證實，與阿曼之間針對荷莫茲海峽的談判已經進入最後階段——荷莫茲海峽是全球原油運輸的重要航道，這條談判線牽動的不只是伊朗和美國。\n\n本則整理自 Reuters、NPR、BBC 與 Al Jazeera 於 2026 年 8 月 2 日至 3 日發佈的報導。",
+  "voice_text": "美國暫緩對伊朗發動新攻擊。川普說，伊朗與其他中東國家要求美方先停手，因為協議的「輪廓」已經談妥。只要進展夠快，這波攻擊就會取消。伊朗那邊也證實，跟阿曼之間關於荷莫茲海峽的談判進入了最後階段——這條海峽是全球原油運輸的重要通道，牽動的不只是美伊兩國。"
+}

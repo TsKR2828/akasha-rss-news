@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:media="http://search.yahoo.com/mrss/" >
+    <channel>
+        <title>Biz &amp; IT - Ars Technica</title>
+        <atom:link href="https://arstechnica.com/information-technology/feed/" rel="self" type="application/rss+xml" />
+        <link>https://arstechnica.com</link>
+        <description>Serving the Technologist since 1998. News, reviews, and analysis.</description>
+        <lastBuildDate>Fri, 31 Jul 2026 20:49:31 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>
+            hourly        </sy:updatePeriod>
+        <sy:updateFrequency>
+            1        </sy:updateFrequency>
+        
+<image>
+	<url>https://cdn.arstechnica.net/wp-content/uploads/2016/10/cropped-ars-logo-512_480-60x60.png</url>
+	<title>Biz &amp; IT - Ars Technica</title>
+	<link>https://arstechnica.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+            <item>
+                <title>Claude published malicious code to the Internet and attacked 3 real companies</title>
+                <link>https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Fri, 31 Jul 2026 20:39:14 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Anthropic]]></category>
+		<category><![CDATA[Claude]]></category>
+		<category><![CDATA[security]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/</guid>
+
+                                    <description>
+                        <![CDATA[Had the hacks used conventional methods, someone would likely go to prison. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Anthropic said its Claude-based security models gained unauthorized access to the sensitive production environments of three outside organizations during internal testing designed to measure the models’ offensive cyber capabilities.</p>
+<p>The events, which Anthropic <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">revealed Thursday</a>, are the second revelation in 10 days that AI models from the world’s wealthiest providers have trespassed into protected networks, an offense that, in more traditional hacking scenarios, could land the human behind the keyboard in prison for years. Earlier this month, OpenAI <a href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/">said</a> its security models exploited a zero-day vulnerability for use in breaking into the network of Hugging Face, a platform for open source machine-learning models and AI datasets. The OpenAI models went on to steal access credentials and other confidential Hugging Face information. The OpenAI models also exploited publicly exposed credentials to compromise accounts of four other third-party services.</p>
+<p>Anthropic said the OpenAI event spurred its engineers to review similar cybersecurity evaluations by Claude models. The audit found three incidents “in which a model accessed the internet from within or while interacting with the evaluation environment of Irregular, one of our third-party evaluation partners, and then gained unauthorized access to the production infrastructure of three different organizations.”</p><p><a href="https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>127</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/robot-in-handcuffs-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/robot-in-handcuffs-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Max-severity Exchange server flaw under active exploitation by Kremlin hackers</title>
+                <link>https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 30 Jul 2026 20:57:22 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[exploits]]></category>
+		<category><![CDATA[Microsoft Exchange]]></category>
+		<category><![CDATA[zerodays]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/</guid>
+
+                                    <description>
+                        <![CDATA[Exploits can give persistent server access that survives credential rotation and disk re-imaging.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Russian state hackers are using a maximum-severity vulnerability in Microsoft Outlook’s Exchange Server to backdoor unpatched machines and steal credentials and other confidential information from them, security researchers said Thursday.</p>
+<p>The attacks are coming from TA488, a tracking name for a group working on behalf of the Kremlin, Proofpoint researchers <a href="https://www.proofpoint.com/us/blog/threat-insight/cleaning-out-inboxes-ta488-comes-outlook-another-half-click-exploit">said Thursday</a>. Proofpoint and the National Security Agency <a href="https://www.proofpoint.com/us/blog/threat-insight/ta488-targets-zimbra-mailservers-half-click-exploits">jointly</a> <a href="https://media.defense.gov/2026/Jul/22/2003965244/-1/-1/1/CSA_RUSSIA_PHISHING_TARGET_ZIMBRA.PDF">warned</a> last week that the group, also tracked as Laundry Bear and Void Blizzard, had been carrying out similar attacks by exploiting a zero-day vulnerability in an email service from Zimbra. The revelation that TA488 is also exploiting the Exchange Server vulnerability to install advanced malware when a user does nothing other than open an email sent to an Outlook Web Access (OWA) account has elevated the group’s profile and assessments of its abilities.</p>
+<h2>Doubling down</h2>
+<p>“TA488 is doubling down on the use of ‘half-click’ exploits—where opening the email is enough to trigger compromise—with significantly improved loading mechanisms, techniques, and malware, signaling an improvement in the group’s tradecraft and capability,” Proofpoint researchers wrote. “This novel infection chain ends with a previously unknown JavaScript browser-based implant we call OWAReaper, purpose-built for persistent access inside OWA.”</p><p><a href="https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>43</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg" type="image/jpeg" medium="image">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Mythos attack on 3rd-round PQC algorithm candidate puts it out of commission</title>
+                <link>https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 29 Jul 2026 22:07:06 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/</guid>
+
+                                    <description>
+                        <![CDATA[HAWK withstood years of testing that had yet to uncover a fatal weakness found through Mythos.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A quantum-resistant cryptography algorithm that was under consideration as an official US standard has been taken out of the running after an Anthropic security model helped find a flaw that rendered it <a href="https://crypto.stackexchange.com/questions/24320/when-is-a-cipher-considered-broken">broken</a>.</p>
+<p>The algorithm is known as <a href="https://csrc.nist.gov/csrc/media/Projects/pqc-dig-sig/documents/round-1/spec-files/hawk-spec-web.pdf">HAWK</a>. It's a digital signature scheme designed to withstand future attacks from quantum computers. HAWK had survived two rounds of testing by NIST (the National Institute of Standards and Technology) for evaluating the security of PQC (post-quantum cryptographic) algorithms through widespread testing. HAWK was in a third round of testing designed to catch precisely the kinds of flaws Mythos helped uncover.</p>
+<p>Following Anthropic's Monday announcement of the results, the developer of HAWK <a href="https://groups.google.com/a/list.nist.gov/g/pqc-forum/c/2r2u6SbHun4/m/0_I2KOZ_CQAJ">said Tuesday</a> he was withdrawing it.</p><p><a href="https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>66</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/broken-encryption-lock-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/broken-encryption-lock-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>We now have a better understanding how OpenAI hacked into Hugging Face</title>
+                <link>https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 28 Jul 2026 21:36:39 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Hugging Face]]></category>
+		<category><![CDATA[jfrog]]></category>
+		<category><![CDATA[large langage models]]></category>
+		<category><![CDATA[LLMs]]></category>
+		<category><![CDATA[openai]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/</guid>
+
+                                    <description>
+                        <![CDATA[10 days passed from OpenAI models exploiting JFrog Artifactory 0-day to release of a patch.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Last week’s unprecedented security event in which two OpenAI security hacking models trespassed into the network of fellow AI company Hugging Face was enabled by exploiting one or more zero-day vulnerabilities in Artifactory, JFrog, the product’s developer, said Monday.</p>
+<p>In an incident mimicking a dystopian sci-fi novel, two OpenAI models broke out of the restricted environment meant to keep them from accessing the Internet during an internal test, the AI company <a href="https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/">revealed last week</a>. The models went on to breach Hugging Face’s network and steal confidential information and credentials. OpenAI said its agent achieved the feat by exploiting a previously unknown vulnerability. The company called the event “unprecedented,” and outsiders largely agreed.</p>
+<h2>Not the triumph it was made out to be</h2>
+<p>OpenAI said the models exploited multiple attack vectors, including stolen credentials and zero-days, to gain remote code execution capabilities, but until now, the vulnerable software was unknown. JFrog’s Monday disclosure <a href="https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/">said</a> the product was a self-managed instance Artifactory, a repository management system that secures and streamlines customers’ software development operations. JFrog <a href="https://jfrog.com/solution-sheet/jfrog-artifactory/">says</a><a href="https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/"> Artifactory is used by more than 7,500 developer Teams, 80 percent of which work for Fortune 100 companies.</a></p><p><a href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>105</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/02/gatekeeping-ai-agents-500x500.jpg" width="500" height="500" />
+<media:credit>Aurich Lawson</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Microsoft unveils AI security tools it says outperform competing platforms</title>
+                <link>https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 27 Jul 2026 21:56:14 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[security]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/</guid>
+
+                                    <description>
+                        <![CDATA[Microsoft says tools cost less than competing ones and outperform them, too.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Microsoft is introducing new AI tools designed to help customers continuously streamline and automate the process of identifying and reducing their exposure to security risks.</p>
+<p>The new tools come less than a week after OpenAI <a href="https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/">lost control</a> of two of its security models when they infiltrated the servers of startup Hugging Face. The hack, Hugging Face added, involved “a swarm of tens of thousands of automated actions” that stole internal Hugging Face credentials. The OpenAI models achieved this feat by exploiting a zero-day flaw in Hugging Face’s data-processing pipeline to run malicious code that escalated the models’ access to the company’s high-value cloud and server clusters.</p>
+<p>Microsoft’s announcements on Monday made no reference to the event, which OpenAI said was “unprecedented.” The company also didn’t say what would prevent the new tools from similarly going rogue.</p><p><a href="https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>75</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2025/09/microsoft-logo-1024x648.jpg" type="image/jpeg" medium="image" width="1024" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2025/09/microsoft-logo-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>TreeSize won&#039;t renew perpetual-license support unless users subscribe</title>
+                <link>https://arstechnica.com/gadgets/2026/07/treesize-wont-renew-perpetual-license-support-unless-users-subscribe/</link>
+                                    <comments>https://arstechnica.com/gadgets/2026/07/treesize-wont-renew-perpetual-license-support-unless-users-subscribe/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Tue, 21 Jul 2026 15:18:23 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[apps]]></category>
+		<category><![CDATA[software]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/07/treesize-wont-renew-perpetual-license-support-unless-users-subscribe/</guid>
+
+                                    <description>
+                        <![CDATA["Current economic conditions" have shifted TreeSize's business model. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The company behind the disk space analyzer TreeSize has irked some users by no longer offering support or updates for perpetual licenses beyond their maintenance period unless customers subscribe. Further frustration has come from JAM Software's long-standing policy of not providing license keys or installers to TreeSize perpetual license holders after that support period ends.</p>
+<p>Since 2025, JAM Software has been transitioning <a href="https://customers.jam-software.de/prices.php?article_group_id=1" target="_blank" rel="noopener">most TreeSize editions</a> to subscription models. Today, it sells perpetual licenses only for personal use, which include 12 months of updates, support, and “downloads of older versions, and your license,” plus the option to extend the support period. TreeSize currently has "no plans to discontinue the sale of perpetual licenses for TreeSize Personal," product manager Hendrik Christ told Ars Technica.</p>
+<p>As perpetual-license maintenance periods expire, customers are discovering that extending support now generally requires subscribing to software they already own the right to use.</p><p><a href="https://arstechnica.com/gadgets/2026/07/treesize-wont-renew-perpetual-license-support-unless-users-subscribe/">Read full article</a></p>
+<p><a href="https://arstechnica.com/gadgets/2026/07/treesize-wont-renew-perpetual-license-support-unless-users-subscribe/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>177</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/TreeSize-1152x648.png" type="image/png" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/TreeSize-500x500.png" width="500" height="500" />
+<media:credit>TreeSize</media:credit><media:text>A marketing image for TreeSize. </media:text></media:content>
+            </item>
+                    <item>
+                <title>HP fined 1.4 billion rupees for “cartelization” of ink cartridges, toner, PCs</title>
+                <link>https://arstechnica.com/gadgets/2026/07/hp-fined-1-4-billion-rupees-for-cartelization-of-ink-cartridges-toner-pcs/</link>
+                                    <comments>https://arstechnica.com/gadgets/2026/07/hp-fined-1-4-billion-rupees-for-cartelization-of-ink-cartridges-toner-pcs/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Thu, 16 Jul 2026 22:02:31 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[HP]]></category>
+		<category><![CDATA[india]]></category>
+		<category><![CDATA[printers]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/07/hp-fined-1-4-billion-rupees-for-cartelization-of-ink-cartridges-toner-pcs/</guid>
+
+                                    <description>
+                        <![CDATA[Resellers threatened to ditch HP printing supplies for counterfeits. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The Indian government has fined HP India and its partners a total of 1.4 billion rupees (about $14.4 million) for working with reseller partners in the “cartelization” of computers, ink cartridges, and toner.</p>
+<p>The Competition Commission of India (CCI) said this week that it found HP India had colluded with some channel partners to drive up the cost of bids for government contracts for computers, as well as for selling ink cartridges, toner, and other printing supplies, including graphic and digital manufacturing supplies.</p>
+<p>It said that HP was aiming to outcompete other OEMs and discourage resellers from selling “counterfeit” ink and toner.</p><p><a href="https://arstechnica.com/gadgets/2026/07/hp-fined-1-4-billion-rupees-for-cartelization-of-ink-cartridges-toner-pcs/">Read full article</a></p>
+<p><a href="https://arstechnica.com/gadgets/2026/07/hp-fined-1-4-billion-rupees-for-cartelization-of-ink-cartridges-toner-pcs/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>47</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/03/GettyImages-458639693-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/03/GettyImages-458639693-500x500.jpg" width="500" height="500" />
+<media:credit>Getty</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Now, even Russia&#039;s most elite hackers are using Clickfix to infect devices</title>
+                <link>https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 16 Jul 2026 19:28:33 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[clickfix]]></category>
+		<category><![CDATA[russia]]></category>
+		<category><![CDATA[sandworm]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/</guid>
+
+                                    <description>
+                        <![CDATA[The social-engineering technique has primarily been a tool of financially motivated criminals.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>One of the Russian government’s most elite hacking groups has adopted an attack, known as Clickfix, to compromise devices belonging to sensitive organizations in Ukraine, the latter country’s CERT center is warning.</p>
+<p><a href="https://arstechnica.com/security/2025/11/clickfix-may-be-the-biggest-security-threat-your-family-has-never-heard-of/">Clickfix</a> has emerged as an effective attack technique that attackers, primarily financially motivated criminals, began using in the last year or so. Websites under the control of the attackers display a CAPTCHA that requires the visitor to copy a jumble of text and paste it into the terminal. The text contains scripts that, once entered, perform malicious actions, typically by installing malware or exfiltrating sensitive data. Ukraine’s CERT <a href="https://cert.gov.ua/article/6318437">said</a> Wednesday that <a href="https://www.wired.com/story/sandworm-kremlin-most-dangerous-hackers/">Sandworm</a>, an advanced hacking unit inside the GRU, Russia’s military intelligence arm, is now using the technique.</p>
+<h2>"GhettoVibe," "ScoutCurl," and many more</h2>
+<p>The Clickfix attacks began in the spring and have continued through the summer. The campaign has resulted in the network compromise of at least one organization when a connected device was found to be infected by FreakyPoll, the name of one of Sandworm’s custom malware packages. Ukrainian authorities discovered 10 compromised websites that displayed a PowerShell command as part of a fake CAPTCHA that said it had to be passed to ensure a real human was behind the visiting device’s keyboard.</p><p><a href="https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/now-even-russias-most-elite-hackers-are-using-clickfix-to-infect-devices/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>16</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2022/04/russia-cyber-hack-1000x648.jpeg" type="image/jpeg" medium="image" width="1000" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2022/04/russia-cyber-hack-500x500.jpeg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Energy IPOs surge as investors hunt for ways to play AI boom</title>
+                <link>https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Martha Muir in New York]]>
+                </dc:creator>
+                <pubDate>Thu, 16 Jul 2026 15:48:21 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[ai data centers]]></category>
+		<category><![CDATA[AI energy]]></category>
+		<category><![CDATA[energy investment]]></category>
+		<category><![CDATA[syndication]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/</guid>
+
+                                    <description>
+                        <![CDATA[Companies coming to market are raising money at fastest pace this century.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Energy companies are raising money at IPO at their fastest pace this century, taking advantage of investors’ hunt for new ways to bet on the boom in power-intensive AI data centers.</p>
+<p>Initial public offerings for energy firms raised $12.6 billion in the first half of this year, according to data firm Dealogic. That marks the highest half-year level since the peak of the dotcom bubble in late 1999 and the highest first-half figure on record. It is well above 2025’s full-year total of $4.3 billion.</p>
+<p>The surge in fundraising comes as access to the vast amounts of energy needed to run data centers emerges as a bottleneck in a multi-trillion-dollar AI investment boom.</p><p><a href="https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>42</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/ftcms_2c2b4618-eb73-4160-997a-8f8bb5485e20-1152x648.jpeg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/ftcms_2c2b4618-eb73-4160-997a-8f8bb5485e20-500x500.jpeg" width="500" height="500" />
+<media:credit>Michael Nagle/Bloomberg</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Sheetz is quitting VMware, migrating 11,000 virtual machines</title>
+                <link>https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Wed, 15 Jul 2026 21:41:56 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[vmware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/</guid>
+
+                                    <description>
+                        <![CDATA[The convenience store chain will use StorMagic instead. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Sheetz, a US convenience store chain, is moving its <a href="https://sheetzmenuu.com/sheetz-locations/">838 locations </a>off VMware.</p>
+<p>Sheetz has used VMware virtualization across two Dell R440/R450-series servers at each of its locations since 2019. Now it’s migrating 12 to 14 virtual machines (VMs) in each of its stores from VMware vSphere to StorMagic’s SvHCI, “with an additional two VMs to be replaced over the coming months to transition from Windows 10 to Windows 11,” Scott Robertson, infrastructure team manager at Sheetz, told Ars Technica via email. Ultimately, Sheetz will move about 11,000 VMs from Broadcom's virtualization platform. Sheetz is still running the original Dell server hardware.</p>
+<p>So far, Sheetz has finished migrating more than 600 stores, averaging 200 per month, according to a company announcement today. Sheetz should be finished with the migration in four months, the announcement said.</p><p><a href="https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/07/sheetz-moves-838-stores-off-vmware-broadcom-created-too-much-uncertainty/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>177</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/images-1152x648-1784145789.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/images-500x395.jpg" width="500" height="395" />
+<media:credit>Sheetz</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Windows 0-day drops the same day Microsoft releases record number of patches</title>
+                <link>https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 15 Jul 2026 19:59:48 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[Windows]]></category>
+		<category><![CDATA[zerodays]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/</guid>
+
+                                    <description>
+                        <![CDATA[HiveLegacy is a "powerful primitive" that's likely capable of other nefarious actions.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Right on the heels of Microsoft releasing a <a href="https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/">record number</a> of security patches, a researcher has published exploit code that can enable low-privilege Windows accounts to make sensitive changes to administrator accounts.</p>
+<p>The exploit, which multiple researchers <a href="https://infosec.exchange/@wdormann/116925149776495861">say</a> <a href="https://infosec.exchange/@GossiTheDog@cyberplace.social/116924831427611458">works</a>, is sending Microsoft scrambling, yet again, to patch a zero-day released by an anonymous researcher who has complained about the software maker’s handling of their bug reports. To date, the pseudonymous NightmareEclypse has published nine such exploits, including <a href="https://blog.projectnightcrawler.dev/posts/2026-07-14-legacyhive-public-disclosure/">Tuesday’s HiveLegacy</a>. The researcher said the proof-of-concept code included in the report was stripped down to prevent attackers from using it maliciously.</p>
+<h2>A “pretty powerful primitive”</h2>
+<p>HiveLegacy is an elevation-of-privilege exploit that targets a vulnerability residing in the Windows User Profile Service. It allows users (and with more work likely processes) with limited system rights to compromise an admin user's account by modifying its <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users">classes registry hive</a>, a resource that ensures the correct application opens when certain types of files are clicked on in Windows Explorer.</p><p><a href="https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/windows-0-day-drops-the-same-day-microsoft-releases-record-number-of-patches/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>50</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2022/10/windows-malware-1024x648.jpg" type="image/jpeg" medium="image" width="1024" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2022/10/windows-malware-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Microsoft’s Secure Boot has been broken for a decade and no one noticed until now</title>
+                <link>https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Tue, 14 Jul 2026 22:20:48 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[bootkits]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[secure boot]]></category>
+		<category><![CDATA[shims]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/</guid>
+
+                                    <description>
+                        <![CDATA[Old and forgotten "shims" Microsoft failed to revoke have made Secure Boot bypasses simple.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>An industry-wide standard Microsoft invented to protect Windows, and later Linux, devices from firmware infections has been trivial to bypass for 13 of its 14 years of existence. The discovery was made by researchers at security firm ESET after identifying 11 firmware images, at least one from 2013, that were known to be defective but remained signed by the software company anyway.</p>
+<p>The images are known as <a href="https://en.wikipedia.org/wiki/Shim_(computing)">shims</a>, which were invented to extend Secure Boot to Linux devices and utility software. Using a technique simple enough to be performed by novice hackers, these old, forgotten shims can be used to completely circumvent the protection, which is embedded into the UEFI (Unified Extensible Firmware Interface) of the device's motherboard. The gaffe is the result of the failure by Microsoft, which oversees the signing of shims, to revoke the publicly available images once vulnerabilities were found in them.</p>
+<h2>Threat extends to Windows and Linux users</h2>
+<p>The threat extends to Windows and Linux users alike, since the shim can be installed on devices running both operating systems. From there, an attacker can subvert the mandated chain of digitally signed firmware to install malicious firmware that loads early in the boot process and persists after either the OS is reinstalled or a hard drive is replaced.</p><p><a href="https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/microsoft-secure-boot-has-been-broken-for-most-of-its-existence/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>130</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/computer-start-button-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/computer-start-button-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit><media:text>Finger about to press a power button. Hardware equipment concept.</media:text></media:content>
+            </item>
+                    <item>
+                <title>The US government warns that Russia state hackers are coming after your router</title>
+                <link>https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 13 Jul 2026 21:03:07 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[CISA]]></category>
+		<category><![CDATA[hackers]]></category>
+		<category><![CDATA[proxy networks]]></category>
+		<category><![CDATA[routers]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/</guid>
+
+                                    <description>
+                        <![CDATA[With residential proxies all the rage, CISA urges router users to be vigilant.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>The federal government is warning users of home and small office routers to secure their devices as Russia state hackers continue to mass-compromise them for use in obscuring nefarious actions against sensitive organizations in the public and private sectors.</p>
+<p>Both the <a href="https://arstechnica.com/security/2026/04/russias-military-hacks-thousands-of-consumer-routers-to-steal-credentials/">Russian</a> and <a href="https://arstechnica.com/security/2024/01/chinese-malware-removed-from-soho-routers-after-fbi-issues-covert-commands/">Chinese</a> governments have been compromising routers for years, sometimes in <a href="https://arstechnica.com/security/2024/05/hacker-free-for-all-fights-for-control-of-home-and-office-routers-everywhere/">prolonged tugs-of-war</a> to wrest control of devices the other has already commandeered. The US government has occasionally issued <a href="https://arstechnica.com/security/2024/01/chinese-malware-removed-from-soho-routers-after-fbi-issues-covert-commands/">covert commands</a> and taken other steps to disinfect routers. Google and other companies have also <a href="https://cloud.google.com/blog/topics/threat-intelligence/disrupting-largest-residential-proxy-network">worked</a> to <a href="https://cloud.google.com/blog/topics/threat-intelligence/google-continued-disruption-residential-proxy-networks">disrupt</a> the massive botnets that control compromised routers in lockstep. The actions to date are little more than whack-a-mole exercises as the operators simply replace their botnets with new ones.</p>
+<h2>Proxy networks: The go-to tool</h2>
+<p>“Russian Federal Security Service (FSB) Center 16 cyber actors continue to exploit poorly configured and vulnerable networking devices worldwide, opportunistically compromising multiple critical infrastructure sector networks,” the Cybersecurity and Infrastructure Security Agency <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-194a">said</a> Monday. The hacking groups are tracked under various names, including Berserk Bear, Energetic Bear, Crouching Yeti, Dragonfly, Ghost Blizzard, and Static Tundra. The advisory was co-issued by governments from around the world, including Australia, Denmark, New Zealand, and the UK.</p><p><a href="https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/the-us-government-warns-that-russia-state-hackers-are-coming-after-your-router/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>123</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2024/04/wireless-router-cables-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2024/04/wireless-router-cables-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images | BernardaSv</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Now, defenders are embracing the prompt injection, too</title>
+                <link>https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Mon, 13 Jul 2026 15:06:34 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[context bombing\]]></category>
+		<category><![CDATA[guardrails]]></category>
+		<category><![CDATA[LLMs]]></category>
+		<category><![CDATA[prompt injections]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/</guid>
+
+                                    <description>
+                        <![CDATA["Context bombing" tricks hacking agents into shutting down before they can do harm.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Prompt injections, the malicious commands attackers embed into content to entice large language models to follow them, have been attackers’ go-to tool for turning AI platforms against their users. A well-phrased command sneaked into an email or calendar invitation is often all it takes to cause the LLM to exfiltrate sensitive data or follow other harmful actions.</p>
+<p>Now, defenders are embracing the prompt injection, too.</p>
+<h2>A strong, sharp effect</h2>
+<p>Researchers from <a href="https://tracebit.com">Tracebit</a> on Monday <a href="https://agentic.tracebit.com/context-bombs/">said</a> they found that placing prompt injections alongside passwords, cryptographic keys, and other secrets stored on Amazon Web Services was often all that was needed to shut down attacks from AI hacking agents. The prompts direct the attacking LLM to perform an action forbidden by its guardrails, the safety barriers AI developers erect to prevent it from taking harmful actions. The LLM responds by shutting down.</p><p><a href="https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/now-defenders-are-embracing-the-prompt-injection-too/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>71</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/ai-agent-robot-guardrail-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/ai-agent-robot-guardrail-500x500-1783953968.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Patch for Windows Defender 0-day could allow attackers to fill hard disk</title>
+                <link>https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Thu, 09 Jul 2026 20:52:55 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[microsoft]]></category>
+		<category><![CDATA[Windows Defender]]></category>
+		<category><![CDATA[zero days]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/</guid>
+
+                                    <description>
+                        <![CDATA[The feud between NightmareEclipse and Microsoft shows no signs of resolving soon.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A patch Microsoft released on Wednesday to fix a zero-day vulnerability in its Defender security engine may cause Windows machines to write files large enough to completely consume available disk space, the researcher who discovered the flaw said.</p>
+<p>RoguePlanet, tracked as CVE-2026-50656, came to public notice <a href="%22https://deadeclipse666.blogspot.com%E2%80%9D/">in June</a> when NightmareEclipse, the pseudonymous name used by a researcher, disclosed it along with <a href="https://git.projectnightcrawler.dev/NightmareEclipse/RoguePlanet">code</a> for exploiting it. The vulnerability allows remote attackers to gain administrative control of Windows 10 and Windows 11 machines, even when real-time protection has been disabled. Over the past few months, the anonymous researcher has published a <a href="https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/">handful</a> of <a href="https://arstechnica.com/security/2026/06/locked-in-heated-rivalry-with-researcher-microsoft-fixes-0-day-they-disclosed/">other</a> zero-days that have sent Microsoft scrambling to develop patches.</p>
+<h2>Writing files of unlimited size</h2>
+<p>Microsoft <a href="https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2026-50656">said</a> Wednesday that it patched RoguePlanet with an update to the Microsoft Malware Protection Engine, which is used by the Defender antivirus app. The fix will automatically be downloaded and installed without users having to take any action. Wednesday’s update also includes “defense-in-depth updates to help improve security-related features.”</p><p><a href="https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>45</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-1152x648-1783631068.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1237693734-500x500-1783631088.jpg" width="500" height="500" />
+<media:credit>Photo Illustration by Igor Golovniov/SOPA Images/LightRocket via Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Allstate accuses Broadcom of auditing it because it quit VMware, CA</title>
+                <link>https://arstechnica.com/information-technology/2026/07/allstate-accuses-broadcom-of-auditing-it-because-it-quit-vmware-ca/</link>
+                                    <comments>https://arstechnica.com/information-technology/2026/07/allstate-accuses-broadcom-of-auditing-it-because-it-quit-vmware-ca/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Thu, 09 Jul 2026 20:28:55 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Allstate]]></category>
+		<category><![CDATA[Broadcom]]></category>
+		<category><![CDATA[lawsuit]]></category>
+		<category><![CDATA[vmware]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/information-technology/2026/07/allstate-accuses-broadcom-of-auditing-it-because-it-quit-vmware-ca/</guid>
+
+                                    <description>
+                        <![CDATA[Broadcom accuses Allstate of dodging VMware audits. ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Allstate Insurance Company has accused Broadcom of haphazardly issuing audits against it because the insurance firm decided not to renew its contracts with VMware and CA Technologies.</p>
+<p>The allegations were made in relation to a lawsuit that VMware filed against Allstate in December 2025, according to <a href="https://www.theregister.com/virtualization/2026/07/08/allstate-insurance-quits-broadcom-alleges-vengeful-license-audit-on-the-way-out/5268155">The Register</a>. In the complaint, Broadcom alleges that Allstate failed to comply with license audits, which Broadcom claims its contract with Allstate requires.</p>
+<p>In a June 12 filing, Allstate suggested that Broadcom issued the audits in response to Allstate deciding to end business with its companies. Allstate's statement reads:</p><p><a href="https://arstechnica.com/information-technology/2026/07/allstate-accuses-broadcom-of-auditing-it-because-it-quit-vmware-ca/">Read full article</a></p>
+<p><a href="https://arstechnica.com/information-technology/2026/07/allstate-accuses-broadcom-of-auditing-it-because-it-quit-vmware-ca/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>94</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2279315069-1024x648.jpg" type="image/jpeg" medium="image" width="1024" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2279315069-500x500.jpg" width="500" height="500" />
+<media:credit>Samuel Boivin/NurPhoto via Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Google pays $250K for Linux vulnerability allowing guest VM escapes</title>
+                <link>https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 08 Jul 2026 19:01:19 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[exploits]]></category>
+		<category><![CDATA[Linux]]></category>
+		<category><![CDATA[local privilege escalation]]></category>
+		<category><![CDATA[vulnerabilities]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/</guid>
+
+                                    <description>
+                        <![CDATA[Both vulnerabilities allow untrusted users to gain root privileges.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>A Linux vulnerability that allows untrusted virtual machines to gain root access to host machines is one of two high-severity flaws to surface this week in the open source operating system.</p>
+<p>The vulnerability resides in KVM, which is, in essence, a virtual machine app included in the kernel of many Linux distributions. The vulnerability, tracked as CVE-2026-53359, allows guest virtual machines—such as those used in cloud platforms to isolate one user’s instance from the host OS and other user instances—to break out of that container.</p>
+<h2>Januscape: A threat to cloud platforms</h2>
+<p>The vulnerability affects KVM running on both AMD and Intel processors. It exploits bugs residing in the KVM <a href="https://kb.i-doit.com/en/basics/categories/virtual-machine.html">guest-side</a>, the portion of the VM that consists of only resources like the OS or drivers present in the guest VM, rather than resources present on the host machine. The threat went unnoticed in the Linux kernel for 16 years.</p><p><a href="https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>24</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security.jpg" type="image/jpeg" medium="image">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2023/07/exploit-vulnerability-security-500x500.jpg" width="500" height="500" />
+<media:credit>Getty Images</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Aussie gov&#039;t tells volunteers to throw out thousands of functioning test routers</title>
+                <link>https://arstechnica.com/gadgets/2026/07/thousands-of-routers-bricked-after-government-program-concludes-in-australia/</link>
+                                    <comments>https://arstechnica.com/gadgets/2026/07/thousands-of-routers-bricked-after-government-program-concludes-in-australia/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Scharon Harding]]>
+                </dc:creator>
+                <pubDate>Wed, 08 Jul 2026 18:10:16 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Policy]]></category>
+		<category><![CDATA[Tech]]></category>
+		<category><![CDATA[australia]]></category>
+		<category><![CDATA[Cisco]]></category>
+		<category><![CDATA[e-waste]]></category>
+		<category><![CDATA[samknows]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/gadgets/2026/07/thousands-of-routers-bricked-after-government-program-concludes-in-australia/</guid>
+
+                                    <description>
+                        <![CDATA[But the devices could "easily be reflashed." ]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>Last week, thousands of SamKnows routers were bricked after a government program ran its course.</p>
+<p>In 2020, as part of a program conducted by the Australian Competition &amp; Consumer Commission (ACCC), the Australian government's chief competition regulator, thousands of volunteers received routers to help test and report on the typical speed and performance of broadband plans in Australia. (More specifically, the <a href="https://www.accc.gov.au/by-industry/telecommunications-and-internet/telecommunications-monitoring/measuring-broadband-australia-program">Measuring Broadband Australia</a> (MBA) program targeted fixed-line broadband services provided over the NBN, Australia's government-owned wholesale open-access broadband network, as well as services delivered over other access networks.)</p>
+<p>According to the final report that the ACCC distributed, the routers are whiteboxes that were “supplied by SamKnows” and that “perform tests to measure internet performance using test servers maintained by SamKnows and hosted in Australia.”</p><p><a href="https://arstechnica.com/gadgets/2026/07/thousands-of-routers-bricked-after-government-program-concludes-in-australia/">Read full article</a></p>
+<p><a href="https://arstechnica.com/gadgets/2026/07/thousands-of-routers-bricked-after-government-program-concludes-in-australia/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>66</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2238063763-1152x648-1783530792.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2238063763-500x500-1783530187.jpg" width="500" height="500" />
+<media:credit>Getty</media:credit></media:content>
+            </item>
+                    <item>
+                <title>US rare earths flow to Asia as domestic demand is slow to emerge</title>
+                <link>https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/</link>
+                                    <comments>https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Camilla Hodgson in London]]>
+                </dc:creator>
+                <pubDate>Wed, 08 Jul 2026 13:26:10 +0000</pubDate>
+                		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Science]]></category>
+		<category><![CDATA[Energy Fuels]]></category>
+		<category><![CDATA[MP Materials]]></category>
+		<category><![CDATA[Phoenix Tailings]]></category>
+		<category><![CDATA[rare earths]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/</guid>
+
+                                    <description>
+                        <![CDATA[Miners backed by Trump admin sell to Japan, South Korea despite push to develop domestic supply chain.]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>US rare earths produced by Washington-backed companies are flowing to Japan and South Korea, as American demand has yet to materialize despite the Trump administration’s push to develop a national supply chain.</p>
+<p>Rare earths products produced by MP Materials, Energy Fuels and Phoenix Tailings—which together have won billions of dollars in US government support—are being sold to companies in Asia, where the scale of magnet manufacturing remains larger than the nascent production in the US.</p>
+<p>China’s lock on global supplies of rare earths and critical minerals has become a national security concern in the US and other Western nations, since Beijing started restricting access to them. The metals are crucial to 21st-century technology and are used in the manufacturing of everything from weapons guidance systems to electric vehicle batteries.</p><p><a href="https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/">Read full article</a></p>
+<p><a href="https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>58</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2270755803-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2270755803-500x500.jpg" width="500" height="500" />
+<media:credit>David McNew / Contributor</media:credit></media:content>
+            </item>
+                    <item>
+                <title>Hackers can use 9 of the most popular AI tools to assemble massive botnets</title>
+                <link>https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/</link>
+                                    <comments>https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/#comments</comments>
+                
+                <dc:creator>
+                    <![CDATA[Dan Goodin]]>
+                </dc:creator>
+                <pubDate>Wed, 08 Jul 2026 07:00:51 +0000</pubDate>
+                		<category><![CDATA[AI]]></category>
+		<category><![CDATA[Biz & IT]]></category>
+		<category><![CDATA[Features]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[hallucinations]]></category>
+		<category><![CDATA[LLMs]]></category>
+		<category><![CDATA[typosquatting]]></category>
+                <guid isPermaLink="true">https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/</guid>
+
+                                    <description>
+                        <![CDATA["HalluSquatting" weaponizes LLMs' inability to say "I don't know."]]>
+                    </description>
+                                                                <content:encoded>
+                            <![CDATA[<p>In the brief history of AI security, the prompt injection has quickly become the top threat. Large language models are inherently unable to distinguish between legitimate instructions provided by users and malicious ones sneaked into emails, source code, and other third-party content the models are processing. This makes it trivial to surreptitiously inject malicious commands that the LLM readily follows.</p>
+<p>With no way to enforce this crucial boundary between trusted and untrusted sources, AI engine developers are left to erect elaborate guardrails designed to mitigate the damage rather than solve the root cause.</p>
+<p>To date, most prompt injections have fallen into a class known as push, in which each potential victim is targeted. For example, the adversary injects malicious instructions into an individual email or calendar invitation. Because the injection must then be sent (or pushed) to each specific target, the scale of the attack is limited, hampering mass exploits that hit the Internet at large.</p><p><a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/">Read full article</a></p>
+<p><a href="https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/#comments">Comments</a></p>
+]]>
+                        </content:encoded>
+                                    
+                                    <slash:comments>64</slash:comments>
+                
+                
+                <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">
+<media:thumbnail url="https://cdn.arstechnica.net/wp-content/uploads/2026/07/rogue-ai-agent-500x500.jpg" width="500" height="500" />
+</media:content>
+            </item>
+            </channel>
+</rss>

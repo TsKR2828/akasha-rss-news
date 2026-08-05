@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260806_evt_283",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Brazilian presidential candidate Bolsonaro names surprise running mate - Reuters",
+  "context": "Brazilian presidential candidate Bolsonaro names surprise running mate Reuters",
+  "article_ids": [
+    "a2523d14648bac5410dc207d5939df894973287fe84fd638240abdc3dd07ed00",
+    "da08c83242dfbbf4f8f10cd86ff96e760f1f25478fd25e0d4961feb01b6befe0"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Brazilian presidential candidate Bolsonaro names surprise running mate Reuters",
+      "title": "Brazilian presidential candidate Bolsonaro names surprise running mate - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaEhCVXZlazNQMnQyWkc2TVNpSzNlaVhVZDZhY2w2Y1ZWM2JpMFdHLVhybWpGTGVxMlQyMm1hTTN1YXlxWEYzTHhNaWZJdFJGbVk1eXRNVmRYWXhBd1YwMVJzbW1hR2hoLWVZWG5oVHhwcUlfVEpIRW1DeXYwREgyV3NQcUdOUDhlVW5UZDNRaTFvV00zdEJpY2dfOU95VnBiZEFNeEZMTDNDVGtNX3hKQ2t1UTlkcEw1NVVrU0htWXFaSVgtQ3c?oc=5",
+      "published_at": "2026-08-06T02:48:38+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The announcement comes as Lula warns of foreign interference and polls show a tightening presidential race.",
+      "title": "Brazil’s Flavio Bolsonaro names Alfredo Gaspar as running mate",
+      "url": "https://www.aljazeera.com/news/2026/8/5/brazils-flavio-bolsonaro-names-alfredo-gaspar-as-running-mate?traffic_source=rss",
+      "published_at": "2026-08-06T03:22:06+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Brazilian presidential candidate Bolsonaro names surprise running mate - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Brazilian presidential candidate Bolsonaro names surprise running mate - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNaEhCVXZlazNQMnQyWkc2TVNpSzNlaVhVZDZhY2w2Y1ZWM2JpMFdHLVhybWpGTGVxMlQyMm1hTTN1YXlxWEYzTHhNaWZJdFJGbVk1eXRNVmRYWXhBd1YwMVJzbW1hR2hoLWVZWG5oVHhwcUlfVEpIRW1DeXYwREgyV3NQcUdOUDhlVW5UZDNRaTFvV00zdEJpY2dfOU95VnBiZEFNeEZMTDNDVGtNX3hKQ2t1UTlkcEw1NVVrU0htWXFaSVgtQ3c?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Brazil’s Flavio Bolsonaro names Alfredo Gaspar as running mate",
+      "source_id": "aljazeera_all",
+      "source_title": "Brazil’s Flavio Bolsonaro names Alfredo Gaspar as running mate",
+      "source_url": "https://www.aljazeera.com/news/2026/8/5/brazils-flavio-bolsonaro-names-alfredo-gaspar-as-running-mate?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

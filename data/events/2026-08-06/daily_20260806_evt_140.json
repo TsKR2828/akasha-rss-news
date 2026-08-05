@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260806_evt_140",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "UN rights chief says Iran executed at least 56 people since March - Reuters",
+  "context": "UN rights chief says Iran executed at least 56 people since March Reuters",
+  "article_ids": [
+    "c087ad3587d8d279ea1d8ef4209ce9ce51421855ab46a68e635ab66df0cdf5e7",
+    "dedae690946b00f90f16b1dc195a8f7d7e413b3a6db7a1d22bdb5d920d846fd6"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "UN rights chief says Iran executed at least 56 people since March Reuters",
+      "title": "UN rights chief says Iran executed at least 56 people since March - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeW9QZjd0R3djcFhWMjBZSmhadjhVekQyU0JzYW03NWdpN3VWMVZjelZuX0Rqa0RlbkZBRXF2YkFGcFBBZk93X3U4Y01neXEybmh3QlRrcnp2WEQ2LV9Ldk9DbTlLNThQTUlEOXNrYlZCdkVzeGpGcEdvYmFhYjBEM2YxaFVPY0FWSS1TblRuMFM1TDF3MmlJRFBtWm9oLUhzY0dtQlZmblpRTEpscTdxenEzclJSbG8?oc=5",
+      "published_at": "2026-08-05T18:31:58+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Volker Türk says 56 people have been executed on national security-related charges, including 27 in cases linked to January's protests.",
+      "title": "UN rights chief alarmed by rise in Iran executions since March",
+      "url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-05T22:04:09+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "UN rights chief says Iran executed at least 56 people since March - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "UN rights chief says Iran executed at least 56 people since March - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeW9QZjd0R3djcFhWMjBZSmhadjhVekQyU0JzYW03NWdpN3VWMVZjelZuX0Rqa0RlbkZBRXF2YkFGcFBBZk93X3U4Y01neXEybmh3QlRrcnp2WEQ2LV9Ldk9DbTlLNThQTUlEOXNrYlZCdkVzeGpGcEdvYmFhYjBEM2YxaFVPY0FWSS1TblRuMFM1TDF3MmlJRFBtWm9oLUhzY0dtQlZmblpRTEpscTdxenEzclJSbG8?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "UN rights chief alarmed by rise in Iran executions since March",
+      "source_id": "bbc_world",
+      "source_title": "UN rights chief alarmed by rise in Iran executions since March",
+      "source_url": "https://www.bbc.co.uk/news/articles/c75gvzxrz49o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "event_id": "daily_20260807_evt_014",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Meta推出終端編碼代理",
+  "context": "Meta超級智慧實驗室（Meta Superintelligence Labs）推出新的終端編碼代理Muse Code測試版，由新模型Muse Spark 1.2驅動。它能在大型程式庫中規劃改動、撰寫程式碼並驗證結果，背景代理可以在整個工作階段持續運作，不必每個任務重新啟動。",
+  "article_ids": [
+    "7e8cf7933ba00fe4167aa50e065551ffb875db2d578207a2f723e0714b248657",
+    "fb8c5e9ea3f7f2df7f1cb8d8c6bdc7650d0d5a20813f280d3510481d0ccc9347"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Meta Superintelligence Labs has released Muse Code, a terminal coding agent in beta, powered by the new Muse Spark 1.2 model. Muse Code plans changes, writes code, and validates results across large repositories. Async background agents stay active for the whole session instead of spawning per task. A local append-only event log makes the runtime replay-exact and restart-safe after a crash. Muse Spark 1.2 was co-trained with the harness and trained on long-horizon, repository-scale work. The post Meta AI Releases Muse Code (Beta): A Terminal Coding Agent Powered by the New Muse Spark 1.2 Model appeared first on MarkTechPost .",
+      "title": "Meta AI Releases Muse Code (Beta): A Terminal Coding Agent Powered by the New Muse Spark 1.2 Model",
+      "url": "https://www.marktechpost.com/2026/08/05/meta-superintelligence-labs-releases-muse-code/",
+      "published_at": "2026-08-06T04:07:32+08:00"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Meta expanded its AI coding offerings with a new agent that, it promises, can handle complex tasks with complex software.",
+      "title": "Meta launches Muse Code, an AI agent for large code bases",
+      "url": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
+      "published_at": "2026-08-06T05:21:28+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2,
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 41,
+  "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Meta超級智慧實驗室推出終端編碼代理Muse Code測試版，由新模型Muse Spark 1.2驅動，可在大型程式庫規劃改動、寫程式碼並驗證結果。",
+      "source_id": "marktechpost",
+      "source_title": "Meta AI Releases Muse Code (Beta): A Terminal Coding Agent Powered by the New Muse Spark 1.2 Model",
+      "source_url": "https://www.marktechpost.com/2026/08/05/meta-superintelligence-labs-releases-muse-code/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Meta擴大其AI編碼產品線，推出新代理宣稱能處理大型複雜軟體專案的複雜任務。",
+      "source_id": "techcrunch_ai",
+      "source_title": "Meta launches Muse Code, an AI agent for large code bases",
+      "source_url": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "Meta超級智慧實驗室（Meta Superintelligence Labs），推出新的終端編碼代理Muse Code測試版，由新模型Muse Spark 1.2驅動。它能在大型程式庫中規劃改動、撰寫程式碼並驗證結果，背景代理可以在整個工作階段持續運作，不必每個任務重新啟動。系統採用僅供附加的本地事件紀錄，讓執行過程可重現，即使當機也能安全重啟——Muse Spark 1.2正是與這套執行環境共同訓練，專攻長時程、跨整個程式庫規模的工作。\n\n—— 本則整理自 MarkTechPost 與 TechCrunch 的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "Meta超級智慧實驗室（Meta Superintelligence Labs），推出新的終端編碼代理Muse Code測試版，由新模型Muse Spark 1.2驅動。它能在大型程式庫中規劃改動、撰寫程式碼並驗證結果，背景代理可以在整個工作階段持續運作，不必每個任務重新啟動。系統採用僅供附加的本地事件紀錄，讓執行過程可重現，即使當機也能安全重啟——Muse Spark 1.2正是與這套執行環境共同訓練，專攻長時程、跨整個程式庫規模的工作。\n\n本則整理自 MarkTechPost 與 TechCrunch 於 2026 年 8 月 6 日 發佈的報導。",
+  "voice_text": "Meta推出了一套新的終端編碼代理。叫做Muse Code，目前是測試版，由新模型Muse Spark 1.2驅動。它可以在大型程式庫裡規劃改動、寫程式碼，還會驗證結果。背景代理可以在整個工作階段裡持續運作，不必每個任務都重新啟動一次。系統採用只能附加、不能覆寫的本地事件紀錄，讓整個執行過程可以重現，就算當機了，也能安全重新啟動。"
+}

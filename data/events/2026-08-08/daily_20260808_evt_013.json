@@ -1,0 +1,65 @@
+{
+  "event_id": "daily_20260808_evt_013",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "雲端業者推出AI代理瀏覽器",
+  "context": "雲端服務商 Cloudflare 推出全新瀏覽器 Kitesurf，專為 AI 代理（AI agent）打造，完全在 Cloudflare Workers 的 V8 isolate 環境中運作，底層不使用 Chromium。這款瀏覽器捨棄分頁、擴充功能等人類慣用介面，改為代理所需的機器可讀內容與腳本功能。",
+  "article_ids": [
+    "fd0ab935aa6efe3bccf650434ee15896233afcc0f575d0b5d484fdf52603dc21",
+    "0a15e9ebc8961b1785607c4fa7b896cf9b2a1add275a9cc90ea6443b39d854a8",
+    "7e871b370794cc2a9374885b89d522966d3143b0af7ad648398f651dd68e08a1"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Cloudflare has released Kitesurf, a stateless web browser built specifically for AI agents that runs entirely in V8 isolates on Cloudflare Workers, with no Chromium underneath. The browser drops human-facing features like tabs and extensions in favor of what agents need: machine-readable content, scalability, and isolation. Built in 12 weeks using Rust components like Blitz, Stylo, and Boa JS, it already passes 215,000+ Web Platform Tests. Benchmarks show 3.1–3.8× less CPU and 4.7–7.0× less memory than Chromium on screenshots and HTML extraction. Existing Puppeteer, Playwright, and MCP clients work by adding a single browser=kitesurf parameter, free while in beta. The post Cloudflare Introduces Kitesurf: An Agent-First Web Browser That Runs Entirely in V8 Isolates on Cloudflare Workers appeared first on MarkTechPost .",
+      "title": "Cloudflare Introduces Kitesurf: An Agent-First Web Browser That Runs Entirely in V8 Isolates on Cloudflare Workers",
+      "url": "https://www.marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers/",
+      "published_at": "2026-08-07T03:35:32+08:00"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Cloudflare has introduced Kitesurf, a cloud-hosted browser designed for AI agents instead of people. The company says the browser uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
+      "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+      "published_at": "2026-08-08T00:16:09+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2,
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 41,
+  "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Cloudflare推出瀏覽器Kitesurf，專為AI代理打造，完全在Cloudflare Workers的V8 isolate中運作、不使用Chromium，捨棄分頁與擴充功能等人類介面。",
+      "source_id": "marktechpost",
+      "source_title": "Cloudflare Introduces Kitesurf: An Agent-First Web Browser That Runs Entirely in V8 Isolates on Cloudflare Workers",
+      "source_url": "https://www.marktechpost.com/2026/08/06/cloudflare-introduces-kitesurf-an-agent-first-web-browser-that-runs-entirely-in-v8-isolates-on-cloudflare-workers/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Cloudflare表示Kitesurf執行常見自動化任務時所用運算資源比Chromium少。",
+      "source_id": "techcrunch_ai",
+      "source_title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+      "source_url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 AI 新知\n\n雲端業者推出AI代理瀏覽器\n\n雲端服務商 Cloudflare 推出全新瀏覽器 Kitesurf，專為 AI 代理打造，完全在 Cloudflare Workers 的 V8 isolate 環境中運作，底層不使用 Chromium。這款瀏覽器捨棄了人類慣用的分頁、擴充功能，換成代理需要的機器可讀內容與腳本工具，執行常見自動化任務時，用的運算資源也比 Chromium 少。\n\n—— 本則整理自 MarkTechPost 與 TechCrunch 於 2026 年 8 月 7 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "雲端業者推出AI代理瀏覽器\n\n雲端服務商 Cloudflare 推出全新瀏覽器 Kitesurf，專為 AI 代理（AI agent）打造，完全在 Cloudflare Workers 的 V8 isolate 環境中運作，底層不使用 Chromium。這款瀏覽器捨棄了分頁、擴充功能等人類慣用介面，換成代理需要的機器可讀內容與腳本工具。Cloudflare 表示，執行常見自動化任務時，這款瀏覽器用的運算資源也比 Chromium 少，能幫助開發者更有效率地打造瀏覽器型 AI 代理。\n\n本則整理自 MarkTechPost 與 TechCrunch 於 2026 年 8 月 7 日發佈的報導。",
+  "voice_text": "Cloudflare 出了一款新瀏覽器，不過這次不是給人用的。它叫 Kitesurf，是專門為 AI 代理打造的瀏覽器，整個運作環境都在 Cloudflare Workers 裡面，底層完全不用 Chromium。分頁、擴充功能這些人類習慣的介面，這款瀏覽器全部拿掉，換成代理需要的機器可讀內容跟腳本工具。官方說，執行一般自動化任務時，它用的運算資源比 Chromium 少。"
+}

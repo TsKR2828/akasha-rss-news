@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260809_evt_081",
+  "beat": "ARTS",
+  "sub_beat": "文學",
+  "headline": "Edge of Your Seat",
+  "context": "A superfan of thrillers recommends some of her favorites.",
+  "article_ids": [
+    "6173d9cf71cb772dad8f4e9e88a79546d5b8fae38d5e13b502f4366a4c2f91c3"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_books",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "A superfan of thrillers recommends some of her favorites.",
+      "title": "Edge of Your Seat",
+      "url": "https://www.nytimes.com/2026/08/08/briefing/edge-of-your-seat.html",
+      "published_at": "2026-08-08T18:19:58+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Edge of Your Seat",
+      "source_id": "nyt_books",
+      "source_title": "Edge of Your Seat",
+      "source_url": "https://www.nytimes.com/2026/08/08/briefing/edge-of-your-seat.html",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260809_evt_130",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Lionel Messi’s father dies aged 68 after a long illness",
+  "context": "Jorge Messi died at a medical clinic in the Argentinian city of ⁠Rosario, according to his family.",
+  "article_ids": [
+    "1ae1b15abaceb75b1eafd557d72dbae615743c76bd1a9e6c6face0f75b6fbd8c",
+    "49d5f621b17290b650fe741febb2e4a5b33f17761a14f7fe9820b33f3d6f3ec6"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Jorge Messi died at a medical clinic in the Argentinian city of ⁠Rosario, according to his family.",
+      "title": "Lionel Messi’s father dies aged 68 after a long illness",
+      "url": "https://www.aljazeera.com/sports/2026/8/8/lionel-messis-father-dies-aged-68-after-a-long-illness?traffic_source=rss",
+      "published_at": "2026-08-08T22:25:38+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Lionel Messi's father and agent Jorge dies at the age of 68 following a long illness.",
+      "title": "Messi's father Jorge dies aged 68 after illness",
+      "url": "https://www.bbc.co.uk/sport/football/articles/c70gn3w5ek5o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-08T23:51:11+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Lionel Messi’s father dies aged 68 after a long illness",
+      "source_id": "aljazeera_all",
+      "source_title": "Lionel Messi’s father dies aged 68 after a long illness",
+      "source_url": "https://www.aljazeera.com/sports/2026/8/8/lionel-messis-father-dies-aged-68-after-a-long-illness?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Messi's father Jorge dies aged 68 after illness",
+      "source_id": "bbc_world",
+      "source_title": "Messi's father Jorge dies aged 68 after illness",
+      "source_url": "https://www.bbc.co.uk/sport/football/articles/c70gn3w5ek5o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

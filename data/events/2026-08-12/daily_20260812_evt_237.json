@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260812_evt_237",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "US jury in Luigi Mangione murder trial to remain anonymous",
+  "context": "The closely watched state trial over the killing of UnitedHealthcare CEO Brian Thompson is set to begin next month.",
+  "article_ids": [
+    "6cd21d09a5b95961f6cc647c2db54fa02d2c709cbf7d7c01bf192e170e18f358",
+    "18bfa1cda54d77acae79937e5e90b0c50172e138d84b8958809dce00ff60481a"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The closely watched state trial over the killing of UnitedHealthcare CEO Brian Thompson is set to begin next month.",
+      "title": "US jury in Luigi Mangione murder trial to remain anonymous",
+      "url": "https://www.aljazeera.com/news/2026/8/11/us-jury-in-luigi-mangione-murder-trial-to-remain-anonymous?traffic_source=rss",
+      "published_at": "2026-08-12T01:36:57+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The judge overseeing the state murder trial has set out some rules for public access, but other questions remain about the high-profile case.",
+      "title": "Luigi Mangione murder trial to have anonymous jury and overflow seating",
+      "url": "https://www.bbc.co.uk/news/articles/cgje05wd1v4o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-12T03:12:54+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "US jury in Luigi Mangione murder trial to remain anonymous",
+      "source_id": "aljazeera_all",
+      "source_title": "US jury in Luigi Mangione murder trial to remain anonymous",
+      "source_url": "https://www.aljazeera.com/news/2026/8/11/us-jury-in-luigi-mangione-murder-trial-to-remain-anonymous?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Luigi Mangione murder trial to have anonymous jury and overflow seating",
+      "source_id": "bbc_world",
+      "source_title": "Luigi Mangione murder trial to have anonymous jury and overflow seating",
+      "source_url": "https://www.bbc.co.uk/news/articles/cgje05wd1v4o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

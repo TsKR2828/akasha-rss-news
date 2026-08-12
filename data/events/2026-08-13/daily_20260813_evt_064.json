@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260813_evt_064",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Xiaomi’s MiLM Plus Releases PROVE: Perception-Aligned Object Removal Metrics RC-S and RC-T With a Real-World Video Benchmark",
+  "context": "Object removal models have improved faster than the metrics used to judge them. Diffusion erasers now reconstruct shadows, reflections and occluded structure convincingly, yet PSNR, SSIM, LPIPS, ReMOVE and CFD frequently rank their outputs the wrong way. The root cause is structu",
+  "article_ids": [
+    "b502ca7a99f7084c3446741450464b02310193f258c5ac5e924df6abfc099f09"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Object removal models have improved faster than the metrics used to judge them. Diffusion erasers now reconstruct shadows, reflections and occluded structure convincingly, yet PSNR, SSIM, LPIPS, ReMOVE and CFD frequently rank their outputs the wrong way. The root cause is structural: erasure is an ill-posed, one-to-many task, so no single ground truth exists to […] The post Xiaomi’s MiLM Plus Releases PROVE: Perception-Aligned Object Removal Metrics RC-S and RC-T With a Real-World Video Benchmark appeared first on MarkTechPost .",
+      "title": "Xiaomi’s MiLM Plus Releases PROVE: Perception-Aligned Object Removal Metrics RC-S and RC-T With a Real-World Video Benchmark",
+      "url": "https://www.marktechpost.com/2026/08/11/xiaomis-milm-plus-releases-prove-perception-aligned-object-removal-metrics-rc-s-and-rc-t-with-a-real-world-video-benchmark/",
+      "published_at": "2026-08-12T13:05:52+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Xiaomi’s MiLM Plus Releases PROVE: Perception-Aligned Object Removal Metrics RC-S and RC-T With a Real-World Video Benchmark",
+      "source_id": "marktechpost",
+      "source_title": "Xiaomi’s MiLM Plus Releases PROVE: Perception-Aligned Object Removal Metrics RC-S and RC-T With a Real-World Video Benchmark",
+      "source_url": "https://www.marktechpost.com/2026/08/11/xiaomis-milm-plus-releases-prove-perception-aligned-object-removal-metrics-rc-s-and-rc-t-with-a-real-world-video-benchmark/",
+      "support_type": "direct"
+    }
+  ]
+}

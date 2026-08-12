@@ -1,0 +1,65 @@
+{
+  "event_id": "daily_20260813_evt_133",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "美國通膨降至3.4%",
+  "context": "美國7月消費者物價年增率降至3.4%，較5月的三年新高4.2%回落，但整體物價水準仍偏高。能源價格已經低於4月底的高點，但汽油價格仍比伊朗戰爭前每加侖貴了將近1美元。",
+  "article_ids": [
+    "6cc3937953673f5fd240c8e04924b6ba41d406a869125ccf3ee27cae7af0fc7a",
+    "3e6240346aa4ec377af5cb69e8bbc296b9b5a763377c130dbc07f7bc7890b6c6",
+    "9451f33f97bcb32e1940a36ec74d59f87d4e0ec3afa88867414aacbce2b5cd04"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The war with Iran injected volatility into the oil and gas market, with prices rising and falling in concert with the conflict.",
+      "title": "July CPI Report Is Expected to Show Falling Energy Prices",
+      "url": "https://www.nytimes.com/2026/08/12/business/economy/energy-oil-prices-inflation.html",
+      "published_at": "2026-08-12T19:14:18+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Energy is cheaper than at its peak in late April, but gas is still nearly $1 a gallon more expensive than before the Iran war US consumer prices cooled slightly in July as the annualized inflation rate dipped down to 3.4%, though prices still remain higher than levels seen before the war with Iran. Though inflation decreased 0.7 percentage points in June during a brief ceasefire between the US and Iran that brought energy prices down, consumer prices have remained elevated. Price increases hit a three-year high in May, with annual inflation reaching 4.2%. Continue reading...",
+      "title": "US inflation cooled slightly to 3.4% in July but prices still elevated",
+      "url": "https://www.theguardian.com/business/2026/aug/12/inflation-data-july",
+      "published_at": "2026-08-12T20:39:46+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "美國7月消費者物價年增率降至3.4%，較5月三年新高4.2%回落，能源價格低於4月底高點但汽油仍比伊朗戰爭前貴近1美元。",
+      "source_id": "guardian_business",
+      "source_title": "US inflation cooled slightly to 3.4% in July but prices still elevated",
+      "source_url": "https://www.theguardian.com/business/2026/aug/12/inflation-data-july",
+      "support_type": "direct"
+    },
+    {
+      "claim": "伊朗戰事為石油與天然氣市場帶來波動，價格隨衝突起伏。",
+      "source_id": "nyt_business",
+      "source_title": "July CPI Report Is Expected to Show Falling Energy Prices",
+      "source_url": "https://www.nytimes.com/2026/08/12/business/economy/energy-oil-prices-inflation.html",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "美國7月消費者物價年增率降至3.4%，較5月的三年新高4.2%回落，但整體物價水準仍偏高。\n\n能源價格已經低於4月底的高點，但汽油價格仍比伊朗戰爭前每加侖貴了將近1美元。與伊朗的戰事，先前為石油與天然氣市場帶來不小的波動，價格隨著衝突起伏漲跌。\n\n—— 本則整理自 The New York Times、The Guardian 於 2026 年 8 月 12 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國7月消費者物價年增率降至3.4%，較5月的三年新高4.2%回落，但整體物價水準仍偏高。能源價格已經低於4月底的高點，但汽油價格仍比伊朗戰爭前每加侖貴了將近1美元。與伊朗的戰事，先前為石油與天然氣市場帶來不小的波動，價格隨著衝突起伏漲跌。\n\n本則整理自 The New York Times、The Guardian 於 2026 年 8 月 12 日發佈的報導。",
+  "voice_text": "美國7月的通膨，降到3.4%了——比5月那波三年新高4.2%，緩和了一些。不過整體物價水準，還是偏高。能源價格，已經低於4月底的高點，但汽油價格，還是比伊朗戰爭前，每加侖貴了將近1美元。這場與伊朗的戰事，先前讓石油和天然氣市場，跟著衝突起伏，一路動盪。"
+}

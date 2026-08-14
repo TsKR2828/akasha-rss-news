@@ -1,0 +1,69 @@
+{
+  "event_id": "daily_20260815_evt_055",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Watch: What happens if Luigi Mangione pleads guilty today?",
+  "context": "Attorneys for Mangione, who is accused of killing United Healthcare CEO Brian Thompson, are meeting federal prosecutors on Friday.",
+  "article_ids": [
+    "5c18b38195ebc49500589491a153961a003ef68fec29eb33e94706a2365f709b",
+    "c34d278af3bb41ae5af03f3387caffe679c5078bb84010a6fe48fb62e4e2caff",
+    "86e24e27f58f5e44d75c944a194e3825f57a3f5bdb219611388e683d0bcdeef6"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Attorneys for Mangione, who is accused of killing United Healthcare CEO Brian Thompson, are meeting federal prosecutors on Friday.",
+      "title": "Watch: What happens if Luigi Mangione pleads guilty today?",
+      "url": "https://www.bbc.co.uk/news/videos/c36dyep3k1ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-14T09:19:19+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The 28-year-old admits to shooting Brian Thompson in federal court but still faces separate state charges.",
+      "title": "Mangione pleads guilty to federal charges in UnitedHealthcare CEO killing",
+      "url": "https://www.aljazeera.com/news/2026/8/14/mangione-pleads-guilty-to-federal-charges-in-unitedhealthcare-ceo-killing?traffic_source=rss",
+      "published_at": "2026-08-14T23:43:15+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Watch: What happens if Luigi Mangione pleads guilty today?",
+      "source_id": "bbc_world",
+      "source_title": "Watch: What happens if Luigi Mangione pleads guilty today?",
+      "source_url": "https://www.bbc.co.uk/news/videos/c36dyep3k1ko?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Mangione pleads guilty to federal charges in UnitedHealthcare CEO killing",
+      "source_id": "aljazeera_all",
+      "source_title": "Mangione pleads guilty to federal charges in UnitedHealthcare CEO killing",
+      "source_url": "https://www.aljazeera.com/news/2026/8/14/mangione-pleads-guilty-to-federal-charges-in-unitedhealthcare-ceo-killing?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Luigi Mangione pleads guilty in UnitedHealthcare CEO’s killing",
+      "source_id": "aljazeera_all",
+      "source_title": "Luigi Mangione pleads guilty in UnitedHealthcare CEO’s killing",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/14/luigi-mangione-pleads-guilty-in-unitedhealthcare-ceos-killing?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

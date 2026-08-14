@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260815_evt_271",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Son of former Mexican president says US revoked his visa - Reuters",
+  "context": "Son of former Mexican president says US revoked his visa Reuters",
+  "article_ids": [
+    "d22011a7e72fa8f2ef49f3781d3355583153c6dc30f2e2d378135d10dcca0b87",
+    "5512d94430261e06fe23c02c160ace6510a2d4cb1b91703bda160f7b1698bca6"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Son of former Mexican president says US revoked his visa Reuters",
+      "title": "Son of former Mexican president says US revoked his visa - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa3Y1Vi1LUVJ3aWlaQVNWaEMtcUJ0YWowZ3dwSUVIZm05d2ZWbkk5OXUxU2Q0RkdodmR2a2xuamRwYXJWMjZWMVVpRV84YlhyVEg4Q0ZhOG1RY0xBSzVseXhzeTY4bkc3ZTRHMllZVDB2UU9EQm56TnpPck5WYmNNR1JkZnVCYkJwbUFZMkwtY0lPM2JIdERWa1VaLXRjYTh3OVNCN1lMOA?oc=5",
+      "published_at": "2026-08-15T00:43:55+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The US has not confirmed the revocation which comes amid crackdown on Mexican politicians with alleged ties to cartels.",
+      "title": "Son of Mexico’s former president AMLO alleges US revoked his visa",
+      "url": "https://www.aljazeera.com/news/2026/8/14/son-of-mexicos-former-president-amlo-alleges-us-revoked-his-visa?traffic_source=rss",
+      "published_at": "2026-08-15T03:44:43+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Son of former Mexican president says US revoked his visa - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Son of former Mexican president says US revoked his visa - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOa3Y1Vi1LUVJ3aWlaQVNWaEMtcUJ0YWowZ3dwSUVIZm05d2ZWbkk5OXUxU2Q0RkdodmR2a2xuamRwYXJWMjZWMVVpRV84YlhyVEg4Q0ZhOG1RY0xBSzVseXhzeTY4bkc3ZTRHMllZVDB2UU9EQm56TnpPck5WYmNNR1JkZnVCYkJwbUFZMkwtY0lPM2JIdERWa1VaLXRjYTh3OVNCN1lMOA?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Son of Mexico’s former president AMLO alleges US revoked his visa",
+      "source_id": "aljazeera_all",
+      "source_title": "Son of Mexico’s former president AMLO alleges US revoked his visa",
+      "source_url": "https://www.aljazeera.com/news/2026/8/14/son-of-mexicos-former-president-amlo-alleges-us-revoked-his-visa?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

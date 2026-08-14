@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260815_evt_043",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+  "context": "Thousands of sailors on the USS Abraham Lincoln have reportedly faced food shortages and broken plumbing, with some considering jumping overboard.",
+  "article_ids": [
+    "2ea958465429640de5cc25fcf0786b8beb3a5a3713df98e2ca37e146b20feb2b",
+    "26f048c99846c6742eecf4f37bae5588e56ff56ffc7779367a37597f15716a27"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Thousands of sailors on the USS Abraham Lincoln have reportedly faced food shortages and broken plumbing, with some considering jumping overboard.",
+      "title": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+      "url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-14T07:06:23+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The Pacific-based aircraft carrier USS George Washington has begun heading toward the Middle East as reports have emerged of mental health and supply issues aboard the long-deployed USS Abraham Lincoln.",
+      "title": "New aircraft carrier heads toward Mideast after reports of issues on long-deployed USS Lincoln",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5931183/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln",
+      "published_at": "2026-08-14T14:31:29+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+      "source_id": "bbc_world",
+      "source_title": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+      "source_url": "https://www.bbc.co.uk/news/articles/cyvl2d5j52lo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "New aircraft carrier heads toward Mideast after reports of issues on long-deployed USS Lincoln",
+      "source_id": "npr_world",
+      "source_title": "New aircraft carrier heads toward Mideast after reports of issues on long-deployed USS Lincoln",
+      "source_url": "https://www.npr.org/2026/08/14/nx-s1-5931183/new-aircraft-carrier-heads-toward-mideast-after-reports-of-issues-on-long-deployed-uss-lincoln",
+      "support_type": "direct"
+    }
+  ]
+}

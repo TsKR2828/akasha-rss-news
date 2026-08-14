@@ -1,0 +1,98 @@
+{
+  "event_id": "daily_20260815_evt_123",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "尼日遭綁美籍傳教士獲釋",
+  "context": "美籍傳教士凱文・萊德奧特（Kevin Rideout），去年10月在尼日首都尼阿美（Niamey）自家門外遭綁架，如今已獲釋，目前由美國官員照顧。他隸屬福音派宣教機構SIM International，是一名飛行員，遭囚禁長達九個月。",
+  "article_ids": [
+    "290e0983f9049b280bbcd16d76c68f79d2a9aff9c899d3dd9a556e85ef8c4ca3",
+    "8246a8329e4cf9825361a87223d75b0782ce2e27216763ece2840f5b2819a4e7",
+    "e4943b662549a8c2c99ec35b99cc05aebbe73cbea8b21ee241cb0451bea351a8",
+    "f14edfb6ff580e17ce559c85473437a83166ab815d900185e03665196fd711da"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "American missionary kidnapped in Niger released, NYT and Christian organization say Reuters",
+      "title": "American missionary kidnapped in Niger released, NYT and Christian organization say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORWYydU83djBHbmRCaXgxMWZ3ZzFlTWgyb0I2VGRJQ1owcGpmY09sQXFlYWRaRG85bHhyTklvclgzLURaLUNua3JnQkQ1UldXc2o2bWNoR05pdXUzRm5sNlVIcTBvMFJob1hxb0xCVTA5NWNJOV84emNfM0VNRzFSUmRxLXExeWZSbFJrVnJkZkluaEY2bnI3NnBBa0RqREpuREhiVXd4THBCdktRNWtxMjRhNA?oc=5",
+      "published_at": "2026-08-14T16:40:02+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Kevin Rideout, who was kidnapped outside his home in the capital last October, is now with US officials.",
+      "title": "US missionary released following kidnap in Niger, Christian group says",
+      "url": "https://www.bbc.co.uk/news/articles/ckg40jvvkp7o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-14T18:18:02+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Kevin Rideout \"is in good health in the care of US officials,\" SIM International said in a statement, adding he would soon be reunited with his family.",
+      "title": "U.S. missionary who was kidnapped in Niger is released",
+      "url": "https://www.npr.org/2026/08/14/nx-s1-5931225/kidnapped-us-missionary-released",
+      "published_at": "2026-08-14T20:11:50+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Kevin Rideout, a pilot with the evangelical missionary agency SIM International, was abducted in the capital, Niamey.",
+      "title": "US missionary kidnapped in Niger released after nine months in captivity",
+      "url": "https://www.aljazeera.com/news/2026/8/14/us-missionary-kidnapped-in-niger-released-after-nine-months-in-captivity?traffic_source=rss",
+      "published_at": "2026-08-14T20:54:30+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "美籍傳教士凱文・萊德奧特在尼日遭綁架後獲釋。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "American missionary kidnapped in Niger released, NYT and Christian organization say - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORWYydU83djBHbmRCaXgxMWZ3ZzFlTWgyb0I2VGRJQ1owcGpmY09sQXFlYWRaRG85bHhyTklvclgzLURaLUNua3JnQkQ1UldXc2o2bWNoR05pdXUzRm5sNlVIcTBvMFJob1hxb0xCVTA5NWNJOV84emNfM0VNRzFSUmRxLXExeWZSbFJrVnJkZkluaEY2bnI3NnBBa0RqREpuREhiVXd4THBCdktRNWtxMjRhNA?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "萊德奧特去年十月在尼日首都尼阿美自家門外遭綁架。",
+      "source_id": "bbc_world",
+      "source_title": "US missionary released following kidnap in Niger, Christian group says",
+      "source_url": "https://www.bbc.co.uk/news/articles/ckg40jvvkp7o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "萊德奧特目前身體健康，由美國官員照顧，即將與家人團聚。",
+      "source_id": "npr_world",
+      "source_title": "U.S. missionary who was kidnapped in Niger is released",
+      "source_url": "https://www.npr.org/2026/08/14/nx-s1-5931225/kidnapped-us-missionary-released",
+      "support_type": "direct"
+    },
+    {
+      "claim": "萊德奧特是福音派宣教機構SIM International的飛行員，遭囚禁九個月。",
+      "source_id": "aljazeera_all",
+      "source_title": "US missionary kidnapped in Niger released after nine months in captivity",
+      "source_url": "https://www.aljazeera.com/news/2026/8/14/us-missionary-kidnapped-in-niger-released-after-nine-months-in-captivity?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "美籍傳教士凱文・萊德奧特（Kevin Rideout），去年10月在尼日首都尼阿美（Niamey）自家門外遭綁架，如今已經獲釋。\n\n萊德奧特是福音派宣教機構SIM International的一名飛行員，遭囚禁長達九個月，目前身體健康，由美國官員照顧，即將與家人團聚。\n\n—— 本則整理自 Reuters、BBC、NPR、Al Jazeera 於 2026 年 8 月 14 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "美籍傳教士凱文・萊德奧特（Kevin Rideout），去年10月在尼日首都尼阿美（Niamey）自家門外遭綁架，如今已經獲釋。萊德奧特是福音派宣教機構SIM International的一名飛行員，遭囚禁長達九個月，目前身體健康，由美國官員照顧，即將與家人團聚。\n\n本則整理自 Reuters、BBC、NPR、Al Jazeera 於 2026 年 8 月 14 日發佈的報導。",
+  "voice_text": "被綁架九個月的美籍傳教士，獲釋了。他是飛行員凱文・萊德奧特（Kevin Rideout），去年十月在尼日首都尼阿美，自己家門外被綁走。現在他身體健康，由美國官員照顧，很快就能和家人團聚。"
+}

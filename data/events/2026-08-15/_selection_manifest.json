@@ -1,0 +1,1741 @@
+{
+  "date": "2026-08-15",
+  "selected_event_ids": [
+    "daily_20260815_evt_255",
+    "daily_20260815_evt_285",
+    "daily_20260815_evt_123",
+    "daily_20260815_evt_259",
+    "daily_20260815_evt_299",
+    "daily_20260815_evt_003",
+    "daily_20260815_evt_033",
+    "daily_20260815_evt_100",
+    "daily_20260815_evt_116",
+    "daily_20260815_evt_005",
+    "daily_20260815_evt_017",
+    "daily_20260815_evt_001",
+    "daily_20260815_evt_021",
+    "daily_20260815_evt_025",
+    "daily_20260815_evt_037",
+    "daily_20260815_evt_045",
+    "daily_20260815_evt_111",
+    "daily_20260815_evt_125"
+  ],
+  "dropped": [
+    {
+      "event_id": "daily_20260815_evt_043",
+      "headline": "Conditions on US aircraft carrier at sea for more than 250 days raise alarms",
+      "selection_score": 53,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_055",
+      "headline": "Watch: What happens if Luigi Mangione pleads guilty today?",
+      "selection_score": 53,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_271",
+      "headline": "Son of former Mexican president says US revoked his visa - Reuters",
+      "selection_score": 53,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_185",
+      "headline": "China calls Taiwan's annual military drills a 'wasteful charade' - Reuters",
+      "selection_score": 45,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_014",
+      "headline": "NEWSLETTER: Trump reckons with a war that won’t leave him alone - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_034",
+      "headline": "World War Two memorial in Washington vandalized with bubbles and graffiti - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_041",
+      "headline": "Iran war a boon for China's e-trucks, fuelling export surge - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_068",
+      "headline": "South Korea's Lee favours four-year presidency with re-election permitted - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_071",
+      "headline": "Reform UK's Nigel Farage to avoid election count against Count Binface - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_073",
+      "headline": "India's Tata Motors PV shares fall after profit plunges, warns on margins - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_152",
+      "headline": "Attacks on healthcare in conflict zones averaging more than four a day in 2026, World Health Organization says - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_153",
+      "headline": "Russia dismisses idea of Black Sea ceasefire - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_170",
+      "headline": "Lebanon's creative talent suffers as Iran war squeezes Gulf economies - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_173",
+      "headline": "650,000 refugees in South Sudan could lose food aid within weeks due to funding squeeze, say UN agencies - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_279",
+      "headline": "Zambia resumes vote counting after election officials attacked - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_300",
+      "headline": "Yemen government says Houthi missiles kill at least four civilians in port city - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_048",
+      "headline": "Brazil opens reciprocity process against US over tariffs - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_051",
+      "headline": "White House says transshipped goods cost up to $26 billion in lost tariffs - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_063",
+      "headline": "Japan's July core inflation seen at 1.8% on higher energy costs - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_077",
+      "headline": "Gold rises on weaker dollar as inflation data cements rate-hold bets - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_105",
+      "headline": "India's wholesale inflation slows marginally to 9.78% in July - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_165",
+      "headline": "Cooler inflation data may force Warsh's divided Fed to hold the line on rates - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_281",
+      "headline": "US raises pressure on EU to 'deliver' on non-tariff trade commitments - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_199",
+      "headline": "Russia stance will be defended in court, pledges World Athletics chief Coe",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_203",
+      "headline": "Pakistan PM’s ‘red line’ warning to India over water treaty",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_262",
+      "headline": "Philippines drug war victims seek justice through truth commission",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_269",
+      "headline": "What’s next for far-right Reform UK after Farage’s by-election win?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_272",
+      "headline": "Analysis: Israel’s government can’t disown West Bank settler violence",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_295",
+      "headline": "Art offers young Gaza survivors solace and escape from war’s devastation",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_284",
+      "headline": "July Retail Sales Notch Biggest Drop in Over a Year",
+      "selection_score": 28,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_128",
+      "headline": "RM, a Superstar With BTS, Gets His Feet Wet As an Art Curator",
+      "selection_score": 23,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_007",
+      "headline": "Romania shuts only nuclear plant as heat causes huge drop in Danube River level",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_010",
+      "headline": "Palestinians told to leave homes in village where Israeli settlers besieged houses",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_013",
+      "headline": "BBC Verify speaks to woman who filmed ICE agent pointing gun at her",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_019",
+      "headline": "UAE says Iran attacked two ADNOC vessels in Strait of Hormuz; no injuries - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_020",
+      "headline": "Are global oil stocks big enough to weather another six months of US-Iran war? - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_022",
+      "headline": "UK passenger train derailment in southeast England injures 11 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_023",
+      "headline": "Trump allows Navy to build ships abroad, orders return to steam catapults on carriers - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_026",
+      "headline": "Engine parts smashed Ryanair window that man's head was sucked out of, report says",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_027",
+      "headline": "North Korea denounces upcoming US-South Korea drills, vows stronger nuclear deterrence - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_028",
+      "headline": "US says it can keep naval blockade on Iran 'indefinitely,' vows more economic pressure - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_029",
+      "headline": "Nubank's profit crosses $1 billion, beating estimates; shares jump - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_030",
+      "headline": "Rate hike bets leave yen's post-intervention gains at BOJ's mercy - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_031",
+      "headline": "Kyrgyz president says he will run for a second term - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_036",
+      "headline": "New Zealand manufacturing activity expands at slower pace in July amid cost pressures - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_038",
+      "headline": "US securities regulator cancels meeting to vote on crypto rules - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_040",
+      "headline": "US producer prices unchanged in July, further dimming rate hike odds - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_042",
+      "headline": "'Our resources, our prices': Indonesia's Prabowo announces new commodity bourse - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_044",
+      "headline": "Cook Islands PM's party likely to retain parliament in preliminary results - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_046",
+      "headline": "Bessent says US to apply measures never seen on Iran - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_047",
+      "headline": "Australia's Albanese says AUKUS remains 'full steam ahead' after Trump call - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_050",
+      "headline": "Japan may see more yen intervention, faster BOJ rate hikes, ex-top FX diplomat says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_053",
+      "headline": "Jared Kushner may visit Israel next week for talks on Gaza, source says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_054",
+      "headline": "Japan's record rains strand thousands at Narita airport; kill eight - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_056",
+      "headline": "Oil rises after US threatens indefinite blockade of Iran; set for weekly gains - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_057",
+      "headline": "Dollar falls on surprise drop in US retail sales - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_059",
+      "headline": "Indian solar mission's new findings throw light on enduring Sun mysteries",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_060",
+      "headline": "Indian shares end week lower as higher crude tempers risk appetite - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_061",
+      "headline": "Oil prices rally as global stocks retreat - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_062",
+      "headline": "Fuel oil from Malaysia PRefChem refinery heads to US for first time since 2023 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_065",
+      "headline": "Indian rupee logs weekly decline, with RBI intervention curbing losses - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_066",
+      "headline": "Chinese chipmaker SMIC increases prices on strong AI demand - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_069",
+      "headline": "Fire effects cleared up at Russian port of Ust-Luga after drone attack, governor says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_070",
+      "headline": "Hormuz shipping traffic capped amid competing claims from US and Iran - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_072",
+      "headline": "India's Jharkhand state CM urges Modi to rethink mining bill, citing revenue hit - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_078",
+      "headline": "AI-driven surge in bond yields could be next risk for markets and growth - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_079",
+      "headline": "Indian central bank likely intervenes to support rupee, traders say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_080",
+      "headline": "China rejects New Zealand spy allegations as false - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_081",
+      "headline": "Nicole Kidman opens up about divorce from Keith Urban – and ‘throwing my career away’ for Tom Cruise",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_082",
+      "headline": "Morning Bid: Yen stuck in twilight zone - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_083",
+      "headline": "Air India A320 briefly lost key flight controls, Airbus analysis shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_084",
+      "headline": "Russian share of India's oil imports surges to record high in July - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_086",
+      "headline": "The look of love: what to wear to a summer wedding",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_087",
+      "headline": "KKR-backed LEAP India falls in trading debut, valued at $725 million - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_088",
+      "headline": "Volodymyr Zelenskiy News | Today's Latest Stories - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_090",
+      "headline": "Philippine president says joint oil and gas exploration with China a 'distinct possibility' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_093",
+      "headline": "BOJ eyeing September rate hike, faster pace of tightening, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_095",
+      "headline": "Chinese humanoid robot maker Unitree powers up for stellar Shanghai debut - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_097",
+      "headline": "‘A long hot summer of copy, paste on social media’: why everything is kinda chic now",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_098",
+      "headline": "The Beverly Hills Housewife by James Cahill review – a trip inside Hockney’s world",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_101",
+      "headline": "Israeli settlers divert Palestinian water to fill West Bank pool - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_102",
+      "headline": "Philippine president says he has yet to decide who to back as successor - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_104",
+      "headline": "Taiwan parliament approves holding of three referendums, including on caning sex criminals - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_106",
+      "headline": "In South Korea, some savour last season of legal dog meat - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_109",
+      "headline": "Why is Drake barking like a dog? Six things you need to know about the rapper’s midlife pivot",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_110",
+      "headline": "Something Wile E this way comes: how the Looney Toons reboot movie came back from the dead",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_114",
+      "headline": "以「降雨量」決定菜單 巴西餐廳摘米其林三星",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_115",
+      "headline": "Indian electronics firm Eureka investigating findings of child labour at supplier - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_118",
+      "headline": "Teens who fled Venezuela after deadly quakes caught in another disaster in Colombia",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_119",
+      "headline": "Joseph Morpurgo: Highlander 70 review – a dork’s last day at school is one to remember",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_120",
+      "headline": "UK parliamentary standards probe into Reform UK leader Farage listed as active - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_121",
+      "headline": "South African rand holds firm amid cooling US data, Middle East uncertainty - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_122",
+      "headline": "US says dozens of countries helped China dodge Trump's tariffs",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_124",
+      "headline": "Russia jails man for 23 years for spying for Poland - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_126",
+      "headline": "Rebecca Perry: ‘Lorca hit me like a bolt of lightning’",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_137",
+      "headline": "13兒少性侵案過追訴期遭駁回 憲法法庭裁定違憲",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_142",
+      "headline": "藍白放行無人機預算 卓榮泰9至12月薪資遭全數凍結",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_144",
+      "headline": "AI boom predicted to drive Taiwan's economy to grow fastest in four decades - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_145",
+      "headline": "Earnings revival, counter-AI trade should boost Indian equities into 2027, says Carnelian Asset - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_146",
+      "headline": "立院表決公視預算凍結2億 TaiwanPlus經費減列2億【涉己新聞】",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_148",
+      "headline": "‘I felt so inspired’: Guardian readers on trying Homer’s epics after seeing The Odyssey",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_149",
+      "headline": "‘I’ve never done anything like this in my life’: Marina Abramović on making art with balloons",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_150",
+      "headline": "Pound set for weekly rise after better than expected GDP data - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_154",
+      "headline": "Fortescue's Super Special Fines iron ore stocks at China ports at five-week high, traders' data shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_157",
+      "headline": "Air Canada expects record September, October revenue as premium passengers avoid summer heat - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_158",
+      "headline": "Russia seeks answers from US about alleged support for Ukrainian attacks, Lavrov says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_159",
+      "headline": "'Unprecedented' rain in Japan kills eight people",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_160",
+      "headline": "Assad-era officer convicted in Austria returns to Syria a free man, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_163",
+      "headline": "Stolen Matisse artworks recovered by police in Brazil",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_166",
+      "headline": "Add to playlist: the heartbreak post-mortems of Cape Town’s Rowlene and the week’s best new tracks",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_167",
+      "headline": "Volcanic raunch hits Edinburgh, blooms sweep Brussels and Henri does the can-can: the week in art",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_168",
+      "headline": "US firms that kept DEI policies despite ‘go woke, go broke’ threats thrived",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_169",
+      "headline": "Nigeria's Dangote refinery plans retail-focused IPO, no foreign listing for now - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_171",
+      "headline": "波蘭重啟燃油補貼　平抑汽柴油價格",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_174",
+      "headline": "投資人看好Anthropic IPO破紀錄　估值至少2兆美元",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_175",
+      "headline": "Stablecoin issuer Tether says KPMG US has audited its 2025 statements - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_176",
+      "headline": "India's forex reserves climb past $700 billion on robust inflows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_177",
+      "headline": "Two dead after fire at plastics recycling plant in India's Telangana state - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_178",
+      "headline": "I’m a neuroscientist. Here’s why our brains need pop concerts | Bala Subramaniam",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_181",
+      "headline": "參與250週年國慶系列活動　林昶佐與美國大使同框",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_182",
+      "headline": "Indonesia's Prabowo proposes 'expansive' budget for 2027 with small deficit - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_183",
+      "headline": "Instagram accounts fuelling Ceuta crisis with paid advice for help to cross",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_184",
+      "headline": "法國熱浪帶動冷氣需求　中國貨熱銷但有多國品牌搶市",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_186",
+      "headline": "印證俄羅斯多元表象不再　流亡反戰人士納德茲丁：政治紅線已位移",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_187",
+      "headline": "憂依賴中國AI模型　共和黨參議員籲川普扶植美企",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_189",
+      "headline": "美徵無人機關稅台適用15% 我業者增銷美優勢、盼技術合作",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_190",
+      "headline": "台美海巡展開2週聯合訓練 提升海上執法能力反制共軍艦艇",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_191",
+      "headline": "前電視製作人李能謙涉共諜案 北檢追加起訴3嫌疑協助情蒐",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_192",
+      "headline": "兒少性侵追訴權時效舊法違憲 憲法法庭判11案發回重審",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_193",
+      "headline": "115年度總預算三讀通過 通案刪480億",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_194",
+      "headline": "立院通過3公投案 中選會估全成案擬增14億經費",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_195",
+      "headline": "Turkey cuts Russian oil imports as Black Sea export disruptions curb supplies, data shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_198",
+      "headline": "Wildfires in Europe, Mount Etna and Twinverclyde: photos of the day – Friday",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_201",
+      "headline": "A critical mauling: Brian Logan on comedy critics being portrayed as horrible snobs",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_202",
+      "headline": "尚比亞當局以暴力為由暫停大選計票　反對派宣稱勝選",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_204",
+      "headline": "川普稱完全控制荷姆茲海峽 伊朗反駁指未經許可不得通行",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_205",
+      "headline": "自民黨幹部擬參拜靖國神社　終戰紀念日罕見集體參拜",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_206",
+      "headline": "Builders unearth €9m gold stash sealed in walls of Belgian property",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_208",
+      "headline": "千葉豪雨釀逾1200輛泡水車　癱瘓交通難清理",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_209",
+      "headline": "排雲山莊改「上10休10」再開缺 高山工作環境徵才困難",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_210",
+      "headline": "法拉吉國會補選獲六成選票 垃圾桶伯爵得票逾26%",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_211",
+      "headline": "Alphabet投資SpaceX部位10年翻百倍　達約3兆元",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_212",
+      "headline": "陳幸妤揭趙建銘居家打針 台南衛生局赴診所調查",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_213",
+      "headline": "旅宿業首例跨國技術移工 台北晶華獲准聘37名印尼人力",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_214",
+      "headline": "主計總處上修經濟成長率 調整至11.05%創39年新高",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_215",
+      "headline": "日本千葉暴雨釀8死 12小時雨量達8月均值3倍",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_216",
+      "headline": "阿蘇中岳火山活動加劇 管制調升第三級限制入山",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_217",
+      "headline": "Brazil recovers Matisse paintings stolen from Sao Paulo library - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_218",
+      "headline": "中國科研船多次進入帛琉海域　引發安全擔憂",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_219",
+      "headline": "Italian police recover paintings by Cézanne, Renoir and Matisse after heist",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_220",
+      "headline": "影展濃縮貓咪影片精華 全美放映票房所得捐助慈善",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_221",
+      "headline": "12強及奧運資格賽在台舉辦 商圈協會估大巨蛋人潮增6成",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_222",
+      "headline": "夫妻間贈房離婚不列剩餘財產 專家籲附條件留保障",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_224",
+      "headline": "AI生成猥褻與私密影像入罪　新加坡強化網路保護",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_225",
+      "headline": "哥倫比亞強震逾280死　世界銀行撥款近64億救災",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_226",
+      "headline": "義大利銀髮師生共舞紅上電視 盼激勵同齡者活動身體",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_227",
+      "headline": "瘦瘦針掀減重藥物革命 停藥一年內恐復胖三分之二",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_228",
+      "headline": "日本公務員穿浴袍開線上記者會  被抓包旅館幽會",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_229",
+      "headline": "俄網站刊北韓女工團仲介廣告　稱擅長包飯捲團進團出",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_230",
+      "headline": "疑舉止有失體統　汶萊王妃遭剝奪王室頭銜",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_232",
+      "headline": "美大學設「網紅」學位教內容創作　批評者質疑課程價值",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_233",
+      "headline": "BP to develop offshore gasfield in Venezuela with firms linked to Trump administration",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_235",
+      "headline": "Belt and braces PM: what wearing suit braces says about Burnham",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_238",
+      "headline": "Hormuz traffic slows further after US threatens more economic pressure on Iran - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_242",
+      "headline": "Moment €9m worth of art stolen from Italy museum",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_247",
+      "headline": "馬克宏推15歲以下兒少禁用社媒　法國憲法委員會駁回",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_248",
+      "headline": "Spain investigates likely shooting of endangered 'grandmother' orca - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_252",
+      "headline": "Chad's president pardons main rival and opposition leader in jail - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_254",
+      "headline": "法國安樂死法案獲憲法機關裁定合憲　但須澄清部分條文",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_266",
+      "headline": "White House national security official Andy Baker to depart administration - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_267",
+      "headline": "FTSE 100 logs first weekly drop in five as miners retreat - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_268",
+      "headline": "Oil climbs on tanker attacks, US-Iran claims about Hormuz control - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_270",
+      "headline": "Canadian dollar heads for third straight weekly gain as yield spreads narrow - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_273",
+      "headline": "SEC filing shows Softbank initiates stake in Capital One; sells 71.5% of its Taiwan Semi holdings - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_275",
+      "headline": "Why is Selena Gomez being sued?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_276",
+      "headline": "Family affair: how pop-star siblings Audrey Hobert and Malcolm Todd stormed the charts in parallel",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_277",
+      "headline": "UK diplomats no longer get hardship bonus for being posted to Buenos Aires",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_280",
+      "headline": "India's Reliance to partner with Rolls-Royce on combat engine for fighter jets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_282",
+      "headline": "Two slicks appear in Gulf as huge oil spill off Oman threatens disaster - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_286",
+      "headline": "The week around the world in 20 pictures",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_288",
+      "headline": "Resolute, Guinea state miner launch gold joint venture - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_289",
+      "headline": "US wants Netanyahu to condemn settler siege in Palestinian village, officials say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_291",
+      "headline": "Afghan women tell the BBC their lives are unrecognisable after five years of Taliban rule",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_293",
+      "headline": "EXCLUSIVE: Libya's Haftar played key role in release of US hostage held by Islamic State, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_296",
+      "headline": "槍殺健保CEO引發兩極輿論　曼吉昂認罪恐判終身監禁",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_303",
+      "headline": "India opens nuclear sector to proven foreign technology - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_304",
+      "headline": "EXCLUSIVE FTC probes health records giant Epic Systems, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_004",
+      "headline": "IBM partners with OpenAI to bolster enterprise AI push",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_006",
+      "headline": "‘An American Daughter’ Review: Wendy Wasserstein’s Cautionary Tale",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_008",
+      "headline": "John Crowley, Author of Reality-Blurring Fantasy Novels Like ‘Little, Big,‘ Dies at 83",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_009",
+      "headline": "‘Mysterious Skin’: One of the Great Movies of the Early 2000s",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_011",
+      "headline": "Databricks wanted to raise $1B, investors wanted $15B. It settled on $5B at a $190B valuation.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_012",
+      "headline": "Readers Choose the Best Thrillers and Mysteries of the Century",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_015",
+      "headline": "Great Movie and TV Adaptations From 21st- Century Thrillers",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_016",
+      "headline": "U.S. ambassador slams Israeli settlers besieging home of Palestinian-American",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_018",
+      "headline": "Mark Zuckerberg’s AI Manifesto Is 6,500 Words—and Barely Says Anything",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_024",
+      "headline": "Hit hard by the earthquake in western Colombia, the mayor of Cali gets to work",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_032",
+      "headline": "Come for the Cottage in ‘Heated Rivalry.’ Stay for Everything Else.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_035",
+      "headline": "The Safety Reckoning Inside OpenAI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_039",
+      "headline": "Salvage Company Hoping to Sell Titanic Artifacts Challenges Court’s Role",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_052",
+      "headline": "5 Classical Music Albums You Can Listen to Right Now",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_076",
+      "headline": "‘It was lonely being a young queer artist’: Sam Smith on finding health, happiness – and their hazel-eyed fiance",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_089",
+      "headline": "TV tonight: Lydia West’s offbeat college campus murder mystery",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_092",
+      "headline": "Jimmy Fallon Reacts to Karoline Leavitt’s White House Exit",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_099",
+      "headline": "Post your questions for Robert Carlyle",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_113",
+      "headline": "Open Mike Eagle and Kenny Segal: Doomed! review – caustic, crushing breakup album flirts with catharsis",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_127",
+      "headline": "How the mob took Hollywood: the story of organized crime and the movies",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_129",
+      "headline": "How Thrillers Hook You With Their First Sentence",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_130",
+      "headline": "Children’s Picture Books About Sleep and Dreaming",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_131",
+      "headline": "How Jane Schoenbrun Has Fun With Horror (and Chicken) at Camp Miasma",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_132",
+      "headline": "In “The Bend in the River,” Robb Moss’s Old Friends Reflect on Aging",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_133",
+      "headline": "A ‘Schmigadoon!’ Cast Album and More Theater to Stream",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_134",
+      "headline": "Phoebe Bridgers Reaches New Heights With “Lost Weekend”",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_135",
+      "headline": "5 Children’s Movies to Stream Now",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_136",
+      "headline": "9 New Movies Our Critics Are Talking About This Week",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_151",
+      "headline": "People Are ‘Marrying’ Chatbots. These Lawmakers Want to Stop Them",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_156",
+      "headline": "From Europe to Asia, floods to heatwaves, world experiences weather shocks",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_161",
+      "headline": "These ‘Masturbation Consultants’ Were Hired to Pleasure Themselves With AI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_162",
+      "headline": "Sen. Ruben Gallego on handling of USS Lincoln conditions: 'That's not proper leadership'",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_164",
+      "headline": "8 Matisse Works, Looted from Library in Brazil, Are Recovered",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_172",
+      "headline": "Edinburgh Fringe: 8 Buzzy Shows to See",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_179",
+      "headline": "‘We get 200 tourists a day’: when your house becomes a TV star",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_180",
+      "headline": "Alien: Isolation 2 – another strong female protagonist stalked in a terrifying new world",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_188",
+      "headline": "Saudi Arabia announces start of Red Sea defence alliance: Will it work?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_200",
+      "headline": "Wagner Moura Puts Us on Trial in Edinburgh",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_207",
+      "headline": "When Is It OK to Give Up on a Book? Our Readers Have Thoughts.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_223",
+      "headline": "Brad Pitt’s Return to Drinking Is Not Unsafe, Experts Say",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_231",
+      "headline": "Meta’s ‘open’ AI, and a $250M deal gone very wrong",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_234",
+      "headline": "Hyperscalers might regret embracing natural gas if new forecast proves correct",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_236",
+      "headline": "Mutual defence: The alliances that preceded Turkiye-Pakistan-Saudi pact",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_237",
+      "headline": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_239",
+      "headline": "The Taliban has taken a terrible toll on the education of girls -- and boys as well",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_240",
+      "headline": "Kushner to visit Israel after Netanyahu rejects Gaza Board of Peace plan",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_241",
+      "headline": "Kog is going deeper to squeeze more inference out of GPUs",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_244",
+      "headline": "Ahmed al-Sharaa: A New Vision for Syria",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_249",
+      "headline": "Ellis Ludwig-Leone’s ‘Quiet Hours’ Highlights the Home Piano",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_250",
+      "headline": "Christy Knowings, Who Starred on ’90s TV Show ‘All That,’ Dies at 46",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_251",
+      "headline": "‘The party of the Cubans’: How Republicans courted a key South Florida vote",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_253",
+      "headline": "Qatar challenges AFC over open letter attacking FIFA President Infantino",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_256",
+      "headline": "Does Mark Zuckerberg really believe AI is ‘for everyone’?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_257",
+      "headline": "Five Horror Movies to Stream Now",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_258",
+      "headline": "Stavros Halkias Never Wanted to Get Political",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_260",
+      "headline": "Kristen Schaal: The Legend of Crystal Shell review – flighty Conchords comic is still kooking on gas",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_263",
+      "headline": "‘Lanterns’ Review: It’s Not Easy Being Green",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_264",
+      "headline": "Google will now allow users to remove visible watermark from its AI generations",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_265",
+      "headline": "Books Our Editors Loved This Week",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_274",
+      "headline": "Liverpool to sell minority stake to consortium including Jeff Bezos",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_278",
+      "headline": "PBS station fears losing 50TB of data after being ghosted by cloud storage provider",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_283",
+      "headline": "‘The Rivals of Amziah King’ Review: The Songs and the Bees",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_287",
+      "headline": "British cyclist Finlay Tarling dies in Tour of Portugal crash aged 19",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_290",
+      "headline": "Parkinson’s Made Daniel Barenboim Step Back. But He’s on the Conductor’s Podium Again.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_292",
+      "headline": "CEO pay skyrockets in 2025 amid growing income inequality in the US",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_294",
+      "headline": "Italian police recover stolen paintings worth over $10m",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_297",
+      "headline": "Raoul Vaneigem, Whose Manifesto Inspired 1968 Revolt in France, Dies at 92",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_301",
+      "headline": "New aerial video reveals huge scale of oil spill off Oman",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_302",
+      "headline": "Jason Arday, Cambridge Professor Accused of Plagiarism, Reported Dead",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_140",
+      "headline": "Capturing Essence Virginia Burt Designs",
+      "selection_score": 3,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_002",
+      "headline": "SUUEL Living / CAAM Arquitectos",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_049",
+      "headline": "Super JINJIANG / COLORFULL YUJING DESIGN",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_058",
+      "headline": "Kyoto Minami Kaikan Movie Theater / Tato Architects",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_064",
+      "headline": "The Tale of Bricks House / Earthscape Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_067",
+      "headline": "Create a Reasoning-Focused LLM: A Practical Guide to Streaming, Curating, and Fine-Tuning the SupraLabs Reasoning Corpus",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_074",
+      "headline": "All-Inclusive Escapes: 7 Unbuilt Hotel Projects from the ArchDaily Community",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_075",
+      "headline": "Fisher & Paykel offers elevated simplicity with Minimal Style kitchen appliances",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_085",
+      "headline": "Busta Studio evokes the elegance of New York townhouses for Kimpton Ashbel hotel",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_091",
+      "headline": "Heatherwick Studio Unveils New Images of Louisville's Belvedere Riverfront Plaza Redesign",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_094",
+      "headline": "Meet Needle 2: An Open 45M-Parameter Tool-Calling Model That Ships as a 14MB Binary and Runs a Full Session in 28MB of RAM",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_096",
+      "headline": "Children’s House Brunnengasse / Bernardo Bader Architekten",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_103",
+      "headline": "Pelli Clarke & Partners Completes Lola Mora Cultural Center in San Salvador de Jujuy, Argentina",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_107",
+      "headline": "Industrialized Steel Construction: Lessons From a Naval Foundry in Thailand",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_108",
+      "headline": "Holiday House in Rågeleje / Jesper Kusk Arkitekter",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_112",
+      "headline": "Applying Exposed Cork in Interior Architecture",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_117",
+      "headline": "Research finds Star Homes housing reduces malaria in children by 44 per cent",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_138",
+      "headline": "Wildlands: Stories from the Wildland Urban Interface",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_139",
+      "headline": "2026 Suseong International Architecture & Landscape Visual Artwork Competition",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_141",
+      "headline": "Music and Architecture in Harmony Opera Houses and Concert Halls of Europe, 1672-2022",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_143",
+      "headline": "While Away An Architect’s Travel Sketches",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_147",
+      "headline": "Typsa Arquitectura weaves library in Luanda around existing trees",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_155",
+      "headline": "Mosley Thorold mixes salvaged and natural materials in De Beauvoir home renovation",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_196",
+      "headline": "In Campo, Solo Exhibition by Hick Duarte / Clube",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_197",
+      "headline": "Eight products that showcase the versatility of wood",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_245",
+      "headline": "Linea House / Instinto Estudio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_246",
+      "headline": "Ecological reimagining of former Lake District mill among projects from University of Northumbria",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_261",
+      "headline": "Populous completes Buffalo Bills stadium in New York",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_298",
+      "headline": "Instagram redesigns its wordmark for first time in a decade",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260815_evt_243",
+      "headline": "Tech Visionary Says the Big AI Labs Don’t Get What People Want",
+      "selection_score": -17,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

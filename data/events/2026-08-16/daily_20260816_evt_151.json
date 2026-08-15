@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260816_evt_151",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Zimbabwean boat accident death toll rises to 68 as more bodies recovered - Reuters",
+  "context": "Zimbabwean boat accident death toll rises to 68 as more bodies recovered Reuters",
+  "article_ids": [
+    "87e968501b5a05526891ffd9a7603ec3c173bb83ad0215753fd86d7136203e80",
+    "db4ab9e1ef6e50309f75fd8ddf8d2e7637984d6aef5b396a236e00b823e67585"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Zimbabwean boat accident death toll rises to 68 as more bodies recovered Reuters",
+      "title": "Zimbabwean boat accident death toll rises to 68 as more bodies recovered - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYklMWEVwQkRWYmJKM2hIai1sLXhzY3psSElpeXNRMER4Z0lURWxudTVNMTF4ZURDRTRfcmRyTVF4LU5QSzZZVURkMGQzQUJKWlh3RWIta3VzVGtGUllIdVNSZlhzdFVRdXN5ZjFvVmFjbkR6REJoYzI0MGR0VkxhVFg5THZockF6NXRhZFF2b2lGMFVfbTFwQl9uc1pHUF9GVFd5XzB5UlFQMElRdmthVEFuTG5uZw?oc=5",
+      "published_at": "2026-08-16T00:14:21+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Police say 26 more bodies have been recovered from Lake Kariba after the overloaded vessel capsized on Tuesday.",
+      "title": "Death toll from Zimbabwe ferry disaster rises to 72",
+      "url": "https://www.aljazeera.com/news/2026/8/15/death-toll-from-zimbabwe-ferry-disaster-rises-to-69?traffic_source=rss",
+      "published_at": "2026-08-16T03:10:06+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Zimbabwean boat accident death toll rises to 68 as more bodies recovered - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Zimbabwean boat accident death toll rises to 68 as more bodies recovered - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQYklMWEVwQkRWYmJKM2hIai1sLXhzY3psSElpeXNRMER4Z0lURWxudTVNMTF4ZURDRTRfcmRyTVF4LU5QSzZZVURkMGQzQUJKWlh3RWIta3VzVGtGUllIdVNSZlhzdFVRdXN5ZjFvVmFjbkR6REJoYzI0MGR0VkxhVFg5THZockF6NXRhZFF2b2lGMFVfbTFwQl9uc1pHUF9GVFd5XzB5UlFQMElRdmthVEFuTG5uZw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Death toll from Zimbabwe ferry disaster rises to 72",
+      "source_id": "aljazeera_all",
+      "source_title": "Death toll from Zimbabwe ferry disaster rises to 72",
+      "source_url": "https://www.aljazeera.com/news/2026/8/15/death-toll-from-zimbabwe-ferry-disaster-rises-to-69?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

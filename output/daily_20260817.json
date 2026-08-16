@@ -1,0 +1,1974 @@
+{
+  "reportId": "daily_20260817",
+  "date": "2026-08-17",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-08-17T05:18:37.820347+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260817_evt_059",
+          "headline": "烏克蘭空襲俄羅斯致6死",
+          "context": "烏克蘭週日對俄羅斯發動大規模無人機攻擊，出動數百架無人機，是這場戰爭以來規模最大的空襲之一，造成至少6人死亡。俄方稱擊落822架無人機，其中一波攻擊擊中了一座物流倉儲中心。",
+          "beat": "INTL",
+          "thread_text": "烏克蘭週日對俄羅斯發動了這場戰爭以來規模最大的空襲之一，出動數百架無人機，造成至少6人死亡。\n\n俄羅斯方面表示，一共擊落了822架無人機；其中一波攻擊擊中了一座 Wildberries 物流倉儲中心。\n\n—— 本則整理自 NPR、Al Jazeera 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "烏克蘭週日對俄羅斯發動了這場戰爭以來規模最大的空襲之一，出動數百架無人機，造成至少6人死亡。俄羅斯方面表示，一共擊落了822架無人機；其中一波攻擊擊中了一座 Wildberries 物流倉儲中心。\n\n本則整理自 NPR、Al Jazeera 於 2026 年 8 月 16 日發佈的報導。",
+          "voice_text": "烏克蘭這個週日對俄羅斯發動了大規模空襲。出動數百架無人機，是這場戰爭打到現在規模最大的幾次攻擊之一，至少6人在攻擊中喪生。俄羅斯說，他們一共擊落了822架無人機，其中一波攻擊打中了一座物流倉儲中心。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "烏克蘭週日對俄羅斯發動了這場戰爭以來規模最大的空襲之一，出動數百架無人機，造成至少6人死亡。\n\n俄羅斯方面表示，一共擊落了822架無人機；其中一波攻擊擊中了一座 Wildberries 物流倉儲中心。\n\n—— 本則整理自 NPR、Al Jazeera 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "烏克蘭週日對俄羅斯發動了這場戰爭以來規模最大的空襲之一，出動數百架無人機，造成至少6人死亡。俄羅斯方面表示，一共擊落了822架無人機；其中一波攻擊擊中了一座 Wildberries 物流倉儲中心。\n\n本則整理自 NPR、Al Jazeera 於 2026 年 8 月 16 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "烏克蘭這個週日對俄羅斯發動了大規模空襲。出動數百架無人機，是這場戰爭打到現在規模最大的幾次攻擊之一，至少6人在攻擊中喪生。俄羅斯說，他們一共擊落了822架無人機，其中一波攻擊打中了一座物流倉儲中心。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Ukraine launched hundreds of drones across Russia Sunday, killing at least six people in one of Kyiv's largest aerial attacks of the war.",
+              "title": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
+              "url": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
+              "published_at": "2026-08-16T18:12:09+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Ukraine launched hundreds of drones across Russia, killing at least six people and striking a Wildberries logistics hub.",
+              "title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
+              "published_at": "2026-08-16T23:35:53+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "烏克蘭週日對俄羅斯發動大規模無人機攻擊，造成至少6人死亡，是這場戰爭以來規模最大的空襲之一。",
+              "source_id": "npr_world",
+              "source_title": "Ukraine launches one of its largest aerial attacks of the war, killing at least 6 people in Russia",
+              "source_url": "https://www.npr.org/2026/08/16/nx-s1-5933006/ukraine-aerial-attack-6-dead-russia",
+              "support_type": "direct"
+            },
+            {
+              "claim": "俄羅斯稱擊落822架無人機，攻擊擊中一座 Wildberries 物流倉儲中心。",
+              "source_id": "aljazeera_all",
+              "source_title": "Largest Ukrainian drone attack on Russia, Moscow says 822 drones shot down",
+              "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/16/16-08-sv-ukraine-largest-drone-attack-russia-ua?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 63,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260817_evt_144",
+          "headline": "庫許納赴埃及見哈瑪斯",
+          "context": "川普女婿暨中東特使賈瑞德·庫許納（Jared Kushner）週日在埃及與哈瑪斯（Hamas）領導層罕見會面，這是加薩停火路線圖的新一輪外交努力，會後庫許納將與以色列總理納坦雅胡（Netanyahu）會談。這場會面發生在以色列拒絕川普加薩和平計畫一週後。",
+          "beat": "INTL",
+          "thread_text": "川普女婿暨中東特使賈瑞德·庫許納（Jared Kushner）週日在埃及與哈瑪斯（Hamas）領導層罕見會面，展開加薩停火路線圖的新一輪外交努力。\n\n這場會面發生在以色列拒絕川普加薩和平計畫一週後；外交消息人士透露，庫許納持續推動哈瑪斯解除武裝，終結其在加薩的治理角色。會後庫許納將與以色列總理納坦雅胡（Netanyahu）會談。\n\n—— 本則整理自 Al Jazeera、BBC、NPR 於 2026 年 8 月 17 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "川普女婿暨中東特使賈瑞德·庫許納（Jared Kushner）週日在埃及與哈瑪斯（Hamas）領導層罕見會面，展開加薩停火路線圖的新一輪外交努力。這場會面發生在以色列拒絕川普加薩和平計畫一週後；外交消息人士透露，庫許納持續推動哈瑪斯解除武裝，終結其在加薩的治理角色。會後庫許納將與以色列總理納坦雅胡（Netanyahu）會談。\n\n本則整理自 Al Jazeera、BBC、NPR 於 2026 年 8 月 17 日發佈的報導。",
+          "voice_text": "川普女婿庫許納，罕見會見哈瑪斯領導層。地點在埃及，是加薩停火路線圖的新一輪外交努力，就在以色列拒絕川普的加薩和平計畫一週之後。有消息說，庫許納持續在推哈瑪斯解除武裝，希望終結它在加薩的治理角色。見完哈瑪斯，他接下來要跟以色列總理納坦雅胡談。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "川普女婿暨中東特使賈瑞德·庫許納（Jared Kushner）週日在埃及與哈瑪斯（Hamas）領導層罕見會面，展開加薩停火路線圖的新一輪外交努力。\n\n這場會面發生在以色列拒絕川普加薩和平計畫一週後；外交消息人士透露，庫許納持續推動哈瑪斯解除武裝，終結其在加薩的治理角色。會後庫許納將與以色列總理納坦雅胡（Netanyahu）會談。\n\n—— 本則整理自 Al Jazeera、BBC、NPR 於 2026 年 8 月 17 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "川普女婿暨中東特使賈瑞德·庫許納（Jared Kushner）週日在埃及與哈瑪斯（Hamas）領導層罕見會面，展開加薩停火路線圖的新一輪外交努力。這場會面發生在以色列拒絕川普加薩和平計畫一週後；外交消息人士透露，庫許納持續推動哈瑪斯解除武裝，終結其在加薩的治理角色。會後庫許納將與以色列總理納坦雅胡（Netanyahu）會談。\n\n本則整理自 Al Jazeera、BBC、NPR 於 2026 年 8 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "川普女婿庫許納，罕見會見哈瑪斯領導層。地點在埃及，是加薩停火路線圖的新一輪外交努力，就在以色列拒絕川普的加薩和平計畫一週之後。有消息說，庫許納持續在推哈瑪斯解除武裝，希望終結它在加薩的治理角色。見完哈瑪斯，他接下來要跟以色列總理納坦雅胡談。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Trump envoy has pushed for disarmament to end any future Hamas role in running Gaza, diplomatic sources tell AFP.",
+              "title": "Kushner meets Hamas leaders in Egypt to push Trump’s Gaza plan",
+              "url": "https://www.aljazeera.com/news/2026/8/16/kushner-meets-hamas-in-egypt-to-push-trumps-gaza-plan?traffic_source=rss",
+              "published_at": "2026-08-17T03:23:28+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The rare meeting comes a week after Israel rejected Donald Trump's peace plan for Gaza.",
+              "title": "Trump envoy Kushner meets Hamas leader to push Gaza peace plan",
+              "url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-17T03:58:14+08:00"
+            },
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Jared Kushner, President Trump's son-in-law, held a rare meeting with Hamas leadership Sunday in Egypt, in a new diplomatic effort to make progress in the stalled Gaza ceasefire.",
+              "title": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
+              "url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
+              "published_at": "2026-08-17T04:20:22+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "川普特使庫許納週日在埃及與哈瑪斯領導層舉行罕見會面，推動加薩停火路線圖。",
+              "source_id": "aljazeera_all",
+              "source_title": "Kushner meets Hamas leaders in Egypt to push Trump’s Gaza plan",
+              "source_url": "https://www.aljazeera.com/news/2026/8/16/kushner-meets-hamas-in-egypt-to-push-trumps-gaza-plan?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "這場會面發生在以色列拒絕川普加薩和平計畫一週後。",
+              "source_id": "bbc_world",
+              "source_title": "Trump envoy Kushner meets Hamas leader to push Gaza peace plan",
+              "source_url": "https://www.bbc.co.uk/news/articles/c77gg5vn44yo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "庫許納會見哈瑪斯後，將與以色列總理納坦雅胡會談。",
+              "source_id": "npr_world",
+              "source_title": "Kushner meets with Hamas on the Gaza road map ahead of talks with Netanyahu",
+              "source_url": "https://www.npr.org/2026/08/16/g-s1-138948/kushner-gaza-hamas-netanyahu-egypt-talks",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260817_evt_063",
+          "headline": "波蘭遊覽車翻覆12死",
+          "context": "一輛波蘭遊覽車週日凌晨在匈牙利高速公路上翻覆，造成至少12人死亡，另有數十人受傷，其中10人傷勢嚴重。",
+          "beat": "INTL",
+          "thread_text": "一輛波蘭遊覽車週日凌晨在匈牙利高速公路上翻覆，造成至少12人死亡。\n\n另有數十人受傷，其中至少10人傷勢嚴重。\n\n—— 本則整理自 BBC、Reuters 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "一輛波蘭遊覽車週日凌晨在匈牙利高速公路上翻覆，造成至少12人死亡。另有數十人受傷，其中至少10人傷勢嚴重。\n\n本則整理自 BBC、Reuters 於 2026 年 8 月 16 日發佈的報導。",
+          "voice_text": "一輛波蘭遊覽車翻覆，至少12人死亡。事故發生在週日凌晨的匈牙利高速公路上，車上還有數十人受傷，其中10人傷勢嚴重。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "一輛波蘭遊覽車週日凌晨在匈牙利高速公路上翻覆，造成至少12人死亡。\n\n另有數十人受傷，其中至少10人傷勢嚴重。\n\n—— 本則整理自 BBC、Reuters 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "一輛波蘭遊覽車週日凌晨在匈牙利高速公路上翻覆，造成至少12人死亡。另有數十人受傷，其中至少10人傷勢嚴重。\n\n本則整理自 BBC、Reuters 於 2026 年 8 月 16 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "一輛波蘭遊覽車翻覆，至少12人死亡。事故發生在週日凌晨的匈牙利高速公路上，車上還有數十人受傷，其中10人傷勢嚴重。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Dozens more are seriously injured after the tourist bus overturned in the early hours of Sunday morning.",
+              "title": "Twelve killed as Polish bus veers off Hungarian motorway",
+              "url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-16T18:53:50+08:00"
+            },
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Twelve killed and at least 10 injured in Polish bus crash in Hungary Reuters",
+              "title": "Twelve killed and at least 10 injured in Polish bus crash in Hungary - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ2puckZxdHQ1aDQ2YmsxMXpuTHd6M0ZkMVhzOFNjXzJ3aTEzeHN6OEMyMkRCWTU2Y21MUUR2YlFjUlJmSG1Eb0JiOF9sVkdxY1dLMTBUY2xiUnNQdXlCRkFSeFNsdUJ0REd4NGxINnRZMDhyZWoxMzRMWlNTSWExd0xGT1pLWWJUcDQ5WEJPYVlBdDQ2aE0wazZRMzlrdw?oc=5",
+              "published_at": "2026-08-16T21:42:07+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "波蘭遊覽車週日凌晨在匈牙利高速公路翻覆，造成至少12人死亡，數十人受傷。",
+              "source_id": "bbc_world",
+              "source_title": "Twelve killed as Polish bus veers off Hungarian motorway",
+              "source_url": "https://www.bbc.co.uk/news/articles/ckg4424zd7go?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "事故中至少10人傷勢嚴重。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Twelve killed and at least 10 injured in Polish bus crash in Hungary - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ2puckZxdHQ1aDQ2YmsxMXpuTHd6M0ZkMVhzOFNjXzJ3aTEzeHN6OEMyMkRCWTU2Y21MUUR2YlFjUlJmSG1Eb0JiOF9sVkdxY1dLMTBUY2xiUnNQdXlCRkFSeFNsdUJ0REd4NGxINnRZMDhyZWoxMzRMWlNTSWExd0xGT1pLWWJUcDQ5WEJPYVlBdDQ2aE0wazZRMzlrdw?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 45,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1"
+        },
+        {
+          "event_id": "daily_20260817_evt_052",
+          "headline": "卡達否認扣留伊朗飛行員",
+          "context": "卡達否認扣留3名伊朗飛行員。伊朗方面聲稱，這3人自美伊戰爭爆發之初、卡達擊落兩架伊朗戰機以來就被拘留至今。",
+          "beat": "INTL",
+          "thread_text": "卡達否認扣留3名伊朗飛行員。\n\n伊朗方面聲稱，這3人自美伊戰爭爆發之初、卡達擊落兩架伊朗戰機以來，就一直被拘留至今；卡達方面否認這項說法。\n\n目前這則消息只有 BBC 一家報導，細節有限。\n\n—— 本則來自 BBC，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "卡達否認扣留3名伊朗飛行員。伊朗方面聲稱，這3人自美伊戰爭爆發之初、卡達擊落兩架伊朗戰機以來，就一直被拘留至今；卡達方面否認這項說法。目前這則消息只有 BBC 一家報導，細節有限。\n\n本則來自 BBC，2026 年 8 月 16 日發佈。",
+          "voice_text": "卡達否認扣留3名伊朗飛行員。有一則消息指出，伊朗說這3人從美伊戰爭一開打、卡達擊落兩架伊朗戰機那時候起，就一直被拘留到現在。不過卡達不承認這個說法。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "卡達否認扣留3名伊朗飛行員。\n\n伊朗方面聲稱，這3人自美伊戰爭爆發之初、卡達擊落兩架伊朗戰機以來，就一直被拘留至今；卡達方面否認這項說法。\n\n目前這則消息只有 BBC 一家報導，細節有限。\n\n—— 本則來自 BBC，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "卡達否認扣留3名伊朗飛行員。伊朗方面聲稱，這3人自美伊戰爭爆發之初、卡達擊落兩架伊朗戰機以來，就一直被拘留至今；卡達方面否認這項說法。目前這則消息只有 BBC 一家報導，細節有限。\n\n本則來自 BBC，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "卡達否認扣留3名伊朗飛行員。有一則消息指出，伊朗說這3人從美伊戰爭一開打、卡達擊落兩架伊朗戰機那時候起，就一直被拘留到現在。不過卡達不承認這個說法。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Iran claims they have been held since Qatar downed two fighter jets at the start of the US-Iran war.",
+              "title": "Qatar denies capturing three Iranian pilots after downing fighter jets",
+              "url": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-16T17:27:58+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "卡達否認扣留3名伊朗飛行員；伊朗稱這3人自美伊戰爭爆發之初、卡達擊落兩架伊朗戰機以來即遭拘留。",
+              "source_id": "bbc_world",
+              "source_title": "Qatar denies capturing three Iranian pilots after downing fighter jets",
+              "source_url": "https://www.bbc.co.uk/news/articles/cj4kk8kz271o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260817_evt_019",
+          "headline": "俄烏互襲鋼廠與基輔遇襲",
+          "context": "俄羅斯新一波空襲擊中烏克蘭一座鋼廠，同時基輔也對莫斯科周邊地區發動攻擊。俄方稱，烏克蘭最新這波攻擊是2026年以來規模最大的一次，造成至少7人死亡；莫斯科對基輔的隔夜空襲也在當地引發多處火警。",
+          "beat": "INTL",
+          "thread_text": "俄羅斯新一波空襲擊中烏克蘭一座鋼廠，同一時間，基輔也對莫斯科周邊地區發動了攻擊。\n\n俄方稱，烏克蘭最新這波攻擊是2026年以來規模最大的一次，造成至少7人死亡；而莫斯科對基輔的隔夜空襲，也在當地引發多處火警。\n\n—— 本則整理自 Reuters、BBC 於 2026 年 8 月 16、17 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "俄羅斯新一波空襲擊中烏克蘭一座鋼廠，同一時間，基輔也對莫斯科周邊地區發動了攻擊。俄方稱，烏克蘭最新這波攻擊是2026年以來規模最大的一次，造成至少7人死亡；而莫斯科對基輔的隔夜空襲，也在當地引發多處火警。\n\n本則整理自 Reuters、BBC 於 2026 年 8 月 16、17 日發佈的報導。",
+          "voice_text": "俄羅斯和烏克蘭這一波，又是互相攻擊。俄方的空襲打中了烏克蘭一座鋼廠，基輔那邊，也對莫斯科周邊地區出手。俄羅斯說，烏克蘭這波攻擊，是2026年以來規模最大的一次，造成至少7人死亡。莫斯科對基輔的隔夜空襲，也在當地引發了多處火警。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "俄羅斯新一波空襲擊中烏克蘭一座鋼廠，同一時間，基輔也對莫斯科周邊地區發動了攻擊。\n\n俄方稱，烏克蘭最新這波攻擊是2026年以來規模最大的一次，造成至少7人死亡；而莫斯科對基輔的隔夜空襲，也在當地引發多處火警。\n\n—— 本則整理自 Reuters、BBC 於 2026 年 8 月 16、17 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "俄羅斯新一波空襲擊中烏克蘭一座鋼廠，同一時間，基輔也對莫斯科周邊地區發動了攻擊。俄方稱，烏克蘭最新這波攻擊是2026年以來規模最大的一次，造成至少7人死亡；而莫斯科對基輔的隔夜空襲，也在當地引發多處火警。\n\n本則整理自 Reuters、BBC 於 2026 年 8 月 16、17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "俄羅斯和烏克蘭這一波，又是互相攻擊。俄方的空襲打中了烏克蘭一座鋼廠，基輔那邊，也對莫斯科周邊地區出手。俄羅斯說，烏克蘭這波攻擊，是2026年以來規模最大的一次，造成至少7人死亡。莫斯科對基輔的隔夜空襲，也在當地引發了多處火警。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Russia hits steel plant in new strikes on Ukraine, Kyiv attacks Moscow region Reuters",
+              "title": "Russia hits steel plant in new strikes on Ukraine, Kyiv attacks Moscow region - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRDQ2bnhPSnIySk54TjdqYmlQeVd3eEkxSU00ckF6OHZjUkI1S3ZUQm9VRUFvakFsajBqcjFVWlE5cTZsNjFNdUozMGlxQ0tvWTQ2Unl2SjF4UlJpMVlHSFdxOV9xa3hXcWFqMFloSGNFNHVSTVM2UUItcDdhaUZ5dzRTa3Z0eEpPdV9PUVBhV3Z3WVhGZ1NQNjd5LVA5RWNOTjhXV3IxOGJEanUzM1BwcFNycFczNDdMWUEzYXhDQkk?oc=5",
+              "published_at": "2026-08-16T09:33:00+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Moscow also launched deadly strikes against Ukraine overnight, sparking fires across the capital Kyiv.",
+              "title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
+              "url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-17T03:03:04+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "俄羅斯新一波空襲擊中烏克蘭一座鋼廠，基輔同時對莫斯科周邊地區發動攻擊。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Russia hits steel plant in new strikes on Ukraine, Kyiv attacks Moscow region - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRDQ2bnhPSnIySk54TjdqYmlQeVd3eEkxSU00ckF6OHZjUkI1S3ZUQm9VRUFvakFsajBqcjFVWlE5cTZsNjFNdUozMGlxQ0tvWTQ2Unl2SjF4UlJpMVlHSFdxOV9xa3hXcWFqMFloSGNFNHVSTVM2UUItcDdhaUZ5dzRTa3Z0eEpPdV9PUVBhV3Z3WVhGZ1NQNjd5LVA5RWNOTjhXV3IxOGJEanUzM1BwcFNycFczNDdMWUEzYXhDQkk?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "俄方稱烏克蘭最新攻擊是2026年以來規模最大的一次，造成至少7人死亡；莫斯科對基輔的隔夜空襲引發多處火警。",
+              "source_id": "bbc_world",
+              "source_title": "Russia says at least seven killed in largest Ukrainian attack of 2026",
+              "source_url": "https://www.bbc.co.uk/news/articles/c1411pgje8xo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 0,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260817_evt_010",
+          "headline": "愛丁堡藝術節評論兩則",
+          "context": "愛丁堡影展與愛丁堡藝穗節近日評論不斷。改編自作家傑伊·帕里尼（Jay Parini）回憶錄的電影《波赫士與我》（Borges and Me），由智利演員路易斯·涅科（Luis Gnecco）飾演文學大師波赫士（Jorge Luis Borges），獲得好評；愛丁堡舞蹈基地（Dance Base）也推出了融合愛爾蘭踢踏與蘇格蘭高地舞的實驗舞蹈劇《Not for Glory》。",
+          "beat": "ARTS",
+          "thread_text": "愛丁堡影展與藝穗節近日評論不斷。改編自作家傑伊·帕里尼（Jay Parini）回憶錄的電影《波赫士與我》（Borges and Me），由智利演員路易斯·涅科（Luis Gnecco）飾演文學大師波赫士（Jorge Luis Borges），獲得好評，故事講述帕里尼年輕時在蘇格蘭高地陪伴失明的波赫士旅行的往事。\n\n愛丁堡舞蹈基地（Dance Base）同時推出實驗舞蹈劇《Not for Glory》，由曾是愛爾蘭踢踏冠軍的傑克·安德森（Jack Anderson）與蘇格蘭高地舞冠軍夏洛特·麥克連（Charlotte Mclean）攜手風笛手馬林·路易斯（Malin Lewis），把兩人年少時的舞蹈根源，重新解構再創作。\n\n—— 本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "愛丁堡影展與藝穗節近日評論不斷。改編自作家傑伊·帕里尼（Jay Parini）回憶錄的電影《波赫士與我》（Borges and Me），由智利演員路易斯·涅科（Luis Gnecco）飾演文學大師波赫士（Jorge Luis Borges），獲得好評，故事講述帕里尼年輕時在蘇格蘭高地陪伴失明的波赫士旅行的往事。愛丁堡舞蹈基地（Dance Base）同時推出實驗舞蹈劇《Not for Glory》，由曾是愛爾蘭踢踏冠軍的傑克·安德森（Jack Anderson）與蘇格蘭高地舞冠軍夏洛特·麥克連（Charlotte Mclean）攜手風笛手馬林·路易斯（Malin Lewis），把兩人年少時的舞蹈根源，重新解構再創作。\n\n本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導。",
+          "voice_text": "愛丁堡影展跟藝穗節，這幾天評論一則接一則。先說電影，《波赫士與我》改編自作家帕里尼的回憶錄，智利演員路易斯·涅科演文學大師波赫士，演出獲得好評。故事講的是帕里尼年輕時，陪著失明的波赫士在蘇格蘭高地旅行的往事。舞蹈這邊也有新戲，愛丁堡舞蹈基地推出了一齣實驗舞蹈劇，兩位曾經拿過冠軍的踢踏舞者和高地舞者，找來一位風笛手，把自己年少時的舞蹈根源重新拆解，再創作成新的作品。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "愛丁堡影展與藝穗節近日評論不斷。改編自作家傑伊·帕里尼（Jay Parini）回憶錄的電影《波赫士與我》（Borges and Me），由智利演員路易斯·涅科（Luis Gnecco）飾演文學大師波赫士（Jorge Luis Borges），獲得好評，故事講述帕里尼年輕時在蘇格蘭高地陪伴失明的波赫士旅行的往事。",
+                "愛丁堡舞蹈基地（Dance Base）同時推出實驗舞蹈劇《Not for Glory》，由曾是愛爾蘭踢踏冠軍的傑克·安德森（Jack Anderson）與蘇格蘭高地舞冠軍夏洛特·麥克連（Charlotte Mclean）攜手風笛手馬林·路易斯（Malin Lewis），把兩人年少時的舞蹈根源，重新解構再創作。—— 本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "愛丁堡影展與藝穗節近日評論不斷。改編自作家傑伊·帕里尼（Jay Parini）回憶錄的電影《波赫士與我》（Borges and Me），由智利演員路易斯·涅科（Luis Gnecco）飾演文學大師波赫士（Jorge Luis Borges），獲得好評，故事講述帕里尼年輕時在蘇格蘭高地陪伴失明的波赫士旅行的往事。愛丁堡舞蹈基地（Dance Base）同時推出實驗舞蹈劇《Not for Glory》，由曾是愛爾蘭踢踏冠軍的傑克·安德森（Jack Anderson）與蘇格蘭高地舞冠軍夏洛特·麥克連（Charlotte Mclean）攜手風笛手馬林·路易斯（Malin Lewis），把兩人年少時的舞蹈根源，重新解構再創作。\n\n本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "愛丁堡影展跟藝穗節，這幾天評論一則接一則。先說電影，《波赫士與我》改編自作家帕里尼的回憶錄，智利演員路易斯·涅科演文學大師波赫士，演出獲得好評。故事講的是帕里尼年輕時，陪著失明的波赫士在蘇格蘭高地旅行的往事。舞蹈這邊也有新戲，愛丁堡舞蹈基地推出了一齣實驗舞蹈劇，兩位曾經拿過冠軍的踢踏舞者和高地舞者，找來一位風笛手，把自己年少時的舞蹈根源重新拆解，再創作成新的作品。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_film",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Edinburgh film festival Luis Gnecco brings warmth, wit and quiet melancholy to Jorge Luis Borges in this gently enchanting adaptation of Jay Parini’s semi-fictional memoir There is great sweetness and high-minded, unworldly charm in this adaptation of American author Jay Parini’s embellished memoir , a romantic account of his road trip through the Scottish Highlands that, as a young doctoral student at St Andrews in 1971, he really did take with Jorge Luis Borges , the great writer whose blindness had become part of his mystique. Author of poetry, enigmatic short stories and metaphysical vignettes untranslatably known as the “ficciones”, Borges is described here as “the father of magical realism” – although he is surely more unique and interesting than that. Parini drives Borges around, describes everything to the maestro (who is rapt and beaming), and shields him when he uninhibitedly urinates in public; all the while he is almost entirely unaware of Borges’ reputation and the enormous honour that this therefore was. Fionn Whitehead plays the callow young Parini, in specs and duffle coat resembling a young Tom Courtenay, wretched that he may have inadvertently persuaded his brother Billy back home to volunteer for military service in Vietnam. He is ungratefully grumpy that he has to spend time away from his PhD for this babysitting task, assigned to him by his supervisor, poet and Borges translator Alastair Reid, played by Alan Cumming. Borges himself is entertainingly played by the Chilean actor Luis Gnecco; priestly, childlike, mischievous and sly, a performance executed with theatrical panache – I can imagine him doing it on stage – but without hammily overdoing the milky-eyed upward gaze. His Borges is a man who like all charming people has cultivated a dependency on others, and we can see how he has had a lifetime to deploy the combination of his huge reputation and the poignant helplessness of the blind. He has come to Scotland without a nurse or amanuensis and has to rely on the (cowed) kindness of strangers. Continue reading...",
+              "title": "Borges and Me review – a sweetly imagined literary odyssey through the Highlands",
+              "url": "https://www.theguardian.com/film/2026/aug/15/borges-and-me-review-alan-cumming-fionn-whitehead",
+              "published_at": "2026-08-16T04:36:06+08:00"
+            },
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Assembly @ Dance Base, Edinburgh Jack Anderson and Charlotte Mclean began as champions of classic Irish and Highland steps. Here, with piper Malin Lewis, they give them a new form Jack Anderson was once a champion Irish dancer who toured the world in popular shows. But when he later enrolled at contemporary dance school, he hid his past like a shameful secret. Charlotte Mclean also tried to leave behind her childhood legacy as a competitive Highland dancer. She never liked Highland dance anyway (she just liked winning competitions) but as an adult, is she finally changing her mind? These are just two of many talking points in this anarchic dance-theatre gig from Anderson, Mclean and piper Malin Lewis. The trio are all coming to terms with their artistic inheritance, by means of distortion, deconstruction and downright mockery, then reclaiming it on their own terms. (Lewis has arguably already done this, with the acclaimed album Halocline in 2024 which saw them tagged “the future of Scottish folk”). Continue reading...",
+              "title": "Not for Glory review – folk dance and bagpipes, but not as we know them",
+              "url": "https://www.theguardian.com/stage/2026/aug/16/not-for-glory-review-assembly-dance-base-edinburgh",
+              "published_at": "2026-08-16T15:53:29+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "《波赫士與我》改編自帕里尼回憶錄，路易斯·涅科飾演波赫士，獲愛丁堡影展好評。",
+              "source_id": "guardian_film",
+              "source_title": "Borges and Me review – a sweetly imagined literary odyssey through the Highlands",
+              "source_url": "https://www.theguardian.com/film/2026/aug/15/borges-and-me-review-alan-cumming-fionn-whitehead",
+              "support_type": "direct"
+            },
+            {
+              "claim": "愛丁堡舞蹈基地推出實驗舞蹈劇《Not for Glory》，由安德森、麥克連與風笛手路易斯共同演出。",
+              "source_id": "guardian_culture",
+              "source_title": "Not for Glory review – folk dance and bagpipes, but not as we know them",
+              "source_url": "https://www.theguardian.com/stage/2026/aug/16/not-for-glory-review-assembly-dance-base-edinburgh",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "電影",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260817_evt_034",
+          "headline": "建築工藝為何漸稀有",
+          "context": "建築界近來重新擁抱手工工藝——手工磚、石灰粉刷、鑿刻石材、竹編與夯土建築，被視為環境友善與文化延續的象徵。不過現實是，今天絕大多數新建案仍仰賴工業化生產系統，工匠可發揮的空間反而越來越少；印度就是一個例子，古老的建築傳統與全球成長最快的營造業並存。另有一篇書評指出，今年夏天歐洲熱浪破紀錄，已造成逾1萬人死亡，文學小說在描繪氣候危機的真實代價上，扮演著重要角色。",
+          "beat": "ARTS",
+          "thread_text": "建築界近來重新擁抱手工工藝，手工磚、石灰粉刷、鑿刻石材、竹編與夯土建築，成了環境友善與文化延續的象徵。\n\n但現實是，今天絕大多數新建案仍仰賴工業化生產系統，工匠能發揮的空間反而越來越少——印度就是一個例子，古老的建築傳統，與全球成長最快的營造業並存，工藝反而只出現在預算、工期與業主都負擔得起的地方。\n\n另一篇書評則提到，今年夏天歐洲熱浪打破紀錄，已造成逾1萬人死亡；文學小說在描繪氣候危機的真實代價上，正扮演著重要角色。\n\n—— 本則整理自 ArchDaily、The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "建築界近來重新擁抱手工工藝，手工磚、石灰粉刷、鑿刻石材、竹編與夯土建築，成了環境友善與文化延續的象徵。但現實是，今天絕大多數新建案仍仰賴工業化生產系統，工匠能發揮的空間反而越來越少——印度就是一個例子，古老的建築傳統，與全球成長最快的營造業並存，工藝反而只出現在預算、工期與業主都負擔得起的地方。另一篇書評則提到，今年夏天歐洲熱浪打破紀錄，已造成逾1萬人死亡；文學小說在描繪氣候危機的真實代價上，正扮演著重要角色。\n\n本則整理自 ArchDaily、The Guardian 於 2026 年 8 月 16 日發佈的報導。",
+          "voice_text": "建築界最近很流行手工工藝。手工磚、石灰粉刷、鑿刻石材、竹編、夯土——這些工法被當成環境友善跟文化延續的象徵。不過現實是，今天絕大多數新建案，還是靠工業化生產系統蓋起來的，工匠能發揮的空間反而越來越少。印度是個例子，古老的建築傳統，跟全球成長最快的營造業，並存在同一個地方，工藝反而只出現在預算和工期都負擔得起的建案裡。另一則消息說的是文學。今年夏天歐洲熱浪破紀錄，已經造成超過1萬人死亡，有評論認為，文學小說在描繪氣候危機的真實代價上，正扮演著重要角色。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "建築界近來重新擁抱手工工藝，手工磚、石灰粉刷、鑿刻石材、竹編與夯土建築，成了環境友善與文化延續的象徵。\n\n但現實是，今天絕大多數新建案仍仰賴工業化生產系統，工匠能發揮的空間反而越來越少——印度就是一個例子，古老的建築傳統，與全球成長最快的營造業並存，工藝反而只出現在預算、工期與業主都負擔得起的地方。\n\n另一篇書評則提到，今年夏天歐洲熱浪打破紀錄，已造成逾1萬人死亡；文學小說在描繪氣候危機的真實代價上，正扮演著重要角色。\n\n—— 本則整理自 ArchDaily、The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "建築界近來重新擁抱手工工藝，手工磚、石灰粉刷、鑿刻石材、竹編與夯土建築，成了環境友善與文化延續的象徵。但現實是，今天絕大多數新建案仍仰賴工業化生產系統，工匠能發揮的空間反而越來越少——印度就是一個例子，古老的建築傳統，與全球成長最快的營造業並存，工藝反而只出現在預算、工期與業主都負擔得起的地方。另一篇書評則提到，今年夏天歐洲熱浪打破紀錄，已造成逾1萬人死亡；文學小說在描繪氣候危機的真實代價上，正扮演著重要角色。\n\n本則整理自 ArchDaily、The Guardian 於 2026 年 8 月 16 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "建築界最近很流行手工工藝。手工磚、石灰粉刷、鑿刻石材、竹編、夯土——這些工法被當成環境友善跟文化延續的象徵。不過現實是，今天絕大多數新建案，還是靠工業化生產系統蓋起來的，工匠能發揮的空間反而越來越少。印度是個例子，古老的建築傳統，跟全球成長最快的營造業，並存在同一個地方，工藝反而只出現在預算和工期都負擔得起的建案裡。另一則消息說的是文學。今年夏天歐洲熱浪破紀錄，已經造成超過1萬人死亡，有評論認為，文學小說在描繪氣候危機的真實代價上，正扮演著重要角色。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "archdaily",
+              "name": "ArchDaily",
+              "publisher": "ArchDaily",
+              "summary": "There has never been a more celebrated moment for craftsmanship in architecture. Across magazines, awards, and international exhibitions, handmade brick , lime plaster , carved stone , woven bamboo, and rammed earth have re-emerged as symbols of environmental responsibility, cultural continuity, and architectural authenticity. Beyond these carefully documented projects lies another reality. The overwhelming majority of buildings constructed today, from apartment blocks and office towers to public housing and commercial developments, continue to rely on industrialized systems that leave little room for skilled artisans. Craft has become increasingly visible at the very moment it has become increasingly uncommon. In countries such as India , the contrast is difficult to ignore. Centuries-old building traditions continue alongside one of the world's fastest-growing construction industries. To reframe the question of why craftsmanship is returning, perhaps the intrigue is why it now appears primarily where construction budgets, timelines, and clients can afford it.",
+              "title": "Beyond the Handmade Aesthetic: Why Craft Needs New Construction Economies",
+              "url": "https://www.archdaily.com/1182452/beyond-the-handmade-aesthetic-why-craft-needs-new-construction-economies",
+              "published_at": "2026-08-16T15:30:00+08:00"
+            },
+            {
+              "source_id": "guardian_books",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "As wildfires rage across Europe and Britain swelters through its hottest summer on record, literary fiction has a vital role to play in capturing the severe consequences of climate crisis Earlier this summer, I travelled through Europe on a book tour. Everywhere I went, the heat broke records. In Italy, Germany and Spain, I sought refuge from the afternoon sun in air-conditioned hotels. In normally temperate Zurich, it averaged 37 degrees. I jumped into the Limmat for relief. On my final day in Warsaw, Poland had never been hotter – one of 14 countries to hit a historic high. In June, when I left to return to the US, Europe was scorching. At the end of July, as I write this, it is burning. Since the heatwaves began, there have been more than 10,000 excess deaths. Yet for many, myself included, the high temperatures brought nothing more than inconvenience – uncomfortable commutes, heat rash, less time outdoors. This seems to be a defining feature of today’s climate crisis; deadly for some, banal for others. Even when the world is on fire, it somehow doesn’t feel like an emergency for everyone. Continue reading...",
+              "title": "‘It is not only a future certainty – the disaster is already here’: why we need climate fiction",
+              "url": "https://www.theguardian.com/books/2026/aug/16/it-is-not-only-a-future-certainty-the-disaster-is-already-here-why-we-need-climate-fiction",
+              "published_at": "2026-08-16T19:00:24+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "建築界重新擁抱手工工藝，但多數新建案仍仰賴工業化系統，工匠發揮空間有限，印度為典型例子。",
+              "source_id": "archdaily",
+              "source_title": "Beyond the Handmade Aesthetic: Why Craft Needs New Construction Economies",
+              "source_url": "https://www.archdaily.com/1182452/beyond-the-handmade-aesthetic-why-craft-needs-new-construction-economies",
+              "support_type": "direct"
+            },
+            {
+              "claim": "今年夏天歐洲熱浪破紀錄，已造成逾1萬人死亡，文學小說在描繪氣候危機代價上扮演重要角色。",
+              "source_id": "guardian_books",
+              "source_title": "‘It is not only a future certainty – the disaster is already here’: why we need climate fiction",
+              "source_url": "https://www.theguardian.com/books/2026/aug/16/it-is-not-only-a-future-certainty-the-disaster-is-already-here-why-we-need-climate-fiction",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 48,
+          "sub_beat": "建築",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_3"
+        },
+        {
+          "event_id": "daily_20260817_evt_045",
+          "headline": "愛丁堡藝穗喜劇評論",
+          "context": "愛丁堡藝穗節喜劇評論持續發燒。喜劇團體 Sheeps 成員、《週六夜現場》英國版（Saturday Night Live UK）首席編劇達倫·強森（Daran \"Jonno\" Johnson），38歲首度推出個人單口喜劇《Here Comes Mr Funny》，評論形容這是他今年藝穗節最好笑的演出之一。美國喜劇演員艾比·葛文丹（Abby Govindan）的《Pushing 30》，則以詼諧口吻探討南亞文化中的婚姻壓力。",
+          "beat": "ARTS",
+          "thread_text": "愛丁堡藝穗節喜劇評論持續發燒。喜劇團體 Sheeps 成員、《週六夜現場》英國版首席編劇達倫·強森（Daran \"Jonno\" Johnson），38歲首度推出個人單口喜劇《Here Comes Mr Funny》。評論形容這是他這次藝穗節最好笑的演出之一，他也罕見地在台上坦承自己會緊張、會嫉妒同輩上電視。\n\n美國喜劇演員艾比·葛文丹（Abby Govindan）的《Pushing 30》，以詼諧口吻探討南亞文化裡的婚姻壓力；接近30歲的她，透過與台下南亞裔觀眾的互動，聊起長輩對婚姻的期待。\n\n—— 本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "愛丁堡藝穗節喜劇評論持續發燒。喜劇團體 Sheeps 成員、《週六夜現場》英國版首席編劇達倫·強森（Daran \"Jonno\" Johnson），38歲首度推出個人單口喜劇《Here Comes Mr Funny》。評論形容這是他這次藝穗節最好笑的演出之一，他也罕見地在台上坦承自己會緊張、會嫉妒同輩上電視。美國喜劇演員艾比·葛文丹（Abby Govindan）的《Pushing 30》，以詼諧口吻探討南亞文化裡的婚姻壓力；接近30歲的她，透過與台下南亞裔觀眾的互動，聊起長輩對婚姻的期待。\n\n本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導。",
+          "voice_text": "愛丁堡藝穗節的喜劇評論，這幾天一則接一則。先說達倫·強森，他是喜劇團體 Sheeps 的成員，也是《週六夜現場》英國版的首席編劇，38歲才第一次做個人單口喜劇，作品叫《Here Comes Mr Funny》。評論說這是他這次藝穗節最好笑的演出之一，他還在台上坦承自己會緊張、會嫉妒同輩上電視。同一個藝穗節裡，美國喜劇演員艾比·葛文丹的《Pushing 30》，用詼諧的口吻聊南亞文化裡的婚姻壓力。她自己快30歲了，透過跟台下觀眾互動，聊起長輩對婚姻的期待。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "愛丁堡藝穗節喜劇評論持續發燒。喜劇團體 Sheeps 成員、《週六夜現場》英國版首席編劇達倫·強森（Daran \"Jonno\" Johnson），38歲首度推出個人單口喜劇《Here Comes Mr Funny》。評論形容這是他這次藝穗節最好笑的演出之一，他也罕見地在台上坦承自己會緊張、會嫉妒同輩上電視。美國喜劇演員艾比·葛文丹（Abby Govindan）的《Pushing 30》，以詼諧口吻探討南亞文化裡的婚姻壓力；接近30歲的她，透過與台下南亞裔觀眾的互動，聊起長輩對婚姻的期待。",
+                "—— 本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "愛丁堡藝穗節喜劇評論持續發燒。喜劇團體 Sheeps 成員、《週六夜現場》英國版首席編劇達倫·強森（Daran \"Jonno\" Johnson），38歲首度推出個人單口喜劇《Here Comes Mr Funny》。評論形容這是他這次藝穗節最好笑的演出之一，他也罕見地在台上坦承自己會緊張、會嫉妒同輩上電視。美國喜劇演員艾比·葛文丹（Abby Govindan）的《Pushing 30》，以詼諧口吻探討南亞文化裡的婚姻壓力；接近30歲的她，透過與台下南亞裔觀眾的互動，聊起長輩對婚姻的期待。\n\n本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "愛丁堡藝穗節的喜劇評論，這幾天一則接一則。先說達倫·強森，他是喜劇團體 Sheeps 的成員，也是《週六夜現場》英國版的首席編劇，38歲才第一次做個人單口喜劇，作品叫《Here Comes Mr Funny》。評論說這是他這次藝穗節最好笑的演出之一，他還在台上坦承自己會緊張、會嫉妒同輩上電視。同一個藝穗節裡，美國喜劇演員艾比·葛文丹的《Pushing 30》，用詼諧的口吻聊南亞文化裡的婚姻壓力。她自己快30歲了，透過跟台下觀眾互動，聊起長輩對婚姻的期待。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Monkey Barrel, Edinburgh The Saturday Night Live UK writer, who is one-third of the sketch troupe Sheeps, balances sincerity and shtick in a show with big laughs There are reasons to take up standup, and then there’s Daran “Jonno” Johnson launching this new career aged 38 as a form of exposure therapy for anxiety. At least we have an explanation for why this prodigiously funny and talented man hasn’t gone solo before. As one-third of the sketch-group-of-their-generation, Sheeps , and now head writer on the hit Saturday Night Live UK , he doesn’t lack credentials for a tilt at standup. And, while Here Comes Mr Funny has its teething problems, it’s a bright start to Jonno’s singular life, and gave me some of my biggest laughs of this fringe. What’s surprising about it, and arguably part of what works least well, is that Jonno – a man hitherto hidden behind tiers of irony in his performing career – reveals so much of himself. He admits to being nervous. He talks about envying watching his peers on TV, half expecting to see himself appear on screen and join them. Continue reading...",
+              "title": "Jonno: Here Comes Mr Funny review – Sheeps comic leaves flock for revelatory solo",
+              "url": "https://www.theguardian.com/stage/2026/aug/16/jonno-here-comes-mr-funny-review-edinburgh",
+              "published_at": "2026-08-16T17:00:21+08:00"
+            },
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Pleasance Courtyard, Edinburgh Govindan’s debut takes aim at patriarchal stereotypes with pranks, PowerPoint and easygoing storytelling In south Asian culture, marriage continues to be paramount, with women still largely bearing the brunt of this societal pressure. Tonight, the few south Asian women in the audience that US comedian Abby Govindan calls upon – myself included – verify this, one explaining how her parents have given up now that she is in her mid-30s. For Govindan, who is nearing 30, it’s a familiar conversation she has had with well-meaning relatives, and one that creates an internal paradox. While she loves her south Asian identity and her Indian heritage, it can be difficult to reconcile this with the patriarchal stereotypes and archaic values that tend to hold women back. Continue reading...",
+              "title": "Abby Govindan: Pushing 30 review – playful comic makes the case for marriage as a side quest",
+              "url": "https://www.theguardian.com/stage/2026/aug/16/abby-govindan-pushing-30-review-pleasance-courtyard-edinburgh",
+              "published_at": "2026-08-16T17:31:07+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "達倫·強森38歲首度推出個人單口喜劇《Here Comes Mr Funny》，獲評為藝穗節最好笑演出之一。",
+              "source_id": "guardian_culture",
+              "source_title": "Jonno: Here Comes Mr Funny review – Sheeps comic leaves flock for revelatory solo",
+              "source_url": "https://www.theguardian.com/stage/2026/aug/16/jonno-here-comes-mr-funny-review-edinburgh",
+              "support_type": "direct"
+            },
+            {
+              "claim": "艾比·葛文丹的《Pushing 30》以詼諧口吻探討南亞文化中的婚姻壓力。",
+              "source_id": "guardian_stage",
+              "source_title": "Abby Govindan: Pushing 30 review – playful comic makes the case for marriage as a side quest",
+              "source_url": "https://www.theguardian.com/stage/2026/aug/16/abby-govindan-pushing-30-review-pleasance-courtyard-edinburgh",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "sub_beat": "戲劇",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected"
+        },
+        {
+          "event_id": "daily_20260817_evt_008",
+          "headline": "愛丁堡與倫敦藝文評論",
+          "context": "愛丁堡影展推出偽紀錄片恐怖片《Snapshot》，講述一支女性通靈調查小組追緝開膛手傑克的故事；愛丁堡藝穗節的音樂劇場《The Singer》，描寫聽障者喬（Joe）用觸覺帶領街頭藝人重新感受音樂；倫敦O2體育館則有亞莉安娜·格蘭德（Ariana Grande）「永恆陽光」（Eternal Sunshine）巡演的最後幾場演出，評論對她的身心狀況表達關切。",
+          "beat": "ARTS",
+          "thread_text": "愛丁堡影展推出偽紀錄片恐怖片《Snapshot》，由喬瑟夫·亞契（Joseph Archer）執導、凱西·維波（Cathy Wippel）編劇兼主演，講述一支女性通靈調查小組，在1880年代倫敦追緝開膛手傑克的故事；片中畫面偽裝成當年一位攝影先驅拍下的膠捲，還做出對嘴的蠟筒錄音效果。\n\n愛丁堡藝穗節的音樂劇場《The Singer》，講的是聽障者喬（Joe，由傑米·雷 Jamie Rea 飾演），透過觸覺震動，帶領一名街頭藝人（安迪，由狄倫·伍德 Dylan Wood 飾演）重新感受音樂，兩人因此組成了創作搭檔。\n\n倫敦O2體育館則有亞莉安娜·格蘭德（Ariana Grande）「永恆陽光」（Eternal Sunshine）巡演的最後幾場演出——這是她在公開表示要暫別大眾視野前的最後幾場現場——評論在盛大的舞台效果之餘，也對她近來受到的外界關注與身心狀況表達關切。\n\n—— 本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。",
+          "threads_text": "愛丁堡影展推出偽紀錄片恐怖片《Snapshot》，由喬瑟夫·亞契（Joseph Archer）執導、凱西·維波（Cathy Wippel）編劇兼主演，講述一支女性通靈調查小組，在1880年代倫敦追緝開膛手傑克的故事；片中畫面偽裝成當年一位攝影先驅拍下的膠捲，還做出對嘴的蠟筒錄音效果。愛丁堡藝穗節的音樂劇場《The Singer》，講的是聽障者喬（Joe，由傑米·雷 Jamie Rea 飾演），透過觸覺震動，帶領一名街頭藝人（安迪，由狄倫·伍德 Dylan Wood 飾演）重新感受音樂，兩人因此組成了創作搭檔。倫敦O2體育館則有亞莉安娜·格蘭德（Ariana Grande）「永恆陽光」（Eternal Sunshine）巡演的最後幾場演出，評論在盛大的舞台效果之餘，也對她近來受到的外界關注與身心狀況表達關切。\n\n本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導。",
+          "voice_text": "這幾天的藝文評論，橫跨愛丁堡跟倫敦。先說電影，愛丁堡影展有一部偽紀錄片恐怖片《Snapshot》，講一支女性通靈調查小組，在1880年代的倫敦追緝開膛手傑克，畫面刻意做成當年膠捲的樣子，還配上對嘴的老式錄音效果。劇場這邊，愛丁堡藝穗節的音樂劇場《The Singer》，講的是一位聽障者，用觸覺帶著一名街頭藝人重新感受音樂，兩人因此變成了創作搭檔。演唱會的部分，亞莉安娜·格蘭德在倫敦O2體育館，唱完了「永恆陽光」巡演最後幾場——她公開說完這輪巡演後，要暫別大眾視野。評論在稱讚舞台效果之餘，也對她最近的身心狀況表達關切。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "愛丁堡影展推出偽紀錄片恐怖片《Snapshot》，由喬瑟夫·亞契（Joseph Archer）執導、凱西·維波（Cathy Wippel）編劇兼主演，講述一支女性通靈調查小組，在1880年代倫敦追緝開膛手傑克的故事；片中畫面偽裝成當年一位攝影先驅拍下的膠捲，還做出對嘴的蠟筒錄音效果。愛丁堡藝穗節的音樂劇場《The Singer》，講的是聽障者喬（Joe，由傑米·雷 Jamie Rea 飾演），透過觸覺震動，帶領一名街頭藝人（安迪，由狄倫·伍德 Dylan Wood 飾演）重新感受音樂，兩人因此組成了創作搭檔。",
+                "倫敦O2體育館則有亞莉安娜·格蘭德（Ariana Grande）「永恆陽光」（Eternal Sunshine）巡演的最後幾場演出——這是她在公開表示要暫別大眾視野前的最後幾場現場——評論在盛大的舞台效果之餘，也對她近來受到的外界關注與身心狀況表達關切。—— 本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "愛丁堡影展推出偽紀錄片恐怖片《Snapshot》，由喬瑟夫·亞契（Joseph Archer）執導、凱西·維波（Cathy Wippel）編劇兼主演，講述一支女性通靈調查小組，在1880年代倫敦追緝開膛手傑克的故事；片中畫面偽裝成當年一位攝影先驅拍下的膠捲，還做出對嘴的蠟筒錄音效果。愛丁堡藝穗節的音樂劇場《The Singer》，講的是聽障者喬（Joe，由傑米·雷 Jamie Rea 飾演），透過觸覺震動，帶領一名街頭藝人（安迪，由狄倫·伍德 Dylan Wood 飾演）重新感受音樂，兩人因此組成了創作搭檔。倫敦O2體育館則有亞莉安娜·格蘭德（Ariana Grande）「永恆陽光」（Eternal Sunshine）巡演的最後幾場演出，評論在盛大的舞台效果之餘，也對她近來受到的外界關注與身心狀況表達關切。\n\n本則整理自 The Guardian 於 2026 年 8 月 16 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "這幾天的藝文評論，橫跨愛丁堡跟倫敦。先說電影，愛丁堡影展有一部偽紀錄片恐怖片《Snapshot》，講一支女性通靈調查小組，在1880年代的倫敦追緝開膛手傑克，畫面刻意做成當年膠捲的樣子，還配上對嘴的老式錄音效果。劇場這邊，愛丁堡藝穗節的音樂劇場《The Singer》，講的是一位聽障者，用觸覺帶著一名街頭藝人重新感受音樂，兩人因此變成了創作搭檔。演唱會的部分，亞莉安娜·格蘭德在倫敦O2體育館，唱完了「永恆陽光」巡演最後幾場——她公開說完這輪巡演後，要暫別大眾視野。評論在稱讚舞台效果之餘，也對她最近的身心狀況表達關切。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_film",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Edinburgh film festival A women’s spiritualist investigation team go after the serial killer, braving evil forces conjured into being by fear, misogyny and political rage Here is a cheerfully ingenious lo-fi movie experiment from first-time feature director Joseph Archer and writer-performer Cathy Wippel; it’s a found-footage horror with hints of Blair Witch and Peeping Tom, set in the Victorian London of Jack the Ripper. The footage that’s been found, incidentally, is composed of unearthed reels of monochrome film from the 1880s, which we see entirely in a kinetoscope-style circular screen, flickering and glitching and buzzing with eerie accidental jump cuts from one weird scene to the next. It was supposedly shot by an enterprising pioneer called Tamworth (we hear his voice from behind the camera, but never see his face), who, it becomes clear, is a sensational and until now unacknowledged genius of early cinema – in that he manages to record lip-sync sound on to wax cylinders so we can actually hear what everyone is saying. With a cheeky touch of implied black comedy, the film is suggesting that Tamworth was somehow able to carry his camera and recording equipment to these places of Victorian horror and underclass shame as easily as an iPhone. Continue reading...",
+              "title": "Snapshot review – fun found-footage scarer follows amateur Ripper hunters in the 1880s",
+              "url": "https://www.theguardian.com/film/2026/aug/15/snapshot-review-fun-found-footage-scarer-follows-amateur-ripper-hunters-in-the-1880s",
+              "published_at": "2026-08-16T04:00:08+08:00"
+            },
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Traverse theatre, Edinburgh In Cora Bissett’s highly enjoyable and accessible show, a deaf man reintroduces a busker to the joy of music ‘There are other ways to listen,” says Joe (Jamie Rea) to his new friend Andy (Dylan Wood), a busker he has discovered on the street and invited home for a drink. He takes off his shoes, the better to feel the vibrations through the floor, and straps on a gadget called a Subpac . He gets Andy to lean his full height against a towering speaker stack. Only then does the rumbling bass kick in. Little, perhaps, to distinguish them from two drum’n’bass enthusiasts, but this is something else. Joe is less singer than signer, a BSL speaker whose disability has been no impediment to his love of music. He tells an incredulous Andy that he appreciates sound by feeling it and puts his hand on the musician’s acoustic guitar to demonstrate. They form the least likely of songwriting partnerships. Continue reading...",
+              "title": "The Singer review – come on feel the noise with KT Tunstall’s glowing gig theatre",
+              "url": "https://www.theguardian.com/stage/2026/aug/16/the-singer-review-traverse-theatre-edinburgh",
+              "published_at": "2026-08-16T12:00:15+08:00"
+            },
+            {
+              "source_id": "guardian_music",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "The O2, London On her last live dates before she steps back from the public eye, Grande holds her own – but it’s also impossible to avoid feeling concerned for her wellbeing There’s a thrum of excitement in the air as an eight-minute countdown starts and Ariana Grande’s unmistakable silhouette appears on a giant backlit curtain on the stage of the O2. Is it actually her? Posing there for eight minutes before the show starts? It can’t be. But is it? It’s the first time we question what is and isn’t real at this Eternal Sunshine tour stop, a 10-night residency and a robust arena show that ultimately wants us to see one thing and experience another. Collectively, we’ve been scolded for talking about it – the “endless, ongoing public scrutiny” of Ariana Grande’s body has pushed her to “[take] a step back from visibility” when this tour ends. It can’t be nice or fun to have your body examined and discussed for any reason but it is impossible to witness the 33-year-old’s frame on stage and not be gripped by genuine concern for her. Two songs in, a lump forms in my throat, which is not the intended effect of Positions, the zippy title track of her 2020 album. As the set around her is engulfed in digital flames, Grande sings about her infinite flexibility vis a vis relationship boundaries and sexual olympics and all I can think is: she looks like a little kid. Continue reading...",
+              "title": "Ariana Grande Eternal Sunshine tour review: pop illusion at its most effective – for good and bad",
+              "url": "https://www.theguardian.com/music/2026/aug/16/ariana-grande-eternal-sunshine-tour-review-o2-london",
+              "published_at": "2026-08-16T22:20:50+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "愛丁堡影展的偽紀錄片恐怖片《Snapshot》，講述女性通靈調查小組在1880年代倫敦追緝開膛手傑克。",
+              "source_id": "guardian_film",
+              "source_title": "Snapshot review – fun found-footage scarer follows amateur Ripper hunters in the 1880s",
+              "source_url": "https://www.theguardian.com/film/2026/aug/15/snapshot-review-fun-found-footage-scarer-follows-amateur-ripper-hunters-in-the-1880s",
+              "support_type": "direct"
+            },
+            {
+              "claim": "愛丁堡藝穗節音樂劇場《The Singer》，描寫聽障者以觸覺帶領街頭藝人重新感受音樂。",
+              "source_id": "guardian_stage",
+              "source_title": "The Singer review – come on feel the noise with KT Tunstall’s glowing gig theatre",
+              "source_url": "https://www.theguardian.com/stage/2026/aug/16/the-singer-review-traverse-theatre-edinburgh",
+              "support_type": "direct"
+            },
+            {
+              "claim": "亞莉安娜·格蘭德在倫敦O2體育館舉行「永恆陽光」巡演最後幾場演出，評論對她的身心狀況表達關切。",
+              "source_id": "guardian_music",
+              "source_title": "Ariana Grande Eternal Sunshine tour review: pop illusion at its most effective – for good and bad",
+              "source_url": "https://www.theguardian.com/music/2026/aug/16/ariana-grande-eternal-sunshine-tour-review-o2-london",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 0,
+          "sub_beat": "戲劇",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260817_evt_004",
+          "headline": "Claude浮水印機制曝光",
+          "context": "Anthropic揭露更多關於Claude新浮水印功能的細節，說明這項機制實際如何運作。報導同時提出幾個外界關心的問題：浮水印能否透過後製編輯去除？這項機制又會如何影響AI生成的程式碼？",
+          "beat": "AI",
+          "thread_text": "Anthropic揭露了更多關於Claude新浮水印功能的細節，說明這項機制實際如何運作。\n\n報導也提出外界關心的問題：這個浮水印能不能透過後製編輯去除？又會如何影響AI生成出來的程式碼？\n\n目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n—— 本則來自 TechCrunch，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "Anthropic揭露了更多關於Claude新浮水印功能的細節，說明這項機制實際如何運作。報導也提出外界關心的問題：這個浮水印能不能透過後製編輯去除？又會如何影響AI生成出來的程式碼？目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n本則來自 TechCrunch，2026 年 8 月 16 日發佈。",
+          "voice_text": "Anthropic公布Claude浮水印新細節。有一則消息提到，接下來要處理的問題包括：浮水印能不能被後製編輯去掉，還有它會怎麼影響AI生成出來的程式碼。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Anthropic揭露了更多關於Claude新浮水印功能的細節，說明這項機制實際如何運作。\n\n報導也提出外界關心的問題：這個浮水印能不能透過後製編輯去除？又會如何影響AI生成出來的程式碼？\n\n目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n—— 本則來自 TechCrunch，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Anthropic揭露了更多關於Claude新浮水印功能的細節，說明這項機制實際如何運作。報導也提出外界關心的問題：這個浮水印能不能透過後製編輯去除？又會如何影響AI生成出來的程式碼？目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n本則來自 TechCrunch，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "Anthropic公布Claude浮水印新細節。有一則消息提到，接下來要處理的問題包括：浮水印能不能被後製編輯去掉，還有它會怎麼影響AI生成出來的程式碼。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "How will the watermarking actually work? Can it be hidden with editing? And how does this affect code?",
+              "title": "Anthropic shares more details about how Claude’s new watermarks will work",
+              "url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+              "published_at": "2026-08-16T02:58:39+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Anthropic公布更多關於Claude新浮水印功能運作方式的細節，包括編輯去除與程式碼影響等問題。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Anthropic shares more details about how Claude’s new watermarks will work",
+              "source_url": "https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260817_evt_017",
+          "headline": "手遊《No 10》登英榜首",
+          "context": "一款名為《No 10: Full Confidence》的手機遊戲，讓玩家扮演英國首相治理國家，近日在英國App Store付費遊戲排行榜上，銷售名次超越了《Minecraft》。",
+          "beat": "AI",
+          "thread_text": "一款名為《No 10: Full Confidence》的手機遊戲，讓玩家在遊戲裡扮演英國首相治理國家。\n\n這款遊戲近日在英國App Store的付費遊戲排行榜上，銷售名次超越了《Minecraft》。\n\n目前這則消息只有 BBC 一家報導，細節有限。\n\n—— 本則來自 BBC，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "一款名為《No 10: Full Confidence》的手機遊戲，讓玩家在遊戲裡扮演英國首相治理國家。這款遊戲近日在英國App Store的付費遊戲排行榜上，銷售名次超越了《Minecraft》。目前這則消息只有 BBC 一家報導，細節有限。\n\n本則來自 BBC，2026 年 8 月 16 日發佈。",
+          "voice_text": "英國出現一款手遊爆紅。這款遊戲叫《No 10》，讓玩家在遊戲裡扮演英國首相治理國家，最近在英國App Store的付費遊戲排行榜上，銷售名次還超過了《Minecraft》。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "一款名為《No 10: Full Confidence》的手機遊戲，讓玩家在遊戲裡扮演英國首相治理國家。\n\n這款遊戲近日在英國App Store的付費遊戲排行榜上，銷售名次超越了《Minecraft》。\n\n目前這則消息只有 BBC 一家報導，細節有限。\n\n—— 本則來自 BBC，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "一款名為《No 10: Full Confidence》的手機遊戲，讓玩家在遊戲裡扮演英國首相治理國家。這款遊戲近日在英國App Store的付費遊戲排行榜上，銷售名次超越了《Minecraft》。目前這則消息只有 BBC 一家報導，細節有限。\n\n本則來自 BBC，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "英國出現一款手遊爆紅。這款遊戲叫《No 10》，讓玩家在遊戲裡扮演英國首相治理國家，最近在英國App Store的付費遊戲排行榜上，銷售名次還超過了《Minecraft》。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Mobile game No 10: Full Confidence recently ranked above Minecraft on the UK App Store paid games chart",
+              "title": "I survived two years as prime minister in a hit new game - then my cabinet deserted me",
+              "url": "https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-16T07:45:44+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "手機遊戲《No 10: Full Confidence》讓玩家扮演英國首相，近日在英國App Store付費遊戲榜上超越《Minecraft》。",
+              "source_id": "bbc_technology",
+              "source_title": "I survived two years as prime minister in a hit new game - then my cabinet deserted me",
+              "source_url": "https://www.bbc.co.uk/news/articles/cq56pzqy6jvo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260817_evt_127",
+          "headline": "Amodei談AI信任危機",
+          "context": "Anthropic執行長達里奧·阿莫岱伊（Dario Amodei）表示，外界對AI的反彈情緒，「本質上是一場信任危機」。他也反駁了外界認為他把AI描繪得過度悲觀的說法。",
+          "beat": "AI",
+          "thread_text": "Anthropic執行長達里奧·阿莫岱伊（Dario Amodei）表示，外界對AI的反彈情緒，「本質上是一場信任危機」。\n\n他同時反駁外界的說法，強調自己並沒有把AI的未來描繪得過度悲觀。\n\n目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n—— 本則來自 TechCrunch，2026 年 8 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "Anthropic執行長達里奧·阿莫岱伊（Dario Amodei）表示，外界對AI的反彈情緒，「本質上是一場信任危機」。他同時反駁外界的說法，強調自己並沒有把AI的未來描繪得過度悲觀。目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n本則來自 TechCrunch，2026 年 8 月 17 日發佈。",
+          "voice_text": "Anthropic執行長談AI信任危機。達里奧·阿莫岱伊（Dario Amodei）說，外界對AI的反彈情緒，說到底是一場信任危機。他也反駁了一種說法——有人說他把AI的未來講得太悲觀，他不同意。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "Anthropic執行長達里奧·阿莫岱伊（Dario Amodei）表示，外界對AI的反彈情緒，「本質上是一場信任危機」。\n\n他同時反駁外界的說法，強調自己並沒有把AI的未來描繪得過度悲觀。\n\n目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n—— 本則來自 TechCrunch，2026 年 8 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Anthropic執行長達里奧·阿莫岱伊（Dario Amodei）表示，外界對AI的反彈情緒，「本質上是一場信任危機」。他同時反駁外界的說法，強調自己並沒有把AI的未來描繪得過度悲觀。目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n本則來自 TechCrunch，2026 年 8 月 17 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "Anthropic執行長談AI信任危機。達里奧·阿莫岱伊（Dario Amodei）說，外界對AI的反彈情緒，說到底是一場信任危機。他也反駁了一種說法——有人說他把AI的未來講得太悲觀，他不同意。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Dario Amodei is pushing back against the idea that he's been painting an overly pessimistic picture of AI.",
+              "title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+              "url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+              "published_at": "2026-08-17T00:53:51+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Anthropic執行長達里奧·阿莫岱伊表示，外界對AI的反彈情緒本質上是信任危機，並反駁自己把AI描繪得過度悲觀的說法。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Anthropic CEO says AI backlash is ‘fundamentally a crisis of trust’",
+              "source_url": "https://techcrunch.com/2026/08/16/anthropic-ceo-says-ai-backlash-is-fundamentally-a-crisis-of-trust/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260817_evt_014",
+          "headline": "婦控繼父用AI竄改童年照片",
+          "context": "一名女性指控，繼父利用AI工具Grok，把她童年的一張照片竄改成猥褻不當的影像。她表示，這類AI工具正在把日常生活「變成兒童性剝削的素材」。",
+          "beat": "AI",
+          "thread_text": "一名女性指控，繼父利用AI工具Grok，把她童年時期的一張照片竄改成猥褻不當的影像。\n\n她表示，這類AI工具正在把日常生活「變成兒童性剝削的素材」。\n\n目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n—— 本則來自 TechCrunch，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "一名女性指控，繼父利用AI工具Grok，把她童年時期的一張照片竄改成猥褻不當的影像。她表示，這類AI工具正在把日常生活「變成兒童性剝削的素材」。目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n本則來自 TechCrunch，2026 年 8 月 16 日發佈。",
+          "voice_text": "一名女性指控，繼父用AI竄改她童年照片。改成的是猥褻不當的影像，用的工具是Grok。她說，這類AI工具正在把日常生活，變成兒童性剝削的素材。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "一名女性指控，繼父利用AI工具Grok，把她童年時期的一張照片竄改成猥褻不當的影像。\n\n她表示，這類AI工具正在把日常生活「變成兒童性剝削的素材」。\n\n目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n—— 本則來自 TechCrunch，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "一名女性指控，繼父利用AI工具Grok，把她童年時期的一張照片竄改成猥褻不當的影像。她表示，這類AI工具正在把日常生活「變成兒童性剝削的素材」。目前這則消息只有 TechCrunch 一家報導，細節有限。\n\n本則來自 TechCrunch，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "一名女性指控，繼父用AI竄改她童年照片。改成的是猥褻不當的影像，用的工具是Grok。她說，這類AI工具正在把日常生活，變成兒童性剝削的素材。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "The woman claimed that AI tools are \"taking everyday life and turning it into child sexual abuse.\"",
+              "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
+              "url": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
+              "published_at": "2026-08-16T05:29:19+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "一名女性指控繼父使用AI工具Grok，將她童年照片竄改成猥褻不當影像，並稱AI正把日常生活變成兒童性剝削素材。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
+              "source_url": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260817_evt_041",
+          "headline": "英能源帳單推升通膨",
+          "context": "英國家庭正面臨新一波生活成本壓力，官方數據預計本週公布，顯示能源帳單飆升，把7月通膨率推升到接近3%。受伊朗戰爭持續衝擊全球能源市場影響，經濟學家預估英國整體通膨率將達2.9%，也將考驗英國新任首相緩解民生壓力的能力。",
+          "beat": "ECON",
+          "thread_text": "英國家庭正面臨新一波生活成本壓力。官方數據預計本週三公布，預期顯示能源帳單飆升，把7月通膨率推升到接近3%。\n\n伊朗戰爭持續衝擊全球能源市場，經濟學家預估，英國整體通膨率將達2.9%，這也將考驗英國新任首相緩解民生壓力的能力。\n\n目前這則消息只有 The Guardian 一家報導，細節有限。\n\n—— 本則來自 The Guardian，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國家庭正面臨新一波生活成本壓力。官方數據預計本週三公布，預期顯示能源帳單飆升，把7月通膨率推升到接近3%。伊朗戰爭持續衝擊全球能源市場，經濟學家預估，英國整體通膨率將達2.9%，這也將考驗英國新任首相緩解民生壓力的能力。目前這則消息只有 The Guardian 一家報導，細節有限。\n\n本則來自 The Guardian，2026 年 8 月 16 日發佈。",
+          "voice_text": "英國又要面對新一波生活成本壓力了。官方數據本週三公布，預期會顯示，能源帳單飆升，把7月的通膨率推到接近3%。伊朗戰爭持續衝擊全球能源市場，經濟學家預估，英國整體通膨率會來到2.9%。這也會是英國新任首相，要面對的一大考驗。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "英國家庭正面臨新一波生活成本壓力。官方數據預計本週三公布，預期顯示能源帳單飆升，把7月通膨率推升到接近3%。\n\n伊朗戰爭持續衝擊全球能源市場，經濟學家預估，英國整體通膨率將達2.9%，這也將考驗英國新任首相緩解民生壓力的能力。\n\n目前這則消息只有 The Guardian 一家報導，細節有限。\n\n—— 本則來自 The Guardian，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國家庭正面臨新一波生活成本壓力。官方數據預計本週三公布，預期顯示能源帳單飆升，把7月通膨率推升到接近3%。伊朗戰爭持續衝擊全球能源市場，經濟學家預估，英國整體通膨率將達2.9%，這也將考驗英國新任首相緩解民生壓力的能力。目前這則消息只有 The Guardian 一家報導，細節有限。\n\n本則來自 The Guardian，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "英國又要面對新一波生活成本壓力了。官方數據本週三公布，預期會顯示，能源帳單飆升，把7月的通膨率推到接近3%。伊朗戰爭持續衝擊全球能源市場，經濟學家預估，英國整體通膨率會來到2.9%。這也會是英國新任首相，要面對的一大考驗。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Latest reading on Wednesday likely to frame scale of challenge for new PM to ease pressures on households amid Iran war fallout British households are facing a renewed cost of living squeeze, with official figures expected to show this week that soaring energy bills drove up inflation in July to close to 3%. As the Iran war continues to send shock waves through global energy markets, economists predict the surge in UK gas and electricity bills last month will push Britain’s headline inflation rate to 2.9%. Continue reading...",
+              "title": "New UK cost of living crisis looms with soaring energy bills forecast to lift inflation",
+              "url": "https://www.theguardian.com/business/2026/aug/16/new-uk-cost-of-living-crisis-looms-rising-energy-bills-inflation",
+              "published_at": "2026-08-16T16:42:16+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "英國能源帳單飆升，預期把7月通膨率推升到接近3%，經濟學家預估整體通膨率達2.9%。",
+              "source_id": "guardian_business",
+              "source_title": "New UK cost of living crisis looms with soaring energy bills forecast to lift inflation",
+              "source_url": "https://www.theguardian.com/business/2026/aug/16/new-uk-cost-of-living-crisis-looms-rising-energy-bills-inflation",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260817_evt_036",
+          "headline": "熱浪恐致歐盟損失千億",
+          "context": "今年夏天歐洲熱浪不僅造成野火與基礎設施停擺，德國萊茵河水位過低導致貨運中斷，法國多座核電廠因高溫被迫關閉。荷蘭的Triodos銀行經濟學家估計，熱浪恐讓歐盟GDP蒸發約 1800 億歐元；英國智庫Verdant則指出，截至7月底，熱浪已讓英國經濟損失 44 億英鎊。",
+          "beat": "ECON",
+          "thread_text": "今年夏天歐洲熱浪不僅造成野火，也讓基礎設施接連停擺：德國萊茵河水位過低，導致貨運中斷；法國多座核電廠因高溫被迫關閉。\n\n荷蘭Triodos銀行的經濟學家估計，熱浪恐讓歐盟GDP蒸發約 1800 億歐元；英國智庫Verdant則指出，截至7月底，熱浪已讓英國經濟損失 44 億英鎊。\n\n目前這則消息只有 The Guardian 一家報導，細節有限。\n\n—— 本則來自 The Guardian，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "今年夏天歐洲熱浪不僅造成野火，也讓基礎設施接連停擺：德國萊茵河水位過低，導致貨運中斷；法國多座核電廠因高溫被迫關閉。荷蘭Triodos銀行的經濟學家估計，熱浪恐讓歐盟GDP蒸發約 1800 億歐元；英國智庫Verdant則指出，截至7月底，熱浪已讓英國經濟損失 44 億英鎊。目前這則消息只有 The Guardian 一家報導，細節有限。\n\n本則來自 The Guardian，2026 年 8 月 16 日發佈。",
+          "voice_text": "歐洲今年夏天的熱浪，代價不只是野火。德國的萊茵河水位太低，貨運因此中斷；法國好幾座核電廠，也因為高溫被迫關閉。有經濟學家估計，這波熱浪恐怕會讓歐盟的GDP蒸發約 1800 億歐元——大概是新台幣六兆元。英國那邊，智庫估算光是到7月底，熱浪就已經讓英國經濟損失了 44 億英鎊，大概是新台幣一千八百億元。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "今年夏天歐洲熱浪不僅造成野火，也讓基礎設施接連停擺：德國萊茵河水位過低，導致貨運中斷；法國多座核電廠因高溫被迫關閉。\n\n荷蘭Triodos銀行的經濟學家估計，熱浪恐讓歐盟GDP蒸發約 1800 億歐元；英國智庫Verdant則指出，截至7月底，熱浪已讓英國經濟損失 44 億英鎊。\n\n目前這則消息只有 The Guardian 一家報導，細節有限。\n\n—— 本則來自 The Guardian，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "今年夏天歐洲熱浪不僅造成野火，也讓基礎設施接連停擺：德國萊茵河水位過低，導致貨運中斷；法國多座核電廠因高溫被迫關閉。荷蘭Triodos銀行的經濟學家估計，熱浪恐讓歐盟GDP蒸發約 1800 億歐元；英國智庫Verdant則指出，截至7月底，熱浪已讓英國經濟損失 44 億英鎊。目前這則消息只有 The Guardian 一家報導，細節有限。\n\n本則來自 The Guardian，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "歐洲今年夏天的熱浪，代價不只是野火。德國的萊茵河水位太低，貨運因此中斷；法國好幾座核電廠，也因為高溫被迫關閉。有經濟學家估計，這波熱浪恐怕會讓歐盟的GDP蒸發約 1800 億歐元——大概是新台幣六兆元。英國那邊，智庫估算光是到7月底，熱浪就已經讓英國經濟損失了 44 億英鎊，大概是新台幣一千八百億元。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Low river levels have stalled German freight traffic and forced closure of nuclear plants in France Across Europe this scorching summer, workers have struggled in the heat as wildfires raged and critical infrastructure was shut down. Here we look at the impact of the heatwaves on several major economies across mainland Europe – with the help of analysis from economists at the Dutch bank Triodos , who estimate a total of €180bn could be wiped off EU GDP by the heatwaves. In the UK, the green thinktank Verdant said this week that the heat had already cost the economy £4.4bn by the end of July. Continue reading...",
+              "title": "From tourism to power generation and productivity, Europe feels economic cost of heatwaves",
+              "url": "https://www.theguardian.com/business/2026/aug/16/tourism-power-generation-productivity-europe-economic-cost-heatwaves",
+              "published_at": "2026-08-16T16:00:19+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "歐洲熱浪導致德國萊茵河貨運中斷、法國核電廠關閉，估計恐讓歐盟GDP蒸發約1800億歐元，英國經濟已損失44億英鎊。",
+              "source_id": "guardian_business",
+              "source_title": "From tourism to power generation and productivity, Europe feels economic cost of heatwaves",
+              "source_url": "https://www.theguardian.com/business/2026/aug/16/tourism-power-generation-productivity-europe-economic-cost-heatwaves",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260817_evt_053",
+          "headline": "英官方生產力數據疑遭低估",
+          "context": "英國新任財政大臣約翰·希利（John Healey）上週稱，優於預期的經濟數據證明政府正在「找回希望」——今年第二季GDP成長0.4%，優於外界原先對川普伊朗戰爭衝擊的擔憂。有評論認為，一項新的評估顯示英國生產力可能一直被系統性低估，主張政府應盡快任命首席統計官，釐清數據落差。",
+          "beat": "ECON",
+          "thread_text": "英國新任財政大臣約翰·希利（John Healey）上週稱，優於預期的經濟數據證明政府正在「找回希望」——今年第二季GDP成長0.4%，優於外界原先對川普伊朗戰爭衝擊的擔憂。\n\n《衛報》一篇評論指出，一項新的評估顯示，英國生產力可能一直被系統性低估，並主張政府應盡快任命首席統計官，釐清數據落差。\n\n目前這則消息只有 The Guardian 一家報導，細節有限。\n\n—— 本則來自 The Guardian，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國新任財政大臣約翰·希利（John Healey）上週稱，優於預期的經濟數據證明政府正在「找回希望」——今年第二季GDP成長0.4%，優於外界原先對川普伊朗戰爭衝擊的擔憂。《衛報》一篇評論指出，一項新的評估顯示，英國生產力可能一直被系統性低估，並主張政府應盡快任命首席統計官，釐清數據落差。目前這則消息只有 The Guardian 一家報導，細節有限。\n\n本則來自 The Guardian，2026 年 8 月 16 日發佈。",
+          "voice_text": "英國生產力數據，可能被低估了。有評論這麼認為。財政大臣約翰·希利上週說，經濟數據優於預期，證明政府正在「找回希望」——今年第二季GDP成長0.4%，比外界原本擔心的伊朗戰爭衝擊要好。評論則主張，政府應該盡快任命首席統計官，把這個數據落差搞清楚。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "英國新任財政大臣約翰·希利（John Healey）上週稱，優於預期的經濟數據證明政府正在「找回希望」——今年第二季GDP成長0.4%，優於外界原先對川普伊朗戰爭衝擊的擔憂。\n\n《衛報》一篇評論指出，一項新的評估顯示，英國生產力可能一直被系統性低估，並主張政府應盡快任命首席統計官，釐清數據落差。\n\n目前這則消息只有 The Guardian 一家報導，細節有限。\n\n—— 本則來自 The Guardian，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國新任財政大臣約翰·希利（John Healey）上週稱，優於預期的經濟數據證明政府正在「找回希望」——今年第二季GDP成長0.4%，優於外界原先對川普伊朗戰爭衝擊的擔憂。《衛報》一篇評論指出，一項新的評估顯示，英國生產力可能一直被系統性低估，並主張政府應盡快任命首席統計官，釐清數據落差。目前這則消息只有 The Guardian 一家報導，細節有限。\n\n本則來自 The Guardian，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "英國生產力數據，可能被低估了。有評論這麼認為。財政大臣約翰·希利上週說，經濟數據優於預期，證明政府正在「找回希望」——今年第二季GDP成長0.4%，比外界原本擔心的伊朗戰爭衝擊要好。評論則主張，政府應該盡快任命首席統計官，把這個數據落差搞清楚。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Assessment’s finding of a jump in UK productivity emphasises urgent need to appoint a national statistician The keen new chancellor, John Healey, responded to last week’s better-than-expected economic news by claiming the government was “bringing hope back”. Growth did not plunge as feared after Donald Trump unleashed war on Iran – with GDP expanding at a pretty decent 0.4% in the second quarter. But what if we should have held on to a bit more hope all along? A new assessment of the UK’s recent productivity suggests this critical measure of the country’s economic strength may have been systematically underestimated. Continue reading...",
+              "title": "A positive new report raises the question: was Reeves undermined by dodgy data? | Heather Stewart",
+              "url": "https://www.theguardian.com/business/2026/aug/16/uk-productivity-data-rachel-reeves-national-statistician",
+              "published_at": "2026-08-16T17:30:05+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "low",
+          "claim_trace": [
+            {
+              "claim": "英國財政大臣約翰·希利稱經濟數據優於預期，今年第二季GDP成長0.4%；評論指出英國生產力數據可能被系統性低估，籲盡快任命首席統計官。",
+              "source_id": "guardian_business",
+              "source_title": "A positive new report raises the question: was Reeves undermined by dodgy data? | Heather Stewart",
+              "source_url": "https://www.theguardian.com/business/2026/aug/16/uk-productivity-data-rachel-reeves-national-statistician",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "explicit_commentary",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260817_evt_022",
+          "headline": "東部海域規模5.2地震",
+          "context": "台灣東部海域8月15日晚間發生規模5.2地震，宜蘭與新北汐止測得最大震度3級，屬隱沒板塊帶來的隱沒型地震。近來環太平洋火環帶地殼活動頻繁。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "台灣東部海域8月15日晚間發生規模5.2地震，宜蘭與新北汐止測得最大震度3級。\n\n這起地震屬於隱沒型地震；近來環太平洋火環帶上的國家，地殼活動相當頻繁。\n\n—— 本則來自 公視，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "台灣東部海域8月15日晚間發生規模5.2地震，宜蘭與新北汐止測得最大震度3級。這起地震屬於隱沒型地震；近來環太平洋火環帶上的國家，地殼活動相當頻繁。\n\n本則來自 公視，2026 年 8 月 16 日發佈。",
+          "voice_text": "台灣東部海域，8月15日晚間發生了規模5.2的地震。宜蘭和新北汐止，測到的最大震度是3級。這是一起隱沒型地震——最近環太平洋火環帶上的國家，地殼活動都滿頻繁的。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "台灣東部海域8月15日晚間發生規模5.2地震，宜蘭與新北汐止測得最大震度3級。\n\n這起地震屬於隱沒型地震；近來環太平洋火環帶上的國家，地殼活動相當頻繁。\n\n—— 本則來自 公視，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "台灣東部海域8月15日晚間發生規模5.2地震，宜蘭與新北汐止測得最大震度3級。這起地震屬於隱沒型地震；近來環太平洋火環帶上的國家，地殼活動相當頻繁。\n\n本則來自 公視，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "台灣東部海域，8月15日晚間發生了規模5.2的地震。宜蘭和新北汐止，測到的最大震度是3級。這是一起隱沒型地震——最近環太平洋火環帶上的國家，地殼活動都滿頻繁的。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "近來太平洋火環帶上的國家，地殼活動相當頻繁。台灣東部海域在昨（15）日晚間，也發生規模5.2的地震，宜蘭及新北汐止最大震度來到3級。",
+              "title": "東部海域昨晚規模5.2地震 最大震度3級屬隱沒型地震",
+              "url": "https://news.pts.org.tw/article/822611",
+              "published_at": "2026-08-16T11:09:56+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "台灣東部海域8月15日晚間發生規模5.2地震，宜蘭與新北汐止測得最大震度3級，屬隱沒型地震。",
+              "source_id": "pts_news",
+              "source_title": "東部海域昨晚規模5.2地震 最大震度3級屬隱沒型地震",
+              "source_url": "https://news.pts.org.tw/article/822611",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260817_evt_025",
+          "headline": "彰基前院長涉背信洗錢遭聲押",
+          "context": "彰化基督教醫院爆出背信洗錢案，郭姓前院長與賴姓前副院長任職期間，與劉姓醫療器材業者簽下損及醫院利益的合約。檢方大規模搜索後，認定3人有串供、滅證之虞，向法院聲請羈押禁見獲准。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "彰化基督教醫院爆出背信洗錢案。郭姓前院長與賴姓前副院長任職期間，與劉姓醫療器材業者簽下了損及醫院利益的合約。\n\n檢方發動大規模搜索調查，訊後認定3人有串供、滅證之虞，向法院聲請羈押禁見，獲准。\n\n—— 本則來自 公視，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "彰化基督教醫院爆出背信洗錢案。郭姓前院長與賴姓前副院長任職期間，與劉姓醫療器材業者簽下了損及醫院利益的合約。檢方發動大規模搜索調查，訊後認定3人有串供、滅證之虞，向法院聲請羈押禁見，獲准。\n\n本則來自 公視，2026 年 8 月 16 日發佈。",
+          "voice_text": "彰化基督教醫院，爆出背信洗錢案。郭姓前院長跟賴姓前副院長，在任職期間，跟一位劉姓醫療器材業者，簽下了損及醫院利益的合約。檢方發動大規模搜索調查，訊問後認定這3人有串供、滅證的疑慮，向法院聲請羈押禁見，也獲准了。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "彰化基督教醫院爆出背信洗錢案。郭姓前院長與賴姓前副院長任職期間，與劉姓醫療器材業者簽下了損及醫院利益的合約。\n\n檢方發動大規模搜索調查，訊後認定3人有串供、滅證之虞，向法院聲請羈押禁見，獲准。\n\n—— 本則來自 公視，2026 年 8 月 16 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "彰化基督教醫院爆出背信洗錢案。郭姓前院長與賴姓前副院長任職期間，與劉姓醫療器材業者簽下了損及醫院利益的合約。檢方發動大規模搜索調查，訊後認定3人有串供、滅證之虞，向法院聲請羈押禁見，獲准。\n\n本則來自 公視，2026 年 8 月 16 日發佈。"
+              ]
+            },
+            "voice": {
+              "text": "彰化基督教醫院，爆出背信洗錢案。郭姓前院長跟賴姓前副院長，在任職期間，跟一位劉姓醫療器材業者，簽下了損及醫院利益的合約。檢方發動大規模搜索調查，訊問後認定這3人有串供、滅證的疑慮，向法院聲請羈押禁見，也獲准了。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "彰化基督教醫院爆出背信洗錢風波，郭姓前院長及賴姓前副院長在任職期間，與劉姓醫療器材業者，簽訂了損及醫院利益的合約。檢方發動大規模搜索調查，訊後認定3人有串供、滅證之虞，向法院聲押禁見獲淮。",
+              "title": "彰基前正副院長涉背信洗錢 遭檢搜索訊後聲押禁見",
+              "url": "https://news.pts.org.tw/article/822627",
+              "published_at": "2026-08-16T12:35:12+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "彰化基督教醫院前正副院長與醫療器材業者簽訂損及醫院利益合約，涉背信洗錢，經檢方搜索後聲押禁見獲准。",
+              "source_id": "pts_news",
+              "source_title": "彰基前正副院長涉背信洗錢 遭檢搜索訊後聲押禁見",
+              "source_url": "https://news.pts.org.tw/article/822627",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 0,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 212,
+    "total_articles_after_filter": 200,
+    "total_events_merged": 152,
+    "total_events_selected": 18,
+    "tw_highlights_count": 2
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260817_evt_005",
+      "headline": "Endgame review – Beckett’s lonely clowns raise an extra laugh",
+      "selection_score": 45,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_073",
+      "headline": "South Korea says it fired warning shots after North Korean soldiers crossed demarcation line - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_129",
+      "headline": "Brazil's Lula launches reelection bid, aims to win back workers to his Workers Party - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_134",
+      "headline": "US considers new sanctions on Brazilian judge, FT reports - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_068",
+      "headline": "Trump threatens to make the Strait of Hormuz a US territory: Can he?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_077",
+      "headline": "‘Limited options’ for many Iranians as war with US chokes economy",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_095",
+      "headline": "Belgium’s largest wildfire on record spreads towards German border",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_101",
+      "headline": "Houthis launch new attacks on al-Makha and Marib as Yemen conflict escalates",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_110",
+      "headline": "What is Tokyo’s Yasukuni Shrine, linked to Japan’s wartime atrocities?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_128",
+      "headline": "Cristiano Ronaldo hints at retirement at end of season",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_001",
+      "headline": "Why is Australia's mushroom killer back in court this week?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_003",
+      "headline": "Thousands of Bonnie Tyler fans gather to pay respects as coffin brought home",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_006",
+      "headline": "Liechtenstein changes succession rule to allow women to ascend the throne",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_007",
+      "headline": "Salt flats and ancient riverbeds: aerial photography from Western Australia’s midwest – in pictures",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_009",
+      "headline": "Eleven killed in Israeli strikes on southern Lebanon, authorities say",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_011",
+      "headline": "Morocco detains dozens of migrants trying to cross into Ceuta, reports say",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_013",
+      "headline": "Corgi high fashion and at the races: in pictures",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_015",
+      "headline": "Australian state to launch gun buyback after Bondi Beach attack",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_016",
+      "headline": "UAE says Iran attacked ADNOC vessel in Hormuz, urges waterway's reopening - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_018",
+      "headline": "BBC seeks to subpoena family members in Panorama lawsuit",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_021",
+      "headline": "North Korea's Kim, Russia's Putin reaffirm ties on Korean Liberation Day - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_023",
+      "headline": "印尼規模7.7強震 已知47人死、數百棟房屋毀損",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_026",
+      "headline": "日本千葉縣破紀錄豪雨釀9死 破千台車輛路邊拋錨待拖吊",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_027",
+      "headline": "今年台灣逾規模6地震僅一起 較平均值略偏少",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_029",
+      "headline": "太麻里金針花季開跑 道路受損修復中實施交管",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_030",
+      "headline": "屏東南州休旅車卡平交道 民眾按警示鈴幸未釀意外",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_032",
+      "headline": "Trump asks US Supreme Court to allow White House ballroom construction to continue - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_035",
+      "headline": "India opens tax amnesty scheme for small taxpayers with undisclosed foreign assets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_038",
+      "headline": "一週大事／總預算三讀 城鎮韌性演習（2026.8.10-8.16）",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_039",
+      "headline": "哥本哈根驕傲遊行  守護同性之愛「兔兒神」現身街頭",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_040",
+      "headline": "港媒：稱葬禮外交釋善意是過度解讀  低估中日結構性矛盾深度",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_042",
+      "headline": "美國消費動能降溫 週五美股四大指數翻黑",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_043",
+      "headline": "以色列屯墾民約旦河西岸奪地　巴勒斯坦家庭控遭攻擊",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_051",
+      "headline": "印尼7.7強震至少51死　回顧該國十年來最致命地震",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_054",
+      "headline": "野火威脅全球　加拿大「滅火神器」成市場搶手貨",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_055",
+      "headline": "India sets targets for oil companies to boost cooking gas output amid Middle East war - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_056",
+      "headline": "卡達駁斥俘虜伊朗飛行員　稱已聯繫德黑蘭",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_057",
+      "headline": "SK世紀離婚案  崔泰源提上訴盼用現金配股票支付",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_060",
+      "headline": "美物價續漲選民關切　川普兩年前承諾再受檢視",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_061",
+      "headline": "西班牙暴雨釀洪災2死2傷　7地區列黃色警戒",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_062",
+      "headline": "Iran executes man convicted of running over police during January protests - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_066",
+      "headline": "‘I don’t always go full banana!’ From the yellow man to a playful shrink, stylish people on what they wear every day – and why",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_067",
+      "headline": "中國客大減56%日本觀光仍旺　台韓歐美旅客填補缺口",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_069",
+      "headline": "巴菲特旗下波克夏增持Alphabet　躍居第3大持股",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_070",
+      "headline": "Ukrainian drones strike Moscow region, killing one - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_071",
+      "headline": "參選人沈伯洋提內湖交通壅塞 北市府：已有階段性改善",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_072",
+      "headline": "Iran disputes Qatar, Kuwait accounts of captured Iranian personnel - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_074",
+      "headline": "二青少年踹YouBike並上傳影片 業者： 已提告、將求償",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_075",
+      "headline": "Trump wants more economic pressure on Iran. What are his options? - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_076",
+      "headline": "Europe's tallest Virgin Mary statue unveiled in rural Poland",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_078",
+      "headline": "響應城鎮韌性演習 駐台代表接力開箱避難包",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_080",
+      "headline": "23民眾受困故障電梯約1小時 桃機公司致歉將釐清",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_081",
+      "headline": "新冠公費快篩、給藥有資格限定 疾管署：9月討論是否放寬",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_082",
+      "headline": "新北推只租不售「勞工宅」 內政部指有轉售等疑慮否決",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_083",
+      "headline": "愛國者防空飛彈庫存見底 烏暫停公布攔截飛彈數據",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_084",
+      "headline": "今年全球規模逾7地震已11起 郭鎧紋示警4個「空白帶」",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_085",
+      "headline": "高雄警稽查舞廳 查獲21名失聯移工及毒品",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_086",
+      "headline": "貨車司機雪隧蛇行遭攔查 唾液快篩呈陽性反應",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_087",
+      "headline": "資深車長列新北酒駕累犯名單 台鐵：若屬實將嚴懲",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_088",
+      "headline": "洩露民眾個資涉貪污、洩密 北市刑大科偵隊長遭免職",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_089",
+      "headline": "‘I see the incredible promise’: on set of an AI film shoot as new studios embrace controversial tech",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_090",
+      "headline": "Billionaire Peter Thiel buys 1% stake in Argentine Vaca Muerta oil firm, filing shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_091",
+      "headline": "烏克蘭國防部：俄軍7月傷亡近4.3萬人　逾1年來最高",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_092",
+      "headline": "BBC visits smouldering Kyiv market after Russian strikes",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_093",
+      "headline": "Pope calls for an end to West Bank violence against Palestinians - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_094",
+      "headline": "高市早苗上任10個月訪11國　首重鞏固盟友抗中國施壓",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_096",
+      "headline": "Thousands displaced by deadly Indonesia earthquake as rescue efforts continue",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_097",
+      "headline": "Zimbabwe police: death toll from Lake Kariba boat accident rises to 80 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_099",
+      "headline": "Rock stars Ash look back: ‘Mark broke his feet jumping off a balcony – for the rest of the tour he self-medicated with gin and buckets of ice’",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_103",
+      "headline": "Four 'extraordinary' Renaissance paintings stolen from Italian museum",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_104",
+      "headline": "Renaissance paintings by Antonello da Messina stolen from Sicilian museum",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_105",
+      "headline": "伊朗國會通過法案　接受美以等敵國媒體採訪可定罪",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_106",
+      "headline": "川普期中選舉前景堪憂　民調：美國多數選民自認變窮",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_107",
+      "headline": "Bangladesh says better environment needed for India visit amid rift over ousted leader - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_112",
+      "headline": "美韓自由護盾演習在即　美軍第8軍團首提第一島鏈",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_115",
+      "headline": "Tom Gauld on the library of the forbidden tomes – cartoon",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_116",
+      "headline": "烏克蘭空襲俄羅斯至少6死　俄軍稱擊落822架無人機",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_122",
+      "headline": "Four Antonello da Messina works stolen in Renaissance painter's hometown - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_123",
+      "headline": "Zambia's Hichilema leads presidential vote count - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_125",
+      "headline": "Australia gun buyback to start in November, PM Albanese says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_131",
+      "headline": "John D Edwards obituary",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_133",
+      "headline": "伊朗懸賞3萬美元擊殺或俘虜美軍　女性行動獎金加倍",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_138",
+      "headline": "In Spain's Ceuta, hundreds of migrants stage protest and demand asylum - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_139",
+      "headline": "One dead, homes swept away after Hurricane Lala lashes Hawaii",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_141",
+      "headline": "推進加薩和平計畫　傳庫許納埃及會晤哈瑪斯新領導人",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_142",
+      "headline": "Teen suspect in Virginia campus shooting found hiding in closet",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_146",
+      "headline": "巨浪掀翻辛巴威渡輪增至84死　搜尋行動持續",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_147",
+      "headline": "Admiral praises USS Lincoln crew amid reports of worsening conditions during long deployment - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_148",
+      "headline": "Two dead and hundreds evacuated after twin fires break out on Greek island",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_149",
+      "headline": "Trump's envoys meet mediators, Israel strikes Gaza - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_150",
+      "headline": "Belgian wildfire doubles in size on third day tearing through nature reserve",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_002",
+      "headline": "Families of USS Lincoln crew say Trump should be 'ashamed' of conditions on board",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_024",
+      "headline": "How Madonna Put Motion Into Music With Her Dance Performances",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_031",
+      "headline": "TV tonight: a remarkable Bafta-winning film gets a vital update",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_037",
+      "headline": "‘Have I tried having sex to my own music? God, no!’: Natalie Imbruglia’s honest playlist",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_044",
+      "headline": "Book Review: ‘The Maltese Version,’ by Katy Simpson Smith",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_046",
+      "headline": "‘I thought – if I die, I’ve had a good innings’: producer James Ford on life, death and making an album from his hospital bed",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_047",
+      "headline": "Zale Parry, Aquatic Hollywood Star and Early Acid Tripper, Dies at 93",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_049",
+      "headline": "What to Know Before Watching ‘Lanterns,’ HBO’s New DC Comics Series",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_050",
+      "headline": "Hannah Berner Is Having the Last Laugh, or Would if She Could",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_065",
+      "headline": "When Is It OK to Give Up on a Book? Our Readers Have Thoughts.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_079",
+      "headline": "‘Spearhead of annexation’: Israel hands West Bank rule to civilian police",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_100",
+      "headline": "Timeline: The one-week siege of Qusra by Israeli settlers in the West Bank",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_102",
+      "headline": "Patients treated in tents after earthquake damages Indonesia hospital",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_108",
+      "headline": "Who is DEI critic and Jason Arday accuser, Nathan Cofnas?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_111",
+      "headline": "Ben-Gvir calls for nightly killings of Palestinians in Gaza",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_113",
+      "headline": "‘The Mediterranean is a bridge, not a border’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_114",
+      "headline": "Hurricane Lala weakens to a tropical storm, but flooding persists in Hawaii",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_117",
+      "headline": "What really happened in Ceuta? Why we may never find out",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_118",
+      "headline": "Violet Hensley Dies at 109; Ozarks Fiddler Made Opry Debut at 99",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_119",
+      "headline": "How Thrillers Hook You With Their First Sentence",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_120",
+      "headline": "Moroccan migrants stage sit-in as thousands remain stranded in Ceuta",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_121",
+      "headline": "Stavros Halkias Never Wanted to Get Political",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_124",
+      "headline": "Arsenal cruise to win over Manchester City in Community Shield",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_126",
+      "headline": "A good – and bad – week for Italy's art police and museum security",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_130",
+      "headline": "‘Water and salt’: Qusra residents trapped in Israeli settler siege",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_132",
+      "headline": "Why are sandwiches more regulated than AI?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_135",
+      "headline": "Former Israeli captive asks Ben-Gvir to let him execute Palestinian prisone",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_136",
+      "headline": "The 2026 Salzburg Festival Navigates Uncertain Times Without an Artistic Director",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_137",
+      "headline": "As the Old Files Open, One Family Confronts Another’s Dark Nazi Past",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_140",
+      "headline": "In ‘The Brink of War,’ a Return to an Era of Razor-Edge Diplomacy",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_143",
+      "headline": "Erdogan calls for Strait of Hormuz reopening amid oil disruption",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_145",
+      "headline": "Erdogan says Israeli attacks on Lebanon are a serious concern for Türkiye",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_151",
+      "headline": "Anti-corruption raids in Baghdad as dozens of officials arrested",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_152",
+      "headline": "Senegal’s Saint-Louis Regatta keeps centuries of tradition alive",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_012",
+      "headline": "Common Days Cafe / INS Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_020",
+      "headline": "Community Canteen No. 11, Aranya Qinhuangdao / Verse Design",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_028",
+      "headline": "NUA Arquitectures renovates Catalan textile warehouse with timber office block",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_033",
+      "headline": "Kifisia Apartment: A Reconfiguration of Domestic Boundaries / Georgios Apostolopoulos Architects",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_048",
+      "headline": "Five ice cream shops that provide cool respite from the summer heat",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_058",
+      "headline": "Woonpioniers models adjoining Dutch homes on \"a game of Tetris\"",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_064",
+      "headline": "Pavillon Monk  / L. McComber",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_098",
+      "headline": "Refuge House / Elisa Porto Arquitetura",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260817_evt_109",
+      "headline": "Interest rate dilemma for central banks as inflation rises but growth slows",
+      "selection_score": -10,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

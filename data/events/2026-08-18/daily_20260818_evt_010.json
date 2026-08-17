@@ -1,0 +1,99 @@
+{
+  "event_id": "daily_20260818_evt_010",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "川普砍美韓聯合軍演",
+  "context": "川普下令五角大廈縮減與南韓的聯合軍演，理由是南韓在伊朗戰爭中袖手旁觀、沒有協助伊朗『去核化』，他也提到自己跟北韓領導人『關係很好』。民主黨批評這項決定，共和黨參議員提利斯（Thom Tillis）則說，這等於讓北韓有更多餘力支援俄羅斯打烏克蘭。",
+  "article_ids": [
+    "0f8568d4fa71be4669048f8030fe26e2440b6538599987a5cbe543fd6fdf0fac",
+    "c125d0a59a26d89472a51509056c7e34143b2c0363e1b8d7eca4c721ebf0b74d",
+    "ef590170397ddcf4b74269f553e78b4a6b08c44e09003f8404837a8204ab7ecd",
+    "7f46d0649ff89bfe3d5491d511e623f5b2301f50e24f40eaaff3e1a705cc25f3",
+    "415845c6b78d9e5445b0f30ad902ba1a1b45606cbd3af0c5e3378a349731582c"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump orders Pentagon to cut back military exercises with South Korea Reuters",
+      "title": "Trump orders Pentagon to cut back military exercises with South Korea - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaGdQYThHbnV2b3NnalEycy1sZGpyNGNLaGNYODl2TmhhUnNma2ZhMk1MTURNQWxMalB3OUswYk10R2RJZGlBNnJoUkZzRGxGcE8xQklBZnlZYUs1d004Q09uUWdDeV96aFlJc0o2Nzh1aHZvRVBhZTV2SGU4RnZremZXWkw0YUp3SENRTDNFNkFyOWNVS2ROSEpCaVhpSmV2QWhMUGI5aVo3aUc3Z2pkWDBIQ2lRdw?oc=5",
+      "published_at": "2026-08-17T05:39:00+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "President Trump explained the decision by saying South Korea had declined to help with the \"denuclearization\" of Iran and he cited his good relationship with North Korea's leader.",
+      "title": "Trump orders Pentagon to scale back joint exercises with South Korea",
+      "url": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
+      "published_at": "2026-08-17T13:21:39+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Republican Senator Thom Tillis says the decision allows North Korea to provide more support to Russia in Ukraine.",
+      "title": "Democrats rebuke Trump over scaling back military drills with South Korea",
+      "url": "https://www.aljazeera.com/news/2026/8/17/democrats-rebuke-trump-over-scaling-back-military-drills-with-south-korea?traffic_source=rss",
+      "published_at": "2026-08-18T00:14:07+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Trump cites his \"very good relationship\" with North Korea's leader in deciding to downsize the exercises.",
+      "title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+      "url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-18T02:39:39+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "川普下令五角大廈縮減與南韓的聯合軍演。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump orders Pentagon to cut back military exercises with South Korea - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQaGdQYThHbnV2b3NnalEycy1sZGpyNGNLaGNYODl2TmhhUnNma2ZhMk1MTURNQWxMalB3OUswYk10R2RJZGlBNnJoUkZzRGxGcE8xQklBZnlZYUs1d004Q09uUWdDeV96aFlJc0o2Nzh1aHZvRVBhZTV2SGU4RnZremZXWkw0YUp3SENRTDNFNkFyOWNVS2ROSEpCaVhpSmV2QWhMUGI5aVo3aUc3Z2pkWDBIQ2lRdw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "川普表示，南韓沒有協助伊朗『去核化』，並提到自己跟北韓領導人關係良好，因此決定縮小演習規模。",
+      "source_id": "npr_world",
+      "source_title": "Trump orders Pentagon to scale back joint exercises with South Korea",
+      "source_url": "https://www.npr.org/2026/08/17/g-s1-138969/trump-exercises-south-korea",
+      "support_type": "direct"
+    },
+    {
+      "claim": "民主黨議員批評川普縮減美韓軍演的決定。",
+      "source_id": "aljazeera_all",
+      "source_title": "Democrats rebuke Trump over scaling back military drills with South Korea",
+      "source_url": "https://www.aljazeera.com/news/2026/8/17/democrats-rebuke-trump-over-scaling-back-military-drills-with-south-korea?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "共和黨參議員提利斯指出，這項決定讓北韓有更多餘力支援俄羅斯打烏克蘭。",
+      "source_id": "bbc_world",
+      "source_title": "Trump says US to reduce military drills with South Korea after it stayed out of Iran war",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2lll7zvn0o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "川普下令五角大廈縮減與南韓的聯合軍演。他表示，南韓在伊朗戰爭中沒有出力協助伊朗『去核化』，同時提到自己跟北韓領導人『關係很好』。民主黨批評這項決定；共和黨參議員提利斯（Thom Tillis）則說，這等於讓北韓有更多餘力支援俄羅斯打烏克蘭。\n\n—— 本則整理自 Reuters、NPR、Al Jazeera、BBC 於 2026 年 8 月 17、18 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "川普下令五角大廈縮減與南韓的聯合軍演。他解釋，南韓在伊朗戰爭中沒有協助伊朗『去核化』，並提到自己跟北韓領導人『關係很好』，才決定縮小演習規模。民主黨議員批評這項決定；共和黨參議員提利斯（Thom Tillis）則指出，這等於讓北韓有更多餘力支援俄羅斯打烏克蘭。\n\n本則整理自 Reuters、NPR、Al Jazeera、BBC 於 2026 年 8 月 17、18 日發佈的報導。",
+  "voice_text": "川普下令縮減美韓聯合軍演。他說的理由是，南韓在伊朗戰爭裡沒有幫忙伊朗『去核化』，還提到自己跟北韓領導人『關係很好』。這個決定在美國國內引發爭議——民主黨批評川普，共和黨參議員提利斯也跳出來說，這等於讓北韓有更多餘力去支援俄羅斯打烏克蘭。"
+}

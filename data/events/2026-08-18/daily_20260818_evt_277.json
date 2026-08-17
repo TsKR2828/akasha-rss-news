@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260818_evt_277",
+  "beat": "ARTS",
+  "sub_beat": null,
+  "headline": "Here’s the latest.",
+  "context": "Here’s the latest.",
+  "article_ids": [
+    "73186801460307311f562a6e6bbaf215fb12cacdd0b10b8df973052272b69bfd"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_arts",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "",
+      "title": "Here’s the latest.",
+      "url": "https://www.nytimes.com/live/2026/08/17/arts/tupac-murder-trial-duane-davis/heres-the-latest",
+      "published_at": "2026-08-18T03:03:35+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Here’s the latest.",
+      "source_id": "nyt_arts",
+      "source_title": "Here’s the latest.",
+      "source_url": "https://www.nytimes.com/live/2026/08/17/arts/tupac-murder-trial-duane-davis/heres-the-latest",
+      "support_type": "direct"
+    }
+  ]
+}

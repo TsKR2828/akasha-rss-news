@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260819_evt_145",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "New tremors jolt Spain's Granada, injuring three and damaging some buildings - Reuters",
+  "context": "New tremors jolt Spain's Granada, injuring three and damaging some buildings Reuters",
+  "article_ids": [
+    "9f83766dbe9e07a2e3755502e534f7fef75625d91b2f5e5d3bdbdc4e3bf2b7c2",
+    "f63cb8e8746172b94724bb14c06446ff85775093ae8e69e285b628e0c21f5109"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "New tremors jolt Spain's Granada, injuring three and damaging some buildings Reuters",
+      "title": "New tremors jolt Spain's Granada, injuring three and damaging some buildings - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMi1MWUFDNy10bWM3V3UyRUpwV0tHMmJiVFRaWUhuY0dTNnF5d2ZFOUdDcDJUM2EzTnBnZnNZOWlhUFlPN3dURFVXWGlhMFJHNnZoQlp5dTZBS0xTTVB3ZUU4bXllNzFZN0l1a0V5cF8wem01RXpFdGxXY0I4ZUthMDZyQzBMdE9FSE10SThOeGxhVUxFMDRobUEtN2pkZXJqYkE0X1VMaElEWkRpM3FCT0xR?oc=5",
+      "published_at": "2026-08-18T20:15:30+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "A number of buildings and cars are damaged in the historic city, and the world famous Alhambra palace has temporarily closed.",
+      "title": "Earthquake rocks Spain's historic Granada, injuring three",
+      "url": "https://www.bbc.co.uk/news/articles/cdx755dyy1yo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-19T01:15:39+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "New tremors jolt Spain's Granada, injuring three and damaging some buildings - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "New tremors jolt Spain's Granada, injuring three and damaging some buildings - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMi1MWUFDNy10bWM3V3UyRUpwV0tHMmJiVFRaWUhuY0dTNnF5d2ZFOUdDcDJUM2EzTnBnZnNZOWlhUFlPN3dURFVXWGlhMFJHNnZoQlp5dTZBS0xTTVB3ZUU4bXllNzFZN0l1a0V5cF8wem01RXpFdGxXY0I4ZUthMDZyQzBMdE9FSE10SThOeGxhVUxFMDRobUEtN2pkZXJqYkE0X1VMaElEWkRpM3FCT0xR?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Earthquake rocks Spain's historic Granada, injuring three",
+      "source_id": "bbc_world",
+      "source_title": "Earthquake rocks Spain's historic Granada, injuring three",
+      "source_url": "https://www.bbc.co.uk/news/articles/cdx755dyy1yo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

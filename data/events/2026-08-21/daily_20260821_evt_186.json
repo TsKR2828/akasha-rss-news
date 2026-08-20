@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260821_evt_186",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Grok exfiltrates user data when malicious instructions are encrypted",
+  "context": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
+  "article_ids": [
+    "86cc3d0d184a249bf6fc1fb0ea5fcf1423f0ccf564e6efbad1e46365c63e5176"
+  ],
+  "sources": [
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
+      "title": "Grok exfiltrates user data when malicious instructions are encrypted",
+      "url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+      "published_at": "2026-08-20T21:00:35+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Grok exfiltrates user data when malicious instructions are encrypted",
+      "source_id": "ars_technica_ai",
+      "source_title": "Grok exfiltrates user data when malicious instructions are encrypted",
+      "source_url": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+      "support_type": "direct"
+    }
+  ]
+}

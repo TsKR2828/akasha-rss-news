@@ -1,0 +1,68 @@
+{
+  "event_id": "daily_20260823_evt_054",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Hours after U.S. imposes tariffs, Canada says it'll strike back starting Sept. 8",
+  "context": "The U.S. has now imposed 50% tariffs on $20 billion worth of Canadian products. Prime Minister Mark Carney says Canada will match those tariffs \"dollar for dollar\" next month.",
+  "article_ids": [
+    "e93c64b2d6e727b683d6632c493d7a3fc0b7985e5d79df491c2d5400bd6a2e1f",
+    "459332e6019e8d253de4c049ab7c915dc8ce3b78fbebf2474e177cf6e2fcea37",
+    "d39f85251abe4db1407f2596715425c376438ffc5b030b2a97aaec768363c5e0"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The U.S. has now imposed 50% tariffs on $20 billion worth of Canadian products. Prime Minister Mark Carney says Canada will match those tariffs \"dollar for dollar\" next month.",
+      "title": "Hours after U.S. imposes tariffs, Canada says it'll strike back starting Sept. 8",
+      "url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
+      "published_at": "2026-08-22T12:36:27+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The prime minister spoke hours after the US imposed 50 percent tariffs on nearly $20bn worth of Canadian goods.",
+      "title": "Carney: Canada will enact retaliatory US tariffs starting September 8",
+      "url": "https://www.aljazeera.com/news/2026/8/22/carney-canada-will-enact-retaliatory-us-tariffs-starting-september-8?traffic_source=rss",
+      "published_at": "2026-08-23T03:00:25+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Hours after U.S. imposes tariffs, Canada says it'll strike back starting Sept. 8",
+      "source_id": "npr_world",
+      "source_title": "Hours after U.S. imposes tariffs, Canada says it'll strike back starting Sept. 8",
+      "source_url": "https://www.npr.org/2026/08/22/nx-s1-5941584/us-canada-tariffs",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Carney: Canada will enact retaliatory US tariffs starting September 8",
+      "source_id": "aljazeera_all",
+      "source_title": "Carney: Canada will enact retaliatory US tariffs starting September 8",
+      "source_url": "https://www.aljazeera.com/news/2026/8/22/carney-canada-will-enact-retaliatory-us-tariffs-starting-september-8?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Canada to match US tariffs “dollar for dollar,” PM Carney says",
+      "source_id": "aljazeera_all",
+      "source_title": "Canada to match US tariffs “dollar for dollar,” PM Carney says",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/22/22-08-clip-carney-tariffs-canada-ca?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

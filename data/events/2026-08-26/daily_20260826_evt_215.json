@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260826_evt_215",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Canada hits back at the U.S. with tariffs as the countries' trade fight escalates",
+  "context": "The measures come after President Trump imposed 50% tariffs on many Canadian goods and threatened more after trade talks broke down on Friday.",
+  "article_ids": [
+    "addb089d87c02965be7b84e691a1cc97f9ff2c95c17143313f3b178ca2abe48e",
+    "799fb7497910b3c04b849700d264e9fbc437cc5e24911b7f4613ed7f4543a56a"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The measures come after President Trump imposed 50% tariffs on many Canadian goods and threatened more after trade talks broke down on Friday.",
+      "title": "Canada hits back at the U.S. with tariffs as the countries' trade fight escalates",
+      "url": "https://www.npr.org/2026/08/25/nx-s1-5944240/canada-us-tariffs",
+      "published_at": "2026-08-25T23:20:18+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Canada imposes tariffs on $19.9bn of US goods which will take effect on September 8 as trade talks with Washington collapse.",
+      "title": "Canada hits US with counter-tariffs on more than 700 products",
+      "url": "https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products?traffic_source=rss",
+      "published_at": "2026-08-26T01:08:54+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -7,
+  "selection_reason": "multi_source_confirmed; source_tier_2; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Canada hits back at the U.S. with tariffs as the countries' trade fight escalates",
+      "source_id": "npr_world",
+      "source_title": "Canada hits back at the U.S. with tariffs as the countries' trade fight escalates",
+      "source_url": "https://www.npr.org/2026/08/25/nx-s1-5944240/canada-us-tariffs",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Canada hits US with counter-tariffs on more than 700 products",
+      "source_id": "aljazeera_all",
+      "source_title": "Canada hits US with counter-tariffs on more than 700 products",
+      "source_url": "https://www.aljazeera.com/economy/2026/8/25/canada-hits-us-with-counter-tariffs-targeting-hundreds-of-products?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

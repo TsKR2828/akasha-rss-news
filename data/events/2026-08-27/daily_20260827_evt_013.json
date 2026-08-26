@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260827_evt_013",
+  "beat": "ARTS",
+  "sub_beat": null,
+  "headline": "Trump Lawyers Warn That Kennedy Center Might Need Demolition if Not Fixed",
+  "context": "In a court filing about honoring President Trump on the facade, the administration said that without a proper renovation the building might need to be “taken down.”",
+  "article_ids": [
+    "62237d4db439559e73296e6cb6b4079b2710e3b9d05bed4ac9ef28b9ea2c14c2",
+    "67203318248f0d943416f39c20958619cc070a62bcc1a72965ce245586b1791b"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_arts",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "In a court filing about honoring President Trump on the facade, the administration said that without a proper renovation the building might need to be “taken down.”",
+      "title": "Trump Lawyers Warn That Kennedy Center Might Need Demolition if Not Fixed",
+      "url": "https://www.nytimes.com/2026/08/25/arts/music/trump-kennedy-center-demolition-lawyers.html",
+      "published_at": "2026-08-26T05:29:44+08:00"
+    },
+    {
+      "source_id": "guardian_culture",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "US president’s lawyers in court filing say Washington arts complex must undergo repairs or risk demolition The John F Kennedy Center for the Performing Arts could be demolished if repairs are not carried out, the Trump administration warned in a court filing on Monday. Lawyers for the US president said the national arts complex in Washington DC must undergo a $250m renovation or risk facing the wrecking ball. Continue reading...",
+      "title": "Trump administration threatens to demolish Kennedy Center if $250m renovation not done",
+      "url": "https://www.theguardian.com/us-news/2026/aug/25/trump-kennedy-center-demolish",
+      "published_at": "2026-08-26T07:15:01+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Trump Lawyers Warn That Kennedy Center Might Need Demolition if Not Fixed",
+      "source_id": "nyt_arts",
+      "source_title": "Trump Lawyers Warn That Kennedy Center Might Need Demolition if Not Fixed",
+      "source_url": "https://www.nytimes.com/2026/08/25/arts/music/trump-kennedy-center-demolition-lawyers.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump administration threatens to demolish Kennedy Center if $250m renovation not done",
+      "source_id": "guardian_culture",
+      "source_title": "Trump administration threatens to demolish Kennedy Center if $250m renovation not done",
+      "source_url": "https://www.theguardian.com/us-news/2026/aug/25/trump-kennedy-center-demolish",
+      "support_type": "direct"
+    }
+  ]
+}

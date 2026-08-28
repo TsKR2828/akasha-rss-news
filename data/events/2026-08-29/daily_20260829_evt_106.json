@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260829_evt_106",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 - Reuters",
+  "context": "Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 Reuters",
+  "article_ids": [
+    "bb94db3c65bf1dd2e0e2886ccc31e1070a9bc41db766dde4d02847e496b8f42c",
+    "6d9a4bf1ff02fa1156933c4ec743a33ce3fc402b43b681f1daf4b05973efd74f"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 Reuters",
+      "title": "Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYWhTek5LX1pzampoMXpSNFQ5NzhUM0VUN0pkSDlxX3M0b0drM3h3ZHBSbzE0Slh4Wk15aFphRkFJV0pmLVExNElKOFo2ajhIcHoyRXR0V0pCcW1zMmVCMTdMazFIMTg5QjF1SVRrY2FvNU9KWElsQUNtWDNwVDZYbldYcUlfX3NMUWJkV190WjNLUEJFUzYyalNuc1VUM2RVZ0RLSDg2aWRPemgtaEE?oc=5",
+      "published_at": "2026-08-28T17:02:06+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "King Oyo ascended to the throne of Uganda's Tooro kingdom when he was just three years old.",
+      "title": "World's youngest reigning traditional monarch dies aged 34",
+      "url": "https://www.bbc.co.uk/news/articles/c0j38d9v40po?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-28T19:13:24+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Ugandan King Oyo Nyimba, once world's youngest monarch, dies at 34 - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYWhTek5LX1pzampoMXpSNFQ5NzhUM0VUN0pkSDlxX3M0b0drM3h3ZHBSbzE0Slh4Wk15aFphRkFJV0pmLVExNElKOFo2ajhIcHoyRXR0V0pCcW1zMmVCMTdMazFIMTg5QjF1SVRrY2FvNU9KWElsQUNtWDNwVDZYbldYcUlfX3NMUWJkV190WjNLUEJFUzYyalNuc1VUM2RVZ0RLSDg2aWRPemgtaEE?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "World's youngest reigning traditional monarch dies aged 34",
+      "source_id": "bbc_world",
+      "source_title": "World's youngest reigning traditional monarch dies aged 34",
+      "source_url": "https://www.bbc.co.uk/news/articles/c0j38d9v40po?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

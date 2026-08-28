@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260829_evt_039",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "US judge rules Pentagon blacklisting of Anthropic unlawful - Reuters",
+  "context": "US judge rules Pentagon blacklisting of Anthropic unlawful Reuters",
+  "article_ids": [
+    "00862007dda36f04e48cb001799b9b9bd04cc40f87d21cf605e97a8d59ad09ee",
+    "ab46eb4008404c3fd98b5a0478c0c599f6047b72ed61dadeca9349f04093cacc"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "US judge rules Pentagon blacklisting of Anthropic unlawful Reuters",
+      "title": "US judge rules Pentagon blacklisting of Anthropic unlawful - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUDBMcUFmSmZqdE53T3hrZWlVbHBnMmlfY0FIeXUtS2t2YkRKR3dMOEVPOVhHQkxhQVNfZDhyaFhlTUlYWE11dDRLVkZ3MkhJVG00eUpIajliNEpYdlZVdzJFc2pvdUhVbHZWV0lfaUY1RThXNUZJNFNkSjh0UU03YVYxVGliSnBPT2dCWWljTUZOT21GLVBibWt5S0s1dw?oc=5",
+      "published_at": "2026-08-28T09:19:00+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Anthropic ​argued designation as ‘supply-chain risk’ could cost billions ‌in lost business ‌and reputational harm A US judge ruled on Thursday that the Trump administration broke the law when it designated Anthropic as a supply chain risk earlier this year, finding that the government had unlawfully targeted the AI firm for refusing to comply with defense department demands. “The empty invocation of national security is not a blank check to punish and retaliate against government critics,” Judge Rita Lin said in a 59-page decision. Continue reading...",
+      "title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules",
+      "url": "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai",
+      "published_at": "2026-08-28T11:34:35+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "US judge rules Pentagon blacklisting of Anthropic unlawful - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "US judge rules Pentagon blacklisting of Anthropic unlawful - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUDBMcUFmSmZqdE53T3hrZWlVbHBnMmlfY0FIeXUtS2t2YkRKR3dMOEVPOVhHQkxhQVNfZDhyaFhlTUlYWE11dDRLVkZ3MkhJVG00eUpIajliNEpYdlZVdzJFc2pvdUhVbHZWV0lfaUY1RThXNUZJNFNkSjh0UU03YVYxVGliSnBPT2dCWWljTUZOT21GLVBibWt5S0s1dw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules",
+      "source_id": "guardian_business",
+      "source_title": "Pentagon’s blacklisting of Anthropic was unlawful, US judge rules",
+      "source_url": "https://www.theguardian.com/technology/2026/aug/28/us-court-rules-pentagon-anthropic-ban-illegal-trump-claude-ai",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "event_id": "daily_20260829_evt_079",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "伊朗戰爭滿半年回顧",
+  "context": "美國與以色列從 2 月 28 日對伊朗展開大規模空襲，至今已滿半年。伊朗最高領袖哈米尼在空襲首日遇害，荷莫茲海峽一度被封鎖，衝突迅速演變成波及全球經濟的區域戰爭。儘管遭受重創，伊朗政權至今仍未垮台。",
+  "article_ids": [
+    "ab297ec74a6ec7c6075baf3b3c2792827e95e250431f85cb7b893b0a263d04be",
+    "ad16615a5371d2d81989b3298430d1536e6a4ffef4b5972c009017cc6eecd50d",
+    "72cd85cafe617e2b4062cccf4e8a5fd97c3674cd866e954b523623f56fcae863",
+    "140d187d6ab8b6a77244dd7f28b54d1317aee5e2f70488e3cfeec50b26888d19"
+  ],
+  "sources": [
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "From the first US and Israeli strikes six months ago to the battle for Hormuz, this timeline plots how Trump’s war on Iran quickly became a regional conflict with global economic consequences On 28 February 2026, the US and Israel began large-scale strikes on Iran. Tehran responded by attacking Israeli and US allies across the Gulf. Iran’s supreme leader, Ali Khamenei, was killed on the first day of strikes, and the strait of Hormuz – a crucial waterway for transporting oil – was effectively closed soon after. The conflict quickly became a regional war with global economic consequences. Donald Trump: EPA/Trump Vance transition team US CENTCOM: AP Abbas Araghchi: AP Esmail Baqaei: Getty/Anadolu Masoud Pezeshkian: AP Mohammad Bagher Ghalibaf: Getty/NurPhoto Iran flag: Alamy Continue reading...",
+      "title": "How the Iran war unfolded: every attack and oil price change – visualised",
+      "url": "https://www.theguardian.com/world/ng-interactive/2026/aug/28/how-the-iran-war-unfolded-every-attack-and-oil-price-change-visualised",
+      "published_at": "2026-08-28T14:00:50+08:00"
+    },
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "How markets have moved six months into the war, and where they might be headed in the future.",
+      "title": "How 6 Months of War in Iran Jolted Oil, Gas, Stocks and More",
+      "url": "https://www.nytimes.com/2026/08/28/business/iran-war-oil-stocks-prices.html",
+      "published_at": "2026-08-28T22:58:31+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The US-Israeli war on Iran has reached the six-month mark, with no sign of slowing down.",
+      "title": "6 months of war on Iran",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/6-months-of-war-on-iran?traffic_source=rss",
+      "published_at": "2026-08-28T23:09:27+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Instead of collapsing, the Iranian regime has dug in its heels and taken an even harder line.",
+      "title": "After 6 months of war, Iran's battered regime remains entrenched",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
+      "published_at": "2026-08-29T03:35:24+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "美國與以色列自 2026 年 2 月 28 日起對伊朗展開大規模空襲，伊朗最高領袖哈米尼在空襲首日遇害，荷莫茲海峽隨後一度被封鎖。",
+      "source_id": "guardian_business",
+      "source_title": "How the Iran war unfolded: every attack and oil price change – visualised",
+      "source_url": "https://www.theguardian.com/world/ng-interactive/2026/aug/28/how-the-iran-war-unfolded-every-attack-and-oil-price-change-visualised",
+      "support_type": "direct"
+    },
+    {
+      "claim": "這場衝突已波及全球油價、天然氣與股市，影響持續至戰爭滿六個月。",
+      "source_id": "nyt_business",
+      "source_title": "How 6 Months of War in Iran Jolted Oil, Gas, Stocks and More",
+      "source_url": "https://www.nytimes.com/2026/08/28/business/iran-war-oil-stocks-prices.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "美以對伊朗的戰爭已持續六個月，看不出緩和跡象。",
+      "source_id": "aljazeera_all",
+      "source_title": "6 months of war on Iran",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/28/6-months-of-war-on-iran?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "伊朗政權雖遭重創，六個月後不僅未垮台，立場反而更加強硬。",
+      "source_id": "npr_world",
+      "source_title": "After 6 months of war, Iran's battered regime remains entrenched",
+      "source_url": "https://www.npr.org/2026/08/28/nx-s1-5947854/us-iran-war",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n伊朗戰爭滿半年　油價股市餘波未平\n\n美國與以色列從今年 2 月 28 日對伊朗展開大規模空襲，至今已滿半年。伊朗最高領袖哈米尼在空襲首日遇害，荷莫茲海峽一度被封鎖。\n\n這場衝突迅速演變成波及全球油價、股市的區域戰爭，而儘管遭受重創，伊朗政權至今仍未垮台，反而立場更加強硬。\n\n—— 本則來自 The Guardian、The New York Times、Al Jazeera 與 NPR，2026 年 8 月 28 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國與以色列從今年 2 月 28 日對伊朗展開大規模空襲，至今已滿半年。伊朗最高領袖哈米尼在空襲首日遇害，作為石油運輸要道的荷莫茲海峽，也一度因此有效封鎖。\n\n這場衝突迅速演變成波及全球油價、股市與天然氣市場的區域戰爭。半年過去，戰事看不到緩和跡象，而伊朗政權儘管遭受重創，至今不僅沒有垮台，反而立場變得更加強硬。\n\n本則整理自 The Guardian、The New York Times、Al Jazeera 與 NPR 於 2026 年 8 月 28 日發佈的報導。",
+  "voice_text": "伊朗戰爭滿半年了。回頭看，這場戰爭是美國跟以色列在今年 2 月底發動的大規模空襲拉開序幕，伊朗最高領袖哈米尼在空襲第一天就遇害，運油要道荷莫茲海峽也一度被封鎖。半年過去，衝突早就不只是軍事問題，全球油價、股市都被牽動。更讓人意外的是，伊朗政權雖然被重創，卻沒有垮台——反而立場變得更強硬了。"
+}

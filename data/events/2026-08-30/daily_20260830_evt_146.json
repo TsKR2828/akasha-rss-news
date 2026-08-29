@@ -1,0 +1,98 @@
+{
+  "event_id": "daily_20260830_evt_146",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "俄襲基輔軍火庫至少37死",
+  "context": "俄羅斯攻擊基輔近郊一處軍火庫，引爆連環爆炸與大火，造成至少37人死亡、數十人受傷，數百人緊急撤離。這起攻擊發生在烏克蘭連續72小時密集無人機轟炸期間，是今年死傷最慘重的攻擊之一。",
+  "article_ids": [
+    "03f77ddaaac2945181f38963222df40a711b0606217c6e8d731fc4b6119db66d",
+    "ecdbdb7a1e11ebefe0e35997d2f3c60bf3a4673f5c85fcef521081f52b4c671a",
+    "783c33abf048d2b0b04d6e67e6d3656968859cc802f3ac020697daf3d6cca9c1",
+    "537f9003bf99b8ac03e12e869377690b7f3e07e6d209e0aca9b73d31e012fe95"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The deadly strike comes amid 72 hours of near constant drone strikes across Ukraine, severely disrupting daily life.",
+      "title": "Russian strike near Kyiv kills 37, in one of the year's deadliest attacks",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+      "published_at": "2026-08-29T23:54:40+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Russian strike on an arms depot near Kyiv sparked fires and explosions, killing at least 38 people and wounding dozens.",
+      "title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
+      "published_at": "2026-08-30T00:53:55+08:00"
+    },
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Russian strike on Kyiv-area ammunition depot triggers blast, killing 37 Reuters",
+      "title": "Russian strike on Kyiv-area ammunition depot triggers blast, killing 37 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdk5FRC00VjkxVTRuVXJFam1IaTVqcmV6R2pXX2pJME1fYXkzSFc0NWoyQXpmdGxYeno1ejV0Rk9jZGd6bDliLUdqcm9fWF8ybFhNUmFHUnAxdkEzdnNSRFowYW1MTE1qSUxKTHJLQjZrak5tdkg0NEd4MkFhTDFGbmNYWlBFSlU3Sy0zRU9kM0FEMVpva3VoTy1Xbmd6NF9JZ04zRXROcUxyOVJEc0U1Q1hn?oc=5",
+      "published_at": "2026-08-30T00:58:30+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "An investigation has begun into the storage of weapons for Ukraine's military near a residential area.",
+      "title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-30T04:13:16+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "俄羅斯攻擊基輔近郊一處軍火庫，引爆連環爆炸，造成至少37人死亡。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Russian strike on Kyiv-area ammunition depot triggers blast, killing 37 - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNdk5FRC00VjkxVTRuVXJFam1IaTVqcmV6R2pXX2pJME1fYXkzSFc0NWoyQXpmdGxYeno1ejV0Rk9jZGd6bDliLUdqcm9fWF8ybFhNUmFHUnAxdkEzdnNSRFowYW1MTE1qSUxKTHJLQjZrak5tdkg0NEd4MkFhTDFGbmNYWlBFSlU3Sy0zRU9kM0FEMVpva3VoTy1Xbmd6NF9JZ04zRXROcUxyOVJEc0U1Q1hn?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "攻擊發生於烏克蘭連續72小時密集無人機攻擊期間。",
+      "source_id": "npr_world",
+      "source_title": "Russian strike near Kyiv kills 37, in one of the year's deadliest attacks",
+      "source_url": "https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv",
+      "support_type": "direct"
+    },
+    {
+      "claim": "數百人緊急撤離，當局已就軍火庫設置在住宅區附近展開調查。",
+      "source_id": "bbc_world",
+      "source_title": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "source_url": "https://www.bbc.co.uk/news/articles/c86xwqez4npo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "爆炸也造成多人受傷。",
+      "source_id": "aljazeera_all",
+      "source_title": "Russian strike on a munitions depot triggers deadly blasts near Kyiv",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/29/29-08-sv-russia-strikes-arms-depot-kyiv-fm?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 國際大事\n\n俄襲基輔軍火庫 至少37死\n\n俄羅斯攻擊基輔近郊一處軍火庫，引爆連環爆炸與大火，造成至少37人死亡、數十人受傷，數百人緊急撤離。\n\n這起攻擊發生在烏克蘭連續72小時密集無人機轟炸期間，是今年死傷最慘重的攻擊之一。當局已展開調查，追查軍火庫為何設在住宅區附近。\n\n—— 本則來自 NPR、Al Jazeera、Reuters 與 BBC，2026 年 8 月 29 日至 30 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "俄羅斯攻擊基輔近郊一處軍火庫，引爆連環爆炸與大火，造成至少37人死亡、數十人受傷，數百人緊急撤離。\n\n這起攻擊發生在烏克蘭連續72小時密集無人機轟炸期間，是今年死傷最慘重的攻擊之一。當局已展開調查，追查這座軍火庫為何設在住宅區附近。\n\n本則整理自 NPR、Al Jazeera、Reuters 與 BBC 於 2026 年 8 月 29 日至 30 日發佈的報導。",
+  "voice_text": "俄羅斯攻擊了基輔近郊一處軍火庫，至少37人罹難。這起攻擊引爆連環爆炸和大火，數十人受傷，數百人緊急撤離。攻擊發生在烏克蘭連續72小時密集無人機轟炸期間，是今年死傷最慘重的攻擊之一。當局已經展開調查，追查這座軍火庫為什麼會設在住宅區附近。"
+}

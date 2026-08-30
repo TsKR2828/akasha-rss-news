@@ -1,0 +1,81 @@
+{
+  "event_id": "daily_20260831_evt_102",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "湖名之爭：加拿大回敬川普",
+  "context": "美國總統川普想把安大略湖改稱「美國湖」，安大略省長福特（Doug Ford）豎起巨大看板反擊，寫著「安大略湖，現在與永遠都是」。Google 地圖證實，會依美國政府決定，把美國使用者看到的名稱改掉，但加拿大使用者看到的仍是安大略湖。",
+  "article_ids": [
+    "5da47eda52750218f36beb52c34ac18712e3f15afc6e361061b527700ad78a91",
+    "2292b4b1180bc7b1b84bf2dcbad5f3bb68cfcaa2b46cf1f2d3659f5f264cdb73",
+    "50fe1971a488ab7a1429c3fdd781f56970d9951f3df06f8b3654360e261cdcd1"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Ontario Premier Doug Ford unveiled a billboard on Canada's shoreline with the message: \"Lake Ontario. Now and Always.\"",
+      "title": "Canada installs large Lake Ontario sign in latest jab at US",
+      "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-30T22:25:43+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Ontario Premier Doug Ford has unveiled a giant billboard reading: \"Lake Ontario — Now and Always.\" But tech giant Google has said it is renaming the lake for U.S. users, as President Trump demanded.",
+      "title": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'",
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google",
+      "published_at": "2026-08-30T22:36:44+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Tech giant says name to remain Lake Ontario for Canadian users, change reflects decision by US government agency.",
+      "title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
+      "url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
+      "published_at": "2026-08-31T00:57:21+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "安大略省長福特在湖邊立起看板，寫著「安大略湖，現在與永遠都是」。",
+      "source_id": "bbc_world",
+      "source_title": "Canada installs large Lake Ontario sign in latest jab at US",
+      "source_url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Google 表示將依美國政府要求，為美國使用者把安大略湖改名為「美國湖」。",
+      "source_id": "npr_world",
+      "source_title": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'",
+      "source_url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Google 地圖證實加拿大使用者看到的名稱仍是安大略湖，未受影響。",
+      "source_id": "aljazeera_all",
+      "source_title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
+      "source_url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "美國總統川普想把安大略湖改名「美國湖」，安大略省長福特（Doug Ford）在湖邊立起巨大看板反擊，寫著「安大略湖，現在與永遠都是」。Google 地圖證實，美國使用者看到的名稱會依美國政府決定更改，但加拿大使用者看到的名字不變。本則整理自 BBC、NPR 與半島電視台報導。",
+  "threads_text": "這場地圖上的湖名之爭越演越烈。美國總統川普想把安大略湖改稱「美國湖」，安大略省長福特（Doug Ford）不甘示弱，在湖邊立起巨大看板，寫著「安大略湖，現在與永遠都是」。更妙的是 Google 地圖也捲入戰局——公司證實，美國使用者之後會看到新名字，但加拿大使用者看到的名稱不受影響。一場政治口水戰，硬是打到了地圖圖層上。本則整理自 BBC、NPR 與半島電視台報導。",
+  "voice_text": "安大略湖的名字，變成了一場政治口水戰。美國總統川普想把這座湖改稱「美國湖」，安大略省長福特不甘示弱，在湖邊立起巨大看板反擊，上面寫著「安大略湖，現在與永遠都是」。這場戰爭甚至打進了地圖——Google 證實，美國使用者之後看到的名稱會照美國政府的決定更改，但加拿大使用者看到的名字不會變。"
+}

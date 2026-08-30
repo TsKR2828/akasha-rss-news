@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260831_evt_030",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "Trump hails 'historic' deal to control 65 billion barrels of Venezuelan oil",
+  "context": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
+  "article_ids": [
+    "b203df15c58cda63e3043f49ec05707701f3f9cd07b93e04c2d9f0f85dc1a025",
+    "4a813a64cbc4cfb55931f6b8149aa3a2519d819a11d54c223956a7f45e69132d"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_business",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Venezuelan interim president says the unusual agreement will help revive her country's economy.",
+      "title": "Trump hails 'historic' deal to control 65 billion barrels of Venezuelan oil",
+      "url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-30T12:01:02+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Deal that will reportedly see US take control of 65bn barrels of Venezuelan oil has provoked outrage in her country Venezuela’s interim president, Delcy Rodríguez, has defended her government’s highly controversial energy deal with Donald Trump, insisting the South American country will maintain ownership and sovereignty over its massive oil reserves. Rodríguez, who assumed power in January after Trump ordered the abduction of the president, Nicolás Maduro, took to the airwaves on Saturday to push back against criticism of what the US president has called “the biggest oil deal in world history”. Continue reading...",
+      "title": "Venezuela’s Delcy Rodríguez defends ‘endless’ benefits of her oil deal with Trump",
+      "url": "https://www.theguardian.com/world/2026/aug/30/venezuela-delcy-rodriguez-says-oil-deal-with-trump-has-endless-benefits",
+      "published_at": "2026-08-30T23:08:33+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 0,
+  "selection_reason": "multi_source_confirmed; source_tier_1; same_topic_already_selected",
+  "drop_reason": "total_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Trump hails 'historic' deal to control 65 billion barrels of Venezuelan oil",
+      "source_id": "bbc_business",
+      "source_title": "Trump hails 'historic' deal to control 65 billion barrels of Venezuelan oil",
+      "source_url": "https://www.bbc.co.uk/news/articles/cx2zlwe7qj1o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Venezuela’s Delcy Rodríguez defends ‘endless’ benefits of her oil deal with Trump",
+      "source_id": "guardian_business",
+      "source_title": "Venezuela’s Delcy Rodríguez defends ‘endless’ benefits of her oil deal with Trump",
+      "source_url": "https://www.theguardian.com/world/2026/aug/30/venezuela-delcy-rodriguez-says-oil-deal-with-trump-has-endless-benefits",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,1992 @@
+{
+  "reportId": "daily_20260831",
+  "date": "2026-08-31",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-08-31T05:15:12.723150+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260831_evt_071",
+          "headline": "土沙巴基斯坦首開防務會議",
+          "context": "土耳其、沙烏地阿拉伯與巴基斯坦即將在伊斯坦堡舉行首次防務會議，三國外長、國防部長與軍事將領都會出席，這是三方簽署麥加防務協議以來第一次碰頭。",
+          "beat": "INTL",
+          "thread_text": "土耳其、沙烏地阿拉伯與巴基斯坦將在伊斯坦堡舉行首次防務會議，三國的外長、國防部長與軍事將領都會出席。這是三方簽署麥加防務協議以來的第一次會面。本則整理自路透社與半島電視台報導。",
+          "threads_text": "土耳其、沙烏地阿拉伯與巴基斯坦即將在伊斯坦堡舉行首次防務會議，三國外長、國防部長與軍事將領全部到場。這是三方簽署麥加防務協議之後，第一次以這個規格碰面，象徵三國安全合作要進入更具體的階段。本則整理自路透社與半島電視台報導。",
+          "voice_text": "土耳其、沙烏地阿拉伯與巴基斯坦要在伊斯坦堡開一場防務會議，這是三方簽了麥加防務協議之後第一次碰頭。出席的層級不低，三國的外長、國防部長跟軍事將領都會到場。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "土耳其、沙烏地阿拉伯與巴基斯坦將在伊斯坦堡舉行首次防務會議，三國的外長、國防部長與軍事將領都會出席。這是三方簽署麥加防務協議以來的第一次會面。本則整理自路透社與半島電視台報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "土耳其、沙烏地阿拉伯與巴基斯坦即將在伊斯坦堡舉行首次防務會議，三國外長、國防部長與軍事將領全部到場。這是三方簽署麥加防務協議之後，第一次以這個規格碰面，象徵三國安全合作要進入更具體的階段。本則整理自路透社與半島電視台報導。"
+              ]
+            },
+            "voice": {
+              "text": "土耳其、沙烏地阿拉伯與巴基斯坦要在伊斯坦堡開一場防務會議，這是三方簽了麥加防務協議之後第一次碰頭。出席的層級不低，三國的外長、國防部長跟軍事將領都會到場。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Turkey, Saudi Arabia, Pakistan to hold first defence pact meeting, source says Reuters",
+              "title": "Turkey, Saudi Arabia, Pakistan to hold first defence pact meeting, source says - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTGEtTUQ0dGF3WlJacDh2Y2tEZ1BsR3hrRG9BY2ZPQjRFVkloRzJPN1o0UWtRVFRnUjgtVHJvVGFwY3FNVy1mbW1DMTdXek9mdDJZSjUxRy1UQm5kVlRBTzZpcFNrVjFWd1YwOU11TUtDRVk0VHVvbFJWVWRKdDN5TlIyeDhyY3VtdXNSQ2dXLUxhRmt1X2I3QzdpbUhEQV9NMjNxNmZNVkxQbEdaU1dKV0x2Y3E3M2U3VktPNDBiM1h1ZlpVYWc?oc=5",
+              "published_at": "2026-08-30T18:05:06+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Foreign, defence ministers and military chiefs from three countries to meet for first time since signing Mecca pact.",
+              "title": "Top officials from Turkiye, Saudi Arabia, Pakistan to meet in Istanbul",
+              "url": "https://www.aljazeera.com/news/2026/8/30/top-officials-from-turkiye-saudi-arabia-pakistan-to-meet-in-istanbul?traffic_source=rss",
+              "published_at": "2026-08-31T02:19:03+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "土耳其、沙烏地阿拉伯與巴基斯坦將舉行首次防務會議。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Turkey, Saudi Arabia, Pakistan to hold first defence pact meeting, source says - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTGEtTUQ0dGF3WlJacDh2Y2tEZ1BsR3hrRG9BY2ZPQjRFVkloRzJPN1o0UWtRVFRnUjgtVHJvVGFwY3FNVy1mbW1DMTdXek9mdDJZSjUxRy1UQm5kVlRBTzZpcFNrVjFWd1YwOU11TUtDRVk0VHVvbFJWVWRKdDN5TlIyeDhyY3VtdXNSQ2dXLUxhRmt1X2I3QzdpbUhEQV9NMjNxNmZNVkxQbEdaU1dKV0x2Y3E3M2U3VktPNDBiM1h1ZlpVYWc?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "三國外長、國防部長與軍事將領將在伊斯坦堡首度會面，這是麥加防務協議簽署後的第一次會議。",
+              "source_id": "aljazeera_all",
+              "source_title": "Top officials from Turkiye, Saudi Arabia, Pakistan to meet in Istanbul",
+              "source_url": "https://www.aljazeera.com/news/2026/8/30/top-officials-from-turkiye-saudi-arabia-pakistan-to-meet-in-istanbul?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_046",
+          "headline": "尚比亞反對黨領袖被控叛國",
+          "context": "尚比亞反對黨領袖蒙杜比雷（Brian Mundubile）遭控叛國，他的副手祖魯（Makebi Zulu）也一併被起訴。蒙杜比雷先前曾在首都一棟聯合國大樓內躲藏。",
+          "beat": "INTL",
+          "thread_text": "尚比亞反對黨領袖蒙杜比雷（Brian Mundubile）被控叛國，搭檔祖魯（Makebi Zulu）同遭起訴。蒙杜比雷此前曾躲進首都一棟聯合國大樓，直到近日才現身面對指控。本則整理自路透社、BBC 與半島電視台報導。",
+          "threads_text": "尚比亞反對黨領袖蒙杜比雷（Brian Mundubile）正式被控叛國，他的副手祖魯（Makebi Zulu）也一起被起訴。蒙杜比雷稍早曾躲進首都一棟聯合國大樓尋求庇護，這次遭起訴，等於把他重新推回政治風暴中心。本則整理自路透社、BBC 與半島電視台報導。",
+          "voice_text": "尚比亞反對黨領袖蒙杜比雷被控叛國。他的英文名字是 Brian Mundubile，副手祖魯也一起被起訴。蒙杜比雷先前曾躲進首都一棟聯合國大樓尋求庇護，這次正式遭起訴，等於被拉回了政治風暴中心。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "尚比亞反對黨領袖蒙杜比雷（Brian Mundubile）被控叛國，搭檔祖魯（Makebi Zulu）同遭起訴。蒙杜比雷此前曾躲進首都一棟聯合國大樓，直到近日才現身面對指控。本則整理自路透社、BBC 與半島電視台報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "尚比亞反對黨領袖蒙杜比雷（Brian Mundubile）正式被控叛國，他的副手祖魯（Makebi Zulu）也一起被起訴。蒙杜比雷稍早曾躲進首都一棟聯合國大樓尋求庇護，這次遭起訴，等於把他重新推回政治風暴中心。本則整理自路透社、BBC 與半島電視台報導。"
+              ]
+            },
+            "voice": {
+              "text": "尚比亞反對黨領袖蒙杜比雷被控叛國。他的英文名字是 Brian Mundubile，副手祖魯也一起被起訴。蒙杜比雷先前曾躲進首都一棟聯合國大樓尋求庇護，這次正式遭起訴，等於被拉回了政治風暴中心。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Zambian opposition leader Mundubile charged with treason, lawyer says Reuters",
+              "title": "Zambian opposition leader Mundubile charged with treason, lawyer says - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdmlxbFhXMUxmTDItSm1iN25RZWlVekxKd1kza3h6LUZHbFAwbXhHeVZhNHRZblkyMXRlLTRia1ZnNTBoVndEXzY1MXg2T1FxSDA3S1V4OWFyMUFuVmR4U0NNczh0VkZSTWVkeDNBSE0yRW5xSWxoVy1Sam9IY1NjWkQxTXcyaVhtUkx0NDg3MnNOY1kzQnpvMkt5bHBuNDRsSnBFLTlUYjJpanBFY0lCUExudXExRU85S1dzc0ticHo?oc=5",
+              "published_at": "2026-08-30T14:40:00+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Mundubile had previously gone into hiding at a United Nations building in Zambia's capital.",
+              "title": "Zambian opposition leader charged with treason",
+              "url": "https://www.bbc.co.uk/news/articles/c20lwqpx70qo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-31T01:06:15+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Zambian opposition leader Brian Mundubile and his running mate, Makebi Zulu, have been charged with treason.",
+              "title": "Zambia opposition leader Brian Mundubile charged with treason",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/zambia-opposition-leader-brian-mundubile-charged-with-treason?traffic_source=rss",
+              "published_at": "2026-08-31T01:18:45+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "尚比亞反對黨領袖蒙杜比雷遭控叛國，其律師證實此事。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Zambian opposition leader Mundubile charged with treason, lawyer says - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOdmlxbFhXMUxmTDItSm1iN25RZWlVekxKd1kza3h6LUZHbFAwbXhHeVZhNHRZblkyMXRlLTRia1ZnNTBoVndEXzY1MXg2T1FxSDA3S1V4OWFyMUFuVmR4U0NNczh0VkZSTWVkeDNBSE0yRW5xSWxoVy1Sam9IY1NjWkQxTXcyaVhtUkx0NDg3MnNOY1kzQnpvMkt5bHBuNDRsSnBFLTlUYjJpanBFY0lCUExudXExRU85S1dzc0ticHo?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "蒙杜比雷先前曾在尚比亞首都一棟聯合國大樓內躲藏。",
+              "source_id": "bbc_world",
+              "source_title": "Zambian opposition leader charged with treason",
+              "source_url": "https://www.bbc.co.uk/news/articles/c20lwqpx70qo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "蒙杜比雷與副手祖魯（Makebi Zulu）一同被控叛國。",
+              "source_id": "aljazeera_all",
+              "source_title": "Zambia opposition leader Brian Mundubile charged with treason",
+              "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/zambia-opposition-leader-brian-mundubile-charged-with-treason?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_111",
+          "headline": "賽普勒斯渡輪翻覆多人罹難",
+          "context": "北賽普勒斯外海一艘搭載近 270 人的渡輪翻覆，各方通報死亡人數在七到八人之間，另有十多到二十多人仍下落不明。搜救行動仍在進行中。",
+          "beat": "INTL",
+          "thread_text": "北賽普勒斯外海一艘渡輪翻覆，船上原本載有近 270 人。目前各方通報的死亡人數在七到八人之間，失蹤人數則有十八到二十三人不等的說法，搜救行動仍在進行。本則整理自半島電視台、路透社與 BBC 報導。",
+          "threads_text": "北賽普勒斯外海發生嚴重船難，一艘渡輪翻覆，船上原本搭載近 270 人。目前各方通報的死亡人數在七到八人之間，失蹤人數說法不一，介於十八到二十三人。當局的搜救行動仍在進行中，詳細傷亡數字有待進一步確認。本則整理自半島電視台、路透社與 BBC 報導。",
+          "voice_text": "北賽普勒斯外海，一艘渡輪翻覆了。船上原本搭載將近 270 人。目前的死亡人數在七到八人之間，失蹤人數則有十八到二十三人不等的說法，搜救行動還在進行。詳細的傷亡數字，還需要一點時間才能確認。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "北賽普勒斯外海一艘渡輪翻覆，船上原本載有近 270 人。目前各方通報的死亡人數在七到八人之間，失蹤人數則有十八到二十三人不等的說法，搜救行動仍在進行。本則整理自半島電視台、路透社與 BBC 報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "北賽普勒斯外海發生嚴重船難，一艘渡輪翻覆，船上原本搭載近 270 人。目前各方通報的死亡人數在七到八人之間，失蹤人數說法不一，介於十八到二十三人。當局的搜救行動仍在進行中，詳細傷亡數字有待進一步確認。本則整理自半島電視台、路透社與 BBC 報導。"
+              ]
+            },
+            "voice": {
+              "text": "北賽普勒斯外海，一艘渡輪翻覆了。船上原本搭載將近 270 人。目前的死亡人數在七到八人之間，失蹤人數則有十八到二十三人不等的說法，搜救行動還在進行。詳細的傷亡數字，還需要一點時間才能確認。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Videos show rescue after a ferry capsized off northern Cyprus, with officials reporting several dead.",
+              "title": "At least seven dead and 23 missing after boat capsizes off northern Cyprus",
+              "url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/at-least-seven-dead-and-23-missing-after-boat-capsizes-off-northern-cyprus?traffic_source=rss",
+              "published_at": "2026-08-30T23:19:36+08:00"
+            },
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "At least eight die, 18 missing after ferry capsizes off North Cyprus Reuters",
+              "title": "At least eight die, 18 missing after ferry capsizes off North Cyprus - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNVlzWG1uLXVQZXVpTWtnajhCNzhhQV85eGNBTWc5V0NDYm91bWZHMFVSX2xUY19EU3RDRXF5d005RE8xUFZObEJsR2VqdUxGTWV3eUdVVm5ZLWxGLUtvMVNjWDFydlQxYUNudU5nOGMzNFo2SVVOZElxUk9OWDBWblNHMzloNEN6bnZJb3QzZU1wQXhET3BYeGQ4NERmT0VsYnQwQzVJVGc5SXk3YzJvWllBbw?oc=5",
+              "published_at": "2026-08-31T03:37:20+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "A search and rescue operation is under way after a ferry carrying nearly 270 people turns over after leaving port.",
+              "title": "Eight killed and others missing after ferry capsizes off northern Cyprus",
+              "url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-31T04:02:43+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "北賽普勒斯外海一艘渡輪翻覆，至少七人死亡、23人失蹤。",
+              "source_id": "aljazeera_all",
+              "source_title": "At least seven dead and 23 missing after boat capsizes off northern Cyprus",
+              "source_url": "https://www.aljazeera.com/video/newsfeed/2026/8/30/at-least-seven-dead-and-23-missing-after-boat-capsizes-off-northern-cyprus?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "至少八人死亡、18人失蹤，渡輪在北賽普勒斯外海翻覆。",
+              "source_id": "reuters_world_google_news",
+              "source_title": "At least eight die, 18 missing after ferry capsizes off North Cyprus - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNVlzWG1uLXVQZXVpTWtnajhCNzhhQV85eGNBTWc5V0NDYm91bWZHMFVSX2xUY19EU3RDRXF5d005RE8xUFZObEJsR2VqdUxGTWV3eUdVVm5ZLWxGLUtvMVNjWDFydlQxYUNudU5nOGMzNFo2SVVOZElxUk9OWDBWblNHMzloNEN6bnZJb3QzZU1wQXhET3BYeGQ4NERmT0VsYnQwQzVJVGc5SXk3YzJvWllBbw?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "渡輪原本搭載近270人，離港後翻覆，搜救行動已展開。",
+              "source_id": "bbc_world",
+              "source_title": "Eight killed and others missing after ferry capsizes off northern Cyprus",
+              "source_url": "https://www.bbc.co.uk/news/articles/c770jyd4l7lo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_115",
+          "headline": "川普擬用委內瑞拉油補儲備",
+          "context": "美國總統川普表示，美國即將用委內瑞拉的石油來補充戰略石油儲備，這個「填滿」的程序很快就會開始。",
+          "beat": "INTL",
+          "thread_text": "美國總統川普在貼文中表示，美國即將用委內瑞拉的石油來補充戰略石油儲備，「填滿」的程序很快就會啟動。本則整理自半島電視台與路透社報導。",
+          "threads_text": "美國總統川普透過貼文宣布，美國打算用委內瑞拉的石油，來補充自家的戰略石油儲備，他形容這個「填滿」程序很快就會啟動。這意味著美國與委內瑞拉之間的石油往來，會比外界原本預期的更緊密。本則整理自半島電視台與路透社報導。",
+          "voice_text": "美國要用委內瑞拉的石油，補充自己的戰略石油儲備。這是川普親自在貼文中宣布的，他說「填滿」的程序很快就會開始。這也代表美國跟委內瑞拉之間的石油往來，會比外界原本想的更緊密。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "美國總統川普在貼文中表示，美國即將用委內瑞拉的石油來補充戰略石油儲備，「填滿」的程序很快就會啟動。本則整理自半島電視台與路透社報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國總統川普透過貼文宣布，美國打算用委內瑞拉的石油，來補充自家的戰略石油儲備，他形容這個「填滿」程序很快就會啟動。這意味著美國與委內瑞拉之間的石油往來，會比外界原本預期的更緊密。本則整理自半島電視台與路透社報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國要用委內瑞拉的石油，補充自己的戰略石油儲備。這是川普親自在貼文中宣布的，他說「填滿」的程序很快就會開始。這也代表美國跟委內瑞拉之間的石油往來，會比外界原本想的更緊密。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "President Donald Trump says in a post that the 'topping out' process will ‌begin shortly.",
+              "title": "Trump says US will refill its petroleum reserves using Venezuelan oil",
+              "url": "https://www.aljazeera.com/news/2026/8/30/trump-says-us-will-refill-its-petroleum-reserves-using-venezuelan-oil?traffic_source=rss",
+              "published_at": "2026-08-30T23:50:45+08:00"
+            },
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Trump says US will refill Strategic Petroleum Reserve using Venezuelan oil Reuters",
+              "title": "Trump says US will refill Strategic Petroleum Reserve using Venezuelan oil - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeExELTZFbXpSSWtfaVM2N0VrcTR5VlR0OU1nSGw0SDlpc213OGFrbTBQNDVueWg4UlQ3aVd3QTdpQV83My04WDg3UG5zTWcyRGpKMy1ldjB3YU9WV3d6Sm0xb3NJV2I2am9BSldjOERGVS1Cbk51dlRobDZvdXUybkRYNUY1eFFpX3RiRmtEdjV5a0dvcm1jVEg0eFhqcFBZcHNjMTJaYWQ3c1hzOFJnVjExMUtVZkFaVTBfb0tvWko5eVh1?oc=5",
+              "published_at": "2026-08-31T02:01:33+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "川普在貼文中表示，美國將用委內瑞拉石油補充戰略石油儲備，「填滿」程序即將開始。",
+              "source_id": "aljazeera_all",
+              "source_title": "Trump says US will refill its petroleum reserves using Venezuelan oil",
+              "source_url": "https://www.aljazeera.com/news/2026/8/30/trump-says-us-will-refill-its-petroleum-reserves-using-venezuelan-oil?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "川普表示美國將用委內瑞拉石油補充戰略石油儲備。",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Trump says US will refill Strategic Petroleum Reserve using Venezuelan oil - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNeExELTZFbXpSSWtfaVM2N0VrcTR5VlR0OU1nSGw0SDlpc213OGFrbTBQNDVueWg4UlQ3aVd3QTdpQV83My04WDg3UG5zTWcyRGpKMy1ldjB3YU9WV3d6Sm0xb3NJV2I2am9BSldjOERGVS1Cbk51dlRobDZvdXUybkRYNUY1eFFpX3RiRmtEdjV5a0dvcm1jVEg0eFhqcFBZcHNjMTJaYWQ3c1hzOFJnVjExMUtVZkFaVTBfb0tvWko5eVh1?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_102",
+          "headline": "湖名之爭：加拿大回敬川普",
+          "context": "美國總統川普想把安大略湖改稱「美國湖」，安大略省長福特（Doug Ford）豎起巨大看板反擊，寫著「安大略湖，現在與永遠都是」。Google 地圖證實，會依美國政府決定，把美國使用者看到的名稱改掉，但加拿大使用者看到的仍是安大略湖。",
+          "beat": "INTL",
+          "thread_text": "美國總統川普想把安大略湖改名「美國湖」，安大略省長福特（Doug Ford）在湖邊立起巨大看板反擊，寫著「安大略湖，現在與永遠都是」。Google 地圖證實，美國使用者看到的名稱會依美國政府決定更改，但加拿大使用者看到的名字不變。本則整理自 BBC、NPR 與半島電視台報導。",
+          "threads_text": "這場地圖上的湖名之爭越演越烈。美國總統川普想把安大略湖改稱「美國湖」，安大略省長福特（Doug Ford）不甘示弱，在湖邊立起巨大看板，寫著「安大略湖，現在與永遠都是」。更妙的是 Google 地圖也捲入戰局——公司證實，美國使用者之後會看到新名字，但加拿大使用者看到的名稱不受影響。一場政治口水戰，硬是打到了地圖圖層上。本則整理自 BBC、NPR 與半島電視台報導。",
+          "voice_text": "安大略湖的名字，變成了一場政治口水戰。美國總統川普想把這座湖改稱「美國湖」，安大略省長福特不甘示弱，在湖邊立起巨大看板反擊，上面寫著「安大略湖，現在與永遠都是」。這場戰爭甚至打進了地圖——Google 證實，美國使用者之後看到的名稱會照美國政府的決定更改，但加拿大使用者看到的名字不會變。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "美國總統川普想把安大略湖改名「美國湖」，安大略省長福特（Doug Ford）在湖邊立起巨大看板反擊，寫著「安大略湖，現在與永遠都是」。Google 地圖證實，美國使用者看到的名稱會依美國政府決定更改，但加拿大使用者看到的名字不變。本則整理自 BBC、NPR 與半島電視台報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "這場地圖上的湖名之爭越演越烈。美國總統川普想把安大略湖改稱「美國湖」，安大略省長福特（Doug Ford）不甘示弱，在湖邊立起巨大看板，寫著「安大略湖，現在與永遠都是」。更妙的是 Google 地圖也捲入戰局——公司證實，美國使用者之後會看到新名字，但加拿大使用者看到的名稱不受影響。一場政治口水戰，硬是打到了地圖圖層上。本則整理自 BBC、NPR 與半島電視台報導。"
+              ]
+            },
+            "voice": {
+              "text": "安大略湖的名字，變成了一場政治口水戰。美國總統川普想把這座湖改稱「美國湖」，安大略省長福特不甘示弱，在湖邊立起巨大看板反擊，上面寫著「安大略湖，現在與永遠都是」。這場戰爭甚至打進了地圖——Google 證實，美國使用者之後看到的名稱會照美國政府的決定更改，但加拿大使用者看到的名字不會變。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Ontario Premier Doug Ford unveiled a billboard on Canada's shoreline with the message: \"Lake Ontario. Now and Always.\"",
+              "title": "Canada installs large Lake Ontario sign in latest jab at US",
+              "url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-08-30T22:25:43+08:00"
+            },
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Ontario Premier Doug Ford has unveiled a giant billboard reading: \"Lake Ontario — Now and Always.\" But tech giant Google has said it is renaming the lake for U.S. users, as President Trump demanded.",
+              "title": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'",
+              "url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google",
+              "published_at": "2026-08-30T22:36:44+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "Tech giant says name to remain Lake Ontario for Canadian users, change reflects decision by US government agency.",
+              "title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
+              "url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
+              "published_at": "2026-08-31T00:57:21+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "安大略省長福特在湖邊立起看板，寫著「安大略湖，現在與永遠都是」。",
+              "source_id": "bbc_world",
+              "source_title": "Canada installs large Lake Ontario sign in latest jab at US",
+              "source_url": "https://www.bbc.co.uk/news/articles/cpq09594vw7o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Google 表示將依美國政府要求，為美國使用者把安大略湖改名為「美國湖」。",
+              "source_id": "npr_world",
+              "source_title": "Canada claps back at Trump's efforts to rename Lake Ontario as 'Lake America'",
+              "source_url": "https://www.npr.org/2026/08/30/nx-s1-5949254/lake-ontario-america-doug-ford-trump-sign-google",
+              "support_type": "direct"
+            },
+            {
+              "claim": "Google 地圖證實加拿大使用者看到的名稱仍是安大略湖，未受影響。",
+              "source_id": "aljazeera_all",
+              "source_title": "Google Maps renames Lake Ontario after Trump’s decree on ‘Lake America’",
+              "source_url": "https://www.aljazeera.com/news/2026/8/30/google-maps-renames-lake-ontario-after-trumps-decree-on-lake-america?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260831_evt_007",
+          "headline": "愛丁堡藝穗多齣好戲登場",
+          "context": "愛丁堡藝穗節上，喜劇演員巴達維（Omar Badawy）帶來新作《Guided Detour》，講述自己身為英裔埃及穆斯林的身分拉扯。同一時間，舊金山芭蕾舞團在愛丁堡國際藝術節推出《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，由音樂人 Floating Points 操刀配樂。",
+          "beat": "ARTS",
+          "thread_text": "愛丁堡藝穗節熱鬧滾滾。喜劇演員巴達維（Omar Badawy）帶來新作《Guided Detour》，用高密度的笑點講自己身為英裔埃及穆斯林、在基督教學校長大的身分拉扯。另一頭，舊金山芭蕾舞團在愛丁堡國際藝術節端出《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，音樂人 Floating Points 親自操刀配樂。本則整理自《衛報》與《紐約時報》報導。",
+          "threads_text": "愛丁堡藝穗節今年精彩紛呈。喜劇演員巴達維（Omar Badawy）帶來新作《Guided Detour》，用密集的笑點講自己身為英裔埃及穆斯林、在基督教學校長大的身分拉扯，連《周六夜現場》英國版都注意到他。同一段時間，舊金山芭蕾舞團在愛丁堡國際藝術節帶來《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，由電子音樂人 Floating Points 操刀配樂，舞台上巨大螢幕投影出彷彿岩漿般的畫面，視覺相當震撼。本則整理自《衛報》與《紐約時報》報導。",
+          "voice_text": "愛丁堡藝穗節今年很熱鬧。喜劇演員巴達維，用密集的笑點講自己身為英裔埃及穆斯林、在基督教學校長大的身分拉扯，新作《Guided Detour》讓他被《周六夜現場》英國版注意到。同一段時間，舊金山芭蕾舞團帶來《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，配樂由電子音樂人 Floating Points 操刀，舞台上巨大螢幕投影出彷彿岩漿翻騰的畫面，視覺相當震撼。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "愛丁堡藝穗節熱鬧滾滾。喜劇演員巴達維（Omar Badawy）帶來新作《Guided Detour》，用高密度的笑點講自己身為英裔埃及穆斯林、在基督教學校長大的身分拉扯。另一頭，舊金山芭蕾舞團在愛丁堡國際藝術節端出《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，音樂人 Floating Points 親自操刀配樂。本則整理自《衛報》與《紐約時報》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "愛丁堡藝穗節今年精彩紛呈。喜劇演員巴達維（Omar Badawy）帶來新作《Guided Detour》，用密集的笑點講自己身為英裔埃及穆斯林、在基督教學校長大的身分拉扯，連《周六夜現場》英國版都注意到他。同一段時間，舊金山芭蕾舞團在愛丁堡國際藝術節帶來《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，由電子音樂人 Floating Points 操刀配樂，舞台上巨大螢幕投影出彷彿岩漿般的畫面，視覺相當震撼。本則整理自《衛報》與《紐約時報》報導。"
+              ]
+            },
+            "voice": {
+              "text": "愛丁堡藝穗節今年很熱鬧。喜劇演員巴達維，用密集的笑點講自己身為英裔埃及穆斯林、在基督教學校長大的身分拉扯，新作《Guided Detour》讓他被《周六夜現場》英國版注意到。同一段時間，舊金山芭蕾舞團帶來《Mere Mortals》，把潘朵拉的盒子神話搬進 AI 時代，配樂由電子音樂人 Floating Points 操刀，舞台上巨大螢幕投影出彷彿岩漿翻騰的畫面，視覺相當震撼。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_culture",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Pleasance Courtyard, Edinburgh The comic’s unique tale of assimilation and romance-related limbo has a high joke rate and emotional intelligence I want to tell Omar Badawy to take a breath. This debut moves at a frantic, almost dizzying pace, so much so that you could easily miss a few details in a show that zooms in and out of the time he was accidentally caught in the middle of a Tommy Robinson march while en route to a fancy dress party. But with writing this sharp, does it matter? You can see why SNL: UK came calling. The Cambridge-raised Badawy lays out his identity conundrum: he’s an Anglo-Egyptian Muslim who, as a pupil at a Christian school, was teased for his background. Differences surfaced during Nativity plays, where his culturally accurate interpretations of innkeepers and wise men’s assistants weren’t quite what his teachers had in mind. He also knows his well-spoken accent makes it easier to assimilate. Because of all this, Badawy often feels stuck in the middle. Once, a stranger even asked his ethnicity because he wanted to call him his “correct racial slur”. At Pleasance Courtyard, Edinburgh , until 30 August All our Edinburgh festival reviews Continue reading...",
+              "title": "Omar Badawy: Guided Detour review – dizzying tales of decision paralysis",
+              "url": "https://www.theguardian.com/stage/2026/aug/29/omar-badawy-guided-detour-review-pleasance-courtyard-edinburgh",
+              "published_at": "2026-08-30T03:31:10+08:00"
+            },
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Edinburgh Playhouse San Francisco Ballet brings a spectacular collision of dance, music and digital wizardry to the Edinburgh international festival in this bold reimagining of Pandora’s box This is a spectacular show. Literally, it is full of spectacle: as much a visual extravaganza as it is a concert, as it is dance – and a gloriously maddening piece of dance at that. The dancers are as impressive as you’d expect from San Francisco Ballet, the US’s oldest professional ballet company, and the splashy concept is bold: artistic director Tamara Rojo commissioned choreographer Aszure Barton, composer Sam Shepherd (AKA electronic producer Floating Points) and multidisciplinary artists Hamill Industries, their starting point being the myth of Pandora’s box, transposed to the current world of AI technology and what unknowns we might be unleashing. Hamill Industries, who used some AI in their creation process, unleash something transfixing on a giant screen above the stage: morphing, pulsating pixels that look like lava or the surface of the sun. It’s intoxicating, easily dragging attention away from the dancers’ bodies (this may be the whole point – more on this later). Those dancers appear en masse in strict manoeuvres at driving tempo. Are they an army of mortals, gods, automatons or lines of code? Who knows. But they are moulded into large-scale moving images by Barton just as Pandora is moulded from clay in the best bit of integration between the digital and physical worlds, countless hands crafting this first woman out of dust. Barton is a magpie of a choreographer, always unpredictable, classical virtuosity sewn in among countless other ideas in unstoppable phrases. Jennifer Stahl as Pandora is an impressive creation, for sure, and Wei Wang is great: supple, sprightly, puckish. He represents Hope, although you wouldn’t know that without doing a bit of research. Choreographers are not duty-bound to enact a narrative; the Pandora tale is merely a creative trigger, they’d say, but in a story with such clear dramatic beats, and such a clever contemporary parallel, it does seem a waste to essentially throw that away. Continue reading...",
+              "title": "Mere Mortals review – a dazzling, maddening ballet for the AI age",
+              "url": "https://www.theguardian.com/stage/2026/aug/30/mere-mortals-review-edinburgh-playhouse-san-francisco-ballet",
+              "published_at": "2026-08-30T18:25:59+08:00"
+            },
+            {
+              "source_id": "nyt_arts",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "Floating Points brings his niche classical music obsessions and deep love for dance clubs to his ballet score and new album “Mere Mortals.”",
+              "title": "Floating Points Makes Music for the Dance Floor, and Ballet",
+              "url": "https://www.nytimes.com/2026/08/28/arts/music/floating-points-dance-and-ballet-music.html",
+              "published_at": "2026-08-31T03:00:37+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "喜劇演員巴達維推出新作《Guided Detour》，講述身為英裔埃及穆斯林的身分拉扯。",
+              "source_id": "guardian_culture",
+              "source_title": "Omar Badawy: Guided Detour review – dizzying tales of decision paralysis",
+              "source_url": "https://www.theguardian.com/stage/2026/aug/29/omar-badawy-guided-detour-review-pleasance-courtyard-edinburgh",
+              "support_type": "direct"
+            },
+            {
+              "claim": "舊金山芭蕾舞團在愛丁堡國際藝術節推出《Mere Mortals》，將潘朵拉的盒子神話搬進AI時代。",
+              "source_id": "guardian_stage",
+              "source_title": "Mere Mortals review – a dazzling, maddening ballet for the AI age",
+              "source_url": "https://www.theguardian.com/stage/2026/aug/30/mere-mortals-review-edinburgh-playhouse-san-francisco-ballet",
+              "support_type": "direct"
+            },
+            {
+              "claim": "《Mere Mortals》的配樂由電子音樂人 Floating Points 操刀。",
+              "source_id": "nyt_arts",
+              "source_title": "Floating Points Makes Music for the Dance Floor, and Ballet",
+              "source_url": "https://www.nytimes.com/2026/08/28/arts/music/floating-points-dance-and-ballet-music.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "戲劇",
+          "opinion_level": "light_context",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_080",
+          "headline": "布克獎作家推新作獲盛讚",
+          "context": "布克獎得主馬龍．詹姆斯（Marlon James）推出新作《The Disappearers》，描寫牙買加同志經驗與致命恐同暴力，書評形容這是他至今最好的作品。",
+          "beat": "ARTS",
+          "thread_text": "布克獎得主馬龍．詹姆斯（Marlon James）推出新作《The Disappearers》，故事圍繞牙買加的同志經驗與致命的恐同暴力。書評形容全書內容豐盛，是他至今最好的一本書。目前這則消息只有《紐約時報》報導。",
+          "threads_text": "布克獎得主馬龍．詹姆斯（Marlon James）推出新作《The Disappearers》，故事圍繞牙買加的同志經驗，以及當地致命的恐同暴力展開。書評形容內容豐盛，像一場文字盛宴，稱得上是詹姆斯至今最好的一本書。目前這則消息只有《紐約時報》書評提及。",
+          "voice_text": "布克獎得主馬龍．詹姆斯推出新作《The Disappearers》。故事圍繞牙買加的同志經驗，還有當地致命的恐同暴力展開。有書評形容，這本書內容豐盛得像一場文字盛宴，是他至今最好的作品。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "布克獎得主馬龍．詹姆斯（Marlon James）推出新作《The Disappearers》，故事圍繞牙買加的同志經驗與致命的恐同暴力。書評形容全書內容豐盛，是他至今最好的一本書。目前這則消息只有《紐約時報》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "布克獎得主馬龍．詹姆斯（Marlon James）推出新作《The Disappearers》，故事圍繞牙買加的同志經驗，以及當地致命的恐同暴力展開。書評形容內容豐盛，像一場文字盛宴，稱得上是詹姆斯至今最好的一本書。目前這則消息只有《紐約時報》書評提及。"
+              ]
+            },
+            "voice": {
+              "text": "布克獎得主馬龍．詹姆斯推出新作《The Disappearers》。故事圍繞牙買加的同志經驗，還有當地致命的恐同暴力展開。有書評形容，這本書內容豐盛得像一場文字盛宴，是他至今最好的作品。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "nyt_books",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "Marlon James’s story of gay experience and murderous homophobia in Jamaica is a maximalist’s banquet — and the Booker Prize winner’s finest book yet.",
+              "title": "Book Review: ‘The Disappearers,’ by Marlon James",
+              "url": "https://www.nytimes.com/2026/08/30/books/review/the-disappearers-marlon-james.html",
+              "published_at": "2026-08-30T19:47:14+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "馬龍．詹姆斯推出新作《The Disappearers》，講述牙買加同志經驗與致命恐同暴力，書評稱是他至今最好的作品。",
+              "source_id": "nyt_books",
+              "source_title": "Book Review: ‘The Disappearers,’ by Marlon James",
+              "source_url": "https://www.nytimes.com/2026/08/30/books/review/the-disappearers-marlon-james.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 23,
+          "sub_beat": "文學",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2; arts_major_award_or_institution"
+        },
+        {
+          "event_id": "daily_20260831_evt_003",
+          "headline": "英國鄉村音樂節悼桃莉巴頓",
+          "context": "英國萊斯特郡的 Long Road 鄉村音樂節上，樂迷戴著牛仔帽、穿著雨衣，一起悼念剛離世的桃莉巴頓（Dolly Parton）。",
+          "beat": "ARTS",
+          "thread_text": "英國萊斯特郡的 Long Road 鄉村音樂節上，樂迷戴著牛仔帽、穿著雨衣齊聚一堂，藉這場英式鄉村音樂盛會，悼念剛離世的桃莉巴頓（Dolly Parton）。目前這則消息只有《衛報》報導。",
+          "threads_text": "英國萊斯特郡的 Long Road 鄉村音樂節，今年多了一層特別的意義。樂迷戴著牛仔帽、穿著雨衣齊聚草地上，用這場道地的英式鄉村音樂盛會，悼念剛離世的桃莉巴頓（Dolly Parton）。晴時多雲偶陣雨的英國天氣，倒也很符合鄉村音樂那種質樸的氣氛。目前這則消息只有《衛報》報導。",
+          "voice_text": "英國萊斯特郡的 Long Road 鄉村音樂節，今年多了一份追思的心情。樂迷戴著牛仔帽、穿著雨衣，聚在草地上，用這場英式鄉村音樂盛會，悼念剛離世的桃莉巴頓。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "英國萊斯特郡的 Long Road 鄉村音樂節上，樂迷戴著牛仔帽、穿著雨衣齊聚一堂，藉這場英式鄉村音樂盛會，悼念剛離世的桃莉巴頓（Dolly Parton）。目前這則消息只有《衛報》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國萊斯特郡的 Long Road 鄉村音樂節，今年多了一層特別的意義。樂迷戴著牛仔帽、穿著雨衣齊聚草地上，用這場道地的英式鄉村音樂盛會，悼念剛離世的桃莉巴頓（Dolly Parton）。晴時多雲偶陣雨的英國天氣，倒也很符合鄉村音樂那種質樸的氣氛。目前這則消息只有《衛報》報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國萊斯特郡的 Long Road 鄉村音樂節，今年多了一份追思的心情。樂迷戴著牛仔帽、穿著雨衣，聚在草地上，用這場英式鄉村音樂盛會，悼念剛離世的桃莉巴頓。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Country music fans use the Long Road festival in Leicestershire to mark the passing of Dolly Parton Continue reading...",
+              "title": "Stetsons and waterproofs at a very English country music festival",
+              "url": "https://www.theguardian.com/artanddesign/gallery/2026/aug/29/stetsons-waterproofs-long-road-country-music-festival",
+              "published_at": "2026-08-30T02:34:48+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "英國 Long Road 鄉村音樂節的樂迷，以這場音樂會悼念剛離世的桃莉巴頓。",
+              "source_id": "guardian_art_design",
+              "source_title": "Stetsons and waterproofs at a very English country music festival",
+              "source_url": "https://www.theguardian.com/artanddesign/gallery/2026/aug/29/stetsons-waterproofs-long-road-country-music-festival",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "sub_beat": "視覺藝術",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260831_evt_009",
+          "headline": "澳洲藝術家的粉紅俗豔美學",
+          "context": "阿德雷德藝術家兼設計師史塔芙拉（Stavroula Adameitis），藝名 Frida Las Vegas，擅長棕櫚樹、粉紅貴賓犬、希臘石柱混搭的普普風俗豔美學，最新出版攝影集記錄澳洲式的通俗文化。",
+          "beat": "ARTS",
+          "thread_text": "澳洲阿德雷德的藝術家史塔芙拉（Stavroula Adameitis），藝名 Frida Las Vegas，擅長把棕櫚樹、粉紅貴賓犬、希臘石柱通通混搭在一起，做出濃濃普普風的俗豔美學。她的新書邀請大家別再嫌棄「俗氣」，好好享受澳洲獨有的這種美感。目前這則消息只有《衛報》報導。",
+          "threads_text": "澳洲阿德雷德藝術家史塔芙拉（Stavroula Adameitis），藝名 Frida Las Vegas，擅長把棕櫚樹、粉紅貴賓犬、希臘石柱通通混在一起，做出濃濃普普風的俗豔美學。她說，懷舊、色彩跟樂趣本身就很有感染力，這種通俗文化帶來的感受，反而能把人們凝聚在一起。她在新書裡邀請大家別再嫌棄「俗氣」二字，好好享受澳洲獨有的這種美感。目前這則消息只有《衛報》報導。",
+          "voice_text": "澳洲阿德雷德有位藝術家，藝名叫 Frida Las Vegas，擅長把棕櫚樹、粉紅貴賓犬、希臘石柱通通混在一起，做出濃濃普普風的俗豔美學。她說，懷舊、色彩跟樂趣本身就很有感染力，這種通俗文化帶來的感受，反而能把人凝聚在一起。她在新書裡邀請大家別再嫌棄「俗氣」，好好享受這種澳洲獨有的美感。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "澳洲阿德雷德的藝術家史塔芙拉（Stavroula Adameitis），藝名 Frida Las Vegas，擅長把棕櫚樹、粉紅貴賓犬、希臘石柱通通混搭在一起，做出濃濃普普風的俗豔美學。她的新書邀請大家別再嫌棄「俗氣」，好好享受澳洲獨有的這種美感。目前這則消息只有《衛報》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "澳洲阿德雷德藝術家史塔芙拉（Stavroula Adameitis），藝名 Frida Las Vegas，擅長把棕櫚樹、粉紅貴賓犬、希臘石柱通通混在一起，做出濃濃普普風的俗豔美學。她說，懷舊、色彩跟樂趣本身就很有感染力，這種通俗文化帶來的感受，反而能把人們凝聚在一起。她在新書裡邀請大家別再嫌棄「俗氣」二字，好好享受澳洲獨有的這種美感。目前這則消息只有《衛報》報導。"
+              ]
+            },
+            "voice": {
+              "text": "澳洲阿德雷德有位藝術家，藝名叫 Frida Las Vegas，擅長把棕櫚樹、粉紅貴賓犬、希臘石柱通通混在一起，做出濃濃普普風的俗豔美學。她說，懷舊、色彩跟樂趣本身就很有感染力，這種通俗文化帶來的感受，反而能把人凝聚在一起。她在新書裡邀請大家別再嫌棄「俗氣」，好好享受這種澳洲獨有的美感。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Stavroula Adameitis, AKA Frida Las Vegas, is an Adelaide-based artist and designer known for her camp, pop art aesthetic. A typical work might feature palm trees, poodles, Greek pillars or bin chickens (Australian white ibises), sometimes all at once. Does it veer into kitsch? ‘I hope so,’ she says. ‘Nostalgia, colour and fun can be very energising, and the feeling we get from these objects in popular culture binds us together.’ The term kitsch comes from the German verkitschen, meaning ‘to cheapen’. In the 19th century it was deployed by elites to look down on the supposedly trashy vulgarity of art for the masses. ‘The idea still carries negative connotations,’ says Adameitis. In her new book, she invites us to stop sneering and start relishing Australia’s unparalleled genius for kitsch: ‘Good kitsch laughs with you not at you. It brings people along for the ride.’ Continue reading...",
+              "title": "Big things and pink poodles: Frida Las Vegas’s tour of Australian kitsch – in pictures",
+              "url": "https://www.theguardian.com/artanddesign/gallery/2026/aug/30/australia-kitsch-photography-frida-las-vegas-australianarama-stavroula-adameitis-in-pictures",
+              "published_at": "2026-08-30T04:00:36+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "阿德雷德藝術家 Frida Las Vegas 以棕櫚樹、粉紅貴賓犬、希臘石柱混搭的普普風俗豔美學聞名，出版新書談澳洲通俗文化。",
+              "source_id": "guardian_art_design",
+              "source_title": "Big things and pink poodles: Frida Las Vegas’s tour of Australian kitsch – in pictures",
+              "source_url": "https://www.theguardian.com/artanddesign/gallery/2026/aug/30/australia-kitsch-photography-frida-las-vegas-australianarama-stavroula-adameitis-in-pictures",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "sub_beat": "視覺藝術",
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260831_evt_129",
+          "headline": "馬斯克押注天然氣渦輪惹議",
+          "context": "馬斯克表示，SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快 18 個月讓燃氣發電上線。但這是壓在天然氣這種燃料上的賭注，已經在他和其他業者部署渦輪的地方，引發訴訟與健康研究關注。",
+          "beat": "AI",
+          "thread_text": "馬斯克說，SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快 18 個月讓燃氣發電上線。但這是壓在天然氣這種燃料上的賭注——在他跟其他業者部署渦輪機的地方，已經引發訴訟，也讓健康研究單位開始關注污染問題。目前這則消息只有《TechCrunch》報導。",
+          "threads_text": "馬斯克這次的賭注，押在天然氣上。他說 SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快 18 個月讓燃氣發電上線。問題是，天然氣渦輪機在他跟其他業者已經部署的地方，早就引發訴訟，也讓健康研究單位開始關注空污的問題。這場「更快上線」的競賽，代價可能要花更久才能看清楚。目前這則消息只有《TechCrunch》報導。",
+          "voice_text": "馬斯克這次的賭注，押在天然氣上。他說 SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快十八個月，就能讓燃氣發電上線。問題是，天然氣渦輪機在他跟其他業者已經部署的地方，早就引發訴訟，也讓健康研究單位開始關注空污問題。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "馬斯克說，SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快 18 個月讓燃氣發電上線。但這是壓在天然氣這種燃料上的賭注——在他跟其他業者部署渦輪機的地方，已經引發訴訟，也讓健康研究單位開始關注污染問題。目前這則消息只有《TechCrunch》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "馬斯克這次的賭注，押在天然氣上。他說 SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快 18 個月讓燃氣發電上線。問題是，天然氣渦輪機在他跟其他業者已經部署的地方，早就引發訴訟，也讓健康研究單位開始關注空污的問題。這場「更快上線」的競賽，代價可能要花更久才能看清楚。目前這則消息只有《TechCrunch》報導。"
+              ]
+            },
+            "voice": {
+              "text": "馬斯克這次的賭注，押在天然氣上。他說 SpaceX 一座低調成立的鑄造廠，能讓他自行鑄造渦輪葉片，比其他人快十八個月，就能讓燃氣發電上線。問題是，天然氣渦輪機在他跟其他業者已經部署的地方，早就引發訴訟，也讓健康研究單位開始關注空污問題。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Elon Musk says a secretive new SpaceX foundry will let him cast his own turbine blades and get gas power online 18 months faster than anyone else — but it's a bet on a fuel source that's already triggering lawsuits and health studies everywhere his (and others') turbines have gone in.",
+              "title": "Musk’s faster path to more gas turbines comes with pollution problem",
+              "url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+              "published_at": "2026-08-31T00:54:25+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "馬斯克表示 SpaceX 的新鑄造廠能讓燃氣發電比對手快18個月上線，但天然氣渦輪已在他與其他業者部署處引發訴訟與健康研究關注。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Musk’s faster path to more gas turbines comes with pollution problem",
+              "source_url": "https://techcrunch.com/2026/08/30/musks-faster-path-to-more-gas-turbines-comes-with-pollution-problem/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_073",
+          "headline": "極簡穿戴裝置興起",
+          "context": "在滿手震動通知的穿戴裝置市場中，出現一批走「極簡」路線的新品，訴求收集健康數據，但不搶你的注意力。",
+          "beat": "AI",
+          "thread_text": "如果你已經受夠手錶一直震動、通知轟炸的疲勞感，這幾年冒出一批走極簡路線的新穿戴裝置，訴求是安靜收集你的健康數據，卻不刻意搶你的注意力。目前這則消息只有《Wired》報導。",
+          "threads_text": "穿戴裝置市場最近吹起一股「安靜」風潮。過去主打震動提醒、推播通知的智慧手錶讓不少人感到疲勞，於是市場上開始出現一批走極簡路線的新裝置，訴求是安靜在背景收集你的健康數據，卻刻意不去搶你的注意力，讓人可以少看螢幕、多過生活。目前這則消息只有《Wired》報導。",
+          "voice_text": "穿戴裝置市場，吹起一股「安靜」風潮。過去主打震動提醒、推播通知的智慧手錶，讓不少人覺得疲勞。這幾年開始出現一批走極簡路線的新裝置，訴求是安靜收集你的健康數據，卻刻意不搶你的注意力。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "如果你已經受夠手錶一直震動、通知轟炸的疲勞感，這幾年冒出一批走極簡路線的新穿戴裝置，訴求是安靜收集你的健康數據，卻不刻意搶你的注意力。目前這則消息只有《Wired》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "穿戴裝置市場最近吹起一股「安靜」風潮。過去主打震動提醒、推播通知的智慧手錶讓不少人感到疲勞，於是市場上開始出現一批走極簡路線的新裝置，訴求是安靜在背景收集你的健康數據，卻刻意不去搶你的注意力，讓人可以少看螢幕、多過生活。目前這則消息只有《Wired》報導。"
+              ]
+            },
+            "voice": {
+              "text": "穿戴裝置市場，吹起一股「安靜」風潮。過去主打震動提醒、推播通知的智慧手錶，讓不少人覺得疲勞。這幾年開始出現一批走極簡路線的新裝置，訴求是安靜收集你的健康數據，卻刻意不搶你的注意力。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "wired_ai",
+              "name": "Wired",
+              "publisher": "Wired",
+              "summary": "Burnt out on wrist buzzes and notification overload? A new crop of minimalist wearables promises to collect your health data without demanding your attention.",
+              "title": "Why the Hottest New Wearables Want to Be Ignored",
+              "url": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/",
+              "published_at": "2026-08-30T18:30:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "一批走極簡路線的新穿戴裝置興起，訴求安靜收集健康數據而不搶用戶注意力。",
+              "source_id": "wired_ai",
+              "source_title": "Why the Hottest New Wearables Want to Be Ignored",
+              "source_url": "https://www.wired.com/story/why-the-hottest-new-wearables-want-to-be-ignored/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_004",
+          "headline": "索尼華納控告AI侵權",
+          "context": "索尼音樂與華納音樂一狀告上法院，指控 AI 公司 Anthropic 展開「明目張膽的」智慧財產權侵權行動，這起訴訟範圍相當廣，聚焦在非法盜版的指控上。",
+          "beat": "AI",
+          "thread_text": "索尼音樂與華納音樂對 AI 公司 Anthropic 提告，指控對方展開「明目張膽的」智慧財產權侵權行動。這起訴訟範圍相當廣，主要聚焦在非法盜版的指控上。目前這則消息只有《TechCrunch》報導。",
+          "threads_text": "音樂產業再度對 AI 公司出手。索尼音樂與華納音樂一狀告上 Anthropic，指控對方展開「明目張膽的」智慧財產權侵權行動。這起訴訟的範圍相當廣，重點放在非法盜版的指控上，是這波 AI 公司挨告音樂版權訴訟中，力道最重的一起。目前這則消息只有《TechCrunch》報導。",
+          "voice_text": "索尼音樂跟華納音樂一狀告上 AI 公司 Anthropic，指控對方展開明目張膽的智慧財產權侵權行動。這起訴訟範圍很廣，重點放在非法盜版的指控上，是這一波音樂產業對 AI 公司提告裡，力道最重的一起。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "索尼音樂與華納音樂對 AI 公司 Anthropic 提告，指控對方展開「明目張膽的」智慧財產權侵權行動。這起訴訟範圍相當廣，主要聚焦在非法盜版的指控上。目前這則消息只有《TechCrunch》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "音樂產業再度對 AI 公司出手。索尼音樂與華納音樂一狀告上 Anthropic，指控對方展開「明目張膽的」智慧財產權侵權行動。這起訴訟的範圍相當廣，重點放在非法盜版的指控上，是這波 AI 公司挨告音樂版權訴訟中，力道最重的一起。目前這則消息只有《TechCrunch》報導。"
+              ]
+            },
+            "voice": {
+              "text": "索尼音樂跟華納音樂一狀告上 AI 公司 Anthropic，指控對方展開明目張膽的智慧財產權侵權行動。這起訴訟範圍很廣，重點放在非法盜版的指控上，是這一波音樂產業對 AI 公司提告裡，力道最重的一起。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "This latest lawsuit is particularly broad and homes in on accusations of illegal piracy.",
+              "title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+              "url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+              "published_at": "2026-08-30T02:41:59+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "索尼音樂與華納音樂控告 Anthropic「明目張膽的」智慧財產權侵權行動，指控聚焦非法盜版。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Sony Music, Warner sue Anthropic, alleging a “brazen campaign” of intellectual property theft",
+              "source_url": "https://techcrunch.com/2026/08/29/sony-music-warner-sue-anthropic-alleging-a-brazen-campaign-of-intellectual-property-theft/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2"
+        },
+        {
+          "event_id": "daily_20260831_evt_105",
+          "headline": "卡特彼勒採礦經驗搬進AI",
+          "context": "重型機械大廠卡特彼勒（Caterpillar）過去數十年在偏遠礦區部署自駕機具，累積了大量自動化經驗，現在打算把這套經驗用到企業 AI 導入上。",
+          "beat": "AI",
+          "thread_text": "重型機械大廠卡特彼勒（Caterpillar）過去數十年，一直在偏遠礦區部署自駕機具，累積了大量的自動化實戰經驗。現在他們打算把這套經驗，原封不動搬到企業 AI 導入的領域上。目前這則消息只有《TechCrunch》報導。",
+          "threads_text": "重型機械大廠卡特彼勒（Caterpillar）在偏遠礦區部署自駕機具，已經累積了數十年的自動化經驗。這家公司現在打算把這套實戰經驗，搬到企業導入 AI 的領域，等於是把「怎麼讓機器在沒有人盯著的地方安全運作」這門功課，從礦坑搬進辦公室。目前這則消息只有《TechCrunch》報導。",
+          "voice_text": "重型機械大廠卡特彼勒，在偏遠礦區部署自駕機具，已經累積了數十年的自動化經驗。現在他們打算把這套實戰經驗，搬到企業導入 AI 的領域，等於是把「怎麼讓機器在沒人盯著的地方安全運作」這門功課，從礦坑搬進辦公室。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "重型機械大廠卡特彼勒（Caterpillar）過去數十年，一直在偏遠礦區部署自駕機具，累積了大量的自動化實戰經驗。現在他們打算把這套經驗，原封不動搬到企業 AI 導入的領域上。目前這則消息只有《TechCrunch》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "重型機械大廠卡特彼勒（Caterpillar）在偏遠礦區部署自駕機具，已經累積了數十年的自動化經驗。這家公司現在打算把這套實戰經驗，搬到企業導入 AI 的領域，等於是把「怎麼讓機器在沒有人盯著的地方安全運作」這門功課，從礦坑搬進辦公室。目前這則消息只有《TechCrunch》報導。"
+              ]
+            },
+            "voice": {
+              "text": "重型機械大廠卡特彼勒，在偏遠礦區部署自駕機具，已經累積了數十年的自動化經驗。現在他們打算把這套實戰經驗，搬到企業導入 AI 的領域，等於是把「怎麼讓機器在沒人盯著的地方安全運作」這門功課，從礦坑搬進辦公室。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
+              "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+              "url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+              "published_at": "2026-08-30T23:00:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "卡特彼勒把數十年的礦區自動化經驗，應用到企業 AI 部署上。",
+              "source_id": "techcrunch_ai",
+              "source_title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+              "source_url": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 8,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260831_evt_015",
+          "headline": "通用汽車加碼投資加拿大廠",
+          "context": "通用汽車與工會達成協議，計畫投資 11 億加幣在加拿大的汽車工廠，這是在美國關稅壓力升高的背景下做出的決定。",
+          "beat": "ECON",
+          "thread_text": "通用汽車（GM）與工會達成協議，計畫投資 11 億加幣，加碼投資加拿大的汽車工廠。這筆投資是在美國關稅壓力持續升高的背景下拍板的。目前這則消息只有路透社報導。",
+          "threads_text": "通用汽車（GM）與工會敲定新協議，計畫投資 11 億加幣在加拿大的汽車工廠。這筆錢是在美國關稅壓力持續升高的背景下拍板的，等於是通用在美加供應鏈緊張的局勢裡，選擇加碼留在加拿大生產。目前這則消息只有路透社報導。",
+          "voice_text": "通用汽車跟工會敲定新協議，要投資十一億加幣在加拿大的汽車工廠。這筆錢，是在美國關稅壓力持續升高的背景下拍板的，等於通用在美加供應鏈緊張的局勢裡，選擇加碼留在加拿大生產。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "通用汽車（GM）與工會達成協議，計畫投資 11 億加幣，加碼投資加拿大的汽車工廠。這筆投資是在美國關稅壓力持續升高的背景下拍板的。目前這則消息只有路透社報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "通用汽車（GM）與工會敲定新協議，計畫投資 11 億加幣在加拿大的汽車工廠。這筆錢是在美國關稅壓力持續升高的背景下拍板的，等於是通用在美加供應鏈緊張的局勢裡，選擇加碼留在加拿大生產。目前這則消息只有路透社報導。"
+              ]
+            },
+            "voice": {
+              "text": "通用汽車跟工會敲定新協議，要投資十一億加幣在加拿大的汽車工廠。這筆錢，是在美國關稅壓力持續升高的背景下拍板的，等於通用在美加供應鏈緊張的局勢裡，選擇加碼留在加拿大生產。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "GM union deal would invest C$1.1 bln in Canada auto factories amid US tariff pressure Reuters",
+              "title": "GM union deal would invest C$1.1 bln in Canada auto factories amid US tariff pressure - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMDZ0M25LQzd4Y0NlQUxmUERXTE9tWkNiZjRvdUdORjJYcVdQX3VmWXJQdFFQV1dVaElRLXV6Vmo0X0taNGJEU0xQV1dyYmxsWFU3c3FUME5FcGI5N3JYc2prYnpYM2xzS1JjdHdGald0QXZsYUZ1ZEdtRGg3ZHdkTGpMT0ZaV2J2U0JQLVI4Qk9MZ2RmNmhPcHpPdUZCckI4LU96TWVxcnJUbW1ROGlfWjRrYXpDZVFIVjNraWlLeUtpbEd0TXBJVzZOZGY4a1pJakdOZjJTaS1jLWF4RFE?oc=5",
+              "published_at": "2026-08-30T05:15:25+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "通用汽車與工會達成協議，將投資11億加幣在加拿大汽車工廠，背景是美國關稅壓力升高。",
+              "source_id": "reuters_business_google_news",
+              "source_title": "GM union deal would invest C$1.1 bln in Canada auto factories amid US tariff pressure - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPMDZ0M25LQzd4Y0NlQUxmUERXTE9tWkNiZjRvdUdORjJYcVdQX3VmWXJQdFFQV1dVaElRLXV6Vmo0X0taNGJEU0xQV1dyYmxsWFU3c3FUME5FcGI5N3JYc2prYnpYM2xzS1JjdHdGald0QXZsYUZ1ZEdtRGg3ZHdkTGpMT0ZaV2J2U0JQLVI4Qk9MZ2RmNmhPcHpPdUZCckI4LU96TWVxcnJUbW1ROGlfWjRrYXpDZVFIVjNraWlLeUtpbEd0TXBJVzZOZGY4a1pJakdOZjJTaS1jLWF4RFE?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260831_evt_124",
+          "headline": "衛報社論談稀土供應戰略",
+          "context": "《衛報》社論指出，中國掌控全球約七成稀土礦產與九成的分離加工，這個問題自 2010 年中國因島嶼爭端一度封鎖對日稀土出口就已經敲響警鐘，但外界始終沒有真正採取行動。",
+          "beat": "ECON",
+          "thread_text": "《衛報》社論談稀土供應鏈，這篇是編輯部的觀點文章。文中指出，中國掌控全球約七成稀土礦產與九成的分離加工，這個警訊早在 2010 年中國一度封鎖對日稀土出口時就已經響起，但外界始終沒有真正採取行動。這場為期一年的貿易休兵，將在 11 月到期。目前這則消息只有《衛報》報導。",
+          "threads_text": "這是《衛報》編輯部的一篇社論，談的是稀土供應鏈的戰略問題。文中指出，中國掌控全球約七成稀土礦產與九成的分離加工能力，這個警訊早在 2010 年——中國因為島嶼爭端一度封鎖對日稀土出口時——就已經響起，但外界始終沒有真正採取行動。去年北京正是靠收緊稀土出口，逼美國總統川普從貿易戰中退讓，而不是靠報復性關稅。這場為期一年的貿易休兵，將在 11 月到期，通訊設施關鍵原料「鉺」的價格，已經因為市場擔心出口管制重啟而上漲。這篇社論的立場是：把稀土產業外包給中國，已經到了不能再繼續的地步。目前這則消息只有《衛報》報導。",
+          "voice_text": "這是一篇編輯部的觀點文章，談的是稀土供應鏈的戰略問題。文中的看法是，中國掌控全球約七成稀土礦產、九成的分離加工能力，這個警訊早在二〇一〇年——中國因為島嶼爭端一度封鎖對日稀土出口時——就已經響起，但外界始終沒有真正採取行動。去年，中國正是靠收緊稀土出口，逼美國總統川普從貿易戰中退讓，而不是靠報復性關稅。這場為期一年的貿易休兵，將在十一月到期，通訊設施的關鍵原料「鉺」，價格已經因為市場擔心出口管制重啟而上漲。這篇社論認為，把稀土產業外包給中國，已經到了不能再繼續的地步。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "《衛報》社論談稀土供應鏈，這篇是編輯部的觀點文章。文中指出，中國掌控全球約七成稀土礦產與九成的分離加工，這個警訊早在 2010 年中國一度封鎖對日稀土出口時就已經響起，但外界始終沒有真正採取行動。這場為期一年的貿易休兵，將在 11 月到期。目前這則消息只有《衛報》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "這是《衛報》編輯部的一篇社論，談的是稀土供應鏈的戰略問題。文中指出，中國掌控全球約七成稀土礦產與九成的分離加工能力，這個警訊早在 2010 年——中國因為島嶼爭端一度封鎖對日稀土出口時——就已經響起，但外界始終沒有真正採取行動。去年北京正是靠收緊稀土出口，逼美國總統川普從貿易戰中退讓，而不是靠報復性關稅。這場為期一年的貿易休兵，將在 11 月到期，通訊設施關鍵原料「鉺」的價格，已經因為市場擔心出口管制重啟而上漲。這篇社論的立場是：把稀土產業外包給中國，已經到了不能再繼續的地步。目前這則消息只有《衛報》報導。"
+              ]
+            },
+            "voice": {
+              "text": "這是一篇編輯部的觀點文章，談的是稀土供應鏈的戰略問題。文中的看法是，中國掌控全球約七成稀土礦產、九成的分離加工能力，這個警訊早在二〇一〇年——中國因為島嶼爭端一度封鎖對日稀土出口時——就已經響起，但外界始終沒有真正採取行動。去年，中國正是靠收緊稀土出口，逼美國總統川普從貿易戰中退讓，而不是靠報復性關稅。這場為期一年的貿易休兵，將在十一月到期，通訊設施的關鍵原料「鉺」，價格已經因為市場擔心出口管制重啟而上漲。這篇社論認為，把稀土產業外包給中國，已經到了不能再繼續的地步。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Outsourcing the industry to China cannot continue, but Europe knows it can no longer count on the US for a solution The alarm sounded 16 years ago. In 2010, China blocked exports of key rare earths to Japan in a row over disputed islands in the East China Sea. The critical minerals are essential to everything from advanced weaponry and iPhones to electric vehicle batteries and wind turbines, so the rest of the world took note. But it didn’t take much action. China still accounts for about 70% of rare-earth mining globally and 90% of separation and processing. Then, last year, Beijing forced Donald Trump to back away from his trade war – not with its retaliatory tariffs, but the curbing of rare-earth exports. A scramble for new supplies began in earnest. The year-long trade truce is due to expire in November. The price of erbium, an element essential to communications infrastructure, has already jumped because of fears that export controls will soon be renewed. Continue reading...",
+              "title": "The Guardian view on rare earths: it’s common sense to secure essential supply chains | Editorial",
+              "url": "https://www.theguardian.com/commentisfree/2026/aug/30/the-guardian-view-on-rare-earths-its-common-sense-to-secure-essential-supply-chains",
+              "published_at": "2026-08-31T00:30:01+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "中國掌控全球約七成稀土礦產與九成的分離加工能力。",
+              "source_id": "guardian_business",
+              "source_title": "The Guardian view on rare earths: it’s common sense to secure essential supply chains | Editorial",
+              "source_url": "https://www.theguardian.com/commentisfree/2026/aug/30/the-guardian-view-on-rare-earths-its-common-sense-to-secure-essential-supply-chains",
+              "support_type": "direct"
+            },
+            {
+              "claim": "中美貿易休兵將於11月到期，稀土供應鏈是這篇社論主張需要優先處理的戰略議題。",
+              "source_id": "guardian_business",
+              "source_title": "The Guardian view on rare earths: it’s common sense to secure essential supply chains | Editorial",
+              "source_url": "https://www.theguardian.com/commentisfree/2026/aug/30/the-guardian-view-on-rare-earths-its-common-sense-to-secure-essential-supply-chains",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "explicit_commentary",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260831_evt_010",
+          "headline": "聯準會主席談抗通膨決心",
+          "context": "聯準會主席沃許（Kevin Warsh）在一場重要演說中表示，聯準會對壓低通膨負有主要責任。他說，如果物價漲幅沒有儘快回到央行目標，「我們還有工作要做」。",
+          "beat": "ECON",
+          "thread_text": "聯準會主席沃許（Kevin Warsh）在一場重要演說中表示，聯準會對壓低通膨負有主要責任。他說，如果物價漲幅沒有儘快回到央行設定的目標，「我們還有工作要做」。目前這則消息只有《紐約時報》報導。",
+          "threads_text": "聯準會主席沃許（Kevin Warsh）在一場重要演說中，試圖安撫外界對通膨升溫的擔憂。他說，聯準會對壓低通膨負有主要責任，如果物價漲幅沒有儘快回到央行設定的目標，「我們還有工作要做」。這番表態，等於是在市場緊張情緒中，重申央行會堅持緊縮立場。目前這則消息只有《紐約時報》報導。",
+          "voice_text": "聯準會主席沃許，在一場重要演說中，試圖安撫外界對通膨升溫的擔憂。他說，聯準會對壓低通膨負有主要責任，如果物價漲幅沒有儘快回到央行設定的目標，「我們還有工作要做」。這番話等於是在市場緊張的情緒裡，重申央行會堅持緊縮立場。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "聯準會主席沃許（Kevin Warsh）在一場重要演說中表示，聯準會對壓低通膨負有主要責任。他說，如果物價漲幅沒有儘快回到央行設定的目標，「我們還有工作要做」。目前這則消息只有《紐約時報》報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "聯準會主席沃許（Kevin Warsh）在一場重要演說中，試圖安撫外界對通膨升溫的擔憂。他說，聯準會對壓低通膨負有主要責任，如果物價漲幅沒有儘快回到央行設定的目標，「我們還有工作要做」。這番表態，等於是在市場緊張情緒中，重申央行會堅持緊縮立場。目前這則消息只有《紐約時報》報導。"
+              ]
+            },
+            "voice": {
+              "text": "聯準會主席沃許，在一場重要演說中，試圖安撫外界對通膨升溫的擔憂。他說，聯準會對壓低通膨負有主要責任，如果物價漲幅沒有儘快回到央行設定的目標，「我們還有工作要做」。這番話等於是在市場緊張的情緒裡，重申央行會堅持緊縮立場。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "nyt_business",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "In a high-profile speech, Kevin M. Warsh said the Federal Reserve was chiefly responsible for taming inflation. If price increases do not return to the central bank’s target quickly, “we have work to do,” he said.",
+              "title": "Fed Chairman Warsh Seeks to Calm Elevated Inflation Concerns",
+              "url": "https://www.nytimes.com/2026/08/28/business/fed-kevin-warsh-speech-inflation.html",
+              "published_at": "2026-08-30T04:07:02+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "聯準會主席沃許表示聯準會對壓低通膨負有主要責任，若物價未儘快回到目標，「還有工作要做」。",
+              "source_id": "nyt_business",
+              "source_title": "Fed Chairman Warsh Seeks to Calm Elevated Inflation Concerns",
+              "source_url": "https://www.nytimes.com/2026/08/28/business/fed-kevin-warsh-speech-inflation.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_2; economy_macro_policy"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260831_evt_036",
+          "headline": "雲林高架橋下玩空拍機挨罰",
+          "context": "雲林斗南一座新啟用的全齡共融遊戲園區，結合在地鐵道文化，很受親子歡迎，但因為緊鄰台78線快速道路高架橋，最近有民眾在橋下玩空拍機，縣府表示這樣已經違法，最高可罰 30 萬元。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "雲林斗南在八月中旬啟用了一座全齡共融遊戲園區，結合在地鐵道文化，假日吸引不少家長帶小孩同樂。問題是這座園區緊鄰台78線快速道路高架橋，最近有民眾疑似在橋下玩空拍機，縣府交工處表示，高架橋下操作遙控無人機已經違法，最高可以開罰 30 萬元。目前這則消息只有公視報導。",
+          "threads_text": "雲林斗南八月中旬啟用了一座全齡共融遊戲園區，結合在地鐵道文化，假日總是吸引不少家長帶小孩來玩。但這座園區緊鄰台78線快速道路高架橋，最近疑似有民眾在橋下玩空拍機，縣府交工處出面提醒，高架橋下操作遙控無人機已經違法，最高可以開罰 30 萬元，提醒家長帶小孩出遊時，也要注意這條規定。目前這則消息只有公視報導。",
+          "voice_text": "雲林斗南八月中旬啟用了一座全齡共融遊戲園區，結合在地鐵道文化，假日總是吸引不少家長帶小孩來玩。這座園區緊鄰台七十八線快速道路高架橋，最近疑似有民眾在橋下玩空拍機，縣府交工處提醒，高架橋下操作遙控無人機已經違法，最高可以開罰三十萬元。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "雲林斗南在八月中旬啟用了一座全齡共融遊戲園區，結合在地鐵道文化，假日吸引不少家長帶小孩同樂。問題是這座園區緊鄰台78線快速道路高架橋，最近有民眾疑似在橋下玩空拍機，縣府交工處表示，高架橋下操作遙控無人機已經違法，最高可以開罰 30 萬元。目前這則消息只有公視報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "雲林斗南八月中旬啟用了一座全齡共融遊戲園區，結合在地鐵道文化，假日總是吸引不少家長帶小孩來玩。但這座園區緊鄰台78線快速道路高架橋，最近疑似有民眾在橋下玩空拍機，縣府交工處出面提醒，高架橋下操作遙控無人機已經違法，最高可以開罰 30 萬元，提醒家長帶小孩出遊時，也要注意這條規定。目前這則消息只有公視報導。"
+              ]
+            },
+            "voice": {
+              "text": "雲林斗南八月中旬啟用了一座全齡共融遊戲園區，結合在地鐵道文化，假日總是吸引不少家長帶小孩來玩。這座園區緊鄰台七十八線快速道路高架橋，最近疑似有民眾在橋下玩空拍機，縣府交工處提醒，高架橋下操作遙控無人機已經違法，最高可以開罰三十萬元。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "雲林斗南在8月中旬啟用了首座全齡共融遊戲園區，結合在地鐵道文化，假日都吸引不少家長帶小孩一起同樂，但近期疑似有民眾在這裡玩無人機，旁邊緊鄰的就是台78線快速道路高架橋。縣府交工處表示，高架橋下從事遙控無人機已經違法，最高可開罰30萬。",
+              "title": "民眾高架橋下親子園區玩無人機 雲縣府：最高可罰30萬",
+              "url": "https://news.pts.org.tw/article/824742",
+              "published_at": "2026-08-30T13:12:18+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "雲林斗南全齡共融遊戲園區緊鄰高架橋，民眾疑似在橋下玩空拍機，縣府表示已違法，最高可罰30萬元。",
+              "source_id": "pts_news",
+              "source_title": "民眾高架橋下親子園區玩無人機 雲縣府：最高可罰30萬",
+              "source_url": "https://news.pts.org.tw/article/824742",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260831_evt_025",
+          "headline": "尼泊爾山洪釀675人罹難",
+          "context": "中國與尼泊爾邊境的嚴重山洪已經持續將近一週，官方統計目前至少 675 人罹難，超過 2400 人失蹤。當地河流沿線佈滿水利設施，許多失蹤者是正在隧道裡工作的人員，尼泊爾官方已請求友邦加強協助。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "中國與尼泊爾邊境的嚴重山洪已經持續將近一週，官方統計目前至少 675 人罹難，超過 2400 人失蹤。當地河流沿線佈滿水利設施，許多失蹤者是正在隧道裡工作的人員，尼泊爾官方已經請求友邦加強協助。災後重建，估計需要 50 億美元。目前這則消息只有公視報導。",
+          "threads_text": "中國與尼泊爾邊境的嚴重山洪已經持續將近一週，官方統計目前至少 675 人罹難，超過 2400 人失蹤。當地河流沿線佈滿水利設施，許多失蹤者是正在隧道裡工作的施工人員，因此尼泊爾官方特別請求友邦加強相關協助。至於災後重建，官方估計需要 50 億美元，這場天災的規模，遠比外界原本想像的更嚴重。目前這則消息只有公視報導。",
+          "voice_text": "中國跟尼泊爾邊境的嚴重山洪，已經持續將近一週。官方統計，目前至少六百七十五人罹難，超過兩千四百人失蹤。當地河流沿線佈滿水利設施，許多失蹤的人，是正在隧道裡工作的施工人員。尼泊爾官方已經請求友邦加強協助，災後重建，估計需要五十億美元。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "中國與尼泊爾邊境的嚴重山洪已經持續將近一週，官方統計目前至少 675 人罹難，超過 2400 人失蹤。當地河流沿線佈滿水利設施，許多失蹤者是正在隧道裡工作的人員，尼泊爾官方已經請求友邦加強協助。災後重建，估計需要 50 億美元。目前這則消息只有公視報導。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "中國與尼泊爾邊境的嚴重山洪已經持續將近一週，官方統計目前至少 675 人罹難，超過 2400 人失蹤。當地河流沿線佈滿水利設施，許多失蹤者是正在隧道裡工作的施工人員，因此尼泊爾官方特別請求友邦加強相關協助。至於災後重建，官方估計需要 50 億美元，這場天災的規模，遠比外界原本想像的更嚴重。目前這則消息只有公視報導。"
+              ]
+            },
+            "voice": {
+              "text": "中國跟尼泊爾邊境的嚴重山洪，已經持續將近一週。官方統計，目前至少六百七十五人罹難，超過兩千四百人失蹤。當地河流沿線佈滿水利設施，許多失蹤的人，是正在隧道裡工作的施工人員。尼泊爾官方已經請求友邦加強協助，災後重建，估計需要五十億美元。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "中國與尼泊爾邊境發生嚴重山洪已經接近一週，官方統計，目前有至少675人罹難、2400多人失蹤。而當地河流佈滿水利設施，許多失蹤者都是正在隧道中作業的人員，因此尼泊爾官方特別請求友邦加強相關協助。",
+              "title": "尼泊爾山洪致675死 災後重建估需50億美元",
+              "url": "https://news.pts.org.tw/article/824732",
+              "published_at": "2026-08-30T11:42:36+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "中尼邊境山洪已致675人罹難、2400多人失蹤，災後重建估需50億美元。",
+              "source_id": "pts_news",
+              "source_title": "尼泊爾山洪致675死 災後重建估需50億美元",
+              "source_url": "https://news.pts.org.tw/article/824732",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 0,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 223,
+    "total_articles_after_filter": 216,
+    "total_events_merged": 154,
+    "total_events_selected": 18,
+    "tw_highlights_count": 2
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260831_evt_141",
+      "headline": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+      "selection_score": 53,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_043",
+      "headline": "Manhunt underway after woman killed, several injured at Swiss rave shooting - Reuters",
+      "selection_score": 45,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_016",
+      "headline": "Finland's Stubb tells German newspaper Russia unlikely to risk attack on NATO - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_018",
+      "headline": "They fell in love - then had to check they weren't brother and sister",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_095",
+      "headline": "Gulf stocks fall as Fed rate-hike bets rise after Warsh remarks - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_097",
+      "headline": "Libya rivals agree roadmap for elections within 24 months at UN-led talks - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_125",
+      "headline": "Russia says it helped to repel Niger attempted coup",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_127",
+      "headline": "Head teacher evacuated 900 children minutes before Nepal floods hit school",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_139",
+      "headline": "US Treasury's Bessent faces G20 diplomacy test amid tariffs, Iran war, bond turmoil - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_148",
+      "headline": "Ukraine defence chief to outline war plan as Kyiv seeks more funds - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_067",
+      "headline": "Nepal warns of possible fresh flooding as communities grapple with devastation",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_116",
+      "headline": "Rohingya crisis: Aid falls and hope fades",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_126",
+      "headline": "Rival Libya factions sign deal to hold national elections within two years",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_002",
+      "headline": "Australia usually hosts the world's biggest cuttlefish mating event - not this year",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_006",
+      "headline": "Norway's new king remembers 'my dear father' in first speech",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_008",
+      "headline": "Former Ecuadorian president imprisoned for corruption",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_011",
+      "headline": "At least 37 dead and hundreds evacuated after strike on Kyiv weapons depot",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_019",
+      "headline": "Rescuers battle floods and debris as Himalayan disaster death toll nears 800 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_023",
+      "headline": "South Korea names veteran technocrat Lee Hyoung-il as new finance chief in cabinet reshuffle - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_024",
+      "headline": "Australia's far-right party makes further gains, taking seat in western state - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_026",
+      "headline": "Big tech goes to Hollywood: is Silicon Valley ready for a silver-screen reckoning?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_028",
+      "headline": "Messina mystery: theft of Renaissance art from Sicilian museum leaves investigators baffled",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_029",
+      "headline": "When Prophecy Fails review – gripping dive into a doomsday cult",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_031",
+      "headline": "Mark Carney News | Today's Latest Stories - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_032",
+      "headline": "WhatsApp chat used to launder cash for crime and extremism",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_034",
+      "headline": "Arms and the £5m man: Farage megadonor Christopher Harborne’s military empire",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_037",
+      "headline": "南港機廠社宅已百件電梯故障 住都中心：加強設備維護",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_038",
+      "headline": "男子疑不滿機車未禮讓 持傘作勢打人遭警裁處",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_039",
+      "headline": "交通違規講習時間9月起延長 防未成年無照、酒駕再犯",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_040",
+      "headline": "「周氏蝦捲」遭倒上百隻活蟑螂 店家今自主停業持續清消",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_042",
+      "headline": "美委達成最大規模石油協議 美獲650億桶原油主導權",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_047",
+      "headline": "Trump’s ‘economic D-day’ against Iran risks driving the stakes even higher | Sina Toossi",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_049",
+      "headline": "國衛院研究：配偶若罹失智症 另一半失智風險增7成",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_050",
+      "headline": "尼泊爾暴洪致工人受困隧道　當局重啟搜救",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_051",
+      "headline": "Air China H1 net loss widens to about $341 million, filing shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_052",
+      "headline": "China Eastern posts wider first-half net loss - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_053",
+      "headline": "「旅行學台灣」日本熱銷三刷　出版紀念座談爆滿",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_054",
+      "headline": "厄瓜多因聖嬰現象宣布緊急狀態　拉丁美洲第5國",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_055",
+      "headline": "伊朗最高領袖神隱半年罕見發聲　籲穆斯林共抗美以",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_062",
+      "headline": "攻烏克蘭受阻　俄對歐洲灰色侵擾企圖分化援烏盟邦",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_063",
+      "headline": "North Korea names new defense minister, KCNA says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_064",
+      "headline": "一週大事／尼泊爾西藏邊境山洪、廢非核家園公投併入年底選舉（2026.8.24-8.30）",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_065",
+      "headline": "The Bridge review – a funny, furious odyssey through occupation",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_066",
+      "headline": "委內瑞拉與美簽25年能源協議　擬日產150萬桶原油",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_068",
+      "headline": "菲律賓次長肯定台灣消防培訓  讚助打造「新菲律賓」",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_072",
+      "headline": "俄軍襲烏克蘭基輔州彈藥庫釀38死　創當地今年死亡人數新高",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_074",
+      "headline": "尼泊爾洪災逾700死　6歲女童遭埋多日奇蹟獲救",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_075",
+      "headline": "冰島公投否決重啟加入歐盟談判　料令布魯塞爾失望",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_076",
+      "headline": "日本樂高樂園遊樂設施故障　11名遊客受困約30分鐘",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_078",
+      "headline": "‘Who would dare take on Elizabeth Jane Howard’s fans?’ Louisa Young on reviving the Cazalet Chronicles",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_079",
+      "headline": "美伊戰爭公債殖利率飆升　G7融資成本估增數百億美元",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_081",
+      "headline": "北賽普勒斯外海載約270人客船翻覆　當局展開搜救",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_082",
+      "headline": "民眾憂國旅補助上路後業者漲價 觀光署：若違規取消資格並開罰",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_083",
+      "headline": "車體變大停車空間卻未調整 民團籲車格加寬至2.8公尺",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_084",
+      "headline": "審計部指3百件兒保案處理延宕 蔣萬安：全面檢視機制",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_085",
+      "headline": "捷運信義線東延段通車 北捷首月推免費搭乘",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_086",
+      "headline": "龍華科大五專生聯署控師霸凌 校方：已完成校安通報",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_087",
+      "headline": "竹北市長選舉藍白合破局 柯文哲籲2黨主席討論善後",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_089",
+      "headline": "南部明起連2日迎豪雨 東琉、鹽琉線31日起停航3日",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_090",
+      "headline": "尼泊爾山洪已釀750死 仍有近3000人失蹤",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_091",
+      "headline": "日經民調：高市內閣支持率升至62％  重新站上6字頭",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_092",
+      "headline": "美國委內瑞拉石油協議　外媒：美可能掌握中國能源供應",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_094",
+      "headline": "Dom McGovern: Prize Hog review – a sharp standup who is sure to go stellar",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_096",
+      "headline": "北賽普勒斯外海渡輪翻覆　至少6人喪生",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_098",
+      "headline": "尼泊爾洪災來襲前中學校長果斷率學生撤離　拯救逾900條性命",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_099",
+      "headline": "Nepal steps up rescue effort to reach hundreds trapped in tunnels - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_101",
+      "headline": "Israeli strike kills two people including a 3-year-old boy, Gaza medics say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_103",
+      "headline": "Google Maps will show 'Lake America' in US, not 'Lake Ontario' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_106",
+      "headline": "Tom Gauld on the end of the summer books season – cartoon",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_107",
+      "headline": "日媒：日駐台機構設核避難所  因應「台灣有事」危機",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_109",
+      "headline": "Crowds flock to independent Hong Kong bookstore before shutters close - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_114",
+      "headline": "資料中心惹民怨成美國期中選舉黑馬議題　考驗共和黨選情",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_119",
+      "headline": "'We're alive': Kyiv-area survivor recalls Russian strike that killed 38 - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_121",
+      "headline": "Iceland votes against restarting EU membership talks",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_122",
+      "headline": "British woman killed in stabbing at German railway station",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_123",
+      "headline": "Why solar bonds are a bright idea | Letter",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_128",
+      "headline": "UAE, Egyptian central banks say they are coordinating on Banque Misr after US Treasury notice - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_132",
+      "headline": "被視為「伊斯蘭版北約」　麥加共同防禦協定將首次集會",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_133",
+      "headline": "USDA cyclospora research projects shelved amid funding cuts and relocations, Politico reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_134",
+      "headline": "Merz says Germany finalising response to suspected Leipzig attack - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_136",
+      "headline": "India's HDFC Bank weighing deputy MD Bharucha, outsider for CEO, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_137",
+      "headline": "Niger says it regains control of airbase after soldiers mutiny - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_138",
+      "headline": "Iran's Khamenei urges Gulf rulers in written message to confront 'real enemy' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_140",
+      "headline": "Germany's Merz says victory for AfD in Saxony-Anhalt would deter foreign investors - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_143",
+      "headline": "Pakistan says inaugural defence committee meeting to take place in Istanbul - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_151",
+      "headline": "Explosion heard near Iran's Larak Island, Fars news agency reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_153",
+      "headline": "Iran's Revolutionary Guards vow response to US attack on Larak island - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_013",
+      "headline": "Rescuers race to find thousands missing after deadly Himalayan floods",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_014",
+      "headline": "Getting help to Nepal's flood survivors is proving difficult",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_017",
+      "headline": "Trump’s Venezuelan Oil Deal Relies on a Powerful and Divisive Partner",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_021",
+      "headline": "Icelanders vote 'no' to talks aimed at joining the EU in close referendum",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_027",
+      "headline": "Tom Cruise, Olivia Colman and the return of Rocky: the best films of autumn 2026",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_035",
+      "headline": "‘I was miserable for a lot of this century’: Stewart Lee on divorce, his adoption and the twisted children’s poem that explains his life",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_041",
+      "headline": "TV tonight: Hamza Yassin’s delightful  birding odyssey in Africa",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_057",
+      "headline": "Venice Film Festival: Ellen Burstyn to Recieve a Lifetime Achievement Award",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_058",
+      "headline": "Sarah Davachi’s Music: A Manifesto for Listening Closely",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_059",
+      "headline": "Venice Film Festival: Wim Wenders Talks About Architecture and More",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_060",
+      "headline": "For the Venice Film Festival, an Island Setting for Almost a Century",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_061",
+      "headline": "‘That’s what saved me’: Darren Raymond and Mark Rylance on the prison drama workshop that brought them together",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_069",
+      "headline": "From Appalachia to Africa: Why Dolly Parton was beloved across the continent",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_088",
+      "headline": "Energy experts have doubts about Trump's newly proposed Venezuelan oil deal",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_100",
+      "headline": "How does your name taste? The strange science of synaesthesia",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_104",
+      "headline": "Why did Australia give visas to Israeli soldiers but not Bassem Youssef?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_108",
+      "headline": "These Tanks Can Hold 90 Million Barrels of Oil. They Have Just 22 Million.",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_110",
+      "headline": "Critics Blast Metropolitan Museum’s Plan to Honor John Galliano",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_112",
+      "headline": "Chelsea beat Brighton 4-3 to extend perfect start under Xabi Alonso",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_113",
+      "headline": "Nepal flood victims fear more bodies are buried under mud",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_117",
+      "headline": "Educated? Skilled? Ambitious? Traffickers are looking for you",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_118",
+      "headline": "What’s behind Netanyahu’s condemnation of this weekend’s settler pogroms?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_120",
+      "headline": "Israeli soldiers participate in Sydney Marathon despite protests",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_130",
+      "headline": "Dolly Parton’s Marriage to Carl Dean Was Fueled by Distance and Difference",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_131",
+      "headline": "Death toll nears 800 after Himalayan glacier collapse",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_135",
+      "headline": "Trump threatens to report journalist Kristen Welker to broadcast regulator",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_142",
+      "headline": "Nepal’s flood survivors search for missing loved ones",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_144",
+      "headline": "First images of Maduro in US custody released since his abduction",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_145",
+      "headline": "Fernandes hat-trick fires Man Utd in seven-goal thriller with Ipswich",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_146",
+      "headline": "Devastation from the Nepal-China Floods in 30 photos",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_147",
+      "headline": "‘Do you miss Mogadishu?’ Inside Sweden’s far-right campaign",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_149",
+      "headline": "Former Israeli soldiers pose as Pro-Palestinian supporters in the US",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_150",
+      "headline": "Israeli settler rabbi says Palestinians should leave the occupied West Bank",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_152",
+      "headline": "Real Madrid cruise past Malaga 4-0 to maintain Mourinho’s perfect start",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_077",
+      "headline": "Garden Laneway House / Williamson Williamson",
+      "selection_score": 3,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_001",
+      "headline": "Art nouveau-style racecourse cafe among projects from the Hong Kong Design Institute",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_005",
+      "headline": "Building Custom Batched Ensemble Weather Forecasting with NVIDIA Earth2Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_012",
+      "headline": "The Round Whitehorse Centre / Kerstin Thompson Architects + BKK Architects",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_020",
+      "headline": "Meet ‘Code-as-World’: An Agentic Loop That Rewrites Real Videos Into Executable MuJoCo Physics Programs",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_022",
+      "headline": "Ripples Becoming Everyday Ground / TJAD Original Design Studio",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_033",
+      "headline": "Foster + Partners designs retail podium to highlight \"precision and modernity\" of Norton Motorcycles",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_044",
+      "headline": "Public Library in Choszczówka / Ambient",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_045",
+      "headline": "Anthropic Opens a Research Preview of the Model Hardware Standard (MHS): A Shared Specification for  AI Agents to Safely Operate Physical Devices",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_048",
+      "headline": "Alcatraz on the Hill: The Rise and Afterlife of Trieste's Rozzol Melara",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_056",
+      "headline": "Dezeen's top five houses of August 2026",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_070",
+      "headline": "Sloping green roofs \"keep the family connected\" at Indonesian home",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_093",
+      "headline": "Scarlet House / Frederico Zanelato | Arquitetos",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_154",
+      "headline": "Google AI Introduces EnvHarness: A Programmable Layer That Turns Static Agent Environments Into Adaptive Training Worlds",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260831_evt_030",
+      "headline": "Trump hails 'historic' deal to control 65 billion barrels of Venezuelan oil",
+      "selection_score": 0,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

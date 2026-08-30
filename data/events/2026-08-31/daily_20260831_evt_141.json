@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260831_evt_141",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+  "context": "SpaceX Falcon Heavy propels telescope on cosmic quest to investigate dark energy and matter.",
+  "article_ids": [
+    "d3a07351cefdc4a268509b1740f608dda0b4b9fa52bc899d20c658a22c2151cc",
+    "0fc1e4c44757f30cb565e35232c1d31ef172aa73a2f5cc2d26e43c9cd8cfb2df"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "SpaceX Falcon Heavy propels telescope on cosmic quest to investigate dark energy and matter.",
+      "title": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+      "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
+      "published_at": "2026-08-31T01:44:57+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The US space agency's telescope is starting a multi-year mission to create a new map of the universe and learn more about dark energy and dark matter.",
+      "title": "'A giant leap forward': Nasa launches powerful new space telescope",
+      "url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-31T02:53:53+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+      "source_id": "aljazeera_all",
+      "source_title": "NASA launches $4.3bn Roman Telescope to uncover universe’s hidden secrets",
+      "source_url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "'A giant leap forward': Nasa launches powerful new space telescope",
+      "source_id": "bbc_world",
+      "source_title": "'A giant leap forward': Nasa launches powerful new space telescope",
+      "source_url": "https://www.bbc.co.uk/news/articles/ce87e55vgpjo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

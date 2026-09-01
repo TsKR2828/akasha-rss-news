@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260902_evt_318",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Israeli special forces capture Hamas official in raid on Gaza City - Reuters",
+  "context": "Israeli special forces capture Hamas official in raid on Gaza City Reuters",
+  "article_ids": [
+    "3dcd3e18805abeebcc3b651887bd7472dae107cefa46642d9d87b85bce54e50a",
+    "c01ca932143ca5b258f96ef1927bd186323ad372377fbd4dc2cfd0644b84596f"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Israeli special forces capture Hamas official in raid on Gaza City Reuters",
+      "title": "Israeli special forces capture Hamas official in raid on Gaza City - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPS1dvY08wWUVmMGNwR3hXbVR4anpDeXoxcndHakhnUzRqNk9Ub3ZqcEhsUUdHTTM3dGxuODQ4bXpNRGkxQjhyTmR5QkVFR2FKVTVaOEhwUi1PTTVSal9xZjd2ME4yUjhleFFSMUFHc1RmNVBUSjBtNUhpRndqb25sVi1HaDBmYmpyR0xFY1lKTVgyd2pSdlBJMEYtb1lMTTVkU2Vya1FjSjR3ZjZnQmlEbnlHeW1ZSmc5eURPTHFNSndsVEk?oc=5",
+      "published_at": "2026-09-02T03:31:58+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The Israeli military says it carried out strikes in Gaza City during a raid by special forces to capture the head of Hamas's internal security service.",
+      "title": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
+      "url": "https://www.bbc.co.uk/news/articles/c1wxex4vg35o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-02T04:24:28+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Israeli special forces capture Hamas official in raid on Gaza City - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Israeli special forces capture Hamas official in raid on Gaza City - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPS1dvY08wWUVmMGNwR3hXbVR4anpDeXoxcndHakhnUzRqNk9Ub3ZqcEhsUUdHTTM3dGxuODQ4bXpNRGkxQjhyTmR5QkVFR2FKVTVaOEhwUi1PTTVSal9xZjd2ME4yUjhleFFSMUFHc1RmNVBUSjBtNUhpRndqb25sVi1HaDBmYmpyR0xFY1lKTVgyd2pSdlBJMEYtb1lMTTVkU2Vya1FjSjR3ZjZnQmlEbnlHeW1ZSmc5eURPTHFNSndsVEk?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
+      "source_id": "bbc_world",
+      "source_title": "Israel says Hamas security chief captured as strikes kill four during Gaza raid",
+      "source_url": "https://www.bbc.co.uk/news/articles/c1wxex4vg35o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

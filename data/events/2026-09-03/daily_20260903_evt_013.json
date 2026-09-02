@@ -1,0 +1,99 @@
+{
+  "event_id": "daily_20260903_evt_013",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "德控俄無人機襲萊比錫機場",
+  "context": "德國政府認定，上個月萊比錫機場那起攜帶炸藥的無人機攻擊，幕後是俄羅斯，並宣布關閉一處俄國領事館作為回應。歐盟與北約隨後表態，要對俄羅斯加大施壓，歐盟外交事務首長卡拉斯更表示正推動追加制裁。",
+  "article_ids": [
+    "b8269c8439906cb66413335ffe56656e805af2f34c252e26e6470504c2cf5f3a",
+    "4c4174184d0d07a967393404fd0c849648ae994c69b4fa5cc8496c19c7df0826",
+    "708448ee1af96955653ba69339287502e5b08b87be022f4bf7c22d0c07393a52",
+    "902c7be4a4d3aee34b80c7737f9f6f2a2ee258d5135a82c5277d676c2b3a06c8",
+    "22650d063c12cff23e426d2f418da281a39fc145eb2460e3c665b1b3804dcc71"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Germany says Russia responsible for drone attack at Leipzig airport Reuters",
+      "title": "Germany says Russia responsible for drone attack at Leipzig airport - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeE1lRUstV1lRTDlmeGRheDFMS0JsTHhNcFUwc2FIYWp0dWxMcWdyN3ZnMEpYRmRidU5QUUZWeV9paTE4c09QYjZSRHd2Vnc0Vnc4dV9CUzJZc1VHMjVoajRFeWU4U1FZekxab0d1MXd6UTFlLVZvWEVQTmw2S1M3ZEVQaUYya0dVTEhIaEtXQzQwN3NkbXR4UXZEY0hXY3lqNEhPYm8xOVphY21rWFE?oc=5",
+      "published_at": "2026-09-02T04:35:42+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The German government blamed Russia for an attempted attack at Leipzig airport last month using a drone laden with explosives. It announced that it would shut down a Russian consulate among measures.",
+      "title": "Germany blames Russia for last month's attempted drone attack at Leipzig airport",
+      "url": "https://www.npr.org/2026/09/02/g-s1-141502/germany-russia-attempted-drone-attack",
+      "published_at": "2026-09-02T16:43:05+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Russia is accused of growing increasingly reckless after Berlin blamed Russia for a failed drone attack on Leipzig airport.",
+      "title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
+      "url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-03T00:49:00+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "EU foreign affairs chief Kaja Kallas warns of more pressure after Germany blames Russia for attempted attack.",
+      "title": "EU pursuing more Russia sanctions after failed airport attack: Kallas",
+      "url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
+      "published_at": "2026-09-03T03:06:19+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "德國政府指控俄羅斯是上個月萊比錫機場攜帶炸藥無人機攻擊的幕後主謀，並宣布關閉一處俄國領事館作為回應。",
+      "source_id": "npr_world",
+      "source_title": "Germany blames Russia for last month's attempted drone attack at Leipzig airport",
+      "source_url": "https://www.npr.org/2026/09/02/g-s1-141502/germany-russia-attempted-drone-attack",
+      "support_type": "direct"
+    },
+    {
+      "claim": "歐盟與北約在德國發生「新一波升級」事件後，表態將加大對俄羅斯施壓。",
+      "source_id": "bbc_world",
+      "source_title": "EU and Nato vow to step up pressure on Russia after 'new escalation' in Germany",
+      "source_url": "https://www.bbc.co.uk/news/articles/ce9e810pg7ko?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "歐盟外交事務首長卡拉斯表示，歐盟正推動對俄羅斯追加制裁。",
+      "source_id": "aljazeera_all",
+      "source_title": "EU pursuing more Russia sanctions after failed airport attack: Kallas",
+      "source_url": "https://www.aljazeera.com/news/2026/9/2/eu-pursuing-more-russia-sanctions-after-failed-airport-attack-kallas?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "路透社報導證實德國將此次無人機攻擊事件歸咎於俄羅斯。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Germany says Russia responsible for drone attack at Leipzig airport - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPeE1lRUstV1lRTDlmeGRheDFMS0JsTHhNcFUwc2FIYWp0dWxMcWdyN3ZnMEpYRmRidU5QUUZWeV9paTE4c09QYjZSRHd2Vnc0Vnc4dV9CUzJZc1VHMjVoajRFeWU4U1FZekxab0d1MXd6UTFlLVZvWEVQTmw2S1M3ZEVQaUYya0dVTEhIaEtXQzQwN3NkbXR4UXZEY0hXY3lqNEhPYm8xOVphY21rWFE?oc=5",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "德國控俄羅斯策劃無人機攻擊萊比錫機場。德國政府認定，上個月機場那起攜帶炸藥的無人機攻擊幕後是俄羅斯，並宣布關閉一處俄國領事館作為回應。歐盟與北約隨後表態，要對俄羅斯加大施壓，歐盟外交事務首長卡拉斯更表示正推動追加制裁。\n\n—— 本則整理自 Reuters、NPR、BBC 與 Al Jazeera 於 2026 年 9 月 2、3 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "德國政府認定，上個月萊比錫機場那起攜帶炸藥的無人機攻擊，幕後主謀是俄羅斯。作為回應，德國宣布關閉一處俄羅斯領事館。歐盟與北約隨後表態，要在這波「新一波升級」後對俄羅斯加大施壓；歐盟外交事務首長卡拉斯（Kaja Kallas）更表示，歐盟正在推動對俄羅斯追加制裁。\n\n本則整理自 Reuters、NPR、BBC 與 Al Jazeera 於 2026 年 9 月 2、3 日發佈的報導。",
+  "voice_text": "萊比錫機場的無人機攻擊，德國說幕後是俄羅斯。這起攻擊發生在上個月，無人機當時載有炸藥。德國已經回應了——宣布關閉一處俄羅斯領事館。歐盟和北約也表態，要在這波升級後對俄羅斯加大施壓，歐盟外交事務首長卡拉斯說，歐盟正在推動追加制裁。"
+}

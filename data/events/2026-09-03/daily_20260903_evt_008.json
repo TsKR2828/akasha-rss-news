@@ -1,0 +1,64 @@
+{
+  "event_id": "daily_20260903_evt_008",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Anthropic新模型更便宜",
+  "context": "Anthropic發布新模型Claude Fable 5.1與Claude Mythos 5.1，同一套模型搭配兩層不同的安全防護規則。Fable 5.1已開放給Claude API、AWS、Google Cloud與Microsoft Foundry使用；Mythos 5.1則僅限「Project Glasswing」計畫下經審核的組織使用。新版把快取讀取的價格砍了75%，安全防護誤擋的情況也減少了。",
+  "article_ids": [
+    "e55ec8ef6856684dfd3c030dc1f5dc6fa8cb8cb736b93402fffc9223ab7d922e",
+    "76927d72b5886f41f506a475a8ae1368a459cf7aa17d98744d60e59019828cd9"
+  ],
+  "sources": [
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Fable 5.1 includes changes meant to reduce token cost and false-positive restrictions from the model's safeguards.",
+      "title": "Anthropic’s new Fable release is cheaper, less restrictive",
+      "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+      "published_at": "2026-09-02T03:39:22+08:00"
+    },
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Anthropic has released Claude Fable 5.1 and Claude Mythos 5.1, the same model behind two different safeguard layers. Fable 5.1 is generally available on the Claude API, AWS, Google Cloud, and Microsoft Foundry; Mythos 5.1 remains restricted to vetted organizations under Project Glasswing. Fable 5.1 scores 52.6% on Terminal-Bench-Science 0.1 against 24.7% for Fable 5, ships a 1M token context window, and drops cache reads 75% to $0.25 per million tokens while base pricing holds at $10 and $50. Three API changes are breaking, including the removal of forced tool use. The post Anthropic Releases Claude Fable 5.1 and Claude Mythos 5.1: 52.6% on Terminal-Bench-Science and 75% Cheaper Cache Reads appeared first on MarkTechPost .",
+      "title": "Anthropic Releases Claude Fable 5.1 and Claude Mythos 5.1: 52.6% on Terminal-Bench-Science and 75% Cheaper Cache Reads",
+      "url": "https://www.marktechpost.com/2026/09/01/anthropic-releases-claude-fable-5-1-and-claude-mythos-5-1-52-6-on-terminal-bench-science-and-75-cheaper-cache-reads/",
+      "published_at": "2026-09-02T04:30:21+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2,
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 41,
+  "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Anthropic的新版Fable 5.1模型調降了token使用成本，也減少了安全防護誤判擋下正常請求的情況。",
+      "source_id": "techcrunch_ai",
+      "source_title": "Anthropic’s new Fable release is cheaper, less restrictive",
+      "source_url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Anthropic發布Claude Fable 5.1與Claude Mythos 5.1，Fable 5.1開放於Claude API、AWS、Google Cloud與Microsoft Foundry，Mythos 5.1僅限Project Glasswing計畫下經審核組織使用；快取讀取價格調降75%，context window達100萬token。",
+      "source_id": "marktechpost",
+      "source_title": "Anthropic Releases Claude Fable 5.1 and Claude Mythos 5.1: 52.6% on Terminal-Bench-Science and 75% Cheaper Cache Reads",
+      "source_url": "https://www.marktechpost.com/2026/09/01/anthropic-releases-claude-fable-5-1-and-claude-mythos-5-1-52-6-on-terminal-bench-science-and-75-cheaper-cache-reads/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "Anthropic推出Fable 5.1，更便宜也更少誤擋。Anthropic發布新模型Claude Fable 5.1與Claude Mythos 5.1，同一套模型搭配兩層不同的安全防護規則。Fable 5.1已開放給Claude API、AWS、Google Cloud與Microsoft Foundry使用；Mythos 5.1僅限「Project Glasswing」計畫下經審核的組織使用。新版把快取讀取的價格砍了75%，安全防護誤擋的情況也減少了。\n\n—— 本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 9 月 2 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "Anthropic發布兩個新模型：Claude Fable 5.1與Claude Mythos 5.1，兩者其實是同一套模型，只是搭配不同層級的安全防護規則。Fable 5.1已經開放在Claude API、AWS、Google Cloud與Microsoft Foundry上使用；Mythos 5.1則只開放給「Project Glasswing」計畫下經過審核的組織。這次更新把快取讀取的價格砍了75%，降到每百萬token 0.25美元，基本定價維持每百萬token 10美元與50美元不變；context window則擴大到100 萬 token。安全防護方面，誤判擋下正常請求的情況也減少了，不過有三項API變動屬於不相容更新，包括移除強制工具呼叫功能。\n\n本則整理自 TechCrunch 與 MarkTechPost 於 2026 年 9 月 2 日發佈的報導。",
+  "voice_text": "Anthropic推出新模型，用起來更便宜也更少見誤擋。新模型叫Claude Fable 5.1和Claude Mythos 5.1，其實是同一套模型，只是搭配不同層級的安全規則。Fable 5.1現在已經可以透過幾個主要雲端平台使用；Mythos 5.1則只開放給特定審核過的組織。這次更新把快取讀取的價格砍了75%，能處理的內容長度也拉長到100 萬 token。安全防護方面，誤判擋下正常請求的情況也減少了。"
+}

@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260904_evt_012",
+  "beat": "ARTS",
+  "sub_beat": null,
+  "headline": "King Charles III Views Bayeux Tapestry at the British Museum",
+  "context": "The monarch was invited to see the historic embroidery days before a major British Museum exhibition, almost 40 years after seeing it in France with Diana.",
+  "article_ids": [
+    "52cd35ec25cfbce2eea7fd77743b2da96880bdb69f1f0380ab9c3957fba623af",
+    "447accd5163065bc2b2830206e90f272a7da1cd2b419e53cb9ef696e5f428874"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_arts",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The monarch was invited to see the historic embroidery days before a major British Museum exhibition, almost 40 years after seeing it in France with Diana.",
+      "title": "King Charles III Views Bayeux Tapestry at the British Museum",
+      "url": "https://www.nytimes.com/2026/09/02/arts/design/bayeux-tapestry-king-charles.html",
+      "published_at": "2026-09-03T04:18:55+08:00"
+    },
+    {
+      "source_id": "guardian_culture",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "British Museum, London The greatest battle ever depicted in art is here at last – and it hurtles along, making your heart pound with its sense of doom and destiny, culminating in fires and corpses on a battlefield full of pathos It should not work. It should not even exist. Nothing about the Bayeux tapestry makes sense according to any norms of art: its creators couldn’t do proper portraits or pictorial depth or landscapes or any of the sophisticated things we associate with timeless masterpieces. When they depict a church, they have to write what it is: Ecclesia. But these artists – or who knows, perhaps she was a single artist – created something so stupefying and delightful, so abundant in visual thrills, horrors and humour, it beats almost everything else ever painted or carved – let alone embroidered on a strip of linen. And now here it is, in front of my eyes, close enough to touch if it wasn’t behind a glass screen of such high quality you never catch a reflection. The British Museum’s display of this wonder is perfect. It’s laid out in its case, the length of a gallery, which you reach after some archaeological foreplay involving armour, quotes from chronicles and info screens. Then you see the colours of the tapestry below you from a parapet – russets, greens, yellows – after which you simply start at the beginning and follow the story rightwards. Surrounded by darkness and picked out by finely adjusted lighting, the Bayeux tapestry shines. My only quibble is the ethereal soundtrack – shouldn’t there be drums, oliphants, troubadours? Continue reading...",
+      "title": "The Bayeux tapestry: a stupefying, thrilling, horrifying masterpiece that shakes the earth",
+      "url": "https://www.theguardian.com/artanddesign/2026/sep/03/the-bayeux-tapestry-british-museum-london",
+      "published_at": "2026-09-03T22:51:33+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "King Charles III Views Bayeux Tapestry at the British Museum",
+      "source_id": "nyt_arts",
+      "source_title": "King Charles III Views Bayeux Tapestry at the British Museum",
+      "source_url": "https://www.nytimes.com/2026/09/02/arts/design/bayeux-tapestry-king-charles.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "The Bayeux tapestry: a stupefying, thrilling, horrifying masterpiece that shakes the earth",
+      "source_id": "guardian_culture",
+      "source_title": "The Bayeux tapestry: a stupefying, thrilling, horrifying masterpiece that shakes the earth",
+      "source_url": "https://www.theguardian.com/artanddesign/2026/sep/03/the-bayeux-tapestry-british-museum-london",
+      "support_type": "direct"
+    }
+  ]
+}

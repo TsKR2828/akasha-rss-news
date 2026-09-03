@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260904_evt_263",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Syria begins destroying Assad-era chemical weapons - Reuters",
+  "context": "Syria begins destroying Assad-era chemical weapons Reuters",
+  "article_ids": [
+    "93300c5da531933ec370461a9b68c6b10163bfc2c42a08768bfd7caed556c0fc",
+    "5d57f722bb0c983be26ffb13aa09b7ff894045a002a7ec34bd8d0d4ecea344ab"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Syria begins destroying Assad-era chemical weapons Reuters",
+      "title": "Syria begins destroying Assad-era chemical weapons - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSmlTQTNEcDFwYzJDNWx1c0psR2FxRk1YckNXNlRBWDB0R1lqR1NTaThJdDgzQnR5N0JwOFJPUXRWZVhSSEtXcG9BOVl1dEZfTjNJbTk2M044eV9YcTlpMGJUN3VVWDJwdFhzdlRpU2hwTGpIRUhPVzBtYnNqcHJXTk1VNlR4eWR5ZUxTZElPcktLMHpXTTdv?oc=5",
+      "published_at": "2026-09-03T23:57:43+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Syrian authorities undertake ⁠first such destruction in over a decade as former government officials face trial.",
+      "title": "Syria begins destroying al-Assad-era chemical weapons materials",
+      "url": "https://www.aljazeera.com/news/2026/9/3/syria-begins-destroying-al-assad-era-chemical-weapons-materials?traffic_source=rss",
+      "published_at": "2026-09-04T01:40:51+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Syria begins destroying Assad-era chemical weapons - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Syria begins destroying Assad-era chemical weapons - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSmlTQTNEcDFwYzJDNWx1c0psR2FxRk1YckNXNlRBWDB0R1lqR1NTaThJdDgzQnR5N0JwOFJPUXRWZVhSSEtXcG9BOVl1dEZfTjNJbTk2M044eV9YcTlpMGJUN3VVWDJwdFhzdlRpU2hwTGpIRUhPVzBtYnNqcHJXTk1VNlR4eWR5ZUxTZElPcktLMHpXTTdv?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Syria begins destroying al-Assad-era chemical weapons materials",
+      "source_id": "aljazeera_all",
+      "source_title": "Syria begins destroying al-Assad-era chemical weapons materials",
+      "source_url": "https://www.aljazeera.com/news/2026/9/3/syria-begins-destroying-al-assad-era-chemical-weapons-materials?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

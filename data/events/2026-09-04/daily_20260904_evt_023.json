@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260904_evt_023",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army - Reuters",
+  "context": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army Reuters",
+  "article_ids": [
+    "a16cf460d8615e10610c6e035bffe68b956787b4e1c52f1d7a744c337689b9db",
+    "6582bbb90f4b45cbbd583e1bdeb7f30944afda139f88e5a090174ee31e318015"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army Reuters",
+      "title": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaE1UMTF0TzBvMXRDNldTN0dPczFXRFVQZEVGNjY4cmFxT2VOQ0V4R1p1LU5aY3R4YnFLSHVvS29aNmRiQWpGS1pjU09WdHFyUHZZYVU5eG4wYzZFdzVZNTdYeXdfTHlrWjZkOW5LVnQzOGx1NVJ4cGFLNlNaS2Y4S2hIeURRdVdXLUNkN3JxNUFZWkM1UExRZy01VDJkZ2NmdkhQTDcyVmJHcng1S2dQTm1wWklPbURwTHgzS0w4Zw?oc=5",
+      "published_at": "2026-09-03T06:12:36+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Al-Mughayyir's council says they were trying to stop settlers stealing sheep, but the Israeli military says they threw stones at its troops.",
+      "title": "Palestinian teens killed during settler attack on West Bank village, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-03T23:05:57+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Two Palestinian teens killed in West Bank raid by Israeli settlers and army - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOaE1UMTF0TzBvMXRDNldTN0dPczFXRFVQZEVGNjY4cmFxT2VOQ0V4R1p1LU5aY3R4YnFLSHVvS29aNmRiQWpGS1pjU09WdHFyUHZZYVU5eG4wYzZFdzVZNTdYeXdfTHlrWjZkOW5LVnQzOGx1NVJ4cGFLNlNaS2Y4S2hIeURRdVdXLUNkN3JxNUFZWkM1UExRZy01VDJkZ2NmdkhQTDcyVmJHcng1S2dQTm1wWklPbURwTHgzS0w4Zw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Palestinian teens killed during settler attack on West Bank village, officials say",
+      "source_id": "bbc_world",
+      "source_title": "Palestinian teens killed during settler attack on West Bank village, officials say",
+      "source_url": "https://www.bbc.co.uk/news/articles/cj6482r6yl4o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

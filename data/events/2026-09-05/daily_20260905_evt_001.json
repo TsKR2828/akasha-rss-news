@@ -1,0 +1,81 @@
+{
+ "event_id": "daily_20260905_evt_001",
+ "beat": "AI",
+ "sub_beat": null,
+ "headline": "OpenAI推新模型Astra",
+ "context": "OpenAI發布新一代模型「GPT-6 Astra」，主打電腦與瀏覽器操作能力，並非單純聊天機器人。這款模型在OSWorld V2-Offline基準測試中拿下72.6%的成績，也是OpenAI首款觸及「重大」（Critical）網路安全門檻的模型，使用資格因此受到限制。",
+ "article_ids": [
+  "3132a49d590030acd551eac62be8f97ad165b098b2ee411e257a86b9cff0bc6f",
+  "87135d12970ece78d16428822f3143420e446b17b9dbdeaa4e506b84206f550e",
+  "5f29c2acbcb6698f2722ef3a6bacacc8abcf5592fa554a43c167c750a092c7f7"
+ ],
+ "sources": [
+  {
+   "source_id": "techcrunch_ai",
+   "name": "TechCrunch",
+   "publisher": "TechCrunch",
+   "summary": "OpenAI claims that Astra represents \"a new frontier on computer and browser use,\" and that it handles tasks with unmatched \"speed, accuracy, and safety.\"",
+   "title": "OpenAI launches Astra, its powerful (and controversial) new model",
+   "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+   "published_at": "2026-09-04T02:01:45+08:00"
+  },
+  {
+   "source_id": "wired_ai",
+   "name": "Wired",
+   "publisher": "Wired",
+   "summary": "OpenAI leaders think the company’s next generation model, which excels at computer use and coding, may mark a major milestone in AI development.",
+   "title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
+   "url": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
+   "published_at": "2026-09-04T02:06:24+08:00"
+  },
+  {
+   "source_id": "marktechpost",
+   "name": "MarkTechPost",
+   "publisher": "MarkTechPost",
+   "summary": "OpenAI released GPT-6 Astra on September 3, 2026, positioning it as a computer-use flagship rather than a chat model. It reports 72.6% on OSWorld V2-Offline, replaces Codex compaction with searchable notes, and ships a 1.05M-token context at $10/$50 per million tokens. It is also the first OpenAI model to cross the Critical cybersecurity threshold, which shapes who can use it and for what. The post OpenAI Releases GPT-6 Astra: A 1.05M-Context Computer-Use Model Gated Behind a ‘Critical’ Cyber Threshold appeared first on MarkTechPost .",
+   "title": "OpenAI Releases GPT-6 Astra: A 1.05M-Context Computer-Use Model Gated Behind a ‘Critical’ Cyber Threshold",
+   "url": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold/",
+   "published_at": "2026-09-04T05:16:11+08:00"
+  }
+ ],
+ "source_count": 3,
+ "source_tiers": [
+  2,
+  3
+ ],
+ "tw_highlight": false,
+ "tw_highlight_reason": null,
+ "tw_highlight_keywords": null,
+ "selection_score": 41,
+ "selection_reason": "multi_source_confirmed; source_tier_2; source_tier_3",
+ "drop_reason": null,
+ "confidence": "high",
+ "single_source_warning": false,
+ "opinion_level": "light_context",
+ "claim_trace": [
+  {
+   "claim": "OpenAI發布新模型GPT-6 Astra，主打電腦與瀏覽器操作能力，是首款觸及「重大」網路安全門檻的模型。",
+   "source_id": "techcrunch_ai",
+   "source_title": "OpenAI launches Astra, its powerful (and controversial) new model",
+   "source_url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/",
+   "support_type": "direct"
+  },
+  {
+   "claim": "OpenAI內部認為，GPT-6 Astra在電腦操作與程式撰寫的能力，可能標誌AI發展的重要里程碑。",
+   "source_id": "wired_ai",
+   "source_title": "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era",
+   "source_url": "https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/",
+   "support_type": "direct"
+  },
+  {
+   "claim": "GPT-6 Astra在OSWorld V2-Offline基準測試拿下72.6%的成績，支援105萬token的內容窗口，每百萬token收費10至50美元。",
+   "source_id": "marktechpost",
+   "source_title": "OpenAI Releases GPT-6 Astra: A 1.05M-Context Computer-Use Model Gated Behind a 'Critical' Cyber Threshold",
+   "source_url": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold/",
+   "support_type": "direct"
+  }
+ ],
+ "thread_text": "OpenAI發布新一代模型「GPT-6 Astra」，主打電腦與瀏覽器操作能力，公司形容它代表「電腦與瀏覽器操作的新前沿」，並非單純的聊天機器人。這款模型在OSWorld V2-Offline基準測試拿下72.6%的成績，支援達105萬token的超長內容窗口，收費為每百萬token 10到50美元。它也是OpenAI首款觸及「重大」（Critical）網路安全門檻的模型，使用資格因此受到限制。OpenAI內部甚至認為，這可能是AGI時代的起點。\n\n—— 本則整理自 TechCrunch、Wired 與 MarkTechPost 於 2026 年 9 月 4 日發佈的報導，讓圖書館員翻譯給你聽。",
+ "threads_text": "OpenAI發布新一代模型「GPT-6 Astra」，主打電腦與瀏覽器操作能力，公司形容它代表「電腦與瀏覽器操作的新前沿」，並非單純的聊天機器人。這款模型在OSWorld V2-Offline基準測試拿下72.6%的成績，支援達105萬token的超長內容窗口，收費為每百萬token 10到50美元。它也是OpenAI首款觸及「重大」（Critical）網路安全門檻的模型，使用資格因此受到限制。OpenAI內部甚至認為，這可能是AGI時代的起點。\n\n本則整理自 TechCrunch、Wired 與 MarkTechPost 於 2026 年 9 月 4 日發佈的報導。",
+ "voice_text": "OpenAI推出了新模型，這次主打的不是聊天，是電腦操作能力。這款新模型叫Astra，官方說它代表電腦與瀏覽器操作的新前沿。在一項基準測試裡，它拿下72.6%的成績，內容窗口長達105萬token。這也是OpenAI第一款觸及「重大」網路安全門檻的模型，使用資格因此受到限制。公司內部甚至認為，這可能是AGI時代的起點。"
+}

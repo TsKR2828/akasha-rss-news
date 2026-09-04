@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260905_evt_276",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Russia’s jet-powered drones overwhelm Ukraine, killing dozens",
+  "context": "As Ukrainian civilians suffer from air attacks, Russian ground forces struggle to advance.",
+  "article_ids": [
+    "38ee654b4d8f14faa706329383a496198429eea6d94d2cb235ab94a95c09d218",
+    "dc96543e9374dfa625ff284cb346aba71751e17f65dc035a5b00d0c3e25b572c"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "As Ukrainian civilians suffer from air attacks, Russian ground forces struggle to advance.",
+      "title": "Russia’s jet-powered drones overwhelm Ukraine, killing dozens",
+      "url": "https://www.aljazeera.com/news/2026/9/4/russias-jet-powered-drones-overwhelm-ukraine-killing-dozens?traffic_source=rss",
+      "published_at": "2026-09-04T23:44:14+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "More than a week of strikes by jet-powered Russian drones has disrupted schools, work and transport … and left Ukraine, which lacks air defense supplies, feeling vulnerable.",
+      "title": "Kyiv's new reality: Russian drones by night — and now by day",
+      "url": "https://www.npr.org/2026/09/04/nx-s1-5957488/kyivs-new-reality-russian-drones-by-night-and-now-by-day",
+      "published_at": "2026-09-05T04:25:27+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Russia’s jet-powered drones overwhelm Ukraine, killing dozens",
+      "source_id": "aljazeera_all",
+      "source_title": "Russia’s jet-powered drones overwhelm Ukraine, killing dozens",
+      "source_url": "https://www.aljazeera.com/news/2026/9/4/russias-jet-powered-drones-overwhelm-ukraine-killing-dozens?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Kyiv's new reality: Russian drones by night — and now by day",
+      "source_id": "npr_world",
+      "source_title": "Kyiv's new reality: Russian drones by night — and now by day",
+      "source_url": "https://www.npr.org/2026/09/04/nx-s1-5957488/kyivs-new-reality-russian-drones-by-night-and-now-by-day",
+      "support_type": "direct"
+    }
+  ]
+}

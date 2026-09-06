@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-07",
+  "lint_warnings": [
+    {
+      "type": "rewrite_skipped",
+      "event_id": "daily_20260907_evt_033",
+      "message": "evt_033 為 Reuters Google News 主題頁標題（\"U.S. Election Security News | Today's Latest Stories\"），非單一新聞事件，sources 中無可改寫的具體事實，依規則跳過改寫並自 selected_event_ids 移除。"
+    },
+    {
+      "type": "cross_day_duplicate",
+      "event_id": "daily_20260907_evt_005",
+      "message": "與昨日館報 daily_20260906_evt_176 網址完全相同（theguardian.com Max Dupain 攝影展），Guardian RSS 疑似重複收錄舊條目，已照常改寫並發佈，建議日後評估跨日網址去重。"
+    },
+    {
+      "type": "cross_day_duplicate",
+      "event_id": "daily_20260907_evt_018",
+      "message": "與昨日館報 daily_20260906_evt_015 網址完全相同（nytimes.com Slava Veder 訃聞），NYT RSS 疑似重複收錄舊條目，已照常改寫並發佈，建議日後評估跨日網址去重。"
+    },
+    {
+      "type": "cross_day_duplicate",
+      "event_id": "daily_20260907_evt_004",
+      "message": "與昨日館報 daily_20260906_evt_170 網址完全相同（techcrunch.com Gemini 登山客獲救），TechCrunch RSS 疑似重複收錄舊條目，已照常改寫並發佈，建議日後評估跨日網址去重。"
+    }
+  ]
+}

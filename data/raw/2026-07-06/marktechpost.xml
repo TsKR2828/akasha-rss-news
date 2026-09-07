@@ -12,7 +12,7 @@
 	<atom:link href="https://www.marktechpost.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.marktechpost.com/</link>
 	<description>An Artificial Intelligence News Platform</description>
-	<lastBuildDate>Sun, 05 Jul 2026 07:50:20 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 05 Jul 2026 21:25:13 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,571 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">127842392</site>	<item>
+		<title>Meituan Releases LongCat-2.0: A 1.6T-Parameter Open MoE Model with Native 1M Context and LongCat Sparse Attention</title>
+		<link>https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/</link>
+		
+		<dc:creator><![CDATA[Asif Razzaq]]></dc:creator>
+		<pubDate>Sun, 05 Jul 2026 21:25:10 +0000</pubDate>
+				<category><![CDATA[Agentic AI]]></category>
+		<category><![CDATA[AI Infrastructure]]></category>
+		<category><![CDATA[AI Shorts]]></category>
+		<category><![CDATA[Applications]]></category>
+		<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[Editors Pick]]></category>
+		<category><![CDATA[New Releases]]></category>
+		<category><![CDATA[Software Engineering]]></category>
+		<category><![CDATA[Staff]]></category>
+		<category><![CDATA[Tech News]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://www.marktechpost.com/?p=80858</guid>
+
+					<description><![CDATA[<p>Meituan has released LongCat-2.0, a 1.6 trillion-parameter Mixture-of-Experts model that activates about 48 billion parameters per token. It pairs a native 1-million-token context, built on LongCat Sparse Attention, with training and serving run end-to-end on domestic AI ASIC superpods. Here is the architecture, the vendor-reported benchmarks, the API access path, and what remains unverified.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/">Meituan Releases LongCat-2.0: A 1.6T-Parameter Open MoE Model with Native 1M Context and LongCat Sparse Attention</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">Meituan has released <strong><a href="https://longcat.ai/blog/longcat-2.0/" target="_blank" rel="noreferrer noopener">LongCat-2.0</a></strong>, a large-scale Mixture-of-Experts (MoE) language model. It carries <strong>1.6 trillion total parameters</strong> and activates about <strong>48 billion per token</strong>. The model targets agentic coding: code understanding, generation, and execution inside agent workflows. </p>
+
+
+
+<p class="wp-block-paragraph">Two facts stand out. First, LongCat-2.0 supports a native <strong>1-million-token context window</strong>. Second, both training and serving ran entirely on <strong>domestic AI ASIC superpods</strong>.</p>
+
+
+
+<h2 id="h-what-is-longcat-2-0" class="wp-block-heading"><strong>What is LongCat-2.0?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">LongCat-2.0 is Meituan&#8217;s next-generation trillion-parameter open model. It follows LongCat-Flash, a 560B model released in 2025. The architecture was designed around one goal: reliable, efficient agentic coding.</p>
+
+
+
+<p class="wp-block-paragraph">Pretraining spanned more than <strong>35 trillion tokens</strong> over millions of accelerator-hours. Meituan reports no rollbacks or irrecoverable loss spikes during the run. That stability claim matters on non-Nvidia hardware, where tooling is less mature.</p>
+
+
+
+<h2 id="h-architecture-how-a-1-6t-model-stays-cheap-to-run" class="wp-block-heading"><strong>Architecture: How a 1.6T Model Stays Cheap to Run</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The design combines four ideas that reduce the cost of scale. Each one is worth understanding on its own.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Zero-computation experts</strong>: Not every token needs heavy compute. Simple tokens like punctuation route to a zero-computation expert and return unchanged. Complex tokens engage more expert capacity. A PID controller adjusts expert bias to hold the average in range. This produces the 33B–56B dynamic activation window instead of a fixed cost. The MoE backbone uses a shortcut-connected design (ScMoE) for higher throughput.</li>
+
+
+
+<li><strong>LongCat Sparse Attention (LSA)</strong>: Standard attention scales quadratically with context length. LSA selects only the most relevant tokens, dropping the scaling closer to linear. Meituan describes it as an evolution of DeepSeek Sparse Attention (DSA). It layers three orthogonal indexing methods. Streaming-aware Indexing turns fragmented memory reads into contiguous blocks. Cross-Layer Indexing reuses attention saliency across adjacent layers. Hierarchical Indexing applies coarse-to-fine two-stage filtering. Together they sustain the 1M-token window without a memory wall.</li>
+
+
+
+<li><strong>N-gram Embedding</strong>: The design adds a 135-billion-parameter N-gram embedding module. It sits orthogonal to the MoE experts in sparse dimensions. Meituan says it captures dense local token relationships. It also reduces memory I/O during large-batch decoding.</li>
+
+
+
+<li><strong>Post-training (MOPD)</strong>: A dedicated pipeline (MOPD) fuses three teacher expert groups. These cover Agent, Reasoning, and Interaction capabilities into one unified model.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">For serving, Meituan uses a 6D parallelism scheme and a prefill-decode disaggregated architecture. It also employs &#8216;super kernels&#8217; and L2-cache weight prefetching to hide I/O latency.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img fetchpriority="high" decoding="async" width="1024" height="585" data-attachment-id="80860" data-permalink="https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/screenshot-2026-07-05-at-2-23-44-pm-2/" data-orig-file="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1.png" data-orig-size="1740,994" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Screenshot 2026-07-05 at 2.23.44 PM" data-image-description="" data-image-caption="" data-large-file="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-1024x585.png" src="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-1024x585.png" alt="" class="wp-image-80860" style="aspect-ratio:1.7505058007017185;width:804px;height:auto" srcset="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-1024x585.png 1024w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-300x171.png 300w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-768x439.png 768w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-1536x877.png 1536w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-735x420.png 735w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-150x86.png 150w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-696x398.png 696w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-1068x610.png 1068w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1.png 1740w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">https://longcat.ai/blog/longcat-2.0/</figcaption></figure>
+</div>
+
+
+<h2 id="h-benchmarks" class="wp-block-heading"><strong>Benchmarks </strong></h2>
+
+
+
+<p class="wp-block-paragraph">Meituan positions LongCat-2.0 as an agentic coding model. Every figure below comes from Meituan&#8217;s own testing.</p>
+
+
+
+<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>Benchmark</th><th>LongCat-2.0</th><th>What it measures</th></tr></thead><tbody><tr><td>SWE-bench Pro</td><td>59.5</td><td>Real-world software engineering tasks</td></tr><tr><td>Terminal-Bench 2.1</td><td>70.8</td><td>Execution and error recovery in shells</td></tr><tr><td>SWE-bench Multilingual</td><td>77.3</td><td>Cross-language repository tasks</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph">On SWE-bench Pro, Meituan reports LongCat-2.0 edging GPT-5.5 (58.6). Meituan also claims overall performance comparable to Google&#8217;s Gemini 3.1 Pro. The reported edge is concentrated in software engineering. On broader general-agent benchmarks such as FORTE and BrowseComp, coverage indicates it trails leading frontier systems. Independent leaderboard confirmation is not yet available. </p>
+
+
+
+<h2 id="h-longcat-2-0-vs-longcat-flash" class="wp-block-heading"><strong>LongCat-2.0 vs LongCat-Flash</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The jump from the previous generation is large on paper. This table uses each model&#8217;s published specifications.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Attribute</th><th>LongCat-2.0</th><th>LongCat-Flash</th></tr></thead><tbody><tr><td>Total parameters</td><td>1.6T</td><td>560B</td></tr><tr><td>Active per token</td><td>~48B (33B–56B)</td><td>~27B (18.6B–31.3B)</td></tr><tr><td>Context window</td><td>1M tokens (native)</td><td>128K tokens</td></tr><tr><td>Long-context attention</td><td>LongCat Sparse Attention</td><td>Multi-head Latent Attention</td></tr><tr><td>Reported hardware</td><td>Domestic AI ASIC superpods (training + serving)</td><td>H800 GPUs (inference reported)</td></tr><tr><td>Max output</td><td>128K tokens</td><td>Not specified</td></tr><tr><td>License</td><td>MIT</td><td>MIT</td></tr><tr><td>Released</td><td>June 30, 2026</td><td>September 2025</td></tr><tr><td>Weights</td><td>Coming soon</td><td>Open</td></tr></tbody></table></figure>
+
+
+
+<h2 id="h-use-cases-with-examples" class="wp-block-heading"><strong>Use Cases With Examples</strong></h2>
+
+
+
+<p class="wp-block-paragraph">LongCat-2.0 is tuned for agent-style software work, not casual chat. A few concrete patterns fit its strengths.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Whole-repository reasoning</strong>: Feed an entire mid-sized codebase into the 1M-token window. Ask the model to trace a bug across many files at once. This avoids the summarization hacks that shorter windows force.</li>
+
+
+
+<li><strong>Multi-step terminal tasks</strong>: Run the model inside an agent loop with shell access. It can execute commands, read errors, and retry until a task passes. The Terminal-Bench 2.1 focus targets exactly this workflow.</li>
+
+
+
+<li><strong>Repository-level edits</strong>: Ask for a refactor that spans several modules and tests. The model reasons over the full context before proposing coordinated changes.</li>
+
+
+
+<li><strong>Cross-language migration</strong>: Use the SWE-bench Multilingual strength for polyglot repositories. The model can port logic between languages while preserving behavior.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">These patterns run inside standard agent harnesses. Dev teams can therefore adopt the model without building new tooling.</p>
+
+
+
+<h2 id="h-how-to-access-it" class="wp-block-heading"><strong>How to Access It</strong></h2>
+
+
+
+<p class="wp-block-paragraph">LongCat-2.0 is reachable through the LongCat API Platform. It exposes both OpenAI-compatible and Anthropic-compatible endpoints. The model is also on OpenRouter and in harnesses like Claude Code, OpenClaw, OpenCode, and Codex. Local self-hosting is not yet possible, since weights remain pending.</p>
+
+
+
+<p class="wp-block-paragraph">The OpenAI-compatible endpoint uses the model ID <code>LongCat-2.0</code>. Maximum output length is 131072 tokens (128K). The snippet below calls the documented chat-completions endpoint.</p>
+
+
+
+<div class="dm-code-snippet dark dm-normal-version default no-background-mobile" snippet-height="" style="background-color:#abb8c3"><div class="control-language"><div class="dm-buttons"><div class="dm-buttons-left"><div class="dm-button-snippet red-button"></div><div class="dm-button-snippet orange-button"></div><div class="dm-button-snippet green-button"></div></div><div class="dm-buttons-right"><a id="dm-copy-raw-code"><span class="dm-copy-text">Copy Code</span><span class="dm-copy-confirmed" style="display:none">Copied</span><span class="dm-error-message" style="display:none">Use a different Browser</span></a></div></div><pre class=" no-line-numbers"><code id="dm-code-raw" class=" no-wrap language-php"># pip install openai
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="YOUR_LONGCAT_API_KEY",
+    base_url="https://api.longcat.chat/openai/v1",
+)
+
+resp = client.chat.completions.create(
+    model="LongCat-2.0",
+    messages=[
+        {"role": "system", "content": "You are a coding agent."},
+        {"role": "user", "content": "Refactor utils.py to remove duplicate I/O logic."},
+    ],
+    max_tokens=4096,  # LongCat-2.0 supports up to 131072 (128K)
+)
+
+print(resp.choices[0].message.content)</code></pre></div></div>
+
+
+
+<p class="wp-block-paragraph">Pricing is reported at $0.75 per million input tokens and $2.95 per million output. A launch promotion lists $0.30 and $1.20, with cached context reads free. These figures come from third-party coverage and may change.</p>
+
+
+
+<h2 id="h-interactive-explainer" class="wp-block-heading"><strong>Interactive Explainer</strong></h2>
+
+
+
+<!-- LongCat-2.0 Efficiency Explorer — Marktechpost interactive embed -->
+<div id="longcat-embed-wrap" style="max-width:860px;margin:0 auto;">
+  <iframe
+    id="longcat-demo-frame"
+    title="LongCat-2.0 Efficiency Explorer"
+    style="width:100%;height:600px;border:0;overflow:hidden;background:#0b0b0b;border-radius:14px;"
+    loading="lazy"
+    scrolling="no"
+    srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;LongCat-2.0 Efficiency Explorer&lt;/title&gt;
+&lt;style&gt;
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root{
+    --bg:#0b0b0b; --panel:#111111; --panel2:#161616; --line:#242424;
+    --green:#76B900; --green-dim:#4c7a00; --txt:#e8e8e8; --muted:#8f8f8f;
+  }
+  body{
+    background:var(--bg); color:var(--txt);
+    font-family:-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,Roboto,Helvetica,Arial,sans-serif;
+    padding:18px; line-height:1.5;
+  }
+  .wrap{max-width:820px;margin:0 auto;}
+  .head{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,#141414,#0e0e0e);padding:18px 20px;}
+  .kicker{color:var(--green);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;}
+  h1{font-size:22px;margin:6px 0 4px;font-weight:800;}
+  .sub{color:var(--muted);font-size:13.5px;}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+  .badge{border:1px solid var(--line);background:#0d0d0d;border-radius:999px;padding:5px 11px;font-size:12px;color:var(--txt);}
+  .badge b{color:var(--green);}
+  .tabs{display:flex;gap:6px;margin:16px 0 12px;flex-wrap:wrap;}
+  .tab{flex:1;min-width:150px;cursor:pointer;text-align:center;border:1px solid var(--line);background:var(--panel);
+       border-radius:10px;padding:10px 8px;font-size:13px;font-weight:600;color:var(--muted);transition:.15s;}
+  .tab:hover{color:var(--txt);border-color:#333;}
+  .tab.active{color:#0b0b0b;background:var(--green);border-color:var(--green);}
+  .panel{display:none;border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:18px;}
+  .panel.active{display:block;}
+  .panel h2{font-size:16px;margin-bottom:4px;}
+  .panel p.desc{color:var(--muted);font-size:13px;margin-bottom:14px;}
+  .note{font-size:11.5px;color:var(--muted);border-left:2px solid var(--green-dim);padding-left:9px;margin-top:14px;}
+  label.lbl{font-size:12px;color:var(--muted);display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:1px;}
+  textarea{width:100%;height:120px;background:#0c0c0c;border:1px solid var(--line);border-radius:10px;color:var(--txt);
+           padding:11px;font-family:&quot;SF Mono&quot;,ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;resize:vertical;}
+  .toks{margin-top:14px;padding:12px;background:#0c0c0c;border:1px solid var(--line);border-radius:10px;font-family:&quot;SF Mono&quot;,ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;line-height:2;min-height:40px;}
+  .tk{padding:2px 5px;border-radius:5px;margin:1px;display:inline-block;}
+  .tk.c{background:rgba(118,185,0,.18);color:var(--green);border:1px solid rgba(118,185,0,.4);}
+  .tk.s{background:#181818;color:var(--muted);border:1px solid var(--line);}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;}
+  .stat{border:1px solid var(--line);border-radius:10px;background:var(--panel2);padding:14px;}
+  .stat .n{font-size:26px;font-weight:800;color:var(--green);}
+  .stat .l{font-size:11.5px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:2px;}
+  .gauge{height:12px;background:#0c0c0c;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin-top:10px;}
+  .gauge &gt; i{display:block;height:100%;background:linear-gradient(90deg,var(--green-dim),var(--green));width:0;transition:width .25s;}
+  .gscale{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-top:5px;}
+  input[type=range]{width:100%;accent-color:var(--green);margin:6px 0;}
+  .rowline{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;margin-top:4px;}
+  .big{font-size:20px;font-weight:800;color:var(--green);}
+  svg{width:100%;height:auto;display:block;}
+  .legend{display:flex;gap:16px;font-size:12px;color:var(--muted);margin-top:10px;flex-wrap:wrap;}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:middle;}
+  .foot{margin-top:18px;text-align:center;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;}
+  .foot b{color:var(--green);}
+  @media(max-width:640px){ .grid{grid-template-columns:1fr;} h1{font-size:19px;} }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;wrap&quot;&gt;
+
+  &lt;div class=&quot;head&quot;&gt;
+    &lt;div class=&quot;kicker&quot;&gt;Meituan &amp;middot; Open MoE&lt;/div&gt;
+    &lt;h1&gt;LongCat-2.0 Efficiency Explorer&lt;/h1&gt;
+    &lt;div class=&quot;sub&quot;&gt;An interactive look at how a 1.6T-parameter model stays cheap to run.&lt;/div&gt;
+    &lt;div class=&quot;badges&quot;&gt;
+      &lt;span class=&quot;badge&quot;&gt;&lt;b&gt;1.6T&lt;/b&gt; total params&lt;/span&gt;
+      &lt;span class=&quot;badge&quot;&gt;&lt;b&gt;~48B&lt;/b&gt; active / token&lt;/span&gt;
+      &lt;span class=&quot;badge&quot;&gt;&lt;b&gt;1M&lt;/b&gt; context&lt;/span&gt;
+      &lt;span class=&quot;badge&quot;&gt;&lt;b&gt;MIT&lt;/b&gt; license&lt;/span&gt;
+      &lt;span class=&quot;badge&quot;&gt;Released &lt;b&gt;Jun 30, 2026&lt;/b&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;tabs&quot;&gt;
+    &lt;div class=&quot;tab active&quot; data-t=&quot;router&quot;&gt;Compute Router&lt;/div&gt;
+    &lt;div class=&quot;tab&quot; data-t=&quot;lsa&quot;&gt;1M Context: LSA vs Standard&lt;/div&gt;
+    &lt;div class=&quot;tab&quot; data-t=&quot;bench&quot;&gt;Benchmarks&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ===== TAB 1: COMPUTE ROUTER ===== --&gt;
+  &lt;div class=&quot;panel active&quot; id=&quot;router&quot;&gt;
+    &lt;h2&gt;Zero-computation experts, live&lt;/h2&gt;
+    &lt;p class=&quot;desc&quot;&gt;Simple tokens route to a zero-computation expert. Complex tokens engage more expert capacity. Type below and watch the estimated active-parameter budget move.&lt;/p&gt;
+    &lt;label class=&quot;lbl&quot; for=&quot;ta&quot;&gt;Input (code or text)&lt;/label&gt;
+    &lt;textarea id=&quot;ta&quot;&gt;def merge_configs(base, override):
+    # combine two dicts, override wins on conflict
+    return {**base, **override}&lt;/textarea&gt;
+    &lt;div class=&quot;toks&quot; id=&quot;toks&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid&quot;&gt;
+      &lt;div class=&quot;stat&quot;&gt;
+        &lt;div class=&quot;n&quot; id=&quot;activeN&quot;&gt;48B&lt;/div&gt;
+        &lt;div class=&quot;l&quot;&gt;Est. active parameters / token&lt;/div&gt;
+        &lt;div class=&quot;gauge&quot;&gt;&lt;i id=&quot;gbar&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+        &lt;div class=&quot;gscale&quot;&gt;&lt;span&gt;33B&lt;/span&gt;&lt;span&gt;~48B avg&lt;/span&gt;&lt;span&gt;56B&lt;/span&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;stat&quot;&gt;
+        &lt;div class=&quot;n&quot; id=&quot;mixN&quot;&gt;0%&lt;/div&gt;
+        &lt;div class=&quot;l&quot;&gt;Tokens routed to full experts&lt;/div&gt;
+        &lt;div class=&quot;legend&quot; style=&quot;margin-top:14px;&quot;&gt;
+          &lt;span&gt;&lt;i style=&quot;background:var(--green);&quot;&gt;&lt;/i&gt;Complex &amp;rarr; full experts&lt;/span&gt;
+          &lt;span&gt;&lt;i style=&quot;background:#181818;border:1px solid var(--line);&quot;&gt;&lt;/i&gt;Simple &amp;rarr; zero-compute&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;note&quot;&gt;Illustrative model of the routing idea. Real token routing is learned, not rule-based. Active range (33B&amp;ndash;56B, ~48B avg) matches Meituan's published figures.&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ===== TAB 2: LSA SCALING ===== --&gt;
+  &lt;div class=&quot;panel&quot; id=&quot;lsa&quot;&gt;
+    &lt;h2&gt;Why 1M tokens is tractable&lt;/h2&gt;
+    &lt;p class=&quot;desc&quot;&gt;Standard attention cost grows quadratically with context length. LongCat Sparse Attention (LSA) keeps growth closer to linear. Drag the slider to compare relative compute.&lt;/p&gt;
+    &lt;label class=&quot;lbl&quot; for=&quot;ctx&quot;&gt;Context length: &lt;span id=&quot;ctxLabel&quot; style=&quot;color:var(--green);font-weight:700;&quot;&gt;32K tokens&lt;/span&gt;&lt;/label&gt;
+    &lt;input type=&quot;range&quot; id=&quot;ctx&quot; min=&quot;10&quot; max=&quot;60&quot; value=&quot;45&quot; step=&quot;1&quot;&gt;
+    &lt;svg id=&quot;chart&quot; viewBox=&quot;0 0 640 300&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-label=&quot;Attention cost chart&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;legend&quot;&gt;
+      &lt;span&gt;&lt;i style=&quot;background:#e0554e;&quot;&gt;&lt;/i&gt;Standard attention (quadratic)&lt;/span&gt;
+      &lt;span&gt;&lt;i style=&quot;background:var(--green);&quot;&gt;&lt;/i&gt;LSA (near-linear)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid&quot;&gt;
+      &lt;div class=&quot;stat&quot;&gt;&lt;div class=&quot;n&quot; id=&quot;ratioN&quot;&gt;1&amp;times;&lt;/div&gt;&lt;div class=&quot;l&quot;&gt;Standard cost vs LSA at this length&lt;/div&gt;&lt;/div&gt;
+      &lt;div class=&quot;stat&quot;&gt;&lt;div class=&quot;n&quot; id=&quot;ctxN&quot;&gt;32K&lt;/div&gt;&lt;div class=&quot;l&quot;&gt;Selected context length&lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;note&quot;&gt;Conceptual illustration of quadratic vs linear scaling. Not a measured latency benchmark. LSA layers Streaming-aware, Cross-Layer, and Hierarchical Indexing.&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- ===== TAB 3: BENCHMARKS ===== --&gt;
+  &lt;div class=&quot;panel&quot; id=&quot;bench&quot;&gt;
+    &lt;h2&gt;Vendor-reported benchmarks&lt;/h2&gt;
+    &lt;p class=&quot;desc&quot;&gt;All figures are reported by Meituan and are not yet independently verified. GPT-5.5 shown on SWE-bench Pro for context.&lt;/p&gt;
+    &lt;svg id=&quot;bars&quot; viewBox=&quot;0 0 640 320&quot; preserveAspectRatio=&quot;xMidYMid meet&quot; aria-label=&quot;Benchmark bar chart&quot;&gt;&lt;/svg&gt;
+    &lt;div class=&quot;note&quot;&gt;Source: Meituan (self-reported). Independent leaderboard confirmation was not available at the time of writing. Weights listed as &quot;coming soon.&quot;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;foot&quot;&gt;
+    Built by &lt;b&gt;Marktechpost&lt;/b&gt; &amp;middot; Data from Meituan LongCat-2.0 (Hugging Face, GitHub, tech blog) &amp;middot; Figures vendor-reported
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;script&gt;
+(function(){
+  // ---------- helpers ----------
+  var STOP = {&quot; &quot;:1,&quot;the&quot;:1,&quot;a&quot;:1,&quot;an&quot;:1,&quot;and&quot;:1,&quot;or&quot;:1,&quot;of&quot;:1,&quot;to&quot;:1,&quot;in&quot;:1,&quot;is&quot;:1,&quot;on&quot;:1,&quot;for&quot;:1,&quot;if&quot;:1,&quot;as&quot;:1,&quot;at&quot;:1,&quot;by&quot;:1,&quot;it&quot;:1,&quot;be&quot;:1,&quot;do&quot;:1};
+  function isSimple(t){
+    var s=t.trim();
+    if(s===&quot;&quot;) return true;
+    if(/^[^A-Za-z0-9]+$/.test(s)) return true;      // punctuation/symbols
+    if(s.length&lt;=2) return true;                     // very short tokens
+    if(STOP[s.toLowerCase()]) return true;           // common function words
+    return false;
+  }
+  function esc(s){return s.replace(/&amp;/g,&quot;&amp;amp;&quot;).replace(/&lt;/g,&quot;&amp;lt;&quot;).replace(/&gt;/g,&quot;&amp;gt;&quot;);}
+
+  // ---------- TAB 1: router ----------
+  var ta=document.getElementById(&quot;ta&quot;), toks=document.getElementById(&quot;toks&quot;);
+  var activeN=document.getElementById(&quot;activeN&quot;), gbar=document.getElementById(&quot;gbar&quot;), mixN=document.getElementById(&quot;mixN&quot;);
+  function runRouter(){
+    var raw=ta.value;
+    var parts=raw.split(/(\s+|[^A-Za-z0-9\s]+)/).filter(function(x){return x!==undefined &amp;&amp; x!==&quot;&quot;;});
+    var html=&quot;&quot;, complex=0, total=0;
+    for(var i=0;i&lt;parts.length;i++){
+      var p=parts[i];
+      if(/^\s+$/.test(p)){ html+=&quot; &quot;; continue; }
+      total++;
+      var simple=isSimple(p);
+      if(!simple) complex++;
+      html+='&lt;span class=&quot;tk '+(simple?&quot;s&quot;:&quot;c&quot;)+'&quot;&gt;'+esc(p)+'&lt;/span&gt;';
+    }
+    toks.innerHTML = html || '&lt;span style=&quot;color:var(--muted)&quot;&gt;Type something above&amp;hellip;&lt;/span&gt;';
+    var frac = total? complex/total : 0.5;
+    var active = 33 + frac*(56-33);              // map to published 33-56B range
+    activeN.textContent = active.toFixed(0)+&quot;B&quot;;
+    gbar.style.width = ((active-33)/(56-33)*100).toFixed(1)+&quot;%&quot;;
+    mixN.textContent = Math.round(frac*100)+&quot;%&quot;;
+    ping();
+  }
+  ta.addEventListener(&quot;input&quot;, runRouter);
+
+  // ---------- TAB 2: LSA scaling ----------
+  var ctx=document.getElementById(&quot;ctx&quot;), ctxLabel=document.getElementById(&quot;ctxLabel&quot;);
+  var ratioN=document.getElementById(&quot;ratioN&quot;), ctxN=document.getElementById(&quot;ctxN&quot;), chart=document.getElementById(&quot;chart&quot;);
+  function fmtTok(n){ // n = tokens
+    if(n&gt;=1000000) return (n/1000000).toFixed(n&gt;=10000000?0:1)+&quot;M&quot;;
+    if(n&gt;=1000) return Math.round(n/1000)+&quot;K&quot;;
+    return Math.round(n)+&quot;&quot;;
+  }
+  function drawChart(){
+    var W=640,H=300,padL=52,padR=16,padT=18,padB=42;
+    var x0=padL,x1=W-padR,y0=H-padB,y1=padT;
+    var N=80, pts_q=[], pts_l=[];
+    // domain: log tokens from 1K (10) to 1M (60) mapped to exponent
+    for(var i=0;i&lt;=N;i++){
+      var e = 10 + (60-10)*(i/N);          // slider units
+      var tokens = Math.pow(10, e/10);      // 10 -&gt; 10^1=10 ... 60 -&gt; 10^6
+      var xr = i/N;
+      // normalize cost so both start together at left; quadratic ~ t^2, linear ~ t
+      var q = Math.pow(tokens,2), l = tokens;
+      pts_q.push([xr, q]); pts_l.push([xr, l]);
+    }
+    var maxQ = pts_q[N][1];
+    function X(xr){ return x0 + xr*(x1-x0); }
+    function Y(v){ return y0 - (v/maxQ)*(y0-y1); }
+    function path(pts){
+      var d=&quot;&quot;;
+      for(var i=0;i&lt;pts.length;i++){ d+=(i?&quot;L&quot;:&quot;M&quot;)+X(pts[i][0]).toFixed(1)+&quot; &quot;+Y(pts[i][1]).toFixed(1)+&quot; &quot;; }
+      return d;
+    }
+    // axes grid
+    var svg=&quot;&quot;;
+    svg+='&lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;'+W+'&quot; height=&quot;'+H+'&quot; fill=&quot;#0c0c0c&quot; rx=&quot;10&quot;/&gt;';
+    for(var g=0; g&lt;=4; g++){
+      var gy = y1 + (y0-y1)*(g/4);
+      svg+='&lt;line x1=&quot;'+x0+'&quot; y1=&quot;'+gy+'&quot; x2=&quot;'+x1+'&quot; y2=&quot;'+gy+'&quot; stroke=&quot;#1c1c1c&quot; stroke-width=&quot;1&quot;/&gt;';
+    }
+    // curves
+    svg+='&lt;path d=&quot;'+path(pts_q)+'&quot; fill=&quot;none&quot; stroke=&quot;#e0554e&quot; stroke-width=&quot;2.5&quot;/&gt;';
+    svg+='&lt;path d=&quot;'+path(pts_l)+'&quot; fill=&quot;none&quot; stroke=&quot;#76B900&quot; stroke-width=&quot;2.5&quot;/&gt;';
+    // marker for current slider value
+    var e=+ctx.value, xr=(e-10)/(60-10), tokens=Math.pow(10,e/10);
+    var mx=X(xr);
+    svg+='&lt;line x1=&quot;'+mx+'&quot; y1=&quot;'+y1+'&quot; x2=&quot;'+mx+'&quot; y2=&quot;'+y0+'&quot; stroke=&quot;#3a3a3a&quot; stroke-width=&quot;1&quot; stroke-dasharray=&quot;4 4&quot;/&gt;';
+    var qy=Y(Math.pow(tokens,2)), ly=Y(tokens);
+    svg+='&lt;circle cx=&quot;'+mx+'&quot; cy=&quot;'+qy.toFixed(1)+'&quot; r=&quot;4.5&quot; fill=&quot;#e0554e&quot;/&gt;';
+    svg+='&lt;circle cx=&quot;'+mx+'&quot; cy=&quot;'+ly.toFixed(1)+'&quot; r=&quot;4.5&quot; fill=&quot;#76B900&quot;/&gt;';
+    // labels
+    svg+='&lt;text x=&quot;'+x0+'&quot; y=&quot;'+(H-14)+'&quot; fill=&quot;#8f8f8f&quot; font-size=&quot;11&quot;&gt;1K&lt;/text&gt;';
+    svg+='&lt;text x=&quot;'+((x0+x1)/2-14)+'&quot; y=&quot;'+(H-14)+'&quot; fill=&quot;#8f8f8f&quot; font-size=&quot;11&quot;&gt;context length &amp;rarr;&lt;/text&gt;';
+    svg+='&lt;text x=&quot;'+(x1-24)+'&quot; y=&quot;'+(H-14)+'&quot; fill=&quot;#8f8f8f&quot; font-size=&quot;11&quot;&gt;1M&lt;/text&gt;';
+    svg+='&lt;text x=&quot;10&quot; y=&quot;'+(y1+8)+'&quot; fill=&quot;#8f8f8f&quot; font-size=&quot;11&quot;&gt;cost&lt;/text&gt;';
+    chart.innerHTML=svg;
+    // readouts
+    ctxLabel.textContent = fmtTok(tokens)+&quot; tokens&quot;;
+    ctxN.textContent = fmtTok(tokens);
+    var ratio = Math.pow(tokens,2)/tokens; // = tokens, but relative to shared unit
+    // express as standard/LSA multiple, normalized so 1K -&gt; ~1x
+    var base = Math.pow(1000,2)/1000;      // = 1000
+    var rel = ratio/base;
+    ratioN.textContent = rel&gt;=1000 ? (rel/1000).toFixed(1)+&quot;K\u00d7&quot; : (rel&gt;=1? Math.round(rel):rel.toFixed(1))+&quot;\u00d7&quot;;
+    ping();
+  }
+  ctx.addEventListener(&quot;input&quot;, drawChart);
+
+  // ---------- TAB 3: benchmarks ----------
+  function drawBars(){
+    var data=[
+      {name:&quot;SWE-bench Pro&quot;, v:59.5, c:&quot;#76B900&quot;},
+      {name:&quot;SWE-bench Pro (GPT-5.5)&quot;, v:58.6, c:&quot;#4c7a00&quot;},
+      {name:&quot;Terminal-Bench 2.1&quot;, v:70.8, c:&quot;#76B900&quot;},
+      {name:&quot;SWE-bench Multilingual&quot;, v:77.3, c:&quot;#76B900&quot;}
+    ];
+    var W=640,H=320,padL=16,padR=16,padT=20,padB=66;
+    var y0=H-padB,y1=padT, max=100;
+    var n=data.length, gap=22, bw=(W-padL-padR-gap*(n-1))/n;
+    var svg='&lt;rect x=&quot;0&quot; y=&quot;0&quot; width=&quot;'+W+'&quot; height=&quot;'+H+'&quot; fill=&quot;#0c0c0c&quot; rx=&quot;10&quot;/&gt;';
+    for(var g=0; g&lt;=5; g++){
+      var gy=y1+(y0-y1)*(g/5); var val=100-20*g;
+      svg+='&lt;line x1=&quot;'+padL+'&quot; y1=&quot;'+gy+'&quot; x2=&quot;'+(W-padR)+'&quot; y2=&quot;'+gy+'&quot; stroke=&quot;#1c1c1c&quot;/&gt;';
+      svg+='&lt;text x=&quot;'+(W-padR)+'&quot; y=&quot;'+(gy-3)+'&quot; fill=&quot;#555&quot; font-size=&quot;10&quot; text-anchor=&quot;end&quot;&gt;'+val+'&lt;/text&gt;';
+    }
+    for(var i=0;i&lt;n;i++){
+      var d=data[i], x=padL+i*(bw+gap);
+      var h=(d.v/max)*(y0-y1), y=y0-h;
+      svg+='&lt;rect x=&quot;'+x.toFixed(1)+'&quot; y=&quot;'+y.toFixed(1)+'&quot; width=&quot;'+bw.toFixed(1)+'&quot; height=&quot;'+h.toFixed(1)+'&quot; rx=&quot;6&quot; fill=&quot;'+d.c+'&quot;/&gt;';
+      svg+='&lt;text x=&quot;'+(x+bw/2).toFixed(1)+'&quot; y=&quot;'+(y-8).toFixed(1)+'&quot; fill=&quot;#e8e8e8&quot; font-size=&quot;15&quot; font-weight=&quot;700&quot; text-anchor=&quot;middle&quot;&gt;'+d.v.toFixed(1)+'&lt;/text&gt;';
+      // wrap name into two lines
+      var words=d.name.split(&quot; &quot;), line1=words.slice(0,2).join(&quot; &quot;), line2=words.slice(2).join(&quot; &quot;);
+      svg+='&lt;text x=&quot;'+(x+bw/2).toFixed(1)+'&quot; y=&quot;'+(y0+18)+'&quot; fill=&quot;#8f8f8f&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot;&gt;'+line1+'&lt;/text&gt;';
+      if(line2) svg+='&lt;text x=&quot;'+(x+bw/2).toFixed(1)+'&quot; y=&quot;'+(y0+32)+'&quot; fill=&quot;#8f8f8f&quot; font-size=&quot;11&quot; text-anchor=&quot;middle&quot;&gt;'+line2+'&lt;/text&gt;';
+    }
+    document.getElementById(&quot;bars&quot;).innerHTML=svg;
+  }
+
+  // ---------- tabs ----------
+  var tabs=document.querySelectorAll(&quot;.tab&quot;), panels=document.querySelectorAll(&quot;.panel&quot;);
+  tabs.forEach(function(t){
+    t.addEventListener(&quot;click&quot;, function(){
+      tabs.forEach(function(x){x.classList.remove(&quot;active&quot;);});
+      panels.forEach(function(x){x.classList.remove(&quot;active&quot;);});
+      t.classList.add(&quot;active&quot;);
+      var id=t.getAttribute(&quot;data-t&quot;);
+      document.getElementById(id).classList.add(&quot;active&quot;);
+      if(id===&quot;lsa&quot;) drawChart();
+      if(id===&quot;bench&quot;) drawBars();
+      ping();
+    });
+  });
+
+  // ---------- auto-resize for WordPress embed ----------
+  function ping(){
+    try{
+      var h=document.body.offsetHeight+40;
+      parent.postMessage({type:&quot;longcat-demo-height&quot;, height:h}, &quot;*&quot;);
+    }catch(e){}
+  }
+  window.addEventListener(&quot;load&quot;, function(){ runRouter(); drawChart(); drawBars(); ping(); setTimeout(ping,300); });
+  window.addEventListener(&quot;resize&quot;, ping);
+
+  // initial
+  runRouter();
+})();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</div>
+<script>
+(function(){
+  var f = document.getElementById("longcat-demo-frame");
+  window.addEventListener("message", function(e){
+    if(e && e.data && e.data.type === "longcat-demo-height"){
+      var h = parseInt(e.data.height, 10);
+      if(h && h > 200){ f.style.height = h + "px"; }
+    }
+  });
+})();
+</script>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h2 id="h-key-takeaways" class="wp-block-heading"><strong>Key Takeaways</strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li>Released under MIT</li>
+
+
+
+<li>LongCat-2.0 is a 1.6T-parameter MoE model activating ~48B parameters per token (dynamic range 33B–56B).</li>
+
+
+
+<li>Native 1M-token context comes from LongCat Sparse Attention, cutting long-context cost from quadratic to linear.</li>
+
+
+
+<li>Training and inference ran on a 50,000-card domestic AI ASIC cluster, with no Nvidia hardware.</li>
+
+
+
+<li>Vendor-reported scores: 59.5 SWE-bench Pro, 70.8 Terminal-Bench 2.1, 77.3 SWE-bench Multilingual.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">Check out the <strong><a href="https://huggingface.co/meituan-longcat/LongCat-2.0" target="_blank" rel="noreferrer noopener">Model Weights</a></strong>,<strong> <a href="https://github.com/meituan-longcat/LongCat-2.0" target="_blank" rel="noreferrer noopener">GitHub Repo</a></strong> and <strong><a href="https://longcat.ai/blog/longcat-2.0/" target="_blank" rel="noreferrer noopener">Technical details</a></strong>.<strong> </strong>Also, feel free to follow us on <strong><a href="https://x.com/intent/follow?screen_name=marktechpost" target="_blank" rel="noreferrer noopener"><mark>Twitter</mark></a></strong> and don’t forget to join our <strong><a href="https://www.reddit.com/r/machinelearningnews/" target="_blank" rel="noreferrer noopener">150k+ML SubReddit</a></strong> and Subscribe to <strong><a href="https://www.aidevsignals.com/" target="_blank" rel="noreferrer noopener">our Newsletter</a></strong>. Wait! are you on telegram? <strong><a href="https://t.me/machinelearningresearchnews" target="_blank" rel="noreferrer noopener">now you can join us on telegram as well.</a></strong></p>
+
+
+
+<p class="wp-block-paragraph">Need to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.?&nbsp;<strong><a href="https://forms.gle/wbash1wF6efRj8G58" target="_blank" rel="noreferrer noopener"><mark>Connect with us</mark></a></strong></p>
+<p>The post <a href="https://www.marktechpost.com/2026/07/05/meituan-releases-longcat-2-0-a-1-6t-parameter-open-moe-model-with-native-1m-context-and-longcat-sparse-attention/">Meituan Releases LongCat-2.0: A 1.6T-Parameter Open MoE Model with Native 1M Context and LongCat Sparse Attention</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">80858</post-id>
+		<media:thumbnail url="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-150x150.png" />
+		<media:content url="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1.png" medium="image">
+			<media:title type="html">Screenshot 2026-07-05 at 2.23.44 PM</media:title>
+			<media:thumbnail url="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-05-at-2.23.44-PM-1-150x150.png" />
+		</media:content>
+	</item>
+		<item>
 		<title>LlamaIndex ‘legal-kb’: Agentic Retrieval over Index v2 with retrieve, find, read, and grep Tools</title>
 		<link>https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools/</link>
 		
@@ -2025,7 +2590,7 @@ description: Run the lab's standard RNA-seq quality-control pipeline on a FASTQ 
 
 
 <div class="wp-block-image">
-<figure class="aligncenter size-full is-resized"><img fetchpriority="high" decoding="async" width="1266" height="630" data-attachment-id="80842" data-permalink="https://www.marktechpost.com/2026/07/04/nvidia-horizon-a-hands-free-agent-that-evolves-git-worktrees-and-hits-100-rtl-benchmark-completion/screenshot-2026-07-04-at-9-03-06-am-2/" data-orig-file="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1.png" data-orig-size="1266,630" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Screenshot 2026-07-04 at 9.03.06 AM" data-image-description="" data-image-caption="" data-large-file="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-1024x510.png" src="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1.png" alt="" class="wp-image-80842" style="aspect-ratio:2.009525489504322;width:804px;height:auto" srcset="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1.png 1266w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-300x149.png 300w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-1024x510.png 1024w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-768x382.png 768w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-844x420.png 844w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-150x75.png 150w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-696x346.png 696w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-1068x531.png 1068w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-324x160.png 324w" sizes="(max-width: 1266px) 100vw, 1266px" /><figcaption class="wp-element-caption">https://arxiv.org/pdf/2606.28279</figcaption></figure>
+<figure class="aligncenter size-full is-resized"><img decoding="async" width="1266" height="630" data-attachment-id="80842" data-permalink="https://www.marktechpost.com/2026/07/04/nvidia-horizon-a-hands-free-agent-that-evolves-git-worktrees-and-hits-100-rtl-benchmark-completion/screenshot-2026-07-04-at-9-03-06-am-2/" data-orig-file="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1.png" data-orig-size="1266,630" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Screenshot 2026-07-04 at 9.03.06 AM" data-image-description="" data-image-caption="" data-large-file="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-1024x510.png" src="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1.png" alt="" class="wp-image-80842" style="aspect-ratio:2.009525489504322;width:804px;height:auto" srcset="https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1.png 1266w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-300x149.png 300w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-1024x510.png 1024w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-768x382.png 768w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-844x420.png 844w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-150x75.png 150w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-696x346.png 696w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-1068x531.png 1068w, https://www.marktechpost.com/wp-content/uploads/2026/07/Screenshot-2026-07-04-at-9.03.06-AM-1-324x160.png 324w" sizes="(max-width: 1266px) 100vw, 1266px" /><figcaption class="wp-element-caption">https://arxiv.org/pdf/2606.28279</figcaption></figure>
 </div>
 
 
@@ -5553,655 +6118,6 @@ OLLAMA_ORIGINS="*" ollama serve
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">80818</post-id>
-	</item>
-		<item>
-		<title>Interfaze Ships diffusion-gemma-asr-small, an Open-Source Diffusion ASR Model Transcribing Six Languages via DiffusionGemma&#8217;s Parallel Denoising Decoder</title>
-		<link>https://www.marktechpost.com/2026/07/02/interfaze-ships-diffusion-gemma-asr-small-an-open-source-diffusion-asr-model-transcribing-six-languages-via-diffusiongemmas-parallel-denoising-decoder/</link>
-		
-		<dc:creator><![CDATA[Michal Sutter]]></dc:creator>
-		<pubDate>Fri, 03 Jul 2026 03:24:23 +0000</pubDate>
-				<category><![CDATA[Artificial Intelligence]]></category>
-		<category><![CDATA[Audio Language Model]]></category>
-		<category><![CDATA[Editors Pick]]></category>
-		<category><![CDATA[Language Model]]></category>
-		<category><![CDATA[New Releases]]></category>
-		<category><![CDATA[Open Source]]></category>
-		<category><![CDATA[Technology]]></category>
-		<category><![CDATA[TTS]]></category>
-		<category><![CDATA[Voice AI]]></category>
-		<guid isPermaLink="false">https://www.marktechpost.com/?p=80815</guid>
-
-					<description><![CDATA[<p>Interfaze open-sourced diffusion-gemma-asr-small, a multilingual ASR model that transcribes via diffusion, not autoregression. It adds audio to Google's frozen DiffusionGemma using a ~42M-parameter adapter. One adapter covers six languages, with transcription cost set by denoising steps, not transcript length.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/07/02/interfaze-ships-diffusion-gemma-asr-small-an-open-source-diffusion-asr-model-transcribing-six-languages-via-diffusiongemmas-parallel-denoising-decoder/">Interfaze Ships diffusion-gemma-asr-small, an Open-Source Diffusion ASR Model Transcribing Six Languages via DiffusionGemma&#8217;s Parallel Denoising Decoder</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[
-<p class="wp-block-paragraph">Interfaze, a young YC&#8217;s startup, has open-sourced a new speech recognition model. It is called <code>diffusion-gemma-asr-small</code>. The model transcribes audio through a diffusion decoder, not an autoregressive one. It is described as the first multilingual audio diffusion ASR model. One adapter handles six languages. The research team trained only about 42M parameters on top of a frozen 26B backbone. That is roughly 0.16% of the model&#8217;s weights.</p>
-
-
-
-<p class="wp-block-paragraph">Here two terms matter up front. Autoregressive models generate text one token at a time. Diffusion models refine all tokens in parallel. This model uses the diffusion approach for speech-to-text.</p>
-
-
-
-<h2 id="h-tl-dr" class="wp-block-heading"><strong>TL;DR</strong></h2>
-
-
-
-<ul class="wp-block-list">
-<li>Claimed by the Interfaze team, to be the first open-source multilingual diffusion ASR: six languages from a single ~42M-parameter adapter.</li>
-
-
-
-<li>Transcribes via DiffusionGemma&#8217;s diffusion decoder using uniform, random-token diffusion, not the absorbing <code>&lt;mask></code> scheme.</li>
-
-
-
-<li>Transcription cost scales with denoising steps, not transcript length.</li>
-
-
-
-<li>Leads diffusion peers on LibriSpeech (6.6% WER vs Whisfusion&#8217;s 8.3%) but trails autoregressive Whisper.</li>
-
-
-
-<li>The adapter ships under Apache-2.0; DiffusionGemma (Gemma terms) and whisper-small (MIT) load separately.</li>
-</ul>
-
-
-
-<h2 id="h-what-is-diffusion-gemma-asr-small" class="wp-block-heading"><strong>What is diffusion-gemma-asr-small?</strong></h2>
-
-
-
-<p class="wp-block-paragraph"><code>diffusion-gemma-asr-small</code> is an audio-native ASR model. It converts speech to text using a discrete diffusion decoder. That decoder belongs to DiffusionGemma, Google&#8217;s 26B mixture-of-experts model. DiffusionGemma activates 4B parameters, using 128 experts with top-8 routing. It generates text by discrete diffusion instead of autoregression.</p>
-
-
-
-<p class="wp-block-paragraph">The diffusion detail is specific. Most diffusion LLMs use an absorbing <code>&lt;mask&gt;</code> scheme. DiffusionGemma uses uniform, random-token diffusion instead. It fills a fixed-length canvas with random vocabulary tokens. Each step keeps confident predictions and re-randomizes the rest. After a few steps the noise anneals into text.</p>
-
-
-
-<p class="wp-block-paragraph">Interfaze added audio to this text-only model. Out of the box, DiffusionGemma takes text, images, and video. It does not take audio. The repo ships only the trained adapter, about 42M parameters. The frozen backbones download separately from their own repos.</p>
-
-
-
-<h2 id="h-how-it-works" class="wp-block-heading"><strong>How it works</strong></h2>
-
-
-
-<p class="wp-block-paragraph">The model does not feed raw waveforms to the LLM. An early attempt tried exactly that and failed. A frozen LLM has never seen a spectrogram. The embedding space has no notion of formants or phonemes. The model learned to ignore audio and hallucinate fluent nonsense.</p>
-
-
-
-<p class="wp-block-paragraph">The working design uses a frozen <code>whisper-small</code> encoder. It acts only as a feature extractor, not a decoder. Whisper turns 30 seconds of audio into 1500 frames. Each frame holds 768-dimensional acoustic features. A small trainable projector then compresses these frames. It uses conv layers that subsample 8× plus a linear map. The output is 188 &#8220;audio tokens&#8221; at 2816 dimensions. These tokens scatter into the prompt&#8217;s reserved <code>&lt;|audio|&gt;</code> slots. LoRA adapters let the backbone attend to this new modality. The decoder then denoises a 192-token transcript canvas. It runs bidirectionally over roughly 16 steps.</p>
-
-
-
-<p class="wp-block-paragraph">The pipeline, from the model card, is compact:</p>
-
-
-
-<div class="dm-code-snippet dark dm-normal-version default no-background-mobile" snippet-height="" style="background-color:#abb8c3"><div class="control-language"><div class="dm-buttons"><div class="dm-buttons-left"><div class="dm-button-snippet red-button"></div><div class="dm-button-snippet orange-button"></div><div class="dm-button-snippet green-button"></div></div><div class="dm-buttons-right"><a id="dm-copy-raw-code"><span class="dm-copy-text">Copy Code</span><span class="dm-copy-confirmed" style="display:none">Copied</span><span class="dm-error-message" style="display:none">Use a different Browser</span></a></div></div><pre class=" no-line-numbers"><code id="dm-code-raw" class=" no-wrap language-php">raw audio ─► whisper-small encoder (frozen) ─► projector (trained, ~19M)
-          ─► scatter into &lt;audio> token slots of DiffusionGemma's encoder
-          ─► DiffusionGemma decoder denoises a 192-token canvas (bidirectional, cross-attends audio)
-          ─► transcript</code></pre></div></div>
-
-
-
-<h2 id="h-the-training-unlock" class="wp-block-heading"><strong>The training unlock</strong></h2>
-
-
-
-<p class="wp-block-paragraph">The first training runs stalled. Loss flatlined near 8. The failure was circular. The projector started random, so its output was noise. Attention then learned to ignore it. Almost no gradient reached the projector. The model never learned.</p>
-
-
-
-<p class="wp-block-paragraph">The fix supervised the projector directly. The research team ran the 188 audio tokens through DiffusionGemma&#8217;s frozen <code>lm_head</code>. They applied a CTC loss against the transcript. CTC means Connectionist Temporal Classification. It aligns audio features to text without needing attention.</p>
-
-
-
-<p class="wp-block-paragraph">This sidesteps the standoff. The audio embeddings became linearly predictive of the right words. CTC loss then dropped from 24 to 8.6 in 300 steps. On LibriSpeech test-clean, English WER fell 90% → 52% → 14.6% → 6.6% over ten epochs.</p>
-
-
-
-<h2 id="h-performance-and-benchmarks" class="wp-block-heading"><strong>Performance and benchmarks</strong></h2>
-
-
-
-<p class="wp-block-paragraph">WER means Word Error Rate, where lower is better. CER means Character Error Rate. The model trained on FLEURS, LibriSpeech, and VoxPopuli. All scores below use the Whisper text normalizer at 16 diffusion steps.</p>
-
-
-
-<figure class="wp-block-table is-style-stripes"><table class="has-fixed-layout"><thead><tr><th>benchmark</th><th>metric</th><th>score</th></tr></thead><tbody><tr><td>LibriSpeech test-clean (en)</td><td>WER</td><td>6.6%</td></tr><tr><td>FLEURS English</td><td>WER</td><td>15.7%</td></tr><tr><td>VoxPopuli English</td><td>WER</td><td>18.5%</td></tr><tr><td>FLEURS Hindi</td><td>CER</td><td>15.8%</td></tr><tr><td>FLEURS Mandarin</td><td>CER</td><td>29.6%</td></tr></tbody></table></figure>
-
-
-
-<p class="wp-block-paragraph">Against other diffusion or non-autoregressive ASR, it leads.</p>
-
-
-
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>model</th><th>approach</th><th>LibriSpeech test-clean</th></tr></thead><tbody><tr><td>TransFusion (2022)</td><td>multinomial diffusion</td><td>~6–7% (proof-of-concept)</td></tr><tr><td>Whisfusion (Aug 2025)</td><td>Whisper-large-v3 + masked diffusion</td><td>8.3%</td></tr><tr><td><strong>diffusion-gemma-asr-small</strong> (2026)</td><td>Whisper-small + DiffusionGemma</td><td><strong>6.6%</strong></td></tr></tbody></table></figure>
-
-
-
-<p class="wp-block-paragraph">Against autoregressive Whisper, it trails. The team frames this gap as data, not architecture.</p>
-
-
-
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>benchmark</th><th>ours</th><th>Whisper-small</th><th>Whisper-large-v3</th></tr></thead><tbody><tr><td>LibriSpeech clean</td><td>6.6%</td><td>~3.4%</td><td>~2.0%</td></tr><tr><td>FLEURS-en</td><td>15.7%</td><td>~9–10%</td><td>~4–5%</td></tr><tr><td>VoxPopuli-en</td><td>18.5%</td><td>~9–11%</td><td>~7–10%</td></tr></tbody></table></figure>
-
-
-
-<p class="wp-block-paragraph">The denoising-step sweep shows a nearly flat curve.</p>
-
-
-
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>steps</th><th>FLEURS-en WER</th><th>speed</th></tr></thead><tbody><tr><td>8</td><td>15.7%</td><td>14.9× real-time</td></tr><tr><td>16</td><td>15.6%</td><td>10.3×</td></tr><tr><td>32</td><td>15.2%</td><td>6.5×</td></tr><tr><td>48</td><td>15.6%</td><td>4.7×</td></tr></tbody></table></figure>
-
-
-
-<p class="wp-block-paragraph">Going from 8 to 48 steps buys about 0.1 WER point. It costs roughly 3× the latency. The model converges in about 8 parallel passes. That is around 0.7–1.5s of model time for a 10-second clip.</p>
-
-
-
-<h2 id="h-use-cases-with-examples" class="wp-block-heading"><strong>Use cases with examples</strong></h2>
-
-
-
-<ul class="wp-block-list">
-<li>Batch transcription pipelines benefit from parallel decoding. Cost is set by denoising steps, not clip length. A 10-second clip needs roughly the same passes as a shorter one.</li>
-
-
-
-<li>Multilingual transcription runs from a single adapter. It covers English, German, French, Spanish, Hindi, and Mandarin. Teams avoid loading a separate model per language.</li>
-
-
-
-<li>Non-autoregressive ASR research gains a reproducible baseline. The recipe grounds a frozen LLM with a small adapter. Researchers can extend it with more audio or a larger encoder.</li>
-</ul>
-
-
-
-<h2 id="h-how-to-get-started" class="wp-block-heading"><strong>How to get started</strong></h2>
-
-
-
-<p class="wp-block-paragraph">The model lives on the Hub. It ships the adapter, <code>model.py</code>, <code>audio.py</code>, and a runnable <code>inference.py</code>. DiffusionGemma support needs <code>transformers</code> from main.</p>
-
-
-
-<div class="dm-code-snippet dark dm-normal-version default no-background-mobile" snippet-height="" style="background-color:#abb8c3"><div class="control-language"><div class="dm-buttons"><div class="dm-buttons-left"><div class="dm-button-snippet red-button"></div><div class="dm-button-snippet orange-button"></div><div class="dm-button-snippet green-button"></div></div><div class="dm-buttons-right"><a id="dm-copy-raw-code"><span class="dm-copy-text">Copy Code</span><span class="dm-copy-confirmed" style="display:none">Copied</span><span class="dm-error-message" style="display:none">Use a different Browser</span></a></div></div><pre class=" no-line-numbers"><code id="dm-code-raw" class=" no-wrap language-php">pip install torch peft soundfile librosa huggingface_hub \
-  "transformers @ git+https://github.com/huggingface/transformers.git"</code></pre></div></div>
-
-
-
-<p class="wp-block-paragraph">Then transcribe in Python:</p>
-
-
-
-<div class="dm-code-snippet dark dm-normal-version default no-background-mobile" snippet-height="" style="background-color:#abb8c3"><div class="control-language"><div class="dm-buttons"><div class="dm-buttons-left"><div class="dm-button-snippet red-button"></div><div class="dm-button-snippet orange-button"></div><div class="dm-button-snippet green-button"></div></div><div class="dm-buttons-right"><a id="dm-copy-raw-code"><span class="dm-copy-text">Copy Code</span><span class="dm-copy-confirmed" style="display:none">Copied</span><span class="dm-error-message" style="display:none">Use a different Browser</span></a></div></div><pre class=" no-line-numbers"><code id="dm-code-raw" class=" no-wrap language-php">import sys, soundfile as sf
-from huggingface_hub import snapshot_download
-
-repo = snapshot_download("interfaze-ai/diffusion-gemma-asr-small")   # adapter, ~170 MB
-sys.path.insert(0, repo)
-from inference import load, transcribe
-
-# Loads frozen DiffusionGemma-26B + whisper-small + this adapter.
-model, tok, fe = load(f"{repo}/diffusion_asr_small.pt", device="cuda")
-
-wav, sr = sf.read("audio.wav")   # 16 kHz mono float32
-print(transcribe(wav, model, tok, fe, max_steps=16))</code></pre></div></div>
-
-
-
-<p class="wp-block-paragraph">A command-line path also works from inside the downloaded repo:</p>
-
-
-
-<div class="dm-code-snippet dark dm-normal-version default no-background-mobile" snippet-height="" style="background-color:#abb8c3"><div class="control-language"><div class="dm-buttons"><div class="dm-buttons-left"><div class="dm-button-snippet red-button"></div><div class="dm-button-snippet orange-button"></div><div class="dm-button-snippet green-button"></div></div><div class="dm-buttons-right"><a id="dm-copy-raw-code"><span class="dm-copy-text">Copy Code</span><span class="dm-copy-confirmed" style="display:none">Copied</span><span class="dm-error-message" style="display:none">Use a different Browser</span></a></div></div><pre class=" no-line-numbers"><code id="dm-code-raw" class=" no-wrap language-php">python inference.py audio.wav
-</code></pre></div></div>
-
-
-
-<p class="wp-block-paragraph">The <code>max_steps</code> argument trades speed for accuracy. The team notes 8 is near-best and fastest. The default is 16. The base models load under their own licenses: DiffusionGemma under Gemma terms, whisper-small under MIT.</p>
-
-
-
-<h2 id="h-interactive-explainer" class="wp-block-heading"><strong>Interactive Explainer</strong></h2>
-
-
-
-<!-- Marktechpost — Diffusion ASR Denoising Visualizer (paste into a Custom HTML block) -->
-<iframe id="mtp-diffusion-asr"
-  srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-&lt;title&gt;Diffusion ASR — Denoising Visualizer&lt;/title&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-&lt;style&gt;
-  :root{
-    --bg:#F4F6F9; --surface:#FFFFFF; --ink:#14181F; --muted:#5A6472;
-    --border:#E4E8EF; --violet:#6B46E5; --violet-soft:#EDE9FE; --violet-ink:#4C33B0;
-    --noise:#A8B0BE; --teal:#0E9F9F; --mtp:#76B900;
-    --font:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
-    --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:transparent}
-  #app{
-    font-family:var(--font); color:var(--ink); background:var(--bg);
-    max-width:920px; margin:0 auto; padding:22px 20px 16px;
-    border:1px solid var(--border); border-radius:16px;
-    -webkit-font-smoothing:antialiased;
-  }
-  .eyebrow{
-    font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
-    color:var(--violet); font-weight:700; display:flex; align-items:center; gap:8px;
-  }
-  .eyebrow::before{content:&quot;&quot;; width:22px; height:2px; background:var(--violet); display:inline-block}
-  h1{font-size:23px; line-height:1.2; font-weight:700; margin:10px 0 4px; letter-spacing:-.02em}
-  .sub{color:var(--muted); font-size:13.5px; line-height:1.5; max-width:640px}
-
-  /* pipeline strip */
-  .pipe{
-    display:flex; align-items:stretch; gap:6px; margin:18px 0 4px; flex-wrap:wrap;
-  }
-  .pnode{
-    flex:1 1 0; min-width:118px; background:var(--surface); border:1px solid var(--border);
-    border-radius:10px; padding:9px 11px; position:relative;
-  }
-  .pnode .k{font-family:var(--mono); font-size:9.5px; letter-spacing:.08em; color:var(--muted); text-transform:uppercase}
-  .pnode .v{font-size:12.5px; font-weight:600; margin-top:3px; line-height:1.25}
-  .pnode .tag{font-size:10.5px; color:var(--muted); margin-top:2px}
-  .pnode.locked .v{color:var(--violet-ink)}
-  .arrow{display:flex; align-items:center; color:var(--noise); font-weight:700; font-size:15px}
-  @media(max-width:640px){ .arrow{display:none} .pnode{flex:1 1 46%} }
-
-  /* controls */
-  .controls{display:flex; flex-wrap:wrap; gap:14px; align-items:flex-end; margin:20px 0 6px}
-  .cgroup{display:flex; flex-direction:column; gap:7px}
-  .clabel{font-family:var(--mono); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
-  .pills{display:flex; gap:6px; flex-wrap:wrap}
-  .pill{
-    font-family:var(--font); font-size:12.5px; font-weight:500; color:var(--ink);
-    background:var(--surface); border:1px solid var(--border); border-radius:999px;
-    padding:6px 12px; cursor:pointer; transition:all .15s ease; line-height:1;
-  }
-  .pill:hover{border-color:var(--violet)}
-  .pill[aria-pressed=&quot;true&quot;]{background:var(--violet); border-color:var(--violet); color:#fff}
-  .pill.step[aria-pressed=&quot;true&quot;]{background:var(--violet)}
-  .actions{display:flex; gap:8px; margin-left:auto}
-  .btn{
-    font-family:var(--font); font-weight:600; font-size:13px; cursor:pointer;
-    border-radius:9px; padding:9px 16px; border:1px solid var(--violet); transition:all .15s ease;
-  }
-  .btn.play{background:var(--violet); color:#fff}
-  .btn.play:hover{background:var(--violet-ink)}
-  .btn.play:disabled{opacity:.5; cursor:default}
-  .btn.reset{background:var(--surface); color:var(--violet)}
-  .btn.reset:hover{background:var(--violet-soft)}
-
-  /* canvas */
-  .stage{
-    background:var(--surface); border:1px solid var(--border); border-radius:12px;
-    padding:16px 16px 14px; margin-top:14px;
-  }
-  .stage-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; gap:12px}
-  .stage-title{font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--muted); text-transform:uppercase}
-  .prog-wrap{flex:1; height:5px; background:var(--border); border-radius:999px; overflow:hidden; max-width:260px}
-  .prog{height:100%; width:0%; background:linear-gradient(90deg,var(--violet),#9F7AEA); transition:width .12s linear}
-  .canvas{
-    display:flex; flex-wrap:wrap; gap:7px; min-height:96px; align-content:flex-start;
-  }
-  .tok{
-    font-family:var(--mono); font-size:14px; font-weight:500; padding:7px 10px; border-radius:8px;
-    background:#F2F3F6; color:var(--noise); border:1px solid var(--border);
-    transition:background .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;
-    user-select:none;
-  }
-  .tok.locking{background:var(--violet-soft); color:var(--violet); border-color:#C9BCF7; transform:translateY(-1px)}
-  .tok.locked{background:#fff; color:var(--ink); border-color:var(--violet-soft)}
-  .caption{font-size:11.5px; color:var(--muted); margin-top:12px; line-height:1.5}
-
-  /* readouts */
-  .reads{display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:14px}
-  @media(max-width:640px){ .reads{grid-template-columns:repeat(2,1fr)} }
-  .read{background:var(--surface); border:1px solid var(--border); border-radius:11px; padding:12px 13px}
-  .read .k{font-family:var(--mono); font-size:9.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted)}
-  .read .v{font-size:22px; font-weight:700; margin-top:5px; letter-spacing:-.02em; font-variant-numeric:tabular-nums}
-  .read .v small{font-size:12px; font-weight:600; color:var(--muted)}
-  .read.rtf .v{color:var(--teal)}
-  .read.wer .v{color:var(--violet-ink)}
-
-  /* tradeoff */
-  .trade{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:15px 16px; margin-top:14px}
-  .trade h3{font-size:13px; font-weight:700; margin-bottom:3px}
-  .trade p{font-size:11.5px; color:var(--muted); line-height:1.5; margin-bottom:14px}
-  .bars{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; align-items:end}
-  .barcol{display:flex; flex-direction:column; align-items:center; gap:8px; cursor:pointer}
-  .barpair{display:flex; gap:5px; align-items:flex-end; height:104px}
-  .bar{width:20px; border-radius:5px 5px 0 0; position:relative; transition:opacity .15s ease}
-  .bar.w{background:var(--violet)}
-  .bar.s{background:var(--teal)}
-  .bar span{position:absolute; top:-16px; left:50%; transform:translateX(-50%); font-family:var(--mono); font-size:9px; color:var(--muted); white-space:nowrap}
-  .barcol .xlab{font-family:var(--mono); font-size:11px; color:var(--muted)}
-  .barcol.sel .xlab{color:var(--violet); font-weight:700}
-  .barcol:not(.sel) .barpair{opacity:.42}
-  .legend{display:flex; gap:16px; margin-top:12px; font-size:11px; color:var(--muted)}
-  .legend i{display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:5px; vertical-align:-1px}
-
-  /* footer */
-  .foot{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-top:16px; padding-top:13px; border-top:1px solid var(--border)}
-  .foot .src{font-size:11px; color:var(--muted); line-height:1.5}
-  .foot .src a{color:var(--violet); text-decoration:none}
-  .brand{font-family:var(--mono); font-size:11px; font-weight:700; color:var(--mtp); display:flex; align-items:center; gap:7px; white-space:nowrap}
-  .brand::before{content:&quot;&quot;; width:9px; height:9px; border-radius:2px; background:var(--mtp); display:inline-block}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;div id=&quot;app&quot;&gt;
-  &lt;div class=&quot;eyebrow&quot;&gt;Interactive · Diffusion ASR&lt;/div&gt;
-  &lt;h1&gt;Watch a transcript denoise, one parallel step at a time&lt;/h1&gt;
-  &lt;p class=&quot;sub&quot;&gt;
-    &lt;b&gt;diffusion-gemma-asr-small&lt;/b&gt; transcribes by denoising a 192-token canvas of random vocabulary
-    tokens into text — all positions at once. Pick a language, set the denoising steps, and press play.
-  &lt;/p&gt;
-
-  &lt;!-- pipeline --&gt;
-  &lt;div class=&quot;pipe&quot; id=&quot;pipe&quot;&gt;
-    &lt;div class=&quot;pnode&quot; data-stage=&quot;0&quot;&gt;&lt;div class=&quot;k&quot;&gt;Input&lt;/div&gt;&lt;div class=&quot;v&quot;&gt;Raw audio&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;16 kHz mono&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
-    &lt;div class=&quot;pnode&quot; data-stage=&quot;1&quot;&gt;&lt;div class=&quot;k&quot;&gt;Frozen encoder&lt;/div&gt;&lt;div class=&quot;v&quot;&gt;whisper-small&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;1500 × 768-dim&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
-    &lt;div class=&quot;pnode&quot; data-stage=&quot;2&quot;&gt;&lt;div class=&quot;k&quot;&gt;Trained ~19M&lt;/div&gt;&lt;div class=&quot;v&quot;&gt;Projector&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;188 audio tokens&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
-    &lt;div class=&quot;pnode&quot; data-stage=&quot;3&quot;&gt;&lt;div class=&quot;k&quot;&gt;Frozen 26B&lt;/div&gt;&lt;div class=&quot;v&quot;&gt;DiffusionGemma&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;denoises canvas&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;arrow&quot;&gt;→&lt;/div&gt;
-    &lt;div class=&quot;pnode&quot; data-stage=&quot;4&quot;&gt;&lt;div class=&quot;k&quot;&gt;Output&lt;/div&gt;&lt;div class=&quot;v&quot;&gt;Transcript&lt;/div&gt;&lt;div class=&quot;tag&quot;&gt;parallel decode&lt;/div&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- controls --&gt;
-  &lt;div class=&quot;controls&quot;&gt;
-    &lt;div class=&quot;cgroup&quot;&gt;
-      &lt;span class=&quot;clabel&quot;&gt;Language&lt;/span&gt;
-      &lt;div class=&quot;pills&quot; id=&quot;langPills&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;cgroup&quot;&gt;
-      &lt;span class=&quot;clabel&quot;&gt;Denoising steps&lt;/span&gt;
-      &lt;div class=&quot;pills&quot; id=&quot;stepPills&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;actions&quot;&gt;
-      &lt;button class=&quot;btn reset&quot; id=&quot;resetBtn&quot;&gt;Reset&lt;/button&gt;
-      &lt;button class=&quot;btn play&quot; id=&quot;playBtn&quot;&gt;<img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png" alt="▶" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Denoise&lt;/button&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- stage --&gt;
-  &lt;div class=&quot;stage&quot;&gt;
-    &lt;div class=&quot;stage-top&quot;&gt;
-      &lt;span class=&quot;stage-title&quot;&gt;Transcript canvas&lt;/span&gt;
-      &lt;div class=&quot;prog-wrap&quot;&gt;&lt;div class=&quot;prog&quot; id=&quot;prog&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;canvas&quot; id=&quot;canvas&quot;&gt;&lt;/div&gt;
-    &lt;p class=&quot;caption&quot;&gt;
-      Illustrative visualization of parallel diffusion denoising: confident tokens lock, the rest re-randomize each step.
-      The example transcript is fixed — this animation is not live model inference.
-    &lt;/p&gt;
-  &lt;/div&gt;
-
-  &lt;!-- readouts --&gt;
-  &lt;div class=&quot;reads&quot;&gt;
-    &lt;div class=&quot;read&quot;&gt;&lt;div class=&quot;k&quot;&gt;Step&lt;/div&gt;&lt;div class=&quot;v&quot; id=&quot;rStep&quot;&gt;0 &lt;small&gt;/ 16&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;read&quot;&gt;&lt;div class=&quot;k&quot;&gt;Tokens locked&lt;/div&gt;&lt;div class=&quot;v&quot; id=&quot;rLocked&quot;&gt;0 &lt;small&gt;/ 0&lt;/small&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;read rtf&quot;&gt;&lt;div class=&quot;k&quot;&gt;Real-time factor&lt;/div&gt;&lt;div class=&quot;v&quot; id=&quot;rRtf&quot;&gt;10.3×&lt;/div&gt;&lt;/div&gt;
-    &lt;div class=&quot;read wer&quot;&gt;&lt;div class=&quot;k&quot;&gt;FLEURS-en WER&lt;/div&gt;&lt;div class=&quot;v&quot; id=&quot;rWer&quot;&gt;15.6%&lt;/div&gt;&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- tradeoff --&gt;
-  &lt;div class=&quot;trade&quot;&gt;
-    &lt;h3&gt;Steps vs. accuracy vs. speed&lt;/h3&gt;
-    &lt;p&gt;More denoising steps barely move accuracy but cost throughput. The model converges in about 8 parallel passes. Figures are Interfaze's published FLEURS-en benchmarks.&lt;/p&gt;
-    &lt;div class=&quot;bars&quot; id=&quot;bars&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;legend&quot;&gt;
-      &lt;span&gt;&lt;i style=&quot;background:var(--violet)&quot;&gt;&lt;/i&gt;WER (lower is better)&lt;/span&gt;
-      &lt;span&gt;&lt;i style=&quot;background:var(--teal)&quot;&gt;&lt;/i&gt;Real-time factor (higher is faster)&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- footer --&gt;
-  &lt;div class=&quot;foot&quot;&gt;
-    &lt;div class=&quot;src&quot;&gt;
-      Model: &lt;a href=&quot;https://huggingface.co/interfaze-ai/diffusion-gemma-asr-small&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;interfaze-ai/diffusion-gemma-asr-small&lt;/a&gt;
-      · &lt;a href=&quot;https://interfaze.ai/blog/the-first-open-source-diffusion-audio-asr-model&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Interfaze blog&lt;/a&gt;
-      · &lt;a href=&quot;https://huggingface.co/spaces/interfaze-ai/diffusion-gemma-asr-demo&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Live demo&lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;brand&quot;&gt;Marktechpost&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
-(function(){
-  // ---- data (all figures from Interfaze's published benchmarks) ----
-  var STEP_DATA = {
-    8:  {rtf:&quot;14.9×&quot;, wer:&quot;15.7%&quot;, werNum:15.7, speedNum:14.9},
-    16: {rtf:&quot;10.3×&quot;, wer:&quot;15.6%&quot;, werNum:15.6, speedNum:10.3},
-    32: {rtf:&quot;6.5×&quot;,  wer:&quot;15.2%&quot;, werNum:15.2, speedNum:6.5},
-    48: {rtf:&quot;4.7×&quot;,  wer:&quot;15.6%&quot;, werNum:15.6, speedNum:4.7}
-  };
-  var STEP_LIST = [8,16,32,48];
-
-  var SAMPLES = {
-    &quot;English&quot;:  [&quot;the&quot;,&quot;diffusion&quot;,&quot;decoder&quot;,&quot;refines&quot;,&quot;every&quot;,&quot;token&quot;,&quot;in&quot;,&quot;parallel&quot;],
-    &quot;German&quot;:   [&quot;der&quot;,&quot;diffusions&quot;,&quot;decoder&quot;,&quot;verarbeitet&quot;,&quot;alle&quot;,&quot;token&quot;,&quot;gleichzeitig&quot;],
-    &quot;French&quot;:   [&quot;le&quot;,&quot;décodeur&quot;,&quot;de&quot;,&quot;diffusion&quot;,&quot;affine&quot;,&quot;chaque&quot;,&quot;jeton&quot;,&quot;en&quot;,&quot;parallèle&quot;],
-    &quot;Spanish&quot;:  [&quot;el&quot;,&quot;decodificador&quot;,&quot;de&quot;,&quot;difusión&quot;,&quot;refina&quot;,&quot;cada&quot;,&quot;token&quot;,&quot;en&quot;,&quot;paralelo&quot;],
-    &quot;Hindi&quot;:    [&quot;डिफ्यूज़न&quot;,&quot;डिकोडर&quot;,&quot;सभी&quot;,&quot;टोकन&quot;,&quot;एक&quot;,&quot;साथ&quot;,&quot;परिष्कृत&quot;,&quot;करता&quot;,&quot;है&quot;],
-    &quot;Mandarin&quot;: [&quot;扩散&quot;,&quot;解码器&quot;,&quot;并行&quot;,&quot;地&quot;,&quot;细化&quot;,&quot;每个&quot;,&quot;词元&quot;]
-  };
-  var LANGS = Object.keys(SAMPLES);
-
-  // pool of random &quot;vocabulary&quot; fragments to fill noisy slots
-  var NOISE = [&quot;▁the&quot;,&quot;##ion&quot;,&quot;▁der&quot;,&quot;ка&quot;,&quot;的&quot;,&quot;##ing&quot;,&quot;▁le&quot;,&quot;xq&quot;,&quot;▁el&quot;,&quot;zj&quot;,&quot;##er&quot;,&quot;भ&quot;,&quot;并&quot;,
-    &quot;▁und&quot;,&quot;pф&quot;,&quot;##tok&quot;,&quot;了&quot;,&quot;▁de&quot;,&quot;wм&quot;,&quot;##ité&quot;,&quot;क&quot;,&quot;器&quot;,&quot;▁par&quot;,&quot;##allel&quot;,&quot;zx&quot;,&quot;ство&quot;,&quot;##子&quot;,
-    &quot;▁jeton&quot;,&quot;的&quot;,&quot;ん&quot;,&quot;##ко&quot;,&quot;▁re&quot;,&quot;qv&quot;,&quot;元&quot;,&quot;##ня&quot;,&quot;▁si&quot;,&quot;ต&quot;,&quot;##라&quot;,&quot;▁ль&quot;];
-
-  // ---- state ----
-  var state = { lang:&quot;English&quot;, steps:16, running:false, timer:null };
-
-  var canvasEl = document.getElementById('canvas');
-  var progEl   = document.getElementById('prog');
-  var playBtn  = document.getElementById('playBtn');
-  var resetBtn = document.getElementById('resetBtn');
-  var rStep=document.getElementById('rStep'), rLocked=document.getElementById('rLocked'),
-      rRtf=document.getElementById('rRtf'), rWer=document.getElementById('rWer');
-  var pipeNodes = document.querySelectorAll('#pipe .pnode');
-
-  function rnd(a){ return a[Math.floor(Math.random()*a.length)]; }
-  function postSize(){
-    try{ var h=document.getElementById('app').offsetHeight+40;
-      parent.postMessage({type:'resize', frameHeight:h, height:h},'*'); }catch(e){}
-  }
-
-  // ---- build controls ----
-  function buildPills(containerId, items, current, cls, onPick){
-    var c=document.getElementById(containerId); c.innerHTML=&quot;&quot;;
-    items.forEach(function(it){
-      var b=document.createElement('button');
-      b.className=&quot;pill&quot;+(cls?(&quot; &quot;+cls):&quot;&quot;);
-      b.textContent = (cls===&quot;step&quot;) ? it : it;
-      b.setAttribute('aria-pressed', String(it===current));
-      b.onclick=function(){ if(state.running) return; onPick(it);
-        Array.prototype.forEach.call(c.children,function(x){x.setAttribute('aria-pressed','false');});
-        b.setAttribute('aria-pressed','true'); };
-      c.appendChild(b);
-    });
-  }
-
-  function buildBars(){
-    var host=document.getElementById('bars'); host.innerHTML=&quot;&quot;;
-    var werMax=20, spdMax=16; // honest axes: WER near-flat, speed clearly declining
-    STEP_LIST.forEach(function(s){
-      var d=STEP_DATA[s];
-      var col=document.createElement('div'); col.className=&quot;barcol&quot;+(s===state.steps?&quot; sel&quot;:&quot;&quot;);
-      col.setAttribute('data-step', s);
-      var pair=document.createElement('div'); pair.className=&quot;barpair&quot;;
-      var wh=Math.round(d.werNum/werMax*100);
-      var sh=Math.round(d.speedNum/spdMax*100);
-      pair.innerHTML =
-        '&lt;div class=&quot;bar w&quot; style=&quot;height:'+wh+'%&quot;&gt;&lt;span&gt;'+d.wer+'&lt;/span&gt;&lt;/div&gt;'+
-        '&lt;div class=&quot;bar s&quot; style=&quot;height:'+sh+'%&quot;&gt;&lt;span&gt;'+d.rtf+'&lt;/span&gt;&lt;/div&gt;';
-      var x=document.createElement('div'); x.className=&quot;xlab&quot;; x.textContent=s;
-      col.appendChild(pair); col.appendChild(x);
-      col.onclick=function(){ if(state.running) return; selectSteps(s);
-        document.querySelectorAll('#stepPills .pill').forEach(function(p){
-          p.setAttribute('aria-pressed', String(parseInt(p.textContent,10)===s)); }); };
-      host.appendChild(col);
-    });
-  }
-
-  function markSelectedBar(){
-    document.querySelectorAll('#bars .barcol').forEach(function(c){
-      c.classList.toggle('sel', parseInt(c.getAttribute('data-step'),10)===state.steps);
-    });
-  }
-
-  // ---- render / animation ----
-  function buildCanvas(){
-    canvasEl.innerHTML=&quot;&quot;;
-    var words=SAMPLES[state.lang];
-    words.forEach(function(w,i){
-      var t=document.createElement('span'); t.className=&quot;tok&quot;; t.setAttribute('data-i',i);
-      t.setAttribute('data-word',w); t.textContent=rnd(NOISE);
-      canvasEl.appendChild(t);
-    });
-  }
-
-  function resetView(){
-    stop();
-    buildCanvas();
-    var d=STEP_DATA[state.steps], n=SAMPLES[state.lang].length;
-    progEl.style.width=&quot;0%&quot;;
-    rStep.innerHTML='0 &lt;small&gt;/ '+state.steps+'&lt;/small&gt;';
-    rLocked.innerHTML='0 &lt;small&gt;/ '+n+'&lt;/small&gt;';
-    rRtf.textContent=d.rtf; rWer.textContent=d.wer;
-    pipeNodes.forEach(function(p){p.classList.remove('locked');});
-    playBtn.disabled=false; playBtn.textContent=&quot;<img src="https://s.w.org/images/core/emoji/17.0.2/72x72/25b6.png" alt="▶" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Denoise&quot;;
-    postSize();
-  }
-
-  function lockSchedule(n, steps){
-    // fraction locked after step k (ease-out), then a fixed random reveal order
-    var order=[]; for(var i=0;i&lt;n;i++) order.push(i);
-    for(var j=order.length-1;j&gt;0;j--){var r=Math.floor(Math.random()*(j+1)); var tmp=order[j];order[j]=order[r];order[r]=tmp;}
-    var perStep=[]; // number locked target at each step
-    for(var k=1;k&lt;=steps;k++){
-      var f=1-Math.pow(1-k/steps,1.6);
-      perStep.push(Math.min(n, Math.round(f*n)));
-    }
-    perStep[steps-1]=n;
-    return {order:order, perStep:perStep};
-  }
-
-  function play(){
-    if(state.running) return;
-    state.running=true; playBtn.disabled=true; playBtn.textContent=&quot;Denoising…&quot;;
-    setPillsDisabled(true);
-    var words=SAMPLES[state.lang], n=words.length, steps=state.steps;
-    var toks=canvasEl.querySelectorAll('.tok');
-    var sched=lockSchedule(n, steps);
-    var lockedSet={}; var k=0;
-    var dur = steps&lt;=16 ? 140 : 95;
-
-    state.timer=setInterval(function(){
-      k++;
-      var target=sched.perStep[k-1];
-      // lock next tokens up to target
-      var lockedCount=Object.keys(lockedSet).length;
-      while(lockedCount&lt;target){
-        var idx=sched.order[lockedCount];
-        lockedSet[idx]=true; lockedCount++;
-        (function(el){ el.textContent=el.getAttribute('data-word');
-          el.classList.add('locking');
-          setTimeout(function(){ el.classList.remove('locking'); el.classList.add('locked'); },180);
-        })(toks[idx]);
-      }
-      // re-randomize still-noisy tokens
-      for(var i=0;i&lt;n;i++){ if(!lockedSet[i]){ toks[i].textContent=rnd(NOISE); } }
-      // pipeline pulse
-      pipeNodes.forEach(function(p,pi){ p.classList.toggle('locked', pi&lt;=Math.min(4, Math.floor(k/steps*4)+1)); });
-      // readouts
-      progEl.style.width=Math.round(k/steps*100)+&quot;%&quot;;
-      rStep.innerHTML=k+' &lt;small&gt;/ '+steps+'&lt;/small&gt;';
-      rLocked.innerHTML=Object.keys(lockedSet).length+' &lt;small&gt;/ '+n+'&lt;/small&gt;';
-
-      if(k&gt;=steps){ stop(); pipeNodes.forEach(function(p){p.classList.add('locked');});
-        playBtn.textContent=&quot;✓ Done&quot;; playBtn.disabled=false; setPillsDisabled(false); postSize(); }
-    }, dur);
-  }
-
-  function stop(){ if(state.timer){clearInterval(state.timer); state.timer=null;} state.running=false; }
-  function setPillsDisabled(v){
-    document.querySelectorAll('.pill').forEach(function(p){ p.style.pointerEvents=v?'none':'auto'; p.style.opacity=v?.6:1; });
-  }
-
-  function selectLang(l){ state.lang=l; resetView(); }
-  function selectSteps(s){ state.steps=s; markSelectedBar(); resetView(); }
-
-  // ---- init ----
-  buildPills('langPills', LANGS, state.lang, &quot;&quot;, selectLang);
-  buildPills('stepPills', STEP_LIST, state.steps, &quot;step&quot;, selectSteps);
-  buildBars();
-  playBtn.onclick=play;
-  resetBtn.onclick=resetView;
-  resetView();
-  window.addEventListener('load', postSize);
-  window.addEventListener('resize', postSize);
-})();
-&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-"
-  title="Diffusion ASR Denoising Visualizer"
-  scrolling="no" loading="lazy"
-  style="width:100%;border:0;height:940px;overflow:hidden;display:block"></iframe>
-<script>
-(function(){
-  window.addEventListener("message",function(e){
-    if(e && e.data && e.data.type==="resize"){
-      var h = e.data.frameHeight || e.data.height;
-      var f = document.getElementById("mtp-diffusion-asr");
-      if(f && h){ f.style.height = h + "px"; }
-    }
-  });
-})();
-</script>
-
-
-
-
-<p class="wp-block-paragraph"></p>
-
-
-
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-
-
-<p class="wp-block-paragraph">Check out the<strong> <a href="https://huggingface.co/interfaze-ai/diffusion-gemma-asr-small" target="_blank" rel="noreferrer noopener">Model weights</a> </strong>and <strong><a href="https://interfaze.ai/blog/the-first-open-source-diffusion-audio-asr-model" target="_blank" rel="noreferrer noopener">Technical details</a></strong>.<strong> </strong>Also, feel free to follow us on <strong><a href="https://x.com/intent/follow?screen_name=marktechpost" target="_blank" rel="noreferrer noopener"><mark>Twitter</mark></a></strong> and don’t forget to join our <strong><a href="https://www.reddit.com/r/machinelearningnews/" target="_blank" rel="noreferrer noopener">150k+ML SubReddit</a></strong> and Subscribe to <strong><a href="https://www.aidevsignals.com/" target="_blank" rel="noreferrer noopener">our Newsletter</a></strong>. Wait! are you on telegram? <strong><a href="https://t.me/machinelearningresearchnews" target="_blank" rel="noreferrer noopener">now you can join us on telegram as well.</a></strong></p>
-
-
-
-<p class="wp-block-paragraph">Need to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.?&nbsp;<strong><a href="https://forms.gle/wbash1wF6efRj8G58" target="_blank" rel="noreferrer noopener"><mark>Connect with us</mark></a></strong></p>
-<p>The post <a href="https://www.marktechpost.com/2026/07/02/interfaze-ships-diffusion-gemma-asr-small-an-open-source-diffusion-asr-model-transcribing-six-languages-via-diffusiongemmas-parallel-denoising-decoder/">Interfaze Ships diffusion-gemma-asr-small, an Open-Source Diffusion ASR Model Transcribing Six Languages via DiffusionGemma&#8217;s Parallel Denoising Decoder</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
-]]></content:encoded>
-					
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">80815</post-id>
 	</item>
 	</channel>
 </rss>

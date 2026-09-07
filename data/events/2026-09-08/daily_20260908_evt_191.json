@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260908_evt_191",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "North Korea and Russia open their first road bridge, a symbol of expanding ties - reuters.com",
+  "context": "North Korea and Russia open their first road bridge, a symbol of expanding ties reuters.com",
+  "article_ids": [
+    "18d86462d9ec1dd0fd6a9762b5943c20d22855cdd40293845069e69fc4677df2",
+    "4bda2c0fbec0e289a44c783dae53925b33248639f71e01ca8c356550ba980260"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "North Korea and Russia open their first road bridge, a symbol of expanding ties reuters.com",
+      "title": "North Korea and Russia open their first road bridge, a symbol of expanding ties - reuters.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSDhSOTZweXB2RS1xNmJldmEzczJ4VGRMQUxBWW5ZTkpUUFdNZlVSWGc0MnluLTlpSEFNMC1sTEdPTFBHTHg0a3g0UnJ3dWVoMlUzSUdwWHR0YVE4YU9nclZBMzJnaFFJSURNTW00bS1CQUtnZXhvUm9SSmVibVozQ19xN2hEMFhheDVST0JITW4zMENXSGxscC1SVGtWVXM3YXNTMnpubkx1cDRZS3lBY3ROVEwtUklmR3lpcTM0eGU3QmlJSElLeQ?oc=5",
+      "published_at": "2026-09-07T21:51:43+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Ties between Moscow and Pyongyang have grown extensively amid Russia's invasion of Ukraine.",
+      "title": "Russia and North Korea deepen relations with symbolic road bridge",
+      "url": "https://www.aljazeera.com/news/2026/9/7/russia-and-north-korea-deepen-relations-with-symbolic-road-bridge?traffic_source=rss",
+      "published_at": "2026-09-08T00:22:08+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "North Korea and Russia open their first road bridge, a symbol of expanding ties - reuters.com",
+      "source_id": "reuters_world_google_news",
+      "source_title": "North Korea and Russia open their first road bridge, a symbol of expanding ties - reuters.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSDhSOTZweXB2RS1xNmJldmEzczJ4VGRMQUxBWW5ZTkpUUFdNZlVSWGc0MnluLTlpSEFNMC1sTEdPTFBHTHg0a3g0UnJ3dWVoMlUzSUdwWHR0YVE4YU9nclZBMzJnaFFJSURNTW00bS1CQUtnZXhvUm9SSmVibVozQ19xN2hEMFhheDVST0JITW4zMENXSGxscC1SVGtWVXM3YXNTMnpubkx1cDRZS3lBY3ROVEwtUklmR3lpcTM0eGU3QmlJSElLeQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Russia and North Korea deepen relations with symbolic road bridge",
+      "source_id": "aljazeera_all",
+      "source_title": "Russia and North Korea deepen relations with symbolic road bridge",
+      "source_url": "https://www.aljazeera.com/news/2026/9/7/russia-and-north-korea-deepen-relations-with-symbolic-road-bridge?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

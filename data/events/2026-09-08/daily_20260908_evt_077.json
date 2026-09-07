@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260908_evt_077",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Israeli strikes on southern Lebanese town kill 12 as fears of escalation mount - reuters.com",
+  "context": "Israeli strikes on southern Lebanese town kill 12 as fears of escalation mount reuters.com",
+  "article_ids": [
+    "93ce5ebdd6338bdc2fb5e3023d29fc36fb331746b446f7db55dd73907101c26b",
+    "2a9f71b5f765ea02e7ffc6c820b9ac6eeb65420b0fae177fe75193b9bd1cc9f5"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Israeli strikes on southern Lebanese town kill 12 as fears of escalation mount reuters.com",
+      "title": "Israeli strikes on southern Lebanese town kill 12 as fears of escalation mount - reuters.com",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSDNtVzFxN3MtVEs4UWxoWnA0ekJKVC1EWThJR1hiQ2FvN1d2LU40NXRDaUJGMGRLeF9KaHY1R3dTSmdTRHhHdG9uNTIzZXRRRWVoWW43d0dxM3ZoSTNMM2xEQlhlV011OWlpSHdxTDlmWjl4MW9VQ1ktN3hqU3lEU3dnVUV3XzQzWGZjU3ZBNnNBQVhOek9OeHZ1WnFZb2RacWhmVXdiSGM5Q3FwbmFtcGN6OTJpZF9kNk5YWGladzg?oc=5",
+      "published_at": "2026-09-07T14:48:00+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Lebanon says a recent Israeli escalation is jeopardising a US-brokered ceasefire meant to end the conflict between Israel and Hezbollah.",
+      "title": "Israeli strikes in southern Lebanese village kill 12",
+      "url": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-07T21:39:23+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Israeli strikes on southern Lebanese town kill 12 as fears of escalation mount - reuters.com",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Israeli strikes on southern Lebanese town kill 12 as fears of escalation mount - reuters.com",
+      "source_url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSDNtVzFxN3MtVEs4UWxoWnA0ekJKVC1EWThJR1hiQ2FvN1d2LU40NXRDaUJGMGRLeF9KaHY1R3dTSmdTRHhHdG9uNTIzZXRRRWVoWW43d0dxM3ZoSTNMM2xEQlhlV011OWlpSHdxTDlmWjl4MW9VQ1ktN3hqU3lEU3dnVUV3XzQzWGZjU3ZBNnNBQVhOek9OeHZ1WnFZb2RacWhmVXdiSGM5Q3FwbmFtcGN6OTJpZF9kNk5YWGladzg?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Israeli strikes in southern Lebanese village kill 12",
+      "source_id": "bbc_world",
+      "source_title": "Israeli strikes in southern Lebanese village kill 12",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5yl96vz0edo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

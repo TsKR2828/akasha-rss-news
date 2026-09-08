@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260909_evt_159",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "German police detain suspect after sabotage attacks on power grid - Reuters",
+  "context": "German police detain suspect after sabotage attacks on power grid Reuters",
+  "article_ids": [
+    "198700d1aa3b58a2dccdac4034716fa851b0703339e0d58ffa2f3d837ad24e39",
+    "0fc2fce46118247e81cfd8e64773554be80252df28c67d3fd39c846006c5773c"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "German police detain suspect after sabotage attacks on power grid Reuters",
+      "title": "German police detain suspect after sabotage attacks on power grid - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOXR3NlBTckZLc3c2Q0NRcmJhVGRycnExeThlUjZCTHpWWFR5M1VRTUIzVWdzenF5NTdZaVQ5U2g4c0dKQmo3d1kyMFQxbVlYX0lYZjJIUGtJQXB2NEpOYkhzOWw0Q1FSdC1ocWtCRDZPYWM4QTRoWmE0ZS1rUEoydURPUmRZOFloM0dNLWdBOU1NQ2ZTdDg5MDN6clVtak9seXVQMnZhMA?oc=5",
+      "published_at": "2026-09-08T20:59:44+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The suspect had reportedly claimed responsibility for attacks on electricity substations in letters.",
+      "title": "Sabotage suspect held in Germany after spate of attacks on power grid",
+      "url": "https://www.bbc.co.uk/news/articles/cy5zw56lnx3o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-08T23:57:06+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "German police detain suspect after sabotage attacks on power grid - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "German police detain suspect after sabotage attacks on power grid - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOXR3NlBTckZLc3c2Q0NRcmJhVGRycnExeThlUjZCTHpWWFR5M1VRTUIzVWdzenF5NTdZaVQ5U2g4c0dKQmo3d1kyMFQxbVlYX0lYZjJIUGtJQXB2NEpOYkhzOWw0Q1FSdC1ocWtCRDZPYWM4QTRoWmE0ZS1rUEoydURPUmRZOFloM0dNLWdBOU1NQ2ZTdDg5MDN6clVtak9seXVQMnZhMA?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Sabotage suspect held in Germany after spate of attacks on power grid",
+      "source_id": "bbc_world",
+      "source_title": "Sabotage suspect held in Germany after spate of attacks on power grid",
+      "source_url": "https://www.bbc.co.uk/news/articles/cy5zw56lnx3o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

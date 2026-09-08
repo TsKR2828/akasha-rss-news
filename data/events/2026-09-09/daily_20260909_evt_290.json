@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260909_evt_290",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Air traffic control issue disrupts flights at major UK airports - Reuters",
+  "context": "Air traffic control issue disrupts flights at major UK airports Reuters",
+  "article_ids": [
+    "f2099b87d994998d97a106149d576a20a217645b6106ebda63c34c511574f002",
+    "6a6ddd7823c1213fa1f0ffb8e584307b8816aaec0f7db218efb222084fd00c62"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Air traffic control issue disrupts flights at major UK airports Reuters",
+      "title": "Air traffic control issue disrupts flights at major UK airports - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMjFUM1NiblY2enh0S3E5UEZUV0hXby1vNTM3T2twdTVlSEtZeDAyclZmR2dNWHlJdXpDUzVVWXRkWWRLUTZ2WnNYazlQSHRpSU5icjEtZXR0T3A4MW8ySjZCY1ZkNlZ4TGdWOVdseWZ2cXZ4V0lPWjFTV2JlUnVIQnZ0cHdCa3Z6Q05zZHlpUXZuM0dSQU9YV0RyWVF5dnkyRGF2NFczVktWM0lvUHF0dUgwc2ZlZ19VS0E?oc=5",
+      "published_at": "2026-09-09T03:45:37+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "A technical issue in the UK’s air traffic control system disrupted flights at major airports.",
+      "title": "Hundreds of UK flights disrupted by air traffic control glitch",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/hundreds-of-uk-flights-disrupted-by-air-traffic-control-glitch?traffic_source=rss",
+      "published_at": "2026-09-09T04:24:26+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Air traffic control issue disrupts flights at major UK airports - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Air traffic control issue disrupts flights at major UK airports - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMjFUM1NiblY2enh0S3E5UEZUV0hXby1vNTM3T2twdTVlSEtZeDAyclZmR2dNWHlJdXpDUzVVWXRkWWRLUTZ2WnNYazlQSHRpSU5icjEtZXR0T3A4MW8ySjZCY1ZkNlZ4TGdWOVdseWZ2cXZ4V0lPWjFTV2JlUnVIQnZ0cHdCa3Z6Q05zZHlpUXZuM0dSQU9YV0RyWVF5dnkyRGF2NFczVktWM0lvUHF0dUgwc2ZlZ19VS0E?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Hundreds of UK flights disrupted by air traffic control glitch",
+      "source_id": "aljazeera_all",
+      "source_title": "Hundreds of UK flights disrupted by air traffic control glitch",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/hundreds-of-uk-flights-disrupted-by-air-traffic-control-glitch?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

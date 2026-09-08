@@ -1,0 +1,82 @@
+{
+  "event_id": "daily_20260909_evt_040",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "胡塞武裝襲沙國能源設施",
+  "context": "葉門胡塞武裝（Houthi）對沙烏地阿拉伯發動攻擊，造成能源設施起火，73 人受傷。這波攻擊發生在胡塞武裝與沙烏地支持的葉門政府軍衝突升溫數週之後，維持四年的停火協議因此破局。沙烏地阿拉伯誓言將會回應。",
+  "article_ids": [
+    "39307f880760b600436190b212637c1add9101cc9d32c521914b5188e22a65cd",
+    "eec95be4aff06a563d81034b9af1bc0bae1ac16102e1a17607db61cd37e1268f",
+    "63862bc5b08d9fae7b1f329cc4d5e47e986d1882953b5c5366b70eb0b6d443ab",
+    "c553cf638a6860a85ad97453cccf2b2a31fa45cf7eebe7f5958d62b08dbc6e03"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Houthi attacks disrupt Saudi energy facilities, wound 73, authorities say Reuters",
+      "title": "Houthi attacks disrupt Saudi energy facilities, wound 73, authorities say - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbXB6MGlpMW50OElMY1FiZ2hXYlNmbmI0ZG8xT2RLc0FOWG9IazNMVDdfdTdILUJINFYweFF5VFFOQldXU3k2T0NSekpIOVhyT050UXR3TzRGTEk4TGlnLVhJQ2s2LWRmamNyRGwyT3ZyU1gwQVlSYU5hQ3hBUHo2bTBwckJNQXlqSTQySzhhUV9WR0laNjZJVEktLXpiMF93N3hrYmRRejBXRFlPVmNrTTJJZ0w1NlhITEE?oc=5",
+      "published_at": "2026-09-08T12:19:00+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "The attacks come after weeks of escalating clashes between the Houthis and Saudi-backed government forces in Yemen, which shattered a four-year truce in the country's civil war.",
+      "title": "Houthi attacks on Saudi Arabia ignite fires at oil facilities and wound 73 people",
+      "url": "https://www.npr.org/2026/09/08/g-s1-142296/houthi-attacks-saudi-arabia",
+      "published_at": "2026-09-08T17:09:46+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The Iran-backed Yemeni group's attacks have injured 73 people and caused fires at oil facilities, Saudi authorities say.",
+      "title": "Saudi Arabia vows to respond after Houthis attack cities and energy facilities",
+      "url": "https://www.bbc.co.uk/news/articles/cp849n2nz01o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-08T21:58:32+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "胡塞武裝攻擊造成沙烏地能源設施受損，當局稱 73 人受傷。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Houthi attacks disrupt Saudi energy facilities, wound 73, authorities say - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbXB6MGlpMW50OElMY1FiZ2hXYlNmbmI0ZG8xT2RLc0FOWG9IazNMVDdfdTdILUJINFYweFF5VFFOQldXU3k2T0NSekpIOVhyT050UXR3TzRGTEk4TGlnLVhJQ2s2LWRmamNyRGwyT3ZyU1gwQVlSYU5hQ3hBUHo2bTBwckJNQXlqSTQySzhhUV9WR0laNjZJVEktLXpiMF93N3hrYmRRejBXRFlPVmNrTTJJZ0w1NlhITEE?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "這波攻擊發生在胡塞武裝與沙烏地支持的葉門政府軍衝突升溫數週後，使四年停火協議破局。",
+      "source_id": "npr_world",
+      "source_title": "Houthi attacks on Saudi Arabia ignite fires at oil facilities and wound 73 people",
+      "source_url": "https://www.npr.org/2026/09/08/g-s1-142296/houthi-attacks-saudi-arabia",
+      "support_type": "direct"
+    },
+    {
+      "claim": "伊朗支持的葉門胡塞武裝攻擊城市與能源設施，沙烏地誓言將回應。",
+      "source_id": "bbc_world",
+      "source_title": "Saudi Arabia vows to respond after Houthis attack cities and energy facilities",
+      "source_url": "https://www.bbc.co.uk/news/articles/cp849n2nz01o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "葉門胡塞武裝（Houthi）對沙烏地阿拉伯發動攻擊，能源設施起火，目前已知 73 人受傷。這波攻擊是在胡塞武裝與沙烏地支持的葉門政府軍衝突升溫數週後發生，維持四年的停火協議因此破局。沙烏地阿拉伯已誓言要有所回應。\n\n—— 本則整理自 Reuters、NPR 與 BBC 於 2026 年 9 月 8 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "葉門胡塞武裝（Houthi）對沙烏地阿拉伯發動攻擊，能源設施起火，目前已知 73 人受傷。這波攻擊是在胡塞武裝與沙烏地支持的葉門政府軍衝突升溫數週後發生，維持四年的停火協議因此破局。沙烏地阿拉伯已誓言要有所回應。\n\n本則整理自 Reuters、NPR 與 BBC 於 2026 年 9 月 8 日發佈的報導。",
+  "voice_text": "葉門的胡塞武裝攻擊了沙烏地阿拉伯，能源設施起火，73 人受傷。這波攻擊是在胡塞武裝與沙烏地支持的葉門政府軍衝突升溫數週後發生的，原本維持四年的停火，就這樣破局了。沙烏地阿拉伯已經表態，會有所回應。"
+}

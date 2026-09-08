@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260909_evt_259",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Fourteen go on trial over deadliest Channel small boats disaster",
+  "context": "At least 30 men, women and children drowned when their dinghy capsized on 24 November 2021.",
+  "article_ids": [
+    "1dae714cdb5aa04389c0fe142fdc8d5fa47221a8fd2682a1c296558ee941de18",
+    "d991c6498a35454111f539510b18d4042e39250f83a3fa9f78f4c5f513e4b107"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "At least 30 men, women and children drowned when their dinghy capsized on 24 November 2021.",
+      "title": "Fourteen go on trial over deadliest Channel small boats disaster",
+      "url": "https://www.bbc.co.uk/news/articles/cd94jn72w2yo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-09T01:24:25+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Fourteen men are on trial over the 2021 deaths of 31 migrants while attempting to cross the English Channel.",
+      "title": "Fourteen on trial over deadliest English Channel crossing on record",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/fourteen-on-trial-over-deadliest-english-channel-crossing-on-record?traffic_source=rss",
+      "published_at": "2026-09-09T04:17:38+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Fourteen go on trial over deadliest Channel small boats disaster",
+      "source_id": "bbc_world",
+      "source_title": "Fourteen go on trial over deadliest Channel small boats disaster",
+      "source_url": "https://www.bbc.co.uk/news/articles/cd94jn72w2yo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Fourteen on trial over deadliest English Channel crossing on record",
+      "source_id": "aljazeera_all",
+      "source_title": "Fourteen on trial over deadliest English Channel crossing on record",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/8/fourteen-on-trial-over-deadliest-english-channel-crossing-on-record?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

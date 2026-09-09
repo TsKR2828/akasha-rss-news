@@ -1,0 +1,53 @@
+{
+  "event_id": "daily_20260910_evt_011",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "駭客竊用Claude額度",
+  "context": "一名Claude訂閱用戶上個月發現，自己帳號的token額度在他沒有使用的情況下持續被消耗。Anthropic後續證實，這是駭客入侵帳號盜刷額度，並已對外發出警告。",
+  "article_ids": [
+    "bd88abd7f6e060e9301cf46999916f7b8473150eecc0c37d762d8426689693f1"
+  ],
+  "sources": [
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Last month, a Claude user noticed his account was consuming tokens even though he wasn't working. Anthropic has since warned users about hackers.",
+      "title": "Hackers are stealing Claude tokens from subscribers",
+      "url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "published_at": "2026-09-09T05:10:27+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 28,
+  "selection_reason": "source_tier_2; ai_major_model_or_policy",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Claude訂閱用戶發現帳號token額度在未使用情況下被消耗經查為駭客入侵",
+      "source_id": "techcrunch_ai",
+      "source_title": "Hackers are stealing Claude tokens from subscribers",
+      "source_url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Anthropic已對用戶發出關於帳號遭駭盜刷額度的警告",
+      "source_id": "techcrunch_ai",
+      "source_title": "Hackers are stealing Claude tokens from subscribers",
+      "source_url": "https://techcrunch.com/2026/09/08/hackers-are-stealing-claude-tokens-from-subscribers/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "駭客竊用Claude額度\n\n一名Claude訂閱用戶上個月發現，自己帳號的token額度，在他完全沒有動作的情況下持續被消耗。\n\n後來證實，是有駭客入侵了他的帳號，拿去盜刷token。Anthropic已經對用戶發出警告。\n\n目前這則消息只有單一來源。\n\n—— 本則來自 TechCrunch，2026 年 9 月 9 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "駭客竊用Claude額度\n\n一名Claude訂閱用戶上個月發現一件怪事：自己帳號的token額度，在他完全沒有使用的情況下持續被消耗。後來查出來，是帳號被駭客入侵，額度被拿去盜刷。\n\nAnthropic已經因此對用戶發出警告，提醒大家留意帳號是否有異常的token消耗紀錄。目前這則消息只有單一來源，細節有限。\n\n本則整理自 TechCrunch 於 2026 年 9 月 9 日發佈的報導。",
+  "voice_text": "Claude帳號被駭，token額度遭盜刷。有訂閱用戶發現，自己帳號的額度在沒有使用時持續被消耗，查出來是遭駭客入侵。Anthropic已經對用戶發出警告，提醒留意帳號的異常消耗紀錄。目前的消息只有這個角度，細節還不完整。"
+}

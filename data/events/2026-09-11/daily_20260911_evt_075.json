@@ -1,0 +1,82 @@
+{
+  "event_id": "daily_20260911_evt_075",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "油價飆破每桶百美元",
+  "context": "紐約時報報導，自伊朗戰爭開打以來，原油價格已經上漲了四成，站上每桶100美元；BBC和衛報則指出，油價當天最高衝到每桶105至107美元，主要導因是青年運動組織沿紅海進逼，可能掐住沙烏地阿拉伯的原油出口通道。油氣價格上漲也帶動全球公債遭到拋售，投資人擔心通膨壓力升溫，加上政府借貸又居高不下。",
+  "article_ids": [
+    "5c02fb2ba8d2668ac4accf23aa84f73d28d9d7e2ce10590346b57664f2aef0f5",
+    "1b0ade96b286cbb3846928345ace3ecaf83a972a8d120db21c04b128539069bc",
+    "7765695a6442f5c5fea60b24ce36ecfa3fab3eaa162392e520e737e8b00fa91e",
+    "2532827accc057b638b1f6020ef32ff8df51dabc826ae8cfb880894f7486485d"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The cost of crude has risen 40 percent since the start of the war in Iran, pushing up the price of gasoline, diesel and other refined fuels.",
+      "title": "Oil Hits $100 a Barrel as Turmoil Intensifies in Middle East",
+      "url": "https://www.nytimes.com/2026/09/09/business/brent-oil-100-barrel-iran-war.html",
+      "published_at": "2026-09-10T12:28:03+08:00"
+    },
+    {
+      "source_id": "bbc_business",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The price of oil jumps to $105 a barrel amid signs the Iran war will not be resolved quickly.",
+      "title": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
+      "url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-11T01:38:31+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Crude jumps above $107 a barrel amid concerns over Middle East conflict and out-of-control government borrowing Nervous investors across big economies have been dumping government bonds, driving up the cost of borrowing, as surging oil prices amplified fears about rising inflation. The cost of a barrel of oil jumped 6% to above $107 on Thursday amid concerns that advances by Houthi rebels along the Red Sea coast in Yemen could choke off Saudi crude exports. Continue reading...",
+      "title": "Global bond sell-off resumes as surging oil prices stoke fears about inflation",
+      "url": "https://www.theguardian.com/business/2026/sep/10/global-bond-selloff-oil-prices-inflation-middle-east-conflict-government-borrowing",
+      "published_at": "2026-09-11T02:05:15+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; same_topic_already_selected",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "自伊朗戰爭開打以來，原油價格已上漲四成，站上每桶100美元。",
+      "source_id": "nyt_business",
+      "source_title": "Oil Hits $100 a Barrel as Turmoil Intensifies in Middle East",
+      "source_url": "https://www.nytimes.com/2026/09/09/business/brent-oil-100-barrel-iran-war.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "油價漲破每桶105美元，因中東情勢短期難解。",
+      "source_id": "bbc_business",
+      "source_title": "Oil, gas and borrowing costs surge as fears over Middle East escalate",
+      "source_url": "https://www.bbc.co.uk/news/articles/c5y48rz2nddo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "油價一度暴漲6%衝上每桶107美元，因青年運動組織進逼可能影響沙烏地阿拉伯原油出口，全球公債同步遭拋售。",
+      "source_id": "guardian_business",
+      "source_title": "Global bond sell-off resumes as surging oil prices stoke fears about inflation",
+      "source_url": "https://www.theguardian.com/business/2026/sep/10/global-bond-selloff-oil-prices-inflation-middle-east-conflict-government-borrowing",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "油價飆破每桶百美元\n\n原油價格自伊朗戰爭開打以來已經上漲四成，紐約時報稱站上每桶100美元，BBC與衛報則說當天最高衝到105至107美元。主要導因，是青年運動組織沿紅海進逼，可能掐住沙烏地阿拉伯的原油出口通道。\n\n油氣價格上漲也帶動全球公債遭到拋售，投資人擔心通膨壓力升溫，加上政府借貸又居高不下。\n\n—— 本則來自 The New York Times、BBC、The Guardian，2026 年 9 月 11 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "油價飆破每桶百美元\n\n原油價格自伊朗戰爭開打以來已經上漲四成，紐約時報稱站上每桶100美元，帶動汽油、柴油等成品油價格跟著走高；BBC與衛報的報導則說，油價當天一度暴漲6%，最高衝到105至107美元，主因是青年運動組織沿紅海一路進逼，可能掐住沙烏地阿拉伯的原油出口航道。\n\n油氣價格飆升，也帶動全球公債市場出現拋售潮。投資人一邊擔心通膨壓力升溫，一邊又看著各國政府借貸持續失控，兩股焦慮疊加，讓市場氣氛更加緊張。\n\n本則整理自 The New York Times、BBC 與 The Guardian 於 2026 年 9 月 11 日發佈的報導。",
+  "voice_text": "油價，一路飆破每桶百美元。自從伊朗戰爭開打以來，原油價格已經上漲了四成，帶動汽油、柴油這些成品油也跟著漲。最新的消息是，油價一天之內暴漲6%，衝到每桶105到107美元之間，主要是因為青年運動組織沿著紅海一路進逼，眼看就要掐住沙烏地阿拉伯的原油出口航道。油氣飆升也帶動全球公債被拋售——投資人一邊擔心通膨升溫，一邊看著各國政府借貸持續失控，市場氣氛因此更緊張。"
+}

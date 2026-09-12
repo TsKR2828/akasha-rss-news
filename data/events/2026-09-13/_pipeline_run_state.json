@@ -1,0 +1,40 @@
+{
+  "steps": [
+    {
+      "name": "fetch_rss",
+      "exit_code": 0,
+      "duration_s": 2.74
+    },
+    {
+      "name": "normalize",
+      "exit_code": 0,
+      "duration_s": 1.04
+    },
+    {
+      "name": "classify",
+      "exit_code": 0,
+      "duration_s": 0.62
+    },
+    {
+      "name": "tw_highlight",
+      "exit_code": 0,
+      "duration_s": 0.04
+    },
+    {
+      "name": "dedup",
+      "exit_code": 0,
+      "duration_s": 0.01
+    },
+    {
+      "name": "event_cluster",
+      "exit_code": 0,
+      "duration_s": 1.85
+    },
+    {
+      "name": "select",
+      "exit_code": 0,
+      "duration_s": 0.03
+    }
+  ],
+  "pipeline_start": 1789247206.4702473
+}

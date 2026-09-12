@@ -1,0 +1,91 @@
+{
+  "event_id": "daily_20260913_evt_020",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "紅海危機衝擊油市",
+  "context": "沙烏地阿拉伯關閉一條關鍵石油管線，指控攻擊發射自伊拉克境內的無人機所致。這條「東西管線」原本是沙國為了繞過荷姆茲海峽封鎖而加強使用的替代路線，如今紅海航運又因胡塞武裝控制範圍擴大而面臨新的威脅，海運業者形容風險又升高了一層。",
+  "article_ids": [
+    "11ea12ba25c2cff5d0a147739c21dbae236151d314697f3eeac2661480174226",
+    "8acfa1961ee926b7018dd6894115e61bc020df960f32435f788e50bf19afc60c",
+    "7aca1b3d1a5845a79ae1a61eb5bc89d48a51667c1262f43bd302d377e1be7baa",
+    "19ebfdac89b2589c53f0048850c56a988cc69674aa10d82fee93d965c44056ef"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Gulf oil threatened anew as Houthis reach key island and pipeline is shut down Reuters",
+      "title": "Gulf oil threatened anew as Houthis reach key island and pipeline is shut down - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUk9oUjNYejhGeW1YblJUVWdfQ0JaZU52dHNPZUZVdnpMSkxYS3pKTWhLdjU0REdNUGdubUhnRl9KUXZabHRfbEQyOUJZeXUxQzZfcGFlbFV5V1BlSTVmRkhzdGJaNkpQa3p3OG9LZUt3Q3VXYkdrc2ZRWW9fcWQ4TkYxNFgxNFI0dlhIV0UyUU5Dbk44blJMempZVFVqVm5XbUlfV2dqSlN3YXBNUDlUQmVxS3JQMUxQ?oc=5",
+      "published_at": "2026-09-12T05:28:55+08:00"
+    },
+    {
+      "source_id": "reuters_business_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Saudis shut down oil pipeline as Houthis tighten grip on Red Sea shipping Reuters",
+      "title": "Saudis shut down oil pipeline as Houthis tighten grip on Red Sea shipping - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQczRVMDVmcFFkMWs3TDRSemk1SnA1SW1NSTRmaGU3VXRmbDlvUnlGTll6VHRRYWxjOTl1N3QzcFhIYWs5RjJaRGRmclRQYmpLdW8tNHNXWExZTnpmSklXaFU4YWJvOC1EcEpvcDdQVnpfWnBYT3l6X1pCRW9Bc19YQzNmYnFrbHBNQXd4aE1nVkpKWktoTjFoM2dSa1BGMnlSb3dVMnJhOFVTRHRrXzlHSFVXTDFvZVNzQ19r?oc=5",
+      "published_at": "2026-09-12T08:55:00+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Riyadh has increased use of East-West pipeline since start of war on Iran to bypass closure of strait of Hormuz Saudi Arabia has shut down a critical oil pipeline, accusing militants in Iraq of launching drone attacks on the export route being used to bypass the lockdown of the strait of Hormuz. The world’s largest ⁠crude oil exporter has increased its use of the 745-mile (1,200km) pipeline running across the Arabian peninsula, which links Abqaiq, near the Gulf, to the port of Yanbu, on the Red Sea, since the US-Israeli war against Iran began. Continue reading...",
+      "title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
+      "url": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
+      "published_at": "2026-09-12T23:35:12+08:00"
+    },
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Ship operators already faced severe risks in navigating the region, and now the danger is higher as Houthi militias assert control in the Red Sea.",
+      "title": "Saudi Oil Exports Face Heightened Threats After Attacks on Pipeline",
+      "url": "https://www.nytimes.com/2026/09/11/business/iran-war-hormuz-red-sea.html",
+      "published_at": "2026-09-13T02:55:20+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "沙國關閉關鍵石油管線，指攻擊來自伊拉克境內無人機",
+      "source_id": "guardian_business",
+      "source_title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
+      "source_url": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
+      "support_type": "direct"
+    },
+    {
+      "claim": "東西管線是沙國為繞過荷姆茲海峽封鎖而加強使用的替代路線",
+      "source_id": "guardian_business",
+      "source_title": "Saudi Arabia shuts down key oil pipeline, blaming drones from Iraq",
+      "source_url": "https://www.theguardian.com/world/2026/sep/12/saudi-arabia-shuts-down-oil-pipeline-blaming-drones-from-iraq",
+      "support_type": "background"
+    },
+    {
+      "claim": "紅海航運業者原本已面臨高風險，胡塞武裝控制擴大使風險升高",
+      "source_id": "nyt_business",
+      "source_title": "Saudi Oil Exports Face Heightened Threats After Attacks on Pipeline",
+      "source_url": "https://www.nytimes.com/2026/09/11/business/iran-war-hormuz-red-sea.html",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "紅海危機衝擊油市\n\n沙烏地阿拉伯關閉一條關鍵石油管線，指控攻擊來自伊拉克境內發射的無人機。這條「東西管線」，原本是沙國為了繞過荷姆茲海峽封鎖，才加強使用的替代路線。\n\n同一時間，紅海航運業者本來就承受不小風險，如今胡塞武裝控制範圍擴大，讓風險又升高了一層。\n\n—— 本則來自 Reuters、The Guardian 與 The New York Times，2026 年 9 月 12 日至 13 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "紅海危機衝擊油市\n\n沙烏地阿拉伯關閉一條關鍵石油管線，指控攻擊來自伊拉克境內發射的無人機。這條「東西管線」，原本是沙國為了繞過荷姆茲海峽封鎖，才加強使用的替代路線。\n\n同一時間，紅海航運業者本來就承受不小風險，如今胡塞武裝控制範圍擴大，讓風險又升高了一層。\n\n本則整理自 Reuters、The Guardian 與 The New York Times 於 2026 年 9 月 12 日至 13 日發佈的報導。",
+  "voice_text": "沙烏地阿拉伯關閉了一條關鍵石油管線，說是遭到從伊拉克境內發射的無人機攻擊。這條「東西管線」，原本是沙國為了繞開荷姆茲海峽封鎖，才加強使用的替代路線。紅海的航運業者，本來風險就不小，現在胡塞武裝控制範圍又擴大，風險等於再升高一層。"
+}

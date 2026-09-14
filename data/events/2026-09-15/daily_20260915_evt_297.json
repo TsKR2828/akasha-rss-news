@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260915_evt_297",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "Oil Prices Jump as Attacks Choke Off Saudi Energy Supply",
+  "context": "Traders sold oil futures on concerns that energy supplies from the Persian Gulf would be further diminished by a drone attack on a critical pipeline in Saudi Arabia.",
+  "article_ids": [
+    "c3b97c83ef14ad9c73a8e6d880fb86c3205403d9774abdf5e487176ff1f8795a"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Traders sold oil futures on concerns that energy supplies from the Persian Gulf would be further diminished by a drone attack on a critical pipeline in Saudi Arabia.",
+      "title": "Oil Prices Jump as Attacks Choke Off Saudi Energy Supply",
+      "url": "https://www.nytimes.com/2026/09/13/business/oil-prices-iran-war.html",
+      "published_at": "2026-09-15T04:06:36+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -37,
+  "selection_reason": "source_tier_2; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Oil Prices Jump as Attacks Choke Off Saudi Energy Supply",
+      "source_id": "nyt_business",
+      "source_title": "Oil Prices Jump as Attacks Choke Off Saudi Energy Supply",
+      "source_url": "https://www.nytimes.com/2026/09/13/business/oil-prices-iran-war.html",
+      "support_type": "direct"
+    }
+  ]
+}

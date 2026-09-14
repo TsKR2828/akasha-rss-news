@@ -1,0 +1,89 @@
+{
+  "event_id": "daily_20260915_evt_026",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "俄軍空襲烏波邊境列車",
+  "context": "俄羅斯一架無人機擊中烏克蘭與波蘭邊境附近的一輛列車，時間點就在英國前首相強森（Boris Johnson）與瑞典前總理才剛離開現場之後。目前沒有傳出任何人員傷亡。法國外交部長巴霍（Barrot）認為，這次攻擊的用意是恐嚇並分化歐洲。",
+  "article_ids": [
+    "2dc4fa24bf5586c9799bf62a11f47ba68240456ead4f99efc89622ca163affb0",
+    "f2c5355e2112f903d7fb9b93dac9e0354b4231c70299ea0d71cad9ebe16ff503",
+    "cf5215cf961757c12154b987a5289262afabbdbdd382f875739a4e5b855f1bd4",
+    "ec67130d52e8c6a1b30c23792b093d5e390f7a849be003b0de64643d924b8b78"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "No casualties were reported after a Russian drone struck a train shortly after Boris Johnson and top European officials left the area.",
+      "title": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
+      "url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-14T09:12:20+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "A Russian drone struck a train near the Ukraine-Poland border shortly after senior visiting officials, including the former prime ministers of the U.K. and Sweden, passed through.",
+      "title": "Russian drone hits train near Ukraine-Poland border soon after dignitaries passed through",
+      "url": "https://www.npr.org/2026/09/14/g-s1-143140/russian-drone-ukrainian-train",
+      "published_at": "2026-09-14T13:46:26+08:00"
+    },
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot Reuters",
+      "title": "Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV3YwTFlZNHl1RC0yZDZPMU1iWU5BUUNwSE9yOFREYnFVNlF4cC1qekNSQm5yZktUQXVvRk9JQXhiWXhhYm5uODdTRGhxU0xFSHVJMzNpTkJ4Y2dzYzE3cDlzZC1peGMyUEdCQkdqTy1Ra3daNkZHcGhucUI3WEYzRDVjM0c0Q0Nkc0tGTzhJcm85WGJ1bDZRMmh0TkRWaERpb2lWQWlpbUVvaC1kN3JteXNnLWxwb1FXMncw?oc=5",
+      "published_at": "2026-09-14T16:22:49+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "俄羅斯無人機擊中烏克蘭與波蘭邊境附近一輛列車，未傳出人員傷亡。",
+      "source_id": "npr_world",
+      "source_title": "Russian drone hits train near Ukraine-Poland border soon after dignitaries passed through",
+      "source_url": "https://www.npr.org/2026/09/14/g-s1-143140/russian-drone-ukrainian-train",
+      "support_type": "direct"
+    },
+    {
+      "claim": "攻擊發生於英國前首相強森與瑞典前總理等要員離開現場之後。",
+      "source_id": "npr_world",
+      "source_title": "Russian drone hits train near Ukraine-Poland border soon after dignitaries passed through",
+      "source_url": "https://www.npr.org/2026/09/14/g-s1-143140/russian-drone-ukrainian-train",
+      "support_type": "direct"
+    },
+    {
+      "claim": "法國外交部長巴霍表示，攻擊意在恐嚇並分化歐洲。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Russian strike on train Ukraine-Poland border sought to intimidate, divide Europeans, says France's Barrot - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPV3YwTFlZNHl1RC0yZDZPMU1iWU5BUUNwSE9yOFREYnFVNlF4cC1qekNSQm5yZktUQXVvRk9JQXhiWXhhYm5uODdTRGhxU0xFSHVJMzNpTkJ4Y2dzYzE3cDlzZC1peGMyUEdCQkdqTy1Ra3daNkZHcGhucUI3WEYzRDVjM0c0Q0Nkc0tGTzhJcm85WGJ1bDZRMmh0TkRWaERpb2lWQWlpbUVvaC1kN3JteXNnLWxwb1FXMncw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "事件被視為可能代表戰事升級的訊號。",
+      "source_id": "bbc_world",
+      "source_title": "Watch: Why a Russian strike on train near Ukraine-Poland border could mark an escalation",
+      "source_url": "https://www.bbc.co.uk/news/videos/cx2z5gjj838o?at_medium=RSS&at_campaign=rss",
+      "support_type": "indirect"
+    }
+  ],
+  "thread_text": "俄羅斯一架無人機擊中烏克蘭與波蘭邊境附近的一輛列車，就在英國前首相強森與瑞典前總理等歐洲要員才剛離開現場之後。目前沒有傳出人員傷亡。法國外交部長巴霍認為，這次攻擊意在恐嚇歐洲、製造內部分裂。\n\n本則整理自 BBC、NPR 與 Reuters 於 2026 年 9 月 14 日發佈的報導。",
+  "threads_text": "俄羅斯一架無人機擊中了烏克蘭與波蘭邊境附近的一輛列車，時間點相當敏感——就在英國前首相強森（Boris Johnson）與瑞典前總理等多位歐洲要員才剛離開現場之後。目前沒有傳出任何人員傷亡。法國外交部長巴霍表示，他認為這次攻擊的用意，是要恐嚇沿線的歐洲國家，並在歐洲內部製造分裂。這起事件也讓外界開始討論，俄烏戰事是否正朝著波及更多歐洲國家的方向升級。\n\n本則整理自 BBC、NPR 與 Reuters 於 2026 年 9 月 14 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "voice_text": "俄羅斯一架無人機，擊中了烏克蘭與波蘭邊境附近的一輛列車。時間點很微妙——英國前首相強森和瑞典前總理，才剛離開那個地方沒多久。目前沒有傳出人員傷亡。法國外交部長認為，這次攻擊是要恐嚇歐洲，順便在歐洲內部製造分裂。這也讓人開始擔心，戰事是不是要往更多歐洲國家蔓延過去了。"
+}

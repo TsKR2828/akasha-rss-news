@@ -1,8 +1,129 @@
 # Dev Log
 
 目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復：formatter 半邊 + v2 prompt 上線）
-測試合計：441 條全綠（2026-07-06 實測）
+測試合計：450 條全綠 + 5 skipped（2026-08-02 實測；含工作區待審的 selector 跨日去重測試）
 Enabled sources：27 / 0 failed（2026-07-06：雲端自抓 27/27 全 200 OK）
+
+---
+
+## 2026-09-16 — push 失敗加 Windows 彈出通知；08-02 待審批次入庫
+
+- `local_fetch.py` `_alert()` 加 `_toast()`：push 失敗除了桌面告警檔，
+  同時彈 Windows 通知（借 PowerShell AppID，免裝模組，best-effort 不影響主流程）。
+  背景：09-15 事故告警檔堆了 9 張才被看到。已實測彈出成功。
+- 08-02 起待審的工作區批次（ARTS 標題錨點聚類修復 + 跨日去重 reported_recently
+  + rewrite_prompt 相對時間規則）經月月同意直接入庫；commit 前全測 450 綠 + 5 skipped。
+  相對時間規則隨 push 生效，雲端 routine 即日起讀到新版 rewrite_prompt。
+
+## 2026-09-15 — 修復 push 連斷 9 天：untracked fetch_warnings 撞雲端 commit
+
+**起因**：桌面累積 9 張 AKASHA-PUSH-FAILED 告警單（09-07 ~ 09-15）。本機 04:30 fetch
+每天抓資料、commit 都成功，但 `git pull --rebase --autostash` 連續失敗 → push 不出去。
+雲端 routine 看不到本機資料，每天改走線上 fallback fetch，累積 32 條
+`claude/sharp-turing-*` 孤兒分支；其中兩天（09-11、09-14）fallback 直接推上 main，
+與本機同日期 commit 形成 40+ 個 add/add 衝突，雪球越滾越大。
+
+**根因**：`local_fetch.py` 從未把 `fetch_warnings.json` 納入每日 commit，79 天的警告檔
+全是 untracked。09-07 上午一個雲端 session 推了「補齊 6~7 月快取」commit（22de07b0），
+其中新增 `data/raw/2026-06-16/fetch_warnings.json`——與本機同路徑 untracked 檔相撞，
+rebase 的 checkout 被「untracked file would be overwritten」擋下，此後每天卡死同一點。
+
+**修復**：
+- rebase 本機 9 個 commit 到 origin/main；09-11、09-14 的 add/add 衝突以本機版本為準
+  （兩邊都是同批 feed、相隔一小時內的快照，內容等價）。unstaged 工作區以 patch 備份
+  比對，rebase 前後 byte-level 一致。
+- `scripts/local_fetch.py`：`fetch_warnings.json` 納入每日 commit（防再犯）。
+- 補 commit 79 天 fetch_warnings（49a500a5）；2026-06-16 還原為本機當日真實警告
+  （pts_news SSL 憑證失敗紀錄，雲端版是空的）。
+- 從孤兒分支撿回 **08-19、08-25 兩天僅存於分支的 raw 資料** cherry-pick 進 main
+  （那兩天本機排程沒跑），驗證 32 條分支全為純資料 commit 後全數刪除。
+- 清除桌面 9 張告警單與 repo 根目錄 `NUL` 殘留檔。
+
+**教訓**：fetch 產物要嘛全部入庫、要嘛進 .gitignore，不能留 untracked——本機與雲端
+雙寫同一路徑的架構下，untracked 檔就是 rebase 地雷。告警檔機制本身運作正常
+（09-07 第一天就示警），但堆了 9 張才被處理，告警要有升級管道。
+
+## 2026-08-02 — ARTS 誤合併修復：弱信號聚類加「標題錨點」+ RSS 樣板字剝除
+
+**起因（產出品質檢查發現）**：近三天館報的 ARTS 線連續出現不相關報導被合成同一事件：
+8/1「遊戲夜+夢露」「盧安達小說+亞莉安娜」、7/31「尤薩傳記+芭蕾」、7/30 最嚴重——
+6 源大鍋炒（4 篇無關評論/專欄 + 2 篇真正的 Jared Leto 指控報導）。誤合讓 source_count
+膨脹 → selector 給 `multi_source_confirmed` 加分 + confidence 升 high，**等於用不相關的
+單源報導偽造多源互相印證**。INTL/AI/ECON 線抽查全部正確，問題集中在 ARTS。
+
+**根因（src/event_cluster.py 弱信號路徑）**：同 beat + 標題相似 ≥50 + 共同關鍵詞 ≥5 即合併。
+用真實資料校準發現：(1) Guardian 每篇 summary 結尾的「Continue reading...」樣板字被算進
+關鍵詞（continue/reading 兩詞白送）；(2) 整段長文式 summary 靠 one/times/like/back 這類
+填充詞就能湊滿 5 個共同詞；(3) 評論類標題共用 review。壞配對的標題相似度全貼在 50–51
+門檻邊緣。反觀正確合併（休達/哈瑪斯/Kalshi），兩篇**標題本身**必共享 ≥2 個實體詞
+（ceuta/morocco、trump/hamas）——這就是可靠的分界訊號。
+
+**修復（src/event_cluster.py，三刀）**：
+- `article_keywords()` 剝除 summary 結尾的 RSS 樣板字（`Continue reading` / `Read more`）。
+- 停用詞新增媒體格式詞：review / reviews / continue / reading。
+- 弱信號合併新增**標題錨點**防線：共同關鍵詞 ≥5 之外，兩篇標題本身還須共享
+  ≥2 個內容詞（`TITLE_ANCHOR_MIN = 2`）才可合併。強信號（標題相似 ≥88）不受影響。
+
+**驗證（本機以 7/30、7/31、8/1 三天真實 raw 重跑 normalize→cluster 前後對照）**：
+- 六個已知誤合全部拆開（含 6 源大鍋炒、倫敦兩節慶、社區花園+深圳博物館）。
+- 正確合併全數保留：休達、哈瑪斯、Kalshi、BP、UEFA、Boy George、日本地震、Fauci、
+  Winehouse、Kavinsky、Hansard、Gemini Robotics、Chrome bugs、巴基斯坦礦災。
+- 紅利：Leto 事件解放後聚成乾淨 4 源；多聚出兩個之前漏掉的正確事件
+  （Devil's Mouth 兩家影評、沙烏地參戰兩家報導）。
+- 已知代價：8/1「奧德賽中場休息+Emily Wilson 批評」拆成兩則（同片但確屬兩個事件，可接受）；
+  哈瑪斯事件的 Al Jazeera「World reacts」綜述篇脫離（仍 3 源確認，掉的是圓桌綜述文）。
+- 新增 4 條回歸測試（TestTitleAnchorGuard，用真實事故標題）；全套 450 綠 + 5 skipped。
+
+**rewrite_prompt.md 補「⛔ 相對時間規則」**：8/1 館報「監委出缺」照抄 7/31 原文
+「任期今（31）日屆滿」，與館報日期打架。新規則要求來源的今日/昨日/明日一律轉絕對日期。
+修改前後輸出比對（受影響案例）：
+- 前（8/1 實際產出）：「第六屆監察委員任期今（31）日屆滿」
+- 後（依新規則）：「第六屆監察委員任期已於 7 月 31 日屆滿」
+規則為窄範圍新增段落，不動既有文風/格式規則；效果待下次 Routine 實跑確認。
+
+**未動**：selector 的 `multi_source_confirmed` 加分邏輯——聚類修正後上游已不再餵假多源，
+不需要在下游重複防禦。
+
+---
+
+## 2026-07-12 — autostash 補丁 + 6/27、7/11 補產 + SSL 確認 + Routine 空 prompt 線索
+
+**7/11 告警檔生效但揭露新洞**：local_fetch 04:30 的 `git pull --rebase` 被工作區 unstaged
+修改擋下（exit 128）→ 已改為 `--rebase --autostash`（工作區常駐待審修改是本 repo 常態）。
+卡住的 7/11 raw 已手動 rebase + push 上 main。
+
+**補產**：6/27（17 則，status=ok）與 7/11（18 則，status=ok，含 2 台灣相關 + 2 公視）館報均
+verify_output PASS 並 push 至 daily-reports；issue #10、#18 已關。至此告警 issue 全清零。
+
+**pts_news SSL 確認已癒**：6/29 雲端修的 verify=False 降級這台一直沒 pull 到（即 push 中斷的
+同一事故）；main 重接後實測 fetch_one(pts_news) → 降級重試成功抓 22KB。無需改碼。
+
+**7/9 Routine 缺席根因（重要，未解）**：月月提供當日 Routine 回報——session 醒來時
+「user turn 只有系統 context、沒有任務文字」，agent 自行去處理 issues 後收工，館報全程沒跑。
+即 **排程觸發時 routine_prompt 沒有帶進 session**。需月月在 claude.ai Routines 設定檢查
+prompt 欄位。另一台舊電腦若仍有 akasha-local-fetch 排程須停用（雙機互撞風險）。
+
+---
+
+## 2026-07-11 — 本機 raw push 中斷事故：local_fetch 靜默失敗 11 天（修復 + 7/9 補產）
+
+**症狀**：watchdog 連續告警（issue #16/#17），7/9 整日缺報、7/10 遲到；main 上 `data/raw/` 停在 7/6。
+
+**根因**：6/29 雲端 session 推了 SSL 修復 commit 到 main，本機 clone 沒 pull。`scripts/local_fetch.py`
+的 `git push` 自 6/30 起每天被 non-fast-forward 拒絕，但腳本只 LOG 一行就結束（靜默失敗），
+raw 資料在本機 main 積了 11 個 commit 推不出去。7/7 的分支清理（daily-reports 刪除重建 + squash 進 main）
+讓本機與遠端進一步分家。雲端 Routine 拿不到當日 raw → 退回線上 fetch（僅 ~12 源）→ 6/30–7/6 館報為降級資料產出。
+
+**修復**：
+- 本機 main 重接 origin/main，cherry-pick 7/7–7/10 完整 raw 補推上 main（6/30–7/6 本機版 raw 留在
+  `backup/local-raw-0630-0710` 分支，遠端已有降級版，不硬合）。
+- `scripts/local_fetch.py`：push 前先 `git pull --rebase origin main`；失敗改為在桌面產生
+  `AKASHA-PUSH-FAILED-{date}.txt` 告警檔（教訓：靜默失敗 11 天沒人發現）。
+- 7/9 館報以本機完整 27 源 raw 補產（pipeline → agent 改寫 17 則 → formatter → verify_output PASS，
+  status=partial 僅 pts_news SSL 既有問題），push 至 daily-reports（c963ec5 + 328293b），issue #16 已關。
+
+**未解**：7/9 雲端 Routine 為何完全沒跑（連降級報告都沒有）——run log 在 claude.ai Routines 頁面，需月月查看。
+pts_news SSL 已連續失敗 24 次（`Missing Subject Key Identifier`），待查 fetch_one 降級為何未生效於本源。
 
 ---
 

@@ -137,6 +137,63 @@ class TestMatchesCluster:
         assert event_cluster.matches_cluster(b, [a])
 
 
+class TestTitleAnchorGuard:
+    """弱信號合併的標題錨點防線（2026-08-01 ARTS 誤合事故的回歸測試）。
+
+    長摘要靠填充詞湊滿共同關鍵詞數時，若兩篇標題本身沒有共享 ≥2 個
+    內容詞，不得合併。真實事故案例見 DEV_LOG 2026-08-02。
+    """
+
+    def test_filler_keywords_without_title_anchor_no_match(self):
+        """真實案例：家庭遊戲夜專欄 vs 瑪麗蓮夢露遠親新聞。
+        摘要共享 one/back/three/times/two 等填充詞 ≥5，
+        但標題毫無共同實體詞 → 不得合併。"""
+        a = _article("a" * 64, source_id="guardian_culture", beat="ARTS",
+                     title="My family is coming apart so it is time for one last video game session",
+                     summary="For twenty years there have been five of us living together. "
+                             "one back three times two other games night")
+        b = _article("b" * 64, source_id="guardian_film", beat="ARTS",
+                     title="Marilyn Monroe is Dakota Johnson's ninth cousin three times removed",
+                     summary="A short film will premiere this year. "
+                             "one back three times two other resemblance ancestry",
+                     canonical="https://guardian.com/2")
+        assert not event_cluster.matches_cluster(b, [a])
+
+    def test_review_format_word_is_not_anchor(self):
+        """真實案例：小說書評 vs 專輯樂評。標題只共一個格式詞 review，
+        不構成事件錨點 → 不得合併。"""
+        a = _article("a" * 64, source_id="guardian_books", beat="ARTS",
+                     title="Jacaranda by Gael Faye review the limits of forgiveness after Rwanda",
+                     summary="questions life through herself novel genocide family trauma memory")
+        b = _article("b" * 64, source_id="guardian_music", beat="ARTS",
+                     title="Ariana Grande Petal review calm controlled anger at exes fans and the media",
+                     summary="questions life through herself album anger singer release memory",
+                     canonical="https://guardian.com/2")
+        assert not event_cluster.matches_cluster(b, [a])
+
+    def test_entity_title_anchor_still_matches(self):
+        """真實案例：休達移民潮兩篇報導。標題共享 ceuta/morocco 實體詞
+        → 弱信號合併照常成立。"""
+        a = _article("a" * 64, source_id="npr_world", beat="INTL",
+                     title="At least 18 die after breach of border between Morocco and Spanish territory of Ceuta",
+                     summary="migrants thousands border ceuta morocco spanish swimming fence troops")
+        b = _article("b" * 64, source_id="bbc_world", beat="INTL",
+                     title="Spain sending troops as thousands enter enclave of Ceuta from Morocco",
+                     summary="migrants thousands border ceuta morocco spanish swimming fence troops",
+                     canonical="https://bbc.com/2")
+        assert event_cluster.matches_cluster(b, [a])
+
+    def test_rss_boilerplate_stripped_from_keywords(self):
+        """Guardian summary 結尾的 Continue reading... 樣板字
+        不得計入關鍵詞。"""
+        art = {"title": "Some headline here",
+               "summary": "Actual content words. Continue reading..."}
+        kw = event_cluster.article_keywords(art)
+        assert "continue" not in kw
+        assert "reading" not in kw
+        assert "actual" in kw
+
+
 # ---------------------------------------------------------------------------
 # cluster_articles
 # ---------------------------------------------------------------------------

@@ -281,3 +281,142 @@ class TestSameTopicPenalty:
         # 找 e2，確認 selection_reason 含 same_topic_already_selected
         second = next(e for e in intl if e["event_id"] == e2["event_id"])
         assert "same_topic_already_selected" in (second["selection_reason"] or "")
+
+
+# ---------------------------------------------------------------------------
+# reported_recently (cross-day dedup)
+# ---------------------------------------------------------------------------
+
+class TestLoadRecentReports:
+    def test_loads_urls_and_titles_from_past_days(self, tmp_path):
+        import json
+        report = {
+            "sections": [{
+                "beat": "INTL",
+                "items": [{
+                    "sources": [
+                        {"url": "https://example.com/old-story", "title": "Old Story Title"},
+                        {"url": "https://example.com/another", "title": "Another Article"},
+                    ],
+                }],
+            }],
+        }
+        (tmp_path / "daily_20260617.json").write_text(
+            json.dumps(report), encoding="utf-8",
+        )
+        result = selector.load_recent_reports(tmp_path, "2026-06-18", lookback_days=3)
+        assert "https://example.com/old-story" in result["urls"]
+        assert "https://example.com/another" in result["urls"]
+        assert len(result["titles"]) == 2
+
+    def test_ignores_missing_days(self, tmp_path):
+        result = selector.load_recent_reports(tmp_path, "2026-06-18", lookback_days=3)
+        assert result["urls"] == set()
+        assert result["titles"] == []
+
+    def test_skips_corrupt_json(self, tmp_path):
+        (tmp_path / "daily_20260617.json").write_text("NOT JSON", encoding="utf-8")
+        result = selector.load_recent_reports(tmp_path, "2026-06-18", lookback_days=1)
+        assert result["urls"] == set()
+
+
+class TestMatchesRecentReport:
+    def test_url_exact_match(self):
+        event = _event(sources=[{
+            "source_id": "bbc", "publisher": "BBC",
+            "title": "ChatGPT generates bad images",
+            "url": "https://bbc.com/article/123",
+            "published_at": "2026-06-18T01:00:00+08:00",
+        }])
+        recent = {
+            "urls": {"https://bbc.com/article/123"},
+            "titles": [],
+        }
+        assert selector._matches_recent_report(event, recent) is True
+
+    def test_title_fuzzy_match(self):
+        event = _event(sources=[{
+            "source_id": "bbc", "publisher": "BBC",
+            "title": "ChatGPT generates inappropriate images for users",
+            "url": "https://bbc.com/new-url",
+            "published_at": "2026-06-18T01:00:00+08:00",
+        }])
+        recent = {
+            "urls": set(),
+            "titles": ["chatgpt generates inappropriate images for some users"],
+        }
+        assert selector._matches_recent_report(event, recent) is True
+
+    def test_no_match_different_topic(self):
+        event = _event(sources=[{
+            "source_id": "bbc", "publisher": "BBC",
+            "title": "Fed raises interest rates sharply",
+            "url": "https://bbc.com/fed-rates",
+            "published_at": "2026-06-18T01:00:00+08:00",
+        }])
+        recent = {
+            "urls": {"https://other.com/old"},
+            "titles": ["chatgpt generates inappropriate images"],
+        }
+        assert selector._matches_recent_report(event, recent) is False
+
+    def test_empty_recent_returns_false(self):
+        event = _event()
+        assert selector._matches_recent_report(event, {"urls": set(), "titles": []}) is False
+
+
+class TestReportedRecentlyPenalty:
+    SCORE_CONFIG_WITH_RECENT = {
+        **SCORE_CONFIG,
+        "selection_score": {
+            **SCORE_CONFIG["selection_score"],
+            "reported_recently": -40,
+        },
+    }
+
+    def test_penalty_applied_when_url_matches(self):
+        e = _event(
+            event_id="daily_20260618_evt_001", beat="INTL",
+            source_count=2, source_tiers=[1, 2],
+            sources=[
+                {"source_id": "bbc", "publisher": "BBC",
+                 "title": "Story X", "url": "https://bbc.com/story-x",
+                 "published_at": "2026-06-18T01:00:00+08:00"},
+                {"source_id": "reuters", "publisher": "Reuters",
+                 "title": "Story X too", "url": "https://reuters.com/story-x",
+                 "published_at": "2026-06-18T02:00:00+08:00"},
+            ],
+        )
+        recent = {
+            "urls": {"https://bbc.com/story-x"},
+            "titles": [],
+        }
+        selected, _ = selector.select_events(
+            [e], self.SCORE_CONFIG_WITH_RECENT, recent_reports=recent,
+        )
+        assert "reported_recently" in (selected[0]["selection_reason"] or "")
+        assert selected[0]["selection_score"] < 53  # 53 = multi(30)+t1(15)+t2(8) without penalty
+
+    def test_no_penalty_without_recent_reports(self):
+        e = _event(
+            event_id="daily_20260618_evt_001", beat="INTL",
+            source_count=2, source_tiers=[1, 2],
+        )
+        selected, _ = selector.select_events(
+            [e], self.SCORE_CONFIG_WITH_RECENT, recent_reports=None,
+        )
+        assert "reported_recently" not in (selected[0]["selection_reason"] or "")
+
+    def test_not_a_hard_block(self):
+        """reported_recently 是扣分不是硬擋——分夠高照樣選入。"""
+        e = _event(
+            event_id="daily_20260618_evt_001", beat="INTL",
+            source_count=2, source_tiers=[1, 1],
+            headline="Major summit on Ukraine war ceasefire",
+        )
+        recent = {"urls": {"https://x.com/1"}, "titles": []}
+        selected, dropped = selector.select_events(
+            [e], self.SCORE_CONFIG_WITH_RECENT, recent_reports=recent,
+        )
+        assert len(selected) == 1
+        assert len(dropped) == 0

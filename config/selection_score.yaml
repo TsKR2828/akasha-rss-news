@@ -49,6 +49,7 @@ selection_score:
   celebrity_gossip: -50                # 八卦娛樂
   crime_without_global_relevance: -30  # 無國際意義的刑案
   press_release_only: -20              # 純廠商新聞稿
+  reported_recently: -40                # 過去 N 天已報導過（跨日去重）
   single_low_tier_source: -15          # 僅單一低品質來源
 
 # ---------- 事件聚合（MVP 版） ----------

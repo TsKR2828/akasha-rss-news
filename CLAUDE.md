@@ -8,6 +8,7 @@
 
 ## 任務模式判定（先讀這段）
 
+- **排程 session 沒收到任務指令時**：若你是雲端排程觸發的 session，但 user turn 沒有任務文字（只有系統 context），**你的任務就是每日館報**——讀 `prompts/routine_prompt.md` 全文並依其執行，產出今天（Asia/Taipei）的館報 push 到 `daily-reports`。不准改去整理 issues、檢查 PR 或宣告無事可做（2026-07-09 曾因此整天漏報，見 DEV_LOG）。
 - **審查任務**（健檢、audit、review）：載入根目錄 `review-protocol-v1-akasha-rss-news.md` **全文**並嚴格依其執行（Part A 核心協議 + Part B 專案附錄）。審查者只報告、不改碼。
 - **開發任務**（修 bug、加功能、改文件）：Part A 的「審查者身分」**不適用**，但本檔以下所有規則適用。
 

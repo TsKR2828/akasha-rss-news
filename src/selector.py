@@ -27,13 +27,16 @@ from typing import Optional
 
 import yaml
 
-from src.event_cluster import article_keywords, extract_keywords
+from rapidfuzz import fuzz
+
+from src.event_cluster import article_keywords, extract_keywords, normalize_title
 
 LOG = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_SCORE_CONFIG = PROJECT_ROOT / "config" / "selection_score.yaml"
 DEFAULT_EVENTS_BASE = PROJECT_ROOT / "data" / "events"
+DEFAULT_OUTPUT_BASE = PROJECT_ROOT / "output"
 
 TAIPEI = timezone(timedelta(hours=8))
 
@@ -69,6 +72,60 @@ def _signal_keyword_hit(event: dict) -> bool:
         return False
     text = (event.get("headline", "") + " " + (event.get("context") or "")).lower()
     return any(s in text for s in signals)
+
+
+def load_recent_reports(
+    output_base: Path,
+    current_date: str,
+    lookback_days: int = 3,
+) -> dict:
+    """讀取過去 N 天的館報，回傳已報導過的 source URL 與標題。"""
+    urls: set[str] = set()
+    titles: list[str] = []
+
+    dt = datetime.strptime(current_date, "%Y-%m-%d")
+    for offset in range(1, lookback_days + 1):
+        past = dt - timedelta(days=offset)
+        filename = f"daily_{past.strftime('%Y%m%d')}.json"
+        path = output_base / filename
+        if not path.exists():
+            continue
+        try:
+            report = json.loads(path.read_text(encoding="utf-8"))
+            for section in report.get("sections", []):
+                for item in section.get("items", []):
+                    for src in item.get("sources", []):
+                        if src.get("url"):
+                            urls.add(src["url"])
+                        if src.get("title"):
+                            titles.append(normalize_title(src["title"]))
+        except (json.JSONDecodeError, KeyError):
+            LOG.warning("Failed to parse recent report: %s", path)
+
+    return {"urls": urls, "titles": titles}
+
+
+def _matches_recent_report(
+    event: dict,
+    recent: dict,
+    title_threshold: int = 85,
+) -> bool:
+    """檢查 event 的任何 source 是否與最近已報導內容重複（URL 或標題）。"""
+    recent_urls = recent.get("urls", set())
+    recent_titles = recent.get("titles", [])
+    if not recent_urls and not recent_titles:
+        return False
+
+    for src in event.get("sources", []):
+        if src.get("url") and src["url"] in recent_urls:
+            return True
+        if src.get("title") and recent_titles:
+            norm = normalize_title(src["title"])
+            if any(fuzz.token_set_ratio(norm, rt) >= title_threshold
+                   for rt in recent_titles):
+                return True
+
+    return False
 
 
 def score_event(event: dict, score_config: dict) -> tuple[int, list[str]]:
@@ -132,6 +189,7 @@ def score_event(event: dict, score_config: dict) -> tuple[int, list[str]]:
 def select_events(
     events: list[dict],
     score_config: dict,
+    recent_reports: Optional[dict] = None,
 ) -> tuple[list[dict], list[dict]]:
     """依 selection_score 排序 + daily_limits 篩選。
 
@@ -142,6 +200,9 @@ def select_events(
     daily_limits = score_config.get("daily_limits", {})
     same_topic_penalty = score_config.get("selection_score", {}).get(
         "same_topic_already_selected", -20,
+    )
+    reported_recently_penalty = score_config.get("selection_score", {}).get(
+        "reported_recently", -40,
     )
 
     # 1. 算分
@@ -179,6 +240,10 @@ def select_events(
         if any(len(event_kws & prev) >= 3 for prev in selected_keyword_sets):
             final_score += same_topic_penalty
             final_rules.append("same_topic_already_selected")
+
+        if recent_reports and _matches_recent_report(e, recent_reports):
+            final_score += reported_recently_penalty
+            final_rules.append("reported_recently")
 
         e["selection_score"] = final_score
         e["selection_reason"] = "; ".join(final_rules) if final_rules else None
@@ -250,6 +315,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--score-config", type=Path, default=DEFAULT_SCORE_CONFIG)
     parser.add_argument("--events-base", type=Path, default=DEFAULT_EVENTS_BASE)
     parser.add_argument("--date", type=str, default=None)
+    parser.add_argument("--output-base", type=Path, default=DEFAULT_OUTPUT_BASE)
+    parser.add_argument("--lookback-days", type=int, default=3)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
 
@@ -267,7 +334,13 @@ def main(argv: Optional[list[str]] = None) -> int:
     events = [json.loads(fp.read_text(encoding="utf-8")) for fp in files
               if not fp.name.startswith("_")]
 
-    selected, dropped = select_events(events, score_config)
+    recent_reports = load_recent_reports(args.output_base, date, args.lookback_days)
+    if recent_reports["urls"]:
+        LOG.info("Cross-day dedup: loaded %d URLs + %d titles from past %d days",
+                 len(recent_reports["urls"]), len(recent_reports["titles"]),
+                 args.lookback_days)
+
+    selected, dropped = select_events(events, score_config, recent_reports)
 
     LOG.info("Events: %d total → %d selected, %d dropped",
              len(events), len(selected), len(dropped))

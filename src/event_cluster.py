@@ -41,7 +41,13 @@ TAIPEI = timezone(timedelta(hours=8))
 # 規格 §7.2 預設值
 TITLE_SIMILARITY_THRESHOLD = 88
 SHARED_KEYWORDS_MIN = 5   # 原 3，提高至 5 防止通用詞 transitive chain
+TITLE_ANCHOR_MIN = 2      # 弱信號合併時，兩篇「標題本身」須共享的內容詞數
 TIME_WINDOW_HOURS = 24
+
+# RSS 樣板字：Guardian 等 feed 的 summary 固定以「Continue reading...」收尾，
+# 這些字會被當成內容詞計入共同關鍵詞，讓不相關文章更容易誤合
+# （2026-08-01 ARTS「遊戲夜+夢露」誤合案例的主因之一）。
+_RSS_BOILERPLATE_RE = re.compile(r"(?:continue reading|read more)[\s.…]*$", re.IGNORECASE)
 
 # 極簡英文停用詞（MVP）
 _BASE_STOPWORDS = {
@@ -68,6 +74,9 @@ _NEWS_GENERIC_STOPWORDS = {
     "world", "global", "international", "national",
     "told", "asked", "added", "called", "made",
     "president", "minister", "secretary",
+    # 媒體格式詞：標明文體而非事件內容（評論/樣板連結字），
+    # ARTS 評論類標題幾乎都帶 review，無事件辨別力
+    "review", "reviews", "continue", "reading",
 }
 
 STOPWORDS = _BASE_STOPWORDS | _NEWS_GENERIC_STOPWORDS
@@ -86,7 +95,8 @@ def extract_keywords(text: str) -> set[str]:
 
 
 def article_keywords(article: dict) -> set[str]:
-    text = (article.get("title", "") + " " + (article.get("summary") or ""))
+    summary = _RSS_BOILERPLATE_RE.sub("", article.get("summary") or "")
+    text = (article.get("title", "") + " " + summary)
     return extract_keywords(text)
 
 
@@ -111,6 +121,7 @@ def matches_cluster(
     a_canonical = article.get("canonical_url", "")
     a_norm_title = normalize_title(article.get("title", ""))
     a_keywords = article_keywords(article)
+    a_title_keywords = extract_keywords(a_norm_title)
     a_beat = article.get("beat", "")
 
     for existing in cluster_articles:
@@ -137,7 +148,14 @@ def matches_cluster(
             if title_sim >= 50:
                 shared = a_keywords & article_keywords(existing)
                 if len(shared) >= shared_kw_min:
-                    return True
+                    # 標題錨點：長摘要（如 Guardian 整段長文）很容易靠
+                    # one/times/like 這類填充詞湊滿共同關鍵詞數，
+                    # 同一事件的兩篇報導標題必然共享實體詞
+                    # （ceuta/morocco、trump/hamas），
+                    # 不相關的評論文標題頂多共一個格式詞。
+                    anchor = a_title_keywords & extract_keywords(existing_norm)
+                    if len(anchor) >= TITLE_ANCHOR_MIN:
+                        return True
 
     return False
 

@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260916_evt_013",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Sakana AI Researchers Introduce PC-ALM, a Layer-Local Alternative to Backpropagation That Trains 1000-Layer Networks",
+  "context": "Sakana AI researchers Jeffrey Seely and Julian Gould introduce Augmented Lagrangian Predictive Coding (PC-ALM), a local-learning alternative to backpropagation. By attaching a Lagrange multiplier to each layer constraint, PC-ALM keeps predictive coding's layer-local updates while",
+  "article_ids": [
+    "dd4fe1c301d3c80d3e33b00e87052396a659a26ceaceee06c0fa90c620cbbb00"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Sakana AI researchers Jeffrey Seely and Julian Gould introduce Augmented Lagrangian Predictive Coding (PC-ALM), a local-learning alternative to backpropagation. By attaching a Lagrange multiplier to each layer constraint, PC-ALM keeps predictive coding's layer-local updates while recovering exact backprop gradients in linear networks. It matches BP across widths and depths from 8 to 128 at an inference budget of T = 2L, lifts gradient cosine to BP from 0.604 to 0.909 in the reference cell, and trains 1000-layer residual MLPs within about 2 points of backprop on MNIST. MIT-licensed JAX code is available. The post Sakana AI Researchers Introduce PC-ALM, a Layer-Local Alternative to Backpropagation That Trains 1000-Layer Networks appeared first on MarkTechPost .",
+      "title": "Sakana AI Researchers Introduce PC-ALM, a Layer-Local Alternative to Backpropagation That Trains 1000-Layer Networks",
+      "url": "https://www.marktechpost.com/2026/09/14/sakana-ai-researchers-introduce-pc-alm-a-layer-local-alternative-to-backpropagation-that-trains-1000-layer-networks/",
+      "published_at": "2026-09-15T04:46:16+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Sakana AI Researchers Introduce PC-ALM, a Layer-Local Alternative to Backpropagation That Trains 1000-Layer Networks",
+      "source_id": "marktechpost",
+      "source_title": "Sakana AI Researchers Introduce PC-ALM, a Layer-Local Alternative to Backpropagation That Trains 1000-Layer Networks",
+      "source_url": "https://www.marktechpost.com/2026/09/14/sakana-ai-researchers-introduce-pc-alm-a-layer-local-alternative-to-backpropagation-that-trains-1000-layer-networks/",
+      "support_type": "direct"
+    }
+  ]
+}

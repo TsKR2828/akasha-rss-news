@@ -1,0 +1,82 @@
+{
+  "event_id": "daily_20260822_evt_297",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "俄襲烏購物中心15死",
+  "context": "俄羅斯無人機以連續兩波的「double-tap」方式攻擊烏克蘭克里維里赫一座人潮眾多的購物中心，造成至少 15 人死亡、約 130 人受傷，傷者包括 23 名兒童。克里維里赫是總統澤倫斯基的家鄉，他痛斥這場攻擊「犬儒而卑劣」。",
+  "article_ids": [
+    "f08bffd9059831786d14c4e5fa1134dd92c003c23a98a874bd021a5ee9a09523",
+    "4e9d4cc63da2ebcb0699a3c8aeb2f2337cf54c5b30bf528e84a66f3ce4d362d9",
+    "c0115c2e36bb23b739231a94d6c3694401b9bd46cfa8f56b7cc537d5b80db063",
+    "1ee3de1421b5e89c602067b1a7e0e8c29e0a2a9308248540332efad4545de8a0"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Ukraine's Volodymyr Zelenskyy slams 'cynical and despicable' attack on his hometown Kryvyi Rih that injured over 120.",
+      "title": "Russian drone attack on busy shopping centre kills 14 in Ukraine",
+      "url": "https://www.aljazeera.com/news/2026/8/21/russian-drone-attack-on-busy-shopping-centre-kills-14-in-ukraine?traffic_source=rss",
+      "published_at": "2026-08-22T02:17:40+08:00"
+    },
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Russian 'double-tap' strike on shopping centre in Ukraine kills 15 and wounds 130 Reuters",
+      "title": "Russian 'double-tap' strike on shopping centre in Ukraine kills 15 and wounds 130 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOME1nc2ZfV3l1LXlTQ29EZlNTd3drS1ZwNHBnbTdKd3VmVG5ZYkVpWngxV1BNQWFWY3VEMk8tVUVSX215cEgwV0ZRejFmR05LalNab3dkLXNwMTVkSmxDd3hlYjRGMkVZRHBlS1lQbU15R0hCQ3lvWHNpSW5QbUNvSmRVWnZhSVlYYW5IWUJCZGFTckZTdlVDNE9Wb3JsWkFvTHRkNmVscnNFUQ?oc=5",
+      "published_at": "2026-08-22T03:15:30+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "At least 130 people, including 23 children, were also injured when the shopping centre was hit, according to the regional head.",
+      "title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
+      "url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-22T03:49:56+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "俄軍 double-tap 打擊烏克蘭購物中心，至少 15 死約 130 傷。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Russian 'double-tap' strike on shopping centre in Ukraine kills 15 and wounds 130 - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOME1nc2ZfV3l1LXlTQ29EZlNTd3drS1ZwNHBnbTdKd3VmVG5ZYkVpWngxV1BNQWFWY3VEMk8tVUVSX215cEgwV0ZRejFmR05LalNab3dkLXNwMTVkSmxDd3hlYjRGMkVZRHBlS1lQbU15R0hCQ3lvWHNpSW5QbUNvSmRVWnZhSVlYYW5IWUJCZGFTckZTdlVDNE9Wb3JsWkFvTHRkNmVscnNFUQ?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "傷者包括 23 名兒童。",
+      "source_id": "bbc_world",
+      "source_title": "Russian double-tap drone strike kills 15 in Ukrainian mall, officials say",
+      "source_url": "https://www.bbc.co.uk/news/articles/c39egw7nmk2o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "澤倫斯基斥攻擊犬儒卑劣，事發地為其家鄉克里維里赫。",
+      "source_id": "aljazeera_all",
+      "source_title": "Russian drone attack on busy shopping centre kills 14 in Ukraine",
+      "source_url": "https://www.aljazeera.com/news/2026/8/21/russian-drone-attack-on-busy-shopping-centre-kills-14-in-ukraine?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "俄羅斯無人機攻擊烏克蘭克里維里赫（Kryvyi Rih）一座人潮眾多的購物中心，造成至少 15 人死亡、約 130 人受傷，傷者中有 23 名兒童（各方通報的數字略有出入）。這是一次「double-tap」式的連續打擊。克里維里赫是總統澤倫斯基的家鄉，他痛斥攻擊「犬儒而卑劣」。\n\n本則整理自 Al Jazeera、Reuters 與 BBC 於 2026 年 8 月 22 日發佈的報導。",
+  "threads_text": "俄羅斯無人機，攻擊了烏克蘭一座人潮眾多的購物中心。地點在克里維里赫（Kryvyi Rih）——總統澤倫斯基的家鄉。這是一次「double-tap」式的連續打擊，官員通報至少 15 人死亡、約 130 人受傷，傷者中包括 23 名兒童；各方通報的死傷數字略有出入。澤倫斯基痛斥，這場攻擊「犬儒而卑劣」。\n\n本則整理自 Al Jazeera、Reuters 與 BBC 於 2026 年 8 月 22 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "voice_text": "俄羅斯無人機，打中了烏克蘭一座購物中心。至少 15 人死亡，約 130 人受傷——傷者裡，有 23 名兒童。地點在克里維里赫，攻擊發生時，裡面滿是人。這是一次連續兩波的打擊。克里維里赫是總統澤倫斯基的家鄉，他痛斥這場攻擊，犬儒而卑劣。"
+}

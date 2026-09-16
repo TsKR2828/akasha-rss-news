@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260810_evt_004",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Meet Shepherd: An Open-Source Python Substrate That Lets Meta-Agents Fork, Replay, and Revert Any Agent Run",
+  "context": "Long agent runs accumulate state that no transcript records — edited files, a live dev server, installed packages, a warm prompt cache. When an agent misreads a traceback at step 10 and rewrites a correct file, patching forward burns tokens and restarting re-pays every call. Rese",
+  "article_ids": [
+    "8f5d25625eb4a1bad81afe6dad49e79fd65b498a844f04920bf647091f32e562"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Long agent runs accumulate state that no transcript records — edited files, a live dev server, installed packages, a warm prompt cache. When an agent misreads a traceback at step 10 and rewrites a correct file, patching forward burns tokens and restarting re-pays every call. Researchers at Northeastern University and Stanford University released Shepherd, an MIT-licensed Python runtime substrate that records every agent-environment interaction as a typed event in a Git-like execution trace. Each commit covers the agent process and filesystem together, copy-on-write, so a rewind restores live state instead of just files. The paper reports 5× faster forks than Docker, over 95% prompt-cache reuse on replay, and a live supervisor raising CooperBench pair-coding pass rates from 28.8% to 54.7%. The post Meet Shepherd: An Open-Source Python Substrate That Lets Meta-Agents Fork, Replay, and Revert Any Agent Run appeared first on MarkTechPost .",
+      "title": "Meet Shepherd: An Open-Source Python Substrate That Lets Meta-Agents Fork, Replay, and Revert Any Agent Run",
+      "url": "https://www.marktechpost.com/2026/08/08/meet-shepherd-an-open-source-python-substrate-that-lets-meta-agents-fork-replay-and-revert-any-agent-run/",
+      "published_at": "2026-08-09T04:54:49+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Meet Shepherd: An Open-Source Python Substrate That Lets Meta-Agents Fork, Replay, and Revert Any Agent Run",
+      "source_id": "marktechpost",
+      "source_title": "Meet Shepherd: An Open-Source Python Substrate That Lets Meta-Agents Fork, Replay, and Revert Any Agent Run",
+      "source_url": "https://www.marktechpost.com/2026/08/08/meet-shepherd-an-open-source-python-substrate-that-lets-meta-agents-fork-replay-and-revert-any-agent-run/",
+      "support_type": "direct"
+    }
+  ]
+}

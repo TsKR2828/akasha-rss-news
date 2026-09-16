@@ -1,0 +1,46 @@
+{
+  "event_id": "daily_20260828_evt_229",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "AI 裝了沒人擁有的程式",
+  "context": "有調查發現，Claude、Codex、Hermes 等 AI 編程工具，在企業內部安裝了「沒有人擁有」的程式碼——企業文件裡被找出 227 條安裝指令，指向無人維護的套件。這是 AI 代理時代的新型供應鏈隱患。",
+  "article_ids": [
+    "cd0e4089c815699df99c52c8145da260f1fa4ee7f39ee95362427d28d52a791d"
+  ],
+  "sources": [
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "227 install commands were found in corporate docs pointing at code nobody owns.",
+      "title": "Claude, Codex, and Hermes installed unowned code inside corporate networks",
+      "url": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
+      "published_at": "2026-08-27T22:00:13+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 28,
+  "selection_reason": "source_tier_2; ai_major_model_or_policy",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "light_context",
+  "claim_trace": [
+    {
+      "claim": "調查發現 AI 編程工具在企業網路安裝無主程式碼，227 條安裝指令指向無人擁有的套件。",
+      "source_id": "ars_technica_ai",
+      "source_title": "Claude, Codex, and Hermes installed unowned code inside corporate networks",
+      "source_url": "https://arstechnica.com/security/2026/08/claude-codex-and-hermes-installed-unowned-code-inside-corporate-networks/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "AI 編程助手帶來了新的資安隱患。調查發現，Claude、Codex、Hermes 等工具在企業網路內安裝了「無人擁有」的程式碼——企業文件中被找出 227 條安裝指令，指向沒有人維護、沒有人負責的套件。這類無主套件一旦被有心人註冊接管，就成了供應鏈攻擊的入口。\n\n本則來自 Ars Technica 於 2026 年 8 月 27 日發佈的報導。",
+  "threads_text": "AI 幫你寫程式，也可能幫你裝下炸彈。調查發現，Claude、Codex、Hermes 這些 AI 編程工具，在企業網路裡安裝了「無人擁有」的程式碼——研究者在企業文件中找出 227 條安裝指令，指向沒有人維護、也沒有人負責的套件。問題在於：這種無主套件，任何人都可能搶先註冊、放進惡意程式——AI 照著文件執行安裝時，就把後門一起裝進了公司內網。\n\n本則來自 Ars Technica 於 2026 年 8 月 27 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "voice_text": "AI 幫企業寫程式，也裝進了沒人擁有的程式碼。調查發現，幾款主流 AI 編程工具，在企業網路裡執行了指向無主套件的安裝指令——企業文件裡，這樣的指令被找出兩百二十七條。這些套件沒有人維護、沒有人負責。一旦被有心人搶先註冊，就是供應鏈攻擊的入口。"
+}

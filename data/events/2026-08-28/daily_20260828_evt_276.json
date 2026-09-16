@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260828_evt_276",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Two found dead at school near Berlin, 19-year-old suspect detained - Reuters",
+  "context": "Two found dead at school near Berlin, 19-year-old suspect detained Reuters",
+  "article_ids": [
+    "8b3b31929ed3253858925e678b694f3b66cfcf51d8b53484dc1f16c0ac6c7a7d",
+    "2f8450249929bc109af6cd08fe4f44bf853d277fb765a09fb236146ba4e11afb"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Two found dead at school near Berlin, 19-year-old suspect detained Reuters",
+      "title": "Two found dead at school near Berlin, 19-year-old suspect detained - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUzk2QWRydFNCMFZiOHlnaW8tODRzRXBtTU1yWXFDTHFZQ1MxNjRzNmJSdE55YnRTa3hyVGJ4NWk3U2lhVno5dTFpMG9LVU9YU3VDSVQtTlhLRzhrNjJWOEpnMHRUcnl3WDh3V05wd2NQNHpnZDVMRzQzQms5bzh3UVZXS2NPZlZhOTh2RGpBTEVjU2thb3Qw?oc=5",
+      "published_at": "2026-08-28T00:14:49+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Police have arrested a 19-year-old male suspect after an incident in which two people were killed near the German capital.",
+      "title": "Two killed in 'domestic violence incident' at school near Berlin",
+      "url": "https://www.bbc.co.uk/news/articles/cgqdy8g2zlgo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-08-28T01:07:32+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 45,
+  "selection_reason": "multi_source_confirmed; source_tier_1",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Two found dead at school near Berlin, 19-year-old suspect detained - Reuters",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Two found dead at school near Berlin, 19-year-old suspect detained - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUzk2QWRydFNCMFZiOHlnaW8tODRzRXBtTU1yWXFDTHFZQ1MxNjRzNmJSdE55YnRTa3hyVGJ4NWk3U2lhVno5dTFpMG9LVU9YU3VDSVQtTlhLRzhrNjJWOEpnMHRUcnl3WDh3V05wd2NQNHpnZDVMRzQzQms5bzh3UVZXS2NPZlZhOTh2RGpBTEVjU2thb3Qw?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Two killed in 'domestic violence incident' at school near Berlin",
+      "source_id": "bbc_world",
+      "source_title": "Two killed in 'domestic violence incident' at school near Berlin",
+      "source_url": "https://www.bbc.co.uk/news/articles/cgqdy8g2zlgo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

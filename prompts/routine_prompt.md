@@ -116,6 +116,11 @@ python scripts/verify_output.py --date {date}
 - 不要刪掉任何 `data/raw/` 下的原始 XML。
 - 不要在 `voice_text` 留 URL，即使 source 連結很短。
 - 不要因為某 source 一次失敗就把它停用，連續失敗 3 次才告警。
+- **不要把任何變動 commit / push 到 `claude/*` 工作分支。** pipeline 跑完後
+  `data/raw/{date}/feed_health.json` 等中間變動已隨本 Routine 的 daily-reports push 保存，
+  再推工作分支只會累積無人合併的孤兒分支（2026-06~09 曾堆出 32 條，2026-09-15 人工清除）。
+  本 Routine 唯一的 push 目標是 `daily-reports`；任務結束時工作分支上不留 commit，
+  多餘的工作區變動直接丟棄即可。
 
 ---
 

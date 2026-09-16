@@ -1,0 +1,73 @@
+{
+  "event_id": "daily_20260917_evt_311",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "聯準會升息一碼　三年來首次",
+  "context": "美國聯準會決議委員會一致投票通過升息一碼，利率區間來到3.75%至4%，是2023年以來首次升息。主席沃許（Kevin Warsh）說，這是為了對抗「過高且持續太久」的通膨。即使借貸成本已經墊高、房貸和車貸都變貴，消費支出卻沒有被壓下來。",
+  "article_ids": [
+    "8d133e35639012eb4a1dff04b562694425b9fa46c55d62989b9a96df0e6b7c00",
+    "8b58b879eab2ef5b707ea883635579be848ca82a3b3195be8c85ee584129855f",
+    "40978e97dec035777aaa90d34044d2e096e069f13af6ab4c31e01a83b4dec7ad",
+    "55895241634f63741c2f4a9aa24dc9edd245e6c62104da94f775dfd16d4252f0"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Elevated interest rates have raised the cost of mortgages and car loans without dampening consumer spending.",
+      "title": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "url": "https://www.nytimes.com/2026/09/16/business/economy/fed-interest-rates-borrowing-costs.html",
+      "published_at": "2026-09-17T02:19:24+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Fed committee votes unanimously to raise interest rate by a quarter-percentage point to a range of 3.75% to 4% Federal Reserve raises interest rates – live The US Federal Reserve voted to raise interest rates on Wednesday for the first time since 2023 as the central bank continues to fight to tamp down inflation. The Fed’s open market committee voted unanimously to raise its benchmark interest rate by a quarter-percentage point to a range of 3.75% to 4%. This is the first time the Fed has raised rates since July 2023 and potentially sets Kevin Warsh, the current Fed chair, on a collision course with Donald Trump. Continue reading...",
+      "title": "US Federal Reserve raises interest rates for the first time since 2023",
+      "url": "https://www.theguardian.com/business/2026/sep/16/us-federal-reserve-votes-hike-rates",
+      "published_at": "2026-09-17T02:28:29+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 28,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; economy_macro_policy; same_topic_already_selected",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "聯準會委員會一致投票通過升息一碼，利率至3.75%-4%，為2023年以來首次。",
+      "source_id": "guardian_business",
+      "source_title": "US Federal Reserve raises interest rates for the first time since 2023",
+      "source_url": "https://www.theguardian.com/business/2026/sep/16/us-federal-reserve-votes-hike-rates",
+      "support_type": "direct"
+    },
+    {
+      "claim": "主席沃許表示升息是為了對抗過高且持續太久的通膨。",
+      "source_id": "nyt_business",
+      "source_title": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "source_url": "https://www.nytimes.com/2026/09/16/business/economy/fed-interest-rates-borrowing-costs.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "借貸成本墊高但消費支出未被壓抑。",
+      "source_id": "nyt_business",
+      "source_title": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "source_url": "https://www.nytimes.com/2026/09/16/business/economy/fed-interest-rates-borrowing-costs.html",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "聯準會升息一碼　三年來首次\n\n美國聯準會決議委員會一致投票通過升息一碼，利率區間來到3.75%至4%，是2023年以來首次升息。主席沃許（Kevin Warsh）說，這是為了對抗「過高且持續太久」的通膨。\n\n—— 本則來自 NYT 與 Guardian，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國聯準會決議委員會一致投票通過升息一碼，利率區間來到3.75%至4%，是2023年以來首次升息。主席沃許（Kevin Warsh）說，這是為了對抗「過高且持續太久」的通膨。這次升息背景有點矛盾：借貸成本已經墊高，房貸和車貸都變貴了，但消費支出完全沒被壓下來，這也是聯準會決定動手的原因之一。\n\n本則整理自 NYT 與 Guardian 於 2026 年 9 月 17 日發佈的報導。",
+  "voice_text": "美國聯準會一致投票通過升息一碼，利率區間來到3.75%至4%，是2023年以來首次升息。主席沃許說，這是為了對抗「過高且持續太久」的通膨。這次升息背景有點矛盾——借貸成本已經墊高，房貸和車貸都變貴了，但消費支出完全沒被壓下來，這正是聯準會決定動手的原因之一。"
+}

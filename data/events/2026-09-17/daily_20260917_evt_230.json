@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260917_evt_230",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "US limits visas for South African officials over alleged anti-white discrimination",
+  "context": "Secretary of State Marco Rubio says South Africa has not addressed US concerns over racial inequality.",
+  "article_ids": [
+    "c742c7fdd5c70588e9aef7e7b472b18f5410f8bf2799f7792ed64df17cb04150",
+    "646106099b3302c62d63b9ab16f579602c18d5ae8cc19f6e8cd166cecdf592fe"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Secretary of State Marco Rubio says South Africa has not addressed US concerns over racial inequality.",
+      "title": "US limits visas for South African officials over alleged anti-white discrimination",
+      "url": "https://www.bbc.co.uk/news/articles/cqy0z5y7wnp2o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-16T21:57:03+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Trump administration falling for misinformation from 'fringe groups' alleging discrimination against white Afrikaners.",
+      "title": "South Africa slams planned US visa curbs over alleged racial discrimination",
+      "url": "https://www.aljazeera.com/news/2026/9/16/south-africa-slam-planned-us-sanctions-over-alleged-racial-discrimination?traffic_source=rss",
+      "published_at": "2026-09-17T01:13:06+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "US limits visas for South African officials over alleged anti-white discrimination",
+      "source_id": "bbc_world",
+      "source_title": "US limits visas for South African officials over alleged anti-white discrimination",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqy0z5y7wnp2o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "South Africa slams planned US visa curbs over alleged racial discrimination",
+      "source_id": "aljazeera_all",
+      "source_title": "South Africa slams planned US visa curbs over alleged racial discrimination",
+      "source_url": "https://www.aljazeera.com/news/2026/9/16/south-africa-slam-planned-us-sanctions-over-alleged-racial-discrimination?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

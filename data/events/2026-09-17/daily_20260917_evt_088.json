@@ -1,0 +1,86 @@
+{
+  "event_id": "daily_20260917_evt_088",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "歐盟力挺加拿大成準會員",
+  "context": "歐盟執委會主席馮德萊恩提議讓加拿大成為歐盟史上第一個「準會員」，她形容現在是個「公開充滿敵意的世界」。這項提議背景是加拿大與川普治下的美國關係轉冷，加拿大轉向尋求跟歐盟更緊密的合作。",
+  "article_ids": [
+    "e12a4c6a50f796ded9c9eaeeed5baf958da851c5df4eead74118008ef8fa0180",
+    "a0d170b01039e88d92c644f8ba540779173030a7821537abf290b558c50c8d1b",
+    "840692efabb214389a7f3db070f2b412604fd16103df0a8860775ef588427d07",
+    "5b3cd36f9482fe6d9f641e5cfd8961b0bf30c515154597f576832a3e8c07fe30",
+    "449f6b7a8fd3fc5929b2bb10021a08cfc53f66244b3d78fc095cd122067fd52e",
+    "ceb1574081df4a0d9cadf948c1ae7eefaeaf0254e5072131e2c215d24674807c",
+    "d13d371d02f992db6135443394ec70091acb61e51be7ee3842081256e602ff2a",
+    "5510362c15dfe22b81a70af127442c15f6293b1ddc6ad1cd1d4cd6899560d91e"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "EU's von der Leyen backs partnership with Canada in 'openly hostile world' Reuters",
+      "title": "EU's von der Leyen backs partnership with Canada in 'openly hostile world' - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM3NNS0lVWUJaRWx0UWh5Y0tyWHloOS1zQW55RzdQR1kxN3diNUxrcU1aSkIxYjgzV0hBWUlHak5fdFZ3TUNTYkZlb1NrVlBoRnZ4cC1jOGFaTXhyT2F1dVE5OFRqTEE1ckZGbjBsaWk4a05DclRTVkNaa2UzY1hhLVlDZVpHLWdJU1BsdGtIVmRpVHZRWVMtZ2ktTUdGSHhldnR2SExEVmpfNXA4LXYwaWVSa2RNNmth?oc=5",
+      "published_at": "2026-09-16T12:11:00+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "European Commission President Ursula von der Leyen on Wednesday proposed making Canada the European Union's first associate member, a striking overture as U.S. President Donald Trump's tariffs drive Ottawa closer to Europe.",
+      "title": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
+      "url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
+      "published_at": "2026-09-16T18:48:22+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Canada is seeking closer ties with EU after a breakdown in relations with the US and its president Donald Trump.",
+      "title": "EU chief backs plan for Canada to become 'associate member'",
+      "url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-16T20:36:51+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "馮德萊恩提議讓加拿大成為歐盟第一個準會員。",
+      "source_id": "npr_world",
+      "source_title": "EU's Ursula von der Leyen says she wants Canada to become an associate member",
+      "source_url": "https://www.npr.org/2026/09/16/nx-s1-5970985/canada-become-eu-associate-member",
+      "support_type": "direct"
+    },
+    {
+      "claim": "她形容現在是個公開充滿敵意的世界。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "EU's von der Leyen backs partnership with Canada in 'openly hostile world' - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM3NNS0lVWUJaRWx0UWh5Y0tyWHloOS1zQW55RzdQR1kxN3diNUxrcU1aSkIxYjgzV0hBWUlHak5fdFZ3TUNTYkZlb1NrVlBoRnZ4cC1jOGFaTXhyT2F1dVE5OFRqTEE1ckZGbjBsaWk4a05DclRTVkNaa2UzY1hhLVlDZVpHLWdJU1BsdGtIVmRpVHZRWVMtZ2ktTUdGSHhldnR2SExEVmpfNXA4LXYwaWVSa2RNNmth?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "加拿大與美國關係轉冷，川普關稅政策是背景之一。",
+      "source_id": "bbc_world",
+      "source_title": "EU chief backs plan for Canada to become 'associate member'",
+      "source_url": "https://www.bbc.co.uk/news/articles/cjwyzrr9d3dko?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "歐盟力挺加拿大成準會員\n\n歐盟執委會主席馮德萊恩（Ursula von der Leyen）提議讓加拿大成為歐盟史上第一個「準會員」，她形容現在是個「公開充滿敵意的世界」。這項提議的背景，是加拿大與美國川普政府關係轉冷。\n\n—— 本則來自 Reuters、NPR 與 BBC，2026 年 9 月 16 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "歐盟執委會主席馮德萊恩（Ursula von der Leyen）提議讓加拿大成為歐盟史上第一個「準會員」，她形容現在是個「公開充滿敵意的世界」。這項提議的背景，是加拿大與美國川普政府的關係轉冷，川普的關稅政策把加拿大往歐洲這邊推。加拿大近來一直在尋求跟歐盟建立更緊密的合作關係。\n\n本則整理自 Reuters、NPR 與 BBC 於 2026 年 9 月 16 日發佈的報導。",
+  "voice_text": "歐盟執委會主席馮德萊恩提議，讓加拿大成為歐盟史上第一個「準會員」。她說，現在是個「公開充滿敵意的世界」。這項提議背後，是加拿大跟美國川普政府的關係轉冷——川普的關稅政策，把加拿大往歐洲這邊推。加拿大最近一直在尋求跟歐盟建立更緊密的合作。"
+}

@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260917_evt_039",
+  "beat": "ARTS",
+  "sub_beat": null,
+  "headline": "Kennedy Center to close as Trump threatens to block repairs over name dispute",
+  "context": "President says he will block renovation project unless court decision to bar his name from being added is overturned Kennedy Center leaders say Trump’s name on building may avoid ‘fiscal collapse’ Donald Trump said on Tuesday that the Kennedy Center would close “immediately” and ",
+  "article_ids": [
+    "b575707bfa38884547c33b5b0b17a5e3267bc8206be2d46b23e09b9dbfcdfe49",
+    "3884a30fa6bd7595407826c4c567b4cd09019548da4b1f3aee336f7b8e91a4db"
+  ],
+  "sources": [
+    {
+      "source_id": "guardian_culture",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "President says he will block renovation project unless court decision to bar his name from being added is overturned Kennedy Center leaders say Trump’s name on building may avoid ‘fiscal collapse’ Donald Trump said on Tuesday that the Kennedy Center would close “immediately” and threatened to cancel a planned renovation of the institution if federal courts did not allow his name to be placed on the front of the building. Trump’s ultimatum came shortly after the president’s handpicked board voted, again, to close the institution’s performing arts building in Washington, citing safety and financial concerns. Continue reading...",
+      "title": "Kennedy Center to close as Trump threatens to block repairs over name dispute",
+      "url": "https://www.theguardian.com/us-news/2026/sep/15/trump-kennedy-center-renovations",
+      "published_at": "2026-09-16T06:35:32+08:00"
+    },
+    {
+      "source_id": "nyt_arts",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The announcement came after President Trump said he would cancel a $257 million renovation of the venue if his name is not returned to the building.",
+      "title": "Kennedy Center Closes Its Doors Despite a Judge’s Order",
+      "url": "https://www.nytimes.com/2026/09/15/arts/music/kennedy-center-trump-name-inscription-judge-ruling.html",
+      "published_at": "2026-09-16T07:08:55+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -7,
+  "selection_reason": "multi_source_confirmed; source_tier_2; same_topic_already_selected",
+  "drop_reason": "total_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Kennedy Center to close as Trump threatens to block repairs over name dispute",
+      "source_id": "guardian_culture",
+      "source_title": "Kennedy Center to close as Trump threatens to block repairs over name dispute",
+      "source_url": "https://www.theguardian.com/us-news/2026/sep/15/trump-kennedy-center-renovations",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Kennedy Center Closes Its Doors Despite a Judge’s Order",
+      "source_id": "nyt_arts",
+      "source_title": "Kennedy Center Closes Its Doors Despite a Judge’s Order",
+      "source_url": "https://www.nytimes.com/2026/09/15/arts/music/kennedy-center-trump-name-inscription-judge-ruling.html",
+      "support_type": "direct"
+    }
+  ]
+}

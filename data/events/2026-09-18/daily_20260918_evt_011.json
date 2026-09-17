@@ -1,0 +1,87 @@
+{
+  "event_id": "daily_20260918_evt_011",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "聯準會升息英國按兵",
+  "context": "美國聯準會宣布升息，主席沃許（Kevin Warsh）說，這是為了對抗「過高且拖太久」的通膨。同一週，英格蘭銀行則連續第六次維持利率不變，但警告若能源價格居高不下，未來可能被迫升息。",
+  "article_ids": [
+    "90d45b073f22c715dd74e5fa3e7e03a3d8bbdc4b3c9032d426e37d594e09010b",
+    "54c650dcbb2ca9792f976405986d78f4a3ca502e948ce25f10d6c5a109530534",
+    "f1516668db1f22b32f83ceb4d4faefcee25e273c2f4b964076fb5e92af476b20",
+    "37dacb9e5b569ec5347bfabea3aaacf39701f7800a23d76669b73cc01748ea01",
+    "56cd05faf6944d449100d003df8ea5db0fb35327ae6294614aa1a047261e2563",
+    "850fcf8716d22173ae8fe8a6152b43d2f158923d90822a290c814011a879cba0",
+    "18f2c8a5231585431a0ceb63001e3541ef6fbab46e40ff60a59b768bd843d132",
+    "b9530c4949e82806706f01651e0a57064ed8fa4818fcec23a19c36140522a00b",
+    "6bff40ee57f1e794ce1207663504654ab3ee110395ccc308a1a2c361a3702041"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Kevin M. Warsh, the Federal Reserve chairman, said the bank acted to fight inflation that ‘is too high and has been for too long.’",
+      "title": "Takeaways From the Fed’s Decision to Raise Interest Rates",
+      "url": "https://www.nytimes.com/2026/09/16/business/economy/fed-meeting-interest-rates-warsh-takeaways.html",
+      "published_at": "2026-09-17T03:29:00+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Central bank announces surprise plan to sell billions of pounds in government bonds back to the Treasury Burnham’s talk of ‘breathing space’ at odds with reality of future rate rises The Bank is shaking up its bond sales – why does it matter? Business live – latest updates The Bank of England has kept interest rates on hold as it warned a continuation of the bitter fighting in the Middle East could force it to raise borrowing costs amid mounting fears over inflation. It also announced a surprise plan to sell billions of pounds in UK government bonds back to the Treasury to avoid fuelling turbulence in the gilt market, a decision that could have consequences for the public finances before next month’s budget. Continue reading...",
+      "title": "Bank of England holds interest rates at 3.75% but warns war could force future rises",
+      "url": "https://www.theguardian.com/business/2026/sep/17/bank-of-england-holds-interest-rates-inflation",
+      "published_at": "2026-09-17T20:04:07+08:00"
+    },
+    {
+      "source_id": "bbc_business",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely.",
+      "title": "Interest rates held but Bank signals rise if energy prices stay high",
+      "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-17T22:05:38+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 73,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; economy_macro_policy",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "聯準會主席沃許宣布升息以對抗過高且持續過久的通膨",
+      "source_id": "nyt_business",
+      "source_title": "Takeaways From the Fed’s Decision to Raise Interest Rates",
+      "source_url": "https://www.nytimes.com/2026/09/16/business/economy/fed-meeting-interest-rates-warsh-takeaways.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "英格蘭銀行維持利率3.75%但警告能源價格走高恐迫使未來升息",
+      "source_id": "guardian_business",
+      "source_title": "Bank of England holds interest rates at 3.75% but warns war could force future rises",
+      "source_url": "https://www.theguardian.com/business/2026/sep/17/bank-of-england-holds-interest-rates-inflation",
+      "support_type": "direct"
+    },
+    {
+      "claim": "英格蘭銀行連續第六次維持利率不變並警告能源價格走高恐致升息",
+      "source_id": "bbc_business",
+      "source_title": "Interest rates held but Bank signals rise if energy prices stay high",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n聯準會升息英國按兵\n\n美國聯準會宣布升息，主席沃許說，這是為了對抗「過高且拖太久」的通膨，也是他上任以來對抗通膨的第一個重大動作。同一週，英格蘭銀行連續第六次把利率維持在 3.75%，但警告如果中東戰事持續、能源價格居高不下，未來仍可能被迫升息。英格蘭銀行同時宣布，將把數十億英鎊的公債賣回財政部，這項意外決定牽動下個月的英國財政預算。\n\n—— 本則來自 The New York Times、The Guardian 與 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國聯準會宣布升息，主席沃許（Kevin Warsh）說，這是為了對抗「過高且拖太久」的通膨，這也是他上任以來對抗通膨的第一個重大動作，美國總統川普這次罕見地沒有點名批評他。看看大西洋對岸，英格蘭銀行這一週連續第六次把利率維持在 3.75% 不變，但警告如果中東戰事持續推升能源價格，未來可能被迫升息。英格蘭銀行同時宣布一項意外計畫，要把數十億英鎊的公債賣回財政部，避免公債市場出現動盪，這項決定也牽動了下個月的英國財政預算。\n\n本則整理自 The New York Times、The Guardian 與 BBC 於 2026 年 9 月 17 日發佈的報導。",
+  "voice_text": "美國聯準會宣布升息。主席沃許說，這是為了對抗過高、而且拖了太久的通膨，這也是他上任以來對抗通膨的第一個重大動作。\n\n看看大西洋對岸的英國。英格蘭銀行這一週連續第六次把利率維持不變，但也示警，如果中東戰事持續推升能源價格，未來可能被迫升息。英格蘭銀行還宣布一項意外計畫，要把數十億英鎊的公債賣回財政部，這項決定也牽動了下個月的英國財政預算。"
+}

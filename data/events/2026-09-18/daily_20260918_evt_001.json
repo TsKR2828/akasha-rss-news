@@ -1,0 +1,67 @@
+{
+  "event_id": "daily_20260918_evt_001",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+  "context": "Elevated interest rates have raised the cost of mortgages and car loans without dampening consumer spending.",
+  "article_ids": [
+    "8d133e35639012eb4a1dff04b562694425b9fa46c55d62989b9a96df0e6b7c00",
+    "40978e97dec035777aaa90d34044d2e096e069f13af6ab4c31e01a83b4dec7ad",
+    "55895241634f63741c2f4a9aa24dc9edd245e6c62104da94f775dfd16d4252f0",
+    "bf529d0735a1ebed0be42beb2c08adea26aefc2993e3558018aa0a1823a52ce9"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "Elevated interest rates have raised the cost of mortgages and car loans without dampening consumer spending.",
+      "title": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "url": "https://www.nytimes.com/2026/09/16/business/economy/fed-interest-rates-borrowing-costs.html",
+      "published_at": "2026-09-17T02:19:24+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -17,
+  "selection_reason": "source_tier_2; economy_macro_policy; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "source_id": "nyt_business",
+      "source_title": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "source_url": "https://www.nytimes.com/2026/09/16/business/economy/fed-interest-rates-borrowing-costs.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "How the Fed’s Interest Rate Increase Affects Your Finances",
+      "source_id": "nyt_business",
+      "source_title": "How the Fed’s Interest Rate Increase Affects Your Finances",
+      "source_url": "https://www.nytimes.com/2026/09/16/business/economy/fed-interest-rate-mortgages-loans.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Fed Signals Another Rate Increase Could Be Coming",
+      "source_id": "nyt_business",
+      "source_title": "Fed Signals Another Rate Increase Could Be Coming",
+      "source_url": "https://www.nytimes.com/2026/09/16/business/fed-interest-rates-dot-plot.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump Looks Isolated on Interest Rates",
+      "source_id": "nyt_business",
+      "source_title": "Trump Looks Isolated on Interest Rates",
+      "source_url": "https://www.nytimes.com/2026/09/17/business/dealbook/trump-fed-rates.html",
+      "support_type": "direct"
+    }
+  ]
+}

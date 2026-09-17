@@ -1,0 +1,98 @@
+{
+  "event_id": "daily_20260918_evt_213",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "聯合國：美伊空襲涉戰爭罪",
+  "context": "聯合國委託的人權調查團說，有「合理根據」相信美軍轟炸伊朗涉及戰爭罪，其中一起是今年二月對米納布（Minab）一所小學的攻擊，美方至今未承認執行這次空襲。調查團也指出，伊朗當局鎮壓近期抗議行動時，同樣涉及危害人類罪。",
+  "article_ids": [
+    "7d4a370446bfcfa841640f95594aab12c7947c4e8137993ce30e24d2616258dc",
+    "d9d60318d7b026390923e091e7ad78a5f1d902fc06d1ff29acee8e2c3f6aeff0",
+    "0d96d2c1e601dd24443b2168c67c9ecbda1809ca094fbce6ec8356fc8add2ba0",
+    "9e3f1cbe2097d9b8e906f3446309beb292bff270eca3692ac06250df183bc753"
+  ],
+  "sources": [
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "Human rights experts commissioned by the U.N. say they have found \"reasonable grounds\" to believe the U.S. committed war crimes in Iran, including a strike on a school in the southern city of Minab.",
+      "title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+      "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+      "published_at": "2026-09-17T20:33:36+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The US has not acknowledged carrying out February's deadly strikes on a primary school in Minab and a sports complex in Lamerd.",
+      "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+      "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-17T23:07:47+08:00"
+    },
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity Reuters",
+      "title": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmJVNS1uc3FDVDUwbUJ5bjJkZzRwbTdzNFZYUW00SEloak4wZl9yeXJhWlQ2bEExbjZBSzh6T2lRVjNjQ2VvR1lNZGNBc3BwLXZ6QXJCTmZ3M3BfQVdURWZaaUVOV2k0VkNOTFMwcnhsdXR1VU5IWFRWYlVYNDgzeGNwTDB6d3FURHV4YnZZdFpibE45Qm1tTVJxMi1QZG9lbFFqVW16M1ZzQzRLQW1PVkhud2RLeWtxUVV6OFJweE0wOXZuVG5RRg?oc=5",
+      "published_at": "2026-09-17T23:41:00+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The mission also said Iranian authorities committed crimes against humanity during their crackdown on recent protests.",
+      "title": "UN fact-finding mission says US committed possible war crimes in Iran",
+      "url": "https://www.aljazeera.com/news/2026/9/17/un-fact-finding-mission-says-us-committed-possible-war-crimes-in-iran?traffic_source=rss",
+      "published_at": "2026-09-18T01:02:31+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 78,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "聯合國委託人權調查團認為有合理根據相信美軍在伊朗涉及戰爭罪",
+      "source_id": "npr_world",
+      "source_title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+      "source_url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+      "support_type": "direct"
+    },
+    {
+      "claim": "美方至今未承認二月對伊朗學校與體育館的空襲",
+      "source_id": "bbc_world",
+      "source_title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+      "source_url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "調查團同時認定伊朗當局鎮壓抗議涉及危害人類罪",
+      "source_id": "reuters_world_google_news",
+      "source_title": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmJVNS1uc3FDVDUwbUJ5bjJkZzRwbTdzNFZYUW00SEloak4wZl9yeXJhWlQ2bEExbjZBSzh6T2lRVjNjQ2VvR1lNZGNBc3BwLXZ6QXJCTmZ3M3BfQVdURWZaaUVOV2k0VkNOTFMwcnhsdXR1VU5IWFRWYlVYNDgzeGNwTDB6d3FURHV4YnZZdFpibE45Qm1tTVJxMi1QZG9lbFFqVW16M1ZzQzRLQW1PVkhud2RLeWtxUVV6OFJweE0wOXZuVG5RRg?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "半島電視台指出調查團判定伊朗當局鎮壓抗議涉及危害人類罪",
+      "source_id": "aljazeera_all",
+      "source_title": "UN fact-finding mission says US committed possible war crimes in Iran",
+      "source_url": "https://www.aljazeera.com/news/2026/9/17/un-fact-finding-mission-says-us-committed-possible-war-crimes-in-iran?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 國際大事\n\n聯合國：美伊空襲涉戰爭罪\n\n聯合國委託的人權調查團表示，有合理根據相信美軍今年二月轟炸伊朗米納布一所小學、以及拉梅爾德一處體育館的行動構成戰爭罪，美方至今未承認執行這些空襲。調查團同時指出，伊朗當局鎮壓近期抗議行動時也涉及危害人類罪。\n\n—— 本則來自 NPR、BBC、Reuters 與 Al Jazeera，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "聯合國委託的人權調查團表示，他們找到合理根據，相信美軍在伊朗的軍事行動涉及戰爭罪，其中一起是今年二月對伊朗南部城市米納布一所小學的空襲，另一起發生在拉梅爾德的一處體育館。美方至今沒有承認執行這兩起攻擊。調查團同時指出，伊朗當局鎮壓近期的抗議行動時，也涉及危害人類罪。\n\n本則整理自 NPR、BBC、Reuters 與 Al Jazeera 於 2026 年 9 月 17 日發佈的報導。",
+  "voice_text": "聯合國委託的調查團說，美軍在伊朗的軍事行動，有合理根據被認定構成戰爭罪。其中一起是今年二月對伊朗南部城市米納布一所小學的空襲，另一起發生在拉梅爾德的一處體育館。美方至今沒有承認執行這兩次攻擊。\n\n調查團同時指出，伊朗當局鎮壓近期的抗議行動時，也涉及危害人類罪。"
+}

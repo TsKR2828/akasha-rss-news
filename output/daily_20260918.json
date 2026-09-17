@@ -1,0 +1,3199 @@
+{
+  "reportId": "daily_20260918",
+  "date": "2026-09-18",
+  "timezone": "Asia/Taipei",
+  "generated_at": "2026-09-18T05:14:18.012565+08:00",
+  "status": "ok",
+  "warnings": [],
+  "sections": [
+    {
+      "beat": "INTL",
+      "title": "國際大事",
+      "emoji": "🌍",
+      "items": [
+        {
+          "event_id": "daily_20260918_evt_311",
+          "headline": "查爾斯警告AI恐失控",
+          "context": "英國國王查爾斯三世（King Charles III）向 AI 業界領袖示警，指出 AI 可能發展出他所說的「存在性的危險」，呼籲產業把安全與人性放在開發核心。這是英國王室罕見就 AI 議題公開表態。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際大事\n\n查爾斯警告AI恐失控\n\n英國國王查爾斯三世向 AI 業界領袖公開示警，指出 AI 可能發展出他所說的「存在性的危險」，呼籲業界把安全與人性放在開發核心，而不是一味追求技術突破。\n\n—— 本則來自 Al Jazeera 與 Reuters，2026 年 9 月 18 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "英國國王查爾斯三世向 AI 業界領袖公開示警，指出人工智慧的發展可能帶來「存在性的危險」，呼籲產業把安全與人性放在開發核心，而不是一味追求技術突破。這是英國王室少見就 AI 議題公開表態的場合。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 9 月 18 日發佈的報導。",
+          "voice_text": "英國國王查爾斯三世公開警告 AI 業界，人工智慧可能發展出他所說的「存在性的危險」。他呼籲業界把安全與人性放在開發核心，不要一味追求技術突破。\n\n這是英國王室少見就 AI 議題公開表態的場合。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際大事\n\n查爾斯警告AI恐失控\n\n英國國王查爾斯三世向 AI 業界領袖公開示警，指出 AI 可能發展出他所說的「存在性的危險」，呼籲業界把安全與人性放在開發核心，而不是一味追求技術突破。\n\n—— 本則來自 Al Jazeera 與 Reuters，2026 年 9 月 18 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "英國國王查爾斯三世向 AI 業界領袖公開示警，指出人工智慧的發展可能帶來「存在性的危險」，呼籲產業把安全與人性放在開發核心，而不是一味追求技術突破。這是英國王室少見就 AI 議題公開表態的場合。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 9 月 18 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "英國國王查爾斯三世公開警告 AI 業界，人工智慧可能發展出他所說的「存在性的危險」。他呼籲業界把安全與人性放在開發核心，不要一味追求技術突破。\n\n這是英國王室少見就 AI 議題公開表態的場合。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "British monarch highlights AI's potential darker capacities, urging safety and humanity-focused development.",
+              "title": "The UK’s King Charles warns AI leaders of ‘existential dangers’",
+              "url": "https://www.aljazeera.com/news/2026/9/17/the-uks-king-charles-warns-ai-leaders-of-existential-dangers?traffic_source=rss",
+              "published_at": "2026-09-18T01:29:54+08:00"
+            },
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "King Charles warns tech leaders of 'existential dangers' from AI Reuters",
+              "title": "King Charles warns tech leaders of 'existential dangers' from AI - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdFdPV3JrbjNYMUd3RXlUY3NwOU5RMTVheVM2eHRUQ2VFWnBVU2w2SnFqR05iaHBiZzE5MHlyc1ZhX1NSeWxHMmNLMEx4YkxBQjVZY1A4MllpU19lM0c5RHhnV3JTRkQzWGlDME1Cam9WdlVzTTVNclhxZm90akpuUHFkeW9INXdGbmdiUTBTNHBnZEVSNmxtRDNLUWNPQTh4N05qVmh4c01JUWM?oc=5",
+              "published_at": "2026-09-18T01:40:59+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "查爾斯三世公開警告AI可能帶來存在性的危險",
+              "source_id": "aljazeera_all",
+              "source_title": "The UK’s King Charles warns AI leaders of ‘existential dangers’",
+              "source_url": "https://www.aljazeera.com/news/2026/9/17/the-uks-king-charles-warns-ai-leaders-of-existential-dangers?traffic_source=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "查爾斯三世呼籲AI業界把安全與人性放在開發核心",
+              "source_id": "reuters_world_google_news",
+              "source_title": "King Charles warns tech leaders of 'existential dangers' from AI - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdFdPV3JrbjNYMUd3RXlUY3NwOU5RMTVheVM2eHRUQ2VFWnBVU2w2SnFqR05iaHBiZzE5MHlyc1ZhX1NSeWxHMmNLMEx4YkxBQjVZY1A4MllpU19lM0c5RHhnV3JTRkQzWGlDME1Cam9WdlVzTTVNclhxZm90akpuUHFkeW9INXdGbmdiUTBTNHBnZEVSNmxtRDNLUWNPQTh4N05qVmh4c01JUWM?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260918_evt_213",
+          "headline": "聯合國：美伊空襲涉戰爭罪",
+          "context": "聯合國委託的人權調查團說，有「合理根據」相信美軍轟炸伊朗涉及戰爭罪，其中一起是今年二月對米納布（Minab）一所小學的攻擊，美方至今未承認執行這次空襲。調查團也指出，伊朗當局鎮壓近期抗議行動時，同樣涉及危害人類罪。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際大事\n\n聯合國：美伊空襲涉戰爭罪\n\n聯合國委託的人權調查團表示，有合理根據相信美軍今年二月轟炸伊朗米納布一所小學、以及拉梅爾德一處體育館的行動構成戰爭罪，美方至今未承認執行這些空襲。調查團同時指出，伊朗當局鎮壓近期抗議行動時也涉及危害人類罪。\n\n—— 本則來自 NPR、BBC、Reuters 與 Al Jazeera，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "聯合國委託的人權調查團表示，他們找到合理根據，相信美軍在伊朗的軍事行動涉及戰爭罪，其中一起是今年二月對伊朗南部城市米納布一所小學的空襲，另一起發生在拉梅爾德的一處體育館。美方至今沒有承認執行這兩起攻擊。調查團同時指出，伊朗當局鎮壓近期的抗議行動時，也涉及危害人類罪。\n\n本則整理自 NPR、BBC、Reuters 與 Al Jazeera 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "聯合國委託的調查團說，美軍在伊朗的軍事行動，有合理根據被認定構成戰爭罪。其中一起是今年二月對伊朗南部城市米納布一所小學的空襲，另一起發生在拉梅爾德的一處體育館。美方至今沒有承認執行這兩次攻擊。\n\n調查團同時指出，伊朗當局鎮壓近期的抗議行動時，也涉及危害人類罪。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際大事\n\n聯合國：美伊空襲涉戰爭罪\n\n聯合國委託的人權調查團表示，有合理根據相信美軍今年二月轟炸伊朗米納布一所小學、以及拉梅爾德一處體育館的行動構成戰爭罪，美方至今未承認執行這些空襲。調查團同時指出，伊朗當局鎮壓近期抗議行動時也涉及危害人類罪。\n\n—— 本則來自 NPR、BBC、Reuters 與 Al Jazeera，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "聯合國委託的人權調查團表示，他們找到合理根據，相信美軍在伊朗的軍事行動涉及戰爭罪，其中一起是今年二月對伊朗南部城市米納布一所小學的空襲，另一起發生在拉梅爾德的一處體育館。美方至今沒有承認執行這兩起攻擊。調查團同時指出，伊朗當局鎮壓近期的抗議行動時，也涉及危害人類罪。\n\n本則整理自 NPR、BBC、Reuters 與 Al Jazeera 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "聯合國委託的調查團說，美軍在伊朗的軍事行動，有合理根據被認定構成戰爭罪。其中一起是今年二月對伊朗南部城市米納布一所小學的空襲，另一起發生在拉梅爾德的一處體育館。美方至今沒有承認執行這兩次攻擊。\n\n調查團同時指出，伊朗當局鎮壓近期的抗議行動時，也涉及危害人類罪。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "npr_world",
+              "name": "NPR",
+              "publisher": "NPR",
+              "summary": "Human rights experts commissioned by the U.N. say they have found \"reasonable grounds\" to believe the U.S. committed war crimes in Iran, including a strike on a school in the southern city of Minab.",
+              "title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+              "url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+              "published_at": "2026-09-17T20:33:36+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The US has not acknowledged carrying out February's deadly strikes on a primary school in Minab and a sports complex in Lamerd.",
+              "title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+              "url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T23:07:47+08:00"
+            },
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity Reuters",
+              "title": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmJVNS1uc3FDVDUwbUJ5bjJkZzRwbTdzNFZYUW00SEloak4wZl9yeXJhWlQ2bEExbjZBSzh6T2lRVjNjQ2VvR1lNZGNBc3BwLXZ6QXJCTmZ3M3BfQVdURWZaaUVOV2k0VkNOTFMwcnhsdXR1VU5IWFRWYlVYNDgzeGNwTDB6d3FURHV4YnZZdFpibE45Qm1tTVJxMi1QZG9lbFFqVW16M1ZzQzRLQW1PVkhud2RLeWtxUVV6OFJweE0wOXZuVG5RRg?oc=5",
+              "published_at": "2026-09-17T23:41:00+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "The mission also said Iranian authorities committed crimes against humanity during their crackdown on recent protests.",
+              "title": "UN fact-finding mission says US committed possible war crimes in Iran",
+              "url": "https://www.aljazeera.com/news/2026/9/17/un-fact-finding-mission-says-us-committed-possible-war-crimes-in-iran?traffic_source=rss",
+              "published_at": "2026-09-18T01:02:31+08:00"
+            }
+          ],
+          "source_count": 4,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "聯合國委託人權調查團認為有合理根據相信美軍在伊朗涉及戰爭罪",
+              "source_id": "npr_world",
+              "source_title": "U.N.-backed experts cite possible U.S. war crimes in Iran, including a school attack",
+              "source_url": "https://www.npr.org/2026/09/17/nx-s1-5972934/us-iran-war-un-report-alleged-war-crimes",
+              "support_type": "direct"
+            },
+            {
+              "claim": "美方至今未承認二月對伊朗學校與體育館的空襲",
+              "source_id": "bbc_world",
+              "source_title": "UN experts say grounds to believe US committed war crimes in Iran strikes",
+              "source_url": "https://www.bbc.co.uk/news/articles/cm9w4n5nverdo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "調查團同時認定伊朗當局鎮壓抗議涉及危害人類罪",
+              "source_id": "reuters_world_google_news",
+              "source_title": "UN mission finds grounds to believe US committed war crimes in Iran, and Tehran crimes against humanity - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbmJVNS1uc3FDVDUwbUJ5bjJkZzRwbTdzNFZYUW00SEloak4wZl9yeXJhWlQ2bEExbjZBSzh6T2lRVjNjQ2VvR1lNZGNBc3BwLXZ6QXJCTmZ3M3BfQVdURWZaaUVOV2k0VkNOTFMwcnhsdXR1VU5IWFRWYlVYNDgzeGNwTDB6d3FURHV4YnZZdFpibE45Qm1tTVJxMi1QZG9lbFFqVW16M1ZzQzRLQW1PVkhud2RLeWtxUVV6OFJweE0wOXZuVG5RRg?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "半島電視台指出調查團判定伊朗當局鎮壓抗議涉及危害人類罪",
+              "source_id": "aljazeera_all",
+              "source_title": "UN fact-finding mission says US committed possible war crimes in Iran",
+              "source_url": "https://www.aljazeera.com/news/2026/9/17/un-fact-finding-mission-says-us-committed-possible-war-crimes-in-iran?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 78,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event"
+        },
+        {
+          "event_id": "daily_20260918_evt_245",
+          "headline": "南非驚傳第9起女性命案",
+          "context": "南非警方在約翰尼斯堡郊區發現第九具女性遺體，受害者都是二、三十歲的女性，兩個月內陸續遇害。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際大事\n\n南非驚傳第9起女性命案\n\n南非警方在約翰尼斯堡郊區發現第九具女性遺體，受害者都是二、三十歲的女性，兩個月內陸續遇害。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。南非性別平等委員會形容女性正被「獵捕」，這反映當地長期存在的女性謀殺問題。\n\n—— 本則來自 BBC 與 Al Jazeera，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "南非警方在約翰尼斯堡郊區發現第九具女性遺體，受害者都是二、三十歲的女性，過去兩個月內陸續遇害。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。南非性別平等委員會形容，女性正被「獵捕」，這反映當地長期存在的女性謀殺問題。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "南非約翰尼斯堡郊區，兩個月內第九具女性遺體被發現。受害者都是二、三十歲的女性。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。\n\n南非性別平等委員會形容，女性正被「獵捕」。這反映了當地長期存在的女性謀殺問題。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際大事\n\n南非驚傳第9起女性命案\n\n南非警方在約翰尼斯堡郊區發現第九具女性遺體，受害者都是二、三十歲的女性，兩個月內陸續遇害。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。南非性別平等委員會形容女性正被「獵捕」，這反映當地長期存在的女性謀殺問題。\n\n—— 本則來自 BBC 與 Al Jazeera，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "南非警方在約翰尼斯堡郊區發現第九具女性遺體，受害者都是二、三十歲的女性，過去兩個月內陸續遇害。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。南非性別平等委員會形容，女性正被「獵捕」，這反映當地長期存在的女性謀殺問題。\n\n本則整理自 BBC 與 Al Jazeera 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "南非約翰尼斯堡郊區，兩個月內第九具女性遺體被發現。受害者都是二、三十歲的女性。警方提醒外界不要貿然認定這些案件彼此相關，但當地許多女性已經感到害怕。\n\n南非性別平等委員會形容，女性正被「獵捕」。這反映了當地長期存在的女性謀殺問題。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "South Africa police have cautioned against assuming that all the killings are linked but many women are afraid.",
+              "title": "Ninth woman's body found as South African police investigate string of deaths",
+              "url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T21:44:07+08:00"
+            },
+            {
+              "source_id": "aljazeera_all",
+              "name": "Al Jazeera",
+              "publisher": "Al Jazeera",
+              "summary": "All female victims in their 20s and 30s were killed on the outskirts of Johannesburg in the past two months.",
+              "title": "Ninth woman’s body found as South Africa probes series of killings",
+              "url": "https://www.aljazeera.com/news/2026/9/17/ninth-womans-body-found-as-south-africa-probes-series-of-killings?traffic_source=rss",
+              "published_at": "2026-09-17T23:34:09+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "南非警方在約翰尼斯堡郊區發現第九具女性遺體受害者集中於二三十歲",
+              "source_id": "bbc_world",
+              "source_title": "Ninth woman's body found as South African police investigate string of deaths",
+              "source_url": "https://www.bbc.co.uk/news/articles/cqx2zgk8k8xvo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            },
+            {
+              "claim": "南非性別平等委員會形容女性正被獵捕反映當地女性謀殺問題",
+              "source_id": "aljazeera_all",
+              "source_title": "Ninth woman’s body found as South Africa probes series of killings",
+              "source_url": "https://www.aljazeera.com/news/2026/9/17/ninth-womans-body-found-as-south-africa-probes-series-of-killings?traffic_source=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260918_evt_059",
+          "headline": "加拿大盼與歐盟結盟",
+          "context": "加拿大總理卡尼（Mark Carney）說，加拿大與歐盟應該站在一起保護民主國家，這番話是在歐盟提議讓加拿大成為「準會員」、美國總統川普對此表達不滿之後說的。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際大事\n\n加拿大盼與歐盟結盟\n\n加拿大總理卡尼說，加拿大與歐盟應該攜手保護民主國家，形成他所說的「其他民主國家的燈塔」。這番表態是在歐盟提議讓加拿大成為「準會員」、而美國總統川普對此表達不滿之後。\n\n—— 本則來自 Reuters 與 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "加拿大總理卡尼（Mark Carney）說，加拿大與歐盟應該攜手保護民主國家，形成他口中「其他民主國家的燈塔」。這番表態，是在歐盟提議讓加拿大成為「準會員」、美國總統川普隨後表達不滿之後說的。\n\n本則整理自 Reuters 與 BBC 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "加拿大總理卡尼說，加拿大與歐盟應該攜手保護民主國家。他形容這樣的結盟會成為「其他民主國家的燈塔」。\n\n這番話是在歐盟提議讓加拿大成為「準會員」之後說的，美國總統川普對這項提議表達了不滿。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際大事\n\n加拿大盼與歐盟結盟\n\n加拿大總理卡尼說，加拿大與歐盟應該攜手保護民主國家，形成他所說的「其他民主國家的燈塔」。這番表態是在歐盟提議讓加拿大成為「準會員」、而美國總統川普對此表達不滿之後。\n\n—— 本則來自 Reuters 與 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "加拿大總理卡尼（Mark Carney）說，加拿大與歐盟應該攜手保護民主國家，形成他口中「其他民主國家的燈塔」。這番表態，是在歐盟提議讓加拿大成為「準會員」、美國總統川普隨後表達不滿之後說的。\n\n本則整理自 Reuters 與 BBC 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "加拿大總理卡尼說，加拿大與歐盟應該攜手保護民主國家。他形容這樣的結盟會成為「其他民主國家的燈塔」。\n\n這番話是在歐盟提議讓加拿大成為「準會員」之後說的，美國總統川普對這項提議表達了不滿。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Canada and EU should ally to protect democracies, Carney says, after 'associate member' proposal angers Trump Reuters",
+              "title": "Canada and EU should ally to protect democracies, Carney says, after 'associate member' proposal angers Trump - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWUNDUDhTVm9zSHU1TGloUjMzQV9KVW5NMU9QQzcyV01UcGM1dkRWTDBEd01YdEtqbHFWLU0yNUI0V3FSUWQtVjYxb005MEVTTTNNbmxMb29heDlwaVRWcTcyMnJlNG1PSVZHcGJhMGFHLWNOTVBzYzRXbkFmUWNJTGxJR0VnaTQ5OFR1d2d3dHppRU9nenJ6VUpJWXZnd19XN01iUy1WbVEyb1lZQVp3QkZFUlpPZUI2clBLaFhWR0IxOUJP?oc=5",
+              "published_at": "2026-09-17T08:36:39+08:00"
+            },
+            {
+              "source_id": "bbc_world",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Canadian Prime Minister Mark Carney said a Canada-EU alliance would create a \"beacon for other democracies\".",
+              "title": "Canada welcomes EU proposal to become 'associate member'",
+              "url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T20:27:18+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "加拿大總理卡尼呼籲加拿大與歐盟結盟保護民主國家",
+              "source_id": "reuters_world_google_news",
+              "source_title": "Canada and EU should ally to protect democracies, Carney says, after 'associate member' proposal angers Trump - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQWUNDUDhTVm9zSHU1TGloUjMzQV9KVW5NMU9QQzcyV01UcGM1dkRWTDBEd01YdEtqbHFWLU0yNUI0V3FSUWQtVjYxb005MEVTTTNNbmxMb29heDlwaVRWcTcyMnJlNG1PSVZHcGJhMGFHLWNOTVBzYzRXbkFmUWNJTGxJR0VnaTQ5OFR1d2d3dHppRU9nenJ6VUpJWXZnd19XN01iUy1WbVEyb1lZQVp3QkZFUlpPZUI2clBLaFhWR0IxOUJP?oc=5",
+              "support_type": "direct"
+            },
+            {
+              "claim": "加拿大歡迎歐盟提議讓其成為準會員",
+              "source_id": "bbc_world",
+              "source_title": "Canada welcomes EU proposal to become 'associate member'",
+              "source_url": "https://www.bbc.co.uk/news/articles/cwly7vkke4jxo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 45,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1"
+        },
+        {
+          "event_id": "daily_20260918_evt_042",
+          "headline": "美眾院通過制裁俄法案",
+          "context": "美國眾議院通過一項制裁與關稅法案，目標是加重對俄羅斯的經濟壓力。目前這則消息只有路透社提及，細節仍待後續確認。",
+          "beat": "INTL",
+          "thread_text": "🧵 1/N\n📌 國際大事\n\n美眾院通過制裁俄法案\n\n美國眾議院通過一項制裁與關稅法案，目標是加重對俄羅斯的經濟壓力。目前這則消息只有路透社提及，法案細節與後續動向仍待觀察。\n\n—— 本則來自 Reuters，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國眾議院通過一項制裁與關稅法案，目標是加重對俄羅斯的經濟壓力。目前這則消息只有路透社提及，法案細節與後續動向仍待觀察。\n\n本則整理自 Reuters 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "美國眾議院通過一項新法案，加重對俄羅斯的制裁與關稅壓力。\n\n目前的消息指出，法案細節與後續動向還有待觀察。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 國際大事\n\n美眾院通過制裁俄法案\n\n美國眾議院通過一項制裁與關稅法案，目標是加重對俄羅斯的經濟壓力。目前這則消息只有路透社提及，法案細節與後續動向仍待觀察。\n\n—— 本則來自 Reuters，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國眾議院通過一項制裁與關稅法案，目標是加重對俄羅斯的經濟壓力。目前這則消息只有路透社提及，法案細節與後續動向仍待觀察。\n\n本則整理自 Reuters 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國眾議院通過一項新法案，加重對俄羅斯的制裁與關稅壓力。\n\n目前的消息指出，法案細節與後續動向還有待觀察。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "US House passes sanctions, tariff bill to raise economic pressure on Russia Reuters",
+              "title": "US House passes sanctions, tariff bill to raise economic pressure on Russia - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQVdRekRjalRLeU1yZ1Y1WjFWWmwxbWxXdGdsdWRYbUtkV3RmSlBUc0xkZUtsTWZTTmwtZ1IzT0xpX2RQUkUyemozTGFjS2dGcGdNcnJtUloxN0Z3T2I3OEdIZHd3T01WbXhhamFGanZSV0Z1LWlxaUNsTEl1TkNBSFd5WFd2THJXMEpGSnlXQ3hnbHUwOGJmX2FVZXVZUHRoeUstTXJiVERYSVZka200?oc=5",
+              "published_at": "2026-09-17T06:38:07+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "美國眾議院通過制裁與關稅法案向俄羅斯施壓",
+              "source_id": "reuters_world_google_news",
+              "source_title": "US House passes sanctions, tariff bill to raise economic pressure on Russia - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQVdRekRjalRLeU1yZ1Y1WjFWWmwxbWxXdGdsdWRYbUtkV3RmSlBUc0xkZUtsTWZTTmwtZ1IzT0xpX2RQUkUyemozTGFjS2dGcGdNcnJtUloxN0Z3T2I3OEdIZHd3T01WbXhhamFGanZSV0Z1LWlxaUNsTEl1TkNBSFd5WFd2THJXMEpGSnlXQ3hnbHUwOGJmX2FVZXVZUHRoeUstTXJiVERYSVZka200?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 40,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; major_geopolitical_event"
+        }
+      ]
+    },
+    {
+      "beat": "ARTS",
+      "title": "八大藝術",
+      "emoji": "🎭",
+      "items": [
+        {
+          "event_id": "daily_20260918_evt_029",
+          "headline": "麥克莫爾捐百萬援巴勒斯坦",
+          "context": "饒舌歌手麥克莫爾（Macklemore）宣布，要把他擔任紅髮艾德（Ed Sheeran）巡演開場嘉賓所得的 100 萬美元酬勞，捐給協助巴勒斯坦人與加薩救援的組織。他先前因為在台上力挺巴勒斯坦的言論，被踢出這場巡演。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 八大藝術\n\n麥克莫爾捐百萬援巴勒斯坦\n\n饒舌歌手麥克莫爾宣布，要把他擔任紅髮艾德巡演開場嘉賓所得的 100 萬美元酬勞，捐給協助巴勒斯坦人與加薩救援的組織。他先前因為在台上力挺巴勒斯坦的言論，被踢出這場巡演。他也公開挑戰新英格蘭愛國者隊老闆羅伯特．克拉夫特跟進捐款，克拉夫特隨後表示會與紅髮艾德合捐 200 萬美元「援助當地」。\n\n—— 本則來自 The Guardian 與 The New York Times，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "饒舌歌手麥克莫爾（Macklemore）宣布，要把他擔任紅髮艾德（Ed Sheeran）「Loop」巡演開場嘉賓所得的 100 萬美元酬勞，捐給協助巴勒斯坦人與加薩救援的組織。他先前因為在台上力挺巴勒斯坦的言論，被主辦方踢出這場巡演。麥克莫爾也公開挑戰新英格蘭愛國者隊老闆、知名以色列捐款人羅伯特．克拉夫特跟進捐款，克拉夫特隨後表示，他會與紅髮艾德合捐 200 萬美元「援助當地」。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "饒舌歌手麥克莫爾，要把他這次巡演拿到的 100 萬美元酬勞，捐給巴勒斯坦與加薩的救援組織。\n\n他原本是紅髮艾德巡演的開場嘉賓，因為在台上力挺巴勒斯坦，被主辦方踢出這場巡演。麥克莫爾接著公開挑戰新英格蘭愛國者隊老闆羅伯特．克拉夫特跟進捐款——克拉夫特後來說，他會和紅髮艾德合捐 200 萬美元，用於援助當地。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 八大藝術\n\n麥克莫爾捐百萬援巴勒斯坦\n\n饒舌歌手麥克莫爾宣布，要把他擔任紅髮艾德巡演開場嘉賓所得的 100 萬美元酬勞，捐給協助巴勒斯坦人與加薩救援的組織。他先前因為在台上力挺巴勒斯坦的言論，被踢出這場巡演。他也公開挑戰新英格蘭愛國者隊老闆羅伯特．克拉夫特跟進捐款，克拉夫特隨後表示會與紅髮艾德合捐 200 萬美元「援助當地」。\n\n—— 本則來自 The Guardian 與 The New York Times，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "饒舌歌手麥克莫爾（Macklemore）宣布，要把他擔任紅髮艾德（Ed Sheeran）「Loop」巡演開場嘉賓所得的 100 萬美元酬勞，捐給協助巴勒斯坦人與加薩救援的組織。他先前因為在台上力挺巴勒斯坦的言論，被主辦方踢出這場巡演。麥克莫爾也公開挑戰新英格蘭愛國者隊老闆、知名以色列捐款人羅伯特．克拉夫特跟進捐款，克拉夫特隨後表示，他會與紅髮艾德合捐 200 萬美元「援助當地」。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "饒舌歌手麥克莫爾，要把他這次巡演拿到的 100 萬美元酬勞，捐給巴勒斯坦與加薩的救援組織。\n\n他原本是紅髮艾德巡演的開場嘉賓，因為在台上力挺巴勒斯坦，被主辦方踢出這場巡演。麥克莫爾接著公開挑戰新英格蘭愛國者隊老闆羅伯特．克拉夫特跟進捐款——克拉夫特後來說，他會和紅髮艾德合捐 200 萬美元，用於援助當地。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_music",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Rapper challenged billionaire stadium owner Robert Kraft to match donation, with Kraft saying he and Sheeran will give $2m to ‘aid in the region’ Macklemore has announced he will donate the $1m salary he was paid as an opening act for Ed Sheeran ’s Loop tour to organizations working with Palestinian people and relief in Gaza, after being dropped from the tour following backlash to his onstage comments in support of Palestine . The rapper also challenged Robert Kraft, the billionaire owner of the New England Patriots and prominent Israel donor who refused to let Macklemore play at his Gillette Stadium outside Boston, to match his donation. Continue reading...",
+              "title": "Macklemore pledges his $1m Ed Sheeran tour salary to Palestine aid",
+              "url": "https://www.theguardian.com/music/2026/sep/16/macklemore-ed-sheeran-tour-salary-palestine",
+              "published_at": "2026-09-17T05:26:53+08:00"
+            },
+            {
+              "source_id": "nyt_arts",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "Four supporting acts dropped out of Sheeran’s tour, citing the right to free speech after the rapper Macklemore was removed over pro-Palestinian comments he had made onstage.",
+              "title": "How Ed Sheeran’s Tour Turned Into a Clash Over Palestinians and Antisemitism",
+              "url": "https://www.nytimes.com/2026/09/15/arts/music/ed-sheeran-tour-macklemore-palestine-gaza-finneas.html",
+              "published_at": "2026-09-17T23:23:42+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "麥克莫爾宣布捐出100萬美元酬勞援助巴勒斯坦與加薩",
+              "source_id": "guardian_music",
+              "source_title": "Macklemore pledges his $1m Ed Sheeran tour salary to Palestine aid",
+              "source_url": "https://www.theguardian.com/music/2026/sep/16/macklemore-ed-sheeran-tour-salary-palestine",
+              "support_type": "direct"
+            },
+            {
+              "claim": "麥克莫爾因挺巴勒斯坦言論被踢出紅髮艾德巡演",
+              "source_id": "nyt_arts",
+              "source_title": "How Ed Sheeran’s Tour Turned Into a Clash Over Palestinians and Antisemitism",
+              "source_url": "https://www.nytimes.com/2026/09/15/arts/music/ed-sheeran-tour-macklemore-palestine-gaza-finneas.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "音樂",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260918_evt_057",
+          "headline": "普普藝術家彼得麥斯辭世",
+          "context": "以迷幻普普藝術聞名的美國藝術家彼得．麥斯（Peter Max）辭世，享壽 88 歲。他色彩繽紛的畫風代表了 1960 年代嬉皮世代的樂觀精神，作品從郵票到郵輪外觀都看得到。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 八大藝術\n\n普普藝術家彼得麥斯辭世\n\n美國藝術家彼得．麥斯辭世，享壽 88 歲。他以迷幻繽紛的普普畫風聞名，代表了 1960 年代「花的力量」世代的樂觀精神，作品從郵票到郵輪外觀都能看見。他的兒子亞當週三發表聲明證實父親於週一過世，沒有公布死因。\n\n—— 本則來自 The Guardian 與 The New York Times，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國藝術家彼得．麥斯（Peter Max）辭世，享壽 88 歲。他以迷幻繽紛、辨識度極高的普普畫風聞名，作品象徵了 1960 年代「花的力量」世代的樂觀精神，從郵票到郵輪外觀都能看見他的設計，也讓他在商業上極為成功。他的兒子亞當．麥斯週三發表聲明，證實父親於週一過世，沒有公布死因。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "普普藝術家彼得．麥斯過世了，享壽 88 歲。\n\n他的畫風迷幻繽紛，辨識度很高，代表了 1960 年代「花的力量」世代的樂觀精神。從郵票到郵輪外觀，都能看到他的設計，也讓他在商業上非常成功。他的兒子週三發表聲明，證實父親於週一過世，沒有公布死因。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 八大藝術\n\n普普藝術家彼得麥斯辭世\n\n美國藝術家彼得．麥斯辭世，享壽 88 歲。他以迷幻繽紛的普普畫風聞名，代表了 1960 年代「花的力量」世代的樂觀精神，作品從郵票到郵輪外觀都能看見。他的兒子亞當週三發表聲明證實父親於週一過世，沒有公布死因。\n\n—— 本則來自 The Guardian 與 The New York Times，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國藝術家彼得．麥斯（Peter Max）辭世，享壽 88 歲。他以迷幻繽紛、辨識度極高的普普畫風聞名，作品象徵了 1960 年代「花的力量」世代的樂觀精神，從郵票到郵輪外觀都能看見他的設計，也讓他在商業上極為成功。他的兒子亞當．麥斯週三發表聲明，證實父親於週一過世，沒有公布死因。\n\n本則整理自 The Guardian 與 The New York Times 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "普普藝術家彼得．麥斯過世了，享壽 88 歲。\n\n他的畫風迷幻繽紛，辨識度很高，代表了 1960 年代「花的力量」世代的樂觀精神。從郵票到郵輪外觀，都能看到他的設計，也讓他在商業上非常成功。他的兒子週三發表聲明，證實父親於週一過世，沒有公布死因。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "The US artist, whose swirly, colorful, instantly recognizable designs became hugely commercially successful, died on Monday Peter Max, whose colorful, psychedelic pop art expressed the optimism of the “flower power” movement of the 1960s and graced everything from postage stamps to a cruise ship, has died at 88. Max died on Monday, his son, Adam Max, said in a written statement on Wednesday. No cause was given. Continue reading...",
+              "title": "Peter Max, psychedelic pop artist who epitomized flower power, dies aged 88",
+              "url": "https://www.theguardian.com/artanddesign/2026/sep/17/peter-max-dies-aged-88-artist-death",
+              "published_at": "2026-09-17T08:21:21+08:00"
+            },
+            {
+              "source_id": "nyt_arts",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "With work that breathed the spirit of the 1960s, he became fabulously wealthy from licensing his paintings and posters in all their euphoric Day-Glo glory.",
+              "title": "Peter Max, Trippy Artist of Counterculture Era and Beyond, Dies at 88",
+              "url": "https://www.nytimes.com/2026/09/16/arts/peter-max-trippy-artist-of-counterculture-era-and-beyond-dies-at-88.html",
+              "published_at": "2026-09-18T02:58:06+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "彼得麥斯於週一過世享壽88歲兒子週三發表聲明未公布死因",
+              "source_id": "guardian_art_design",
+              "source_title": "Peter Max, psychedelic pop artist who epitomized flower power, dies aged 88",
+              "source_url": "https://www.theguardian.com/artanddesign/2026/sep/17/peter-max-dies-aged-88-artist-death",
+              "support_type": "direct"
+            },
+            {
+              "claim": "彼得麥斯的普普藝術作品廣泛授權應用於商業設計並帶來財富",
+              "source_id": "nyt_arts",
+              "source_title": "Peter Max, Trippy Artist of Counterculture Era and Beyond, Dies at 88",
+              "source_url": "https://www.nytimes.com/2026/09/16/arts/peter-max-trippy-artist-of-counterculture-era-and-beyond-dies-at-88.html",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 53,
+          "sub_beat": "視覺藝術",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2"
+        },
+        {
+          "event_id": "daily_20260918_evt_235",
+          "headline": "作家邦妮葛瑞爾辭世",
+          "context": "美裔英籍作家兼文化評論人邦妮．葛瑞爾（Bonnie Greer）辭世，享壽 77 歲。她曾在 BBC2 的文化節目《Late Review》與《Newsnight Review》擔任犀利的常態來賓，創作也橫跨小說、劇本、回憶錄與紀錄片等領域。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 八大藝術\n\n作家邦妮葛瑞爾辭世\n\n美裔英籍作家兼文化評論人邦妮．葛瑞爾辭世，享壽 77 歲。她曾在 BBC2 的文化節目《Late Review》與《Newsnight Review》擔任犀利的常態來賓，也橫跨小說、劇本、回憶錄與紀錄片等多種創作領域。作家瑪格麗特．巴斯比追憶，形容她「勇敢發聲、廣結善緣」。\n\n—— 本則來自 The Guardian，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美裔英籍作家兼文化評論人邦妮．葛瑞爾（Bonnie Greer）辭世，享壽 77 歲。她的創作橫跨小說、劇本、回憶錄與紀錄片，也曾在 BBC2 的文化節目《Late Review》與《Newsnight Review》擔任犀利的常態來賓。她人生前半在美國芝加哥度過，後半輩子落腳倫敦，這樣橫跨兩地的背景，讓她評論英美文化交融的作品時格外有洞察力。作家瑪格麗特．巴斯比追憶她，形容她「勇敢發聲、廣結善緣」。\n\n本則整理自 The Guardian 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "作家兼文化評論人邦妮．葛瑞爾過世了，享壽 77 歲。\n\n她的創作橫跨小說、劇本、回憶錄與紀錄片，也曾在電視文化節目上擔任犀利的常態來賓。她人生前半在美國芝加哥度過，後半輩子落腳倫敦，這樣橫跨兩地的背景，讓她評論英美文化交融的作品時格外有洞察力。朋友追憶她，形容她勇敢發聲、廣結善緣。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 八大藝術\n\n作家邦妮葛瑞爾辭世\n\n美裔英籍作家兼文化評論人邦妮．葛瑞爾辭世，享壽 77 歲。她曾在 BBC2 的文化節目《Late Review》與《Newsnight Review》擔任犀利的常態來賓，也橫跨小說、劇本、回憶錄與紀錄片等多種創作領域。作家瑪格麗特．巴斯比追憶，形容她「勇敢發聲、廣結善緣」。\n\n—— 本則來自 The Guardian，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美裔英籍作家兼文化評論人邦妮．葛瑞爾（Bonnie Greer）辭世，享壽 77 歲。她的創作橫跨小說、劇本、回憶錄與紀錄片，也曾在 BBC2 的文化節目《Late Review》與《Newsnight Review》擔任犀利的常態來賓。她人生前半在美國芝加哥度過，後半輩子落腳倫敦，這樣橫跨兩地的背景，讓她評論英美文化交融的作品時格外有洞察力。作家瑪格麗特．巴斯比追憶她，形容她「勇敢發聲、廣結善緣」。\n\n本則整理自 The Guardian 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "作家兼文化評論人邦妮．葛瑞爾過世了，享壽 77 歲。\n\n她的創作橫跨小說、劇本、回憶錄與紀錄片，也曾在電視文化節目上擔任犀利的常態來賓。她人生前半在美國芝加哥度過，後半輩子落腳倫敦，這樣橫跨兩地的背景，讓她評論英美文化交融的作品時格外有洞察力。朋友追憶她，形容她勇敢發聲、廣結善緣。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_books",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "The writer and editor shares memories of a creative powerhouse who was generous with her time and expertise Bonnie Greer, writer and cultural commentator, dies aged 77 Bonnie Greer personified courage, humour, principle and generosity. Before knowing her in person, I met her work. Her 1994 debut novel Hanging by Her Teeth – about a Black American woman travelling through the US and Europe in search of her father – was sent to me for endorsement by its publisher, and I commented unhesitatingly: “Writing with sharpness, wit and poignancy, Bonnie Greer gathers the sequestered memories behind one Black woman’s bitter-sweet blues.” The scope of Bonnie’s own life is beyond anything fictional, encompassing highs and lows, triumphs and challenges, her trajectory starting in the West Side of Chicago and ending up navigating iconic areas of London – whether Holland Park or Covent Garden or Soho – as if to the manor born. It was an honour to become her friend, sharing many a good time, offering a consoling shoulder if needed. An added bonus was to meet her husband David Hutchins. What a wonderful mutually supportive team they made. Continue reading...",
+              "title": "Margaret Busby: ‘My friend Bonnie Greer fearlessly spoke out and forged connections’",
+              "url": "https://www.theguardian.com/books/2026/sep/17/margaret-busby-pays-tribute-to-bonnie-greer",
+              "published_at": "2026-09-17T21:12:06+08:00"
+            },
+            {
+              "source_id": "guardian_stage",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Writer and critic who became known for her sharp, composed appearances on TV shows such as Late Review and Question Time The writing and broadcasting of Bonnie Greer, who has died aged 77, were driven by divided perspectives. Her technical experience across an unusual range of genres – drama, fiction, biography, memoir, documentary – informed her work as a wry and lively critic, especially on the late-night BBC2 cultural programmes Late Review and Newsnight Review from the 1990s onwards. And, having spent the first half of her life in the US and the second in the UK, she was also perfectly positioned – in an era when British writers, movie-makers and artists were making much work about and for America – to adjudicate on such creative duality, as well as the escalating Americanisation of British politics. Another asset was her connections: reviewing a David Mamet play or a Madonna album, she had worked with the former in Chicago theatre and met the latter as a young music wannabe in a Manhattan apartment share. Continue reading...",
+              "title": "Bonnie Greer obituary",
+              "url": "https://www.theguardian.com/tv-and-radio/2026/sep/17/bonnie-greer-obituary",
+              "published_at": "2026-09-17T21:43:20+08:00"
+            }
+          ],
+          "source_count": 2,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "作家瑪格麗特巴斯比追憶邦妮葛瑞爾勇敢發聲廣結善緣",
+              "source_id": "guardian_books",
+              "source_title": "Margaret Busby: ‘My friend Bonnie Greer fearlessly spoke out and forged connections’",
+              "source_url": "https://www.theguardian.com/books/2026/sep/17/margaret-busby-pays-tribute-to-bonnie-greer",
+              "support_type": "direct"
+            },
+            {
+              "claim": "邦妮葛瑞爾以BBC2文化節目犀利評論聞名享壽77歲",
+              "source_id": "guardian_stage",
+              "source_title": "Bonnie Greer obituary",
+              "source_url": "https://www.theguardian.com/tv-and-radio/2026/sep/17/bonnie-greer-obituary",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 45,
+          "sub_beat": "文學",
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1"
+        },
+        {
+          "event_id": "daily_20260918_evt_129",
+          "headline": "泰特美術館辦90年代展",
+          "context": "泰特英國美術館推出新展《The 90s: Art and Fashion》，由前《i-D》雜誌編輯愛德華．恩尼弗（Edward Enninful）策展，重現英國 1990 年代創意產業與年輕世代交會出的活力。此則為單一來源報導，細節仍待補充。",
+          "beat": "ARTS",
+          "thread_text": "🧵 1/N\n📌 八大藝術\n\n泰特美術館辦90年代展\n\n泰特英國美術館推出新展《The 90s: Art and Fashion》，由前《i-D》雜誌編輯愛德華．恩尼弗策展，收錄凱特．摩絲、莎拉．露卡斯等人的攝影與作品，重現英國 1990 年代創意產業與年輕世代交會出的活力。\n\n—— 本則來自 The Guardian，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "泰特英國美術館推出新展《The 90s: Art and Fashion》，由曾任《i-D》雜誌編輯的愛德華．恩尼弗（Edward Enninful）策展。展覽收錄凱特．摩絲、莎拉．露卡斯等人當年的攝影與作品，呈現英國 1990 年代創意產業剛開始富起來、卻仍有一整代窮困夢想家的年代氛圍，展出的照片多半由當時仍在職涯早期的攝影師拍攝，畫面裡能感受到攝影師與被攝者之間那種又認真、又好玩的默契。\n\n本則整理自 The Guardian 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "泰特英國美術館推出一檔 1990 年代主題新展，重現英國創意產業剛開始富起來、卻仍有一整代窮困夢想家的年代氛圍。\n\n展覽由曾任時尚雜誌編輯的愛德華．恩尼弗策展，收錄凱特．摩絲等人當年的攝影作品，畫面裡能感受到攝影師與被攝者之間那種又認真、又好玩的默契。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 八大藝術\n\n泰特美術館辦90年代展\n\n泰特英國美術館推出新展《The 90s: Art and Fashion》，由前《i-D》雜誌編輯愛德華．恩尼弗策展，收錄凱特．摩絲、莎拉．露卡斯等人的攝影與作品，重現英國 1990 年代創意產業與年輕世代交會出的活力。\n\n—— 本則來自 The Guardian，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "泰特英國美術館推出新展《The 90s: Art and Fashion》，由曾任《i-D》雜誌編輯的愛德華．恩尼弗（Edward Enninful）策展。展覽收錄凱特．摩絲、莎拉．露卡斯等人當年的攝影與作品，呈現英國 1990 年代創意產業剛開始富起來、卻仍有一整代窮困夢想家的年代氛圍，展出的照片多半由當時仍在職涯早期的攝影師拍攝，畫面裡能感受到攝影師與被攝者之間那種又認真、又好玩的默契。\n\n本則整理自 The Guardian 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "泰特英國美術館推出一檔 1990 年代主題新展，重現英國創意產業剛開始富起來、卻仍有一整代窮困夢想家的年代氛圍。\n\n展覽由曾任時尚雜誌編輯的愛德華．恩尼弗策展，收錄凱特．摩絲等人當年的攝影作品，畫面裡能感受到攝影師與被攝者之間那種又認真、又好玩的默契。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "guardian_art_design",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "An evocative new Tate Britain show captures an era when the UK’s newly flush creative industries teamed up with a generation of skint dreamers to bring the decade into vivid colour Here is Kate Moss, with pink hair splayed across a pillow, her face scrubbed of makeup, her smile sweet and wonky. Sarah Lucas’s Pauline Bunny artwork with its confrontational hosiery on a charity shop chair. Sean Ellis’s collaborative knights-in-grubby-armour shoot with Alexander McQueen. Here are happy ravers, in a club, or saluting the sun as it stretches and yawns over a litter-strewn hill. These photos are old. They were taken a long time ago. But they’re young, too. They are curated by Edward Enninful for the Tate’s exhibition The 90s: Art and Fashion (Enninful worked at i-D in the 90s) and almost everyone involved is shiny and fresh. The models, whether professional or not, are mostly in their 20s, and the photographers are early in their careers. It gives the photos a youthful fizz, a verve. But the energy also comes from an understanding between photographer and subject. In many of the pictures you can feel the shared mischief, a “yes we’re serious about our ideas” but also a “look, we’re getting away with it!” delight. Continue reading...",
+              "title": "Hard parties, cheap rents and horrible flats: how 90s art and fashion redefined British culture",
+              "url": "https://www.theguardian.com/culture/2026/sep/17/art-and-fashion-90s-kate-moss-juergen-teller-sarah-lucas-naomi-campbell-alexander-mcqueen",
+              "published_at": "2026-09-17T15:00:41+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "泰特英國美術館推出90年代藝術與時尚展由愛德華恩尼弗策展",
+              "source_id": "guardian_art_design",
+              "source_title": "Hard parties, cheap rents and horrible flats: how 90s art and fashion redefined British culture",
+              "source_url": "https://www.theguardian.com/culture/2026/sep/17/art-and-fashion-90s-kate-moss-juergen-teller-sarah-lucas-naomi-campbell-alexander-mcqueen",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 30,
+          "sub_beat": "視覺藝術",
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; arts_major_award_or_institution"
+        }
+      ]
+    },
+    {
+      "beat": "AI",
+      "title": "AI 新知",
+      "emoji": "🤖",
+      "items": [
+        {
+          "event_id": "daily_20260918_evt_142",
+          "headline": "微軟警告AI恐成新物種",
+          "context": "微軟 AI 部門負責人穆斯塔法．蘇萊曼（Mustafa Suleyman）警告，失控的 AI 有可能發展成足以和人類匹敵的「矽基物種」。他也提到，他認為對手 Anthropic 實際上正在教導其 AI 模型 Claude「它可能有意識」。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI 新知\n\n微軟警告AI恐成新物種\n\n微軟 AI 部門負責人穆斯塔法．蘇萊曼警告，失控的 AI 有可能發展成足以和人類匹敵的「矽基物種」。他也提到，他認為對手 Anthropic 實際上正在教導旗下模型 Claude「它可能有意識」。目前這則消息只有 BBC 提及。\n\n—— 本則來自 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "微軟 AI 部門負責人穆斯塔法．蘇萊曼（Mustafa Suleyman）警告，失控的人工智慧有可能發展成足以和人類匹敵的「矽基物種」。他也提到，他認為對手 Anthropic 實際上正在教導旗下模型 Claude「它可能有意識」。目前這則消息只有 BBC 提及，後續各方回應仍待觀察。\n\n本則整理自 BBC 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "微軟的 AI 負責人示警，失控的人工智慧有可能發展成足以和人類匹敵的「矽基物種」。\n\n他還提到，他認為競爭對手的 AI 實驗室，實際上正在教導自家模型「它可能有意識」。目前這個說法只有單一消息來源提及。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI 新知\n\n微軟警告AI恐成新物種\n\n微軟 AI 部門負責人穆斯塔法．蘇萊曼警告，失控的 AI 有可能發展成足以和人類匹敵的「矽基物種」。他也提到，他認為對手 Anthropic 實際上正在教導旗下模型 Claude「它可能有意識」。目前這則消息只有 BBC 提及。\n\n—— 本則來自 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "微軟 AI 部門負責人穆斯塔法．蘇萊曼（Mustafa Suleyman）警告，失控的人工智慧有可能發展成足以和人類匹敵的「矽基物種」。他也提到，他認為對手 Anthropic 實際上正在教導旗下模型 Claude「它可能有意識」。目前這則消息只有 BBC 提及，後續各方回應仍待觀察。\n\n本則整理自 BBC 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "微軟的 AI 負責人示警，失控的人工智慧有可能發展成足以和人類匹敵的「矽基物種」。\n\n他還提到，他認為競爭對手的 AI 實驗室，實際上正在教導自家模型「它可能有意識」。目前這個說法只有單一消息來源提及。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Mustafa Suleyman says he believes rival AI firm Anthropic is in effect teaching Claude it \"may be conscious\".",
+              "title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
+              "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T16:22:12+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "微軟蘇萊曼警告失控AI恐成矽基物種並質疑Anthropic教導Claude它可能有意識",
+              "source_id": "bbc_technology",
+              "source_title": "Uncontrolled AI could lead to 'silicon species' rivalling humans, warns Microsoft",
+              "source_url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260918_evt_025",
+          "headline": "AI實驗室擬設安全評估",
+          "context": "Anthropic 與 OpenAI 都提議讓獨立的安全評估人員進駐自家實驗室。研究者歡迎這種前所未有的觀察管道，但也提醒，真正有意義的監督還需要透明度、獨立性，最終仍得靠法規把關。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI 新知\n\nAI實驗室擬設安全評估\n\nAnthropic 與 OpenAI 都提議讓獨立的安全評估人員進駐自家實驗室。研究者歡迎這種前所未有的觀察管道，但也提醒，真正有意義的監督還需要透明度、獨立性，最終仍得靠法規把關。目前這則消息只有 TechCrunch 提及。\n\n—— 本則來自 TechCrunch，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "Anthropic 與 OpenAI 都提議，讓獨立的安全評估人員進駐自家實驗室，近距離觀察模型開發過程。研究者歡迎這種前所未有的觀察管道，但也提醒，光有進駐權限還不夠——真正有意義的監督，需要透明度與獨立性，最終仍得靠法規把關，否則評估人員的角色很容易流於形式。\n\n本則整理自 TechCrunch 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "Anthropic 和 OpenAI 都提議，讓獨立的安全評估人員進駐自家實驗室，近距離觀察模型是怎麼做出來的。\n\n研究者歡迎這種前所未有的觀察管道。但他們也提醒，光有進駐權限還不夠，真正有意義的監督需要透明度和獨立性，最終還是得靠法規把關。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI 新知\n\nAI實驗室擬設安全評估\n\nAnthropic 與 OpenAI 都提議讓獨立的安全評估人員進駐自家實驗室。研究者歡迎這種前所未有的觀察管道，但也提醒，真正有意義的監督還需要透明度、獨立性，最終仍得靠法規把關。目前這則消息只有 TechCrunch 提及。\n\n—— 本則來自 TechCrunch，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "Anthropic 與 OpenAI 都提議，讓獨立的安全評估人員進駐自家實驗室，近距離觀察模型開發過程。研究者歡迎這種前所未有的觀察管道，但也提醒，光有進駐權限還不夠——真正有意義的監督，需要透明度與獨立性，最終仍得靠法規把關，否則評估人員的角色很容易流於形式。\n\n本則整理自 TechCrunch 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "Anthropic 和 OpenAI 都提議，讓獨立的安全評估人員進駐自家實驗室，近距離觀察模型是怎麼做出來的。\n\n研究者歡迎這種前所未有的觀察管道。但他們也提醒，光有進駐權限還不夠，真正有意義的監督需要透明度和獨立性，最終還是得靠法規把關。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "techcrunch_ai",
+              "name": "TechCrunch",
+              "publisher": "TechCrunch",
+              "summary": "Anthropic and OpenAI want to embed independent safety evaluators inside their AI labs. Researchers welcome the unprecedented access, but warn meaningful oversight requires transparency, independence, and eventually regulation.",
+              "title": "Anthropic and OpenAI want to embed safety evaluators. Will they really be independent?",
+              "url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
+              "published_at": "2026-09-17T05:07:24+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "Anthropic與OpenAI提議引入獨立安全評估人員進駐實驗室",
+              "source_id": "techcrunch_ai",
+              "source_title": "Anthropic and OpenAI want to embed safety evaluators. Will they really be independent?",
+              "source_url": "https://techcrunch.com/2026/09/16/anthropic-and-openai-want-to-embed-safety-evaluators-will-they-really-be-independent/",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 28,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_2; ai_major_model_or_policy"
+        },
+        {
+          "event_id": "daily_20260918_evt_170",
+          "headline": "AI恐威脅人類？一次看懂",
+          "context": "AI 是否可能威脅人類存續，這個問題最近又重新被提起。這是一篇背景整理報導，說明目前各界對「AI 存在性風險」的主要論點從何而來。",
+          "beat": "AI",
+          "thread_text": "🧵 1/N\n📌 AI 新知\n\nAI恐威脅人類？一次看懂\n\nAI 是否可能威脅人類存續，這個問題最近又重新被提起。這是一篇背景整理報導，說明目前各界對「AI 存在性風險」的主要論點從何而來。目前這則消息只有 BBC 提及。\n\n—— 本則來自 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "AI 是否可能威脅人類存續，這個老問題最近又重新被提起。這篇報導整理了目前各界對「AI 存在性風險」的主要論點——從模型能力快速進步、到監督機制是否跟得上，都是討論的焦點。目前這則消息只有 BBC 提及。\n\n本則整理自 BBC 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "AI 是否可能威脅人類存續，這個問題最近又被重新提起。\n\n有一篇整理報導，說明了目前各界對「AI 存在性風險」的主要論點從何而來，包括模型能力進步的速度，以及監督機制是否跟得上。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 AI 新知\n\nAI恐威脅人類？一次看懂\n\nAI 是否可能威脅人類存續，這個問題最近又重新被提起。這是一篇背景整理報導，說明目前各界對「AI 存在性風險」的主要論點從何而來。目前這則消息只有 BBC 提及。\n\n—— 本則來自 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "AI 是否可能威脅人類存續，這個老問題最近又重新被提起。這篇報導整理了目前各界對「AI 存在性風險」的主要論點——從模型能力快速進步、到監督機制是否跟得上，都是討論的焦點。目前這則消息只有 BBC 提及。\n\n本則整理自 BBC 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "AI 是否可能威脅人類存續，這個問題最近又被重新提起。\n\n有一篇整理報導，說明了目前各界對「AI 存在性風險」的主要論點從何而來，包括模型能力進步的速度，以及監督機制是否跟得上。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_technology",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Existential fears about AI have once again reared their head - here's what you need to know.",
+              "title": "Why are there concerns AI could threaten humanity, and how real are they?",
+              "url": "https://www.bbc.co.uk/news/articles/c790xvnzgnno?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T17:18:57+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "BBC整理AI存在性風險爭論的背景與主要論點來源",
+              "source_id": "bbc_technology",
+              "source_title": "Why are there concerns AI could threaten humanity, and how real are they?",
+              "source_url": "https://www.bbc.co.uk/news/articles/c790xvnzgnno?at_medium=RSS&at_campaign=rss",
+              "support_type": "background"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    },
+    {
+      "beat": "ECON",
+      "title": "全球經濟趨勢",
+      "emoji": "📊",
+      "items": [
+        {
+          "event_id": "daily_20260918_evt_011",
+          "headline": "聯準會升息英國按兵",
+          "context": "美國聯準會宣布升息，主席沃許（Kevin Warsh）說，這是為了對抗「過高且拖太久」的通膨。同一週，英格蘭銀行則連續第六次維持利率不變，但警告若能源價格居高不下，未來可能被迫升息。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n聯準會升息英國按兵\n\n美國聯準會宣布升息，主席沃許說，這是為了對抗「過高且拖太久」的通膨，也是他上任以來對抗通膨的第一個重大動作。同一週，英格蘭銀行連續第六次把利率維持在 3.75%，但警告如果中東戰事持續、能源價格居高不下，未來仍可能被迫升息。英格蘭銀行同時宣布，將把數十億英鎊的公債賣回財政部，這項意外決定牽動下個月的英國財政預算。\n\n—— 本則來自 The New York Times、The Guardian 與 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國聯準會宣布升息，主席沃許（Kevin Warsh）說，這是為了對抗「過高且拖太久」的通膨，這也是他上任以來對抗通膨的第一個重大動作，美國總統川普這次罕見地沒有點名批評他。看看大西洋對岸，英格蘭銀行這一週連續第六次把利率維持在 3.75% 不變，但警告如果中東戰事持續推升能源價格，未來可能被迫升息。英格蘭銀行同時宣布一項意外計畫，要把數十億英鎊的公債賣回財政部，避免公債市場出現動盪，這項決定也牽動了下個月的英國財政預算。\n\n本則整理自 The New York Times、The Guardian 與 BBC 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "美國聯準會宣布升息。主席沃許說，這是為了對抗過高、而且拖了太久的通膨，這也是他上任以來對抗通膨的第一個重大動作。\n\n看看大西洋對岸的英國。英格蘭銀行這一週連續第六次把利率維持不變，但也示警，如果中東戰事持續推升能源價格，未來可能被迫升息。英格蘭銀行還宣布一項意外計畫，要把數十億英鎊的公債賣回財政部，這項決定也牽動了下個月的英國財政預算。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 全球經濟趨勢\n\n聯準會升息英國按兵\n\n美國聯準會宣布升息，主席沃許說，這是為了對抗「過高且拖太久」的通膨，也是他上任以來對抗通膨的第一個重大動作。同一週，英格蘭銀行連續第六次把利率維持在 3.75%，但警告如果中東戰事持續、能源價格居高不下，未來仍可能被迫升息。英格蘭銀行同時宣布，將把數十億英鎊的公債賣回財政部，這項意外決定牽動下個月的英國財政預算。\n\n—— 本則來自 The New York Times、The Guardian 與 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國聯準會宣布升息，主席沃許（Kevin Warsh）說，這是為了對抗「過高且拖太久」的通膨，這也是他上任以來對抗通膨的第一個重大動作，美國總統川普這次罕見地沒有點名批評他。看看大西洋對岸，英格蘭銀行這一週連續第六次把利率維持在 3.75% 不變，但警告如果中東戰事持續推升能源價格，未來可能被迫升息。英格蘭銀行同時宣布一項意外計畫，要把數十億英鎊的公債賣回財政部，避免公債市場出現動盪，這項決定也牽動了下個月的英國財政預算。\n\n本則整理自 The New York Times、The Guardian 與 BBC 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "美國聯準會宣布升息。主席沃許說，這是為了對抗過高、而且拖了太久的通膨，這也是他上任以來對抗通膨的第一個重大動作。\n\n看看大西洋對岸的英國。英格蘭銀行這一週連續第六次把利率維持不變，但也示警，如果中東戰事持續推升能源價格，未來可能被迫升息。英格蘭銀行還宣布一項意外計畫，要把數十億英鎊的公債賣回財政部，這項決定也牽動了下個月的英國財政預算。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "nyt_business",
+              "name": "The New York Times",
+              "publisher": "The New York Times",
+              "summary": "Kevin M. Warsh, the Federal Reserve chairman, said the bank acted to fight inflation that ‘is too high and has been for too long.’",
+              "title": "Takeaways From the Fed’s Decision to Raise Interest Rates",
+              "url": "https://www.nytimes.com/2026/09/16/business/economy/fed-meeting-interest-rates-warsh-takeaways.html",
+              "published_at": "2026-09-17T03:29:00+08:00"
+            },
+            {
+              "source_id": "guardian_business",
+              "name": "The Guardian",
+              "publisher": "The Guardian",
+              "summary": "Central bank announces surprise plan to sell billions of pounds in government bonds back to the Treasury Burnham’s talk of ‘breathing space’ at odds with reality of future rate rises The Bank is shaking up its bond sales – why does it matter? Business live – latest updates The Bank of England has kept interest rates on hold as it warned a continuation of the bitter fighting in the Middle East could force it to raise borrowing costs amid mounting fears over inflation. It also announced a surprise plan to sell billions of pounds in UK government bonds back to the Treasury to avoid fuelling turbulence in the gilt market, a decision that could have consequences for the public finances before next month’s budget. Continue reading...",
+              "title": "Bank of England holds interest rates at 3.75% but warns war could force future rises",
+              "url": "https://www.theguardian.com/business/2026/sep/17/bank-of-england-holds-interest-rates-inflation",
+              "published_at": "2026-09-17T20:04:07+08:00"
+            },
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely.",
+              "title": "Interest rates held but Bank signals rise if energy prices stay high",
+              "url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T22:05:38+08:00"
+            }
+          ],
+          "source_count": 3,
+          "confidence": "high",
+          "claim_trace": [
+            {
+              "claim": "聯準會主席沃許宣布升息以對抗過高且持續過久的通膨",
+              "source_id": "nyt_business",
+              "source_title": "Takeaways From the Fed’s Decision to Raise Interest Rates",
+              "source_url": "https://www.nytimes.com/2026/09/16/business/economy/fed-meeting-interest-rates-warsh-takeaways.html",
+              "support_type": "direct"
+            },
+            {
+              "claim": "英格蘭銀行維持利率3.75%但警告能源價格走高恐迫使未來升息",
+              "source_id": "guardian_business",
+              "source_title": "Bank of England holds interest rates at 3.75% but warns war could force future rises",
+              "source_url": "https://www.theguardian.com/business/2026/sep/17/bank-of-england-holds-interest-rates-inflation",
+              "support_type": "direct"
+            },
+            {
+              "claim": "英格蘭銀行連續第六次維持利率不變並警告能源價格走高恐致升息",
+              "source_id": "bbc_business",
+              "source_title": "Interest rates held but Bank signals rise if energy prices stay high",
+              "source_url": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 73,
+          "opinion_level": "none",
+          "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260918_evt_021",
+          "headline": "川普砲轟聯準會升息",
+          "context": "美國總統川普在聯準會升息後砲轟聯準會，但這次沒有點名批評主席沃許本人。目前這則消息只有路透社提及。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n川普砲轟聯準會升息\n\n美國總統川普在聯準會升息後砲轟聯準會，但這次沒有點名批評主席沃許本人。目前這則消息只有路透社提及，後續發展仍待觀察。\n\n—— 本則來自 Reuters，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "美國總統川普在聯準會宣布升息後隨即砲轟聯準會，但這一次他沒有點名批評主席沃許本人，這跟他過去對聯準會官員的攻擊方式略有不同。目前這則消息只有路透社提及，後續發展仍待觀察。\n\n本則整理自 Reuters 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "聯準會宣布升息後，美國總統川普隨即砲轟聯準會。\n\n不過這一次，他沒有點名批評主席沃許本人，這跟他過去對聯準會官員的攻擊方式略有不同。目前這個說法只有單一消息來源提及。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 全球經濟趨勢\n\n川普砲轟聯準會升息\n\n美國總統川普在聯準會升息後砲轟聯準會，但這次沒有點名批評主席沃許本人。目前這則消息只有路透社提及，後續發展仍待觀察。\n\n—— 本則來自 Reuters，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "美國總統川普在聯準會宣布升息後隨即砲轟聯準會，但這一次他沒有點名批評主席沃許本人，這跟他過去對聯準會官員的攻擊方式略有不同。目前這則消息只有路透社提及，後續發展仍待觀察。\n\n本則整理自 Reuters 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "聯準會宣布升息後，美國總統川普隨即砲轟聯準會。\n\n不過這一次，他沒有點名批評主席沃許本人，這跟他過去對聯準會官員的攻擊方式略有不同。目前這個說法只有單一消息來源提及。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_business_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "Trump lashes out at Fed after Warsh backs rate hike Reuters",
+              "title": "Trump lashes out at Fed after Warsh backs rate hike - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ09wMmRRbG83OVR3anZpSGk2VGxLdFRXVFpiMHRDcVZTSldiNTNBNUZlckZlR2k2dEY0Q2F4TFVEdzJ1aC12Z3hacGoyWWkwZjlDNWE4ZGpPejU0V1hVazhVRktwampUZTlkdEpRZWhySlFMZnVTUEtlbVU3T3RUS1hjaFJGcHdMSXMwRERiazVqbTBxOXJlMkVR?oc=5",
+              "published_at": "2026-09-17T04:44:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "川普升息後砲轟聯準會但未點名批評主席沃許",
+              "source_id": "reuters_business_google_news",
+              "source_title": "Trump lashes out at Fed after Warsh backs rate hike - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ09wMmRRbG83OVR3anZpSGk2VGxLdFRXVFpiMHRDcVZTSldiNTNBNUZlckZlR2k2dEY0Q2F4TFVEdzJ1aC12Z3hacGoyWWkwZjlDNWE4ZGpPejU0V1hVazhVRktwampUZTlkdEpRZWhySlFMZnVTUEtlbVU3T3RUS1hjaFJGcHdMSXMwRERiazVqbTBxOXJlMkVR?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260918_evt_044",
+          "headline": "紐西蘭GDP優於預期",
+          "context": "紐西蘭最新公布的國內生產毛額（GDP）成長速度放緩，但仍優於市場預期，被視為經濟展現韌性的訊號。目前這則消息只有路透社提及。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n紐西蘭GDP優於預期\n\n紐西蘭最新公布的國內生產毛額成長速度放緩，但仍優於市場預期，被視為經濟展現韌性的訊號。目前這則消息只有路透社提及。\n\n—— 本則來自 Reuters，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "紐西蘭最新公布的國內生產毛額（GDP）成長速度放緩，但仍優於市場預期，被市場解讀為經濟展現韌性的訊號。目前這則消息只有路透社提及，詳細數據仍待後續公布。\n\n本則整理自 Reuters 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "紐西蘭的經濟成長速度放緩了，但表現仍優於市場預期。\n\n這被視為當地經濟展現韌性的訊號。目前這個說法只有單一消息來源提及，詳細數據還待後續公布。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 全球經濟趨勢\n\n紐西蘭GDP優於預期\n\n紐西蘭最新公布的國內生產毛額成長速度放緩，但仍優於市場預期，被視為經濟展現韌性的訊號。目前這則消息只有路透社提及。\n\n—— 本則來自 Reuters，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "紐西蘭最新公布的國內生產毛額（GDP）成長速度放緩，但仍優於市場預期，被市場解讀為經濟展現韌性的訊號。目前這則消息只有路透社提及，詳細數據仍待後續公布。\n\n本則整理自 Reuters 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "紐西蘭的經濟成長速度放緩了，但表現仍優於市場預期。\n\n這被視為當地經濟展現韌性的訊號。目前這個說法只有單一消息來源提及，詳細數據還待後續公布。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "reuters_world_google_news",
+              "name": "Reuters",
+              "publisher": "Reuters",
+              "summary": "New Zealand's GDP growth slows but tops forecasts in sign of resilience Reuters",
+              "title": "New Zealand's GDP growth slows but tops forecasts in sign of resilience - Reuters",
+              "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeDg1dXhxVWVCamFueEFlNUNaam11NlRjZlF2R1A5U2k0WUZndE56Z1VlS1phYl9kS1FSdFRRRDFuam5QX1cwa1ZEOEdFU2ZIM2Y1UktrdXZHTlBOamdtUW0xMUNtOXR3UGJZS2l5bzl2TndzVXdEYXpqRGFtaE43UlU1OVVDcUZWY05IbnNiWnc?oc=5",
+              "published_at": "2026-09-17T06:59:00+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "紐西蘭GDP成長放緩但優於市場預期顯示經濟韌性",
+              "source_id": "reuters_world_google_news",
+              "source_title": "New Zealand's GDP growth slows but tops forecasts in sign of resilience - Reuters",
+              "source_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNeDg1dXhxVWVCamFueEFlNUNaam11NlRjZlF2R1A5U2k0WUZndE56Z1VlS1phYl9kS1FSdFRRRDFuam5QX1cwa1ZEOEdFU2ZIM2Y1UktrdXZHTlBOamdtUW0xMUNtOXR3UGJZS2l5bzl2TndzVXdEYXpqRGFtaE43UlU1OVVDcUZWY05IbnNiWnc?oc=5",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 35,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1; economy_macro_policy"
+        },
+        {
+          "event_id": "daily_20260918_evt_039",
+          "headline": "升息如何影響美國消費者",
+          "context": "聯準會升息後，美國消費者會受到什麼影響？BBC 記者薩米拉．胡笙分析了這波升息背後考量的因素，以及對美國經濟的可能衝擊。",
+          "beat": "ECON",
+          "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n升息如何影響美國消費者\n\n聯準會升息之後，美國消費者會感受到什麼？BBC 記者薩米拉．胡笙分析了這波升息背後考量的因素，以及對美國經濟可能帶來的衝擊，房貸、車貸與信用卡循環利息都可能受到牽動。\n\n—— 本則來自 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "聯準會升息之後，美國一般消費者會感受到什麼影響？BBC 記者薩米拉．胡笙分析了這波升息背後考量的因素，以及對美國經濟可能帶來的衝擊——房貸、車貸與信用卡循環利息，都可能因為這次升息而跟著調整。\n\n本則整理自 BBC 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "聯準會升息之後，一般美國消費者會感受到什麼？\n\n房貸、車貸和信用卡循環利息，都可能因為這次升息跟著調整。這是分析報導整理出來的觀察。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 全球經濟趨勢\n\n升息如何影響美國消費者\n\n聯準會升息之後，美國消費者會感受到什麼？BBC 記者薩米拉．胡笙分析了這波升息背後考量的因素，以及對美國經濟可能帶來的衝擊，房貸、車貸與信用卡循環利息都可能受到牽動。\n\n—— 本則來自 BBC，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "聯準會升息之後，美國一般消費者會感受到什麼影響？BBC 記者薩米拉．胡笙分析了這波升息背後考量的因素，以及對美國經濟可能帶來的衝擊——房貸、車貸與信用卡循環利息，都可能因為這次升息而跟著調整。\n\n本則整理自 BBC 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "聯準會升息之後，一般美國消費者會感受到什麼？\n\n房貸、車貸和信用卡循環利息，都可能因為這次升息跟著調整。這是分析報導整理出來的觀察。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "bbc_business",
+              "name": "BBC",
+              "publisher": "BBC",
+              "summary": "The BBC's Samira Hussain looks at the factors considered in the increase by the Federal Reserve and what it could mean for the US economy.",
+              "title": "Watch: How will higher interest rates impact US consumers?",
+              "url": "https://www.bbc.co.uk/news/videos/cmx2zw08dvk9o?at_medium=RSS&at_campaign=rss",
+              "published_at": "2026-09-17T06:26:10+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "BBC分析聯準會升息對美國消費者房貸車貸信用卡利率的影響",
+              "source_id": "bbc_business",
+              "source_title": "Watch: How will higher interest rates impact US consumers?",
+              "source_url": "https://www.bbc.co.uk/news/videos/cmx2zw08dvk9o?at_medium=RSS&at_campaign=rss",
+              "support_type": "background"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": -10,
+          "single_source_warning": true,
+          "opinion_level": "light_context",
+          "selection_reason": "source_tier_1; economy_macro_policy; same_topic_already_selected"
+        }
+      ]
+    },
+    {
+      "beat": "PTS_LOCAL",
+      "title": "公視在地新聞",
+      "emoji": "🇹🇼",
+      "items": [
+        {
+          "event_id": "daily_20260918_evt_122",
+          "headline": "AI辨識平台找出海龜身份",
+          "context": "海洋委員會 16 日啟用「TURTLE-FINDER 海龜辨識平台」，民眾只要拍下海龜臉部照片、上傳並填寫目擊地點，就能透過 AI 資料庫比對出海龜的個體身份，也能協助研究人員追蹤海龜的生活狀況。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/N\n📌 公視在地新聞\n\nAI辨識平台找出海龜身份\n\n海洋委員會 16 日啟用「TURTLE-FINDER 海龜辨識平台」，民眾只要拍下海龜臉部照片、上傳並填寫目擊地點，就能透過 AI 資料庫比對出海龜的個體身份，也能協助研究人員追蹤海龜的生活狀況。\n\n—— 本則來自 公視，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "海洋委員會 16 日啟用「TURTLE-FINDER 海龜辨識平台」，民眾只要拍下海龜臉部照片、上傳並填寫目擊地點等簡單步驟，就能透過 AI 資料庫比對出海龜的個體身份，未來也能協助研究人員長期追蹤海龜的生活狀況與移動軌跡。\n\n本則整理自 公視 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "海洋委員會推出一個新平台，靠 AI 幫忙認出海龜的身份。\n\n民眾只要拍下海龜臉部照片，上傳並填寫目擊地點，系統就能透過資料庫比對，辨識出這隻海龜是不是已經記錄過的個體。這也能幫助研究人員長期追蹤海龜的生活狀況。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 公視在地新聞\n\nAI辨識平台找出海龜身份\n\n海洋委員會 16 日啟用「TURTLE-FINDER 海龜辨識平台」，民眾只要拍下海龜臉部照片、上傳並填寫目擊地點，就能透過 AI 資料庫比對出海龜的個體身份，也能協助研究人員追蹤海龜的生活狀況。\n\n—— 本則來自 公視，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "海洋委員會 16 日啟用「TURTLE-FINDER 海龜辨識平台」，民眾只要拍下海龜臉部照片、上傳並填寫目擊地點等簡單步驟，就能透過 AI 資料庫比對出海龜的個體身份，未來也能協助研究人員長期追蹤海龜的生活狀況與移動軌跡。\n\n本則整理自 公視 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "海洋委員會推出一個新平台，靠 AI 幫忙認出海龜的身份。\n\n民眾只要拍下海龜臉部照片，上傳並填寫目擊地點，系統就能透過資料庫比對，辨識出這隻海龜是不是已經記錄過的個體。這也能幫助研究人員長期追蹤海龜的生活狀況。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "海保署16日啟用「TURTLE-FINDER海龜辨識平台」，民眾只要完成拍攝海龜臉部照片、上傳並填寫目擊地點等步驟，即可透過AI資料庫取得海龜個體辨識結果，同時也能幫助研究人員追蹤海龜個體生活情況。",
+              "title": "用AI找出「牠是誰」 海龜辨識平台使用步驟一次看",
+              "url": "https://news.pts.org.tw/article/827482",
+              "published_at": "2026-09-17T14:29:04+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "海洋委員會16日啟用TURTLE-FINDER海龜辨識平台供民眾上傳照片比對",
+              "source_id": "pts_news",
+              "source_title": "用AI找出「牠是誰」 海龜辨識平台使用步驟一次看",
+              "source_url": "https://news.pts.org.tw/article/827482",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        },
+        {
+          "event_id": "daily_20260918_evt_143",
+          "headline": "人權影展公布入圍名單",
+          "context": "由國家人權博物館主辦的「2026 人權電影獎」公布 11 部入圍作品，其中包含 9 部紀錄片和 2 部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，以及司法制度、流亡離散等議題。頒獎典禮將於 9 月 19 日舉行。",
+          "beat": "PTS_LOCAL",
+          "thread_text": "🧵 1/N\n📌 公視在地新聞\n\n人權影展公布入圍名單\n\n國家人權博物館主辦的「2026 人權電影獎」公布 11 部入圍作品，包含 9 部紀錄片和 2 部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，以及司法制度、流亡離散等議題。頒獎典禮將於 9 月 19 日舉行。\n\n—— 本則來自 公視，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。",
+          "threads_text": "國家人權博物館主辦的「2026 人權電影獎」公布 11 部入圍作品，包含 9 部紀錄片和 2 部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，也探討司法制度、流亡離散等多樣主題。頒獎典禮將於 9 月 19 日舉行。\n\n本則整理自 公視 於 2026 年 9 月 17 日發佈的報導。",
+          "voice_text": "「2026 人權電影獎」公布了 11 部入圍作品。\n\n九部紀錄片、兩部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，也探討司法制度、流亡離散等主題。頒獎典禮訂在 9 月 19 日舉行。",
+          "platform_outputs": {
+            "x": {
+              "max_chars": 280,
+              "posts": [
+                "🧵 1/N\n📌 公視在地新聞\n\n人權影展公布入圍名單\n\n國家人權博物館主辦的「2026 人權電影獎」公布 11 部入圍作品，包含 9 部紀錄片和 2 部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，以及司法制度、流亡離散等議題。頒獎典禮將於 9 月 19 日舉行。\n\n—— 本則來自 公視，2026 年 9 月 17 日發佈，讓圖書館員翻譯給你聽。"
+              ]
+            },
+            "threads": {
+              "max_chars": 500,
+              "posts": [
+                "國家人權博物館主辦的「2026 人權電影獎」公布 11 部入圍作品，包含 9 部紀錄片和 2 部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，也探討司法制度、流亡離散等多樣主題。頒獎典禮將於 9 月 19 日舉行。\n\n本則整理自 公視 於 2026 年 9 月 17 日發佈的報導。"
+              ]
+            },
+            "voice": {
+              "text": "「2026 人權電影獎」公布了 11 部入圍作品。\n\n九部紀錄片、兩部劇情片，內容涵蓋白色恐怖時期的威權統治歷史，也探討司法制度、流亡離散等主題。頒獎典禮訂在 9 月 19 日舉行。"
+            }
+          },
+          "sources": [
+            {
+              "source_id": "pts_news",
+              "name": "公視",
+              "publisher": "公視",
+              "summary": "由國家人權博物館主辦的「2026人權電影獎」，昨（16）日公布11部入圍作品，其中包含9部紀錄片與2部劇情片，內容則涵蓋白色恐怖時期的威權統治歷史，以及探討司法制度、流亡離散等多樣題材。本屆人權電影獎將於9月19日舉行頒獎典禮。",
+              "title": "人權電影獎11部入圍名單揭曉 聚焦威權歷史、司法議題",
+              "url": "https://news.pts.org.tw/article/827511",
+              "published_at": "2026-09-17T16:30:32+08:00"
+            }
+          ],
+          "source_count": 1,
+          "confidence": "medium",
+          "claim_trace": [
+            {
+              "claim": "2026人權電影獎公布11部入圍作品涵蓋白色恐怖歷史與司法議題",
+              "source_id": "pts_news",
+              "source_title": "人權電影獎11部入圍名單揭曉 聚焦威權歷史、司法議題",
+              "source_url": "https://news.pts.org.tw/article/827511",
+              "support_type": "direct"
+            }
+          ],
+          "tw_highlight": false,
+          "selection_score": 15,
+          "single_source_warning": true,
+          "opinion_level": "none",
+          "selection_reason": "source_tier_1"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total_feeds_checked": 27,
+    "total_feeds_failed": 0,
+    "total_feeds_failed_remote_blocked": 0,
+    "total_articles_fetched": 539,
+    "total_articles_after_filter": 504,
+    "total_events_merged": 354,
+    "total_events_selected": 18,
+    "tw_highlights_count": 2
+  },
+  "dropped_events": [
+    {
+      "event_id": "daily_20260918_evt_052",
+      "headline": "Trump says 'hopefully we are towards end' of Iran war - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_082",
+      "headline": "Saudis and Houthis exchange strikes, Yemenis take to boats to flee as Middle East war spreads - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_096",
+      "headline": "Rosenberg: Russia's elections will have few surprises, but for the Kremlin they matter",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_131",
+      "headline": "Morocco's political parties battle youth disenchantment ahead of election - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_182",
+      "headline": "Russia says new US sanctions, if signed by Trump, would make Ukraine peace deal harder - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_220",
+      "headline": "Swedish PM Kristersson resigns after election loss",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_227",
+      "headline": "Argentina's Milei submits bill to strengthen sanctions on Falklands activities - Reuters",
+      "selection_score": -5,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_228",
+      "headline": "Klopp wants to 'reclaim' flag amid German elections",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_264",
+      "headline": "Democratic senator calls for US diplomats to help guide Europe troop review - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_275",
+      "headline": "Sweden's prime minister steps down after losing election - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_300",
+      "headline": "Warm words on Canada's EU 'associate membership' but no guarantees",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_306",
+      "headline": "Impoverished by war in Iran, Afghan migrants return to Taliban rule - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_313",
+      "headline": "Poland's Tusk says Russia plans 'hybrid' missile and drone attacks on Kyiv's allies - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_318",
+      "headline": "Pakistan announces austerity measures to conserve fuel as Gulf conflict spirals - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_330",
+      "headline": "Brazil's Lula boosts welfare payments, eyes new debt-relief push ahead of election - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_334",
+      "headline": "Trump says progress made toward establishing US Army base in Poland - Reuters",
+      "selection_score": 40,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_048",
+      "headline": "Fed policymakers forecast one more rate hike this year - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_060",
+      "headline": "Why Trump's hand-picked Fed chair defied him by raising interest rates",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_062",
+      "headline": "IMF says Australia may need further interest rate rises to tame inflation - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_065",
+      "headline": "Goldman's October hike call underscores renewed Fed tightening risks - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_068",
+      "headline": "Dollar eases after Fed-driven jump as Treasury yields and oil prices retreat - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_071",
+      "headline": "Indian shares muted as Fed, oil and IPO rush dent risk appetite - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_102",
+      "headline": "India says new US tariffs over Russian oil could hit ties, vows to protect energy security - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_149",
+      "headline": "Trump calls EU's offer of associate membership to Canada 'laughable' – video",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_171",
+      "headline": "Gulf bourses edge higher as investors weigh Fed rate hike - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_201",
+      "headline": "What's happening to UK interest rates and what does it mean for mortgages?",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_290",
+      "headline": "World stocks gain as Treasury yields retreat after Fed, BoE decisions - Reuters",
+      "selection_score": 35,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_342",
+      "headline": "Wall St rebounds after Fed's first rate hike in years as oil, Treasury yields dip - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_352",
+      "headline": "Latam markets inch higher in global risk-on mood after Fed hike - Reuters",
+      "selection_score": -10,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_147",
+      "headline": "Rising gas prices fuel protests in countries around the world",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_150",
+      "headline": "Big questions - and key logistical details - loom ahead of China-U.S. summit",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_177",
+      "headline": "Pressure on global chokepoints drives Asia's increased use of Arctic Trade Routes",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_270",
+      "headline": "What are all the sanctions Iran is under?",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_272",
+      "headline": "‘Kosovo’s moves towards Israel are the price of aligning with US policy’",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_317",
+      "headline": "‘I’m Russian’: NHL star Ovechkin defends Putin ad appearance",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_322",
+      "headline": "Brazil’s Lula announces welfare increases ahead of presidential election",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_345",
+      "headline": "Russia’s plans may include strikes against Ukraine’s allies, Poland says",
+      "selection_score": 33,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_001",
+      "headline": "Why the Fed Might Raise Interest Rates When Borrowing Costs Are Surging",
+      "selection_score": -17,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_208",
+      "headline": "What to know about the Fed’s decision.",
+      "selection_score": 28,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_243",
+      "headline": "Trump’s Latest Threats Loom Over Fed’s Interest Rate Decision",
+      "selection_score": -17,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_139",
+      "headline": "Socialist hotels – in pictures",
+      "selection_score": 23,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_003",
+      "headline": "Photos show widespread damage at US sites from Iranian attacks",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_005",
+      "headline": "Charli xcx Music, Fashion, Film tour review – an electrifying and deafening pop evolution",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_009",
+      "headline": "Trump chief of staff Susie Wiles announces she's cancer-free",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_013",
+      "headline": "US House votes to hold billionaire Epstein associate Leon Black in contempt",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_016",
+      "headline": "India cuts windfall tax on export of petrol, diesel, aviation fuel - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_017",
+      "headline": "Netanyahu steps up threats against directors of Gaza documentary 'NAZA' - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_019",
+      "headline": "Canada applies to join UK-led military coalition - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_026",
+      "headline": "Myanmar frees US businessman, Trump officials credited - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_027",
+      "headline": "Israel, Morocco agree to upgrade diplomatic ties, Israeli government says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_031",
+      "headline": "North Korea's Kim Yo Jong denounces IAEA's meeting on denuclearization - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_033",
+      "headline": "Google should relax ad tech rules, appoint antitrust monitor, US judge finds - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_034",
+      "headline": "US drone maker Powerus signs Pakistan Army MOU, gets initial order - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_036",
+      "headline": "Banks provide $22 billion chip loan to Blackstone, Alphabet AI cloud venture, source says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_040",
+      "headline": "Holtec Nuclear shelves US IPO as AI trade turbulence rattles markets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_041",
+      "headline": "Brazil central bank delivers fifth straight rate cut, leaves next move open - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_043",
+      "headline": "UK's Burnham, Canada's Carney discuss AI challenges and online safety cooperation - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_045",
+      "headline": "US House advances first bill addressing economic impact of data center boom - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_046",
+      "headline": "Bank of England to hold rates but energy shock stirs talk of a hike - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_047",
+      "headline": "UK think tank sees £8 billion in savings from means-testing disability benefit - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_049",
+      "headline": "HKMA raises rate for first time in three years, major banks keep rates steady - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_050",
+      "headline": "US officials met Iran-backed Houthis in Oman over the weekend, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_053",
+      "headline": "Japan PM retains economy minister in cabinet reshuffle, vows to speed up spending plans - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_055",
+      "headline": "US blocks Palestinians' Abbas from attending UN meeting, for second year in a row - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_056",
+      "headline": "Russia strikes Kyiv and other Ukrainian cities, Poland scrambles jets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_058",
+      "headline": "Singapore's August exports surge by 46.2% yr/yr as AI boom powers demand - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_064",
+      "headline": "Oil falls 1% as investors watch Middle East supply disruptions - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_066",
+      "headline": "India's UPI ends free era with fee on large merchant payments - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_069",
+      "headline": "Indonesian rescuers plan to right capsized ship as weather hampers search for 129 missing people - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_070",
+      "headline": "Gold gains over 2% on weaker dollar, easing oil prices - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_072",
+      "headline": "China's Huawei says AI chip demand outstrips supply as it steps up Nvidia challenge - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_073",
+      "headline": "聯準會升息1碼聲明全文：經濟穩健擴張、通膨壓力仍高",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_074",
+      "headline": "Rupee ends flat as RBI intervention, portfolio flows blunt Fed hike impact - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_076",
+      "headline": "降低對美依賴　加拿大申請加入英主導聯合遠征軍",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_077",
+      "headline": "暖化衝擊喜馬拉雅山　尼泊爾洪災增至6150人失聯",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_079",
+      "headline": "日相高市新內閣將上路　多名主要閣員預計留任",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_080",
+      "headline": "‘I thank God for killing me and bringing me back’: Nicolas Winding Refn on the heart surgery that inspired his new sci-fi horror",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_081",
+      "headline": "Turkey approves liquidation of US-sanctioned Golden Global's funds - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_083",
+      "headline": "日本首度調查外國人持有土地比例　台灣占7.7%居第3",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_084",
+      "headline": "川普盼美伊戰爭近尾聲　傳下週與波灣6國領袖會商",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_085",
+      "headline": "US, China security experts propose nuclear-style safeguards for AI risks - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_086",
+      "headline": "National Stock Exchange of India's $2.3 billion IPO draws muted early demand - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_087",
+      "headline": "India's Asset Reconstruction Company edges up after flat debut - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_088",
+      "headline": "美伊戰事衝擊杜拜房市　炒房客退場觀望資金伺機而動",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_089",
+      "headline": "川普將盛大接待習近平　美中峰會實質成果期待不高",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_090",
+      "headline": "India's Rentomojo jumps on debut as investors embrace furniture rental play - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_091",
+      "headline": "美新聞直升機墜毀釀記者等3死 2000年至今已8起類似事故",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_092",
+      "headline": "川習會登場在即　美中關稅戰局勢盤點",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_095",
+      "headline": "Assad regime planned US journalist's kidnap for weeks, BBC finds",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_097",
+      "headline": "Paris hosts military leaders to weigh post-UN mission in Lebanon - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_098",
+      "headline": "International students, 'visa hoppers' and backpackers targeted in Australia migration crackdown",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_099",
+      "headline": "EU seeks China curbs on hybrid car exports to avert trade row, FT reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_100",
+      "headline": "Volvo Cars plans 13 new models by 2030 in bid to double market share - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_101",
+      "headline": "高市早苗改組內閣出爐　總裁潛在對手林芳正未獲留任",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_104",
+      "headline": "川普最高軍事顧問示警　美軍須在月球周圍備戰",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_105",
+      "headline": "Number of ships transiting Strait of Hormuz falls to three on Wednesday, data shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_106",
+      "headline": "India faces 100% tariff threat over Russian oil after US House vote",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_107",
+      "headline": "美眾院通過法案　授權川普對中國課徵100%關稅",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_108",
+      "headline": "北韓體育相率團赴日參加亞運　閣僚睽違8年訪日",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_109",
+      "headline": "韓外長趙顯赴美將會盧比歐　預計談對美投資等事項",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_110",
+      "headline": "歷經88年談判　玻利維亞與巴拉圭完成邊界劃定",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_111",
+      "headline": "斐濟宣布全國HIV危機　每60名成年人1人感染",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_113",
+      "headline": "The Strangers by Naomi Alderman review – where has this odd new species come from?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_114",
+      "headline": "IAEA大會談非核化　金與正：北韓擁核地位不可動搖",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_115",
+      "headline": "China's Xi calls for 'bigger, stronger' advanced manufacturing sector - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_116",
+      "headline": "Japan vows effort to maintain orderly yen moves - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_118",
+      "headline": "日本將修訂安保相關3文件　擬導入5萬組無人裝備",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_120",
+      "headline": "Japan, US discussing chip factory construction as part of $550 billion investment talks, Nikkei reports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_121",
+      "headline": "聯準會升息加上房貸利率逼近7%　南加州買家縮手屋主惜售",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_123",
+      "headline": "Indian rupee may need to weaken further as fundamentals shift, Axis Bank says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_124",
+      "headline": "From quarantine boxes to luxury cabins, China's prefab home factories pivot to exports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_125",
+      "headline": "美制裁俄法案衝擊購油變數  印度稱將保障能源安全",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_126",
+      "headline": "Abducted South African journalist found dead with gunshot wounds",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_133",
+      "headline": "Dollar's allure, oil surge fan bearish bets on emerging Asian currencies: Reuters poll - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_134",
+      "headline": "Ukraine's Zelenskiy appoints acting prosecutor general, decree shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_140",
+      "headline": "Russia damages bridge in southern Ukraine crucial for grain exports, railway says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_141",
+      "headline": "India rice output faces biggest drop in two decades, stocks cushion exports - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_144",
+      "headline": "One dead after torrential rain and flash floods hit Barcelona region",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_148",
+      "headline": "Pakistan eyes bigger China swap line, expects US financing decision soon - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_172",
+      "headline": "Sky’s the limit! Alvin Ailey American Dance Theater – in pictures",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_174",
+      "headline": "央行決議利率維持不變 第2戶房貸成數上限放寬至7成",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_175",
+      "headline": "Is this world-class, free gallery Cambridge’s best-kept secret?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_176",
+      "headline": "BofA hires Goldman's Srijith Nair to lead Asia ex-China financial institutions banking, memo says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_179",
+      "headline": "EU announces plan to restrict social media access for under-15s",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_180",
+      "headline": "De Gaulle: Liberté review – biopic of conquering French war hero reaches his imperial era",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_181",
+      "headline": "Nigeria sends state police amendment bill to state assemblies for ratification - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_183",
+      "headline": "北市動物園2黑猩猩脫離活動場 園方吹箭麻醉成功帶回",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_186",
+      "headline": "Are you washing your sportswear wrong? An expert guide to making it last longer",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_187",
+      "headline": "Aztec document goes on display in Mexico after 186 years abroad",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_189",
+      "headline": "Why stop at Wuthering Heights: House of the Damned? Bring on Mrs Dalloway’s Rampage!",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_191",
+      "headline": "River home to 500 crocodiles chosen as Olympic rowing venue",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_196",
+      "headline": "Thelma & Louise review – musical hoedown is a bland and baffling wrong turn",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_197",
+      "headline": "Rescue efforts end after 21 die in collapse of bomb-damaged building in Gaza; 45 saved from rubble - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_198",
+      "headline": "The night Sweden's far-right stopped winning - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_200",
+      "headline": "Brazil's Flavio Bolsonaro, Lula tied in runoff scenario, Atlas poll shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_202",
+      "headline": "‘It bloody works’: why the world’s oldest cheddar-maker uses a ‘milk-source’ heat pump",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_203",
+      "headline": "Andy Burnham: UK must fully commit to reaching net zero by 2050",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_205",
+      "headline": "Germany's Klingbeil urges measures against 'unfair trade' with Chinese carmakers - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_206",
+      "headline": "VIEW Bank of England sounds inflation alarm, pauses gilt sales - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_207",
+      "headline": "我亞運代表團中繼站帆布遭塗鴉 日本警方展開調查",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_209",
+      "headline": "日本通過稅制改革大綱 擬調降食品消費稅至1%",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_211",
+      "headline": "Bolivia extends state of emergency over risks of new blockades - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_212",
+      "headline": "亞運參賽含「英雄聯盟」等7項 電競成台灣第二大代表團",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_214",
+      "headline": "眾議員敦促美政府挺台入IMF 指台灣正積極準備申請",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_215",
+      "headline": "台灣募逾3億助熊本賑災 日台交流協會代表致謝",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_216",
+      "headline": "護理師遭二度輾壓亡今告別式 肇事駕駛未到、父出席致意",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_217",
+      "headline": "嘉義市前正副議長涉詐欺遭判刑 明日發監地檢啟動防逃機制",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_218",
+      "headline": "Chinese AI not powerful enough to see rogue-AI risks, says Huawei - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_219",
+      "headline": "Fed升息我央行不跟進 宣布利率連十凍",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_221",
+      "headline": "Applied Materials to invest $5 billion in India as Modi's flagship chip event kicks off - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_222",
+      "headline": "家長因制服購買不及找民代關切 校方：提供緩衝期、加強溝通",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_223",
+      "headline": "模擬2100年海洋酸化情境 中研院研究指烏賊大腦縮小49%",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_224",
+      "headline": "暖化加速格陵蘭、南極冰層流失 47年已融11兆公噸",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_225",
+      "headline": "歐盟邀加拿大成「準成員國」 深化貿易、國防等合作",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_226",
+      "headline": "葉門青年運動宣稱 擊落美製沙國F-15戰機",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_230",
+      "headline": "印尼保育團體以金錢為誘因 鼓勵民眾拍攝野生動物換獎勵",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_231",
+      "headline": "加拿大有望成為歐盟準成員國 總理指民調支持深化與歐合作",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_232",
+      "headline": "嘉賓挺巴勒斯坦引場地方不滿 紅髮艾德巡迴演唱捲政治風波",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_233",
+      "headline": "加薩七層樓建築倒塌 已知21死百人受困",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_234",
+      "headline": "澳門閉門審理首宗國安法案件 未公開時程也不開放媒體採訪",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_237",
+      "headline": "Highlights from Canadian PM Mark Carney's speech in Strasbourg - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_238",
+      "headline": "Canada will decide on its own partnerships, Carney says - Reuters",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_239",
+      "headline": "助高金素梅助理張俊傑逃亡 關鍵共犯陳威達出面投案",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_240",
+      "headline": "外媒：台美推「地獄景象」構想 戰時以大量無人機提高攻台代價",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_244",
+      "headline": "How Yemen's Houthis went from a small mountain militia to a big regional threat - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_249",
+      "headline": "Verified video shows wreckage of Saudi fighter jet shot down over Yemen",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_252",
+      "headline": "Beck: ‘What does a devil’s haircut look like? Anything with a lot of architecture and wild flights of fancy’",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_254",
+      "headline": "Pakistan's top court suspends sentences of rights lawyer Mazari and husband - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_255",
+      "headline": "Russian seaborne oil product exports rose 16.4% in August, data from sources shows - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_258",
+      "headline": "A harvest ballgown and a West Bank raid: photos of the day – Thursday",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_259",
+      "headline": "China, US top diplomats discuss 'high-level interactions' in call, Beijing says - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_260",
+      "headline": "US Senate panel votes to advance Trump pick for consumer watchdog - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_262",
+      "headline": "Investors cheer BoE move to pause gilt sales, driving bond rally - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_263",
+      "headline": "Money in people’s pockets is the key to economic recovery | Letter",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_267",
+      "headline": "Darkling review – Stranger Things’ Linnea Berthelsen confronts a gruesome Indian disaster",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_268",
+      "headline": "Fire, ice and family: Australia’s 2026 Bowness photography prize – in pictures",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_269",
+      "headline": "Artists boycotted this portrait prize over AI entries. Now they’re back to take them on",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_271",
+      "headline": "Hyrox athlete apologises for continuing race after soiling herself",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_276",
+      "headline": "After fallout with Chinese parent, chipmaker Nexperia partners with India's Tata - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_277",
+      "headline": "Turkey steps in to support markets after fund liquidity crunch sparks selloff - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_278",
+      "headline": "Romanian Liberal MEP Siegfried Muresan nominated as prime minister - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_280",
+      "headline": "US rate options signal market can absorb higher Treasury yields - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_281",
+      "headline": "EU Commission proposes under-13s social media ban - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_284",
+      "headline": "EU exec to push for EU bonds to be included in indexes to boost euro role - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_285",
+      "headline": "Revolut reportedly facing $3m ransom demand after hackers steal hundreds of customers’ data",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_286",
+      "headline": "India's Tata reappoints chairman, backs listing in rift with controlling charity - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_287",
+      "headline": "EXCLUSIVE: Pennsylvania asks for CDC measles help amid Kennedy dispute - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_291",
+      "headline": "China creates Italy-sized no-fly zone around Beijing after rare crash - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_292",
+      "headline": "Is Canada about to join the EU?",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_293",
+      "headline": "Why are world leaders at the UN next week and what will they talk about? - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_295",
+      "headline": "Dangote IPO tests Nigeria's fintech infrastructure as investor demand overwhelms platforms - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_297",
+      "headline": "Sway, Mobo-winning British rapper, dies aged 44",
+      "selection_score": -30,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_298",
+      "headline": "Rising oil, rates and yields brew up stagflation cocktail for markets - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_301",
+      "headline": "US securities regulator rolls out five-year exemption for tokenized stock trading - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_303",
+      "headline": "Italy readies navy to protect its shipping amid Bab el-Mandeb tensions - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_304",
+      "headline": "US allies fret over how Trump might play his Taiwan hand with Xi - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_305",
+      "headline": "Wife of US scholar jailed in China asks Trump to raise arrest at Xi meeting",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_309",
+      "headline": "Million Dollar Quartet review – jumping jukebox show reignites rock’n’roll classics",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_316",
+      "headline": "Robert Macfarlane and Jackie Morris’ guide to 49 threatened British birds wins Wainwright book of the year",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_320",
+      "headline": "US seals big uranium investment in Niger, two years after troops left - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_324",
+      "headline": "Prince Harry makes first public appearances since return to UK - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_325",
+      "headline": "EXCLUSIVE: China presses Iran to help rein in Houthis after Saudi appeal, sources say - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_335",
+      "headline": "Credit Acceptance reaches $710 million predatory auto lending settlement with most US states - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_340",
+      "headline": "This Olympic river has 500 crocodiles in it - but that's not the main concern",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_347",
+      "headline": "Why Canadians are ready for closer ties with Europe",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_350",
+      "headline": "US to allow Iranian leaders to attend UN General Assembly - Reuters",
+      "selection_score": 15,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_002",
+      "headline": "AI labs want in-house auditors — but maybe they should shut the front door first",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_004",
+      "headline": "John Malkovich and Sam Rockwell on ‘Wild Horse Nine’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_007",
+      "headline": "I Trained a Fly’s Brain to Generate WIRED Story Ideas",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_008",
+      "headline": "On ‘Slow Horses,’ Kristin Scott Thomas’s Diana Taverner Is in Charge at Last",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_010",
+      "headline": "The Good List: 6 Things to Add Delight to Your Day",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_012",
+      "headline": "Trump Administration Outlines Plan for Signs Outside Smithsonian Museum",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_014",
+      "headline": "Gregor Benko, Who Resurrected a Vanished Musical World, Dies at 82",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_015",
+      "headline": "After accusations of selling ‘perv glasses,’ Meta prepares to sell a pair without a camera",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_018",
+      "headline": "Annie Dillard, Meditative Author of ‘Pilgrim at Tinker Creek,’ Dies at 81",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_020",
+      "headline": "Trump Ally Harold Hamm Strikes Venezuela Oil Deal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_022",
+      "headline": "Merriam-Webster Dictionary Is Wordsmaxxing With 1,400 New Definitions",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_023",
+      "headline": "Washington Won’t Be Regulating AI Anytime Soon",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_024",
+      "headline": "New York Performing Arts Library Gets $60 Million Gift for Preservation",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_030",
+      "headline": "‘S.N.L.’ Adds Grace Reiter and Saidah Belo-Osagie to Cast",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_032",
+      "headline": "Emergency Hearing Sought Over Kennedy Center Closure",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_037",
+      "headline": "England ’Til I Die review – a chilling portrait of a town turning on its neighbours",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_038",
+      "headline": "An OpenAI Agent Tried to Jailbreak Itself",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_051",
+      "headline": "Al Gore says the real AI risk isn’t data centers",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_063",
+      "headline": "Snap tries to make the case again for its $2,200 smart glasses",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_078",
+      "headline": "Your startup’s next teammate might be an AI agent: Gusto, Insight Partners, and Leland explain what that changes at TechCrunch Disrupt 2026",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_093",
+      "headline": "Iceland-based Treble raises $18 million for its voice simulation platform",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_103",
+      "headline": "TV tonight: romance scams to make your blood boil",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_112",
+      "headline": "The Watergate Caper: Richard Nixon and the Death of the American Dream review – political scandal, 70s style",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_117",
+      "headline": "Late Night Slams Donald Trump Jr.’s Russian-Funded Wedding Party",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_130",
+      "headline": "‘When you tell people the story, it’s almost too good to be true’: the incredible journey behind The Cycle of Love",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_135",
+      "headline": "South Park – I mean, South America – is back, with no Donald Trump in sight (yet)",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_137",
+      "headline": "The New Dark Ages by James Marriott review – a grandiose but superficial defence of reading",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_138",
+      "headline": "Bad Apples review – Saoirse Ronan’s suffering teacher best thing about school horror-satire",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_145",
+      "headline": "Canada's Carney welcomes the EU's bid for closer ties amid pressure from Trump",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_146",
+      "headline": "How the fighting between the Houthis and Saudi Arabia is affecting gas prices",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_152",
+      "headline": "Anthony Jeselnik Explains Why He Started a Book Club",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_153",
+      "headline": "Jonathan Majors’s anti-Islam action thriller is laughably terrible far-right propaganda",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_154",
+      "headline": "‘You think you’re done and you get pigeonholed’: Samantha Morton on raving, Richard Russell and having another shot as a singer",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_155",
+      "headline": "Conjuring a Herd of Buffalo From Steel, Wood and Burlap",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_156",
+      "headline": "How William Greaves’s Old Footage Led to a Documentary on Harlem Years After His Death",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_157",
+      "headline": "‘Wicker’ Filmmakers on Alexander Skarsgard’s Costume",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_158",
+      "headline": "Book Review: ‘Ausländer,’ by Michael Moritz",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_159",
+      "headline": "‘Shaun the Sheep: The Beast of Mossy Bottom’ Review",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_160",
+      "headline": "‘Daniel and the Fiery Furnace’ Review: Lions, Treaties and Fire",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_161",
+      "headline": "‘If I Go Will They Miss Me’ Review: Wings of a Son’s Desire",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_162",
+      "headline": "‘Knife: The Attempted Murder of Salman Rushdie’ Review: Sharpened Insights",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_163",
+      "headline": "‘The Musical’ Review: That’s Entertainment",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_164",
+      "headline": "‘Resident Evil’ Review: Return to Raccoon City",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_165",
+      "headline": "‘Tiny Fugitives’ Review: Teenage Sex and Pranks at Jewish Summer Camp",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_166",
+      "headline": "‘The Weight’ Review: An Adrenaline-Spiked Adventure",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_167",
+      "headline": "‘Without Blood’ Review: A Fable for Two",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_168",
+      "headline": "Weird and Wonderful, the Lucas Museum Lands in L.A.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_169",
+      "headline": "New Home for Aperture Photography Center",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_185",
+      "headline": "The Fed raises interest rates. And, EU proposes Canada become an 'associate member'",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_188",
+      "headline": "Feeling overwhelmed by the AI doom loop? Here’s the essential reading list to make sense of it all",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_190",
+      "headline": "Beabadoobee: Pylon review – voice of a generation’s surprisingly relatable rampage through rock star rage",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_192",
+      "headline": "It’s going to be a blast: why 100 tubas are heading for a garden in Haddington",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_193",
+      "headline": "Fences review – August Wilson’s classic family drama is as smart as paint",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_194",
+      "headline": "Book Review: ‘The Rouse,’ by China Miéville",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_195",
+      "headline": "A New Play in Budapest Signals a Cultural Reawakening for Hungary",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_199",
+      "headline": "Human harps, massive bananas and dogging: the 20 best Busby Berkeley dance routines – ranked!",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_204",
+      "headline": "50 Years of Punk review – rock’n’roll rebels fondly recall the filth and fury a half-century on",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_210",
+      "headline": "It’s a Rap-Wrestling Mash-Up, Irish Style",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_229",
+      "headline": "Queen at Sea review – crushingly sad dementia drama offers a startling portrait of intimacy",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_236",
+      "headline": "Book Review: ‘When America Roared,’ by Jonathan Kaufman",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_241",
+      "headline": "Attorneys for Sean ‘Diddy’ Combs drop music mogul, alleging unpaid legal bills",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_242",
+      "headline": "Google, Nvidia, and Anthropic want Emerald AI to find space on the grid for more data centers",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_246",
+      "headline": "Opus13: Mendelssohn and Grieg album review – an assured and distinctive debut",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_247",
+      "headline": "‘You Had to Be There’ Review: An Irresistible Documentary",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_248",
+      "headline": "Rival AI agents, Instinct and Meta’s Muse, both add the ability to make calls",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_250",
+      "headline": "Greetings from Beijing, where baozi are worth the wait in line",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_251",
+      "headline": "My Year in Paris With Gertrude Stein by Deborah Levy audiobook review – gripping vision of a fearless writer",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_253",
+      "headline": "Huawei plans Q1 2027 launch of new AI chip as it takes on Nvidia",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_261",
+      "headline": "China faces oil challenge as prices soar and supply options narrow",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_265",
+      "headline": "Cat Frazier, Whose Retro GIFs Celebrated a Weirder Internet, Dies at 35",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_266",
+      "headline": "Heirs Sue Auschwitz Museum Over Art Their Mother Made Under the Nazis",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_273",
+      "headline": "Gustavo Dudamel’s New York Era Has Begun. Try to Keep Up.",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_274",
+      "headline": "Peter Max Franchised the Cosmic ’60s Into Commercial Success, Without the Museum",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_279",
+      "headline": "On ‘Cupertino,’ Creators of the ‘The Good Wife’ Go to Silicon Valley",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_282",
+      "headline": "Ireland boycotts Eurovision for second year over Israel’s inclusion",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_283",
+      "headline": "Rare Ethiopian manuscript stolen by British forces triggers restitution row",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_288",
+      "headline": "China Stockpiled Oil, and Now It Could Dominate the Energy Landscape",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_289",
+      "headline": "Five killed as Saudi Arabia and Yemen’s Houthis trade attacks",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_294",
+      "headline": "7 Books to Help You Cope With Failure and Move Forward",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_296",
+      "headline": "Xabi Alonso says Chelsea ambitions ‘very clear’ as Boehly era ends",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_299",
+      "headline": "The Wind of Creation Blows Across the Met’s Facade",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_307",
+      "headline": "Pinterest teases a new ‘Restyle’ feature that lets you redesign your room with AI",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_308",
+      "headline": "Base Labs launches an open-weight AI safety partnership with Hugging Face and Goodfire",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_310",
+      "headline": "Even the king of England has his hesitations about AI",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_312",
+      "headline": "Ireland to boycott Eurovision again over Israeli participation and ongoing Gaza deaths",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_314",
+      "headline": "The Face of London in the 1960s Is Living Her Best Life",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_315",
+      "headline": "Meet the New ‘S.N.L.’ Cast Members",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_319",
+      "headline": "Abhishek Sharma hits record T20 ton as India beat Afghanistan by 127 runs",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_321",
+      "headline": "Macron and Aoun discuss efforts to back Lebanon’s army, end Israeli attacks",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_323",
+      "headline": "English FA calls for Infantino to release FIFA World Cup sell-off documents",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_326",
+      "headline": "US secures release of detained citizen Adam Castillo in Myanmar",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_327",
+      "headline": "Jerusalem Daily: Israelis protest outside ‘NAZA’ filmmaker’s home",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_328",
+      "headline": "The AI Slowdown Debate Crashed Salesforce’s Party",
+      "selection_score": -37,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_329",
+      "headline": "Phil Klay Is Appointed President of PEN America",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_331",
+      "headline": "Serbia opens factory to assemble Israeli-made drones",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_332",
+      "headline": "Books Our Editors Loved This Week",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_333",
+      "headline": "Third person dies from malaria in cluster near Germany’s Frankfurt Airport",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_336",
+      "headline": "Russia ‘sabotaging’ power supply lines at Zaporizhzhia plant: Greenpeace",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_337",
+      "headline": "Houthi leader denies targeting Mecca, vows to protect holy city",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_338",
+      "headline": "Can an AI chatbot save lives by answering texts about pregnancy?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_339",
+      "headline": "Four bodies found in Nepal tunnel as flood search continues",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_341",
+      "headline": "Ilhan Omar attacker sentenced to more than a year in prison",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_343",
+      "headline": "Microsoft exec called AI scraping ‘the largest theft of labor in human history,’ new unredacted filings reveal",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_344",
+      "headline": "Gordon Parks as His Subjects Knew Him",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_346",
+      "headline": "The AI ‘Slowdown’ Is an Antitrust Mess",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_348",
+      "headline": "UN turns to Google to make its global data ready for AI agents",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_351",
+      "headline": "5 Minutes to Make You Love John Coltrane’s ‘A Love Supreme’",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_353",
+      "headline": "Is the AI safety debate about safety or control?",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_354",
+      "headline": "Behind the overture from the European Union to Canada",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_028",
+      "headline": "Knowledgator Releases GLiFormer: A 575M-Parameter Encoder That Hits 91.10 F1 on Nested JSON Extraction Without Generating Tokens",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_061",
+      "headline": "Nunchux AI Introduces VC-Attention: A Training-Free Low-Bit Attention Kernel That Speeds Up Video Diffusion Transformers",
+      "selection_score": 8,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_302",
+      "headline": "RHAD Architects gives Nova Scotia house \"quiet, monolithic presence\"",
+      "selection_score": 3,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_006",
+      "headline": "La Salle School / FP Arquitectura",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_035",
+      "headline": "Stanford Researchers Release Paper2Agent: Turning Research Papers Into AI Agents That Reproduce Results and Run on New Data",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_054",
+      "headline": "Micro-regeneration on Ouyang Road / Scenic Architecture Office",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_067",
+      "headline": "Hagidong House 2 / Hyunjoon Yoo + Partners",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_075",
+      "headline": "Corner Villa / Super Void Space",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_094",
+      "headline": "Seven standout contemporary designs at Lake Como Design Festival",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_119",
+      "headline": "Google Research Introduces Retrieve-for-Train (R4T): An RL-Compiled Diffusion Retriever for 12× to 20× Faster Query Fan-Out",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_127",
+      "headline": "\"Is colour actually architecture?\" panellists ask at Arca talk in Miami",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_128",
+      "headline": "Ma Yansong and Daniel Libeskind join Dezeen Awards 2026 master jury in London",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_132",
+      "headline": "OpenAI Releases a Model Misalignment Disclosure Framework With 3 Review Tracks and 6 Incident Reports From RL Training",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_136",
+      "headline": "How a Facebook post led to the resurrection of a space-age architectural icon",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_151",
+      "headline": "Denmark grows by 300,000 square metres in land reclamation project",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_173",
+      "headline": "Nina lounge chair by Patricia Urquiola for Andreu World",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_178",
+      "headline": "Studio Iron exhibition is all about chainmail, cowhide and tattooed leather",
+      "selection_score": -57,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_184",
+      "headline": "Lechner & Lechner Architects adds charred timber-clad annexe to home in Austrian Alps",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_256",
+      "headline": "HKS unveils interior of Commanders stadium with window framing Capitol",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_349",
+      "headline": "Fisher & Paykel crafts Contemporary kitchen appliances for tactile luxury",
+      "selection_score": -12,
+      "drop_reason": "beat_limit_reached"
+    },
+    {
+      "event_id": "daily_20260918_evt_257",
+      "headline": "King Charles warns of 'existential danger' of AI falling into wrong hands",
+      "selection_score": -30,
+      "drop_reason": "total_limit_reached"
+    }
+  ]
+}

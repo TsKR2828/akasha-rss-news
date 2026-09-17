@@ -1,0 +1,43 @@
+{
+  "event_id": "daily_20260918_evt_119",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Google Research Introduces Retrieve-for-Train (R4T): An RL-Compiled Diffusion Retriever for 12× to 20× Faster Query Fan-Out",
+  "context": "Google Research has introduced Retrieve-for-Train (R4T), a framework for search that returns coherent, diverse result sets. It trains a fan-out language model with RL once, using groundedness, diversity, and alignment rewards. That model then synthesizes training data for a 53.9M",
+  "article_ids": [
+    "992a44c6721f1d7f7a360db47e82f7b31505c6af78665cc69c05dac42dd8eeeb"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Google Research has introduced Retrieve-for-Train (R4T), a framework for search that returns coherent, diverse result sets. It trains a fan-out language model with RL once, using groundedness, diversity, and alignment rewards. That model then synthesizes training data for a 53.9M-parameter diffusion retriever. The retriever generates all retrieval directions in a single pass, running 12× to 20× faster than autoregressive fan-out. No code or model weights have been released yet. The post Google Research Introduces Retrieve-for-Train (R4T): An RL-Compiled Diffusion Retriever for 12× to 20× Faster Query Fan-Out appeared first on MarkTechPost .",
+      "title": "Google Research Introduces Retrieve-for-Train (R4T): An RL-Compiled Diffusion Retriever for 12× to 20× Faster Query Fan-Out",
+      "url": "https://www.marktechpost.com/2026/09/16/google-research-introduces-retrieve-for-train-r4t-an-rl-compiled-diffusion-retriever-for-12x-to-20x-faster-query-fan-out/",
+      "published_at": "2026-09-17T14:19:38+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Google Research Introduces Retrieve-for-Train (R4T): An RL-Compiled Diffusion Retriever for 12× to 20× Faster Query Fan-Out",
+      "source_id": "marktechpost",
+      "source_title": "Google Research Introduces Retrieve-for-Train (R4T): An RL-Compiled Diffusion Retriever for 12× to 20× Faster Query Fan-Out",
+      "source_url": "https://www.marktechpost.com/2026/09/16/google-research-introduces-retrieve-for-train-r4t-an-rl-compiled-diffusion-retriever-for-12x-to-20x-faster-query-fan-out/",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "event_id": "daily_20260919_evt_239",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "資安研究藉AI攻進對手系統",
+  "context": "資安研究人員利用Anthropic的Claude，成功攻入OpenAI的系統，取得員工帳號的控制權，並存取到OpenAI的內部程式碼庫，事後已向OpenAI通報這些安全漏洞。",
+  "article_ids": [
+    "0c84a17070b7b457ef8e23dede7c9eee47f6bf31024830d09db9f2cff6f7554d"
+  ],
+  "sources": [
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Security researchers used Anthropic’s Claude to exploit vulnerabilities in OpenAI’s systems, taking over employee accounts and gaining access to an internal code repository before reporting the flaws.",
+      "title": "Researchers used Anthropic’s Claude to hack into OpenAI",
+      "url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+      "published_at": "2026-09-18T22:00:14+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 28,
+  "selection_reason": "source_tier_2; ai_major_model_or_policy",
+  "drop_reason": null,
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "資安研究人員利用Anthropic的Claude攻入OpenAI系統並取得員工帳號控制權與內部程式碼庫存取權",
+      "source_id": "techcrunch_ai",
+      "source_title": "Researchers used Anthropic’s Claude to hack into OpenAI",
+      "source_url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "研究人員已向OpenAI通報相關安全漏洞",
+      "source_id": "techcrunch_ai",
+      "source_title": "Researchers used Anthropic’s Claude to hack into OpenAI",
+      "source_url": "https://techcrunch.com/2026/09/18/researchers-used-anthropics-claude-to-hack-into-openai/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 AI 新知\n\n資安研究藉AI攻進對手系統\n\n資安研究人員利用Anthropic的Claude，成功攻入OpenAI的系統，取得員工帳號的控制權，並存取到OpenAI的內部程式碼庫，事後已向OpenAI通報這些安全漏洞。目前這則消息只有TechCrunch提及。\n\n—— 本則來自 TechCrunch，2026 年 9 月 18 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "資安研究人員利用Anthropic的AI模型Claude，成功攻入OpenAI的系統，取得員工帳號的控制權，並進一步存取到OpenAI的內部程式碼庫。研究人員在完成測試後，已將這些安全漏洞回報給OpenAI。目前這則消息只有TechCrunch提及，OpenAI尚未對外說明後續處理進度。\n\n本則整理自 TechCrunch 於 2026 年 9 月 18 日發佈的報導。",
+  "voice_text": "有一群資安研究人員，做了一個有趣的實驗——他們用Anthropic的AI模型Claude，去攻入了對手OpenAI的系統。結果他們真的成功了，不只拿到員工帳號的控制權，還存取到了OpenAI內部的程式碼庫。做完測試之後，研究人員已經把這些安全漏洞，回報給了OpenAI。"
+}

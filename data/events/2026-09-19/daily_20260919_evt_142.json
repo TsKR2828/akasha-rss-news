@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260919_evt_142",
+  "beat": "ARTS",
+  "sub_beat": null,
+  "headline": "Five Free Movies to Stream Now",
+  "context": "From Jim Jarmsuch’s “Coffee and Cigarettes” to David Byrne’s “True Stories,” this month’s films illustrate the power of storytelling.",
+  "article_ids": [
+    "f0e8a3f01ae6f683acf1e19025add9aa9b006a88e8adabe2b2d59f765ad0fb7b",
+    "dd684d149628e76722b55b564902356903f59a4f0e56cbc70829dd17ebbd6322"
+  ],
+  "sources": [
+    {
+      "source_id": "nyt_arts",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "From Jim Jarmsuch’s “Coffee and Cigarettes” to David Byrne’s “True Stories,” this month’s films illustrate the power of storytelling.",
+      "title": "Five Free Movies to Stream Now",
+      "url": "https://www.nytimes.com/2026/09/18/arts/five-free-movies-to-stream-now.html",
+      "published_at": "2026-09-18T17:04:17+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 8,
+  "selection_reason": "source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Five Free Movies to Stream Now",
+      "source_id": "nyt_arts",
+      "source_title": "Five Free Movies to Stream Now",
+      "source_url": "https://www.nytimes.com/2026/09/18/arts/five-free-movies-to-stream-now.html",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Five International Movies to Stream Now",
+      "source_id": "nyt_arts",
+      "source_title": "Five International Movies to Stream Now",
+      "source_url": "https://www.nytimes.com/2026/09/18/movies/international-movies-streaming.html",
+      "support_type": "direct"
+    }
+  ]
+}

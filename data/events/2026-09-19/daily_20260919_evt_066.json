@@ -1,0 +1,100 @@
+{
+  "event_id": "daily_20260919_evt_066",
+  "beat": "ECON",
+  "sub_beat": null,
+  "headline": "日本升息至31年新高",
+  "context": "日本央行將政策利率從1%調升至1.25%，創1995年以來新高，符合市場普遍預期。此舉呼應美國聯準會與歐洲央行的緊縮政策，紐約時報指出，美國財政部長史考特．貝森特（Scott Bessent）先前罕見公開呼籲升息，也對這次決策造成壓力。",
+  "article_ids": [
+    "35a0d5f7376c96bb2a688b893a162ad6a61b5bc36d093ea6de134e55c4afc5fd",
+    "11dc8c12a3a6178a433bf6a764563642955e27b898e8e022a346d68f69f078fb",
+    "b123057a84db5247d60c6a729e0e56516f1f844c130c7f1386a25d5b8f0fb366",
+    "733619edf78802f64c36c97a1b5c528a6017cdce5e86ff9f0f39c79e149b46a8",
+    "5f15f0185e78417456d08dfb6407c57946b33f49b1e8129096090971a22eb12f",
+    "2401a8777faddb3068d96cfc2e8f0cf18e1436a304d57e59dbf93abfe15e4eb6"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "BOJ raises interest rates to 31-year high in widely expected move reuters.com",
+      "title": "BOJ raises interest rates to 31-year high in widely expected move - reuters.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNME52a2lPWjhiY0l0eFpoZmQxaVYwRzBNOWxFYk1JUjB2R0lJV2psVHRDdU52ajhBYjFnODByT1FvakVnNTRTNnJna1hFcC15VUxRMFJvU1BwV3ozU1NEOWsyNmk4MXJUcEo2Rnp3d1YwVjZfUlpjMTVldTJRaFNpeFJIRExJUDRYOUtTZWdVVnJPR05FaU5UQTF1blpvanliQ092Q3JnZVVEal9UcFlYV252YVc?oc=5",
+      "published_at": "2026-09-18T11:01:00+08:00"
+    },
+    {
+      "source_id": "guardian_business",
+      "name": "The Guardian",
+      "publisher": "The Guardian",
+      "summary": "Increase from 1% to 1.25% follows US Federal Reserve and European Central Bank tightening monetary policy Business live – latest updates Japan’s central bank has increased interest rates to a fresh 31-year high as it attempts to combat global inflation linked to the war in Iran. The Bank of Japan (BoJ) voted to raise its target interest rate from 1% to 1.25%, the highest level since 1995. Continue reading...",
+      "title": "Japan raises interest rates to 31-year high to curb impact of rising prices",
+      "url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+      "published_at": "2026-09-18T15:14:13+08:00"
+    },
+    {
+      "source_id": "bbc_business",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Central banks around the world have hiked rates as high energy prices are pushing up inflation.",
+      "title": "Japan raises interest rate to new 31-year high to curb rising prices",
+      "url": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-18T15:14:57+08:00"
+    },
+    {
+      "source_id": "nyt_business",
+      "name": "The New York Times",
+      "publisher": "The New York Times",
+      "summary": "The Bank of Japan’s widely expected move followed an unusual campaign by Treasury Secretary Scott Bessent for higher rates.",
+      "title": "Japan Raises Interest Rates to 31-Year High Under U.S. Pressure",
+      "url": "https://www.nytimes.com/2026/09/17/business/japan-interest-rates.html",
+      "published_at": "2026-09-18T17:00:00+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 73,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; economy_macro_policy",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "日本央行將政策利率從1%調升至1.25%創1995年以來新高",
+      "source_id": "reuters_world_google_news",
+      "source_title": "BOJ raises interest rates to 31-year high in widely expected move - reuters.com",
+      "source_url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNME52a2lPWjhiY0l0eFpoZmQxaVYwRzBNOWxFYk1JUjB2R0lJV2psVHRDdU52ajhBYjFnODByT1FvakVnNTRTNnJna1hFcC15VUxRMFJvU1BwV3ozU1NEOWsyNmk4MXJUcEo2Rnp3d1YwVjZfUlpjMTVldTJRaFNpeFJIRExJUDRYOUtTZWdVVnJPR05FaU5UQTF1blpvanliQ092Q3JnZVVEal9UcFlYV252YVc?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "此次升息呼應美國聯準會與歐洲央行的緊縮政策與伊朗戰爭帶動的全球通膨壓力有關",
+      "source_id": "guardian_business",
+      "source_title": "Japan raises interest rates to 31-year high to curb impact of rising prices",
+      "source_url": "https://www.theguardian.com/business/2026/sep/18/japan-raises-interest-rates-to-31-year-high-rising-prices",
+      "support_type": "direct"
+    },
+    {
+      "claim": "全球央行近期皆因能源價格推升通膨而升息",
+      "source_id": "bbc_business",
+      "source_title": "Japan raises interest rate to new 31-year high to curb rising prices",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
+      "support_type": "background"
+    },
+    {
+      "claim": "美國財政部長史考特．貝森特先前罕見公開呼籲升息被認為對此次決策造成壓力",
+      "source_id": "nyt_business",
+      "source_title": "Japan Raises Interest Rates to 31-Year High Under U.S. Pressure",
+      "source_url": "https://www.nytimes.com/2026/09/17/business/japan-interest-rates.html",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 全球經濟趨勢\n\n日本升息至31年新高\n\n日本央行將政策利率從1%調升至1.25%，創1995年以來新高，這項決策市場普遍預期。此舉呼應美國聯準會與歐洲央行的緊縮政策，紐約時報指出，這次升息背後也有美國財政部長史考特．貝森特（Scott Bessent）罕見公開施壓的因素。\n\n—— 本則來自 Reuters、The Guardian、BBC 與 The New York Times，2026 年 9 月 18 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "日本央行（BOJ）將政策利率從1%調升至1.25%，創下1995年以來的31年新高，這項決策符合市場普遍預期。這波升息呼應美國聯準會與歐洲央行的緊縮政策，衛報指出與伊朗戰爭帶動的全球通膨壓力有關；紐約時報則指出，這次決策背後也有美國財政部長史考特．貝森特（Scott Bessent）罕見公開施壓、呼籲升息的因素。\n\n本則整理自 Reuters、The Guardian、BBC 與 The New York Times 於 2026 年 9 月 18 日發佈的報導。",
+  "voice_text": "日本央行升息了，利率來到31年新高。政策利率從1%調升到1.25%，是1995年以來最高，這項決策市場普遍預期。這波升息，跟美國聯準會、歐洲央行的緊縮政策方向一致，也有觀點認為，跟伊朗戰爭帶動的全球通膨壓力有關。還有一個因素——美國財政部長，先前罕見公開呼籲日本升息，這次的決策，也被認為受到了這股壓力影響。"
+}

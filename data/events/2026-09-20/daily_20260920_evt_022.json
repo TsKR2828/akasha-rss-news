@@ -1,0 +1,100 @@
+{
+  "event_id": "daily_20260920_evt_022",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "美國與丹麥達成格陵蘭協議",
+  "context": "美國與丹麥就格陵蘭問題達成協議，將強化美國在當地的軍事部署。這項協議出現在川普數月來多次揚言要動用武力，從北約盟友丹麥手中奪下格陵蘭之後。丹麥強調協議具有約束力，但不會影響丹麥對格陵蘭的主權。",
+  "article_ids": [
+    "5849effae0098c547a776e5cffdbea606ee94aeb2559a65e44f24255d5a77a63",
+    "4116481485fe2edad93efaa07969b4cb614ad5f2ffb508b6442a05e864e34293",
+    "9be8f8cf723d7761254b76eccf18b48033d6211d509df26f15b8f7e4a92818e8",
+    "2718ba9a0b3e5c7a3c15d1554008e3523dacdaf71f930924961cf73563f82edf",
+    "b648b50914220e16efddb00f4c94420ab078035da1e919da738a4f44e6974438",
+    "fd17669bf35c759eced0a02db930005e91653e784205f151491c46706326cc39"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "EXCLUSIVE: US and Denmark reach deal on Greenland, Trump says reuters.com",
+      "title": "EXCLUSIVE: US and Denmark reach deal on Greenland, Trump says - reuters.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYXUxU0wtWHlQT1lrMjB0b2Q5c080QTY4SmJDSkF3c1R1SUNkVVV5TmUxeVBaRk56ZTV4SWtqaXNBQzBfUnRiNWN5NmVQNGFTNGNGNFJqMjd5WTB3cGxhQ1p3UDdSemxwQXdYYkpjS1ktV2hkVzZRR1R4Tmw0M2VEZjQxZ0JWU0ptVlBha00tckVhSFBzclE?oc=5",
+      "published_at": "2026-09-19T05:13:00+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "President Trump says he has a deal with Denmark to bolster the U.S. military presence in Greenland. The announcement comes after months of threatening to take the island by force from the NATO ally.",
+      "title": "U.S. and Denmark reach deal to build U.S. military presence in Greenland",
+      "url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal",
+      "published_at": "2026-09-19T12:44:46+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Denmark and the US have reached an agreement after months of threats from Donald Trump to annex the territory.",
+      "title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
+      "url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-19T19:36:55+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Trump has wanted a foothold in Greenland for some time, as a strategic battle unfolds for supremacy in warming Arctic.",
+      "title": "Denmark says ‘binding’ US deal on Greenland won’t compromise sovereignty",
+      "url": "https://www.aljazeera.com/news/2026/9/19/denmark-says-binding-us-deal-on-greenland-wont-compromise-sovereignty?traffic_source=rss",
+      "published_at": "2026-09-20T04:03:23+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "美國與丹麥就格陵蘭達成協議，川普稱將取得永久安全控制權，北約表示歡迎",
+      "source_id": "bbc_world",
+      "source_title": "Nato welcomes Greenland deal as Trump says it will give US 'permanent security control'",
+      "source_url": "https://www.bbc.co.uk/news/articles/c63d7lexyym1o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "協議將強化美國在格陵蘭的軍事部署，此前川普曾多次揚言動武奪取格陵蘭",
+      "source_id": "npr_world",
+      "source_title": "U.S. and Denmark reach deal to build U.S. military presence in Greenland",
+      "source_url": "https://www.npr.org/2026/09/19/g-s1-144158/us-and-denmark-reach-deal",
+      "support_type": "direct"
+    },
+    {
+      "claim": "丹麥表示協議具約束力但不影響主權，格陵蘭是北極戰略競逐焦點",
+      "source_id": "aljazeera_all",
+      "source_title": "Denmark says 'binding' US deal on Greenland won't compromise sovereignty",
+      "source_url": "https://www.aljazeera.com/news/2026/9/19/denmark-says-binding-us-deal-on-greenland-wont-compromise-sovereignty?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "美國與丹麥就格陵蘭達成協議",
+      "source_id": "reuters_world_google_news",
+      "source_title": "EXCLUSIVE: US and Denmark reach deal on Greenland, Trump says - reuters.com",
+      "source_url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOYXUxU0wtWHlQT1lrMjB0b2Q5c080QTY4SmJDSkF3c1R1SUNkVVV5TmUxeVBaRk56ZTV4SWtqaXNBQzBfUnRiNWN5NmVQNGFTNGNGNFJqMjd5WTB3cGxhQ1p3UDdSemxwQXdYYkpjS1ktV2hkVzZRR1R4Tmw0M2VEZjQxZ0JWU0ptVlBha00tckVhSFBzclE?oc=5",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "🧵 1/N\n📌 國際大事\n\n美國與丹麥達成格陵蘭協議\n\n美國與丹麥就格陵蘭問題達成協議，將強化美軍在當地的部署，川普稱此舉將讓美國取得「永久安全控制權」。這項協議出現在他數月來多次揚言要動武奪下格陵蘭之後。北約對協議表示歡迎，丹麥則強調協議具約束力，但不會影響丹麥的主權。\n\n—— 本則來自 Reuters、NPR、BBC 與 Al Jazeera，2026 年 9 月 19 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國與丹麥就格陵蘭問題達成協議，內容是強化美軍在當地的軍事部署。川普稱這將讓美國取得「永久安全控制權」，北約也對協議表示歡迎。這項協議，出現在川普數月來多次揚言要動用武力、從北約盟友丹麥手中奪下格陵蘭之後。丹麥則強調，協議雖具約束力，但不會影響丹麥對格陵蘭的主權——格陵蘭所在的北極圈，近年因暖化正成為各國角力的新戰場。\n\n本則整理自 Reuters、NPR、BBC 與 Al Jazeera 於 2026 年 9 月 19 日發佈的報導。",
+  "voice_text": "美國和丹麥，就格陵蘭問題談出了一個協議。內容是強化美軍在格陵蘭當地的部署，川普說，這會讓美國拿到「永久安全控制權」。這件事之所以受到關注，是因為川普過去這幾個月，多次揚言要動用武力，從北約盟友丹麥手上直接奪下格陵蘭。丹麥這邊則強調——協議雖然有約束力，但不會動搖丹麥對格陵蘭的主權。格陵蘭所在的北極圈，這幾年因為暖化，正變成各國角力的新戰場。"
+}

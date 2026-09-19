@@ -1,0 +1,61 @@
+{
+  "event_id": "daily_20260920_evt_126",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Millions without power as Cuba hit by latest major blackout",
+  "context": "Widespread power outages have become increasingly common due to fuel shortages made worse by a US blockade.",
+  "article_ids": [
+    "733705a3bf932fa9717a15002e63b7f3e6059ab281d14af8fa5e18e6ed40df33",
+    "0024c79a7348973bed9ec418689c0547be08afaf90895f5d18e17cd390f14d4e"
+  ],
+  "sources": [
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "Widespread power outages have become increasingly common due to fuel shortages made worse by a US blockade.",
+      "title": "Millions without power as Cuba hit by latest major blackout",
+      "url": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-19T18:27:37+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "The outage marks at least the sixth one this year after a United States-imposed energy blockade went into effect.",
+      "title": "Cuba works to restore power after another major nationwide blackout",
+      "url": "https://www.aljazeera.com/news/2026/9/19/cuba-works-to-restore-power-after-another-major-nationwide-blackout?traffic_source=rss",
+      "published_at": "2026-09-20T01:59:57+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Millions without power as Cuba hit by latest major blackout",
+      "source_id": "bbc_world",
+      "source_title": "Millions without power as Cuba hit by latest major blackout",
+      "source_url": "https://www.bbc.co.uk/news/articles/c6j9x4387lzxo?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Cuba works to restore power after another major nationwide blackout",
+      "source_id": "aljazeera_all",
+      "source_title": "Cuba works to restore power after another major nationwide blackout",
+      "source_url": "https://www.aljazeera.com/news/2026/9/19/cuba-works-to-restore-power-after-another-major-nationwide-blackout?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

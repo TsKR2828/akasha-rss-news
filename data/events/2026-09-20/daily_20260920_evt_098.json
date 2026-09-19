@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260920_evt_098",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Linkup Research Releases SPARSEUP: A 149M-Parameter Open-Source Sparse Embedding Model",
+  "context": "Linkup Research has released SPARSEUP, an open-source sparse embedding model built on a 149M-parameter ModernBERT backbone. It scores 56.4 nDCG@10 on BEIR-13, which Linkup calls the best result it knows of for a public sparse encoder under 150M parameters. The model uses a logit ",
+  "article_ids": [
+    "3950e43ebfcd4c4eaa4a24a800ba2e4d80eb4bb3f86a02db888ebb6cdfdbaf90",
+    "d014fab59671990923e7362e382114eddef2adf72fab9cabc8071804ef846c38"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "Linkup Research has released SPARSEUP, an open-source sparse embedding model built on a 149M-parameter ModernBERT backbone. It scores 56.4 nDCG@10 on BEIR-13, which Linkup calls the best result it knows of for a public sparse encoder under 150M parameters. The model uses a logit shift, top-12 expansion per token and case folding to keep its vectors sparse. With the Seismic index, it reaches over 97% recall in about 380 microseconds per query, and it ships under Apache 2.0. The post Linkup Research Releases SPARSEUP: A 149M-Parameter Open-Source Sparse Embedding Model appeared first on MarkTechPost .",
+      "title": "Linkup Research Releases SPARSEUP: A 149M-Parameter Open-Source Sparse Embedding Model",
+      "url": "https://www.marktechpost.com/2026/09/19/linkup-research-releases-sparseup/",
+      "published_at": "2026-09-19T15:48:38+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Linkup Research Releases SPARSEUP: A 149M-Parameter Open-Source Sparse Embedding Model",
+      "source_id": "marktechpost",
+      "source_title": "Linkup Research Releases SPARSEUP: A 149M-Parameter Open-Source Sparse Embedding Model",
+      "source_url": "https://www.marktechpost.com/2026/09/19/linkup-research-releases-sparseup/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "TypeSafe AI Releases Jev: A System One Model That Returns Typed, Calibrated Decisions Instead of Text",
+      "source_id": "marktechpost",
+      "source_title": "TypeSafe AI Releases Jev: A System One Model That Returns Typed, Calibrated Decisions Instead of Text",
+      "source_url": "https://www.marktechpost.com/2026/09/19/typesafe-ai-releases-jev/",
+      "support_type": "direct"
+    }
+  ]
+}

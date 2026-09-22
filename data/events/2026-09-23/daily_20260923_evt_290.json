@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260923_evt_290",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "US, Iran hold ‘very good’ talks, Trump says at UN meeting",
+  "context": "US President hints at possible deal with Iran, but warns of dire consequences if no agreement is reached.",
+  "article_ids": [
+    "d44a30d62930073b75f6a38d108217f718fa2f0efea882b81fe6b4a734e29aa3",
+    "926018342a3adad1902431f4ec352a4c42792ea4a39bb6130a94b6d6e22325ca"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "US President hints at possible deal with Iran, but warns of dire consequences if no agreement is reached.",
+      "title": "US, Iran hold ‘very good’ talks, Trump says at UN meeting",
+      "url": "https://www.aljazeera.com/news/2026/9/22/trump-says-us-officials-met-with-iranian-delegation-for-three-hours-2?traffic_source=rss",
+      "published_at": "2026-09-23T02:14:12+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 33,
+  "selection_reason": "source_tier_2; major_geopolitical_event",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "US, Iran hold ‘very good’ talks, Trump says at UN meeting",
+      "source_id": "aljazeera_all",
+      "source_title": "US, Iran hold ‘very good’ talks, Trump says at UN meeting",
+      "source_url": "https://www.aljazeera.com/news/2026/9/22/trump-says-us-officials-met-with-iranian-delegation-for-three-hours-2?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Trump: US-Iran meeting at UN was ‘very good’",
+      "source_id": "aljazeera_all",
+      "source_title": "Trump: US-Iran meeting at UN was ‘very good’",
+      "source_url": "https://www.aljazeera.com/video/newsfeed/2026/9/22/trump-us-iran-meeting-at-un-was-very?traffic_source=rss",
+      "support_type": "direct"
+    }
+  ]
+}

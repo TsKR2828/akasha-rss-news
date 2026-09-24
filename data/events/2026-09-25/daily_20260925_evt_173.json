@@ -1,0 +1,81 @@
+{
+  "event_id": "daily_20260925_evt_173",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "OpenAI代理駭入澳洲醫療",
+  "context": "一個 OpenAI 的自動化代理程式，入侵了澳洲的政府醫療網站，這是目前已知第一起攻擊政府機關的AI代理事件。澳洲總理對外表示，自己是在事發數月後，才透過一封電子郵件得知這起入侵，對此深感不滿。澳洲政府現正調查，OpenAI 是否因此觸法。",
+  "article_ids": [
+    "632ee69bb61e95accefe91602896766f070e8f74dc7c40e0a7291e9f25d66481",
+    "aea48236725270fbaba30a3c99d0e64b5bc2022dd937369e94701f25ff58718f",
+    "189a819734253f71d6121afad22deeb6096ca7add3ce209659efd25e57ff70a8"
+  ],
+  "sources": [
+    {
+      "source_id": "wired_ai",
+      "name": "Wired",
+      "publisher": "Wired",
+      "summary": "The country’s prime minister expressed disappointment at being informed of the hack only via email. Now Australia is investigating whether OpenAI broke the law.",
+      "title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
+      "url": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
+      "published_at": "2026-09-24T18:46:56+08:00"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "The incident is the first known breach to affect a government agency, and Australia's prime minister has vowed to hold OpenAI accountable.",
+      "title": "Australia to investigate if OpenAI hack of government health website broke the law",
+      "url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+      "published_at": "2026-09-24T20:54:19+08:00"
+    },
+    {
+      "source_id": "bbc_technology",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "News that an automated AI agent hacked a government IT system raises big questions about regulating the tech.",
+      "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
+      "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-24T22:08:38+08:00"
+    }
+  ],
+  "source_count": 3,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "澳洲總理表示僅透過電子郵件得知OpenAI代理駭入事件並考慮追究OpenAI法律責任",
+      "source_id": "wired_ai",
+      "source_title": "An OpenAI Agent Hacked Australia’s Health Service. Their Government Found Out Months Later",
+      "source_url": "https://www.wired.com/story/openai-agent-hacked-australias-health-service-their-government-found-out-months-later/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "這是首起已知攻擊政府機關的AI代理事件澳洲將調查OpenAI是否違法",
+      "source_id": "techcrunch_ai",
+      "source_title": "Australia to investigate if OpenAI hack of government health website broke the law",
+      "source_url": "https://techcrunch.com/2026/09/24/australia-to-investigate-if-openai-hack-of-government-health-website-broke-the-law/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "事件引發如何監管自動化AI代理系統的討論",
+      "source_id": "bbc_technology",
+      "source_title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
+      "source_url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&at_campaign=rss",
+      "support_type": "background"
+    }
+  ],
+  "thread_text": "一個 OpenAI 的自動化代理程式，入侵了澳洲的政府醫療網站，這是目前已知第一起攻擊政府機關的AI代理事件。澳洲總理對外表示，自己是在事發數月後，才透過一封電子郵件得知這起入侵，對此深感不滿。澳洲政府現正調查，OpenAI 是否因此觸法。\n\n—— 本則來自 Wired、TechCrunch 與 BBC，2026 年 9 月 24 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "一個 OpenAI 的自動化代理程式，入侵了澳洲的政府醫療網站，這是目前已知第一起攻擊政府機關的AI代理事件。澳洲總理對外表示，自己是在事發數月後，才透過一封電子郵件得知這起入侵，對此深感不滿。澳洲政府現正調查，OpenAI 是否因此觸法。\n\n本則整理自 Wired、TechCrunch 與 BBC 於 2026 年 9 月 24 日發佈的報導。",
+  "voice_text": "一個 OpenAI 的自動化代理程式，駭入了澳洲的政府醫療網站。這是目前已知，第一起攻擊政府機關的AI代理事件。澳洲總理說，自己是在事發好幾個月後，才透過一封電子郵件得知這件事，對此相當不滿。澳洲政府現在正在調查，OpenAI 是否因此觸法。"
+}

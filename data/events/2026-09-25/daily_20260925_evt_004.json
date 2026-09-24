@@ -1,0 +1,51 @@
+{
+  "event_id": "daily_20260925_evt_004",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "NVIDIA Releases Nemotron 3 Diarization: A 100M-Parameter Open-Weight Model That Tracks 8 Speakers in Real Time",
+  "context": "NVIDIA has released Nemotron 3 Diarization, an open-weight speaker diarization model on Hugging Face. It answers one question about any conversation: who spoke when. The 100M-parameter model tracks up to 8 speakers, including when voices overlap. One checkpoint handles both offli",
+  "article_ids": [
+    "cf82f3dbb9593e2e7747a9f474125147617ca0c572b5107614ad4b0c9b3955e1",
+    "682d5690a2530abbe8757c2e339646922ff81ac64143e9e40ff31687b4beace9"
+  ],
+  "sources": [
+    {
+      "source_id": "marktechpost",
+      "name": "MarkTechPost",
+      "publisher": "MarkTechPost",
+      "summary": "NVIDIA has released Nemotron 3 Diarization, an open-weight speaker diarization model on Hugging Face. It answers one question about any conversation: who spoke when. The 100M-parameter model tracks up to 8 speakers, including when voices overlap. One checkpoint handles both offline recordings and real-time streaming. Is it deployable? Yes. The weights are released under the […] The post NVIDIA Releases Nemotron 3 Diarization: A 100M-Parameter Open-Weight Model That Tracks 8 Speakers in Real Time appeared first on MarkTechPost .",
+      "title": "NVIDIA Releases Nemotron 3 Diarization: A 100M-Parameter Open-Weight Model That Tracks 8 Speakers in Real Time",
+      "url": "https://www.marktechpost.com/2026/09/23/nvidia-releases-nemotron-3-diarization/",
+      "published_at": "2026-09-24T02:17:14+08:00"
+    }
+  ],
+  "source_count": 1,
+  "source_tiers": [
+    3
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -12,
+  "selection_reason": "source_tier_3; single_low_tier_source",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "medium",
+  "single_source_warning": true,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "NVIDIA Releases Nemotron 3 Diarization: A 100M-Parameter Open-Weight Model That Tracks 8 Speakers in Real Time",
+      "source_id": "marktechpost",
+      "source_title": "NVIDIA Releases Nemotron 3 Diarization: A 100M-Parameter Open-Weight Model That Tracks 8 Speakers in Real Time",
+      "source_url": "https://www.marktechpost.com/2026/09/23/nvidia-releases-nemotron-3-diarization/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Contrastive-LM Releases CLM-8B: An Open System One Model That Scores Agent Actions Up to 9× Faster Than Jev",
+      "source_id": "marktechpost",
+      "source_title": "Contrastive-LM Releases CLM-8B: An Open System One Model That Scores Agent Actions Up to 9× Faster Than Jev",
+      "source_url": "https://www.marktechpost.com/2026/09/23/contrastive-lm-releases-clm-8b-an-open-system-one-model-that-scores-agent-actions-up-to-9x-faster-than-jev/",
+      "support_type": "direct"
+    }
+  ]
+}

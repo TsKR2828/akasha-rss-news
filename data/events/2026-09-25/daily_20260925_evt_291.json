@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20260925_evt_291",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "Knifeman kills priest, injures four in attack at Polish abbey - reuters.com",
+  "context": "Knifeman kills priest, injures four in attack at Polish abbey reuters.com",
+  "article_ids": [
+    "5719bf2614a8a996cac372121700c0965961caeec741133e97a1623c0b8866ed",
+    "d2448fb7f92bf8292f92f7135fef596d031a4320997873cdf25a6e0bc31024aa"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Knifeman kills priest, injures four in attack at Polish abbey reuters.com",
+      "title": "Knifeman kills priest, injures four in attack at Polish abbey - reuters.com",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdEE5UjA1aHhjMDBtWmVPVHNoSUJNeHBBV2M0UlloMnpiMHVINmdTVlcyQnVIVXAxX2JXQ3R0TFhHcGNsU3drS1Jja3VhaXBVakM1Tlc5ODRWNWZ4WDJ5bFpxcUpHN29iS0J4WUgxREFVeUVNbjNvWVdiSDVmdm1PWkdid3hmMy03UDVHV013RVo4WWtqRHgzYV9XYkZpNUxPUzZfOFhadjQ2Y2Zy?oc=5",
+      "published_at": "2026-09-25T00:48:39+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "A male suspect from Ukraine was arrested after the stabbings in the town of Jarosław, police say.",
+      "title": "Priest killed and four injured in knife attack at Polish abbey",
+      "url": "https://www.bbc.co.uk/news/articles/c607lrvm41l3o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-25T03:18:12+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 0,
+  "selection_reason": "multi_source_confirmed; source_tier_1; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Knifeman kills priest, injures four in attack at Polish abbey - reuters.com",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Knifeman kills priest, injures four in attack at Polish abbey - reuters.com",
+      "source_url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdEE5UjA1aHhjMDBtWmVPVHNoSUJNeHBBV2M0UlloMnpiMHVINmdTVlcyQnVIVXAxX2JXQ3R0TFhHcGNsU3drS1Jja3VhaXBVakM1Tlc5ODRWNWZ4WDJ5bFpxcUpHN29iS0J4WUgxREFVeUVNbjNvWVdiSDVmdm1PWkdid3hmMy03UDVHV013RVo4WWtqRHgzYV9XYkZpNUxPUzZfOFhadjQ2Y2Zy?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Priest killed and four injured in knife attack at Polish abbey",
+      "source_id": "bbc_world",
+      "source_title": "Priest killed and four injured in knife attack at Polish abbey",
+      "source_url": "https://www.bbc.co.uk/news/articles/c607lrvm41l3o?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    }
+  ]
+}

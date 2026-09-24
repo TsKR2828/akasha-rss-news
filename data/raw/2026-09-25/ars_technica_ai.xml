@@ -4,7 +4,7 @@
         <atom:link href="https://arstechnica.com/information-technology/feed/" rel="self" type="application/rss+xml" />
         <link>https://arstechnica.com</link>
         <description>Serving the Technologist since 1998. News, reviews, and analysis.</description>
-        <lastBuildDate>Thu, 24 Sep 2026 05:17:04 +0000</lastBuildDate>
+        <lastBuildDate>Thu, 24 Sep 2026 19:25:25 +0000</lastBuildDate>
         <language>en-US</language>
         <sy:updatePeriod>
             hourly        </sy:updatePeriod>
@@ -40,13 +40,13 @@
                     </description>
                                                                 <content:encoded>
                             <![CDATA[<p>The world has known for decades that the <a href="https://en.wikipedia.org/wiki/RSA_cryptosystem">RSA cryptosystem</a>’s days are numbered. Once quantum computing becomes practical (estimates for that range from 3 to 20 or more years), the foundational security it provides will crumble. New research has revealed a novel method that uses classical computing to reduce the current RSA security level to an unacceptably low threshold.</p>
-<p>The finding poses little to no practical threat in the immediate term, except possibly in a few edge cases. Even applying the attack against the deprecated use of 1024-bit keys, the method requires more computation than just about anybody—short of nation-states or companies with massive resources—can achieve. Widely used RSA implementations are also safe.</p>
+<p>The practical risk is limited, but still significant. Applying the attack against the deprecated use of 1024-bit keys took a handful of months on an academic CPU cluster, significantly less than the current estimates for 1024-bit factoring that would require resources that only nations or companies with massive resources could achieve. Widely used RSA implementations are also safe.</p>
 <p>Nonetheless, the research has taken cryptographers by surprise because it introduces signature forgery, a new way to break RSA keys without factoring. Equally important, this novel method reduces the required computing resources by orders of magnitude.</p><p><a href="https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/">Read full article</a></p>
 <p><a href="https://arstechnica.com/security/2026/09/theres-a-new-way-to-break-rsa-thats-faster-than-anything-weve-seen-before/#comments">Comments</a></p>
 ]]>
                         </content:encoded>
                                     
-                                    <slash:comments>25</slash:comments>
+                                    <slash:comments>42</slash:comments>
                 
                 
                 <media:content url="https://cdn.arstechnica.net/wp-content/uploads/2026/09/breaking-digital-chain-1152x648.jpg" type="image/jpeg" medium="image" width="1152" height="648">

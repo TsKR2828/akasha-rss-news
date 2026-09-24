@@ -12,7 +12,7 @@
 	<atom:link href="https://www.marktechpost.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.marktechpost.com/</link>
 	<description>An Artificial Intelligence News Platform</description>
-	<lastBuildDate>Thu, 24 Sep 2026 05:27:43 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 24 Sep 2026 18:58:57 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -28,6 +28,429 @@
 	<height>32</height>
 </image> 
 <site xmlns="com-wordpress:feed-additions:1">127842392</site>	<item>
+		<title>BottleCap AI Releases ThinkingCap-Qwen3.8-27B: 37.2% Fewer Thinking Tokens at a 0.86pp Accuracy Cost</title>
+		<link>https://www.marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost/</link>
+		
+		<dc:creator><![CDATA[Michal Sutter]]></dc:creator>
+		<pubDate>Thu, 24 Sep 2026 18:58:56 +0000</pubDate>
+				<category><![CDATA[Agentic AI]]></category>
+		<category><![CDATA[AI Infrastructure]]></category>
+		<category><![CDATA[AI Shorts]]></category>
+		<category><![CDATA[Applications]]></category>
+		<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[Editors Pick]]></category>
+		<category><![CDATA[Language Model]]></category>
+		<category><![CDATA[Large Language Model]]></category>
+		<category><![CDATA[Machine Learning]]></category>
+		<category><![CDATA[New Releases]]></category>
+		<category><![CDATA[Tech News]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://www.marktechpost.com/?p=82494</guid>
+
+					<description><![CDATA[<p>BottleCap AI has released ThinkingCap-Qwen3.8-27B, a fine-tune of Qwen3.8-27B that spends 37.2% fewer thinking tokens across 12 benchmarks. Macro accuracy moves from 86.65% to 85.79%, and long-context AA-LCR improves by 2.25pp. The model is a drop-in replacement on vLLM and SGLang, with FP8, NVFP4, GGUF and MLX builds.</p>
+<p>The post <a href="https://www.marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost/">BottleCap AI Releases ThinkingCap-Qwen3.8-27B: 37.2% Fewer Thinking Tokens at a 0.86pp Accuracy Cost</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">BottleCap AI has released <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B">ThinkingCap-Qwen3.8-27B</a>, the second model in its ThinkingCap series. It is a fine-tune of the Qwen team&#8217;s <a href="https://huggingface.co/Qwen/Qwen3.8-27B">Qwen3.8-27B</a> with one narrow goal: shorter reasoning traces. Across 12 benchmarks, it spends 37.2% fewer thinking tokens on average. Macro-average accuracy moves from 86.65% to 85.79%, a 0.86pp drop. </p>
+
+
+
+<p class="wp-block-paragraph"><strong>Deployable? Yes.</strong> It drops in for Qwen3.8-27B on vLLM or SGLang, with FP8, NVFP4, GGUF and MLX builds. The repo is gated, and commercial use beyond the small-business license needs a BottleCap agreement.</p>
+
+
+
+<h2 id="h-what-problem-does-thinkingcap-target" class="wp-block-heading"><strong>What Problem Does ThinkingCap Target?</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Reasoning models often spend more thinking tokens than a question needs. BottleCap&#8217;s position is that many of those extra tokens do not change the final answer. The <a href="https://bottlecapai.com/post/thinkingcap-qwen3-6-27b/">first release in the series</a> applied this idea to Qwen3.6-27B.</p>
+
+
+
+<p class="wp-block-paragraph">The objective this time was deliberately conservative. BottleCap did not try to add knowledge or change answer style. Reasoning ability, instruction following and safety behaviour were meant to pass through untouched. The research team also focused harder on math, reasoning, long-context and agentic benchmarks.</p>
+
+
+
+<h2 id="h-benchmark-results-at-xhigh-effort" class="wp-block-heading"><strong>Benchmark Results at xhigh Effort</strong></h2>
+
+
+
+<p class="wp-block-paragraph">All main numbers use <code>reasoning_effort=xhigh</code>, the chat template default. Every benchmark gets shorter, with cuts ranging from 10.7% to 65.5%.</p>
+
+
+
+<p class="wp-block-paragraph">Knowledge and multilingual tasks shrink the most. MMMLU drops 65.5% (1,656 to 571 tokens) and MMLU-Pro drops 57.3%. GPQA-Diamond falls from 12,772 to 7,267 tokens, a 43.1% cut. IFBench thinks 46.4% less with accuracy nearly flat (79.75% to 79.71%).</p>
+
+
+
+<p class="wp-block-paragraph">Long-context retrieval improves. AA-LCR accuracy rises 2.25pp, from 81.75% to 84.00%, with 38.6% fewer thinking tokens. LiveCodeBench v6 edges up 0.07pp while thinking 20.3% less.</p>
+
+
+
+<p class="wp-block-paragraph">Agentic results hold close to the base. τ²-bench gives up 1.01pp for a 30.9% cut. Terminal-Bench 2.1 loses 0.56pp, well inside its ±4.26 interval, for a 10.7% cut.</p>
+
+
+
+<p class="wp-block-paragraph">The most expensive trade is AIME 2026. Accuracy falls 3.85pp, from 98.13% to 94.27%, for 30.2% less thinking.</p>
+
+
+
+<p class="wp-block-paragraph">Please note that the 37.2% figure is the mean of the 12 per-benchmark reductions. Pooled mean thinking tokens fall from 15,735 to 12,144.</p>
+
+
+
+<p class="wp-block-paragraph">BottleCap also reports a budget curve. Under a 16K-token cap per response, ThinkingCap scores higher than the base model. Truncated traces fall from 0.51% to 0.34%, and looping from 0.06% to 0.05%.</p>
+
+
+
+<iframe id="mtp-tcq38-frame" title="ThinkingCap-Qwen3.8-27B interactive explainer" srcdoc="&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;style&gt;body{margin:0;background:transparent}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;div id=&quot;mtp-tcq38&quot;&gt;
+&lt;style&gt;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;display=swap');
+#mtp-tcq38{--ink:#15163a;--sub:#5d6089;--lav:#9a90f6;--vio:#5a3fe0;--mint:#6fd6a6;--navy:#3d4879;--paper:#ffffff;--mist:#f3f2fd;
+font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif!important;color:var(--ink)!important;background:var(--paper)!important;
+border:1px solid #dcd9fb!important;border-radius:18px;max-width:880px;margin:0 auto;padding:26px 26px 18px;box-sizing:border-box;line-height:1.5}
+#mtp-tcq38 *{box-sizing:border-box}
+#mtp-tcq38 h3{font-size:25px;font-weight:800;letter-spacing:-.02em;margin:0 0 4px;color:var(--ink)!important;line-height:1.2}
+#mtp-tcq38 .lede{color:var(--sub)!important;font-size:14.5px;margin:0 0 18px;max-width:66ch}
+#mtp-tcq38 .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;border-bottom:1px solid #e6e4fb;padding-bottom:10px}
+#mtp-tcq38 .tab{font:600 13.5px Manrope,system-ui,sans-serif;border:1px solid #d8d4fa!important;background:#fff!important;color:var(--navy)!important;padding:8px 14px;border-radius:999px;cursor:pointer}
+#mtp-tcq38 .tab[aria-selected=true]{background:var(--vio)!important;color:#fff!important;border-color:var(--vio)!important}
+#mtp-tcq38 .tab:focus-visible,#mtp-tcq38 button:focus-visible,#mtp-tcq38 select:focus-visible,#mtp-tcq38 input:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+#mtp-tcq38 .panel{display:none}#mtp-tcq38 .panel.on{display:block}
+#mtp-tcq38 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+#mtp-tcq38 select,#mtp-tcq38 input[type=number]{font:600 14px Manrope,system-ui,sans-serif;border:1px solid #d8d4fa!important;border-radius:10px;padding:8px 10px;background:#fff!important;color:var(--ink)!important}
+#mtp-tcq38 .go{font:800 14px Manrope,system-ui,sans-serif;background:var(--ink)!important;color:#fff!important;border:0!important;border-radius:10px;padding:9px 16px;cursor:pointer}
+#mtp-tcq38 .stage{background:var(--navy)!important;border-radius:16px;padding:18px;color:#fff!important}
+#mtp-tcq38 .lane{margin:6px 0 16px}
+#mtp-tcq38 .lane .lbl{display:flex;justify-content:space-between;font-size:13.5px;font-weight:600;color:#e7e6ff!important;margin-bottom:6px}
+#mtp-tcq38 .lane .lbl b{font-variant-numeric:tabular-nums;color:#fff!important;font-size:16px}
+#mtp-tcq38 .track{height:30px;border-radius:8px;background:rgba(255,255,255,.1)!important;overflow:hidden;position:relative}
+#mtp-tcq38 .fill{position:relative;height:100%;width:0;border-radius:8px;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.28) 0 2px,transparent 2px 9px)!important}
+#mtp-tcq38 .fill.b{background-color:var(--lav)!important}#mtp-tcq38 .fill.c{background-color:var(--mint)!important}
+#mtp-tcq38 .done{position:absolute;right:5px;white-space:nowrap;top:5px;font-size:12px;font-weight:800;color:var(--ink)!important;background:#fff!important;border-radius:6px;padding:2px 7px;opacity:0;transition:opacity .3s}
+#mtp-tcq38 .verdict{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+#mtp-tcq38 .verdict div{background:rgba(255,255,255,.08)!important;border-radius:10px;padding:10px 12px}
+#mtp-tcq38 .verdict span{display:block;font-size:12px;color:#c9c7f4!important}
+#mtp-tcq38 .verdict strong{font-size:19px;font-variant-numeric:tabular-nums;color:#fff!important}
+#mtp-tcq38 .chart{display:grid;gap:7px}
+#mtp-tcq38 .bar{display:grid;grid-template-columns:128px 1fr;gap:10px;align-items:center;font-size:13px}
+#mtp-tcq38 .bar .nm{font-weight:600;overflow-wrap:anywhere;color:var(--ink)!important}
+#mtp-tcq38 .bar .nm small{display:block;color:var(--sub)!important;font-weight:400;font-size:11.5px}
+#mtp-tcq38 .pair{display:grid;gap:3px}
+#mtp-tcq38 .pb{height:11px;border-radius:4px;width:0;transition:width .7s cubic-bezier(.2,.8,.2,1)}
+#mtp-tcq38 .pb.b{background:var(--lav)!important}#mtp-tcq38 .pb.c{background:var(--mint)!important}
+#mtp-tcq38 .pv{font-size:11.5px;color:var(--sub)!important;font-variant-numeric:tabular-nums}
+#mtp-tcq38 .key{display:flex;gap:16px;font-size:12.5px;color:var(--sub)!important;margin:4px 0 12px}
+#mtp-tcq38 .key i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+#mtp-tcq38 .seg{display:inline-flex;border:1px solid #d8d4fa;border-radius:10px;overflow:hidden}
+#mtp-tcq38 .seg button{font:600 13px Manrope,system-ui,sans-serif;border:0!important;background:#fff!important;color:var(--navy)!important;padding:8px 13px;cursor:pointer}
+#mtp-tcq38 .seg button[aria-pressed=true]{background:var(--mist)!important;color:var(--vio)!important}
+#mtp-tcq38 .plot{background:var(--mist)!important;border-radius:14px;padding:12px}
+#mtp-tcq38 svg text{font-family:Manrope,system-ui,sans-serif}
+#mtp-tcq38 .note{font-size:12px;color:var(--sub)!important;margin:10px 0 0}
+#mtp-tcq38 .calc{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#mtp-tcq38 label{font-size:13px;font-weight:600;display:block;margin-bottom:5px;color:var(--ink)!important}
+#mtp-tcq38 input[type=range]{width:100%;accent-color:#5a3fe0}
+#mtp-tcq38 .big{font-size:34px;font-weight:800;letter-spacing:-.02em;color:#fff!important;font-variant-numeric:tabular-nums}
+#mtp-tcq38 .builds{display:grid;gap:8px}
+#mtp-tcq38 .build{display:grid;grid-template-columns:1fr auto;gap:4px 12px;border:1px solid #e3e0fb;border-radius:12px;padding:10px 14px;transition:opacity .3s,border-color .3s;text-decoration:none!important;color:var(--ink)!important}
+#mtp-tcq38 .build.dim{opacity:.35}
+#mtp-tcq38 .build.hit{border-color:var(--mint)!important;box-shadow:inset 4px 0 0 var(--mint)}
+#mtp-tcq38 .build b{font-size:14.5px}#mtp-tcq38 .build em{font-style:normal;font-weight:800;color:var(--vio)!important}
+#mtp-tcq38 .build span{grid-column:1/-1;font-size:12.5px;color:var(--sub)!important}
+#mtp-tcq38 pre{background:var(--ink)!important;color:#e7e6ff!important;border-radius:12px;padding:14px;font-size:12.5px;overflow-x:auto;margin:14px 0 6px;white-space:pre;border:0!important}
+#mtp-tcq38 code{background:none!important;color:inherit!important;font-family:ui-monospace,Menlo,Consolas,monospace!important}
+#mtp-tcq38 .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;margin-top:18px;padding-top:12px;border-top:1px solid #eceafc;font-size:12px;color:var(--sub)!important}
+#mtp-tcq38 .foot a{color:#76B900!important;font-weight:800;text-decoration:none!important}
+@media (max-width:640px){#mtp-tcq38{padding:18px 14px}#mtp-tcq38 h3{font-size:21px}#mtp-tcq38 .verdict,#mtp-tcq38 .calc{grid-template-columns:1fr}#mtp-tcq38 .bar{grid-template-columns:96px 1fr}#mtp-tcq38 .big{font-size:28px}}
+@media (prefers-reduced-motion:reduce){#mtp-tcq38 .pb{transition:none}}
+&lt;/style&gt;
+
+&lt;h3&gt;ThinkingCap-Qwen3.8-27B, explained&lt;/h3&gt;
+&lt;p class=&quot;lede&quot;&gt;A fine-tune of Qwen3.8-27B that keeps the sampling settings and serving stack and only shortens the reasoning trace. Explore where the savings land and what they cost.&lt;/p&gt;
+
+&lt;div class=&quot;tabs&quot; role=&quot;tablist&quot;&gt;
+&lt;button class=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; data-t=&quot;race&quot;&gt;Token race&lt;/button&gt;
+&lt;button class=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-t=&quot;bench&quot;&gt;12 benchmarks&lt;/button&gt;
+&lt;button class=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-t=&quot;effort&quot;&gt;Effort dial&lt;/button&gt;
+&lt;button class=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-t=&quot;cost&quot;&gt;Cost lens&lt;/button&gt;
+&lt;button class=&quot;tab&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-t=&quot;deploy&quot;&gt;Deploy it&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;section class=&quot;panel on&quot; id=&quot;p-race&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;select id=&quot;rb&quot; aria-label=&quot;Benchmark&quot;&gt;&lt;/select&gt;&lt;button class=&quot;go&quot; id=&quot;rgo&quot;&gt;Run the race&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;stage&quot;&gt;
+&lt;div class=&quot;lane&quot;&gt;&lt;div class=&quot;lbl&quot;&gt;Qwen3.8-27B (base)&lt;b id=&quot;rbn&quot;&gt;0&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;track&quot;&gt;&lt;div class=&quot;fill b&quot; id=&quot;rbf&quot;&gt;&lt;em class=&quot;done&quot; id=&quot;rbd&quot;&gt;answer&lt;/em&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;lane&quot;&gt;&lt;div class=&quot;lbl&quot;&gt;ThinkingCap-Qwen3.8-27B&lt;b id=&quot;rcn&quot;&gt;0&lt;/b&gt;&lt;/div&gt;&lt;div class=&quot;track&quot;&gt;&lt;div class=&quot;fill c&quot; id=&quot;rcf&quot;&gt;&lt;em class=&quot;done&quot; id=&quot;rcd&quot;&gt;answer&lt;/em&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;verdict&quot;&gt;&lt;div&gt;&lt;span&gt;Thinking tokens cut&lt;/span&gt;&lt;strong id=&quot;rv1&quot;&gt;-&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Accuracy, base to ThinkingCap&lt;/span&gt;&lt;strong id=&quot;rv2&quot;&gt;-&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Accuracy change&lt;/span&gt;&lt;strong id=&quot;rv3&quot;&gt;-&lt;/strong&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;note&quot;&gt;&lt;span id=&quot;rnote&quot;&gt;&lt;/span&gt; Bars show mean thinking tokens per question at reasoning_effort=xhigh, scaled to each benchmark. Source: BottleCap AI evaluation on vLLM 0.29.0, 1x H200.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;panel&quot; id=&quot;p-bench&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;seg&quot; role=&quot;group&quot; aria-label=&quot;Metric&quot;&gt;&lt;button aria-pressed=&quot;true&quot; data-m=&quot;tok&quot;&gt;Thinking tokens&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-m=&quot;acc&quot;&gt;Accuracy&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;key&quot;&gt;&lt;span&gt;&lt;i style=&quot;background:#9a90f6&quot;&gt;&lt;/i&gt;Qwen3.8-27B&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:#6fd6a6&quot;&gt;&lt;/i&gt;ThinkingCap&lt;/span&gt;&lt;span id=&quot;scl&quot;&gt;square-root scale&lt;/span&gt;&lt;/div&gt;
+&lt;div class=&quot;chart&quot; id=&quot;chart&quot;&gt;&lt;/div&gt;
+&lt;p class=&quot;note&quot;&gt;Every benchmark gets shorter (10.7% to 65.5%). AA-LCR accuracy rises 2.25pp and LiveCodeBench v6 edges up 0.07pp; AIME 2026 pays the most at -3.85pp.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;panel&quot; id=&quot;p-effort&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;seg&quot; role=&quot;group&quot; aria-label=&quot;Reasoning effort&quot; id=&quot;eseg&quot;&gt;&lt;button aria-pressed=&quot;true&quot; data-e=&quot;xhigh&quot;&gt;xhigh&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-e=&quot;medium&quot;&gt;medium&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-e=&quot;low&quot;&gt;low&lt;/button&gt;&lt;button aria-pressed=&quot;false&quot; data-e=&quot;off&quot;&gt;thinking off&lt;/button&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;key&quot;&gt;&lt;span&gt;&lt;i style=&quot;background:#9a90f6&quot;&gt;&lt;/i&gt;Qwen3.8-27B at this effort&lt;/span&gt;&lt;span&gt;&lt;i style=&quot;background:#6fd6a6&quot;&gt;&lt;/i&gt;ThinkingCap at this effort&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;plot&quot;&gt;&lt;svg id=&quot;esvg&quot; viewBox=&quot;0 0 620 300&quot; width=&quot;100%&quot; role=&quot;img&quot; aria-label=&quot;Accuracy change versus thinking reduction&quot;&gt;&lt;/svg&gt;&lt;/div&gt;
+&lt;p class=&quot;note&quot; id=&quot;enote&quot;&gt;&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;panel&quot; id=&quot;p-cost&quot;&gt;
+&lt;div class=&quot;calc&quot;&gt;
+&lt;div&gt;
+&lt;label for=&quot;cb&quot;&gt;Workload that looks like&lt;/label&gt;&lt;select id=&quot;cb&quot; style=&quot;width:100%&quot;&gt;&lt;/select&gt;
+&lt;label for=&quot;cr&quot; style=&quot;margin-top:12px&quot;&gt;Requests per day: &lt;span id=&quot;crv&quot;&gt;&lt;/span&gt;&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;cr&quot; min=&quot;1000&quot; max=&quot;1000000&quot; step=&quot;1000&quot; value=&quot;100000&quot;&gt;
+&lt;label for=&quot;cp&quot; style=&quot;margin-top:12px&quot;&gt;Your price per 1M output tokens (USD)&lt;/label&gt;&lt;input type=&quot;number&quot; id=&quot;cp&quot; min=&quot;0&quot; step=&quot;0.1&quot; value=&quot;2&quot; style=&quot;width:100%&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;stage&quot;&gt;
+&lt;span style=&quot;font-size:13px;color:#c9c7f4&quot;&gt;Thinking tokens avoided per day&lt;/span&gt;
+&lt;div class=&quot;big&quot; id=&quot;ct&quot;&gt;0&lt;/div&gt;
+&lt;span style=&quot;font-size:13px;color:#c9c7f4&quot;&gt;Estimated daily spend avoided&lt;/span&gt;
+&lt;div class=&quot;big&quot; id=&quot;cd&quot;&gt;$0&lt;/div&gt;
+&lt;span style=&quot;font-size:13px;color:#c9c7f4&quot; id=&quot;ca&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p class=&quot;note&quot;&gt;Illustrative math: (base mean thinking tokens minus ThinkingCap mean) x requests x your price. Real savings depend on your prompts, effort setting and serving stack.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section class=&quot;panel&quot; id=&quot;p-deploy&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;label for=&quot;hw&quot; style=&quot;margin:0&quot;&gt;My hardware&lt;/label&gt;&lt;select id=&quot;hw&quot;&gt;
+&lt;option value=&quot;all&quot;&gt;Show everything&lt;/option&gt;&lt;option value=&quot;hop&quot;&gt;NVIDIA Hopper (H100, H200)&lt;/option&gt;&lt;option value=&quot;bw&quot;&gt;NVIDIA Blackwell&lt;/option&gt;&lt;option value=&quot;mac&quot;&gt;Apple Silicon (32 GB Mac)&lt;/option&gt;&lt;option value=&quot;cpu&quot;&gt;Consumer GPU, Vulkan or CPU&lt;/option&gt;&lt;/select&gt;&lt;/div&gt;
+&lt;div class=&quot;builds&quot; id=&quot;builds&quot;&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code&gt;vllm serve bottlecapai/ThinkingCap-Qwen3.8-27B \
+  --reasoning-parser qwen3 --enable-auto-tool-choice \
+  --tool-call-parser qwen3_xml \
+  --speculative-config '{&quot;method&quot;:&quot;mtp&quot;,&quot;num_speculative_tokens&quot;:3}'&lt;/code&gt;&lt;/pre&gt;
+&lt;p class=&quot;note&quot;&gt;Gated repo: accept the conditions on Hugging Face first. License is PolyForm Small Business 1.0.0 plus a BottleCap personal-use grant; larger commercial use needs a license from BottleCap AI.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;div class=&quot;foot&quot;&gt;&lt;span&gt;Data: BottleCap AI blog and model card, Sep 22, 2026&lt;/span&gt;&lt;a href=&quot;https://www.marktechpost.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Built by Marktechpost&lt;/a&gt;&lt;/div&gt;
+
+&lt;script&gt;
+(function(){
+var R=document.getElementById('mtp-tcq38');
+var B=[
+[&quot;AIME 2026&quot;,&quot;Math&quot;,98.13,94.27,15663,10934,-30.2],
+[&quot;HMMT Feb 26&quot;,&quot;Math&quot;,95.83,94.70,23211,18099,-22.0],
+[&quot;HMMT Nov 25&quot;,&quot;Math&quot;,97.08,96.04,14443,10037,-30.5],
+[&quot;LiveCodeBench v6&quot;,&quot;Code&quot;,91.14,91.21,28395,22645,-20.3],
+[&quot;GPQA-Diamond&quot;,&quot;Knowledge&quot;,89.93,88.04,12772,7267,-43.1],
+[&quot;MMLU-Pro&quot;,&quot;Knowledge&quot;,85.54,84.67,3725,1591,-57.3],
+[&quot;MMMLU&quot;,&quot;Multilingual&quot;,85.38,84.09,1656,571,-65.5],
+[&quot;AA-LCR&quot;,&quot;Long context&quot;,81.75,84.00,2550,1565,-38.6],
+[&quot;RealWorldQA&quot;,&quot;Vision&quot;,83.25,82.34,992,492,-50.4],
+[&quot;IFBench&quot;,&quot;Instructions&quot;,79.75,79.71,7961,4266,-46.4],
+[&quot;\u03c4\u00b2-bench&quot;,&quot;Agentic&quot;,76.16,75.15,4584,3168,-30.9],
+[&quot;Terminal-Bench 2.1&quot;,&quot;Agentic&quot;,75.84,75.28,72871,65092,-10.7]];
+var AVG=[&quot;Average (12)&quot;,&quot;All&quot;,86.65,85.79,15735,12144,-37.2];
+var RM=window.matchMedia&amp;&amp;window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function $(i){return R.querySelector('#'+i)}
+function fmt(n){return Math.round(n).toLocaleString('en-US')}
+function pp(d){return (d&gt;0?'+':'')+d.toFixed(2)+'pp'}
+function resize(){try{parent.postMessage({mtpH:R.offsetHeight+40},'*')}catch(e){}}
+// tabs
+R.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){
+R.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',x===t)});
+R.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('on',p.id==='p-'+t.dataset.t)});
+if(t.dataset.t==='bench')drawBench();if(t.dataset.t==='effort')drawEffort();resize();});});
+// race
+var all=[AVG].concat(B),rb=$('rb'),cb=$('cb');
+all.forEach(function(b,i){rb.add(new Option(b[0],i));if(i)cb.add(new Option(b[0]+' ('+fmt(b[4]-b[5])+' tokens saved)',i));});
+cb.value=8;var raf;
+function race(){var b=all[rb.value],dur=RM?1:3200,t0=null,max=b[4];
+$('rbd').style.opacity=0;$('rcd').style.opacity=0;cancelAnimationFrame(raf);
+$('rv1').textContent=b[6].toFixed(1)+'%';$('rv2').textContent=b[2].toFixed(2)+' to '+b[3].toFixed(2);$('rv3').textContent=pp(b[3]-b[2]);$('rnote').textContent=rb.value==='0'?'For the average, 37.2% is the mean of the 12 per-benchmark cuts; pooled mean tokens fall from 15,735 to 12,144.':'';
+function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/dur,1);var n=p*max;
+var bn=Math.min(n,b[4]),cn=Math.min(n,b[5]);
+$('rbf').style.width=(bn/max*100)+'%';$('rcf').style.width=(cn/max*100)+'%';
+$('rbn').textContent=fmt(bn);$('rcn').textContent=fmt(cn);
+if(cn&gt;=b[5])$('rcd').style.opacity=1;if(p&gt;=1)$('rbd').style.opacity=1;
+if(p&lt;1)raf=requestAnimationFrame(step);}raf=requestAnimationFrame(step);}
+$('rgo').addEventListener('click',race);rb.addEventListener('change',race);
+// benchmarks
+var metric='tok';
+R.querySelectorAll('[data-m]').forEach(function(b){b.addEventListener('click',function(){metric=b.dataset.m;
+R.querySelectorAll('[data-m]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});$('scl').textContent=metric==='tok'?'square-root scale':'axis starts at 60%';drawBench();});});
+function drawBench(){var c=$('chart');c.innerHTML='';var mx=metric==='tok'?72871:100;
+B.forEach(function(b){var vb=metric==='tok'?b[4]:b[2],vc=metric==='tok'?b[5]:b[3];
+var d=document.createElement('div');d.className='bar';
+var lab=metric==='tok'?(fmt(vb)+' to '+fmt(vc)+' tokens ('+b[6].toFixed(1)+'%)'):(b[2].toFixed(2)+'% to '+b[3].toFixed(2)+'% ('+pp(b[3]-b[2])+')');
+d.innerHTML='&lt;div class=&quot;nm&quot;&gt;'+b[0]+'&lt;small&gt;'+b[1]+'&lt;/small&gt;&lt;/div&gt;&lt;div class=&quot;pair&quot;&gt;&lt;div class=&quot;pb b&quot;&gt;&lt;/div&gt;&lt;div class=&quot;pb c&quot;&gt;&lt;/div&gt;&lt;div class=&quot;pv&quot;&gt;'+lab+'&lt;/div&gt;&lt;/div&gt;';
+c.appendChild(d);var s=metric==='tok'?Math.sqrt:function(x){return x};
+var w=function(v){return metric==='tok'?Math.max(1.5,Math.sqrt(v)/Math.sqrt(mx)*100):Math.max(1,(v-60)/40*100)};
+requestAnimationFrame(function(){requestAnimationFrame(function(){d.querySelector('.pb.b').style.width=w(vb)+'%';d.querySelector('.pb.c').style.width=w(vc)+'%';});});});
+setTimeout(resize,50);}
+// effort
+var E={xhigh:{b:[0,0],c:[-37.2,-0.86],n:'At xhigh (the default, and the setting BottleCap recommends) ThinkingCap removes 37.2% of thinking for 0.86pp of accuracy across 12 benchmarks.'},
+medium:{b:[-52.1,-9.16],c:[-60.2,-9.90],n:'At medium, the base model alone cuts 52.1% of thinking for -9.16pp. ThinkingCap stacks on top: -60.2% thinking for -9.90pp.'},
+low:{b:[-55.4,-9.71],c:[-62.3,-10.79],n:'At low, base: -55.4% thinking, -9.71pp. ThinkingCap: -62.3% thinking, -10.79pp.'},
+off:{b:[-100,-28.57],c:[-100,-34.25],n:'With thinking off, both drop all reasoning. Accuracy falls 28.57pp for the base and 34.25pp for ThinkingCap.'}};
+var cur='xhigh';
+R.querySelectorAll('[data-e]').forEach(function(b){b.addEventListener('click',function(){cur=b.dataset.e;
+R.querySelectorAll('[data-e]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});drawEffort();});});
+function X(v){return 60+(-v)/100*520}function Y(v){return 30+(-v)/36*230}
+function drawEffort(){var s=$('esvg'),o='';
+for(var g=0;g&lt;=100;g+=25)o+='&lt;line x1=&quot;'+X(-g)+'&quot; y1=&quot;30&quot; x2=&quot;'+X(-g)+'&quot; y2=&quot;260&quot; stroke=&quot;#dcd9fb&quot;/&gt;&lt;text x=&quot;'+X(-g)+'&quot; y=&quot;280&quot; font-size=&quot;11&quot; fill=&quot;#5d6089&quot; text-anchor=&quot;middle&quot;&gt;'+(g?'-'+g+'%':'0')+'&lt;/text&gt;';
+for(var a=0;a&lt;=36;a+=9)o+='&lt;line x1=&quot;60&quot; y1=&quot;'+Y(-a)+'&quot; x2=&quot;580&quot; y2=&quot;'+Y(-a)+'&quot; stroke=&quot;#dcd9fb&quot;/&gt;&lt;text x=&quot;52&quot; y=&quot;'+(Y(-a)+4)+'&quot; font-size=&quot;11&quot; fill=&quot;#5d6089&quot; text-anchor=&quot;end&quot;&gt;'+(a?'-'+a+'pp':'0')+'&lt;/text&gt;';
+o+='&lt;text x=&quot;320&quot; y=&quot;297&quot; font-size=&quot;11&quot; fill=&quot;#5d6089&quot; text-anchor=&quot;middle&quot;&gt;Thinking tokens vs base at xhigh&lt;/text&gt;';
+['xhigh','medium','low','off'].forEach(function(k){var e=E[k],on=k===cur,op=on?1:.28;
+o+='&lt;circle cx=&quot;'+X(e.b[0])+'&quot; cy=&quot;'+Y(e.b[1])+'&quot; r=&quot;'+(on?9:6)+'&quot; fill=&quot;#9a90f6&quot; opacity=&quot;'+op+'&quot;/&gt;&lt;circle cx=&quot;'+X(e.c[0])+'&quot; cy=&quot;'+Y(e.c[1])+'&quot; r=&quot;'+(on?9:6)+'&quot; fill=&quot;#6fd6a6&quot; stroke=&quot;#15163a&quot; stroke-width=&quot;'+(on?1.5:0)+'&quot; opacity=&quot;'+op+'&quot;/&gt;';
+if(on){o+='&lt;line x1=&quot;'+X(e.b[0])+'&quot; y1=&quot;'+Y(e.b[1])+'&quot; x2=&quot;'+X(e.c[0])+'&quot; y2=&quot;'+Y(e.c[1])+'&quot; stroke=&quot;#5a3fe0&quot; stroke-dasharray=&quot;4 3&quot;/&gt;';
+o+='&lt;text x=&quot;'+Math.min(X(e.c[0])-6,560)+'&quot; y=&quot;'+(Y(e.c[1])-14)+'&quot; font-size=&quot;12&quot; font-weight=&quot;800&quot; fill=&quot;#15163a&quot; text-anchor=&quot;end&quot;&gt;ThinkingCap '+e.c[0].toFixed(1)+'%, '+e.c[1].toFixed(2)+'pp&lt;/text&gt;';}});
+s.innerHTML=o;$('enote').textContent=E[cur].n+' Lower-effort rows average 11 benchmarks (Terminal-Bench 2.1 ran only at xhigh).';setTimeout(resize,50);}
+// cost
+function cost(){var b=all[cb.value],r=+$('cr').value,p=+$('cp').value||0;var saved=(b[4]-b[5])*r;
+$('crv').textContent=fmt(r);$('ct').textContent=fmt(saved);$('cd').textContent='$'+fmt(saved/1e6*p);
+$('ca').textContent='Accuracy on this benchmark: '+pp(b[3]-b[2]);}
+['cb','cr','cp'].forEach(function(i){$(i).addEventListener('input',cost)});
+// deploy
+var D=[[&quot;bf16 (original)&quot;,&quot;28B BF16&quot;,&quot;Full-precision safetensors. BottleCap evaluated on 1x H200 with vLLM 0.29.0.&quot;,[&quot;hop&quot;,&quot;bw&quot;],&quot;https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B&quot;],
+[&quot;FP8&quot;,&quot;31 GB&quot;,&quot;Block-wise FP8 for vLLM. Hopper and Blackwell.&quot;,[&quot;hop&quot;,&quot;bw&quot;],&quot;https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-FP8&quot;],
+[&quot;NVFP4 weight-only&quot;,&quot;21 GB&quot;,&quot;vLLM. Hopper (Marlin kernel) and Blackwell.&quot;,[&quot;hop&quot;,&quot;bw&quot;],&quot;https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4&quot;],
+[&quot;NVFP4 W4A4 (AWQ)&quot;,&quot;23 GB&quot;,&quot;NVFP4 weights and activations, vLLM. Blackwell only.&quot;,[&quot;bw&quot;],&quot;https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ&quot;],
+[&quot;GGUF&quot;,&quot;16 to 55 GB&quot;,&quot;IQ4_XS to f16 for llama.cpp, LM Studio, Ollama. CUDA, Metal, Vulkan or CPU.&quot;,[&quot;hop&quot;,&quot;bw&quot;,&quot;mac&quot;,&quot;cpu&quot;],&quot;https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF&quot;],
+[&quot;MLX 4-bit DWQ&quot;,&quot;21 GB&quot;,&quot;Mixed 4/8-bit DWQ for mlx-vlm or oMLX. Apple Silicon, 32 GB Mac.&quot;,[&quot;mac&quot;],&quot;https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-MLX-4bit-DWQ&quot;]];
+function drawBuilds(){var h=$('hw').value,o='';D.forEach(function(d){var fit=h==='all'||d[3].indexOf(h)&gt;-1;
+o+='&lt;a class=&quot;build '+(h==='all'?'':(fit?'hit':'dim'))+'&quot; href=&quot;'+d[4]+'&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;b&gt;'+d[0]+'&lt;/b&gt;&lt;em&gt;'+d[1]+'&lt;/em&gt;&lt;span&gt;'+d[2]+'&lt;/span&gt;&lt;/a&gt;';});$('builds').innerHTML=o;}
+$('hw').addEventListener('change',drawBuilds);
+drawBuilds();cost();
+var io='IntersectionObserver' in window?new IntersectionObserver(function(en){if(en[0].isIntersecting){race();io.disconnect();}}):null;
+if(io)io.observe(R);else race();
+window.addEventListener('load',resize);window.addEventListener('resize',resize);setTimeout(resize,300);
+})();
+&lt;/script&gt;
+&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;" style="width:100%;height:600px;border:0;display:block" loading="lazy"></iframe>
+<script>window.addEventListener("message",function(e){var f=document.getElementById("mtp-tcq38-frame");if(f&&e.source===f.contentWindow&&e.data&&e.data.mtpH){f.style.height=e.data.mtpH+"px";}});</script>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h2 id="h-how-it-interacts-with-the-effort-dial" class="wp-block-heading"><strong>How It Interacts With the Effort Dial</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Qwen3.8-27B exposes a reasoning-effort setting, and the compression stacks with it. All deltas below compare against the base model at xhigh, averaged over 11 benchmarks.</p>
+
+
+
+<p class="wp-block-paragraph">At medium, the base model cuts 52.1% of thinking for -9.16pp. ThinkingCap cuts 60.2% for -9.90pp. At low, the figures are -55.4% and -9.71pp for the base, versus -62.3% and -10.79pp for ThinkingCap. With thinking off, ThinkingCap trails the base by 5.7pp.</p>
+
+
+
+<p class="wp-block-paragraph">BottleCap team recommends xhigh for the best accuracy-to-token balance. It says individual thinking modes will get attention in a future release.</p>
+
+
+
+<h2 id="h-how-the-evaluation-was-run" class="wp-block-heading"><strong>How the Evaluation was Run</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Both models ran through the same harness on one NVIDIA H200 with vLLM 0.29.0. Sampling was identical: temperature 1.0, top_p 0.95, top_k 20, min_p 0.0. Multi-seed accuracy is the mean with a 95% interval. Seeds range from 32 on AIME 2026 to 1 on MMLU-Pro and MMMLU. MMMLU uses a fixed 10,000-question sample; the other 11 benchmarks run complete sets.</p>
+
+
+
+<p class="wp-block-paragraph">MTP speculative decoding (3 draft tokens) was measured as accuracy-neutral on AIME 2026. It accepted 53% of drafted tokens, about 2.6 tokens per step, matching the base model.</p>
+
+
+
+<h2 id="h-deployment-builds-serving-and-license" class="wp-block-heading"><strong>Deployment: Builds, Serving and License</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The bf16 checkpoint has 28B parameters and accepts image and text input. <strong>BottleCap publishes 5 quantized builds:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-FP8">FP8</a>: 31 GB, vLLM, Hopper and Blackwell.</li>
+
+
+
+<li><a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4">NVFP4 weight-only</a>: 21 GB, vLLM, Hopper (Marlin kernel) and Blackwell.</li>
+
+
+
+<li><a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-NVFP4A4-AWQ">NVFP4 W4A4 (AWQ)</a>: 23 GB, Blackwell only.</li>
+
+
+
+<li><a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-GGUF">GGUF</a>: 16 to 55 GB, for llama.cpp, LM Studio and Ollama.</li>
+
+
+
+<li><a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B-MLX-4bit-DWQ">MLX 4-bit DWQ</a>: 21 GB, for Apple Silicon Macs with 32 GB.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Serving uses the base model&#8217;s recipe: <code>--reasoning-parser qwen3</code> with the <code>qwen3_xml</code> tool-call parser on vLLM. Thinking returns in a separate reasoning field.</p>
+
+
+
+<p class="wp-block-paragraph">The <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B/blob/main/LICENSE">license</a> is PolyForm Small Business 1.0.0 plus a BottleCap personal-use grant. Upstream Qwen materials stay under Apache-2.0. Hugging Face lists no inference provider hosting the model yet.</p>
+
+
+
+<h2 id="h-key-takeaways" class="wp-block-heading"><strong>Key Takeaways</strong></h2>
+
+
+
+<ul class="wp-block-list">
+<li>37.2% fewer thinking tokens on average across 12 benchmarks.</li>
+
+
+
+<li>Macro accuracy drops 0.86pp, from 86.65% to 85.79%.</li>
+
+
+
+<li>AA-LCR long-context accuracy rises 2.25pp; AIME 2026 falls 3.85pp.</li>
+
+
+
+<li>Drop-in for Qwen3.8-27B: same sampling, same vLLM or SGLang flags.</li>
+
+
+
+<li>Gated weights under PolyForm Small Business; commercial use needs a license.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">Check out the <a href="https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/"><strong>technical blog</strong></a> and <a href="https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B"><strong>model weights</strong></a>. All credit goes to the researcher of this project. Also, feel free to follow us on <strong><a href="https://x.com/intent/follow?screen_name=marktechpost" target="_blank" rel="noopener"><mark>Twitter</mark></a></strong> and don’t forget to join our <strong><a href="https://www.reddit.com/r/machinelearningnews/" target="_blank" rel="noopener">150k+ML SubReddit</a></strong> and Subscribe to <strong><a href="https://magic.beehiiv.com/v1/f5e63dd4-5653-4f09-83e2-321a8b1ba526?email={{email}}" target="_blank" rel="noopener">our Newsletter</a></strong>. Wait! are you on telegram? <strong><a href="https://t.me/machinelearningresearchnews" target="_blank" rel="noopener">now you can join us on telegram as well.</a></strong></p>
+
+
+
+<p class="wp-block-paragraph">Need to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.?&nbsp;<strong><a href="https://forms.gle/MJjjVDPS7whH8Ngs6" target="_blank" rel="noopener"><mark>Connect with us</mark></a></strong></p>
+<p>The post <a href="https://www.marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost/">BottleCap AI Releases ThinkingCap-Qwen3.8-27B: 37.2% Fewer Thinking Tokens at a 0.86pp Accuracy Cost</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
+]]></content:encoded>
+					
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">82494</post-id>
+	</item>
+		<item>
 		<title>Contrastive-LM Releases CLM-8B: An Open System One Model That Scores Agent Actions Up to 9× Faster Than Jev</title>
 		<link>https://www.marktechpost.com/2026/09/23/contrastive-lm-releases-clm-8b-an-open-system-one-model-that-scores-agent-actions-up-to-9x-faster-than-jev/</link>
 		
@@ -4388,425 +4811,6 @@ body{font-family:&quot;Instrument Sans&quot;,system-ui,-apple-system,&quot;Segoe
 		
 		
 		<post-id xmlns="com-wordpress:feed-additions:1">82456</post-id>
-	</item>
-		<item>
-		<title>NVIDIA Introduces SoL-Pi: Auto-Research Loops That Cut Coding Agent Token Traffic by Up to 49%</title>
-		<link>https://www.marktechpost.com/2026/09/21/nvidia-researchers-have-released-sol-pi/</link>
-		
-		<dc:creator><![CDATA[Asif Razzaq]]></dc:creator>
-		<pubDate>Tue, 22 Sep 2026 05:04:43 +0000</pubDate>
-				<category><![CDATA[Agentic AI]]></category>
-		<category><![CDATA[AI Agents]]></category>
-		<category><![CDATA[AI Paper Summary]]></category>
-		<category><![CDATA[Editors Pick]]></category>
-		<category><![CDATA[Harness]]></category>
-		<category><![CDATA[New Releases]]></category>
-		<category><![CDATA[Open Source]]></category>
-		<category><![CDATA[Python]]></category>
-		<category><![CDATA[Staff]]></category>
-		<category><![CDATA[Tech News]]></category>
-		<category><![CDATA[Technology]]></category>
-		<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">https://www.marktechpost.com/?p=82447</guid>
-
-					<description><![CDATA[<p>NVIDIA researchers have released SoL-Pi, 4 harness mechanisms for the open-source Pi coding agent, discovered by an AI running auto-research loops across 535 environments. On EdgeBench, SoL-Pi cuts token traffic by 44.7% to 49.0% and API cost by roughly 33%, while keeping about 94% of Pi's score on GPT-5.6 Sol and Opus 5.</p>
-<p>The post <a href="https://www.marktechpost.com/2026/09/21/nvidia-researchers-have-released-sol-pi/">NVIDIA Introduces SoL-Pi: Auto-Research Loops That Cut Coding Agent Token Traffic by Up to 49%</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
-]]></description>
-										<content:encoded><![CDATA[
-<p class="wp-block-paragraph">Coding agents now run for hours, not minutes. Every edit, test run and log read goes back into the model&#8217;s context. A team of researchers from NVIDIA, NTU and MIT have released <a href="https://arxiv.org/abs/2609.20519">SoL-Pi</a>, a set of 4 efficiency mechanisms for the open-source <a href="https://github.com/earendil-works/pi">Pi</a> coding agent. An AI found these mechanisms by running auto-research loops at the harness layer. On the 51-task EdgeBench evaluation, SoL-Pi cuts recorded token traffic by 44.7% to 49.0% versus Pi and cuts API cost by roughly 33%. Its scores stay close to Pi on both GPT-5.6 Sol and Opus 5.</p>
-
-
-
-<p class="wp-block-paragraph"><strong>Is it deployable?</strong> Yes. SoL-Pi ships on <a href="https://github.com/NVlabs/SoL-Pi">GitHub under NVlabs</a> as an MIT-licensed extension that runs on an unmodified Pi release. It is tested with Pi 0.85.1 and Node.js 22.19 or newer. </p>
-
-
-
-<h2 id="h-why-target-the-harness" class="wp-block-heading"><strong>Why Target the Harness</strong></h2>
-
-
-
-<p class="wp-block-paragraph">Most efficiency work lowers the cost per token through faster kernels, quantization or cheaper models. SoL-Pi instead reduces how many tokens a task consumes. The harness is the layer that handles tool calls, context, observations and delegation.</p>
-
-
-
-<p class="wp-block-paragraph">Tuning a harness by hand is slow, and its parts are coupled: a fix in one place can push cost into later steps. <a href="https://arxiv.org/abs/2603.28052">Meta-Harness</a> and similar systems automate this work. However, a <a href="https://arxiv.org/abs/2607.12227">recent study</a> found that evolved harnesses can overfit their search tasks and give only marginal gains on unseen ones.</p>
-
-
-
-<h2 id="h-how-the-search-works" class="wp-block-heading"><strong>How the Search Works</strong></h2>
-
-
-
-<p class="wp-block-paragraph">A research AI observes execution traces from a separate agent running base Pi. It then proposes harness changes and tests them. <strong>The search covered:</strong></p>
-
-
-
-<ul class="wp-block-list">
-<li>152 proposed directions across 6 families: context, progress, tools, delegation, prompt and policy, and improvement and evaluation</li>
-
-
-
-<li>535 executable environments: 495 built from GitHub issue-pull request pairs and 40 synthetic tasks with executable verifiers</li>
-
-
-
-<li>More than 3,000 runs and 60,000+ agent-environment interactions</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">Each search is a disposable, isolated loop. It follows the <a href="https://github.com/karpathy/autoresearch/blob/master/program.md">autoresearch</a> cycle, extended with a <a href="https://github.com/anthropics/claude-code/blob/main/plugins/ralph-wiggum/commands/ralph-loop.md">Ralph Loop</a> implementation step and an independent reviewer.</p>
-
-
-
-<p class="wp-block-paragraph">Acceptance rules are fixed before the search starts, and the optimizer cannot change them. Every capability metric must stay within a predeclared tolerance. The candidate must also improve at least 1 efficiency metric. <a href="https://edge-bench.org/">EdgeBench</a> stays held out. Of its 51 public tasks, 11 are used for one-way acceptance of frozen candidates and 40 for final evaluation. Held-out results never feed back into the search.</p>
-
-
-
-<h2 id="h-the-4-mechanisms-that-survived" class="wp-block-heading"><strong>The 4 Mechanisms That Survived</strong></h2>
-
-
-
-<ol class="wp-block-list">
-<li><strong>Action Fusion</strong>: Base Pi often edits a file and then issues a separate command to test, build or run it. Action Fusion merges both into 1 tool request and returns both outcomes in 1 observation. This removes a model round trip.</li>
-
-
-
-<li><strong>Online Context Compact</strong>: Plan steps are tracked through <code>update_plan</code>. When a step completes, the harness estimates how many requests remain. It then compares the projected input savings with the extra cost of rewriting the prompt cache. It invokes Pi&#8217;s native compaction when this gate passes or when context nears the window limit.</li>
-
-
-
-<li><strong>ObservationPack</strong>: Tool outputs above 10 KiB are archived locally and sent in full for the next 2 provider requests. From the 3rd request onward, the model sees a stable handle, the original size and a short excerpt of head and tail lines. Exact pages stay retrievable through the handle.</li>
-
-
-
-<li><strong>Evidence-Preserving Reducer</strong>: Build and test logs of at least 4 KiB go to a cheaper model, GPT-5.6 Luna at <code>high</code>, which writes a compact receipt. A deterministic verifier checks the receipt&#8217;s schema, source hash, exit status, exact quotes and size. The harness falls back to the original log in 3 cases: verification fails, credentials are suspected, or the receipt is not smaller.</li>
-</ol>
-
-
-
-<div id="mtp-solpi-explainer" style="max-width:860px!important;margin:24px auto!important;background:#111!important;border:0!important;">
-<iframe id="mtp-solpi-frame" title="SoL-Pi interactive explainer by Marktechpost" style="width:100%!important;height:600px;border:0!important;display:block!important;background:#111!important;" loading="lazy" srcdoc="&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;&lt;head&gt;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;
-&lt;style&gt;
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{background:#111;color:#e8e8e8;font-family:&quot;NVIDIA Sans&quot;,Arial,Helvetica,sans-serif}
-#w{max-width:860px;margin:0 auto;padding:22px 20px 16px;background:#111;border:1px solid #2a2a2a;border-radius:10px}
-.top{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-bottom:2px solid #76B900;padding-bottom:12px;margin-bottom:16px}
-.top h1{font-size:22px;font-weight:800;letter-spacing:-.3px;color:#fff}
-.top h1 b{color:#76B900}
-.top p{font-size:13px;color:#9a9a9a;margin-top:4px}
-.cnt{font-size:13px;color:#76B900;font-weight:700;white-space:nowrap}
-.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
-.tabs button{background:#1b1b1b;color:#bdbdbd;border:1px solid #333;border-radius:4px;padding:7px 11px;font-size:12.5px;cursor:pointer;font-family:inherit}
-.tabs button.on{background:#76B900;color:#111;border-color:#76B900;font-weight:700}
-.tabs button:focus-visible,.btn:focus-visible,input:focus-visible{outline:2px solid #fff;outline-offset:2px}
-.slide{display:none}.slide.on{display:block;animation:fi .35s ease}
-@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-h2{font-size:18px;color:#fff;margin-bottom:6px}
-.lead{font-size:14px;line-height:1.55;color:#c9c9c9;margin-bottom:14px;max-width:70ch}
-.stage{background:#161616;border:1px solid #2a2a2a;border-radius:8px;padding:16px;margin-bottom:12px}
-.ctrl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
-.btn{background:#76B900;color:#111;border:0;border-radius:4px;padding:8px 14px;font-weight:700;font-size:13px;cursor:pointer;font-family:inherit}
-.btn.g{background:transparent;color:#76B900;border:1px solid #76B900}
-.btn.on{background:#76B900;color:#111}
-.note{font-size:12px;color:#8a8a8a;line-height:1.5}
-.lbl{font-size:12.5px;color:#9a9a9a}
-/* funnel */
-.fr{display:flex;align-items:center;gap:12px;margin:7px 0}
-.fb{flex-shrink:0;height:30px;background:#1f2a0e;border:1px solid #76B900;border-radius:3px;display:flex;align-items:center;padding:0 10px;font-weight:800;color:#fff;font-size:15px;width:0;transition:width .9s cubic-bezier(.2,.8,.2,1);overflow:hidden;white-space:nowrap}
-.fr.last .fb{background:#76B900;color:#111}
-.ft{font-size:13px;color:#bdbdbd;flex:1}
-.wall{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:stretch;margin-top:12px}
-.box{border:1px solid #333;border-radius:6px;padding:10px;font-size:12.5px;line-height:1.5;color:#c9c9c9}
-.box b{color:#fff}
-.bar{width:3px;background:repeating-linear-gradient(#76B900 0 6px,transparent 6px 11px)}
-/* lanes */
-.lane{margin-bottom:14px}
-.lane .ln{font-size:13px;font-weight:700;color:#fff;margin-bottom:8px}
-.calls{display:flex;gap:8px;align-items:stretch;position:relative}
-.call{flex:1;border:1px solid #3a3a3a;border-radius:6px;padding:10px 8px;font-size:12px;color:#aaa;text-align:center;transition:all .35s;background:#141414;min-height:62px;display:flex;flex-direction:column;justify-content:center}
-.call small{display:block;color:#666;font-size:11px;margin-bottom:3px}
-.call.hot{border-color:#76B900;color:#fff;background:#1f2a0e;box-shadow:0 0 0 3px rgba(118,185,0,.18)}
-.call.red{border-color:#e0533d;color:#fff;background:#2a1411}
-.tally{font-size:13px;color:#9a9a9a;margin-top:6px}.tally b{color:#76B900;font-size:16px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.st{border:1px solid #2a2a2a;border-radius:6px;padding:10px;background:#141414}
-.st .v{font-size:20px;font-weight:800;color:#76B900}.st .k{font-size:11.5px;color:#999;margin-top:3px;line-height:1.35}
-/* observation */
-.reqs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.rq{border:1px solid #333;border-radius:6px;padding:8px;background:#141414;min-height:140px;display:flex;flex-direction:column}
-.rq .h{font-size:11.5px;color:#888;margin-bottom:6px}
-.pl{flex:1;display:flex;align-items:flex-end}
-.pb{width:100%;background:#3a3a3a;border-radius:3px;transition:height .6s,background .4s;height:10%}
-.pb.full{background:#e0533d}.pb.hand{background:#76B900}
-.rq .t{font-size:11.5px;margin-top:6px;color:#ccc;min-height:30px;line-height:1.3}
-input[type=range]{accent-color:#76B900;width:220px}
-.rec{margin-top:10px;font-size:12.5px;color:#76B900;min-height:18px}
-/* context */
-.cbars{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;align-items:end;height:150px}
-.cb{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
-.cbi{width:70%;background:#3a3a3a;border-radius:3px 3px 0 0;height:0;transition:height .7s,background .4s}
-.cbi.g{background:#76B900}
-.cb span{font-size:12px;color:#ccc;margin-top:5px}
-.gate{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px;padding:10px;border:1px dashed #444;border-radius:6px;font-size:13px}
-.pill{padding:3px 9px;border-radius:12px;font-weight:700;font-size:12px}
-.pill.p{background:#76B900;color:#111}.pill.f{background:#e0533d;color:#fff}
-/* reducer */
-.pipe{display:flex;gap:8px;align-items:stretch;flex-wrap:wrap}
-.pipe .call{min-width:110px}
-.checks{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:12px}
-.ck{border:1px solid #333;border-radius:5px;padding:8px 4px;text-align:center;font-size:11.5px;color:#999;transition:all .3s}
-.ck.ok{border-color:#76B900;color:#fff;background:#1f2a0e}
-.ck.bad{border-color:#e0533d;color:#fff;background:#2a1411}
-.out{margin-top:10px;font-size:13px;min-height:20px}
-/* results */
-.rs{margin:6px 0}
-.rrow{display:grid;grid-template-columns:150px 1fr 70px;gap:10px;align-items:center;margin:6px 0;font-size:12.5px}
-.rrow .n{color:#ccc}
-.track{background:#1d1d1d;height:18px;border-radius:3px;overflow:hidden}
-.fill{height:100%;background:#555;width:0;transition:width .8s cubic-bezier(.2,.8,.2,1)}
-.fill.g{background:#76B900}
-.rrow .val{color:#fff;font-weight:700;text-align:right}
-.mt{font-size:13px;font-weight:700;color:#fff;margin:14px 0 4px}
-.nav{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
-.dots{display:flex;gap:6px}.dots i{width:8px;height:8px;border-radius:50%;background:#333;display:block}.dots i.on{background:#76B900}
-.foot{margin-top:14px;padding-top:10px;border-top:1px solid #2a2a2a;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:12px;color:#8a8a8a}
-.foot a{color:#76B900;text-decoration:none}.foot b{color:#76B900}
-code{background:#1d1d1d;color:#76B900;padding:2px 6px;border-radius:3px;font-size:12px}
-@media (max-width:640px){
-.top{flex-direction:column;align-items:flex-start}
-.top h1{font-size:19px}
-.stats{grid-template-columns:1fr}
-.reqs{grid-template-columns:repeat(2,1fr)}
-.checks{grid-template-columns:repeat(2,1fr)}
-.calls{flex-direction:column}
-.wall{grid-template-columns:1fr}.bar{width:100%;height:3px;background:repeating-linear-gradient(90deg,#76B900 0 6px,transparent 6px 11px)}
-.rrow{grid-template-columns:100px 1fr 58px}
-input[type=range]{width:100%}
-}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
-&lt;div id=&quot;w&quot;&gt;
-&lt;div class=&quot;top&quot;&gt;&lt;div&gt;&lt;h1&gt;&lt;b&gt;SoL-Pi&lt;/b&gt; explained&lt;/h1&gt;&lt;p&gt;How NVIDIA's auto-research loop found 4 harness mechanisms that cut token traffic&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;cnt&quot; id=&quot;cnt&quot;&gt;1 / 6&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;tabs&quot; id=&quot;tabs&quot; role=&quot;tablist&quot;&gt;&lt;/div&gt;
-
-&lt;section class=&quot;slide on&quot; data-t=&quot;The search&quot;&gt;
-&lt;h2&gt;A broad-to-deep funnel&lt;/h2&gt;
-&lt;p class=&quot;lead&quot;&gt;A research AI reads execution traces from Pi, proposes harness changes and tests them in isolated loops. Only candidates that hold capability within tolerance and improve at least 1 efficiency metric survive.&lt;/p&gt;
-&lt;div class=&quot;stage&quot;&gt;
-&lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;fPlay&quot;&gt;Run the funnel&lt;/button&gt;&lt;span class=&quot;lbl&quot;&gt;Numbers from the paper&lt;/span&gt;&lt;/div&gt;
-&lt;div class=&quot;fr&quot;&gt;&lt;div class=&quot;fb&quot; data-w=&quot;100&quot;&gt;60,000+&lt;/div&gt;&lt;div class=&quot;ft&quot;&gt;agent-environment interactions&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;fr&quot;&gt;&lt;div class=&quot;fb&quot; data-w=&quot;82&quot;&gt;3,000+&lt;/div&gt;&lt;div class=&quot;ft&quot;&gt;runs&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;fr&quot;&gt;&lt;div class=&quot;fb&quot; data-w=&quot;64&quot;&gt;535&lt;/div&gt;&lt;div class=&quot;ft&quot;&gt;executable environments (495 GitHub issue-PR, 40 verifier-driven)&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;fr&quot;&gt;&lt;div class=&quot;fb&quot; data-w=&quot;46&quot;&gt;152&lt;/div&gt;&lt;div class=&quot;ft&quot;&gt;proposed directions across 6 families&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;fr&quot;&gt;&lt;div class=&quot;fb&quot; data-w=&quot;30&quot;&gt;2 gates&lt;/div&gt;&lt;div class=&quot;ft&quot;&gt;capability within tolerance, then efficiency gain&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;fr last&quot;&gt;&lt;div class=&quot;fb&quot; data-w=&quot;18&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;ft&quot;&gt;mechanisms retained and frozen&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;wall&quot;&gt;&lt;div class=&quot;box&quot;&gt;&lt;b&gt;Search side&lt;/b&gt;&lt;br&gt;Trajectory rollouts, map-reduce analysis, proposal, implementation, independent review, development validation.&lt;/div&gt;&lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;&lt;div class=&quot;box&quot;&gt;&lt;b&gt;Held-out EdgeBench (51 public tasks)&lt;/b&gt;&lt;br&gt;11 tasks for one-way acceptance, 40 for final evaluation. No results feed back into search.&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;slide&quot; data-t=&quot;Action Fusion&quot;&gt;
-&lt;h2&gt;Action Fusion: edit and run in 1 request&lt;/h2&gt;
-&lt;p class=&quot;lead&quot;&gt;Base Pi often edits a file, then spends another model round trip issuing a test, build or run command. Action Fusion attaches the follow-up command to the edit and returns both outcomes in 1 observation.&lt;/p&gt;
-&lt;div class=&quot;stage&quot;&gt;
-&lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;aPlay&quot;&gt;Play both lanes&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;lane&quot;&gt;&lt;div class=&quot;ln&quot;&gt;Baseline Pi&lt;/div&gt;&lt;div class=&quot;calls&quot; id=&quot;aBase&quot;&gt;&lt;div class=&quot;call&quot;&gt;&lt;small&gt;API call 1&lt;/small&gt;Edit / write&lt;/div&gt;&lt;div class=&quot;call&quot;&gt;&lt;small&gt;API call 2&lt;/small&gt;Read result, choose run&lt;/div&gt;&lt;div class=&quot;call&quot;&gt;&lt;small&gt;API call 3&lt;/small&gt;Receive output&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;tally&quot;&gt;API calls: &lt;b id=&quot;aBn&quot;&gt;0&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;lane&quot;&gt;&lt;div class=&quot;ln&quot;&gt;With Action Fusion&lt;/div&gt;&lt;div class=&quot;calls&quot; id=&quot;aFus&quot;&gt;&lt;div class=&quot;call&quot;&gt;&lt;small&gt;API call 1&lt;/small&gt;Edit + then_run&lt;/div&gt;&lt;div class=&quot;call&quot;&gt;&lt;small&gt;API call 2&lt;/small&gt;File changed + command output&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;tally&quot;&gt;API calls: &lt;b id=&quot;aFn&quot;&gt;0&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;stats&quot;&gt;&lt;div class=&quot;st&quot;&gt;&lt;div class=&quot;v&quot;&gt;78.4%&lt;/div&gt;&lt;div class=&quot;k&quot;&gt;of EdgeBench tasks trigger it (GPT-5.6 Sol)&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;st&quot;&gt;&lt;div class=&quot;v&quot;&gt;70.58&lt;/div&gt;&lt;div class=&quot;k&quot;&gt;avg triggers per triggered task (GPT-5.6 Sol)&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;st&quot;&gt;&lt;div class=&quot;v&quot;&gt;24.7%&lt;/div&gt;&lt;div class=&quot;k&quot;&gt;token efficiency gain on triggered tasks (GPT-5.6 Sol)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;slide&quot; data-t=&quot;ObservationPack&quot;&gt;
-&lt;h2&gt;ObservationPack: stop replaying big outputs&lt;/h2&gt;
-&lt;p class=&quot;lead&quot;&gt;Tool results over 10 KiB are archived locally and sent in full for the next 2 provider requests. From the 3rd request on, the model sees a stable handle, the original size and a short head and tail excerpt. Exact pages stay retrievable.&lt;/p&gt;
-&lt;div class=&quot;stage&quot;&gt;
-&lt;div class=&quot;ctrl&quot;&gt;&lt;label class=&quot;lbl&quot; for=&quot;oS&quot;&gt;Tool output size: &lt;b id=&quot;oV&quot; style=&quot;color:#fff&quot;&gt;24&lt;/b&gt; KiB&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;oS&quot; min=&quot;1&quot; max=&quot;60&quot; value=&quot;24&quot;&gt;&lt;button class=&quot;btn g&quot; id=&quot;oRec&quot;&gt;Recall exact page&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;reqs&quot; id=&quot;oR&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;rec&quot; id=&quot;oMsg&quot;&gt;&lt;/div&gt;
-&lt;p class=&quot;note&quot;&gt;Bar heights are illustrative. The 10 KiB threshold and 2-request window come from the paper.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;slide&quot; data-t=&quot;Online Context Compact&quot;&gt;
-&lt;h2&gt;Online Context Compact: compact when it pays&lt;/h2&gt;
-&lt;p class=&quot;lead&quot;&gt;At each completed plan step (tracked through &lt;code&gt;update_plan&lt;/code&gt;), the harness estimates the remaining requests and weighs projected input savings against the extra cost of rewriting the prompt cache. It triggers Pi's native compaction if the gate passes or the context nears the window limit.&lt;/p&gt;
-&lt;div class=&quot;stage&quot;&gt;
-&lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;cPlay&quot;&gt;Replay 4 calls&lt;/button&gt;&lt;label class=&quot;lbl&quot; for=&quot;cS&quot;&gt;Estimated remaining requests: &lt;b id=&quot;cV&quot; style=&quot;color:#fff&quot;&gt;6&lt;/b&gt;&lt;/label&gt;&lt;input type=&quot;range&quot; id=&quot;cS&quot; min=&quot;0&quot; max=&quot;12&quot; value=&quot;6&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;cbars&quot; id=&quot;cB&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;gate&quot;&gt;&lt;span&gt;Cost gate at subtask completion:&lt;/span&gt;&lt;span class=&quot;pill&quot; id=&quot;cG&quot;&gt;&lt;/span&gt;&lt;span class=&quot;lbl&quot; id=&quot;cT&quot;&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;p class=&quot;note&quot; style=&quot;margin-top:8px&quot;&gt;Context multiples follow the paper's Figure 4 schematic. The gate math here is a simplified illustration, not SoL-Pi's exact formula.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;slide&quot; data-t=&quot;Evidence Reducer&quot;&gt;
-&lt;h2&gt;Evidence-Preserving Reducer: cheap reading, verified&lt;/h2&gt;
-&lt;p class=&quot;lead&quot;&gt;Build and test logs of at least 4 KiB from a predefined command set are archived, then a lower-cost model (GPT-5.6 Luna at high) writes a compact receipt. A deterministic verifier checks it. File reads and search results bypass the reducer.&lt;/p&gt;
-&lt;div class=&quot;stage&quot;&gt;
-&lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn&quot; id=&quot;rPlay&quot;&gt;Reduce a log&lt;/button&gt;&lt;button class=&quot;btn g&quot; id=&quot;rBad&quot; aria-pressed=&quot;false&quot;&gt;Inject a misquoted line&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;pipe&quot;&gt;&lt;div class=&quot;call&quot; id=&quot;r1&quot;&gt;&lt;small&gt;Input&lt;/small&gt;Build / test log &amp;ge; 4 KiB&lt;/div&gt;&lt;div class=&quot;call&quot; id=&quot;r2&quot;&gt;&lt;small&gt;Local&lt;/small&gt;Archive exact original&lt;/div&gt;&lt;div class=&quot;call&quot; id=&quot;r3&quot;&gt;&lt;small&gt;Low-cost call&lt;/small&gt;Luna extracts receipt&lt;/div&gt;&lt;div class=&quot;call&quot; id=&quot;r4&quot;&gt;&lt;small&gt;Frontier call&lt;/small&gt;Main agent decides&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;checks&quot; id=&quot;rC&quot;&gt;&lt;div class=&quot;ck&quot;&gt;Schema&lt;/div&gt;&lt;div class=&quot;ck&quot;&gt;Source hash&lt;/div&gt;&lt;div class=&quot;ck&quot;&gt;Exit status&lt;/div&gt;&lt;div class=&quot;ck&quot;&gt;Exact quotes&lt;/div&gt;&lt;div class=&quot;ck&quot;&gt;Smaller size&lt;/div&gt;&lt;/div&gt;
-&lt;div class=&quot;out&quot; id=&quot;rO&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;section class=&quot;slide&quot; data-t=&quot;Results&quot;&gt;
-&lt;h2&gt;EdgeBench results&lt;/h2&gt;
-&lt;p class=&quot;lead&quot;&gt;SoL-Pi [Efficiency] is the full 4-mechanism stack. SoL-Pi [Performance] is the best single mechanism per backend. The stack was built on GPT-5.6 Sol and applied to Opus 5 without further search.&lt;/p&gt;
-&lt;div class=&quot;ctrl&quot;&gt;&lt;button class=&quot;btn on&quot; id=&quot;bS&quot;&gt;GPT-5.6 Sol&lt;/button&gt;&lt;button class=&quot;btn g&quot; id=&quot;bO&quot;&gt;Opus 5&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;stage&quot;&gt;
-&lt;div class=&quot;mt&quot;&gt;Average score (higher is better)&lt;/div&gt;&lt;div id=&quot;gS&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;mt&quot;&gt;API cost in USD (lower is better)&lt;/div&gt;&lt;div id=&quot;gC&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;mt&quot;&gt;Recorded token traffic in billions (lower is better)&lt;/div&gt;&lt;div id=&quot;gT&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;stats&quot;&gt;&lt;div class=&quot;st&quot;&gt;&lt;div class=&quot;v&quot;&gt;-26.3%&lt;/div&gt;&lt;div class=&quot;k&quot;&gt;total cost vs Pi on Terminal-Bench 4 (15 vs 18 solved)&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;st&quot;&gt;&lt;div class=&quot;v&quot;&gt;$20.90&lt;/div&gt;&lt;div class=&quot;k&quot;&gt;per passed IMO 2026 problem, lowest of 3 harnesses&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;st&quot;&gt;&lt;div class=&quot;v&quot;&gt;-26.8%&lt;/div&gt;&lt;div class=&quot;k&quot;&gt;swarm API cost vs 20 Pi workers, 1,127 vs 1,366 cycles&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/section&gt;
-
-&lt;div class=&quot;nav&quot;&gt;&lt;button class=&quot;btn g&quot; id=&quot;prev&quot;&gt;Previous&lt;/button&gt;&lt;div class=&quot;dots&quot; id=&quot;dots&quot;&gt;&lt;/div&gt;&lt;button class=&quot;btn&quot; id=&quot;next&quot;&gt;Next&lt;/button&gt;&lt;/div&gt;
-&lt;div class=&quot;foot&quot;&gt;&lt;span&gt;Install: &lt;code&gt;pi install git:github.com/NVlabs/SoL-Pi&lt;/code&gt; (MIT, opt-in)&lt;/span&gt;&lt;span&gt;Source: &lt;a href=&quot;https://arxiv.org/abs/2609.20519&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;arXiv 2609.20519&lt;/a&gt; &amp;middot; &lt;b&gt;Built by Marktechpost&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function(){
-var S=[].slice.call(document.querySelectorAll('.slide')),cur=0,T=document.getElementById('tabs'),D=document.getElementById('dots');
-function post(){try{parent.postMessage({type:'mtp-solpi-h',h:document.getElementById('w').offsetHeight+40},'*')}catch(e){}}
-S.forEach(function(s,i){var b=document.createElement('button');b.textContent=s.dataset.t;b.setAttribute('role','tab');b.onclick=function(){go(i)};T.appendChild(b);D.appendChild(document.createElement('i'))});
-function go(i){cur=(i+S.length)%S.length;S.forEach(function(s,j){s.classList.toggle('on',j===cur);T.children[j].classList.toggle('on',j===cur);D.children[j].classList.toggle('on',j===cur)});document.getElementById('cnt').textContent=(cur+1)+' / '+S.length;if(cur===0)funnel();if(cur===3)ctx(true);if(cur===5)res();setTimeout(post,60);setTimeout(post,900)}
-document.getElementById('prev').onclick=function(){go(cur-1)};document.getElementById('next').onclick=function(){go(cur+1)};
-var timers=[];function later(f,t){timers.push(setTimeout(f,t))}
-/* funnel */
-function funnel(){var f=document.querySelectorAll('.fb');f.forEach(function(b){b.style.width='0'});f.forEach(function(b,i){later(function(){b.style.width=(b.dataset.w*0.6)+'%'},120+i*220)})}
-document.getElementById('fPlay').onclick=funnel;
-/* action fusion */
-document.getElementById('aPlay').onclick=function(){var b=document.querySelectorAll('#aBase .call'),f=document.querySelectorAll('#aFus .call'),bn=document.getElementById('aBn'),fn=document.getElementById('aFn');[].forEach.call(b,function(c){c.className='call'});[].forEach.call(f,function(c){c.className='call'});bn.textContent=0;fn.textContent=0;
-[].forEach.call(b,function(c,i){later(function(){c.className='call red';bn.textContent=i+1},300+i*700)});
-[].forEach.call(f,function(c,i){later(function(){c.className='call hot';fn.textContent=i+1;if(i===1)fn.textContent='2 (1 saved)'},300+i*1050)})};
-/* observationpack */
-var oS=document.getElementById('oS'),oR=document.getElementById('oR');
-function obs(){var k=+oS.value;document.getElementById('oV').textContent=k;var big=k&gt;10,h='';for(var i=1;i&lt;=4;i++){var full=!big||i&lt;=2,ht=full?Math.min(100,12+k*1.5):8,cls=big?(full?'full':'hand'):'',t=!big?'Small result, sent unchanged':(full?'Full result ('+k+' KiB)':'Handle + size + head/tail excerpt');h+='&lt;div class=&quot;rq&quot;&gt;&lt;div class=&quot;h&quot;&gt;Provider request '+i+'&lt;/div&gt;&lt;div class=&quot;pl&quot;&gt;&lt;div class=&quot;pb '+cls+'&quot; style=&quot;height:'+ht+'%&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;t&quot;&gt;'+t+'&lt;/div&gt;&lt;/div&gt;'}oR.innerHTML=h;document.getElementById('oMsg').textContent=big?'Above the 10 KiB threshold: ObservationPack archives the original locally.':'Below 10 KiB: ObservationPack leaves the result alone.';post()}
-oS.oninput=obs;obs();
-document.getElementById('oRec').onclick=function(){var m=document.getElementById('oMsg');if(+oS.value&lt;=10){m.textContent='Nothing archived at this size. Raise the slider above 10 KiB.';return}m.textContent='Fetching exact page through the stable handle...';later(function(){m.textContent='Exact original chunk returned on demand. Nothing was lost, only deferred.'},900)};
-/* context compact */
-var cS=document.getElementById('cS'),cB=document.getElementById('cB');
-function gate(){var n=+cS.value,sav=n*1.05,cost=3.4,p=sav&gt;cost;document.getElementById('cV').textContent=n;var g=document.getElementById('cG');g.className='pill '+(p?'p':'f');g.textContent=p?'Compact':'Skip';document.getElementById('cT').textContent=p?'Projected input savings exceed the cache-rewrite cost.':'Too few requests left to repay rewriting the cache. Keep full history.';return p}
-function ctx(anim){var p=gate(),base=[1,1.3,1.6,1.9],cmp=p?[1,1.3,.55,.75]:base;var h='';for(var i=0;i&lt;4;i++)h+='&lt;div class=&quot;cb&quot;&gt;&lt;div class=&quot;cbi&quot; style=&quot;height:0&quot;&gt;&lt;/div&gt;&lt;span id=&quot;cl'+i+'&quot;&gt;call '+(i+1)+'&lt;/span&gt;&lt;/div&gt;';cB.innerHTML=h;var bars=cB.querySelectorAll('.cbi');[].forEach.call(bars,function(b,i){later(function(){b.style.height=(base[i]/1.9*100)+'%';document.getElementById('cl'+i).textContent='call '+(i+1)+': '+base[i]+'x'},anim?150+i*350:0)});
-if(p)[2,3].forEach(function(i){later(function(){bars[i].style.height=(cmp[i]/1.9*100)+'%';bars[i].classList.add('g');document.getElementById('cl'+i).textContent='call '+(i+1)+': '+cmp[i]+'x'},anim?1750+(i-2)*400:10)});post()}
-cS.oninput=function(){ctx(false)};document.getElementById('cPlay').onclick=function(){ctx(true)};
-/* reducer */
-var bad=false,rb=document.getElementById('rBad');rb.onclick=function(){bad=!bad;rb.setAttribute('aria-pressed',bad);rb.classList.toggle('on',bad);rb.textContent=bad?'Misquote injected':'Inject a misquoted line'};
-document.getElementById('rPlay').onclick=function(){var st=['r1','r2','r3'].map(function(x){return document.getElementById(x)}),r4=document.getElementById('r4'),ck=document.querySelectorAll('#rC .ck'),o=document.getElementById('rO');st.concat([r4]).forEach(function(c){c.className='call'});[].forEach.call(ck,function(c){c.className='ck'});o.textContent='';
-st.forEach(function(c,i){later(function(){c.className='call hot'},200+i*450)});
-[].forEach.call(ck,function(c,i){later(function(){c.className='ck '+(bad&amp;&amp;i===3?'bad':'ok')},1600+i*300)});
-later(function(){if(bad){r4.className='call red';o.innerHTML='&lt;span style=&quot;color:#e0533d;font-weight:700&quot;&gt;Verification failed.&lt;/span&gt; The harness falls back to the original log, so no evidence is hidden.'}else{r4.className='call hot';o.innerHTML='&lt;span style=&quot;color:#76B900;font-weight:700&quot;&gt;Verified receipt passed.&lt;/span&gt; The main agent still owns diagnosis and action selection.'}post()},1600+5*300+200)};
-/* results */
-var R={s:{sc:[['Codex',34.738],['Pi',44.833],['SoL-Pi [Efficiency]',42.003],['SoL-Pi [Performance]',47.208]],c:[['Codex',1787],['Pi',1339],['SoL-Pi [Efficiency]',894],['SoL-Pi [Performance]',1271]],t:[['Codex',3.0537],['Pi',2.1538],['SoL-Pi [Efficiency]',1.0990],['SoL-Pi [Performance]',2.0224]]},
-o:{sc:[['Claude Code',43.689],['Pi',44.756],['SoL-Pi [Efficiency]',42.224],['SoL-Pi [Performance]',50.482]],c:[['Claude Code',2535],['Pi',1741],['SoL-Pi [Efficiency]',1158],['SoL-Pi [Performance]',1605]],t:[['Claude Code',2.0045],['Pi',2.3697],['SoL-Pi [Efficiency]',1.3101],['SoL-Pi [Performance]',2.1016]]}},be='s';
-function draw(id,arr,max,fmt){var h='';arr.forEach(function(r){h+='&lt;div class=&quot;rrow&quot;&gt;&lt;div class=&quot;n&quot;&gt;'+r[0]+'&lt;/div&gt;&lt;div class=&quot;track&quot;&gt;&lt;div class=&quot;fill'+(r[0].indexOf('SoL')===0?' g':'')+'&quot; data-w=&quot;'+(r[1]/max*100)+'&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;val&quot;&gt;'+fmt(r[1])+'&lt;/div&gt;&lt;/div&gt;'});var el=document.getElementById(id);el.innerHTML=h;later(function(){[].forEach.call(el.querySelectorAll('.fill'),function(f){f.style.width=f.dataset.w+'%'})},40)}
-function res(){var d=R[be];draw('gS',d.sc,55,function(v){return v.toFixed(1)});draw('gC',d.c,2600,function(v){return '$'+v.toLocaleString('en-US')});draw('gT',d.t,3.1,function(v){return v.toFixed(2)+'B'});post()}
-var bS=document.getElementById('bS'),bO=document.getElementById('bO');
-bS.onclick=function(){be='s';bS.className='btn on';bO.className='btn g';res()};bO.onclick=function(){be='o';bO.className='btn on';bS.className='btn g';res()};
-go(0);window.addEventListener('resize',post);window.addEventListener('load',post);
-})();
-&lt;/script&gt;
-&lt;/body&gt;&lt;/html&gt;
-"></iframe>
-</div>
-<script>
-(function(){var f=document.getElementById('mtp-solpi-frame');window.addEventListener('message',function(e){if(!f||e.source!==f.contentWindow)return;var d=e.data;if(d&&d.type==='mtp-solpi-h'&&d.h>200){f.style.height=d.h+'px';}});})();
-</script>
-
-
-
-<p class="wp-block-paragraph"></p>
-
-
-
-<h2 id="h-results-on-edgebench" class="wp-block-heading"><strong>Results on EdgeBench</strong></h2>
-
-
-
-<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>Backend</th><th>Harness</th><th>Tokens (B)</th><th>API Cost</th><th>Avg. Score</th></tr></thead><tbody><tr><td>GPT-5.6 Sol</td><td>Codex</td><td>3.05</td><td>$1,787</td><td>34.7</td></tr><tr><td>GPT-5.6 Sol</td><td>Pi</td><td>2.15</td><td>$1,339</td><td>44.8</td></tr><tr><td>GPT-5.6 Sol</td><td>SoL-Pi [Efficiency]</td><td>1.10</td><td>$894</td><td>42.0</td></tr><tr><td>GPT-5.6 Sol</td><td>SoL-Pi [Performance]</td><td>2.02</td><td>$1,271</td><td>47.2</td></tr><tr><td>Opus 5</td><td>Claude Code</td><td>2.00</td><td>$2,535</td><td>43.7</td></tr><tr><td>Opus 5</td><td>Pi</td><td>2.37</td><td>$1,741</td><td>44.8</td></tr><tr><td>Opus 5</td><td>SoL-Pi [Efficiency]</td><td>1.31</td><td>$1,158</td><td>42.2</td></tr><tr><td>Opus 5</td><td>SoL-Pi [Performance]</td><td>2.10</td><td>$1,605</td><td>50.5</td></tr></tbody></table></figure>
-
-
-
-<p class="wp-block-paragraph">The full stack was built on GPT-5.6 Sol and moved to Opus 5 without further search. On Opus 5, it keeps 94.3% of Pi&#8217;s score while cutting token traffic by 44.7% and API cost by 33.5%. On GPT-5.6 Sol, it keeps 93.7% of Pi&#8217;s score with 49.0% fewer tokens and 33.2% lower cost.</p>
-
-
-
-<p class="wp-block-paragraph">The Performance point uses the best single mechanism for each backend: ObservationPack on GPT-5.6 Sol and Action Fusion on Opus 5. It lifts scores 5.3% and 12.8% above Pi.</p>
-
-
-
-<p class="wp-block-paragraph">On GPT-5.6 Sol, the full stack increases cache-write traffic from 0.0141 B to 0.0316 B tokens. Total cost still falls, from $1,339 to $894. The paper estimates hourly savings of $8.75 to $13.50 versus the native Codex and Claude Code harnesses, and $4.36 to $5.71 versus Pi.</p>
-
-
-
-<h2 id="h-beyond-edgebench" class="wp-block-heading"><strong>Beyond EdgeBench</strong></h2>
-
-
-
-<ul class="wp-block-list">
-<li><strong><a href="https://www.tbench.ai/news/terminal-bench-4-0">Terminal-Bench 4</a> (63 CPU-only tasks):</strong> SoL-Pi solves 15 tasks versus 18 for both Codex and Pi. It lowers total cost by 26.3% versus Pi ($211.12 vs $286.45).</li>
-
-
-
-<li><strong>IMO 2026, Lean 4-verified:</strong> SoL-Pi passes 3 of 6 problems, matching Pi, at the lowest cost per passed problem ($20.90). Codex passes 5.</li>
-
-
-
-<li><strong>Agent swarm:</strong> A Codex coordinator with 20 SoL-Pi workers reaches 1,127 cycles at $60.11. With 20 Pi workers, it reaches 1,366 cycles at $82.12. A single Codex agent is still the cheapest option at $39.20 and reaches 1,333 cycles.</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph">The research team calls the cross-model transfer preliminary. The mechanisms trigger less often on Opus 5, possibly because the search used only GPT-5.6 Sol trajectories.</p>
-
-
-
-<h2 id="h-key-takeaways" class="wp-block-heading"><strong>Key Takeaways</strong></h2>
-
-
-
-<ul class="wp-block-list">
-<li>SoL-Pi cuts EdgeBench token traffic by 44.7% to 49.0% versus Pi.</li>
-
-
-
-<li>API cost drops about 33% while keeping about 94% of Pi&#8217;s average score.</li>
-
-
-
-<li>The 4 mechanisms survived a search over 152 directions and 535 environments.</li>
-
-
-
-<li>SoL-Pi is an MIT-licensed, opt-in Pi extension on GitHub.</li>
-</ul>
-
-
-
-<p class="wp-block-paragraph"></p>
-
-
-
-<hr class="wp-block-separator has-alpha-channel-opacity"/>
-
-
-
-<p class="wp-block-paragraph"></p>
-
-
-
-<p class="wp-block-paragraph">Check out the <strong><a href="https://arxiv.org/abs/2609.20519">Paper</a>,</strong> <a href="https://github.com/NVlabs/SoL-Pi"><strong>GitHub Repo</strong></a> and <a href="https://nvlabs.github.io/SoL-Pi/"><strong>Technical Blog</strong></a>. All credit goes to the researcher of this project. Also, feel free to follow us on <strong><a href="https://x.com/intent/follow?screen_name=marktechpost" target="_blank" rel="noopener"><mark>Twitter</mark></a></strong> and don’t forget to join our <strong><a href="https://www.reddit.com/r/machinelearningnews/" target="_blank" rel="noopener">150k+ML SubReddit</a></strong> and Subscribe to <strong><a href="https://magic.beehiiv.com/v1/f5e63dd4-5653-4f09-83e2-321a8b1ba526?email={{email}}" target="_blank" rel="noopener">our Newsletter</a></strong>. Wait! are you on telegram? <strong><a href="https://t.me/machinelearningresearchnews" target="_blank" rel="noopener">now you can join us on telegram as well.</a></strong></p>
-
-
-
-<p class="wp-block-paragraph">Need to partner with us for promoting your GitHub Repo OR Hugging Face Page OR Product Release OR Webinar etc.?&nbsp;<strong><a href="https://forms.gle/MJjjVDPS7whH8Ngs6" target="_blank" rel="noopener"><mark>Connect with us</mark></a></strong></p>
-<p>The post <a href="https://www.marktechpost.com/2026/09/21/nvidia-researchers-have-released-sol-pi/">NVIDIA Introduces SoL-Pi: Auto-Research Loops That Cut Coding Agent Token Traffic by Up to 49%</a> appeared first on <a href="https://www.marktechpost.com">MarkTechPost</a>.</p>
-]]></content:encoded>
-					
-		
-		
-		<post-id xmlns="com-wordpress:feed-additions:1">82447</post-id>
 	</item>
 	</channel>
 </rss>

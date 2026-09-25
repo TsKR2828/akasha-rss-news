@@ -1,0 +1,71 @@
+{
+  "event_id": "daily_20260926_evt_296",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "法院維持封殺Anthropic",
+  "context": "美國聯邦上訴法院裁定，維持五角大廈將Anthropic列入採購黑名單的決定。雙方爭議從今年二月開始，起因是Anthropic拒絕解除Claude用於全自動武器系統的限制。",
+  "article_ids": [
+    "f1c94085f8c134d7ce25a2b0415ed9a74d4c52e0249c8ce43a4540fda739b64f",
+    "8ac50815665e08493756609a9a1c3cf2937a5bf28c7acdbf4d6baca0a9ad247c"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Conflict began in February when Anthropic refused to remove restrictions on use of Claude for fully autonomous weapons.",
+      "title": "US court upholds Pentagon’s blacklisting of Anthropic",
+      "url": "https://www.aljazeera.com/economy/2026/9/25/us-court-upholds-pentagons-blacklisting-of-anthropic?traffic_source=rss",
+      "published_at": "2026-09-26T01:03:52+08:00"
+    },
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "US appeals court upholds Pentagon's blacklisting of Anthropic Reuters",
+      "title": "US appeals court upholds Pentagon's blacklisting of Anthropic - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN2xsSW1uNVNkSjE2UHVQSGFlOGJTbGFRa2dtdWgyb1owYlFpS2RHZHVSQnRxSTRoSnhqWWJTMEV4Q1BfNzRJZ0h4MVY4S014TTAxbjU4aThsZW95OUhEUFg2Tlg5ZU92Y21RcXVZa1hySFBUT2FXVkZ1ZlRaV3BpNnJFY3g2Ny1KRkpyQm5pNTctbS04V182WjZpYWczRWlJM1RMWl9uU0hNQQ?oc=5",
+      "published_at": "2026-09-26T01:54:58+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 78,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2; major_geopolitical_event",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "美國聯邦上訴法院裁定維持五角大廈將Anthropic列入黑名單的決定。",
+      "source_id": "aljazeera_all",
+      "source_title": "US court upholds Pentagon’s blacklisting of Anthropic",
+      "source_url": "https://www.aljazeera.com/economy/2026/9/25/us-court-upholds-pentagons-blacklisting-of-anthropic?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "雙方爭議源於今年二月，Anthropic拒絕解除Claude用於全自動武器系統的限制。",
+      "source_id": "aljazeera_all",
+      "source_title": "US court upholds Pentagon’s blacklisting of Anthropic",
+      "source_url": "https://www.aljazeera.com/economy/2026/9/25/us-court-upholds-pentagons-blacklisting-of-anthropic?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "美國上訴法院確認維持五角大廈對Anthropic的封殺決定。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "US appeals court upholds Pentagon's blacklisting of Anthropic - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN2xsSW1uNVNkSjE2UHVQSGFlOGJTbGFRa2dtdWgyb1owYlFpS2RHZHVSQnRxSTRoSnhqWWJTMEV4Q1BfNzRJZ0h4MVY4S014TTAxbjU4aThsZW95OUhEUFg2Tlg5ZU92Y21RcXVZa1hySFBUT2FXVkZ1ZlRaV3BpNnJFY3g2Ny1KRkpyQm5pNTctbS04V182WjZpYWczRWlJM1RMWl9uU0hNQQ?oc=5",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "美國聯邦上訴法院裁定，維持五角大廈將Anthropic列入採購黑名單的決定。雙方爭議從今年二月開始，起因是Anthropic拒絕解除Claude用於全自動武器系統的限制。\n\n—— 本則來自 Al Jazeera 與 Reuters，2026 年 9 月 26 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國聯邦上訴法院裁定，維持五角大廈將Anthropic列入採購黑名單的決定。雙方爭議從今年二月開始，起因是Anthropic拒絕解除Claude用於全自動武器系統的限制。\n\n本則整理自 Al Jazeera 與 Reuters 於 2026 年 9 月 26 日發佈的報導。",
+  "voice_text": "五角大廈封殺Anthropic的決定，被法院維持住了。美國聯邦上訴法院這次裁定，支持五角大廈原本的封殺令。雙方的爭議從今年二月就開始，起因是Anthropic拒絕解除Claude不得用於全自動武器系統的限制。"
+}

@@ -1,0 +1,91 @@
+{
+  "event_id": "daily_20260927_evt_063",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "川普拒伊朗荷姆茲提案",
+  "context": "美國總統川普拒絕了伊朗的最新提案——重新開放荷姆茲海峽（Strait of Hormuz），換取停火。川普表示，德黑蘭提出這個方案，只是因為戰局對伊朗不利。這份提案的內容，和今年六月美伊已經談成的備忘錄相近。",
+  "article_ids": [
+    "c0c16d8127626c2f903a59ebb12229f044298709590f922fca07cf4ebe4aeabd",
+    "e96a83182b240f9e40181f55bcb77068e74696f7f218d5a301957389b845513b",
+    "d806a462a9abf03c98d5b08882c54720623958060e6afda5b80ecc30b1024e0f",
+    "5ec9e6fdcc212a7cde3700805ba69bb9bcb9b205180c6e3c6d73c6e15785e2c0"
+  ],
+  "sources": [
+    {
+      "source_id": "reuters_world_google_news",
+      "name": "Reuters",
+      "publisher": "Reuters",
+      "summary": "Trump rejects Iranian proposal to open Hormuz and end fighting Reuters",
+      "title": "Trump rejects Iranian proposal to open Hormuz and end fighting - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZTlYWmNvWG9uODA3NXdWTTQ0d1EtNnFKczBKYThkcFExSmZGWjlqb2xmc0ZsUDNsYWxUWjhLNm1ocTRCcmJDMGdhUmZ1NC1WdjVJdWFxNDRzLTA0Mk11dUN6WHkyUUVpcFMxV1A1d2RFUXljR0xlY293UldHb2ZoUDAzT294ZmVUWVdCZUEzUTlGSkp4cEhTLTVqTllkU3lDNDREeXFqVlQzSUU1VGpnXzZYZ1ZSMXZ3dmU0Tg?oc=5",
+      "published_at": "2026-09-26T09:59:00+08:00"
+    },
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "US President Donald Trump has rejected Iran’s latest proposal to reopen the Strait of Hormuz to shipping.",
+      "title": "Trump rejects Iranian offer to reopen Strait of Hormuz",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/26/trump-rejects-iranian-offer-to-reopen-strait-of-hormuz?traffic_source=rss",
+      "published_at": "2026-09-27T02:00:43+08:00"
+    },
+    {
+      "source_id": "bbc_world",
+      "name": "BBC",
+      "publisher": "BBC",
+      "summary": "The US president says Tehran had only put forward the proposal because it is losing the war.",
+      "title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+      "url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-27T02:17:12+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "President Trump said he was rejecting an Iranian plan to reopen the Strait of Hormuz. The Iranian proposal is similar to a memorandum of understanding agreed upon by the U.S. and Iran back in June.",
+      "title": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable'",
+      "url": "https://www.npr.org/2026/09/26/nx-s1-5981990/trump-rejects-iranian-deal-strait-of-hormuz",
+      "published_at": "2026-09-27T04:08:28+08:00"
+    }
+  ],
+  "source_count": 4,
+  "source_tiers": [
+    1,
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 53,
+  "selection_reason": "multi_source_confirmed; source_tier_1; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "美國總統川普拒絕伊朗提出的重開荷姆茲海峽換取停火的提案。",
+      "source_id": "reuters_world_google_news",
+      "source_title": "Trump rejects Iranian proposal to open Hormuz and end fighting - Reuters",
+      "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZTlYWmNvWG9uODA3NXdWTTQ0d1EtNnFKczBKYThkcFExSmZGWjlqb2xmc0ZsUDNsYWxUWjhLNm1ocTRCcmJDMGdhUmZ1NC1WdjVJdWFxNDRzLTA0Mk11dUN6WHkyUUVpcFMxV1A1d2RFUXljR0xlY293UldHb2ZoUDAzT294ZmVUWVdCZUEzUTlGSkp4cEhTLTVqTllkU3lDNDREeXFqVlQzSUU1VGpnXzZYZ1ZSMXZ3dmU0Tg?oc=5",
+      "support_type": "direct"
+    },
+    {
+      "claim": "川普表示伊朗提案只是因為戰事對其不利。",
+      "source_id": "bbc_world",
+      "source_title": "Trump rejects Iran deal to reopen Strait of Hormuz in seven days",
+      "source_url": "https://www.bbc.co.uk/news/articles/cqgmrr9ekr7ko?at_medium=RSS&at_campaign=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "這份提案內容與今年六月美伊已達成的備忘錄相近。",
+      "source_id": "npr_world",
+      "source_title": "Trump calls Iranian plan to reopen Strait of Hormuz not 'acceptable'",
+      "source_url": "https://www.npr.org/2026/09/26/nx-s1-5981990/trump-rejects-iranian-deal-strait-of-hormuz",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "美國總統川普拒絕了伊朗的最新提案——重新開放荷姆茲海峽，換取停火。川普表示，德黑蘭提出這個方案，只是因為戰局對伊朗不利。這份提案的內容，和今年六月美伊已經談成的備忘錄相近。\n\n—— 本則來自 Reuters、Al Jazeera、BBC 與 NPR，2026 年 9 月 26 日發佈，讓圖書館員翻譯給你聽。",
+  "threads_text": "美國總統川普拒絕了伊朗的最新提案——重新開放荷姆茲海峽，換取停火。川普表示，德黑蘭提出這個方案，只是因為戰局對伊朗不利。這份提案的內容，和今年六月美伊已經談成的備忘錄相近。\n\n本則整理自 Reuters、Al Jazeera、BBC 與 NPR 於 2026 年 9 月 26 日發佈的報導。",
+  "voice_text": "川普拒絕了伊朗最新的提案。伊朗原本提議重新開放荷姆茲海峽，換取戰爭停火，但川普說，德黑蘭會這樣提，只是因為戰局對他們不利。這份提案的內容，其實和今年六月美伊已經談成的備忘錄很像。"
+}

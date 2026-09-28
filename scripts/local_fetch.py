@@ -9,6 +9,11 @@ Usage:
     python scripts/local_fetch.py                  # Today (Asia/Taipei)
     python scripts/local_fetch.py --date 2026-05-29
     python scripts/local_fetch.py --no-push        # Fetch + commit only
+    python scripts/local_fetch.py --allow-code-updates
+        # 人工確認過遠端 main 的程式變動後，允許這次一併合併
+
+2026-09-26 起的角色：本機是「備援」。雲端 Routine 以 --cloud-first 自己抓，
+本機推上來的 XML 只用來補雲端抓不到的來源（如 marktechpost 驗證碼頁）。
 """
 from __future__ import annotations
 
@@ -23,6 +28,17 @@ from pathlib import Path
 LOG = logging.getLogger("local_fetch")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TAIPEI = timezone(timedelta(hours=8))
+
+# 遠端 main 上允許自動合併的路徑：只有資料。其他（程式、prompt、設定）
+# 一律要人工確認後才合併——這台電腦每天自動執行 main 上的程式，
+# 而雲端 agent 讀的是外部新聞文字，曾在平台 stop hook 催促下把變動推上 main
+# （2026-09-18）。見 2026-09-26 改善報告 GAP-1。
+AUTO_MERGE_PREFIXES = ("data/raw/",)
+
+
+def non_data_paths(paths: list[str]) -> list[str]:
+    """回傳不在自動合併白名單內的路徑。"""
+    return [p for p in paths if p and not p.startswith(AUTO_MERGE_PREFIXES)]
 
 
 def _run(cmd: list[str], **kwargs) -> subprocess.CompletedProcess:
@@ -77,10 +93,37 @@ def _alert(date: str, message: str) -> None:
     )
 
 
+def _review_alert(date: str, paths: list[str]) -> None:
+    """遠端 main 有非資料變動 → 桌面告警檔 + 通知，這次不合併、不推送。"""
+    listing = "\n".join(f"  - {p}" for p in paths[:50])
+    message = (
+        f"遠端 main 有 {len(paths)} 個非資料檔案的變動，為了安全，本機這次沒有自動合併：\n"
+        f"{listing}\n\n"
+        "今天的 raw 資料已 commit 在本機 main，不會丟；雲端館報會自己抓，不受影響。\n"
+        "處置：開 Claude Code 說「akasha main 有遠端程式變動，幫我看」。\n"
+        "確認變動沒問題後執行：python scripts/local_fetch.py --allow-code-updates\n"
+    )
+    LOG.error(message)
+    alert_file = Path.home() / "Desktop" / f"AKASHA-REVIEW-NEEDED-{date}.txt"
+    try:
+        alert_file.write_text(
+            f"akasha-local-fetch 於 {datetime.now(TAIPEI):%Y-%m-%d %H:%M} 暫停自動合併\n\n{message}",
+            encoding="utf-8",
+        )
+    except OSError:
+        LOG.error("告警檔寫入失敗: %s", alert_file)
+    _toast(
+        "阿卡夏館報：遠端有程式變動待確認",
+        f"{date} main 上有 {len(paths)} 個非資料檔變動，本機暫停自動合併。桌面有說明檔。",
+    )
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Local fetch + git push for remote pipeline")
     parser.add_argument("--date", type=str, default=None, help="YYYY-MM-DD (default: today Asia/Taipei)")
     parser.add_argument("--no-push", action="store_true", help="Commit but don't push")
+    parser.add_argument("--allow-code-updates", action="store_true",
+                        help="人工確認後，允許合併遠端 main 上的非資料變動")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
@@ -141,7 +184,22 @@ def main(argv: list[str] | None = None) -> int:
         LOG.info("--no-push: skipping push")
         return 0
 
-    LOG.info("=== Step 3: git pull --rebase + push ===")
+    LOG.info("=== Step 3: 檢查遠端變動 ===")
+    try:
+        _run(["git", "fetch", "origin", "main"])
+        diff = subprocess.run(
+            ["git", "diff", "--name-only", "HEAD...origin/main"],
+            cwd=PROJECT_ROOT, capture_output=True, text=True, encoding="utf-8", check=True,
+        )
+    except subprocess.CalledProcessError as e:
+        _alert(date, f"git fetch origin main 失敗: {e}")
+        return 1
+    risky = non_data_paths(diff.stdout.splitlines())
+    if risky and not args.allow_code_updates:
+        _review_alert(date, risky)
+        return 1
+
+    LOG.info("=== Step 3b: git pull --rebase + push ===")
     # 遠端 main 常有雲端 session 的新 commit；不先 rebase 的話 push 會被
     # non-fast-forward 拒絕（2026-06-30 ~ 07-10 連續 11 天靜默失敗的根因）。
     # --autostash：工作區常有待審的 unstaged 修改，沒有它 rebase 會直接拒跑

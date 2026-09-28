@@ -18,6 +18,7 @@ CLI:
     python -m src.pipeline                     # Today (Asia/Taipei)
     python -m src.pipeline --date 2026-05-20   # Specific date
     python -m src.pipeline --dry-run           # Skip Claude API + file writing
+    python -m src.pipeline --cloud-first       # 雲端自己抓，本機預抓資料當逐源備援
 
 Exit codes:
     0   Success
@@ -28,7 +29,9 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import shutil
 import sys
+import tempfile
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -83,9 +86,12 @@ MODULE_MAP = {
 # Helpers
 # ---------------------------------------------------------------------------
 
-def _run_module_step(name: str, module, date: str, dry_run: bool) -> tuple[int, float]:
+def _run_module_step(
+    name: str, module, date: str, dry_run: bool,
+    extra_argv: Optional[list[str]] = None,
+) -> tuple[int, float]:
     """Call a module's main(argv) and return (exit_code, duration_seconds)."""
-    argv = ["--date", date]
+    argv = ["--date", date] + (extra_argv or [])
     if dry_run and name == "claude_rewrite":
         argv.append("--dry-run")
 
@@ -136,6 +142,106 @@ def _load_feeds_counts() -> tuple[int, int]:
     except Exception:
         LOG.warning("無法讀取 feeds.yaml 以計算來源數")
         return 0, 0
+
+
+def _cloud_first_fetch(date: str) -> tuple[int, str, list[dict]]:
+    """雲端為主、本機預抓為逐源備援的抓取（2026-09-26 月月決定：本機降成備援）。
+
+    流程：
+    1. 先記下 data/raw/{date}/ 裡本機推上來的 XML（可能沒有、可能不齊）
+    2. 在本環境把全部來源抓到暫存目錄
+    3. 逐源合併：這次抓成功 → 用新抓的版本；抓失敗但本機有 → 保留本機版；
+       兩邊都沒有 → 記 source_failed 警告
+    4. 重寫 data/raw/{date}/ 的 feed_health.json 與 fetch_warnings.json
+
+    本機沒跑（電腦睡著）不再影響館報；雲端被擋的來源（如 marktechpost
+    的驗證碼頁）由本機補上；兩邊都缺的來源才出現在館報警告。
+
+    Returns:
+        (exit_code, note, extra_warnings)
+        exit_code 2 = 兩邊都沒有任何可用資料（abort）
+    """
+    raw_dir = PROJECT_ROOT / "data" / "raw" / date
+    local_xml: dict[str, bytes] = {}
+    local_health: dict[str, dict] = {}
+    if raw_dir.exists():
+        local_xml = {p.stem: p.read_bytes() for p in raw_dir.glob("*.xml")}
+        hp = raw_dir / "feed_health.json"
+        if hp.exists():
+            try:
+                local_health = {h.get("source_id"): h
+                                for h in json.loads(hp.read_text(encoding="utf-8"))}
+            except (OSError, json.JSONDecodeError):
+                local_health = {}
+
+    extra_warnings: list[dict] = []
+    n_cloud = n_local = n_missing = 0
+    with tempfile.TemporaryDirectory(prefix="akasha-cloud-fetch-") as tmp:
+        _run_module_step("fetch_rss", fetch_rss, date, dry_run=False,
+                         extra_argv=["--out-base", tmp])
+        cloud_dir = Path(tmp) / date
+        cloud_health: list[dict] = []
+        hp = cloud_dir / "feed_health.json"
+        if hp.exists():
+            try:
+                cloud_health = json.loads(hp.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                cloud_health = []
+
+        if not cloud_health and not local_xml:
+            return 2, "cloud fetch failed and no local pre-fetch", extra_warnings
+
+        raw_dir.mkdir(parents=True, exist_ok=True)
+        merged_health: list[dict] = []
+        fetch_warnings: list[dict] = []
+        for rec in cloud_health:
+            sid = rec.get("source_id", "")
+            cloud_file = cloud_dir / f"{sid}.xml"
+            if rec.get("status") == "ok" and cloud_file.exists():
+                shutil.copyfile(cloud_file, raw_dir / f"{sid}.xml")
+                merged_health.append(rec)
+                n_cloud += 1
+            elif sid in local_xml:
+                (raw_dir / f"{sid}.xml").write_bytes(local_xml[sid])
+                backup = dict(local_health.get(sid) or rec)
+                backup.update({
+                    "source_id": sid,
+                    "status": "ok",
+                    "consecutive_failures": 0,
+                    "error": f"cloud fetch failed ({rec.get('error')}); used local pre-fetched XML",
+                })
+                merged_health.append(backup)
+                n_local += 1
+            else:
+                merged_health.append(rec)
+                fetch_warnings.append({
+                    "type": "source_failed",
+                    "source_id": sid,
+                    "message": f"{sid} 雲端與本機都抓不到: {rec.get('error')}",
+                })
+                n_missing += 1
+
+        if not cloud_health:
+            # 雲端整批失敗（連 health log 都沒有）→ 全用本機
+            merged_health = list(local_health.values())
+            n_local = len(local_xml)
+            extra_warnings.append({
+                "type": "other",
+                "message": f"雲端抓取整批失敗，改用本機預抓資料（{n_local} 個來源）",
+            })
+
+        (raw_dir / "feed_health.json").write_text(
+            json.dumps(merged_health, ensure_ascii=False, indent=2), encoding="utf-8",
+        )
+        (raw_dir / "fetch_warnings.json").write_text(
+            json.dumps(fetch_warnings, ensure_ascii=False, indent=2), encoding="utf-8",
+        )
+
+    if n_cloud == 0 and n_local == 0:
+        return 2, "no usable source data", extra_warnings
+    note = f"cloud-first: cloud {n_cloud}, local backup {n_local}, missing {n_missing}"
+    LOG.info(note)
+    return 0, note, extra_warnings
 
 
 def _collect_stats(date: str) -> dict:
@@ -223,7 +329,12 @@ def _pipeline_run_state_path(date: str) -> Path:
     return PROJECT_ROOT / "data" / "events" / date / "_pipeline_run_state.json"
 
 
-def _write_pipeline_run_state(date: str, step_records: list[dict], pipeline_start: float) -> None:
+def _write_pipeline_run_state(
+    date: str,
+    step_records: list[dict],
+    pipeline_start: float,
+    warnings: Optional[list[dict]] = None,
+) -> None:
     """FIX-C (0706 健檢)：Routine 分兩段跑（pipeline --until select 後，formatter 單獨跑），
     formatter 產生 run log 時原本讀不到前段步驟與真正的 pipeline 起始時間，
     導致 run log 的 steps=[]、duration 只算 formatter 自己的時間。
@@ -234,9 +345,13 @@ def _write_pipeline_run_state(date: str, step_records: list[dict], pipeline_star
     """
     events_dir = PROJECT_ROOT / "data" / "events" / date
     events_dir.mkdir(parents=True, exist_ok=True)
+    # warnings：前段累積的 step_warnings（部分資料、非關鍵步驟失敗、
+    # 雲端抓取回退等）。原本只存在記憶體，分兩段跑時在 formatter 那段
+    # 全部遺失，館報照樣顯示 ok（2026-09-26 OPS-2/CODE-4）。
     state = {
         "steps": step_records,
         "pipeline_start": pipeline_start,
+        "warnings": warnings or [],
     }
     _pipeline_run_state_path(date).write_text(
         json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8",
@@ -281,6 +396,9 @@ def _read_selected_events(date: str) -> tuple[list[dict], list[dict], list[dict]
         rlog = json.loads(rewrite_log_path.read_text(encoding="utf-8"))
         rewrite_warnings = rlog.get("lint_warnings", [])
 
+    # selector 留在 manifest 的警告（如跨日去重讀不到歷史館報）
+    rewrite_warnings = manifest.get("warnings", []) + rewrite_warnings
+
     return events, dropped, rewrite_warnings
 
 
@@ -294,12 +412,16 @@ def run_pipeline(
     skip_fetch: bool = False,
     output_base: Optional[Path] = None,
     until: Optional[str] = None,
+    cloud_first: bool = False,
 ) -> dict:
     """Run the full daily pipeline and return a summary dict.
 
     Args:
         skip_fetch: If True, skip fetch_rss step (use pre-fetched raw data).
                     Useful when raw data is pushed by a local fetch job.
+        cloud_first: If True, fetch in this environment first and use the
+                    pre-fetched raw data only as per-source backup
+                    (see _cloud_first_fetch). Takes precedence over skip_fetch.
         until: 若指定，執行到該步驟（含）即停，不執行後續步驟與 formatter。
                合法值為 STEPS 內的名稱（如 "select"）。
                指定 "formatter" 或不給等同不限制。
@@ -317,15 +439,42 @@ def run_pipeline(
     step_warnings: list[dict] = []  # 非關鍵步驟失敗時累積的警告
 
     for name in STEPS[:-1]:  # all except formatter
+        if name == "fetch_rss" and cloud_first:
+            cf_start = time.time()
+            rc, note, cf_warnings = _cloud_first_fetch(date)
+            step_warnings.extend(cf_warnings)
+            step_records.append({
+                "name": "fetch_rss",
+                "exit_code": rc,
+                "duration_s": round(time.time() - cf_start, 2),
+                "note": note,
+            })
+            if rc == 2:
+                LOG.error("ABORT: all sources failed (cloud and local) — stopping pipeline")
+                return {
+                    "status": "failed",
+                    "date": date,
+                    "reason": "all_sources_failed",
+                    "steps": step_records,
+                    "events_count": 0,
+                    "beat_counts": {},
+                    "validation_issues": 0,
+                    "total_duration_s": round(time.time() - pipeline_start, 2),
+                }
+            continue
+
         # Skip fetch if raw data already exists
         if name == "fetch_rss" and skip_fetch:
             raw_dir = PROJECT_ROOT / "data" / "raw" / date
             if raw_dir.exists() and any(raw_dir.glob("*.xml")):
                 xml_count = len(list(raw_dir.glob("*.xml")))
                 LOG.info("SKIP fetch_rss: %d raw XML files found in %s", xml_count, raw_dir)
-                # CARD-15：部分資料防護——比較 xml_count 與 enabled 來源數
-                enabled_count, remote_blocked_count = _load_feeds_counts()
-                expected_min = enabled_count - remote_blocked_count
+                # CARD-15：部分資料防護——比較 xml_count 與 enabled 來源數。
+                # 預抓資料來自本機（所有來源都抓得到），期望值是 enabled 全數；
+                # 原本扣掉 remote_blocked，本機剛好只缺那 14 源時完全不告警
+                # （2026-09-26 OPS-2）。
+                enabled_count, _remote_blocked_count = _load_feeds_counts()
+                expected_min = enabled_count
                 if enabled_count > 0 and xml_count < expected_min:
                     _warn_msg = (
                         f"partial raw data: {xml_count}/{enabled_count} sources"
@@ -393,7 +542,7 @@ def run_pipeline(
             LOG.info("--until %s：已執行完，提前停止 pipeline", _until)
             # FIX-C (0706 健檢): 落地 step_records + pipeline_start，
             # 讓稍後單獨執行的 formatter 能接續產生忠實的 run log。
-            _write_pipeline_run_state(date, step_records, pipeline_start)
+            _write_pipeline_run_state(date, step_records, pipeline_start, step_warnings)
             return {
                 "status": "ok",
                 "date": date,
@@ -521,6 +670,10 @@ def main(argv: Optional[list[str]] = None) -> int:
         help="Skip fetch_rss step; use pre-fetched raw data from data/raw/{date}/",
     )
     parser.add_argument(
+        "--cloud-first", action="store_true",
+        help="在本環境抓取全部來源，data/raw/{date}/ 既有的預抓 XML 只當逐源備援",
+    )
+    parser.add_argument(
         "--output-base", type=Path, default=None,
         help="Override output directory",
     )
@@ -544,11 +697,16 @@ def main(argv: Optional[list[str]] = None) -> int:
         flags.append("dry-run")
     if args.skip_fetch:
         flags.append("skip-fetch")
+    if args.cloud_first:
+        flags.append("cloud-first")
     if args.until:
         flags.append(f"until={args.until}")
     LOG.info("Pipeline start: %s%s", date, f" ({', '.join(flags)})" if flags else "")
 
-    summary = run_pipeline(date, args.dry_run, args.skip_fetch, args.output_base, args.until)
+    summary = run_pipeline(
+        date, args.dry_run, args.skip_fetch, args.output_base, args.until,
+        cloud_first=args.cloud_first,
+    )
     _print_summary(summary)
 
     if summary["status"] == "failed":

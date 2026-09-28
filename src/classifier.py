@@ -25,6 +25,7 @@ from typing import Optional
 import yaml
 
 from src import entity_recognizer
+from src.textmatch import any_term, count_terms
 
 LOG = logging.getLogger(__name__)
 
@@ -58,8 +59,8 @@ def keyword_match_score(article: dict, beat_def: dict) -> float:
     keywords_en = beat_def.get("keywords_en", []) or []
     keywords_zh = beat_def.get("keywords_zh", []) or []
 
-    en_hits = sum(1 for kw in keywords_en if kw.lower() in text)
-    zh_hits = sum(1 for kw in keywords_zh if kw in text)
+    en_hits = count_terms(text, keywords_en)
+    zh_hits = count_terms(text, keywords_zh)
     total_hits = en_hits + zh_hits
 
     if total_hits >= 2:
@@ -77,7 +78,7 @@ def _has_ai_keyword(article: dict, ai_beat_def: dict) -> bool:
     - 出現模型、AI 公司、AI 法規、AI 研究主題
     """
     text = (article.get("title", "") + " " + (article.get("summary") or "")).lower()
-    return any(kw.lower() in text for kw in ai_beat_def.get("keywords_en", []))
+    return any_term(text, ai_beat_def.get("keywords_en", []))
 
 
 def _has_econ_keyword(article: dict, econ_beat_def: dict) -> bool:
@@ -89,8 +90,7 @@ def _has_econ_keyword(article: dict, econ_beat_def: dict) -> bool:
     text = (article.get("title", "") + " " + (article.get("summary") or "")).lower()
     keywords_en = econ_beat_def.get("keywords_en", [])
     keywords_zh = econ_beat_def.get("keywords_zh", [])
-    return (any(kw.lower() in text for kw in keywords_en) or
-            any(kw in text for kw in keywords_zh))
+    return any_term(text, keywords_en) or any_term(text, keywords_zh)
 
 
 def _pts_text(article: dict) -> str:
@@ -101,19 +101,19 @@ def _pts_has_taiwan_signal(article: dict, beats_config: dict) -> bool:
     """公視文章是否含台灣訊號（地名、機構、政治主體）。"""
     kws = (beats_config.get("pts_local", {}) or {}).get("taiwan_keywords", []) or []
     text = _pts_text(article)
-    return any(kw.lower() in text for kw in kws if kw)
+    return any_term(text, kws)
 
 
 def _pts_has_foreign_signal(article: dict, beats_config: dict) -> bool:
     """公視文章是否含明顯外國訊號（外國國名/地區，或 INTL 關鍵字）。"""
     text = _pts_text(article)
     foreign_kws = (beats_config.get("pts_local", {}) or {}).get("foreign_keywords", []) or []
-    if any(kw.lower() in text for kw in foreign_kws if kw):
+    if any_term(text, foreign_kws):
         return True
     intl_def = beats_config.get("beats", {}).get("INTL", {}) or {}
-    if any(kw.lower() in text for kw in (intl_def.get("keywords_en") or [])):
+    if any_term(text, intl_def.get("keywords_en") or []):
         return True
-    if any(kw in text for kw in (intl_def.get("keywords_zh") or [])):
+    if any_term(text, intl_def.get("keywords_zh") or []):
         return True
     return False
 

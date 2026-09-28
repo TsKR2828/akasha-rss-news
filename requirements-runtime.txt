@@ -1,0 +1,15 @@
+# 每日館報正式流程（雲端 Routine、本機抓取、監工）實際 import 的套件，版本鎖死。
+# 2026-09-26：雲端原本沒有安裝步驟，agent 撞到 ModuleNotFoundError 才臨場裝最新版；
+# 套件出新版改行為時館報可能突然壞掉且難查。Routine Step 0 改裝這份。
+#
+# 版本與 requirements.lock（2026-06-11 本機實裝）一致。
+# 不含：spacy（英文模型從未安裝，entity 分數本來就是 0）、anthropic（Routine 由 agent
+# 改寫，不呼叫 API）、beautifulsoup4 / pydantic（程式碼沒有使用）、pytest（測試用）。
+# 完整開發環境仍用 requirements.txt。
+
+feedparser==6.0.12
+requests==2.33.1
+python-dateutil==2.9.0.post0
+jsonschema==4.26.0
+PyYAML==6.0.3
+rapidfuzz==3.14.5

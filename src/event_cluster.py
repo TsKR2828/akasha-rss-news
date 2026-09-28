@@ -30,6 +30,8 @@ from typing import Optional
 from dateutil import parser as date_parser
 from rapidfuzz import fuzz
 
+from src.outlets import distinct_outlets, outlet_of
+
 LOG = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -48,6 +50,21 @@ TIME_WINDOW_HOURS = 24
 # 這些字會被當成內容詞計入共同關鍵詞，讓不相關文章更容易誤合
 # （2026-08-01 ARTS「遊戲夜+夢露」誤合案例的主因之一）。
 _RSS_BOILERPLATE_RE = re.compile(r"(?:continue reading|read more)[\s.…]*$", re.IGNORECASE)
+
+# Google News 轉接的標題固定以「 - reuters.com」收尾，summary 也帶同一串。
+# 這個後綴讓任兩篇路透稿白拿 reuters/com 兩個共同詞，是 same_topic 誤判與
+# 跨題誤合（09-25「胡塞推升油價」＝油價稿＋英股稿）的主因之一（2026-09-26 SEL-1）。
+_OUTLET_SUFFIX_RE = re.compile(
+    r"\s+[-–—|]\s+(?:[a-z0-9-]+\.)+(?:com|net|org|co\.uk|com\.tw)\s*$"
+    r"|\s+[-–—|]\s+(?:reuters|bloomberg|ap news|associated press)\s*$",
+    re.IGNORECASE,
+)
+
+
+def strip_outlet_suffix(text: str) -> str:
+    """去掉標題尾端的「 - reuters.com」這類媒體後綴。"""
+    return _OUTLET_SUFFIX_RE.sub("", text or "").strip()
+
 
 # 極簡英文停用詞（MVP）
 _BASE_STOPWORDS = {
@@ -79,11 +96,20 @@ _NEWS_GENERIC_STOPWORDS = {
     "review", "reviews", "continue", "reading",
 }
 
-STOPWORDS = _BASE_STOPWORDS | _NEWS_GENERIC_STOPWORDS
+# Feed 轉接殘留詞與泛用財經詞（2026-09-26 SEL-1）：
+# 路透稿幾乎都帶 reuters/com/exclusive；rate/prices/ahead/markets 等
+# 出現在大部分盤勢稿，會把不相干的財經新聞湊滿共同關鍵詞。
+_FEED_AND_FINANCE_GENERIC_STOPWORDS = {
+    "reuters", "com", "exclusive",
+    "ahead", "rate", "rates", "price", "prices",
+    "market", "markets", "stock", "stocks", "shares",
+}
+
+STOPWORDS = _BASE_STOPWORDS | _NEWS_GENERIC_STOPWORDS | _FEED_AND_FINANCE_GENERIC_STOPWORDS
 
 
 def normalize_title(title: str) -> str:
-    t = title.lower()
+    t = strip_outlet_suffix(title).lower()
     t = re.sub(r"[^\w\s]", " ", t, flags=re.UNICODE)
     return re.sub(r"\s+", " ", t).strip()
 
@@ -96,7 +122,8 @@ def extract_keywords(text: str) -> set[str]:
 
 def article_keywords(article: dict) -> set[str]:
     summary = _RSS_BOILERPLATE_RE.sub("", article.get("summary") or "")
-    text = (article.get("title", "") + " " + summary)
+    summary = strip_outlet_suffix(summary)
+    text = (strip_outlet_suffix(article.get("title", "")) + " " + summary)
     return extract_keywords(text)
 
 
@@ -197,16 +224,19 @@ def cluster_articles(
 
 def derive_confidence(cluster: list[dict]) -> str:
     """規格 §9.2（修訂版）：
-    - high: ≥2 Tier 1/2 sources
-    - medium: 其他（含單一來源）
+    - high: ≥2 家不同媒體的 Tier 1/2 報導
+    - medium: 其他（含單一來源、同一家媒體的多個頻道）
 
     原規格單一 Tier 3 = low，但領域權威報導自身專業時不該標低
     （如 ArchDaily 報建築）。語氣保留由 single_source_warning 控制。
-    """
-    distinct_sources = {a.get("source_id") for a in cluster}
-    high_tier_count = sum(1 for a in cluster if a.get("tier") in (1, 2))
 
-    if len(distinct_sources) >= 2 and high_tier_count >= 2:
+    2026-09-26 S0-2：原本數 source_id，衛報兩個頻道就算「多方確認」；
+    改數媒體（outlet）。
+    """
+    high_tier_outlets = {
+        outlet_of(a.get("source_id", "")) for a in cluster if a.get("tier") in (1, 2)
+    }
+    if len(high_tier_outlets) >= 2:
         return "high"
     return "medium"
 
@@ -274,19 +304,23 @@ def build_event(
     source_count = len(sources)
     source_tiers = sorted({a.get("tier") for a in cluster if a.get("tier") is not None},
                           key=lambda t: (isinstance(t, str), t))
-    single_source_warning = source_count == 1
+    # 同一家媒體的多個頻道只算一個來源（2026-09-26 S0-2）
+    single_source_warning = len(distinct_outlets(sources)) <= 1
 
     # 規格 §17 + §20.1：每個 selected item 至少 1 條 claim_trace；
     # 此處先以原始來源標題作為占位 claim，Phase 3 Claude 會重寫。
+    # 只放「有列進 sources」的文章：原本放整群所有文章，但 sources 每個頻道
+    # 只留第一篇，改寫時就拿到清單外的材料，寫出讀者點來源連結也找不到的句子
+    # （2026-09-26 QUAL-4，09-17~09-25 共 64 個事件）。
     claim_trace = [
         {
-            "claim": a.get("title", ""),
-            "source_id": a["source_id"],
-            "source_title": a.get("title", ""),
-            "source_url": a.get("url", ""),
+            "claim": s.get("title", ""),
+            "source_id": s["source_id"],
+            "source_title": s.get("title", ""),
+            "source_url": s.get("url", ""),
             "support_type": "direct",
         }
-        for a in cluster
+        for s in sources
     ]
 
     return {

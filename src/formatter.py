@@ -38,6 +38,8 @@ from typing import Optional
 
 import yaml
 
+from src.outlets import outlet_count
+
 LOG = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -321,9 +323,8 @@ def build_platform_output_item(event: dict) -> dict:
         item["sub_beat"] = event["sub_beat"]
     if event.get("tw_highlight"):
         item["tw_highlight_reason"] = event.get("tw_highlight_reason", "")
-    if event.get("single_source_warning"):
-        item["single_source_warning"] = True
-    elif item["source_count"] == 1:
+    # 單一來源看「媒體數」：同一家媒體的多個頻道仍算單一來源（2026-09-26 S0-2）
+    if event.get("single_source_warning") or outlet_count(item["sources"]) <= 1:
         item["single_source_warning"] = True
     if event.get("opinion_level"):
         item["opinion_level"] = event["opinion_level"]
@@ -860,11 +861,11 @@ def validate_report_output(report: dict) -> list[dict]:
                         "message": f"{eid}: 缺少必要欄位 {field}",
                     })
 
-            # source_count = 1 → single_source_warning
-            if item.get("source_count", 0) == 1 and not item.get("single_source_warning"):
+            # 單一媒體 → single_source_warning
+            if outlet_count(item.get("sources", [])) <= 1 and not item.get("single_source_warning"):
                 issues.append({
                     "type": "lint_warning",
-                    "message": f"{eid}: source_count=1 但缺少 single_source_warning",
+                    "message": f"{eid}: 只有一家媒體但缺少 single_source_warning",
                 })
 
     return issues
@@ -907,14 +908,36 @@ def generate_all_outputs(
     # Load beat metadata
     beat_meta = load_beat_meta()
 
+    # 0. 高可信度必須有兩家以上媒體（2026-09-26 S0-2）。改寫 agent 可以自己
+    #    填 confidence，這裡寫死後置檢查：只有一家媒體就降為 medium。
+    #    只往保守方向修正，不擋出報；降級紀錄在 _content_check.json。
+    checked_events = []
+    for e in rewritten_events:
+        if e.get("confidence") == "high" and outlet_count(e.get("sources", [])) < 2:
+            LOG.warning("%s: 只有一家媒體卻標 high，降為 medium", e.get("event_id"))
+            e = {**e, "confidence": "medium"}
+        checked_events.append(e)
+
     # 1. Build platform_output items
-    items = [build_platform_output_item(e) for e in rewritten_events]
+    items = [build_platform_output_item(e) for e in checked_events]
     LOG.info("Built %d platform_output items", len(items))
 
     # 2. Build report JSON
     report = build_report(
         date_str, items, dropped_events, pipeline_warnings, pipeline_stats, beat_meta,
     )
+
+    # 2b. 版面空缺警告（規格 §8.1：某 beat 當天不足可空缺，但必須記錄）。
+    #     原本只寫 log，16 份館報整個「公視在地」消失卻顯示 ok（2026-09-26 CODE-6）。
+    present_beats = {sec["beat"] for sec in report.get("sections", [])}
+    for beat, b_min in _load_beat_minimums().items():
+        if b_min >= 1 and beat not in present_beats:
+            report["warnings"].append({
+                "type": "section_empty",
+                "message": f"{beat} 版面今天沒有任何新聞（每日至少 {b_min} 則）",
+            })
+            if report["status"] == "ok":
+                report["status"] = "partial"
 
     # 3. Validate
     validation_issues = validate_report_output(report)
@@ -989,6 +1012,21 @@ def generate_all_outputs(
     return report, validation_issues
 
 
+def _load_beat_minimums(path: Optional[Path] = None) -> dict[str, int]:
+    """讀 selection_score.yaml 的 daily_limits.{beat}.min（total_events 除外）。"""
+    cfg_path = path or (PROJECT_ROOT / "config" / "selection_score.yaml")
+    try:
+        cfg = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
+    except (OSError, yaml.YAMLError):
+        return {}
+    limits = cfg.get("daily_limits", {}) or {}
+    return {
+        beat: int((v or {}).get("min", 0))
+        for beat, v in limits.items()
+        if beat != "total_events" and isinstance(v, dict)
+    }
+
+
 def _ensure_dirs(output_base: Path) -> None:
     """確保輸出目錄結構存在。"""
     output_base.mkdir(parents=True, exist_ok=True)
@@ -1053,6 +1091,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     if rewrite_log_path.exists():
         rlog = json.loads(rewrite_log_path.read_text(encoding="utf-8"))
         rewrite_warnings = rlog.get("lint_warnings", [])
+
+    # selector 留在 manifest 的警告（如跨日去重讀不到歷史館報）
+    manifest_warnings: list[dict] = manifest.get("warnings", [])
 
     # 讀 fetch warnings（CARD-06）：過濾 remote_blocked 來源後與 rewrite warnings 合併
     fetch_warnings = _load_fetch_warnings_filtered(date)
@@ -1119,10 +1160,14 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     run_state = read_pipeline_run_state(date)
     prior_steps: list[dict] = []
+    prior_warnings: list[dict] = []
     start = time.time()
     if run_state:
         prior_steps = run_state.get("steps", [])
         start = run_state.get("pipeline_start", start)
+        # 前段（pipeline --until select）累積的警告：部分資料、步驟失敗、
+        # 雲端抓取回退等。舊版狀態檔沒有這個欄位時視為空（2026-09-26 OPS-2）。
+        prior_warnings = run_state.get("warnings", []) or []
 
     format_start = time.time()
     try:
@@ -1130,7 +1175,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             date_str=date,
             rewritten_events=events,
             dropped_events=dropped,
-            pipeline_warnings=rewrite_warnings + fetch_warnings,
+            pipeline_warnings=prior_warnings + manifest_warnings + rewrite_warnings + fetch_warnings,
             pipeline_stats=stats,
             steps=prior_steps + [{
                 "name": "formatter",
@@ -1144,6 +1189,15 @@ def main(argv: Optional[list[str]] = None) -> int:
     except Exception:
         LOG.exception("Formatter raised an exception")
         report, issues = {}, []
+
+    # 改寫後內容檢查（只警告，2026-09-26 月月決定先跑 7 天）：
+    # 結果寫進 data/events/{date}/_content_check.json，不進讀者看的館報
+    if not args.dry_run and events:
+        try:
+            from src.content_check import write_content_check
+            write_content_check(events, date, events_dir)
+        except Exception:
+            LOG.exception("內容檢查失敗（不影響出報）")
 
     status = report.get("status", "failed")
     LOG.info("Done. Status: %s, validation issues: %d", status, len(issues))

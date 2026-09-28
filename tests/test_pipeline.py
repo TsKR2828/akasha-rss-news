@@ -776,7 +776,10 @@ class TestSkipFetchPartialData:
         assert partial_warns == [], f"不應有 partial 警告，實際 warnings: {captured_warnings[0]}"
 
     def test_partial_xml_with_remote_blocked(self, tmp_path, monkeypatch):
-        """(a 變體) 27 enabled、1 remote_blocked（expected_min=26）、放 3 個 XML → 警告含正確 expected。"""
+        """(a 變體) 27 enabled、1 remote_blocked、放 3 個 XML → 警告。
+
+        2026-09-26 起期望值不再扣 remote_blocked：預抓資料來自本機，本機抓得到全部來源。
+        """
         monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
         self._setup_env(tmp_path, enabled=27, remote_blocked=1, xml_files=3)
 
@@ -808,12 +811,12 @@ class TestSkipFetchPartialData:
         assert len(partial_warns) == 1
         msg = partial_warns[0]["message"]
         assert "3/27" in msg
-        assert "expected >= 26" in msg, f"訊息應含 expected >= 26，實際：{msg}"
+        assert "expected >= 27" in msg, f"訊息應含 expected >= 27，實際：{msg}"
 
     def test_exact_threshold_no_warning(self, tmp_path, monkeypatch):
-        """(b 變體) 27 enabled、1 remote_blocked（expected_min=26）、放 26 個 → 剛好滿，無警告。"""
+        """(b 變體) 27 enabled、1 remote_blocked、放 27 個 → 全到齊，無警告。"""
         monkeypatch.setattr("src.pipeline.PROJECT_ROOT", tmp_path)
-        self._setup_env(tmp_path, enabled=27, remote_blocked=1, xml_files=26)
+        self._setup_env(tmp_path, enabled=27, remote_blocked=1, xml_files=27)
 
         patches = self._mock_all_modules()
         {k: p.start() for k, p in patches.items()}

@@ -1,10 +1,58 @@
 # Dev Log
 
 目前階段：Phase 5 進行中（pipeline + routine 已設定，2026-06-11 健檢後 16 卡修復波；2026-06-16 voice 拼貼感修復：formatter 半邊 + v2 prompt 上線）
-測試合計：450 條全綠 + 5 skipped（2026-08-02 實測；含工作區待審的 selector 跨日去重測試）
-Enabled sources：27 / 0 failed（2026-07-06：雲端自抓 27/27 全 200 OK）
+測試合計：502 條全綠 + 5 skipped（2026-09-26 實測，含改善研究修正新增 52 條）
+Enabled sources：27（2026-09-26 起不再標 remote_blocked；雲端自抓 27/27，marktechpost 雲端為驗證碼頁由本機補）
 
 ---
+
+## 2026-09-26 — 改善研究修正批次（branch fix/review-2026-09-26，待月月審）
+
+依 `Desktop/Claude/akasha-rss-news-improvement-2026-09-26.md`（8 維度調查＋逐條對抗驗證）修正。
+月月當天裁決：打開 Routine 推播、新內容檢查「先只警告跑 7 天」、本機抓取「保留、降成備援」。
+
+**已直接生效（不需合併）**
+- claude.ai Routine `akasha-daily-report` 推播通知打開（notifications.push=true）。
+
+**程式修正（本分支，未 commit）**
+- S0-2 媒體歸戶 `src/outlets.py`：多來源加分、confidence=high、single_source_warning
+  一律看「不同媒體數」；formatter 出報前把「只有一家媒體卻標 high」降為 medium。
+- S0-1 `event_cluster.build_event`：claim_trace 初稿只放 sources 清單內的文章。
+- SEL-1 聚類：去掉「 - reuters.com」後綴，reuters/com/rate/prices/ahead 等泛用詞列停用詞。
+- SEL-7 `src/textmatch.py`：分類與選題加分改英文整字比對（said≠AI、soil≠oil、Warren≠war）。
+- OPS-3 跨日去重：`selector.load_recent_reports` 本地讀不到時從 `origin/daily-reports`
+  讀前 3 天館報；同網址直接排除（drop_reason=reported_recently），標題相似才扣分；
+  一份都讀不到時 manifest 留警告並進館報。
+- OPS-2/CODE-4 兩段式警告遺失：`_pipeline_run_state.json` 加 `warnings`，formatter 讀回；
+  skip-fetch 部分資料門檻改為 enabled 全數（原本扣 remote_blocked 14 源）。
+- 本機降成備援：`pipeline --cloud-first` 雲端自抓全部來源，本機預抓 XML 逐源補缺；
+  兩邊都缺才出 source_failed 警告。`config/feeds.yaml` 移除 14 個過時的 remote_blocked。
+- CODE-3 `fetch_rss.check_feed_content`：HTTP 成功但不是 RSS/Atom 且 0 則（驗證碼頁）判失敗。
+- CODE-6 版面空缺：daily_limits.min ≥ 1 的 beat 整區空白 → section_empty 警告。
+- 內容檢查（只警告）`src/content_check.py`：formatter 自動寫 `_content_check.json`，
+  不進讀者館報。09-17~09-25 試跑：162 則中 64 則有提醒（套話 44、出處網址 27、數字 25、
+  高可信度過度宣稱 3、星期不符 3、禁用詞 1）——這是 prompt 修改前的基準線。
+- `validate_confidence` 修誤報：只抓「標 high 但不到兩家媒體」。
+- Ars Technica AI 網址改 `/ai/feed/`（實抓 200、20 則、頻道名 AI - Ars Technica）。
+- GAP-1 `local_fetch.py`：遠端 main 有 data/raw/ 以外的變動 → 不合併、不推送、
+  桌面 AKASHA-REVIEW-NEEDED 告警＋通知；人工確認後 `--allow-code-updates`。
+- `requirements-runtime.txt`（鎖版、正式流程用）；watchdog 套件鎖版；新增 `tests.yml` CI。
+- prompts：rewrite_prompt 加「誰說的不能改」「不推論來源沒寫的現況」「只用 sources 清單」
+  「星期用日曆換算」「Week Ahead≠本週」「已發生不用預計」「逐則事實自檢」、單一來源警告
+  改為語氣放在事實句內不評論來源多寡；routine_prompt 改 `--cloud-first`、fetch daily-reports、
+  裝鎖版套件、Step 2b 內容自檢、禁止推 main／丟棄 stop hook 變動、固定 commit 格式。
+
+**選題重放比對**（同一份 main raw，舊程式 vs 新程式；09-17/19/20/25）：
+- 跨日同網址排除每天 1~6 則（例：09-17 Ed Sheeran 巡演、09-25 溫斯坦判刑）。
+- 選入的「同媒體假多源」5 則 → 1 則（09-25 胡塞油價＝路透兩頻道 被換掉）。
+- ECON 多了央行/殖利率/關稅類總經新聞；AI 或 ARTS 偶爾少 1 則（總量 18 上限）。
+- 詳細清單見改善報告同資料夾 `akasha-rss-news-fix-review-2026-09-26.md`。
+
+**尚未做到**
+- rewrite_prompt 修改前後的 agent 實際輸出比對（CLAUDE.md 規定）：改寫由雲端 agent 執行，
+  本機無法重現；以內容檢查的每日提醒數對照上面的基準線追蹤，7 天後檢討。
+- 後台 Routine 指令換成短啟動器（`prompts/routine_launcher.md`）要等本分支合併推上 main
+  之後才能換，否則 `--cloud-first` 旗標在 main 上還不存在。
 
 ## 2026-09-16 — push 失敗加 Windows 彈出通知；08-02 待審批次入庫
 

@@ -1083,7 +1083,8 @@ def _make_events_dir(tmp_path: Path, date: str, events: list, manifest_extra: di
 class TestMainExitCodes:
     """main() 依 report status 回傳正確 exit code。"""
 
-    def test_exit_0_clean_report(self, sample_event, tmp_path):
+    def test_exit_0_clean_report(self, sample_event, tmp_path, monkeypatch):
+        monkeypatch.setattr("src.formatter._load_beat_minimums", lambda *a, **k: {})
         """正常 event、無違規 → report.status='ok' → return 0。"""
         date = "2026-05-20"
         events_base = _make_events_dir(tmp_path / "events", date, [sample_event])
@@ -1146,6 +1147,7 @@ class TestMainReadsPipelineRunState:
     def test_run_log_merges_prior_steps_and_true_duration(
         self, sample_event, tmp_path, monkeypatch,
     ):
+        monkeypatch.setattr("src.formatter._load_beat_minimums", lambda *a, **k: {})
         date = "2026-05-23"
         events_base = _make_events_dir(tmp_path / "events", date, [sample_event])
         output_dir = tmp_path / "output"
@@ -1196,6 +1198,7 @@ class TestMainReadsPipelineRunState:
     def test_run_log_falls_back_when_no_run_state(
         self, sample_event, tmp_path, monkeypatch,
     ):
+        monkeypatch.setattr("src.formatter._load_beat_minimums", lambda *a, **k: {})
         """沒有 _pipeline_run_state.json（例如一次跑完全程）→ 行為與修復前一致：
         steps 只有 formatter 自己一步，duration 只算 formatter 執行時間。"""
         date = "2026-05-24"
@@ -1217,3 +1220,88 @@ class TestMainReadsPipelineRunState:
         )
         assert [s["name"] for s in run_log["steps"]] == ["formatter"]
         assert run_log["duration_seconds"] < 5
+
+
+# ---------------------------------------------------------------------------
+# 2026-09-26 改善研究：媒體歸戶、版面空缺、前段警告、內容檢查
+# ---------------------------------------------------------------------------
+
+def _two_channel_same_outlet_event(eid="daily_20260926_evt_001", confidence="high"):
+    return {
+        "event_id": eid, "beat": "ECON", "headline": "油價上漲", "context": "油價上漲。",
+        "thread_text": "油價上漲。", "threads_text": "油價上漲。", "voice_text": "油價上漲。",
+        "sources": [
+            {"source_id": "reuters_world_google_news", "title": "Oil up", "url": "https://r/1"},
+            {"source_id": "reuters_business_google_news", "title": "FTSE down", "url": "https://r/2"},
+        ],
+        "source_count": 2, "confidence": confidence, "opinion_level": "none",
+        "claim_trace": [{"claim": "油價上漲", "source_id": "reuters_world_google_news",
+                         "source_url": "https://r/1", "support_type": "direct"}],
+        "selection_score": 10,
+    }
+
+
+class TestOutletRules:
+    def test_same_outlet_two_channels_is_single_source(self):
+        from src.formatter import build_platform_output_item
+        item = build_platform_output_item(_two_channel_same_outlet_event())
+        assert item["single_source_warning"] is True
+
+    def test_high_confidence_downgraded_when_one_outlet(self, tmp_path, monkeypatch):
+        from src import formatter
+        monkeypatch.setattr(formatter, "_load_beat_minimums", lambda *a, **k: {})
+        report, _ = formatter.generate_all_outputs(
+            date_str="2026-09-26",
+            rewritten_events=[_two_channel_same_outlet_event()],
+            dropped_events=[], pipeline_warnings=[], pipeline_stats={},
+            output_base=tmp_path, dry_run=True,
+        )
+        item = report["sections"][0]["items"][0]
+        assert item["confidence"] == "medium"
+
+
+class TestSectionEmptyWarning:
+    def test_missing_required_beat_adds_warning(self, tmp_path, monkeypatch):
+        from src import formatter
+        monkeypatch.setattr(formatter, "_load_beat_minimums",
+                            lambda *a, **k: {"ECON": 1, "PTS_LOCAL": 1, "TW_STORY": 0})
+        report, _ = formatter.generate_all_outputs(
+            date_str="2026-09-26",
+            rewritten_events=[_two_channel_same_outlet_event(confidence="medium")],
+            dropped_events=[], pipeline_warnings=[], pipeline_stats={},
+            output_base=tmp_path, dry_run=True,
+        )
+        empties = [w for w in report["warnings"] if w["type"] == "section_empty"]
+        assert len(empties) == 1 and "PTS_LOCAL" in empties[0]["message"]
+        assert report["status"] == "partial"
+
+
+class TestMainMergesStageOneWarnings:
+    def test_run_state_and_manifest_warnings_reach_report(self, tmp_path, monkeypatch):
+        """兩段式生產路徑：pipeline --until select 的警告要能進館報（OPS-2）。"""
+        from src import formatter, pipeline
+        monkeypatch.setattr(formatter, "_load_beat_minimums", lambda *a, **k: {})
+        monkeypatch.setattr(formatter, "PROJECT_ROOT", tmp_path)
+        monkeypatch.setattr(pipeline, "PROJECT_ROOT", tmp_path)
+        date = "2026-09-26"
+        evt = _two_channel_same_outlet_event(confidence="medium")
+        events_base = _make_events_dir(
+            tmp_path / "data" / "events", date, [evt],
+            manifest_extra={"warnings": [{"type": "other", "message": "跨日去重無歷史資料"}]},
+        )
+        pipeline._write_pipeline_run_state(
+            date, [{"name": "select", "exit_code": 0, "duration_s": 1.0}], 0.0,
+            [{"type": "other", "message": "partial raw data: 10/27 sources (expected >= 27)"}],
+        )
+        rc = formatter.main(["--date", date, "--events-base", str(events_base),
+                             "--output-base", str(tmp_path / "out")])
+        report = json.loads((tmp_path / "out" / "daily_20260926.json").read_text(encoding="utf-8"))
+        messages = [w["message"] for w in report["warnings"]]
+        assert any("partial raw data" in m for m in messages)
+        assert any("跨日去重無歷史資料" in m for m in messages)
+        assert report["status"] == "partial" and rc == 1
+        # 內容檢查只寫檔、不進館報 warnings
+        cc = json.loads((events_base / date / "_content_check.json").read_text(encoding="utf-8"))
+        assert cc["mode"] == "warn_only"
+        assert not any(w["type"] == "lint_warning" and "套話" in w["message"]
+                       for w in report["warnings"])

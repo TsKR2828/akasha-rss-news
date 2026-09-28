@@ -154,13 +154,24 @@ class TestConfidence:
         tiers = [3]
         assert validate_confidence("medium", sources, tiers) is None
 
-    def test_single_tier3_low_triggers_mismatch(self):
-        """低信心仍合法值，但與推斷不一致時應警告。"""
+    def test_conservative_downgrade_is_not_flagged(self):
+        """改寫 agent 主動降級（low/medium）是保守判斷，不報錯（2026-09-26）。"""
         sources = [{"source_id": "a"}]
         tiers = [3]
-        warning = validate_confidence("low", sources, tiers)
+        assert validate_confidence("low", sources, tiers) is None
+        two_outlets = [{"source_id": "bbc_world"}, {"source_id": "npr_world"}]
+        assert validate_confidence("medium", two_outlets, [1]) is None
+
+    def test_two_tier1_outlets_high_not_flagged(self):
+        """兩家 Tier 1 → source_tiers 去重後是 [1]，舊版誤判應為 medium。"""
+        sources = [{"source_id": "bbc_world"}, {"source_id": "npr_world"}]
+        assert validate_confidence("high", sources, [1]) is None
+
+    def test_same_outlet_channels_high_flagged(self):
+        """同一家媒體兩個頻道標 high → 過度宣稱。"""
+        sources = [{"source_id": "guardian_books"}, {"source_id": "guardian_culture"}]
+        warning = validate_confidence("high", sources, [1])
         assert warning is not None
-        assert warning["type"] == "confidence_mismatch"
         assert warning["expected"] == "medium"
 
     def test_mismatch_warns(self):

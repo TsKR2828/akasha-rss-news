@@ -44,6 +44,15 @@ def _event(
     context: str = "",
     sources: list = None,
 ) -> dict:
+    if sources is None and source_count >= 2:
+        # 多來源預設用不同媒體（2026-09-26 起多來源加分看媒體數）
+        outlets = ["bbc_world", "npr_world", "aljazeera_all", "guardian_culture"]
+        sources = [
+            {"source_id": outlets[i % len(outlets)], "publisher": "P",
+             "title": "x", "url": f"https://x.com/{i + 1}",
+             "published_at": "2026-05-18T01:20:00+08:00"}
+            for i in range(source_count)
+        ]
     return {
         "event_id": event_id,
         "beat": beat,
@@ -77,6 +86,21 @@ class TestSourceBonuses:
         # multi(30) + tier1(15) + tier2(8) = 53
         assert score == 53
         assert "multi_source_confirmed" in rules
+
+    def test_same_outlet_channels_not_multi_source(self):
+        """同一家媒體的兩個頻道（路透 world + business）不算多方確認。"""
+        e = _event(
+            source_count=2, source_tiers=[1],
+            sources=[
+                {"source_id": "reuters_world_google_news", "title": "a",
+                 "url": "https://r.com/a"},
+                {"source_id": "reuters_business_google_news", "title": "b",
+                 "url": "https://r.com/b"},
+            ],
+        )
+        score, rules = selector.score_event(e, SCORE_CONFIG)
+        assert "multi_source_confirmed" not in rules
+        assert score == 15
 
     def test_single_low_tier_source_penalty(self):
         e = _event(source_count=1, source_tiers=[3])
@@ -374,7 +398,8 @@ class TestReportedRecentlyPenalty:
         },
     }
 
-    def test_penalty_applied_when_url_matches(self):
+    def test_exact_url_match_is_dropped(self):
+        """引用前幾天館報的同一篇報導 → 直接不選（2026-09-26 OPS-3）。"""
         e = _event(
             event_id="daily_20260618_evt_001", beat="INTL",
             source_count=2, source_tiers=[1, 2],
@@ -391,11 +416,30 @@ class TestReportedRecentlyPenalty:
             "urls": {"https://bbc.com/story-x"},
             "titles": [],
         }
-        selected, _ = selector.select_events(
+        selected, dropped = selector.select_events(
             [e], self.SCORE_CONFIG_WITH_RECENT, recent_reports=recent,
         )
-        assert "reported_recently" in (selected[0]["selection_reason"] or "")
-        assert selected[0]["selection_score"] < 53  # 53 = multi(30)+t1(15)+t2(8) without penalty
+        assert selected == []
+        assert dropped[0]["drop_reason"] == "reported_recently"
+        assert "reported_recently" in (dropped[0]["selection_reason"] or "")
+        assert dropped[0]["selection_score"] < 53
+
+    def test_similar_title_gets_penalty_only(self):
+        """只有標題相似（不同網址）→ 扣分但不硬擋。"""
+        e = _event(
+            event_id="daily_20260618_evt_001", beat="INTL",
+            source_count=1, source_tiers=[1],
+            sources=[{"source_id": "bbc_world", "title": "Booker prize shortlist announced",
+                      "url": "https://bbc.com/new-url"}],
+        )
+        recent = {"urls": {"https://other.com/old"},
+                  "titles": ["booker prize shortlist announced"]}
+        selected, dropped = selector.select_events(
+            [e], self.SCORE_CONFIG_WITH_RECENT, recent_reports=recent,
+        )
+        assert len(selected) == 1
+        assert "reported_recently" in selected[0]["selection_reason"]
+        assert selected[0]["selection_score"] == 15 - 40
 
     def test_no_penalty_without_recent_reports(self):
         e = _event(
@@ -408,15 +452,75 @@ class TestReportedRecentlyPenalty:
         assert "reported_recently" not in (selected[0]["selection_reason"] or "")
 
     def test_not_a_hard_block(self):
-        """reported_recently 是扣分不是硬擋——分夠高照樣選入。"""
+        """網址不同時 reported_recently 不是硬擋——分夠高照樣選入。"""
         e = _event(
             event_id="daily_20260618_evt_001", beat="INTL",
             source_count=2, source_tiers=[1, 1],
             headline="Major summit on Ukraine war ceasefire",
         )
-        recent = {"urls": {"https://x.com/1"}, "titles": []}
+        recent = {"urls": {"https://other.com/9"}, "titles": ["x"]}
         selected, dropped = selector.select_events(
             [e], self.SCORE_CONFIG_WITH_RECENT, recent_reports=recent,
         )
         assert len(selected) == 1
         assert len(dropped) == 0
+        assert "reported_recently" in selected[0]["selection_reason"]
+
+
+class TestLoadRecentReports:
+    def test_reads_local_files_and_counts_days(self, tmp_path):
+        import json
+        report = {"sections": [{"items": [{"sources": [
+            {"url": "https://a.com/1", "title": "Story One"}]}]}]}
+        (tmp_path / "daily_20260925.json").write_text(json.dumps(report), encoding="utf-8")
+        recent = selector.load_recent_reports(tmp_path, "2026-09-26", 3, use_git=False)
+        assert recent["loaded_days"] == 1
+        assert "https://a.com/1" in recent["urls"]
+
+    def test_falls_back_to_git_when_local_missing(self, tmp_path, monkeypatch):
+        """雲端 clone 沒有 output/ 時，從 daily-reports 分支補讀。"""
+        import json
+        report = {"sections": [{"items": [{"sources": [
+            {"url": "https://a.com/git", "title": "From git"}]}]}]}
+        calls = []
+
+        def fake_show(filename, repo_root=None):
+            calls.append(filename)
+            return json.dumps(report) if filename == "daily_20260924.json" else None
+
+        monkeypatch.setattr(selector, "_git_show_report", fake_show)
+        monkeypatch.setattr(selector, "_ensure_reports_branch", lambda *a, **k: None)
+        recent = selector.load_recent_reports(tmp_path, "2026-09-26", 3, use_git=True)
+        assert calls == ["daily_20260925.json", "daily_20260924.json", "daily_20260923.json"]
+        assert recent["loaded_days"] == 1
+        assert "https://a.com/git" in recent["urls"]
+
+    def test_no_history_writes_manifest_warning(self, tmp_path, monkeypatch):
+        import json
+        events_dir = tmp_path / "events" / "2026-09-26"
+        events_dir.mkdir(parents=True)
+        (events_dir / "daily_20260926_evt_001.json").write_text(json.dumps(_event(
+            event_id="daily_20260926_evt_001")), encoding="utf-8")
+        cfg = tmp_path / "score.yaml"
+        import yaml
+        cfg.write_text(yaml.safe_dump(SCORE_CONFIG), encoding="utf-8")
+        rc = selector.main([
+            "--date", "2026-09-26", "--events-base", str(tmp_path / "events"),
+            "--output-base", str(tmp_path / "out"), "--score-config", str(cfg),
+            "--no-git-history",
+        ])
+        assert rc == 0
+        manifest = json.loads((events_dir / "_selection_manifest.json").read_text(encoding="utf-8"))
+        assert manifest["cross_day_history_days"] == 0
+        assert "跨日去重無歷史資料" in manifest["warnings"][0]["message"]
+
+
+class TestWholeWordSignals:
+    def test_substring_does_not_trigger_signal(self):
+        """Warren 不是 war、senator 不是 NATO（2026-09-26 SEL-7）。"""
+        e = _event(beat="INTL", headline="Senator Warren criticises budget")
+        assert not selector._signal_keyword_hit(e)
+
+    def test_plural_still_matches(self):
+        e = _event(beat="ECON", headline="New tariffs announced on steel")
+        assert selector._signal_keyword_hit(e)

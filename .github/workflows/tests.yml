@@ -1,0 +1,41 @@
+name: tests
+
+# 程式、prompt、設定一有變動就跑全套 pytest（2026-09-26 HYG-3）。
+# 雲端 Routine 每天 05:00 直接拉 main 最新版來跑，原本推上 main 的程式沒有任何自動測試。
+# 注意：推送之後才跑的測試只能「事後通知」，擋不住隔天 05:00 拉到壞程式；
+# 所以改程式仍要先在本機跑 pytest 全綠再推。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - 'config/**'
+      - 'prompts/**'
+      - 'schemas/**'
+      - 'requirements*.txt'
+      - 'conftest.py'
+      - '.github/workflows/tests.yml'
+  pull_request:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install
+        run: pip install --quiet -r requirements-runtime.txt pytest==9.0.3
+
+      - name: Run tests
+        run: python -m pytest -q -p no:cacheprovider

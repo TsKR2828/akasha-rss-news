@@ -99,7 +99,13 @@ def validate_confidence(
 ) -> dict | None:
     """檢查 confidence 是否合理（規格 §9.2）。
 
-    不強制覆寫（Claude 可能有更好的判斷），但回傳 warning 如果不一致。
+    不強制覆寫（Claude 可能有更好的判斷），但標得比來源撐得起的還高時回傳 warning。
+
+    2026-09-26 修正兩個誤報來源：
+    - source_tiers 是事件層級「去重後的等級集合」（兩篇 Tier 1 → [1]），
+      拿它的長度數「高等級來源篇數」會把真的多方確認判成 medium。
+    - 改寫 agent 主動把 high 降成 medium（來源有疑慮時）是合理的保守判斷，
+      不該報錯。現在只抓「標 high 但不到兩家媒體」這種過度宣稱。
 
     Returns:
         warning dict or None
@@ -110,24 +116,14 @@ def validate_confidence(
             "message": f"confidence 值 '{confidence}' 不在 high/medium/low 之中",
         }
 
-    source_count = len(sources) if sources else 0
-    tiers = source_tiers or []
+    from src.outlets import outlet_count
 
-    # 推斷預期 confidence
-    high_tier_count = sum(1 for t in tiers if t in (1, 2))
-    distinct_sources = {s.get("source_id") for s in sources} if sources else set()
-
-    if len(distinct_sources) >= 2 and high_tier_count >= 2:
-        expected = "high"
-    else:
-        expected = "medium"
-
-    if confidence != expected:
+    if confidence == "high" and outlet_count(sources or []) < 2:
         return {
             "type": "confidence_mismatch",
-            "expected": expected,
+            "expected": "medium",
             "actual": confidence,
-            "message": f"confidence 為 '{confidence}'，但依來源推斷應為 '{expected}'",
+            "message": "confidence 為 'high'，但來源不到兩家媒體，應為 'medium'",
         }
     return None
 

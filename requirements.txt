@@ -26,7 +26,7 @@ spacy>=3.7,<4.0
 anthropic>=0.40,<1.0
 
 # ---------- 測試 ----------
-pytest>=8.0,<9.0
+pytest>=8.0,<10.0  # lock 為 9.0.3（2026-09-26 修正與 requirements.lock 矛盾）
 pytest-mock>=3.12,<4.0
 
 # 注意：Embedding 套件（sentence-transformers / openai 等）不列入 MVP，

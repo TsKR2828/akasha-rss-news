@@ -29,6 +29,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Optional
 
+import feedparser
 import requests
 import yaml
 
@@ -143,6 +144,43 @@ def load_feeds(path: Path) -> dict:
 # Single source fetch
 # ---------------------------------------------------------------------------
 
+def check_feed_content(content: bytes) -> Optional[str]:
+    """確認回應內容真的是 RSS/Atom feed；是的話回傳 None，否則回傳失敗原因。
+
+    2026-09-26 CODE-3：marktechpost 對雲端 IP 回 202 + 176 bytes 的防機器人
+    驗證頁，程式只看 HTTP 成功就記 ok，18 天連續失敗計數都是 0、告警從不響。
+
+    只有「認不出是 RSS/Atom 且 0 則」才判失敗：很多正常 feed 格式有小瑕疵
+    （feedparser bozo）但仍有文章，不能誤殺；合法但暫時沒有文章的 feed
+    （feedparser 認得出版本）也不算失敗。HTML 驗證頁的 version 是空字串。
+    """
+    parsed = feedparser.parse(content)
+    if parsed.entries:
+        return None
+    if parsed.get("version"):
+        return None
+    return f"not a valid RSS/Atom feed ({len(content)} bytes, 0 entries)"
+
+def _invalid_feed_result(
+    source: dict, http_status: int, fetched_at: str, reason: str,
+) -> tuple[FetchResult, None]:
+    """HTTP 成功但內容不是 feed（驗證碼頁、錯誤頁）→ 記失敗，不寫 raw XML。
+
+    不重試：被擋的驗證頁幾秒內重抓結果一樣。
+    """
+    LOG.warning("%s: %s", source["source_id"], reason)
+    return (
+        FetchResult(
+            source_id=source["source_id"],
+            status="failed",
+            http_status=http_status,
+            fetched_at=fetched_at,
+            error=reason,
+        ),
+        None,
+    )
+
+
 def fetch_one(
     source: dict,
     timeout: int = 10,
@@ -166,6 +204,9 @@ def fetch_one(
             resp = sess.get(source["url"], timeout=timeout)
             last_status = resp.status_code
             resp.raise_for_status()
+            bad = check_feed_content(resp.content)
+            if bad:
+                return _invalid_feed_result(source, resp.status_code, fetched_at, bad)
             return (
                 FetchResult(
                     source_id=source["source_id"],
@@ -183,6 +224,9 @@ def fetch_one(
                 resp = sess.get(source["url"], timeout=timeout, verify=False)
                 last_status = resp.status_code
                 resp.raise_for_status()
+                bad = check_feed_content(resp.content)
+                if bad:
+                    return _invalid_feed_result(source, resp.status_code, fetched_at, bad)
                 return (
                     FetchResult(
                         source_id=source["source_id"],

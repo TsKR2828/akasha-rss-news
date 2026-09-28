@@ -23,18 +23,20 @@
 | `prompts/` | 生產程式碼，與 src/ 同等對待；改 `rewrite_prompt.md` 須做修改前後輸出比對 |
 | `config/feeds.yaml` | 新增/修改來源必須**實際 fetch 驗證** feed 存在且有 entries |
 
-- **測試基準：441 條全綠**（2026-07-06 起）。每次修改後全跑，全綠才算完成。
+- **測試基準：502 條全綠 + 5 skipped**（2026-09-26 起）。每次修改後全跑，全綠才算完成。
 - **禁止手寫/手改 `output/` 下任何檔案**——輸出只能由 `src/formatter.py` 產生，push 前必跑 `python scripts/verify_output.py --date {date}`。
 
 ## 生產架構現實（2026-06-11 起）
 
-- **雲端 Routine** 每日 05:00：`git pull origin main` → `pipeline --skip-fetch --until select` → agent 依 `rewrite_prompt.md` 改寫 events → `formatter` → `verify_output` 守門 → push `daily-reports`。詳見 `prompts/routine_prompt.md`。
-- **本機排程** `akasha-local-fetch`（Windows 工作排程器，04:30）跑 `scripts/local_fetch.py` 抓全部 26+ 源、push raw data 到 main（14 個來源雲端 IP 被擋，靠這條腿補齊）。
+- **雲端 Routine** 每日 05:00：`git pull origin main` + `git fetch origin daily-reports` → `pipeline --cloud-first --until select`（雲端自抓全部來源，本機預抓逐源補缺）→ agent 依 `rewrite_prompt.md` 改寫 events → `content_check`（只警告）→ `formatter` → `verify_output` 守門 → push `daily-reports`。完成時手機推播。詳見 `prompts/routine_prompt.md`。
+- **本機排程** `akasha-local-fetch`（Windows 工作排程器，04:30）跑 `scripts/local_fetch.py` 抓全部 27 源、push raw data 到 main——**2026-09-26 起是備援**，只補雲端抓不到的來源（目前是 marktechpost）。遠端 main 有非資料變動時不自動合併，改桌面告警。
+- **main 只由月月更新。** 雲端 agent 任何情況都不得推 main（本機每天自動執行 main 上的程式）。
 - **監工** GitHub Actions `daily-report-watchdog` 每日 06:00 檢查當日館報：缺報、缺檔、verify 不過 → 自動開 GitHub issue。
 - `data/raw/` 有 git 追蹤（雙層策略的資料通道），repo 體積每日增長，定期關注 retention。
 
 ## 已豁免事項（審查時不要重複回報）
 
+- **改寫後內容檢查只警告**（`DECISIONS.md` 2026-09-26）：`_content_check.json` 的提醒不是出報失敗；升級為擋住＝改 P0，需月月同意。
 - **X「280 字」= Python code-point 語義**（`DECISIONS.md` 2026-06-11）。X 平台加權計數（CJK=2）下超長**不是缺陷**，月月貼文時人工處理；自動發文功能上線前必須重新評估此決策。
 
 ## 工作慣例

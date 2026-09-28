@@ -15,6 +15,12 @@
 #   is_proxy  : true 時為 proxy 來源，非原媒體官方 RSS
 #   enabled   : 是否啟用
 #   note      : 備註（可選）
+#   remote_blocked : true 時表示雲端 IP 被擋、只能靠本機抓（可選）。
+#       2026-09-26 全數移除：雲端自抓的 23 天（含 09-11/09-14/09-21/09-24）
+#       27 源全部成功，原本標記的 14 源（Guardian×8、NYT×3、ars/mit/wired）
+#       早已不擋；而這個標記會把它們的失敗警告整批藏起來。
+#       Routine 改為 --cloud-first 後，雲端被擋的來源由本機預抓逐源補上，
+#       兩邊都失敗才出警告，不再需要預先標記。見 DECISIONS.md 2026-09-26。
 
 sources:
   # ---------- BBC ----------
@@ -124,7 +130,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true  # Guardian 封鎖雲端 IP，需本地抓取
 
   - source_id: guardian_books
     name: "Guardian - Books"
@@ -137,7 +142,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: guardian_music
     name: "Guardian - Music"
@@ -150,7 +154,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: guardian_stage
     name: "Guardian - Stage"
@@ -163,7 +166,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: guardian_film
     name: "Guardian - Film"
@@ -176,7 +178,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: guardian_fashion
     name: "Guardian - Fashion"
@@ -189,7 +190,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: guardian_culture
     name: "Guardian - Culture"
@@ -201,7 +201,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
     note: "綜合文化補充來源。"
 
   # ---------- NYT ----------
@@ -216,7 +215,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
     note: "RSS free; full article may require subscription."
 
   - source_id: nyt_arts
@@ -229,7 +227,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: nyt_business
     name: "NYT Business"
@@ -241,7 +238,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   # ---------- 建築 ----------
   - source_id: archdaily
@@ -272,14 +268,15 @@ sources:
   - source_id: ars_technica_ai
     name: "Ars Technica - AI"
     publisher: "Ars Technica"
-    url: "https://feeds.arstechnica.com/arstechnica/technology-lab"
+    # 2026-09-26：舊網址 technology-lab 實際是「Biz & IT」頻道（資安/商業），
+    # 每天可用的 AI 新聞不到 1 則。/ai/feed/ 實抓 200、20 則、頻道名「AI - Ars Technica」。
+    url: "https://arstechnica.com/ai/feed/"
     beats: [AI]
     lang: en
     tier: 2
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: the_verge
     name: "The Verge"
@@ -315,7 +312,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: marktechpost
     name: "MarkTechPost"
@@ -327,7 +323,7 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    note: "Low trust; use as discovery source, not sole authority."
+    note: "Low trust; use as discovery source, not sole authority. 雲端 IP 會拿到驗證碼頁（2026-09 起），靠本機預抓補。"
 
   - source_id: techcrunch_ai
     name: "TechCrunch AI"
@@ -351,7 +347,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
     note: "2026-05-19 sweep 新增：日更 ~10 篇。"
 
   # ---------- 經濟 ----------
@@ -365,7 +360,6 @@ sources:
     transport: direct_rss
     is_proxy: false
     enabled: true
-    remote_blocked: true
 
   - source_id: bloomberg_tech_google_news
     name: "Bloomberg Tech via Google News"

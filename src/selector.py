@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -30,6 +31,8 @@ import yaml
 from rapidfuzz import fuzz
 
 from src.event_cluster import article_keywords, extract_keywords, normalize_title
+from src.outlets import outlet_count
+from src.textmatch import any_term
 
 LOG = logging.getLogger(__name__)
 
@@ -48,7 +51,8 @@ BEAT_SIGNAL_KEYWORDS = {
              "tony award", "grammy", "moma", "tate", "guggenheim"],
     "AI": ["gpt", "claude", "gemini", "llama", "foundation model", "agi",
            "open source", "regulation", "ai act", "transformer"],
-    "ECON": ["fed", "ecb", "interest rate", "gdp", "inflation", "recession",
+    "ECON": ["fed", "federal reserve", "ecb", "bank of england", "central bank",
+             "interest rate", "gdp", "inflation", "recession",
              "tariff", "supply chain", "semiconductor", "opec", "yield curve"],
 }
 
@@ -71,27 +75,83 @@ def _signal_keyword_hit(event: dict) -> bool:
     if not signals:
         return False
     text = (event.get("headline", "") + " " + (event.get("context") or "")).lower()
-    return any(s in text for s in signals)
+    return any_term(text, signals)
+
+
+REPORTS_BRANCH_REF = "origin/daily-reports"
+
+
+def _git_show_report(filename: str, repo_root: Path = PROJECT_ROOT) -> Optional[str]:
+    """從 daily-reports 分支讀一份館報 JSON（不寫任何檔案）。
+
+    雲端 Routine 是從 main 全新 clone，output/ 被 .gitignore 擋掉，
+    過去幾天的館報只存在 daily-reports 分支。讀不到回傳 None。
+    """
+    try:
+        result = subprocess.run(
+            ["git", "show", f"{REPORTS_BRANCH_REF}:output/{filename}"],
+            cwd=repo_root, capture_output=True, timeout=30,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return None
+    if result.returncode != 0:
+        return None
+    return result.stdout.decode("utf-8", errors="replace")
+
+
+def _ensure_reports_branch(repo_root: Path = PROJECT_ROOT) -> None:
+    """若本地沒有 origin/daily-reports，嘗試 fetch 一次（best-effort）。"""
+    try:
+        has_ref = subprocess.run(
+            ["git", "rev-parse", "--verify", "--quiet", REPORTS_BRANCH_REF],
+            cwd=repo_root, capture_output=True, timeout=30,
+        ).returncode == 0
+        if not has_ref:
+            subprocess.run(
+                ["git", "fetch", "--quiet", "origin",
+                 "daily-reports:refs/remotes/origin/daily-reports"],
+                cwd=repo_root, capture_output=True, timeout=120,
+            )
+    except (OSError, subprocess.TimeoutExpired):
+        pass
 
 
 def load_recent_reports(
     output_base: Path,
     current_date: str,
     lookback_days: int = 3,
+    use_git: bool = False,
 ) -> dict:
-    """讀取過去 N 天的館報，回傳已報導過的 source URL 與標題。"""
+    """讀取過去 N 天的館報，回傳已報導過的 source URL 與標題。
+
+    先找 output_base 下的本地檔；找不到且 use_git=True 時，改從
+    daily-reports 分支讀（2026-09-26 OPS-3：雲端 clone 沒有 output/，
+    9/16 上線的跨日去重在雲端從未生效）。
+
+    Returns:
+        {"urls": set, "titles": list, "loaded_days": int}
+    """
     urls: set[str] = set()
     titles: list[str] = []
+    loaded_days = 0
+
+    if use_git:
+        _ensure_reports_branch()
 
     dt = datetime.strptime(current_date, "%Y-%m-%d")
     for offset in range(1, lookback_days + 1):
         past = dt - timedelta(days=offset)
         filename = f"daily_{past.strftime('%Y%m%d')}.json"
         path = output_base / filename
-        if not path.exists():
+        text: Optional[str] = None
+        if path.exists():
+            text = path.read_text(encoding="utf-8")
+        elif use_git:
+            text = _git_show_report(filename)
+        if text is None:
             continue
         try:
-            report = json.loads(path.read_text(encoding="utf-8"))
+            report = json.loads(text)
             for section in report.get("sections", []):
                 for item in section.get("items", []):
                     for src in item.get("sources", []):
@@ -99,10 +159,18 @@ def load_recent_reports(
                             urls.add(src["url"])
                         if src.get("title"):
                             titles.append(normalize_title(src["title"]))
-        except (json.JSONDecodeError, KeyError):
-            LOG.warning("Failed to parse recent report: %s", path)
+            loaded_days += 1
+        except (json.JSONDecodeError, KeyError, AttributeError):
+            LOG.warning("Failed to parse recent report: %s", filename)
 
-    return {"urls": urls, "titles": titles}
+    return {"urls": urls, "titles": titles, "loaded_days": loaded_days}
+
+
+def _shares_recent_url(event: dict, recent: dict) -> bool:
+    """event 是否引用了過去幾天館報已經用過的同一篇報導（完全相同 URL）。"""
+    recent_urls = recent.get("urls", set())
+    return any(src.get("url") and src["url"] in recent_urls
+               for src in event.get("sources", []))
 
 
 def _matches_recent_report(
@@ -139,7 +207,8 @@ def score_event(event: dict, score_config: dict) -> tuple[int, list[str]]:
     applied: list[str] = []
 
     # --- 正分 ---
-    if event.get("source_count", 0) >= 2:
+    # 看「不同媒體數」：同一家媒體的兩個頻道不算多方確認（2026-09-26 S0-2）
+    if outlet_count(event.get("sources", [])) >= 2:
         score += weights.get("multi_source_confirmed", 0)
         applied.append("multi_source_confirmed")
 
@@ -227,6 +296,17 @@ def select_events(
 
     for s, rules, e in scored:
         beat = e.get("beat")
+
+        # 跨日去重（2026-09-26 OPS-3）：引用的報導和過去幾天館報是同一篇
+        # （完全相同 URL）→ 直接不選。只扣分的話，扣分在排序之後才加，
+        # 擋不住已經排在前面的重複新聞；標題相似才走下面的扣分。
+        if recent_reports and _shares_recent_url(e, recent_reports):
+            e["selection_score"] = s + reported_recently_penalty
+            e["selection_reason"] = "; ".join(rules + ["reported_recently"])
+            e["drop_reason"] = "reported_recently"
+            dropped.append(e)
+            continue
+
         limits = daily_limits.get(beat, {})
         max_cnt = limits.get("max", 999)
         already = selected_by_beat.get(beat, [])
@@ -317,6 +397,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--date", type=str, default=None)
     parser.add_argument("--output-base", type=Path, default=DEFAULT_OUTPUT_BASE)
     parser.add_argument("--lookback-days", type=int, default=3)
+    parser.add_argument("--no-git-history", action="store_true",
+                        help="跨日去重只讀本地 output/，不從 daily-reports 分支補讀")
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args(argv)
 
@@ -334,11 +416,20 @@ def main(argv: Optional[list[str]] = None) -> int:
     events = [json.loads(fp.read_text(encoding="utf-8")) for fp in files
               if not fp.name.startswith("_")]
 
-    recent_reports = load_recent_reports(args.output_base, date, args.lookback_days)
-    if recent_reports["urls"]:
-        LOG.info("Cross-day dedup: loaded %d URLs + %d titles from past %d days",
-                 len(recent_reports["urls"]), len(recent_reports["titles"]),
-                 args.lookback_days)
+    recent_reports = load_recent_reports(
+        args.output_base, date, args.lookback_days,
+        use_git=not args.no_git_history,
+    )
+    LOG.info("Cross-day dedup: loaded %d/%d past reports (%d URLs + %d titles)",
+             recent_reports["loaded_days"], args.lookback_days,
+             len(recent_reports["urls"]), len(recent_reports["titles"]))
+    manifest_warnings: list[dict] = []
+    if args.lookback_days > 0 and recent_reports["loaded_days"] == 0:
+        # 讀不到任何舊館報時跨日去重等於沒開；留警告，別再無聲失效
+        msg = (f"跨日去重無歷史資料：過去 {args.lookback_days} 天的館報一份都讀不到"
+               "（本地 output/ 與 daily-reports 分支皆無），今天可能與前幾天重複")
+        LOG.warning(msg)
+        manifest_warnings.append({"type": "other", "message": msg})
 
     selected, dropped = select_events(events, score_config, recent_reports)
 
@@ -370,6 +461,8 @@ def main(argv: Optional[list[str]] = None) -> int:
                 }
                 for e in dropped
             ],
+            "cross_day_history_days": recent_reports["loaded_days"],
+            "warnings": manifest_warnings,
         }
         (events_dir / "_selection_manifest.json").write_text(
             json.dumps(manifest, ensure_ascii=False, indent=2),

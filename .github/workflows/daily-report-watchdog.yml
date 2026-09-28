@@ -24,7 +24,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install minimal deps
-        run: pip install --quiet pyyaml jsonschema
+        run: pip install --quiet PyYAML==6.0.3 jsonschema==4.26.0  # 與 requirements-runtime.txt 一致
 
       - name: Check today's report on daily-reports
         shell: bash

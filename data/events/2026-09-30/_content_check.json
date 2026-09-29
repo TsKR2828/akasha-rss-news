@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T05:18:00.861642+08:00",
+  "mode": "warn_only",
+  "summary": {
+    "events_checked": 18,
+    "events_flagged": 1,
+    "issues": 1,
+    "by_type": {
+      "number_not_in_source": 1
+    }
+  },
+  "issues": [
+    {
+      "event_id": "daily_20260930_evt_207",
+      "headline": "美對加拿大酒類乳製品下禁令",
+      "type": "number_not_in_source",
+      "detail": "這些數字在來源標題/摘要找不到（可能是單位換算，請人工抽查）：10, 200, 8"
+    }
+  ]
+}

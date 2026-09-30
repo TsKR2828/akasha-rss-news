@@ -196,6 +196,22 @@ def _matches_recent_report(
     return False
 
 
+def _topic_keywords(text: str) -> set[str]:
+    """同主題判定用的關鍵詞：去掉英文複數詞尾，tariffs/tariff、cuts/cut 算同一個字。
+
+    2026-09-30：09-29 經濟版「China and US cut reciprocal tariffs」與
+    「China, US agree to tariff cuts」只因單複數不同，共同詞只剩 2 個，沒被判成同主題。
+    """
+    out = set()
+    for w in extract_keywords(text):
+        if len(w) > 4 and w.endswith("ies"):
+            w = w[:-3] + "y"
+        elif len(w) > 3 and w.endswith("s") and not w.endswith("ss"):
+            w = w[:-1]
+        out.add(w)
+    return out
+
+
 def score_event(event: dict, score_config: dict) -> tuple[int, list[str]]:
     """規格 §8.2。
 
@@ -292,50 +308,59 @@ def select_events(
 
     selected_by_beat: dict[str, list[dict]] = {}
     dropped: list[dict] = []
-    selected_keyword_sets: list[set[str]] = []  # 已選事件的 keyword set，用來判 same_topic
 
-    for s, rules, e in scored:
-        beat = e.get("beat")
-
+    # 候選：[base_score, rules, event, keywords, 原排序名次, 標題近似舊館報, 同主題已選]
+    candidates: list[list] = []
+    for rank, (s, rules, e) in enumerate(scored):
         # 跨日去重（2026-09-26 OPS-3）：引用的報導和過去幾天館報是同一篇
-        # （完全相同 URL）→ 直接不選。只扣分的話，扣分在排序之後才加，
-        # 擋不住已經排在前面的重複新聞；標題相似才走下面的扣分。
+        # （完全相同 URL）→ 直接不選；標題相似才走下面的扣分。
         if recent_reports and _shares_recent_url(e, recent_reports):
             e["selection_score"] = s + reported_recently_penalty
             e["selection_reason"] = "; ".join(rules + ["reported_recently"])
             e["drop_reason"] = "reported_recently"
             dropped.append(e)
             continue
+        kws = _topic_keywords(e.get("headline", "") + " " + (e.get("context") or ""))
+        recent_title = bool(recent_reports and _matches_recent_report(e, recent_reports))
+        candidates.append([s, rules, e, kws, rank, recent_title, False])
 
-        limits = daily_limits.get(beat, {})
-        max_cnt = limits.get("max", 999)
-        already = selected_by_beat.get(beat, [])
-
-        # 計算 final_score（包含 same_topic_already_selected 動態調整）
-        final_score = s
-        final_rules = list(rules)
-        event_kws = extract_keywords(
-            (e.get("headline", "") + " " + (e.get("context") or ""))
-        )
-        if any(len(event_kws & prev) >= 3 for prev in selected_keyword_sets):
-            final_score += same_topic_penalty
+    def _final(c: list) -> tuple[int, list[str]]:
+        score, final_rules = c[0], list(c[1])
+        if c[6]:
+            score += same_topic_penalty
             final_rules.append("same_topic_already_selected")
-
-        if recent_reports and _matches_recent_report(e, recent_reports):
-            final_score += reported_recently_penalty
+        if c[5]:
+            score += reported_recently_penalty
             final_rules.append("reported_recently")
+        return score, final_rules
 
+    # 逐則挑選：每選進一則，就把和它同主題的候選重新扣分再比一次。
+    # 原本扣分是在排序之後才加，被扣到負分的同主題新聞照樣佔名額
+    # （9 月 16 則、09-29 經濟版「中美互降關稅」兩則同一件事）。
+    # 2026-09-30 月月決定：同主題的第二則要被換掉。
+    while candidates:
+        best_i = min(
+            range(len(candidates)),
+            key=lambda i: (-_final(candidates[i])[0], candidates[i][4]),
+        )
+        c = candidates.pop(best_i)
+        final_score, final_rules = _final(c)
+        e = c[2]
         e["selection_score"] = final_score
         e["selection_reason"] = "; ".join(final_rules) if final_rules else None
 
+        beat = e.get("beat")
+        max_cnt = daily_limits.get(beat, {}).get("max", 999)
+        already = selected_by_beat.setdefault(beat, [])
         if len(already) >= max_cnt:
             e["drop_reason"] = "beat_limit_reached"
             dropped.append(e)
             continue
 
         already.append(e)
-        selected_by_beat[beat] = already
-        selected_keyword_sets.append(event_kws)
+        for other in candidates:
+            if not other[6] and len(other[3] & c[3]) >= 3:
+                other[6] = True
 
     # 3. flatten — beat 順序為 INTL, ARTS, AI, ECON, PTS_LOCAL, TW_STORY
     beat_order = ["INTL", "ARTS", "AI", "ECON", "PTS_LOCAL", "TW_STORY"]

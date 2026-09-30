@@ -202,6 +202,18 @@ python scripts/verify_output.py --date {date}
   - `data/raw/{date}/`（所有 XML）
   - `data/events/{date}/`（改寫後的 event JSON、`_content_check.json`）
 
+**`output/` 與 `data/events/` 被 `.gitignore` 擋住，`git add -A` 加不進去，必須用 `-f`**
+（2026-09-29 第一次 commit 就漏了六件套，靠第二次補推才救回）：
+
+```bash
+DC=$(echo $DATE | tr -d '-')
+git add -f output/daily_${DC}.json output/daily_${DC}.md output/voice_${DC}.txt \
+  output/platforms/x_${DC}.json output/platforms/threads_${DC}.json output/logs/run_${DC}.json \
+  data/events/$DATE/
+git add data/raw/$DATE/
+git status --short   # 確認六件套都在「A/M」清單裡、且只有今天日期的檔案
+```
+
 commit message 固定格式（第一行）：
 
 ```

@@ -524,3 +524,31 @@ class TestWholeWordSignals:
     def test_plural_still_matches(self):
         e = _event(beat="ECON", headline="New tariffs announced on steel")
         assert selector._signal_keyword_hit(e)
+
+
+class TestSameTopicReplacement:
+    def test_second_same_topic_event_is_replaced(self):
+        """同主題第二則被扣分後，要讓位給分數較低但不同主題的新聞（2026-09-30）。"""
+        cfg = {**SCORE_CONFIG, "daily_limits": {"ECON": {"min": 1, "max": 2}},
+               "selection_score": {**SCORE_CONFIG["selection_score"],
+                                   "same_topic_already_selected": -45}}
+        a = _event(event_id="e1", beat="ECON", source_tiers=[1],
+                   headline="US China agree tariff cut worth billions")
+        b = _event(event_id="e2", beat="ECON", source_tiers=[1],
+                   headline="China US tariff cut agreement reached", sources=[
+                       {"source_id": "npr_world", "title": "x", "url": "https://x.com/b"}])
+        c = _event(event_id="e3", beat="ECON", source_tiers=[2],
+                   headline="Japan service inflation hits two-year high", sources=[
+                       {"source_id": "npr_world", "title": "y", "url": "https://x.com/c"}])
+        selected, dropped = selector.select_events([a, b, c], cfg)
+        assert {e["event_id"] for e in selected} == {"e1", "e3"}
+        dup = next(e for e in dropped if e["event_id"] == "e2")
+        assert "same_topic_already_selected" in dup["selection_reason"]
+        assert dup["drop_reason"] == "beat_limit_reached"
+
+
+class TestTopicKeywords:
+    def test_plural_forms_count_as_same_word(self):
+        a = selector._topic_keywords("China and US cut reciprocal tariffs on goods")
+        b = selector._topic_keywords("China, US agree to tariff cuts on goods")
+        assert len(a & b) >= 3

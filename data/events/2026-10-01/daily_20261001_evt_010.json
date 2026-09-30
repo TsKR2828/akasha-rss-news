@@ -1,0 +1,63 @@
+{
+  "event_id": "daily_20261001_evt_010",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "非營利組織控告OpenAI",
+  "context": "一家加州非營利組織控告OpenAI，指其須為旗下AI代理人（agent）的行為負責，事件源於抱抱臉（Hugging Face）遭駭客入侵。組織主張，抱抱臉至今未採取行動，於是自行提告追究OpenAI的責任。",
+  "article_ids": [
+    "edb3e4b06cb478b1529e7f4f7513382a751475e97a046999a4043fe670dfbcea",
+    "c0b0018e8bd581beed442d4fedee7dab5f7baa2c1bc1cfac84665febaee200c1"
+  ],
+  "sources": [
+    {
+      "source_id": "wired_ai",
+      "name": "Wired",
+      "publisher": "Wired",
+      "summary": "A nonprofit in California is doing what Hugging Face has not—attempting to hold OpenAI legally accountable for the actions of its agents.",
+      "title": "OpenAI Gets Sued Over the Hugging Face Hack",
+      "url": "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack/",
+      "published_at": "2026-09-30T03:05:00+08:00"
+    },
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "OpenAI makes others suffer \"the harms of its unsafe decision-making,\" nonprofit says.",
+      "title": "\"An AI did it\" is no defense, says nonprofit suing OpenAI over Hugging Face hack",
+      "url": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack/",
+      "published_at": "2026-10-01T02:25:04+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 38,
+  "selection_reason": "multi_source_confirmed; source_tier_2",
+  "drop_reason": null,
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "加州非營利組織控告OpenAI，主張其須為AI代理人行為負責，源於Hugging Face遭駭。",
+      "source_id": "wired_ai",
+      "source_title": "OpenAI Gets Sued Over the Hugging Face Hack",
+      "source_url": "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "該組織主張「是AI做的」不是免責理由，OpenAI讓他人承受其不安全決策的後果。",
+      "source_id": "ars_technica_ai",
+      "source_title": "\"An AI did it\" is no defense, says nonprofit suing OpenAI over Hugging Face hack",
+      "source_url": "https://arstechnica.com/tech-policy/2026/09/lawsuit-demands-openai-halt-unsafe-development-that-caused-hugging-face-hack/",
+      "support_type": "direct"
+    }
+  ],
+  "thread_text": "非營利組織控告OpenAI\n\n一家加州非營利組織控告OpenAI，主張OpenAI須為旗下AI代理人的行為負責，事件源於抱抱臉（Hugging Face）遭駭客入侵。這個組織說，抱抱臉至今沒有採取行動，於是自行提告追究OpenAI的責任，並主張「是AI做的」不能當作免責理由。\n\n—— 本則整理自Wired與Ars Technica 2026 年 9 月 30 日發佈的報導，讓圖書館員翻譯給你聽。",
+  "threads_text": "非營利組織控告OpenAI\n\n一家加州非營利組織控告OpenAI，主張OpenAI須為旗下AI代理人的行為負責，事件源於抱抱臉（Hugging Face）遭駭客入侵。這個組織說，抱抱臉至今沒有採取行動，於是自行提告追究OpenAI的責任，並主張「是AI做的」不能當作免責理由。\n\n本則整理自Wired與Ars Technica於 2026 年 9 月 30 日發佈的報導。",
+  "voice_text": "有個加州非營利組織告上了OpenAI。他們主張，OpenAI得為旗下AI代理人的行為負責，事件源頭是抱抱臉遭駭客入侵。這個組織說，抱抱臉至今沒有採取行動，於是自己提告，還主張「是AI做的」不能拿來當免責理由。這個組織認為，OpenAI讓別人承受了它自己不安全決策造成的後果。"
+}

@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20261002_evt_012",
+  "beat": "AI",
+  "sub_beat": null,
+  "headline": "Google announces Gemini 4 Argon AI model, but you can't use it yet",
+  "context": "So much for Gemini 3.5 Pro.",
+  "article_ids": [
+    "4fb155c2241e2d7d539a5dac9b1fb41fb6c2795a7926b839aa2d1ba9d4a78f74",
+    "b6dbee6f05779793156d27ad988422ab0200f2fb470e301307a443db6351855c"
+  ],
+  "sources": [
+    {
+      "source_id": "ars_technica_ai",
+      "name": "Ars Technica",
+      "publisher": "Ars Technica",
+      "summary": "So much for Gemini 3.5 Pro.",
+      "title": "Google announces Gemini 4 Argon AI model, but you can't use it yet",
+      "url": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
+      "published_at": "2026-10-01T04:11:08+08:00"
+    },
+    {
+      "source_id": "techcrunch_ai",
+      "name": "TechCrunch",
+      "publisher": "TechCrunch",
+      "summary": "Google has released its latest Gemini model, marketing it as a workhorse for coding and cybersecurity work.",
+      "title": "Google releases Gemini 4 Argon, called its most powerful model yet",
+      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+      "published_at": "2026-10-01T07:43:07+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": 18,
+  "selection_reason": "multi_source_confirmed; source_tier_2; ai_major_model_or_policy; reported_recently",
+  "drop_reason": "reported_recently",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "Google announces Gemini 4 Argon AI model, but you can't use it yet",
+      "source_id": "ars_technica_ai",
+      "source_title": "Google announces Gemini 4 Argon AI model, but you can't use it yet",
+      "source_url": "https://arstechnica.com/google/2026/09/google-announces-gemini-4-argon-ai-model-but-you-cant-use-it-yet/",
+      "support_type": "direct"
+    },
+    {
+      "claim": "Google releases Gemini 4 Argon, called its most powerful model yet",
+      "source_id": "techcrunch_ai",
+      "source_title": "Google releases Gemini 4 Argon, called its most powerful model yet",
+      "source_url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+      "support_type": "direct"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "event_id": "daily_20261003_evt_226",
+  "beat": "INTL",
+  "sub_beat": null,
+  "headline": "G7 to release 100m oil barrels as Trump hails Europe diesel deal",
+  "context": "Macron says G7 will release 100 million barrels over four months; diesel release to be 'frontloaded'.",
+  "article_ids": [
+    "b32337e07b585c8f12e59a47f82c5a804f96367d897e674a2d7b6dafe8c975ef",
+    "c74b4cf9b56ef09d5b86cb062f5460147a45bec7450d8a81d467b6ea657835f4"
+  ],
+  "sources": [
+    {
+      "source_id": "aljazeera_all",
+      "name": "Al Jazeera",
+      "publisher": "Al Jazeera",
+      "summary": "Macron says G7 will release 100 million barrels over four months; diesel release to be 'frontloaded'.",
+      "title": "G7 to release 100m oil barrels as Trump hails Europe diesel deal",
+      "url": "https://www.aljazeera.com/news/2026/10/2/trump-says-europe-agrees-to-release-massive-amount-diesel-stockpile?traffic_source=rss",
+      "published_at": "2026-10-02T22:14:18+08:00"
+    },
+    {
+      "source_id": "npr_world",
+      "name": "NPR",
+      "publisher": "NPR",
+      "summary": "After increased pressure from Washington, the G7 held an emergency meeting on energy. The world's wealthiest nations say they will release 100 million barrels of oil and diesel fuel in their reserves.",
+      "title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+      "url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months",
+      "published_at": "2026-10-03T04:23:49+08:00"
+    }
+  ],
+  "source_count": 2,
+  "source_tiers": [
+    2
+  ],
+  "tw_highlight": false,
+  "tw_highlight_reason": null,
+  "tw_highlight_keywords": null,
+  "selection_score": -7,
+  "selection_reason": "multi_source_confirmed; source_tier_2; same_topic_already_selected",
+  "drop_reason": "beat_limit_reached",
+  "confidence": "high",
+  "single_source_warning": false,
+  "opinion_level": "none",
+  "claim_trace": [
+    {
+      "claim": "G7 to release 100m oil barrels as Trump hails Europe diesel deal",
+      "source_id": "aljazeera_all",
+      "source_title": "G7 to release 100m oil barrels as Trump hails Europe diesel deal",
+      "source_url": "https://www.aljazeera.com/news/2026/10/2/trump-says-europe-agrees-to-release-massive-amount-diesel-stockpile?traffic_source=rss",
+      "support_type": "direct"
+    },
+    {
+      "claim": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+      "source_id": "npr_world",
+      "source_title": "The G7 will release 100 million reserve barrels of diesel fuel over the next 4 months",
+      "source_url": "https://www.npr.org/2026/10/02/nx-s1-5989397/the-g7-will-release-100-million-reserve-barrels-of-diesel-fuel-over-the-next-4-months",
+      "support_type": "direct"
+    }
+  ]
+}

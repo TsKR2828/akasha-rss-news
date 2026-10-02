@@ -1,0 +1,42 @@
+{
+  "steps": [
+    {
+      "name": "fetch_rss",
+      "exit_code": 0,
+      "duration_s": 3.88,
+      "note": "cloud-first: cloud 27, local backup 0, missing 0"
+    },
+    {
+      "name": "normalize",
+      "exit_code": 0,
+      "duration_s": 1.77
+    },
+    {
+      "name": "classify",
+      "exit_code": 0,
+      "duration_s": 0.47
+    },
+    {
+      "name": "tw_highlight",
+      "exit_code": 0,
+      "duration_s": 0.25
+    },
+    {
+      "name": "dedup",
+      "exit_code": 0,
+      "duration_s": 0.05
+    },
+    {
+      "name": "event_cluster",
+      "exit_code": 0,
+      "duration_s": 13.13
+    },
+    {
+      "name": "select",
+      "exit_code": 0,
+      "duration_s": 0.32
+    }
+  ],
+  "pipeline_start": 1790975202.214487,
+  "warnings": []
+}

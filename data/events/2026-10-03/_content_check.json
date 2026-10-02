@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-03",
+  "generated_at": "2026-10-03T05:16:35.994915+08:00",
+  "mode": "warn_only",
+  "summary": {
+    "events_checked": 18,
+    "events_flagged": 2,
+    "issues": 2,
+    "by_type": {
+      "number_not_in_source": 2
+    }
+  },
+  "issues": [
+    {
+      "event_id": "daily_20261003_evt_038",
+      "headline": "Fed官員籲升息50基點",
+      "type": "number_not_in_source",
+      "detail": "這些數字在來源標題/摘要找不到（可能是單位換算，請人工抽查）：0.5"
+    },
+    {
+      "event_id": "daily_20261003_evt_311",
+      "headline": "G7釋出1億桶油儲備",
+      "type": "number_not_in_source",
+      "detail": "這些數字在來源標題/摘要找不到（可能是單位換算，請人工抽查）：1"
+    }
+  ]
+}
